@@ -3,7 +3,7 @@
   {
    "id": "mini_1000",
    "name": "1000",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/2008-06-28_0906_Abarth_1000%2C_Abarth_A112%2C_Mini_Cooper%2C_NSU_TT_.JPG/1280px-2008-06-28_0906_Abarth_1000%2C_Abarth_A112%2C_Mini_Cooper%2C_NSU_TT_.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1969 - 1980",
    "puissance_ch": 44,
    "vitesse_max_kmh": 135,
@@ -27,12 +27,15 @@
     "classic car",
     "vintage car",
     "microcar"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2008-06-28_0906_Abarth_1000,_Abarth_A112,_Mini_Cooper,_NSU_TT_.JPG"
   },
   {
    "id": "mini_1275gt",
    "name": "1275 GT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/1980_Austin_Mini_1275_GT.jpg/1280px-1980_Austin_Mini_1275_GT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1969 - 1980",
    "puissance_ch": 59,
    "vitesse_max_kmh": 145,
@@ -57,7 +60,10 @@
     "austin",
     "1960s car",
     "small car"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1980_Austin_Mini_1275_GT.jpg"
   },
   {
    "id": "mini_aceman",
@@ -156,7 +162,7 @@
   {
    "id": "mini_convertible",
    "name": "Convertible",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/MINI_Convertible_F.jpg/1280px-MINI_Convertible_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - Aujourd'hui",
    "puissance_ch": 178,
    "vitesse_max_kmh": 230,
@@ -181,7 +187,10 @@
     "compact car",
     "mid-size car",
     "performance car"
-   ]
+   ],
+   "imageCredit": "多多123",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MINI_Convertible_F.jpg"
   },
   {
    "id": "mini_electric",
@@ -218,7 +227,7 @@
   {
    "id": "mini_cooper_s_original",
    "name": "Cooper S (Original)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Mini_Cooper_S_1964_3.jpg/1280px-Mini_Cooper_S_1964_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1963 - 1971",
    "puissance_ch": 76,
    "vitesse_max_kmh": 160,
@@ -243,7 +252,10 @@
     "r50",
     "r53",
     "2000s car"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mini_Cooper_S_1964_3.jpg"
   },
   {
    "id": "mini_countryman",
@@ -501,7 +513,7 @@
   {
    "id": "mini_pickup",
    "name": "Pickup",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/BL_Mini_Pickup_1981.jpg/1280px-BL_Mini_Pickup_1981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1961 - 1983",
    "puissance_ch": 34,
    "vitesse_max_kmh": 110,
@@ -524,7 +536,10 @@
     "compact truck",
     "work truck",
     "utility vehicle"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BL_Mini_Pickup_1981.jpg"
   },
   {
    "id": "mini_roadster",
@@ -561,7 +576,7 @@
   {
    "id": "mini_traveller",
    "name": "Traveller",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Morris_Mini_Minor_Traveller_1966.jpg/1280px-Morris_Mini_Minor_Traveller_1966.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1960 - 1982",
    "puissance_ch": 34,
    "vitesse_max_kmh": 110,
@@ -585,12 +600,15 @@
     "land vehicle",
     "travel van",
     "family vehicle"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Morris_Mini_Minor_Traveller_1966.jpg"
   },
   {
    "id": "mini_van",
    "name": "Van",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/1963_Austin_Mini_850_AA_Van.jpg/1280px-1963_Austin_Mini_850_AA_Van.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1960 - 1982",
    "puissance_ch": 34,
    "vitesse_max_kmh": 105,
@@ -614,7 +632,10 @@
     "car",
     "land vehicle",
     "work van"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Austin_Mini_850_AA_Van.jpg"
   },
   {
    "id": "mini_coupe-and-roadster",

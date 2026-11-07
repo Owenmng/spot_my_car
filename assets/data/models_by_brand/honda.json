@@ -131,7 +131,7 @@
   {
    "id": "honda_ascot",
    "name": "Ascot",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/1st_Honda_Ascot.jpg/1280px-1st_Honda_Ascot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - 1997",
    "puissance_ch": 140,
    "vitesse_max_kmh": 195,
@@ -155,7 +155,10 @@
     "retro car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Kiha455405",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1st_Honda_Ascot.jpg"
   },
   {
    "id": "honda_avancier",
@@ -188,7 +191,7 @@
   {
    "id": "honda_ballade",
    "name": "Ballade",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/1988_Honda_Ballade_EXi_%2810039084716%29.jpg/1280px-1988_Honda_Ballade_EXi_%2810039084716%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - 1986",
    "puissance_ch": 90,
    "vitesse_max_kmh": 170,
@@ -211,7 +214,10 @@
     "honda ballade",
     "honda",
     "japanese car"
-   ]
+   ],
+   "imageCredit": "Charlie from United Kingdom",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1988_Honda_Ballade_EXi_(10039084716).jpg"
   },
   {
    "id": "honda_beat",
@@ -282,7 +288,7 @@
   {
    "id": "honda_breeze",
    "name": "Breeze",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Honda_Breeze_II_002.jpg/1280px-Honda_Breeze_II_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 193,
    "vitesse_max_kmh": 185,
@@ -304,7 +310,10 @@
     "small car",
     "urban car",
     "eco-friendly car"
-   ]
+   ],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Breeze_II_002.jpg"
   },
   {
    "id": "honda_brio",
@@ -686,7 +695,7 @@
   {
    "id": "honda_crx",
    "name": "CRX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Honda_CRX_ESi_1993.jpg/1280px-Honda_CRX_ESi_1993.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1998",
    "puissance_ch": 160,
    "vitesse_max_kmh": 222,
@@ -710,7 +719,10 @@
     "vehicle",
     "fuel efficient car",
     "lightweight car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_CRX_ESi_1993.jpg"
   },
   {
    "id": "honda_domani",
@@ -839,7 +851,7 @@
   {
    "id": "honda_edix",
    "name": "Edix (FR-V)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Honda_Edix_%282006%29_%2851122705694%29.jpg/1280px-Honda_Edix_%282006%29_%2851122705694%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2009",
    "puissance_ch": 150,
    "vitesse_max_kmh": 195,
@@ -863,7 +875,10 @@
     "car",
     "vehicle",
     "multi-purpose vehicle"
-   ]
+   ],
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Edix_(2006)_(51122705694).jpg"
   },
   {
    "id": "honda_element",
@@ -965,7 +980,7 @@
   {
    "id": "honda_envix",
    "name": "Envix",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Honda_Envix_001.jpg/1280px-Honda_Envix_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 122,
    "vitesse_max_kmh": 190,
@@ -989,7 +1004,10 @@
     "electric hatchback",
     "zero-emissions vehicle",
     "battery electric vehicle"
-   ]
+   ],
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Envix_001.jpg"
   },
   {
    "id": "honda_ev-plus",
@@ -1026,7 +1044,7 @@
   {
    "id": "honda_fcx",
    "name": "FCX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2006_SAG_-_Honda_FCX_concept_-02.jpg/1280px-2006_SAG_-_Honda_FCX_concept_-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2008",
    "puissance_ch": 107,
    "vitesse_max_kmh": 150,
@@ -1048,7 +1066,10 @@
     "zero emission vehicle",
     "eco-friendly car",
     "clean energy car"
-   ]
+   ],
+   "imageCredit": "Semnoz",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_SAG_-_Honda_FCX_concept_-02.jpg"
   },
   {
    "id": "honda_fit",
@@ -1530,7 +1551,7 @@
   {
    "id": "honda_jazz-crosstar",
    "name": "Jazz Crosstar",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Honda_Jazz_Crosstar_%284th_generation%29_hybrid_1X7A0320.jpg/1280px-Honda_Jazz_Crosstar_%284th_generation%29_hybrid_1X7A0320.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 109,
    "vitesse_max_kmh": 175,
@@ -1555,7 +1576,10 @@
     "gasoline",
     "suv",
     "small suv"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Jazz_Crosstar_(4th_generation)_hybrid_1X7A0320.jpg"
   },
   {
    "id": "honda_lagreat",
@@ -1936,7 +1960,7 @@
   {
    "id": "honda_n600",
    "name": "N600",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Milwaukee_June_2026_08_%28Honda_N600%29.jpg/1280px-Milwaukee_June_2026_08_%28Honda_N600%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1973",
    "puissance_ch": 45,
    "vitesse_max_kmh": 130,
@@ -1960,7 +1984,10 @@
     "car",
     "vehicle",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Michael Barera",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Milwaukee_June_2026_08_(Honda_N600).jpg"
   },
   {
    "id": "honda_nsx",
@@ -2480,7 +2507,7 @@
   {
    "id": "honda_saber",
    "name": "Saber",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Honda_Saber_1995.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1995 - 2003",
    "puissance_ch": 225,
    "vitesse_max_kmh": 180,
@@ -2503,7 +2530,10 @@
     "internal combustion engine",
     "car model",
     "saber"
-   ]
+   ],
+   "imageCredit": "Kuha455405",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Saber_1995.JPG"
   },
   {
    "id": "honda_shuttle",
@@ -2605,7 +2635,7 @@
   {
    "id": "honda_street",
    "name": "Street",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Honda_Civic_at_Railway_Street_Car_Park%2C_Gillingham%2C_Kent.jpg/1280px-Honda_Civic_at_Railway_Street_Car_Park%2C_Gillingham%2C_Kent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1988",
    "puissance_ch": 52,
    "vitesse_max_kmh": 135,
@@ -2627,12 +2657,15 @@
     "land vehicle",
     "urban car",
     "small car"
-   ]
+   ],
+   "imageCredit": "OathOn",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Civic_at_Railway_Street_Car_Park,_Gillingham,_Kent.jpg"
   },
   {
    "id": "honda_that-s",
    "name": "That's",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Honda_That%27s_2002.jpg/1280px-Honda_That%27s_2002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2006",
    "puissance_ch": 52,
    "vitesse_max_kmh": 130,
@@ -2654,7 +2687,10 @@
     "that's car",
     "microcar",
     "small car"
-   ]
+   ],
+   "imageCredit": "Kuha455405",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_That%27s_2002.jpg"
   },
   {
    "id": "honda_today",
@@ -2751,7 +2787,7 @@
   {
    "id": "honda_vamos",
    "name": "Vamos",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/2005-2018_Honda_Vamos_Hobio_Pro.jpg/1280px-2005-2018_Honda_Vamos_Hobio_Pro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2018",
    "puissance_ch": 46,
    "vitesse_max_kmh": 125,
@@ -2773,12 +2809,15 @@
     "small car",
     "economical car",
     "fuel-efficient car"
-   ]
+   ],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005-2018_Honda_Vamos_Hobio_Pro.jpg"
   },
   {
    "id": "honda_ve-1",
    "name": "VE-1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/EVERUS_VE-1%28HONDA_VEZEL_HR-V_%28RU%29%29.jpg/1280px-EVERUS_VE-1%28HONDA_VEZEL_HR-V_%28RU%29%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 163,
    "vitesse_max_kmh": 140,
@@ -2803,12 +2842,15 @@
     "urban car",
     "eco-friendly car",
     "zero-emissions vehicle"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:EVERUS_VE-1(HONDA_VEZEL_HR-V_(RU)).jpg"
   },
   {
    "id": "honda_vezel",
    "name": "Vezel (HR-V)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/HONDA_e_NP1_%28HONDA_VEZEL_HR-V_%28RV%29%29_China.jpg/1280px-HONDA_e_NP1_%28HONDA_VEZEL_HR-V_%28RV%29%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 131,
    "vitesse_max_kmh": 187,
@@ -2832,7 +2874,10 @@
     "honda hr-v",
     "small suv",
     "gasoline car"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:HONDA_e_NP1_(HONDA_VEZEL_HR-V_(RV))_China.jpg"
   },
   {
    "id": "honda_vigor",

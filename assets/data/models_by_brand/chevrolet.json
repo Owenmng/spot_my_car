@@ -35,7 +35,7 @@
   {
    "id": "chevrolet_alero",
    "name": "Alero",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/1999_Chevrolet_%28Oldsmobile%29_Alero_%286284368414%29.jpg/1280px-1999_Chevrolet_%28Oldsmobile%29_Alero_%286284368414%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2004",
    "puissance_ch": 141,
    "vitesse_max_kmh": 200,
@@ -57,7 +57,10 @@
     "gasoline car",
     "internal combustion engine",
     "front-wheel drive"
-   ]
+   ],
+   "imageCredit": "Spanish Coches",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Chevrolet_(Oldsmobile)_Alero_(6284368414).jpg"
   },
   {
    "id": "chevrolet_astra",
@@ -125,7 +128,7 @@
   {
    "id": "chevrolet_astro_cargo",
    "name": "Astro Cargo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Chevrolet_Astro_Cargo_%2703-%2705.JPG/1280px-Chevrolet_Astro_Cargo_%2703-%2705.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 2005",
    "puissance_ch": 193,
    "vitesse_max_kmh": 150,
@@ -149,7 +152,10 @@
     "motor vehicle",
     "transportation",
     "cargo carrier"
-   ]
+   ],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Astro_Cargo_%2703-%2705.JPG"
   },
   {
    "id": "chevrolet_avalanche",
@@ -626,7 +632,7 @@
   {
    "id": "chevrolet_c10_custom",
    "name": "C-10 Custom",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Chevrolet_C-10_Custom_Deluxe_1977.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1973 - 1987",
    "puissance_ch": 175,
    "vitesse_max_kmh": 155,
@@ -650,7 +656,10 @@
     "vehicle",
     "1960s truck",
     "1970s truck"
-   ]
+   ],
+   "imageCredit": "papurojugarpool",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_C-10_Custom_Deluxe_1977.jpg"
   },
   {
    "id": "chevrolet_camaro",
@@ -1260,7 +1269,7 @@
   {
    "id": "chevrolet_colorado_zr2",
    "name": "Colorado ZR2",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/2023_Chevrolet_Colorado_ZR2.jpg/1280px-2023_Chevrolet_Colorado_ZR2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 308,
    "vitesse_max_kmh": 175,
@@ -1284,7 +1293,10 @@
     "american truck",
     "suv",
     "gmc canyon"
-   ]
+   ],
+   "imageCredit": "42-BRT",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Colorado_ZR2.jpg"
   },
   {
    "id": "chevrolet_corsa",
@@ -1704,7 +1716,7 @@
   {
    "id": "chevrolet_epica",
    "name": "Epica",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/CHEVROLET_EPICA_SECOND_GENERATION_China_%284%29.jpg/1280px-CHEVROLET_EPICA_SECOND_GENERATION_China_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2011",
    "puissance_ch": 143,
    "vitesse_max_kmh": 207,
@@ -1725,7 +1737,10 @@
     "motor vehicle",
     "land vehicle",
     "family car"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:CHEVROLET_EPICA_SECOND_GENERATION_China_(4).jpg"
   },
   {
    "id": "chevrolet_equinox",
@@ -1794,7 +1809,7 @@
   {
    "id": "chevrolet_equinox_premier",
    "name": "Equinox Premier",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2018_Chevrolet_Equinox_Premier_2_%2832696395495%29.jpg/1280px-2018_Chevrolet_Equinox_Premier_2_%2832696395495%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 252,
    "vitesse_max_kmh": 210,
@@ -1817,12 +1832,15 @@
     "gas powered",
     "internal combustion engine",
     "family suv"
-   ]
+   ],
+   "imageCredit": "Zytonits",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Chevrolet_Equinox_Premier_2_(32696395495).jpg"
   },
   {
    "id": "chevrolet_evanda",
    "name": "Evanda",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Chevrolet_Evanda_l_champagne.jpg/1280px-Chevrolet_Evanda_l_champagne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2006",
    "puissance_ch": 131,
    "vitesse_max_kmh": 200,
@@ -1846,7 +1864,10 @@
     "2000s car",
     "korean car",
     "daewoo"
-   ]
+   ],
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Evanda_l_champagne.jpg"
   },
   {
    "id": "chevrolet_geo_storm",
@@ -1879,7 +1900,7 @@
   {
    "id": "chevrolet_groove",
    "name": "Groove",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chevrolet_Groove.jpg/1280px-Chevrolet_Groove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 110,
    "vitesse_max_kmh": 170,
@@ -1902,7 +1923,10 @@
     "urban car",
     "small car",
     "city vehicle"
-   ]
+   ],
+   "imageCredit": "Erik (HASH) Hersman",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Groove.jpg"
   },
   {
    "id": "chevrolet_hhr",
@@ -2102,7 +2126,7 @@
   {
    "id": "chevrolet_lacetti",
    "name": "Lacetti",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/2020-2024_Chevrolet_Lacetti_sedan_silver_front.jpg/1280px-2020-2024_Chevrolet_Lacetti_sedan_silver_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2011",
    "puissance_ch": 109,
    "vitesse_max_kmh": 187,
@@ -2125,7 +2149,10 @@
     "hatchback",
     "family car",
     "affordable car"
-   ]
+   ],
+   "imageCredit": "ddgek",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020-2024_Chevrolet_Lacetti_sedan_silver_front.jpg"
   },
   {
    "id": "chevrolet_lanos",
@@ -2162,7 +2189,7 @@
   {
    "id": "chevrolet_lova",
    "name": "Lova",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Chevrolet_Lova_RV_IMG01.jpg/1280px-Chevrolet_Lova_RV_IMG01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2011",
    "puissance_ch": 94,
    "vitesse_max_kmh": 170,
@@ -2186,7 +2213,10 @@
     "eco-friendly car",
     "affordable car",
     "ev"
-   ]
+   ],
+   "imageCredit": "Quzhouliulian",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Lova_RV_IMG01.jpg"
   },
   {
    "id": "chevrolet_lumina",
@@ -2502,7 +2532,7 @@
   {
    "id": "chevrolet_monte_carlo_ss",
    "name": "Monte Carlo SS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Chevrolet_Monte_Carlo_SS_2000_Galaxy_Silver.jpg/1280px-Chevrolet_Monte_Carlo_SS_2000_Galaxy_Silver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1988, 2000 - 2007",
    "puissance_ch": 180,
    "vitesse_max_kmh": 210,
@@ -2528,7 +2558,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "LunaSol6",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Monte_Carlo_SS_2000_Galaxy_Silver.jpg"
   },
   {
    "id": "chevrolet_monza",
@@ -2565,7 +2598,7 @@
   {
    "id": "chevrolet_niva",
    "name": "Niva",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%BD%D1%83%D1%80%2C_Chevrolet_Niva_%D0%B2%D0%BE_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5_%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_16%D0%B0.jpg/1280px-%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%BD%D1%83%D1%80%2C_Chevrolet_Niva_%D0%B2%D0%BE_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5_%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_16%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2020",
    "puissance_ch": 80,
    "vitesse_max_kmh": 140,
@@ -2590,7 +2623,10 @@
     "vehicle",
     "4wd",
     "subcompact suv"
-   ]
+   ],
+   "imageCredit": "Nikolai Bulykin",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%BD%D1%83%D1%80,_Chevrolet_Niva_%D0%B2%D0%BE_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5_%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_16%D0%B0.jpg"
   },
   {
    "id": "chevrolet_nubira",
@@ -2688,7 +2724,7 @@
   {
    "id": "chevrolet_onix_plus",
    "name": "Onix Plus",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2022_Chevrolet_Onix_Plus_1.0_Premier_%28rear%29.jpg/1280px-2022_Chevrolet_Onix_Plus_1.0_Premier_%28rear%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 116,
    "vitesse_max_kmh": 185,
@@ -2710,12 +2746,15 @@
     "city car",
     "small car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Just a Man",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Onix_Plus_1.0_Premier_(rear).jpg"
   },
   {
    "id": "chevrolet_optra",
    "name": "Optra",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Chevrolet_Optra_facelift_02_Thailand_2022-03-24.jpg/1280px-Chevrolet_Optra_facelift_02_Thailand_2022-03-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2012",
    "puissance_ch": 121,
    "vitesse_max_kmh": 190,
@@ -2739,7 +2778,10 @@
     "family car",
     "sedan car",
     "affordable car"
-   ]
+   ],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Optra_facelift_02_Thailand_2022-03-24.jpg"
   },
   {
    "id": "chevrolet_orlando",
@@ -2775,7 +2817,7 @@
   {
    "id": "chevrolet_prizm",
    "name": "Prizm",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/1998_Chevrolet_Prizm_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1998 - 2002",
    "puissance_ch": 125,
    "vitesse_max_kmh": 180,
@@ -2798,7 +2840,10 @@
     "front-wheel drive",
     "four-door",
     "4-cylinder"
-   ]
+   ],
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1998_Chevrolet_Prizm_2.jpg"
   },
   {
    "id": "chevrolet_rezzo",
@@ -3176,7 +3221,7 @@
   {
    "id": "chevrolet_sonic",
    "name": "Sonic (Aveo T300)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Chevrolet_Sonic_delivery_vehicle_for_NEAR_DELIVERY.jpg/1280px-Chevrolet_Sonic_delivery_vehicle_for_NEAR_DELIVERY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2020",
    "puissance_ch": 115,
    "vitesse_max_kmh": 189,
@@ -3200,12 +3245,15 @@
     "used car",
     "second hand car",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Ser Amantio di Nicolao",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Sonic_delivery_vehicle_for_NEAR_DELIVERY.jpg"
   },
   {
    "id": "chevrolet_sonic_hatch",
    "name": "Sonic Hatch",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/%2712_Chevrolet_Sonic_Hatch_%28MIAS_%2712%29.jpg/1280px-%2712_Chevrolet_Sonic_Hatch_%28MIAS_%2712%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2020",
    "puissance_ch": 115,
    "vitesse_max_kmh": 185,
@@ -3226,12 +3274,15 @@
     "city car",
     "small car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2712_Chevrolet_Sonic_Hatch_(MIAS_%2712).jpg"
   },
   {
    "id": "chevrolet_sonic_rs",
    "name": "Sonic RS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/%2717_Chevrolet_Sonic_RS_Hatchback.jpg/1280px-%2717_Chevrolet_Sonic_RS_Hatchback.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2017",
    "puissance_ch": 138,
    "vitesse_max_kmh": 200,
@@ -3255,7 +3306,10 @@
     "turbocharged",
     "manual transmission",
     "sport compact"
-   ]
+   ],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2717_Chevrolet_Sonic_RS_Hatchback.jpg"
   },
   {
    "id": "chevrolet_spark",
@@ -3387,7 +3441,7 @@
   {
    "id": "chevrolet_ss",
    "name": "SS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/ChevroletSS-front.jpg/1280px-ChevroletSS-front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - 2017",
    "puissance_ch": 420,
    "vitesse_max_kmh": 250,
@@ -3411,7 +3465,10 @@
     "vehicle",
     "motor vehicle",
     "two-door"
-   ]
+   ],
+   "imageCredit": "Rich Niewiroski Jr.",
+   "imageLicense": "CC BY 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:ChevroletSS-front.jpg"
   },
   {
    "id": "chevrolet_ssr",
@@ -3448,7 +3505,7 @@
   {
    "id": "chevrolet_starcraft",
    "name": "Starcraft",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Chevrolet_Chevy_Van_20_STARCRAFT_%2823071508460%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1983 - 1995",
    "puissance_ch": 165,
    "vitesse_max_kmh": 155,
@@ -3472,7 +3529,10 @@
     "space vehicle",
     "starship",
     "spacecraft"
-   ]
+   ],
+   "imageCredit": "先従隗始",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Chevy_Van_20_STARCRAFT_(23071508460).jpg"
   },
   {
    "id": "chevrolet_suburban",
@@ -3572,7 +3632,7 @@
   {
    "id": "chevrolet_tahoe_ls",
    "name": "Tahoe LS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/2011_Chevrolet_Tahoe_LS_--_NHTSA.jpg/1280px-2011_Chevrolet_Tahoe_LS_--_NHTSA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 355,
    "vitesse_max_kmh": 180,
@@ -3596,12 +3656,15 @@
     "motor vehicle",
     "land vehicle",
     "american car"
-   ]
+   ],
+   "imageCredit": "U.S. National Highway Traffic Safety Administration",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Chevrolet_Tahoe_LS_--_NHTSA.jpg"
   },
   {
    "id": "chevrolet_tahoe_rst",
    "name": "Tahoe RST",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/23_Chevrolet_Tahoe_RST.jpg/1280px-23_Chevrolet_Tahoe_RST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 420,
    "vitesse_max_kmh": 185,
@@ -3625,7 +3688,10 @@
     "car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:23_Chevrolet_Tahoe_RST.jpg"
   },
   {
    "id": "chevrolet_tracker",

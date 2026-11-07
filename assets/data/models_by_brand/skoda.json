@@ -65,7 +65,7 @@
   {
    "id": "skoda_105_120",
    "name": "105/120",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/%C5%A0koda_105_oder_120%2C_CZ_2005%2C_noch_sehr_h%C3%A4ufig.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1976 - 1990",
    "puissance_ch": 52,
    "vitesse_max_kmh": 140,
@@ -89,7 +89,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Max schwalbe",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_105_oder_120,_CZ_2005,_noch_sehr_h%C3%A4ufig.JPG"
   },
   {
    "id": "skoda_110",
@@ -276,7 +279,7 @@
   {
    "id": "skoda_445",
    "name": "445",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%C5%A0koda_445_green.jpg/1280px-%C5%A0koda_445_green.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1957 - 1959",
    "puissance_ch": 45,
    "vitesse_max_kmh": 120,
@@ -297,7 +300,10 @@
     "city car",
     "subcompact car",
     "hatchback"
-   ]
+   ],
+   "imageCredit": "Addvisor",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_445_green.jpg"
   },
   {
    "id": "skoda_citigo",

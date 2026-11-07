@@ -774,7 +774,7 @@
   {
    "id": "lotus_evora_400",
    "name": "Evora 400",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/2016_Lotus_Evora_400.jpg/1280px-2016_Lotus_Evora_400.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2017",
    "puissance_ch": 400,
    "vitesse_max_kmh": 300,
@@ -798,12 +798,15 @@
     "400 hp",
     "v6 engine",
     "naturally aspirated"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Lotus_Evora_400.jpg"
   },
   {
    "id": "lotus_evora_gt430",
    "name": "Evora GT430",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2020_Lotus_Evora_GT430.jpg/1280px-2020_Lotus_Evora_GT430.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2021",
    "puissance_ch": 430,
    "vitesse_max_kmh": 305,
@@ -827,7 +830,10 @@
     "two-seater",
     "gt car",
     "high-performance car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Lotus_Evora_GT430.jpg"
   },
   {
    "id": "lotus_excel",
@@ -959,7 +965,7 @@
   {
    "id": "lotus_exige_s3",
    "name": "Exige S3",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Lotus_Exige_S1%2C_Elise_S3%2C_Elise_S2%2C_Evora.jpg/1280px-Lotus_Exige_S1%2C_Elise_S3%2C_Elise_S2%2C_Evora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2015",
    "puissance_ch": 345,
    "vitesse_max_kmh": 274,
@@ -983,7 +989,10 @@
     "lotus",
     "exige",
     "s3"
-   ]
+   ],
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_Exige_S1,_Elise_S3,_Elise_S2,_Evora.jpg"
   },
   {
    "id": "lotus_exige_sport_350",

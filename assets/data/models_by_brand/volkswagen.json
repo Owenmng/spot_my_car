@@ -162,7 +162,7 @@
   {
    "id": "volkswagen_atlas-tanoak",
    "name": "Atlas Tanoak (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Volkswagen_Atlas_Tanoak_rear_4.2.18.jpg/1280px-Volkswagen_Atlas_Tanoak_rear_4.2.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018",
    "puissance_ch": 280,
    "vitesse_max_kmh": "non renseigné",
@@ -185,7 +185,10 @@
     "concept vehicle",
     "off-road",
     "heavy-duty truck"
-   ]
+   ],
+   "imageCredit": "Kevauto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Atlas_Tanoak_rear_4.2.18.jpg"
   },
   {
    "id": "volkswagen_beetle",
@@ -346,7 +349,7 @@
   {
    "id": "volkswagen_caravelle",
    "name": "Caravelle",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/VOLKSWAGEN_T6_CARAVELLE_China.jpg/1280px-VOLKSWAGEN_T6_CARAVELLE_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - Aujourd'hui",
    "puissance_ch": 150,
    "vitesse_max_kmh": 182,
@@ -369,7 +372,10 @@
     "vw caravelle",
     "volkswagen caravelle",
     "multivan"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VOLKSWAGEN_T6_CARAVELLE_China.jpg"
   },
   {
    "id": "volkswagen_corrado",
@@ -408,7 +414,7 @@
   {
    "id": "volkswagen_crossfox",
    "name": "CrossFox",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/VolkswagenCrossFox-Tandil.jpg/1280px-VolkswagenCrossFox-Tandil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - 2013",
    "puissance_ch": 101,
    "vitesse_max_kmh": 170,
@@ -431,7 +437,10 @@
     "used crossfox",
     "volkswagen crossfox",
     "fuel efficient car"
-   ]
+   ],
+   "imageCredit": "Ezarate",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VolkswagenCrossFox-Tandil.jpg"
   },
   {
    "id": "volkswagen_derby",
@@ -1144,7 +1153,7 @@
   {
    "id": "volkswagen_iltis",
    "name": "Iltis",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Volkswagen_Iltis_BW_2017-07-16_14-14-47.jpg/1280px-Volkswagen_Iltis_BW_2017-07-16_14-14-47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978 - 1988",
    "puissance_ch": 75,
    "vitesse_max_kmh": 130,
@@ -1168,7 +1177,10 @@
     "land vehicle",
     "military jeep",
     "high mobility"
-   ]
+   ],
+   "imageCredit": "Berthold Werner",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Iltis_BW_2017-07-16_14-14-47.jpg"
   },
   {
    "id": "volkswagen_futura",
@@ -1488,7 +1500,7 @@
   {
    "id": "volkswagen_nivus",
    "name": "Nivus (Taigo)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Volkswagen_Nivus_TSi_170_Comfortline_2025_%28facelift%29.jpg/1280px-Volkswagen_Nivus_TSi_170_Comfortline_2025_%28facelift%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 110,
    "vitesse_max_kmh": 183,
@@ -1511,12 +1523,15 @@
     "volkswagen",
     "gasoline car",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "RL GNZLZ",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Nivus_TSi_170_Comfortline_2025_(facelift).jpg"
   },
   {
    "id": "volkswagen_parati",
    "name": "Parati",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Volkswagen_Parati_Mk3_%28Pol%C3%ADcia_do_Distrito_Federal%29.jpg/1280px-Volkswagen_Parati_Mk3_%28Pol%C3%ADcia_do_Distrito_Federal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - 2013",
    "puissance_ch": 104,
    "vitesse_max_kmh": 173,
@@ -1540,7 +1555,10 @@
     "city car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Agência Brasil",
+   "imageLicense": "CC BY 3.0 br",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Parati_Mk3_(Pol%C3%ADcia_do_Distrito_Federal).jpg"
   },
   {
    "id": "volkswagen_passat",
@@ -1670,7 +1688,7 @@
   {
    "id": "volkswagen_pointer",
    "name": "Pointer",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Volkswagen_Pointer_Hatchback.JPG/1280px-Volkswagen_Pointer_Hatchback.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 1996",
    "puissance_ch": 90,
    "vitesse_max_kmh": 180,
@@ -1692,7 +1710,10 @@
     "small car",
     "microcar",
     "budget car"
-   ]
+   ],
+   "imageCredit": "Bull-Doser at English Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Pointer_Hatchback.JPG"
   },
   {
    "id": "volkswagen_polo",
@@ -1757,7 +1778,7 @@
   {
    "id": "volkswagen_rabbit",
    "name": "Rabbit (Golf Mk1)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Volkswagen_Golf_VIII_Rabbit_45_1X7A6982.jpg/1280px-Volkswagen_Golf_VIII_Rabbit_45_1X7A6982.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1974 - 1983",
    "puissance_ch": 70,
    "vitesse_max_kmh": 157,
@@ -1781,7 +1802,10 @@
     "vintage car",
     "small car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_Rabbit_45_1X7A6982.jpg"
   },
   {
    "id": "volkswagen_routan",
@@ -2320,7 +2344,7 @@
   {
    "id": "volkswagen_teramont-x",
    "name": "Teramont X",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/VOLKSWAGEN_TERAMONT_X_China_%283%29.jpg/1280px-VOLKSWAGEN_TERAMONT_X_China_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 220,
    "vitesse_max_kmh": 200,
@@ -2343,12 +2367,15 @@
     "mid-size crossover",
     "gas powered",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VOLKSWAGEN_TERAMONT_X_China_(3).jpg"
   },
   {
    "id": "volkswagen_tharu",
    "name": "Tharu",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Volkswagen_Tharu_005.jpg/1280px-Volkswagen_Tharu_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 150,
    "vitesse_max_kmh": 200,
@@ -2371,7 +2398,10 @@
     "4x4",
     "all-wheel drive",
     "off-road"
-   ]
+   ],
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Tharu_005.jpg"
   },
   {
    "id": "volkswagen_tiguan",
@@ -2659,7 +2689,7 @@
   {
    "id": "volkswagen_w12",
    "name": "W12 Nardò (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Volkswagen_W12_Nardo_2001.jpg/1280px-Volkswagen_W12_Nardo_2001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001",
    "puissance_ch": 600,
    "vitesse_max_kmh": 357,
@@ -2683,12 +2713,15 @@
     "car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Lebubu93",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_W12_Nardo_2001.jpg"
   },
   {
    "id": "volkswagen_xl1",
    "name": "XL1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Volkswagen_XL1.jpg/1280px-Volkswagen_XL1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - 2016",
    "puissance_ch": 75,
    "vitesse_max_kmh": 160,
@@ -2714,7 +2747,10 @@
     "car",
     "land vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Thomas Wolf, www.foto-tw.de",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_XL1.jpg"
   },
   {
    "id": "volkswagen_vento-a05",

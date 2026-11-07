@@ -159,7 +159,7 @@
   {
    "id": "hyundai_azera",
    "name": "Azera",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Hyundai_Azera_IMG001.jpg/1280px-Hyundai_Azera_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2017",
    "puissance_ch": 290,
    "vitesse_max_kmh": 230,
@@ -183,7 +183,10 @@
     "executive car",
     "comfortable car",
     "reliable car"
-   ]
+   ],
+   "imageCredit": "Zotyefan",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Azera_IMG001.jpg"
   },
   {
    "id": "hyundai_bayon",
@@ -312,7 +315,7 @@
   {
    "id": "hyundai_coupe",
    "name": "Coupé (Tiburon)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Hyundai_Coupe_%28RD%3B_1996%29.jpg/1280px-Hyundai_Coupe_%28RD%3B_1996%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2009",
    "puissance_ch": 167,
    "vitesse_max_kmh": 218,
@@ -336,7 +339,10 @@
     "internal combustion engine",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Jakub CA",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Coupe_(RD;_1996).jpg"
   },
   {
    "id": "hyundai_creta",
@@ -660,7 +666,7 @@
   {
    "id": "hyundai_h100",
    "name": "H100",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Abondoned_Hyundai_H100.jpg/1280px-Abondoned_Hyundai_H100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 2004",
    "puissance_ch": 85,
    "vitesse_max_kmh": 140,
@@ -681,7 +687,10 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Goldenwabbit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abondoned_Hyundai_H100.jpg"
   },
   {
    "id": "hyundai_i10",
@@ -1135,7 +1144,7 @@
   {
    "id": "hyundai_ix55",
    "name": "ix55 (Veracruz)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Moscow%2C_Hyundai_ix55_%28Veracruz%29%2C_Sept_2025_01.jpg/1280px-Moscow%2C_Hyundai_ix55_%28Veracruz%29%2C_Sept_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2012",
    "puissance_ch": 239,
    "vitesse_max_kmh": 200,
@@ -1158,7 +1167,10 @@
     "motor vehicle",
     "gasoline",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Retired electrician",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow,_Hyundai_ix55_(Veracruz),_Sept_2025_01.jpg"
   },
   {
    "id": "hyundai_kona",
@@ -1290,7 +1302,7 @@
   {
    "id": "hyundai_le-fil-rouge",
    "name": "Le Fil Rouge (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Hyundai_Le_Fil_Rouge%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1442%29.jpg/1280px-Hyundai_Le_Fil_Rouge%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "Concept",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -1316,12 +1328,15 @@
     "engineering",
     "red",
     "fil rouge"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Le_Fil_Rouge,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1442).jpg"
   },
   {
    "id": "hyundai_matrix",
    "name": "Matrix",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Hyundai_Matrix_front_20080225.jpg/1280px-Hyundai_Matrix_front_20080225.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2010",
    "puissance_ch": 103,
    "vitesse_max_kmh": 170,
@@ -1343,7 +1358,10 @@
     "toyota matrix",
     "scion xb",
     "gasoline car"
-   ]
+   ],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Matrix_front_20080225.jpg"
   },
   {
    "id": "hyundai_mistra",
@@ -1665,7 +1683,7 @@
   {
    "id": "hyundai_santamo",
    "name": "Santamo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/00_Hyundai_Santamo_1.jpg/1280px-00_Hyundai_Santamo_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2003",
    "puissance_ch": 139,
    "vitesse_max_kmh": 180,
@@ -1689,7 +1707,10 @@
     "fuel-efficient car",
     "hybrid",
     "phev"
-   ]
+   ],
+   "imageCredit": "Benespit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:00_Hyundai_Santamo_1.jpg"
   },
   {
    "id": "hyundai_sonata",
@@ -1946,7 +1967,7 @@
   {
    "id": "hyundai_tucson_fuel_cell",
    "name": "Tucson Fuel Cell",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Hyundai_Tucson_ix_Fuel_Cell_LM_PE_Pure_White_%283%29.jpg/1280px-Hyundai_Tucson_ix_Fuel_Cell_LM_PE_Pure_White_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - 2018",
    "puissance_ch": 163,
    "vitesse_max_kmh": 160,
@@ -1970,7 +1991,10 @@
     "vehicle",
     "fcev",
     "hydrogen powered car"
-   ]
+   ],
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_ix_Fuel_Cell_LM_PE_Pure_White_(3).jpg"
   },
   {
    "id": "hyundai_veloster",

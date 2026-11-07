@@ -359,7 +359,7 @@
   {
    "id": "lexus_lf-1",
    "name": "LF-1 Limitless",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Lexus_LF-1_Limitless%3B_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A0399%29.jpg/1280px-Lexus_LF-1_Limitless%3B_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A0399%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 (Concept)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -384,7 +384,10 @@
     "suv",
     "automotive",
     "electric vehicle"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lexus_LF-1_Limitless;_GIMS_2018,_Le_Grand-Saconnex_(1X7A0399).jpg"
   },
   {
    "id": "lexus_lf-z",
@@ -582,7 +585,7 @@
   {
    "id": "lexus_nx",
    "name": "NX 450h+",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Lexus_NX_450h%2B_%28AAZH26%29_1X7A6042.jpg/1280px-Lexus_NX_450h%2B_%28AAZH26%29_1X7A6042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 309,
    "vitesse_max_kmh": 200,
@@ -607,12 +610,15 @@
     "vehicle",
     "automotive",
     "lexus"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lexus_NX_450h%2B_(AAZH26)_1X7A6042.jpg"
   },
   {
    "id": "lexus_nx_f_sport",
    "name": "NX F Sport",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/LEXUS_NX_200t_F-SPORT_China.jpg/1280px-LEXUS_NX_200t_F-SPORT_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 239,
    "vitesse_max_kmh": 200,
@@ -637,7 +643,10 @@
     "luxury car",
     "crossover",
     "hybrid"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LEXUS_NX_200t_F-SPORT_China.jpg"
   },
   {
    "id": "lexus_rc",
@@ -674,7 +683,7 @@
   {
    "id": "lexus_rc_f_track",
    "name": "RC F Track Edition",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Lexus_RC-F_Track_Edition_Genf_2019_1Y7A5848.jpg/1280px-Lexus_RC-F_Track_Edition_Genf_2019_1Y7A5848.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 471,
    "vitesse_max_kmh": 270,
@@ -698,7 +707,10 @@
     "japanese car",
     "muscle car",
     "v8"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lexus_RC-F_Track_Edition_Genf_2019_1Y7A5848.jpg"
   },
   {
    "id": "lexus_rx",
@@ -767,7 +779,7 @@
   {
    "id": "lexus_rz",
    "name": "RZ 450e",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Lexus_RZ_450e_%28XEBM15%29_1X7A0836.jpg/1280px-Lexus_RZ_450e_%28XEBM15%29_1X7A0836.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 313,
    "vitesse_max_kmh": 160,
@@ -792,7 +804,10 @@
     "car",
     "vehicle",
     "crossover"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lexus_RZ_450e_(XEBM15)_1X7A0836.jpg"
   },
   {
    "id": "lexus_sc",
@@ -828,7 +843,7 @@
   {
    "id": "lexus_tx",
    "name": "TX 500h F Sport",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/25_Lexus_TX_500h_F_Sport_Performance_Premium.jpg/1280px-25_Lexus_TX_500h_F_Sport_Performance_Premium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 371,
    "vitesse_max_kmh": 180,
@@ -853,7 +868,10 @@
     "hybrid vehicle",
     "hev",
     "sports sedan"
-   ]
+   ],
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:25_Lexus_TX_500h_F_Sport_Performance_Premium.jpg"
   },
   {
    "id": "lexus_ux",

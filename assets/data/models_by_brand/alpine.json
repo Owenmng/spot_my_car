@@ -3,7 +3,7 @@
   {
    "id": "alpine_1300",
    "name": "1300",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/1973_Alpine_A110_1300.jpg/1280px-1973_Alpine_A110_1300.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1975",
    "puissance_ch": 81,
    "vitesse_max_kmh": 190,
@@ -27,7 +27,10 @@
     "retro car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1973_Alpine_A110_1300.jpg"
   },
   {
    "id": "alpine_a106",
@@ -60,7 +63,7 @@
   {
    "id": "alpine_a106_mille_miglia",
    "name": "A106 Mille Miglia",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Renault_alpine_A106_Mille_Miles_%281957%29%2C_Mille_Miglia_speedometer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1956 - 1957",
    "puissance_ch": 50,
    "vitesse_max_kmh": 160,
@@ -84,7 +87,10 @@
     "a106",
     "1950s car",
     "two-seater"
-   ]
+   ],
+   "imageCredit": "Mark Geessink",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_alpine_A106_Mille_Miles_(1957),_Mille_Miglia_speedometer.jpg"
   },
   {
    "id": "alpine_a108",
@@ -372,7 +378,7 @@
   {
    "id": "alpine_a211",
    "name": "A211",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/1967_Alpine_Renault_A211_V8.jpg/1280px-1967_Alpine_Renault_A211_V8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1967",
    "puissance_ch": 320,
    "vitesse_max_kmh": 300,
@@ -394,12 +400,15 @@
     "executive car",
     "luxury car",
     "mid-size car"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1967_Alpine_Renault_A211_V8.jpg"
   },
   {
    "id": "alpine_a220",
    "name": "A220",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Paris_-_Retromobile_2013_-_Alpine_Renault_A220_-_1968_-_103.jpg/1280px-Paris_-_Retromobile_2013_-_Alpine_Renault_A220_-_1968_-_103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1969",
    "puissance_ch": 280,
    "vitesse_max_kmh": 290,
@@ -422,7 +431,10 @@
     "internal combustion engine",
     "premium compact",
     "sedan car"
-   ]
+   ],
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_Retromobile_2013_-_Alpine_Renault_A220_-_1968_-_103.jpg"
   },
   {
    "id": "alpine_a290",
@@ -577,7 +589,7 @@
   {
    "id": "alpine_a610",
    "name": "A610",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Alpine_A610_13.jpg/1280px-Alpine_A610_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1995",
    "puissance_ch": 250,
    "vitesse_max_kmh": 265,
@@ -601,12 +613,15 @@
     "vintage car",
     "two-seater",
     "rear-wheel drive"
-   ]
+   ],
+   "imageCredit": "GerdeeX",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_A610_13.jpg"
   },
   {
    "id": "alpine_berlinette",
    "name": "Berlinette",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Alpine_Renault_berlinette_BW_2.JPG/1280px-Alpine_Renault_berlinette_BW_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1977",
    "puissance_ch": 95,
    "vitesse_max_kmh": 190,
@@ -631,7 +646,10 @@
     "compact car",
     "1960s car",
     "1970s car"
-   ]
+   ],
+   "imageCredit": "Berthold Werner",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_Renault_berlinette_BW_2.JPG"
   },
   {
    "id": "alpine_gta",
@@ -669,7 +687,7 @@
   {
    "id": "alpine_gta_turbo",
    "name": "GTA Turbo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/1989_Renault_Alpine_GTA_V6_Turbo_BS_O24.jpg/1280px-1989_Renault_Alpine_GTA_V6_Turbo_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1990",
    "puissance_ch": 250,
    "vitesse_max_kmh": 260,
@@ -693,7 +711,10 @@
     "vintage car",
     "modified car",
     "hot rod"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_Renault_Alpine_GTA_V6_Turbo_BS_O24.jpg"
   },
   {
    "id": "alpine_m63",
@@ -730,7 +751,7 @@
   {
    "id": "alpine_m64",
    "name": "M64",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/1964_Alpine_M64_at_PB_2022.jpg/1280px-1964_Alpine_M64_at_PB_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1964 - 1964",
    "puissance_ch": 105,
    "vitesse_max_kmh": 250,
@@ -754,12 +775,15 @@
     "classic car",
     "vintage car",
     "muscle car"
-   ]
+   ],
+   "imageCredit": "Prova MO",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Alpine_M64_at_PB_2022.jpg"
   },
   {
    "id": "alpine_m65",
    "name": "M65",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/R%C3%A9tromobile_2016_-_Alpine_M65_-_1965_-_002.jpg/1280px-R%C3%A9tromobile_2016_-_Alpine_M65_-_1965_-_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965 - 1965",
    "puissance_ch": 115,
    "vitesse_max_kmh": 260,
@@ -783,7 +807,10 @@
     "two-seater",
     "gasoline car",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:R%C3%A9tromobile_2016_-_Alpine_M65_-_1965_-_002.jpg"
   },
   {
    "id": "alpine_a110-2017",

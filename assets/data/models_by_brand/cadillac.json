@@ -446,7 +446,7 @@
   {
    "id": "cadillac_ct4-v-blackwing",
    "name": "CT4-V Blackwing",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cadillac_CT4-V_Blackwing_WGI23_%28Front%29_01.jpg/1280px-Cadillac_CT4-V_Blackwing_WGI23_%28Front%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 472,
    "vitesse_max_kmh": 301,
@@ -470,7 +470,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "SmackJam",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_CT4-V_Blackwing_WGI23_(Front)_01.jpg"
   },
   {
    "id": "cadillac_ct5",
@@ -539,7 +542,7 @@
   {
    "id": "cadillac_ct5-v-blackwing",
    "name": "CT5-V Blackwing",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Cadillac_CT5-V_Blackwing_6DC79_Black_Raven_%2813%29.jpg/1280px-Cadillac_CT5-V_Blackwing_6DC79_Black_Raven_%2813%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 668,
    "vitesse_max_kmh": 322,
@@ -565,7 +568,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_CT5-V_Blackwing_6DC79_Black_Raven_(13).jpg"
   },
   {
    "id": "cadillac_ct6",
@@ -701,7 +707,7 @@
   {
    "id": "cadillac_deville",
    "name": "DeVille",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cadillac_Coupe_deVille_BW_1.JPG/1280px-Cadillac_Coupe_deVille_BW_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2005",
    "puissance_ch": 279,
    "vitesse_max_kmh": 210,
@@ -725,12 +731,15 @@
     "motor vehicle",
     "land vehicle",
     "executive car"
-   ]
+   ],
+   "imageCredit": "Berthold Werner",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Coupe_deVille_BW_1.JPG"
   },
   {
    "id": "cadillac_deville-concours",
    "name": "DeVille Concours",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/1999_Cadillac_DeVille_Concours_in_White_Diamond_Metallic%2C_Front_Left%2C_08-13-2022.jpg/1280px-1999_Cadillac_DeVille_Concours_in_White_Diamond_Metallic%2C_Front_Left%2C_08-13-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2005",
    "puissance_ch": 300,
    "vitesse_max_kmh": 215,
@@ -755,12 +764,15 @@
     "car",
     "motor vehicle",
     "executive car"
-   ]
+   ],
+   "imageCredit": "Elise240SX",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Cadillac_DeVille_Concours_in_White_Diamond_Metallic,_Front_Left,_08-13-2022.jpg"
   },
   {
    "id": "cadillac_deville-convertible",
    "name": "DeVille Convertible",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/1965_Cadillac_DeVille_Convertible_Classic-Gala_2022_1X7A0147.jpg/1280px-1965_Cadillac_DeVille_Convertible_Classic-Gala_2022_1X7A0147.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1949 - 1993",
    "puissance_ch": 190,
    "vitesse_max_kmh": 180,
@@ -784,7 +796,10 @@
     "collectible car",
     "vintage car",
     "muscle car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1965_Cadillac_DeVille_Convertible_Classic-Gala_2022_1X7A0147.jpg"
   },
   {
    "id": "cadillac_dts",
@@ -1264,7 +1279,7 @@
   {
    "id": "cadillac_model-b",
    "name": "Model B",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/1904_Cadillac_Model_B_2.jpg/1280px-1904_Cadillac_Model_B_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1904 - 1905",
    "puissance_ch": 15,
    "vitesse_max_kmh": 70,
@@ -1288,7 +1303,10 @@
     "affordable",
     "practical",
     "everyday car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1904_Cadillac_Model_B_2.jpg"
   },
   {
    "id": "cadillac_model-d",
@@ -1358,7 +1376,7 @@
   {
    "id": "cadillac_model-m",
    "name": "Model M",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cadillac_Model_M_Touring_1906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1906 - 1908",
    "puissance_ch": 30,
    "vitesse_max_kmh": 80,
@@ -1382,12 +1400,15 @@
     "phev",
     "eco-friendly car",
     "fuel-efficient car"
-   ]
+   ],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Model_M_Touring_1906.jpg"
   },
   {
    "id": "cadillac_model-s",
    "name": "Model S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Oldtimer-2013_Cadillac_Model_S_20130309_142348.JPG/1280px-Oldtimer-2013_Cadillac_Model_S_20130309_142348.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1907 - 1909",
    "puissance_ch": 40,
    "vitesse_max_kmh": 90,
@@ -1412,7 +1433,10 @@
     "ev",
     "high-performance",
     "luxury sedan"
-   ]
+   ],
+   "imageCredit": "Svetlov Artem",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_Cadillac_Model_S_20130309_142348.JPG"
   },
   {
    "id": "cadillac_optiq",
@@ -1703,7 +1727,7 @@
   {
    "id": "cadillac_sts",
    "name": "STS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2005-2007_Cadillac_STS.jpg/1280px-2005-2007_Cadillac_STS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2011",
    "puissance_ch": 325,
    "vitesse_max_kmh": 250,
@@ -1728,7 +1752,10 @@
     "all-wheel drive",
     "2005 cadillac sts",
     "2008 cadillac sts"
-   ]
+   ],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005-2007_Cadillac_STS.jpg"
   },
   {
    "id": "cadillac_sts-v",

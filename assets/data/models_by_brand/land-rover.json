@@ -98,7 +98,7 @@
   {
    "id": "land-rover_discovery",
    "name": "Discovery",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Land_Rover_Discovery_4_HSE_2016.jpg/1280px-Land_Rover_Discovery_4_HSE_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - Aujourd'hui",
    "puissance_ch": 300,
    "vitesse_max_kmh": 209,
@@ -122,12 +122,15 @@
     "discovery 5",
     "discovery 4",
     "british car"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016.jpg"
   },
   {
    "id": "land-rover_discovery_1",
    "name": "Discovery 1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Land_Rover_Discovery_4_HSE_2016.jpg/1280px-Land_Rover_Discovery_4_HSE_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - 1998",
    "puissance_ch": 182,
    "vitesse_max_kmh": 180,
@@ -152,12 +155,15 @@
     "car",
     "motor vehicle",
     "mid-size suv"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016.jpg"
   },
   {
    "id": "land-rover_discovery_3",
    "name": "Discovery 3",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/GAZ-3102_and_Land_Rover_Discovery_2007.jpg/1280px-GAZ-3102_and_Land_Rover_Discovery_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2009",
    "puissance_ch": 272,
    "vitesse_max_kmh": 200,
@@ -182,12 +188,15 @@
     "motor vehicle",
     "diesel",
     "petrol"
-   ]
+   ],
+   "imageCredit": "Kirill Borisenko",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:GAZ-3102_and_Land_Rover_Discovery_2007.jpg"
   },
   {
    "id": "land-rover_discovery_4",
    "name": "Discovery 4",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Land_Rover_Discovery_4_HSE_2016.jpg/1280px-Land_Rover_Discovery_4_HSE_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2016",
    "puissance_ch": 245,
    "vitesse_max_kmh": 195,
@@ -211,7 +220,10 @@
     "petrol",
     "all-wheel drive",
     "seven seater"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016.jpg"
   },
   {
    "id": "land-rover_discovery-sport",
@@ -437,7 +449,7 @@
   {
    "id": "land-rover_range-rover_l322",
    "name": "Range Rover L322",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/LAND_ROVER_RANGE_ROVER_%28L322%29_HONG_KONG.jpg/1280px-LAND_ROVER_RANGE_ROVER_%28L322%29_HONG_KONG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2012",
    "puissance_ch": 272,
    "vitesse_max_kmh": 210,
@@ -462,12 +474,15 @@
     "vehicle",
     "car",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LAND_ROVER_RANGE_ROVER_(L322)_HONG_KONG.jpg"
   },
   {
    "id": "land-rover_range-rover_p38",
    "name": "Range Rover P38",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/1995-1998_Land_Rover_Range_Rover_%28P38A%29_4.0_SE_wagon_05.jpg/1280px-1995-1998_Land_Rover_Range_Rover_%28P38A%29_4.0_SE_wagon_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2002",
    "puissance_ch": 193,
    "vitesse_max_kmh": 180,
@@ -492,7 +507,10 @@
     "land rover p38",
     "used range rover",
     "classic range rover"
-   ]
+   ],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1995-1998_Land_Rover_Range_Rover_(P38A)_4.0_SE_wagon_05.jpg"
   },
   {
    "id": "land-rover_range-rover-sport",
@@ -529,7 +547,7 @@
   {
    "id": "land-rover_range-rover_sport_svr",
    "name": "Range Rover Sport SVR",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Land_Rover_Range_Rover_Sport_SVR_L494_Corris_Grey_%281%29.jpg/1280px-Land_Rover_Range_Rover_Sport_SVR_L494_Corris_Grey_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 575,
    "vitesse_max_kmh": 283,
@@ -553,7 +571,10 @@
     "motor vehicle",
     "petrol",
     "gasoline"
-   ]
+   ],
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Range_Rover_Sport_SVR_L494_Corris_Grey_(1).jpg"
   },
   {
    "id": "land-rover_range-rover-velar",
@@ -650,7 +671,7 @@
   {
    "id": "land-rover_series-ii-iii",
    "name": "Series II / III",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Land_Rover_Series_III_%2816344953923%29.jpg/1280px-Land_Rover_Series_III_%2816344953923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1958 - 1985",
    "puissance_ch": 70,
    "vitesse_max_kmh": 110,
@@ -675,7 +696,10 @@
     "vehicle",
     "car",
     "all-terrain vehicle"
-   ]
+   ],
+   "imageCredit": "TuRbO_J from Adelaide, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Series_III_(16344953923).jpg"
   },
   {
    "id": "land-rover_range-rover-p38a",

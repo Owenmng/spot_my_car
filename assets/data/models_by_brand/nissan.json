@@ -3,7 +3,7 @@
   {
    "id": "nissan_100-nx",
    "name": "100 NX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Nissan_100_NX_%2831139426928%29.jpg/1280px-Nissan_100_NX_%2831139426928%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 1996",
    "puissance_ch": 143,
    "vitesse_max_kmh": 210,
@@ -27,7 +27,10 @@
     "rear-wheel drive",
     "nissan",
     "hatchback coupe"
-   ]
+   ],
+   "imageCredit": "Guillaume Vachey from Chalon sur Saone, France",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_100_NX_(31139426928).jpg"
   },
   {
    "id": "nissan_180-sx",
@@ -62,7 +65,7 @@
   {
    "id": "nissan_200-sx",
    "name": "200 SX (S14)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Nissan_200_SX_Boss%2C_EMS_23%2C_Essen_%28P1170083%29.jpg/1280px-Nissan_200_SX_Boss%2C_EMS_23%2C_Essen_%28P1170083%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 2002",
    "puissance_ch": 200,
    "vitesse_max_kmh": 235,
@@ -87,7 +90,10 @@
     "rear-wheel drive",
     "1990s car",
     "nissan 200sx s14"
-   ]
+   ],
+   "imageCredit": "MB-one",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_200_SX_Boss,_EMS_23,_Essen_(P1170083).jpg"
   },
   {
    "id": "nissan_200sx_s13",
@@ -158,7 +164,7 @@
   {
    "id": "nissan_280-zx",
    "name": "280 ZX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Nissan_280_ZX_%287593605880%29.jpg/1280px-Nissan_280_ZX_%287593605880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978 - 1983",
    "puissance_ch": 140,
    "vitesse_max_kmh": 207,
@@ -183,12 +189,15 @@
     "1970s car",
     "1980s car",
     "z car"
-   ]
+   ],
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_280_ZX_(7593605880).jpg"
   },
   {
    "id": "nissan_300-zx",
    "name": "300 ZX (Z32)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Nissan_300_ZX_%286004589201%29.jpg/1280px-Nissan_300_ZX_%286004589201%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - 2000",
    "puissance_ch": 283,
    "vitesse_max_kmh": 250,
@@ -214,7 +223,10 @@
     "gt car",
     "two seater",
     "sports coupe"
-   ]
+   ],
+   "imageCredit": "Spanish Coches",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_300_ZX_(6004589201).jpg"
   },
   {
    "id": "nissan_300c",
@@ -563,7 +575,7 @@
   {
    "id": "nissan_bassara",
    "name": "Bassara",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/1999_Nissan_Bassara_%28front%29.jpg/1280px-1999_Nissan_Bassara_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2003",
    "puissance_ch": 220,
    "vitesse_max_kmh": 180,
@@ -584,7 +596,10 @@
     "mid-size car",
     "family car",
     "city car"
-   ]
+   ],
+   "imageCredit": "User3204",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Nissan_Bassara_(front).jpg"
   },
   {
    "id": "nissan_be-1",
@@ -905,7 +920,7 @@
   {
    "id": "nissan_dualis",
    "name": "Dualis",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/2011_Nissan_Dualis_%28J10_Series_II_MY10%29_ST_wagon_%2817040068335%29.jpg/1280px-2011_Nissan_Dualis_%28J10_Series_II_MY10%29_ST_wagon_%2817040068335%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007-2013",
    "puissance_ch": 140,
    "vitesse_max_kmh": 190,
@@ -929,7 +944,10 @@
     "japanese car",
     "all-wheel drive",
     "four-wheel drive"
-   ]
+   ],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Nissan_Dualis_(J10_Series_II_MY10)_ST_wagon_(17040068335).jpg"
   },
   {
    "id": "nissan_elgrand",
@@ -1251,7 +1269,7 @@
   {
    "id": "nissan_n7",
    "name": "Hyper Force (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Nissan_Hyper_Force.jpg/1280px-Nissan_Hyper_Force.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023",
    "puissance_ch": 1360,
    "vitesse_max_kmh": "non renseigné",
@@ -1275,12 +1293,15 @@
     "futuristic car",
     "electric car",
     "high-performance car"
-   ]
+   ],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Hyper_Force.jpg"
   },
   {
    "id": "nissan_imq",
    "name": "IMq (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Nissan_IMq_Concept_Genf_2019_1Y7A5832.jpg/1280px-Nissan_IMq_Concept_Genf_2019_1Y7A5832.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019",
    "puissance_ch": 340,
    "vitesse_max_kmh": "non renseigné",
@@ -1304,12 +1325,15 @@
     "battery electric vehicle",
     "concept",
     "automotive"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_IMq_Concept_Genf_2019_1Y7A5832.jpg"
   },
   {
    "id": "nissan_imx",
    "name": "IMx (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Nissan_IMx_Kuro%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1326%29.jpg/1280px-Nissan_IMx_Kuro%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1326%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017",
    "puissance_ch": 435,
    "vitesse_max_kmh": "non renseigné",
@@ -1333,7 +1357,10 @@
     "automobile",
     "motor vehicle",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_IMx_Kuro,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1326).jpg"
   },
   {
    "id": "nissan_juke",
@@ -1401,7 +1428,7 @@
   {
    "id": "nissan_king-cab",
    "name": "King Cab",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/2014_Nissan_Frontier_SV_V6_4x4_King_Cab%2C_rear_left%2C_12-01-2022.jpg/1280px-2014_Nissan_Frontier_SV_V6_4x4_King_Cab%2C_rear_left%2C_12-01-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1997",
    "puissance_ch": 134,
    "vitesse_max_kmh": 160,
@@ -1422,7 +1449,10 @@
     "land vehicle",
     "compact truck",
     "mid-size truck"
-   ]
+   ],
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_Nissan_Frontier_SV_V6_4x4_King_Cab,_rear_left,_12-01-2022.jpg"
   },
   {
    "id": "nissan_lafesta",
@@ -1457,7 +1487,7 @@
   {
    "id": "nissan_langley",
    "name": "Langley",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Nissan_Langley_EXA_02.jpg/1280px-Nissan_Langley_EXA_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - 1990",
    "puissance_ch": 120,
    "vitesse_max_kmh": 180,
@@ -1479,7 +1509,10 @@
     "motor vehicle",
     "land vehicle",
     "transportation"
-   ]
+   ],
+   "imageCredit": "Freggs",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Langley_EXA_02.jpg"
   },
   {
    "id": "nissan_largo",
@@ -1826,7 +1859,7 @@
   {
    "id": "nissan_mistral",
    "name": "Mistral",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%93%D1%83%D0%BB%D1%8C%D0%B4%D0%B0%D0%BB%D0%B0%2C_Nissan_Mistral_%D0%BD%D0%B0_%D0%96%D0%B0%D0%BD%D1%81%D1%83%D0%B3%D1%83%D1%80%D0%BE%D0%B2%D0%B0.jpg/1280px-%D0%93%D1%83%D0%BB%D1%8C%D0%B4%D0%B0%D0%BB%D0%B0%2C_Nissan_Mistral_%D0%BD%D0%B0_%D0%96%D0%B0%D0%BD%D1%81%D1%83%D0%B3%D1%83%D1%80%D0%BE%D0%B2%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 2002",
    "puissance_ch": 100,
    "vitesse_max_kmh": 145,
@@ -1851,7 +1884,10 @@
     "hybrid",
     "electric",
     "plug-in hybrid"
-   ]
+   ],
+   "imageCredit": "Nikolai Bulykin",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%93%D1%83%D0%BB%D1%8C%D0%B4%D0%B0%D0%BB%D0%B0,_Nissan_Mistral_%D0%BD%D0%B0_%D0%96%D0%B0%D0%BD%D1%81%D1%83%D0%B3%D1%83%D1%80%D0%BE%D0%B2%D0%B0.jpg"
   },
   {
    "id": "nissan_moco",
@@ -2138,7 +2174,7 @@
   {
    "id": "nissan_pick-up",
    "name": "Pick-up (D21)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/1987_Nissan_D21_Pick-Up_%2821572920332%29.jpg/1280px-1987_Nissan_D21_Pick-Up_%2821572920332%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1997",
    "puissance_ch": 134,
    "vitesse_max_kmh": 160,
@@ -2161,7 +2197,10 @@
     "car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Nissan_D21_Pick-Up_(21572920332).jpg"
   },
   {
    "id": "nissan_pixo",
@@ -2511,7 +2550,7 @@
   {
    "id": "nissan_r-nessa",
    "name": "R'nessa",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/1999_Nissan_R%27Nessa_black_rear.jpg/1280px-1999_Nissan_R%27Nessa_black_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - 2001",
    "puissance_ch": 200,
    "vitesse_max_kmh": 180,
@@ -2535,7 +2574,10 @@
     "performance car",
     "sports car",
     "grand tourer"
-   ]
+   ],
+   "imageCredit": "Throwawayacc222",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Nissan_R%27Nessa_black_rear.jpg"
   },
   {
    "id": "nissan_rafe",
@@ -3050,7 +3092,7 @@
   {
    "id": "nissan_sway",
    "name": "Sway (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Nissan_Sway_-_wn%C4%99trze_%28MSP15%29.JPG/1280px-Nissan_Sway_-_wn%C4%99trze_%28MSP15%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -3075,7 +3117,10 @@
     "vehicle",
     "car",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Jakub \"Flyz1\" Maciejewski",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Sway_-_wn%C4%99trze_(MSP15).JPG"
   },
   {
    "id": "nissan_sylphy",
@@ -3176,7 +3221,7 @@
   {
    "id": "nissan_terrano",
    "name": "Terrano II",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Nissan_Terrano_II_rear.JPG/1280px-Nissan_Terrano_II_rear.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 2006",
    "puissance_ch": 125,
    "vitesse_max_kmh": 160,
@@ -3200,7 +3245,10 @@
     "rugged",
     "durable",
     "reliable"
-   ]
+   ],
+   "imageCredit": "Corvettec6r",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Terrano_II_rear.JPG"
   },
   {
    "id": "nissan_tiida",

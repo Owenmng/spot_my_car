@@ -298,7 +298,7 @@
   {
    "id": "ferrari_296",
    "name": "296 GTB",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Ferrari_296_GTB_1X7A6377.jpg/1280px-Ferrari_296_GTB_1X7A6377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 830,
    "vitesse_max_kmh": 330,
@@ -323,7 +323,10 @@
     "italian car",
     "car",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_296_GTB_1X7A6377.jpg"
   },
   {
    "id": "ferrari_208_308",
@@ -489,7 +492,7 @@
   {
    "id": "ferrari_365",
    "name": "365 GTB/4 Daytona",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Ferrari_365_GTB_4_Daytona%2C_Bj._1970_%282007-07-22%29.jpg/1280px-Ferrari_365_GTB_4_Daytona%2C_Bj._1970_%282007-07-22%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1973",
    "puissance_ch": 352,
    "vitesse_max_kmh": 280,
@@ -515,7 +518,10 @@
     "vehicle",
     "muscle car",
     "collectible car"
-   ]
+   ],
+   "imageCredit": "Spurzem - Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_365_GTB_4_Daytona,_Bj._1970_(2007-07-22).jpg"
   },
   {
    "id": "ferrari_375",
@@ -553,7 +559,7 @@
   {
    "id": "ferrari_400-gt",
    "name": "400 GT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/1979_Ferrari_400_GT_%2814788406226%29.jpg/1280px-1979_Ferrari_400_GT_%2814788406226%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1979",
    "puissance_ch": 340,
    "vitesse_max_kmh": 240,
@@ -577,7 +583,10 @@
     "maserati",
     "automobile",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Niels de Wit from Lunteren, The Netherlands",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_Ferrari_400_GT_(14788406226).jpg"
   },
   {
    "id": "ferrari_400",
@@ -611,7 +620,7 @@
   {
    "id": "ferrari_412",
    "name": "412",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Ferrari_412T2_2008_Goodwood.jpg/1280px-Ferrari_412T2_2008_Goodwood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1989",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -635,12 +644,15 @@
     "italian car",
     "1970s car",
     "family car"
-   ]
+   ],
+   "imageCredit": "Brian Snelson from Hockley, Essex, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_412T2_2008_Goodwood.jpg"
   },
   {
    "id": "ferrari_430-scuderia",
    "name": "430 Scuderia",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ferrari_430_Scuderia_Toulouse.jpg/1280px-Ferrari_430_Scuderia_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2009",
    "puissance_ch": 510,
    "vitesse_max_kmh": 320,
@@ -664,12 +676,15 @@
     "vehicle",
     "mid-engine",
     "two-seater"
-   ]
+   ],
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_430_Scuderia_Toulouse.jpg"
   },
   {
    "id": "ferrari_456",
    "name": "456M GT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ferrari_456M_GT_%2851958425738%29.jpg/1280px-Ferrari_456M_GT_%2851958425738%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 2003",
    "puissance_ch": 442,
    "vitesse_max_kmh": 302,
@@ -692,7 +707,10 @@
     "high-performance car",
     "italian car",
     "maserati"
-   ]
+   ],
+   "imageCredit": "Alexandre Prevot from Nancy, France",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_456M_GT_(51958425738).jpg"
   },
   {
    "id": "ferrari_458",
@@ -1150,7 +1168,7 @@
   {
    "id": "ferrari_812-comp",
    "name": "812 Competizione",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Ferrari_812_Competizione_Aperta.jpg/1280px-Ferrari_812_Competizione_Aperta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - 2024",
    "puissance_ch": 830,
    "vitesse_max_kmh": 340,
@@ -1174,7 +1192,10 @@
     "naturally aspirated",
     "italian car",
     "grand tourer"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_812_Competizione_Aperta.jpg"
   },
   {
    "id": "ferrari_812",
@@ -1334,7 +1355,7 @@
   {
    "id": "ferrari_dino-206",
    "name": "Dino 206 GT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/1969_Ferrari_Dino_206_GT_%2882647%29.jpg/1280px-1969_Ferrari_Dino_206_GT_%2882647%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1969",
    "puissance_ch": 180,
    "vitesse_max_kmh": 235,
@@ -1360,12 +1381,15 @@
     "collectible car",
     "car",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1969_Ferrari_Dino_206_GT_(82647).jpg"
   },
   {
    "id": "ferrari_dino",
    "name": "Dino 246 GT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ferrari_Dino_246_GT_Toulouse.jpg/1280px-Ferrari_Dino_246_GT_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1974",
    "puissance_ch": 195,
    "vitesse_max_kmh": 235,
@@ -1391,7 +1415,10 @@
     "vehicle",
     "collectible car",
     "luxury car"
-   ]
+   ],
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Dino_246_GT_Toulouse.jpg"
   },
   {
    "id": "ferrari_enzo",
@@ -1429,7 +1456,7 @@
   {
    "id": "ferrari_f12",
    "name": "F12berlinetta",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ferrari_F12berlinetta_DSC_6990.jpg/1280px-Ferrari_F12berlinetta_DSC_6990.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2017",
    "puissance_ch": 740,
    "vitesse_max_kmh": 340,
@@ -1454,12 +1481,15 @@
     "car",
     "vehicle",
     "mid-engine"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_F12berlinetta_DSC_6990.jpg"
   },
   {
    "id": "ferrari_f12-tdf",
    "name": "F12tdf",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ferrari_F12TDF_1.jpg/1280px-Ferrari_F12TDF_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2017",
    "puissance_ch": 780,
    "vitesse_max_kmh": 340,
@@ -1483,7 +1513,10 @@
     "car",
     "vehicle",
     "italian car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_F12TDF_1.jpg"
   },
   {
    "id": "ferrari_f355",
@@ -2006,7 +2039,7 @@
   {
    "id": "ferrari_portofino",
    "name": "Portofino M",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ferrari_Portofino_M_IMG_4351.jpg/1280px-Ferrari_Portofino_M_IMG_4351.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2023",
    "puissance_ch": 620,
    "vitesse_max_kmh": 320,
@@ -2030,7 +2063,10 @@
     "roadster",
     "two-seater",
     "mid-size car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Portofino_M_IMG_4351.jpg"
   },
   {
    "id": "ferrari_purosangue",
@@ -2132,7 +2168,7 @@
   {
    "id": "ferrari_sp48-unica",
    "name": "SP48 Unica",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/22_Ferrari_SP48_Unica.jpg/1280px-22_Ferrari_SP48_Unica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 (One-off)",
    "puissance_ch": 720,
    "vitesse_max_kmh": 340,
@@ -2153,7 +2189,10 @@
     "small car",
     "economy car",
     "fuel-efficient car"
-   ]
+   ],
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:22_Ferrari_SP48_Unica.jpg"
   },
   {
    "id": "ferrari_testarossa",

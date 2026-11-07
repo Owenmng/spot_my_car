@@ -34,7 +34,7 @@
   {
    "id": "opel_admiral",
    "name": "Admiral",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Opel_Admiral_Cabriolet%2C_Bauzeit_1937-1939_%2808.07.2007%29.jpg/1280px-Opel_Admiral_Cabriolet%2C_Bauzeit_1937-1939_%2808.07.2007%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1969 - 1977",
    "puissance_ch": 165,
    "vitesse_max_kmh": 190,
@@ -58,7 +58,10 @@
     "antique car",
     "american car",
     "muscle car"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Admiral_Cabriolet,_Bauzeit_1937-1939_(08.07.2007).jpg"
   },
   {
    "id": "opel_agila",
@@ -975,7 +978,7 @@
   {
    "id": "opel_flextreme",
    "name": "Flextreme (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Opel_Flextreme_Concept_%2814561266435%29.jpg/1280px-Opel_Flextreme_Concept_%2814561266435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008",
    "puissance_ch": 150,
    "vitesse_max_kmh": "non renseigné",
@@ -999,7 +1002,10 @@
     "land vehicle",
     "future car",
     "automotive technology"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar from Leiden, The Netherlands",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Flextreme_Concept_(14561266435).jpg"
   },
   {
    "id": "opel_frontera",
@@ -1035,7 +1041,7 @@
   {
    "id": "opel_frontera_sport",
    "name": "Frontera Sport",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Opel_Frontera_Sport_%2846091935051%29.jpg/1280px-Opel_Frontera_Sport_%2846091935051%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - 2004",
    "puissance_ch": 136,
    "vitesse_max_kmh": 164,
@@ -1060,7 +1066,10 @@
     "isuzu",
     "used car",
     "pre-owned car"
-   ]
+   ],
+   "imageCredit": "Guillaume Vachey from Chalon sur Saone, France",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Frontera_Sport_(46091935051).jpg"
   },
   {
    "id": "opel_grandland",
@@ -1131,7 +1140,7 @@
   {
    "id": "opel_gtc",
    "name": "GTC",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Opel_GTC_Concept_%28retouched%29.jpg/1280px-Opel_GTC_Concept_%28retouched%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2015",
    "puissance_ch": 240,
    "vitesse_max_kmh": 245,
@@ -1154,7 +1163,10 @@
     "two-seater",
     "convertible",
     "roadster"
-   ]
+   ],
+   "imageCredit": "Mats Lindh (fiskfisk) Derivative work MagentaGreen",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_GTC_Concept_(retouched).jpg"
   },
   {
    "id": "opel_insignia",
@@ -1191,7 +1203,7 @@
   {
    "id": "opel_insignia_opc",
    "name": "Insignia OPC",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Opel_Insignia_OPC%2C_Wiesbaden_%28LRM_20250710_163102%29.jpg/1280px-Opel_Insignia_OPC%2C_Wiesbaden_%28LRM_20250710_163102%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2017",
    "puissance_ch": 325,
    "vitesse_max_kmh": 270,
@@ -1216,7 +1228,10 @@
     "german car",
     "fast car",
     "powerful car"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Insignia_OPC,_Wiesbaden_(LRM_20250710_163102).jpg"
   },
   {
    "id": "opel_kadett",
@@ -1477,7 +1492,7 @@
   {
    "id": "opel_mokka_x",
    "name": "Mokka X",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Opel_Mokka_X_1.4T_Enjoy_2018_%2841703815875%29.jpg/1280px-Opel_Mokka_X_1.4T_Enjoy_2018_%2841703815875%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2020",
    "puissance_ch": 140,
    "vitesse_max_kmh": 205,
@@ -1501,12 +1516,15 @@
     "compact car",
     "petrol car",
     "diesel car"
-   ]
+   ],
+   "imageCredit": "RL GNZLZ from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Mokka_X_1.4T_Enjoy_2018_(41703815875).jpg"
   },
   {
    "id": "opel_monterey",
    "name": "Monterey",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Opel_Monterey_RS.jpg/1280px-Opel_Monterey_RS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 1999",
    "puissance_ch": 177,
    "vitesse_max_kmh": 170,
@@ -1529,7 +1547,10 @@
     "american suv",
     "gasoline suv",
     "hybrid suv"
-   ]
+   ],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Monterey_RS.jpg"
   },
   {
    "id": "opel_monza",
@@ -1696,7 +1717,7 @@
   {
    "id": "opel_senator_b",
    "name": "Senator B",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Opel_Senator_B_l_gold.jpg/1280px-Opel_Senator_B_l_gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1993",
    "puissance_ch": 204,
    "vitesse_max_kmh": 220,
@@ -1720,7 +1741,10 @@
     "opel senator",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Stahlkocher",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Senator_B_l_gold.jpg"
   },
   {
    "id": "opel_signum",
@@ -1944,7 +1968,7 @@
   {
    "id": "opel_vivaro",
    "name": "Vivaro",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Opel_Vivaro_C_IMG_8239.jpg/1280px-Opel_Vivaro_C_IMG_8239.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - Aujourd'hui",
    "puissance_ch": 145,
    "vitesse_max_kmh": 170,
@@ -1968,7 +1992,10 @@
     "vivaro",
     "opel vivaro",
     "renault vivaro"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Vivaro_C_IMG_8239.jpg"
   },
   {
    "id": "opel_zafira_a",
@@ -2070,7 +2097,7 @@
   {
    "id": "opel_zafira-life",
    "name": "Zafira Life",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Opel_Zafira_Life_%28Facelift%29_IMG_9905.jpg/1280px-Opel_Zafira_Life_%28Facelift%29_IMG_9905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 177,
    "vitesse_max_kmh": 185,
@@ -2095,7 +2122,10 @@
     "automotive",
     "seven seater",
     "eight seater"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Zafira_Life_(Facelift)_IMG_9905.jpg"
   },
   {
    "id": "opel_gt-roadster",

@@ -195,7 +195,7 @@
   {
    "id": "jeep_commander_phev",
    "name": "Commander PHEV",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Jeep_Grand_Commander_PHEV_001.jpg/1280px-Jeep_Grand_Commander_PHEV_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 240,
    "vitesse_max_kmh": 180,
@@ -220,7 +220,10 @@
     "hybrid vehicle",
     "off-road",
     "4x4"
-   ]
+   ],
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Commander_PHEV_001.jpg"
   },
   {
    "id": "jeep_compass",
@@ -257,7 +260,7 @@
   {
    "id": "jeep_dispatch",
    "name": "Dispatch",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/1976_Jeep_DJ_-_Dispatcher_-_AM_General_-_AMC_-_in_USPS_livery_-_at_Rambler_Ranch_3of3.jpg/1280px-1976_Jeep_DJ_-_Dispatcher_-_AM_General_-_AMC_-_in_USPS_livery_-_at_Rambler_Ranch_3of3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1946 - 1949",
    "puissance_ch": 60,
    "vitesse_max_kmh": 100,
@@ -280,12 +283,15 @@
     "transportation",
     "logistics",
     "fleet vehicle"
-   ]
+   ],
+   "imageCredit": "CZmarlin — Christopher Ziemnowicz, a photo credit would be appreciated if this image is used anywhere other than Wikiped",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1976_Jeep_DJ_-_Dispatcher_-_AM_General_-_AMC_-_in_USPS_livery_-_at_Rambler_Ranch_3of3.jpg"
   },
   {
    "id": "jeep_fc150",
    "name": "FC-150",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/1958_Jeep_FC-150%2C_front_right%2C_09-09-2023.jpg/1280px-1958_Jeep_FC-150%2C_front_right%2C_09-09-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1956 - 1965",
    "puissance_ch": 72,
    "vitesse_max_kmh": 105,
@@ -306,7 +312,10 @@
     "fc-150",
     "heavy-duty truck",
     "work truck"
-   ]
+   ],
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1958_Jeep_FC-150,_front_right,_09-09-2023.jpg"
   },
   {
    "id": "jeep_gladiator",
@@ -601,7 +610,7 @@
   {
    "id": "jeep_m715",
    "name": "M-715",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Kaiser-Jeep_M-715_%288650377962%29.jpg/1280px-Kaiser-Jeep_M-715_%288650377962%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1969",
    "puissance_ch": 145,
    "vitesse_max_kmh": 105,
@@ -627,7 +636,10 @@
     "car",
     "land vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Spanish Coches",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kaiser-Jeep_M-715_(8650377962).jpg"
   },
   {
    "id": "jeep_meridian",
@@ -819,7 +831,7 @@
   {
    "id": "jeep_wagoneer-s",
    "name": "Wagoneer S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/24_Jeep_Wagoneer_S_Launch_Edition.jpg/1280px-24_Jeep_Wagoneer_S_Launch_Edition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "puissance_ch": 608,
    "vitesse_max_kmh": 200,
@@ -844,12 +856,15 @@
     "performance suv",
     "grand wagoneer",
     "jeep wagoneer s"
-   ]
+   ],
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:24_Jeep_Wagoneer_S_Launch_Edition.jpg"
   },
   {
    "id": "jeep_willys",
    "name": "Willys MB",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Jeep_Willys_MB.jpg/1280px-Jeep_Willys_MB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1941 - 1945",
    "puissance_ch": 60,
    "vitesse_max_kmh": 105,
@@ -875,7 +890,10 @@
     "general purpose vehicle",
     "car",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Willys_MB.jpg"
   },
   {
    "id": "jeep_wrangler",

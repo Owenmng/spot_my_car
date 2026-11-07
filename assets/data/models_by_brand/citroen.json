@@ -3,7 +3,7 @@
   {
    "id": "citroen_2-cv",
    "name": "2 CV",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Citro%C3%ABn_2_CV_Charleston_%282015-08-29_3174_b%29.jpg/1280px-Citro%C3%ABn_2_CV_Charleston_%282015-08-29_3174_b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1948 - 1990",
    "puissance_ch": 29,
    "vitesse_max_kmh": 115,
@@ -29,7 +29,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_2_CV_Charleston_(2015-08-29_3174_b).jpg"
   },
   {
    "id": "citroen_acadiane",
@@ -574,7 +577,7 @@
   {
    "id": "citroen_c25",
    "name": "C25",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Citroen_C25_%2825724751148%29_%28cropped%29.jpg/1280px-Citroen_C25_%2825724751148%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1993",
    "puissance_ch": 72,
    "vitesse_max_kmh": 140,
@@ -597,7 +600,10 @@
     "car",
     "motor vehicle",
     "transportation"
-   ]
+   ],
+   "imageCredit": "Guillaume Vachey",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_C25_(25724751148)_(cropped).jpg"
   },
   {
    "id": "citroen_c3",
@@ -1078,7 +1084,7 @@
   {
    "id": "citroen_cx_gti",
    "name": "CX GTI",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Citro%C3%ABn_CX_GTi_1X7A2537.jpg/1280px-Citro%C3%ABn_CX_GTi_1X7A2537.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1989",
    "puissance_ch": 128,
    "vitesse_max_kmh": 195,
@@ -1102,7 +1108,10 @@
     "1970s car",
     "gti",
     "sports car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_CX_GTi_1X7A2537.jpg"
   },
   {
    "id": "citroen_ds",
@@ -1267,7 +1276,7 @@
   {
    "id": "citroen_ds5",
    "name": "DS5",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Citro%C3%ABn_DS5%2C_Bj._2013_%282017-08-12_r%29.JPG/1280px-Citro%C3%ABn_DS5%2C_Bj._2013_%282017-08-12_r%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2015",
    "puissance_ch": 156,
    "vitesse_max_kmh": 202,
@@ -1291,7 +1300,10 @@
     "petrol",
     "executive car",
     "family car"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_DS5,_Bj._2013_(2017-08-12_r).JPG"
   },
   {
    "id": "citroen_dyane",
@@ -1360,7 +1372,7 @@
   {
    "id": "citroen_evasion",
    "name": "Evasion",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Citroen_Evasion_%2835976%29.jpg/1280px-Citroen_Evasion_%2835976%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2002",
    "puissance_ch": 121,
    "vitesse_max_kmh": 177,
@@ -1384,12 +1396,15 @@
     "large car",
     "people carrier",
     "seven seater"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_Evasion_(35976).jpg"
   },
   {
    "id": "citroen_evasion_2.0",
    "name": "Evasion 2.0",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/1995_Citro%C3%ABn_Evasion_2.0i_X_%2815896535335%29.jpg/1280px-1995_Citro%C3%ABn_Evasion_2.0i_X_%2815896535335%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2002",
    "puissance_ch": 132,
    "vitesse_max_kmh": 180,
@@ -1415,7 +1430,10 @@
     "citroën evasion",
     "1990s car",
     "estate car"
-   ]
+   ],
+   "imageCredit": "Niels de Wit from Lunteren, The Netherlands",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1995_Citro%C3%ABn_Evasion_2.0i_X_(15896535335).jpg"
   },
   {
    "id": "citroen_faf",
@@ -1547,7 +1565,7 @@
   {
    "id": "citroen_gsa",
    "name": "GSA",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/1982_Citro%C3%ABn_GSA_Club.jpg/1280px-1982_Citro%C3%ABn_GSA_Club.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1979 - 1986",
    "puissance_ch": 72,
    "vitesse_max_kmh": 168,
@@ -1571,7 +1589,10 @@
     "vehicle",
     "motor vehicle",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1982_Citro%C3%ABn_GSA_Club.jpg"
   },
   {
    "id": "citroen_hippy",
@@ -1605,7 +1626,7 @@
   {
    "id": "citroen_hy",
    "name": "HY",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Citro%C3%ABn_HY_food_van.jpg/1280px-Citro%C3%ABn_HY_food_van.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1947 - 1981",
    "puissance_ch": 48,
    "vitesse_max_kmh": 100,
@@ -1629,7 +1650,10 @@
     "hybrid technology",
     "phev",
     "alternative fuel vehicle"
-   ]
+   ],
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_HY_food_van.jpg"
   },
   {
    "id": "citroen_id",
@@ -1761,7 +1785,7 @@
   {
    "id": "citroen_ln",
    "name": "LN",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/1978_Citro%C3%ABn_LN_0.6.jpg/1280px-1978_Citro%C3%ABn_LN_0.6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1986",
    "puissance_ch": 50,
    "vitesse_max_kmh": 144,
@@ -1782,7 +1806,10 @@
     "hatchback",
     "economy car",
     "small car"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1978_Citro%C3%ABn_LN_0.6.jpg"
   },
   {
    "id": "citroen_lna",
@@ -2142,7 +2169,7 @@
   {
    "id": "citroen_visa_gti",
    "name": "Visa GTI",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/1987_Citroen_Visa_GTi_BS_O24.jpg/1280px-1987_Citroen_Visa_GTi_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1984 - 1988",
    "puissance_ch": 105,
    "vitesse_max_kmh": 185,
@@ -2166,7 +2193,10 @@
     "car",
     "vehicle",
     "french car"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Citroen_Visa_GTi_BS_O24.jpg"
   },
   {
    "id": "citroen_xantia",

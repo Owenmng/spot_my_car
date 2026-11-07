@@ -35,7 +35,7 @@
   {
    "id": "abarth_500",
    "name": "500",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Abarth_500%2C_Motortreff_Bella_Italia_2024%2C_Munich_%28P1190451%29.jpg/1280px-Abarth_500%2C_Motortreff_Bella_Italia_2024%2C_Munich_%28P1190451%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - Aujourd'hui",
    "puissance_ch": 135,
    "vitesse_max_kmh": 205,
@@ -60,7 +60,10 @@
     "iconic car",
     "500 abarth",
     "electric fiat 500"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_500,_Motortreff_Bella_Italia_2024,_Munich_(P1190451).jpg"
   },
   {
    "id": "abarth_500_assaetto",
@@ -125,7 +128,7 @@
   {
    "id": "abarth_500e",
    "name": "500e",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Abarth_500e_IMG_7996.jpg/1280px-Abarth_500e_IMG_7996.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 155,
    "vitesse_max_kmh": 155,
@@ -150,7 +153,10 @@
     "fiat",
     "italian car",
     "compact car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_500e_IMG_7996.jpg"
   },
   {
    "id": "abarth_595",
@@ -187,7 +193,7 @@
   {
    "id": "abarth_595_competizione",
    "name": "595 Competizione",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Abarth_595_Competizione_2020.jpg/1280px-Abarth_595_Competizione_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - Aujourd'hui",
    "puissance_ch": 180,
    "vitesse_max_kmh": 225,
@@ -211,7 +217,10 @@
     "turbo",
     "fiat",
     "abarth"
-   ]
+   ],
+   "imageCredit": "Unklemerk",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_595_Competizione_2020.jpg"
   },
   {
    "id": "abarth_595_espresso",
@@ -245,7 +254,7 @@
   {
    "id": "abarth_595_esseesse",
    "name": "595 esseesse",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Fiat_Abarth_595_esseesse_IMG_3014.jpg/1280px-Fiat_Abarth_595_esseesse_IMG_3014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2015",
    "puissance_ch": 160,
    "vitesse_max_kmh": 215,
@@ -269,7 +278,10 @@
     "turbo",
     "small car",
     "hot hatch"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Abarth_595_esseesse_IMG_3014.jpg"
   },
   {
    "id": "abarth_600e",
@@ -306,7 +318,7 @@
   {
    "id": "abarth_695",
    "name": "695",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/2016_Abarth_695_Biposto_Rosso_Officina.jpg/1280px-2016_Abarth_695_Biposto_Rosso_Officina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 180,
    "vitesse_max_kmh": 225,
@@ -330,12 +342,15 @@
     "vehicle",
     "microcar",
     "two-seater"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Abarth_695_Biposto_Rosso_Officina.jpg"
   },
   {
    "id": "abarth_fastback",
    "name": "Fastback",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Abarth_Fastback_2026.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 185,
    "vitesse_max_kmh": 220,
@@ -359,12 +374,15 @@
     "hatchback",
     "automobile",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Galleti14",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Fastback_2026.png"
   },
   {
    "id": "abarth_grande_punto",
    "name": "Grande Punto",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Abarth_Grande_Punto_White.jpg/1280px-Abarth_Grande_Punto_White.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2010",
    "puissance_ch": 155,
    "vitesse_max_kmh": 207,
@@ -387,12 +405,15 @@
     "used car",
     "small car",
     "second hand car"
-   ]
+   ],
+   "imageCredit": "K2025",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Grande_Punto_White.jpg"
   },
   {
    "id": "abarth_grande_punto_s2000",
    "name": "Grande Punto S2000",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/2008_Rally_Costa_Smeralda_-_Travaglia%2C_Granai_-_Abarth_Grande_Punto_S2000.jpg/1280px-2008_Rally_Costa_Smeralda_-_Travaglia%2C_Granai_-_Abarth_Grande_Punto_S2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2009",
    "puissance_ch": 280,
    "vitesse_max_kmh": 240,
@@ -416,12 +437,15 @@
     "racing car",
     "group a rally",
     "italian car"
-   ]
+   ],
+   "imageCredit": "Bart84 at Italian Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2008_Rally_Costa_Smeralda_-_Travaglia,_Granai_-_Abarth_Grande_Punto_S2000.jpg"
   },
   {
    "id": "abarth_pulse",
    "name": "Pulse",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/2025_Abarth_Pulse_1.3_Turbo_270_%281%29.jpg/1280px-2025_Abarth_Pulse_1.3_Turbo_270_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 185,
    "vitesse_max_kmh": 215,
@@ -445,12 +469,15 @@
     "phev",
     "fuel efficient",
     "affordable car"
-   ]
+   ],
+   "imageCredit": "Just a Man",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Abarth_Pulse_1.3_Turbo_270_(1).jpg"
   },
   {
    "id": "abarth_punto",
    "name": "Punto",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Abarth_Punto_Evo_-_Flickr_-_David_Villarreal_Fern%C3%A1ndez.jpg/1280px-Abarth_Punto_Evo_-_Flickr_-_David_Villarreal_Fern%C3%A1ndez.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2014",
    "puissance_ch": 155,
    "vitesse_max_kmh": 208,
@@ -473,7 +500,10 @@
     "small car",
     "economy car",
     "supermini"
-   ]
+   ],
+   "imageCredit": "David Villarreal Fernández",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Punto_Evo_-_Flickr_-_David_Villarreal_Fern%C3%A1ndez.jpg"
   },
   {
    "id": "abarth_punto_evo",
@@ -508,7 +538,7 @@
   {
    "id": "abarth_punto_supersport",
    "name": "Punto SuperSport",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/2012_Abarth_Punto_Evo_Supersport.jpg/1280px-2012_Abarth_Punto_Evo_Supersport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2014",
    "puissance_ch": 180,
    "vitesse_max_kmh": 225,
@@ -531,7 +561,10 @@
     "vehicle",
     "italian car",
     "subcompact car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Abarth_Punto_Evo_Supersport.jpg"
   },
   {
    "id": "abarth_punto_supersport_convertible",

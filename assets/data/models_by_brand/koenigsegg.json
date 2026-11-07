@@ -99,7 +99,7 @@
   {
    "id": "koenigsegg_ccgt",
    "name": "CCGT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Koenigsegg_CCGT_1.jpg/1280px-Koenigsegg_CCGT_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2008",
    "puissance_ch": 600,
    "vitesse_max_kmh": 330,
@@ -123,12 +123,15 @@
     "powerful",
     "fast",
     "ccgt"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CCGT_1.jpg"
   },
   {
    "id": "koenigsegg_ccr",
    "name": "CCR",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Koenigsegg_CCR_KN05EGG.jpg/1280px-Koenigsegg_CCR_KN05EGG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2006",
    "puissance_ch": 806,
    "vitesse_max_kmh": 395,
@@ -152,12 +155,15 @@
     "two-seater",
     "mid-engine",
     "handcrafted car"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CCR_KN05EGG.jpg"
   },
   {
    "id": "koenigsegg_ccx",
    "name": "CCX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Koenigsegg_CCX%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1713%29.jpg/1280px-Koenigsegg_CCX%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1713%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2010",
    "puissance_ch": 817,
    "vitesse_max_kmh": 395,
@@ -181,7 +187,10 @@
     "mid-engine",
     "swedish car",
     "koenigsegg"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CCX,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1713).jpg"
   },
   {
    "id": "koenigsegg_gemera",
@@ -283,7 +292,7 @@
   {
    "id": "koenigsegg_one_1",
    "name": "One:1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Koenigsegg_One-1_-_Gen%C3%A8ve_2014_-_01.jpg/1280px-Koenigsegg_One-1_-_Gen%C3%A8ve_2014_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - 2015",
    "puissance_ch": 1360,
    "vitesse_max_kmh": 440,
@@ -307,12 +316,15 @@
     "mega car",
     "one:1",
     "koenigsegg"
-   ]
+   ],
+   "imageCredit": "Eduardo Parise / eduparise",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koenigsegg_One-1_-_Gen%C3%A8ve_2014_-_01.jpg"
   },
   {
    "id": "koenigsegg_quant",
    "name": "Quant",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Koenigsegg_Quant_-_001.jpg/1280px-Koenigsegg_Quant_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "Concept",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -335,7 +347,10 @@
     "quant",
     "microcar",
     "urban car"
-   ]
+   ],
+   "imageCredit": "David Villarreal Fernández",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Quant_-_001.jpg"
   },
   {
    "id": "koenigsegg_regera",
@@ -372,7 +387,7 @@
   {
    "id": "koenigsegg_sadairs-spear",
    "name": "Sadair's Spear (Concept Render)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/2025_Koenigsegg_Sadair%27s_Spear_FOS25.jpg/1280px-2025_Koenigsegg_Sadair%27s_Spear_FOS25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "Concept",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -396,7 +411,10 @@
     "sadair's spear",
     "futuristic car",
     "design"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Koenigsegg_Sadair%27s_Spear_FOS25.jpg"
   },
   {
    "id": "koenigsegg_trevita",

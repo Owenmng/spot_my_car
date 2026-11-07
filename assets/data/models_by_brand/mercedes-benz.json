@@ -3,7 +3,7 @@
   {
    "id": "mercedes-benz__8",
    "name": "/8 (W114/W115)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Gedee_Car_Museum-Mercedes-Benz_W114-W115-05485.jpg/1280px-Gedee_Car_Museum-Mercedes-Benz_W114-W115-05485.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1976",
    "puissance_ch": 130,
    "vitesse_max_kmh": 180,
@@ -27,12 +27,15 @@
     "car",
     "vehicle",
     "1970s car"
-   ]
+   ],
+   "imageCredit": "Rainer Halama",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Gedee_Car_Museum-Mercedes-Benz_W114-W115-05485.jpg"
   },
   {
    "id": "mercedes-benz_w136",
    "name": "170 V (W136)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Mercedes-Benz_170_V_%28W136%29_%284598986552%29.jpg/1280px-Mercedes-Benz_170_V_%28W136%29_%284598986552%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1936 - 1955",
    "puissance_ch": 38,
    "vitesse_max_kmh": 108,
@@ -56,7 +59,10 @@
     "german car",
     "pre-war car",
     "1930s car"
-   ]
+   ],
+   "imageCredit": "Spanish Coches",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_170_V_(W136)_(4598986552).jpg"
   },
   {
    "id": "mercedes-benz_190",
@@ -127,7 +133,7 @@
   {
    "id": "mercedes-benz_w187",
    "name": "220 (W187)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Mercedes-Benz_220_S_Cabriolet_A_%282007-07-08_Sp_ret%29.jpg/1280px-Mercedes-Benz_220_S_Cabriolet_A_%282007-07-08_Sp_ret%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1951 - 1955",
    "puissance_ch": 80,
    "vitesse_max_kmh": 140,
@@ -150,7 +156,10 @@
     "vehicle",
     "motor vehicle",
     "german car"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_220_S_Cabriolet_A_(2007-07-08_Sp_ret).jpg"
   },
   {
    "id": "mercedes-benz_w180",
@@ -187,7 +196,7 @@
   {
    "id": "mercedes-benz_220_se",
    "name": "220 SE (W128)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Mercedes-Benz_220_SE_Cabrio_W_128_%282014-09-13_7002%29.JPG/1280px-Mercedes-Benz_220_SE_Cabrio_W_128_%282014-09-13_7002%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1958 - 1960",
    "puissance_ch": 115,
    "vitesse_max_kmh": 165,
@@ -211,7 +220,10 @@
     "vehicle",
     "mid-size car",
     "1960s car"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_220_SE_Cabrio_W_128_(2014-09-13_7002).JPG"
   },
   {
    "id": "mercedes-benz_230_sl",
@@ -250,7 +262,7 @@
   {
    "id": "mercedes-benz_250_ce",
    "name": "250 CE (W114)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Mercedes_250_CE_Sachs_Franken_Classic_2018_P5190488.jpg/1280px-Mercedes_250_CE_Sachs_Franken_Classic_2018_P5190488.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1976",
    "puissance_ch": 150,
    "vitesse_max_kmh": 190,
@@ -274,12 +286,15 @@
     "german car",
     "vintage car",
     "1970s car"
-   ]
+   ],
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_250_CE_Sachs_Franken_Classic_2018_P5190488.jpg"
   },
   {
    "id": "mercedes-benz_280_se_3.5",
    "name": "280 SE 3.5 (W108)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/1972_Mercedes-Benz_280_SE_%28W108%29_3.5_sedan_%2821620517723%29.jpg/1280px-1972_Mercedes-Benz_280_SE_%28W108%29_3.5_sedan_%2821620517723%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1969 - 1971",
    "puissance_ch": 200,
    "vitesse_max_kmh": 205,
@@ -304,7 +319,10 @@
     "vehicle",
     "executive car",
     "grand tourer"
-   ]
+   ],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Mercedes-Benz_280_SE_(W108)_3.5_sedan_(21620517723).jpg"
   },
   {
    "id": "mercedes-benz_w111",
@@ -403,7 +421,7 @@
   {
    "id": "mercedes-benz_w191",
    "name": "300 Sc (W191)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Mercedes-Benz_300_Sc_%281956%29_Classic-Gala_2021_1X7A0075.jpg/1280px-Mercedes-Benz_300_Sc_%281956%29_Classic-Gala_2021_1X7A0075.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1955 - 1958",
    "puissance_ch": 175,
    "vitesse_max_kmh": 180,
@@ -427,12 +445,15 @@
     "vehicle",
     "mid-size car",
     "vintage car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_Sc_(1956)_Classic-Gala_2021_1X7A0075.jpg"
   },
   {
    "id": "mercedes-benz_w112",
    "name": "300 SE (W112)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Mercedes-Benz_300_SE_%28W112%29_Classic-Gala_2021_1X7A0078.jpg/1280px-Mercedes-Benz_300_SE_%28W112%29_Classic-Gala_2021_1X7A0078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1961 - 1967",
    "puissance_ch": 160,
    "vitesse_max_kmh": 180,
@@ -457,7 +478,10 @@
     "vehicle",
     "motor vehicle",
     "1960s car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_SE_(W112)_Classic-Gala_2021_1X7A0078.jpg"
   },
   {
    "id": "mercedes-benz_w109",
@@ -628,7 +652,7 @@
   {
    "id": "mercedes-benz_400_se",
    "name": "400 SE (W140)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Mercedes-Benz_S-Klasse_%28W140%29_400_SE_%281992%29_%2853801397212%29.jpg/1280px-Mercedes-Benz_S-Klasse_%28W140%29_400_SE_%281992%29_%2853801397212%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1993",
    "puissance_ch": 286,
    "vitesse_max_kmh": 245,
@@ -654,12 +678,15 @@
     "motor vehicle",
     "classic car",
     "flagship"
-   ]
+   ],
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_S-Klasse_(W140)_400_SE_(1992)_(53801397212).jpg"
   },
   {
    "id": "mercedes-benz_500_sec",
    "name": "500 SEC (C126)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Mercedes-Benz_500_SEC%2C_EMS_2023%2C_Essen_%28P1160549%29.jpg/1280px-Mercedes-Benz_500_SEC%2C_EMS_2023%2C_Essen_%28P1160549%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1991",
    "puissance_ch": 245,
    "vitesse_max_kmh": 230,
@@ -684,7 +711,10 @@
     "german car",
     "1980s car",
     "sports coupe"
-   ]
+   ],
+   "imageCredit": "MB-one",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_500_SEC,_EMS_2023,_Essen_(P1160549).jpg"
   },
   {
    "id": "mercedes-benz_w29",
@@ -722,7 +752,7 @@
   {
    "id": "mercedes-benz_560_sec",
    "name": "560 SEC (C126)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1987_Mercedes-Benz_560_SEC_%28C126%29_%284986758107%29.jpg/1280px-1987_Mercedes-Benz_560_SEC_%28C126%29_%284986758107%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1991",
    "puissance_ch": 300,
    "vitesse_max_kmh": 250,
@@ -746,7 +776,10 @@
     "vehicle",
     "1980s car",
     "german car"
-   ]
+   ],
+   "imageCredit": "Spanish Coches",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Mercedes-Benz_560_SEC_(C126)_(4986758107).jpg"
   },
   {
    "id": "mercedes-benz_w100",
@@ -817,7 +850,7 @@
   {
    "id": "mercedes-benz_w150",
    "name": "770K (W150)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mercedes-Benz_770K_%28W150%29_of_Adolf_Hitler_-_Auto_%26_Technik_MUSEUM_SINSHEIM_%2890%29_%287090349879%29.jpg/1280px-Mercedes-Benz_770K_%28W150%29_of_Adolf_Hitler_-_Auto_%26_Technik_MUSEUM_SINSHEIM_%2890%29_%287090349879%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1938 - 1943",
    "puissance_ch": 230,
    "vitesse_max_kmh": 160,
@@ -843,7 +876,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Technik Museum Sinsheim und Speyer",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_770K_(W150)_of_Adolf_Hitler_-_Auto_%26_Technik_MUSEUM_SINSHEIM_(90)_(7090349879).jpg"
   },
   {
    "id": "mercedes-benz_a-class",
@@ -1464,7 +1500,7 @@
   {
    "id": "mercedes-benz_eqt",
    "name": "EQT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Mercedes-Benz_EQT_IMG_6086.jpg/1280px-Mercedes-Benz_EQT_IMG_6086.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 122,
    "vitesse_max_kmh": 132,
@@ -1488,7 +1524,10 @@
     "car",
     "mpv",
     "passenger vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_EQT_IMG_6086.jpg"
   },
   {
    "id": "mercedes-benz_eqv",
@@ -1527,7 +1566,7 @@
   {
    "id": "mercedes-benz_f-015",
    "name": "F 015 Luxury in Motion (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Mercedes-Benz_F015_Luxury_in_Motion_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2015",
    "puissance_ch": 272,
    "vitesse_max_kmh": 200,
@@ -1553,12 +1592,15 @@
     "motor vehicle",
     "executive car",
     "large car"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_F015_Luxury_in_Motion_Concept.jpg"
   },
   {
    "id": "mercedes-benz_f-200",
    "name": "F 200 Imagination (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/1996_Mercedes-Benz_F200_Imagination.jpg/1280px-1996_Mercedes-Benz_F200_Imagination.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996",
    "puissance_ch": 394,
    "vitesse_max_kmh": 250,
@@ -1583,7 +1625,10 @@
     "technology",
     "automotive",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Mercedes-Benz_F200_Imagination.jpg"
   },
   {
    "id": "mercedes-benz_fintail",
@@ -1883,7 +1928,7 @@
   {
    "id": "mercedes-benz_glk",
    "name": "GLK",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/MERCEDES-BENZ_GLK-CLASS_%28X204%29_China_%2811%29.jpg/1280px-MERCEDES-BENZ_GLK-CLASS_%28X204%29_China_%2811%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2015",
    "puissance_ch": 231,
    "vitesse_max_kmh": 220,
@@ -1906,12 +1951,15 @@
     "vehicle",
     "german car",
     "luxury car"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MERCEDES-BENZ_GLK-CLASS_(X204)_China_(11).jpg"
   },
   {
    "id": "mercedes-benz_gls",
    "name": "GLS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Moscow_-_June_2026_-_Mercedes_Benz_GLS_500_Matte_Metallic_Emerald_Green_Wrap.jpg/1280px-Moscow_-_June_2026_-_Mercedes_Benz_GLS_500_Matte_Metallic_Emerald_Green_Wrap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 381,
    "vitesse_max_kmh": 250,
@@ -1935,7 +1983,10 @@
     "car",
     "motor vehicle",
     "seven-seater suv"
-   ]
+   ],
+   "imageCredit": "Юрий Д.К.",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow_-_June_2026_-_Mercedes_Benz_GLS_500_Matte_Metallic_Emerald_Green_Wrap.jpg"
   },
   {
    "id": "mercedes-benz_m-class",
@@ -2100,7 +2151,7 @@
   {
    "id": "mercedes-benz_slc",
    "name": "SLC",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Mercedes_350_SLC_6170729.jpg/1280px-Mercedes_350_SLC_6170729.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2020",
    "puissance_ch": 245,
    "vitesse_max_kmh": 250,
@@ -2124,7 +2175,10 @@
     "vehicle",
     "mercedes benz",
     "premium car"
-   ]
+   ],
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_350_SLC_6170729.jpg"
   },
   {
    "id": "mercedes-benz_slk",

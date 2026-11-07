@@ -194,7 +194,7 @@
   {
    "id": "bentley_bacalar",
    "name": "Bacalar",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Bentley_Mulliner_Bacalar.jpg/1280px-Bentley_Mulliner_Bacalar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - 2022",
    "puissance_ch": 659,
    "vitesse_max_kmh": 322,
@@ -218,7 +218,10 @@
     "handcrafted",
     "two-seater",
     "performance car"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Mulliner_Bacalar.jpg"
   },
   {
    "id": "bentley_batur",
@@ -285,7 +288,7 @@
   {
    "id": "bentley_bentayga-hybrid",
    "name": "Bentayga Hybrid",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Bentley_Bentayga_Hybrid_FL_Verdant_%284%29.jpg/1280px-Bentley_Bentayga_Hybrid_FL_Verdant_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 449,
    "vitesse_max_kmh": 254,
@@ -311,7 +314,10 @@
     "hybrid suv",
     "electric vehicle",
     "bentley hybrid"
-   ]
+   ],
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Bentayga_Hybrid_FL_Verdant_(4).jpg"
   },
   {
    "id": "bentley_brooklands",
@@ -443,7 +449,7 @@
   {
    "id": "bentley_continental-gt-pikes-peak",
    "name": "Continental GT Pikes Peak",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2017_Bentley_Continental_GT_Pikes_Peak_Edition.jpg/1280px-2017_Bentley_Continental_GT_Pikes_Peak_Edition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 (Concept)",
    "puissance_ch": 750,
    "vitesse_max_kmh": 335,
@@ -467,7 +473,10 @@
     "high-performance",
     "two-seater",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Bentley_Continental_GT_Pikes_Peak_Edition.jpg"
   },
   {
    "id": "bentley_continental-gt-speed",
@@ -822,7 +831,7 @@
   {
    "id": "bentley_flying-spur-hybrid",
    "name": "Flying Spur Hybrid",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Bentley_Flying_Spur_Hybrid_%282019%29_1X7A0376.jpg/1280px-Bentley_Flying_Spur_Hybrid_%282019%29_1X7A0376.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 544,
    "vitesse_max_kmh": 285,
@@ -847,12 +856,15 @@
     "motor vehicle",
     "full-size car",
     "hybrid electric vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Flying_Spur_Hybrid_(2019)_1X7A0376.jpg"
   },
   {
    "id": "bentley_flying-spur-speed",
    "name": "Flying Spur Speed",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Bentley_Flying_Spur_W12_Speed_%282019%29_1X7A1636.jpg/1280px-Bentley_Flying_Spur_W12_Speed_%282019%29_1X7A1636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 635,
    "vitesse_max_kmh": 333,
@@ -877,7 +889,10 @@
     "high-performance",
     "fast car",
     "luxury sedan"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Flying_Spur_W12_Speed_(2019)_1X7A1636.jpg"
   },
   {
    "id": "bentley_flying-star",
@@ -1170,7 +1185,7 @@
   {
    "id": "bentley_t2",
    "name": "T2",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/1979_Bentley_T2_%2823485553438%29.jpg/1280px-1979_Bentley_T2_%2823485553438%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1977 - 1985",
    "puissance_ch": 220,
    "vitesse_max_kmh": 190,
@@ -1194,7 +1209,10 @@
     "commercial vehicle",
     "passenger van",
     "utility vehicle"
-   ]
+   ],
+   "imageCredit": "davocano",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_Bentley_T2_(23485553438).jpg"
   },
   {
    "id": "bentley_turbo-r",

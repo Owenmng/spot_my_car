@@ -66,7 +66,7 @@
   {
    "id": "peugeot_104_z",
    "name": "104 Z",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Peugeot_104_Style_Z%2C_1986.jpg/1280px-Peugeot_104_Style_Z%2C_1986.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1980",
    "puissance_ch": 60,
    "vitesse_max_kmh": 145,
@@ -89,7 +89,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Cjp24",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_104_Style_Z,_1986.jpg"
   },
   {
    "id": "peugeot_106",
@@ -125,7 +128,7 @@
   {
    "id": "peugeot_106_rallye",
    "name": "106 Rallye",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Peugeot_106_at_the_2005_Rallye_des_Images.jpg/1280px-Peugeot_106_at_the_2005_Rallye_des_Images.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 1996",
    "puissance_ch": 100,
    "vitesse_max_kmh": 185,
@@ -149,12 +152,15 @@
     "small car",
     "hot hatch",
     "sport car"
-   ]
+   ],
+   "imageCredit": "SunflowerYuri",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_106_at_the_2005_Rallye_des_Images.jpg"
   },
   {
    "id": "peugeot_106_xs",
    "name": "106 XS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Peugeot_106_XS%2C_rear_left_20090730.jpg/1280px-Peugeot_106_XS%2C_rear_left_20090730.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2003",
    "puissance_ch": 90,
    "vitesse_max_kmh": 180,
@@ -178,7 +184,10 @@
     "small car",
     "three-door",
     "petrol car"
-   ]
+   ],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_106_XS,_rear_left_20090730.jpg"
   },
   {
    "id": "peugeot_106_xsi",
@@ -629,7 +638,7 @@
   {
    "id": "peugeot_207_cc",
    "name": "207 CC",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Peugeot_207_CC_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2006 - 2014",
    "puissance_ch": 120,
    "vitesse_max_kmh": 195,
@@ -651,12 +660,15 @@
     "two seater",
     "small car",
     "city car"
-   ]
+   ],
+   "imageCredit": "User:Arnaud 25",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_207_CC_03.jpg"
   },
   {
    "id": "peugeot_207_rc",
    "name": "207 RC",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Peugeot_207_RC_Facelift_front_20100416.jpg/1280px-Peugeot_207_RC_Facelift_front_20100416.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2010",
    "puissance_ch": 175,
    "vitesse_max_kmh": 220,
@@ -681,12 +693,15 @@
     "207",
     "rc",
     "petrol car"
-   ]
+   ],
+   "imageCredit": "M 93",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_207_RC_Facelift_front_20100416.jpg"
   },
   {
    "id": "peugeot_207_sw",
    "name": "207 SW",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Peugeot_207_SW_Weststraat_2013.jpg/1280px-Peugeot_207_SW_Weststraat_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2014",
    "puissance_ch": 120,
    "vitesse_max_kmh": 195,
@@ -709,7 +724,10 @@
     "vehicle",
     "peugeot",
     "french car"
-   ]
+   ],
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_207_SW_Weststraat_2013.jpg"
   },
   {
    "id": "peugeot_208",
@@ -744,7 +762,7 @@
   {
    "id": "peugeot_208_gti",
    "name": "208 GTi",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Peugeot_208_GTi%2C_Auto_2025%2C_Zurich_%2820251029-P1073704%29.jpg/1280px-Peugeot_208_GTi%2C_Auto_2025%2C_Zurich_%2820251029-P1073704%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - 2019",
    "puissance_ch": 200,
    "vitesse_max_kmh": 230,
@@ -768,7 +786,10 @@
     "peugeot",
     "french car",
     "gti"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_208_GTi,_Auto_2025,_Zurich_(20251029-P1073704).jpg"
   },
   {
    "id": "peugeot_3008",
@@ -870,7 +891,7 @@
   {
    "id": "peugeot_305",
    "name": "305",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/1982_Peugeot_305.jpg/1280px-1982_Peugeot_305.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1977 - 1989",
    "puissance_ch": 94,
    "vitesse_max_kmh": 170,
@@ -894,7 +915,10 @@
     "1980s car",
     "family car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1982_Peugeot_305.jpg"
   },
   {
    "id": "peugeot_306",
@@ -932,7 +956,7 @@
   {
    "id": "peugeot_306_cabriolet",
    "name": "306 Cabriolet",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Peugeot_306_Cabriolet_%2849379718043%29.jpg/1280px-Peugeot_306_Cabriolet_%2849379718043%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2002",
    "puissance_ch": 110,
    "vitesse_max_kmh": 190,
@@ -956,12 +980,15 @@
     "classic car",
     "used car",
     "peugeot"
-   ]
+   ],
+   "imageCredit": "crash71100",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_306_Cabriolet_(49379718043).jpg"
   },
   {
    "id": "peugeot_306_s16",
    "name": "306 S16",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2014_Rally_Bohemia_Legend_-_Peugeot_306_S16_Maxi.jpg/1280px-2014_Rally_Bohemia_Legend_-_Peugeot_306_S16_Maxi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2002",
    "puissance_ch": 167,
    "vitesse_max_kmh": 220,
@@ -985,12 +1012,15 @@
     "french car",
     "petrol car",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Miloslav Rejha",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_Rally_Bohemia_Legend_-_Peugeot_306_S16_Maxi.jpg"
   },
   {
    "id": "peugeot_306_xsi",
    "name": "306 XSi",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/1999_Peugeot_306_XSi.jpg/1280px-1999_Peugeot_306_XSi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 1999",
    "puissance_ch": 135,
    "vitesse_max_kmh": 210,
@@ -1014,7 +1044,10 @@
     "peugeot",
     "sports hatchback",
     "classic car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Peugeot_306_XSi.jpg"
   },
   {
    "id": "peugeot_307",
@@ -1554,7 +1587,7 @@
   {
    "id": "peugeot_407_sw",
    "name": "407 SW",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Peugeot_407_SW_rear.JPG/1280px-Peugeot_407_SW_rear.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2011",
    "puissance_ch": 163,
    "vitesse_max_kmh": 210,
@@ -1577,7 +1610,10 @@
     "french car",
     "wagon",
     "hatchback"
-   ]
+   ],
+   "imageCredit": "M 93",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_407_SW_rear.JPG"
   },
   {
    "id": "peugeot_408",
@@ -2059,7 +2095,7 @@
   {
    "id": "peugeot_9x8",
    "name": "9X8 Hypercar",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/24_Heures_du_Mans_2026_Hypercar_No._93_Peugeot_9X8.jpg/1280px-24_Heures_du_Mans_2026_Hypercar_No._93_Peugeot_9X8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 (Compétition)",
    "puissance_ch": 680,
    "vitesse_max_kmh": 340,
@@ -2083,7 +2119,10 @@
     "vehicle",
     "land vehicle",
     "automotive"
-   ]
+   ],
+   "imageCredit": "T GOUREAU",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:24_Heures_du_Mans_2026_Hypercar_No._93_Peugeot_9X8.jpg"
   },
   {
    "id": "peugeot_bipper",
@@ -2281,7 +2320,7 @@
   {
    "id": "peugeot_pick-up",
    "name": "Pick Up",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Peugeot_504_pick_up_%2814326280638%29.jpg/1280px-Peugeot_504_pick_up_%2814326280638%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 115,
    "vitesse_max_kmh": 150,
@@ -2304,7 +2343,10 @@
     "work truck",
     "utility vehicle",
     "transportation"
-   ]
+   ],
+   "imageCredit": "Charlie from United Kingdom",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_504_pick_up_(14326280638).jpg"
   },
   {
    "id": "peugeot_rcz",
@@ -2373,7 +2415,7 @@
   {
    "id": "peugeot_rifter",
    "name": "Rifter",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2024_Peugeot_Rifter_IMG_9556.jpg/1280px-2024_Peugeot_Rifter_IMG_9556.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 110,
    "vitesse_max_kmh": 175,
@@ -2397,7 +2439,10 @@
     "compact van",
     "multi-purpose vehicle",
     "people carrier"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Peugeot_Rifter_IMG_9556.jpg"
   },
   {
    "id": "peugeot_traveller",

@@ -221,7 +221,7 @@
   {
    "id": "audi_a1-citycarver",
    "name": "A1 Citycarver",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Audi_A1_citycarver_1X7A0302.jpg/1280px-Audi_A1_citycarver_1X7A0302.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 150,
    "vitesse_max_kmh": 212,
@@ -244,7 +244,10 @@
     "city vehicle",
     "urban car",
     "compact car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A1_citycarver_1X7A0302.jpg"
   },
   {
    "id": "audi_a2",
@@ -632,7 +635,7 @@
   {
    "id": "audi_activesphere",
    "name": "Activesphere",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Audi_Activesphere_Concept_IAA_2023_1X7A0519.jpg/1280px-Audi_Activesphere_Concept_IAA_2023_1X7A0519.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 (Concept)",
    "puissance_ch": 435,
    "vitesse_max_kmh": 200,
@@ -658,12 +661,15 @@
     "future car",
     "vehicle",
     "automobile"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Activesphere_Concept_IAA_2023_1X7A0519.jpg"
   },
   {
    "id": "audi_aicon",
    "name": "Aicon",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Audi_Aicon%2C_IAA_2017%2C_Frankfurt_%281Y7A2896%29.jpg/1280px-Audi_Aicon%2C_IAA_2017%2C_Frankfurt_%281Y7A2896%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 (Concept)",
    "puissance_ch": 354,
    "vitesse_max_kmh": 130,
@@ -689,12 +695,15 @@
     "motor vehicle",
     "technology",
     "premium car"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Aicon,_IAA_2017,_Frankfurt_(1Y7A2896).jpg"
   },
   {
    "id": "audi_allroad",
    "name": "Allroad",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Audi_A6_Allroad_Quattro_C8_1X7A0301.jpg/1280px-Audi_A6_Allroad_Quattro_C8_1X7A0301.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - Aujourd'hui",
    "puissance_ch": 245,
    "vitesse_max_kmh": 234,
@@ -719,7 +728,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A6_Allroad_Quattro_C8_1X7A0301.jpg"
   },
   {
    "id": "audi_avantissimo",
@@ -785,7 +797,7 @@
   {
    "id": "audi_coupe",
    "name": "Coupé",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Audi_RS5_Coup%C3%A9_8T_IMG_3030_%28cropped%29.jpg/1280px-Audi_RS5_Coup%C3%A9_8T_IMG_3030_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - 1996",
    "puissance_ch": 133,
    "vitesse_max_kmh": 206,
@@ -809,7 +821,10 @@
     "muscle car",
     "sports coupe",
     "car model"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS5_Coup%C3%A9_8T_IMG_3030_(cropped).jpg"
   },
   {
    "id": "audi_e-tron",
@@ -945,7 +960,7 @@
   {
    "id": "audi_elaine",
    "name": "Elaine",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Audi_Elaine%2C_IAA_2017%2C_Frankfurt_%281Y7A2901%29.jpg/1280px-Audi_Elaine%2C_IAA_2017%2C_Frankfurt_%281Y7A2901%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 (Concept)",
    "puissance_ch": 503,
    "vitesse_max_kmh": 210,
@@ -969,7 +984,10 @@
     "phev",
     "eco-friendly car",
     "fuel-efficient car"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Elaine,_IAA_2017,_Frankfurt_(1Y7A2901).jpg"
   },
   {
    "id": "audi_fox",
@@ -1033,7 +1051,7 @@
   {
    "id": "audi_metroproject-quattro",
    "name": "Metroproject Quattro",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/2007_Audi_A1_metroproject_quattro_Goodwood%2C_2009_%2801%29.jpg/1280px-2007_Audi_A1_metroproject_quattro_Goodwood%2C_2009_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 (Concept)",
    "puissance_ch": 150,
    "vitesse_max_kmh": 201,
@@ -1057,12 +1075,15 @@
     "awd",
     "high-performance",
     "luxury compact"
-   ]
+   ],
+   "imageCredit": "Bahnfrend",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2007_Audi_A1_metroproject_quattro_Goodwood,_2009_(01).jpg"
   },
   {
    "id": "audi_nanuk-quattro-concept",
    "name": "Nanuk Quattro",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/IAA_2013_Audi_Nanuk_Quattro_%289834450873%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2013 (Concept)",
    "puissance_ch": 544,
    "vitesse_max_kmh": 305,
@@ -1086,12 +1107,15 @@
     "land vehicle",
     "high-performance",
     "sports utility vehicle"
-   ]
+   ],
+   "imageCredit": "MotorBlog from Ca, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:IAA_2013_Audi_Nanuk_Quattro_(9834450873).jpg"
   },
   {
    "id": "audi_nsu-ro-80",
    "name": "NSU RO 80",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Neckarsulm-AudiForum-NSU-Ro80.JPG/1280px-Neckarsulm-AudiForum-NSU-Ro80.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1977",
    "puissance_ch": 115,
    "vitesse_max_kmh": 180,
@@ -1117,7 +1141,10 @@
     "motor vehicle",
     "unique car",
     "unconventional car"
-   ]
+   ],
+   "imageCredit": "Joachim Köhler",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Neckarsulm-AudiForum-NSU-Ro80.JPG"
   },
   {
    "id": "audi_pb18",
@@ -1896,7 +1923,7 @@
   {
    "id": "audi_rs2",
    "name": "RS2 Avant",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Audi_RS2_Avant_MYLE_Festival_2025_DSC_9761.jpg/1280px-Audi_RS2_Avant_MYLE_Festival_2025_DSC_9761.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 1996",
    "puissance_ch": 315,
    "vitesse_max_kmh": 262,
@@ -1921,12 +1948,15 @@
     "estate car",
     "high-performance",
     "rally homologation"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS2_Avant_MYLE_Festival_2025_DSC_9761.jpg"
   },
   {
    "id": "audi_rs3",
    "name": "RS3",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Audi_RS3_8Y_Sedan_IMG_6030.jpg/1280px-Audi_RS3_8Y_Sedan_IMG_6030.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 400,
    "vitesse_max_kmh": 250,
@@ -1951,12 +1981,15 @@
     "five-door",
     "high-performance",
     "luxury compact"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS3_8Y_Sedan_IMG_6030.jpg"
   },
   {
    "id": "audi_rs3-sportback",
    "name": "RS3 Sportback",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Audi_RS3_Sportback_%2817332272616%29.jpg/1280px-Audi_RS3_Sportback_%2817332272616%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 400,
    "vitesse_max_kmh": 250,
@@ -1981,12 +2014,15 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Danny Galvez from Pinoso, España",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS3_Sportback_(17332272616).jpg"
   },
   {
    "id": "audi_rs4",
    "name": "RS4 Avant",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Audi_RS4_Avant_B9_%28FL%29_1X7A0349.jpg/1280px-Audi_RS4_Avant_B9_%28FL%29_1X7A0349.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - Aujourd'hui",
    "puissance_ch": 450,
    "vitesse_max_kmh": 250,
@@ -2011,7 +2047,10 @@
     "allroad",
     "high-performance",
     "turbocharged"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS4_Avant_B9_(FL)_1X7A0349.jpg"
   },
   {
    "id": "audi_rs5",
@@ -2048,7 +2087,7 @@
   {
    "id": "audi_rs6",
    "name": "RS6 Avant",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Audi_RS6_Avant_C8_1X7A0305.jpg/1280px-Audi_RS6_Avant_C8_1X7A0305.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - Aujourd'hui",
    "puissance_ch": 600,
    "vitesse_max_kmh": 250,
@@ -2072,7 +2111,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS6_Avant_C8_1X7A0305.jpg"
   },
   {
    "id": "audi_rs7",
@@ -2209,7 +2251,7 @@
   {
    "id": "audi_s3-sportback",
    "name": "S3 Sportback",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Audi_S3_8V_Sportback_Avignon_Motor_Festival_2014-03-23.jpg/1280px-Audi_S3_8V_Sportback_Avignon_Motor_Festival_2014-03-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - Aujourd'hui",
    "puissance_ch": 310,
    "vitesse_max_kmh": 250,
@@ -2233,7 +2275,10 @@
     "luxury car",
     "german car",
     "premium car"
-   ]
+   ],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S3_8V_Sportback_Avignon_Motor_Festival_2014-03-23.jpg"
   },
   {
    "id": "audi_s4",
@@ -2401,7 +2446,7 @@
   {
    "id": "audi_s6-avant",
    "name": "S6 Avant",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Audi_S6_Avant_C8_1X7A0304.jpg/1280px-Audi_S6_Avant_C8_1X7A0304.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - Aujourd'hui",
    "puissance_ch": 450,
    "vitesse_max_kmh": 250,
@@ -2425,7 +2470,10 @@
     "allroad",
     "german car",
     "sports wagon"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S6_Avant_C8_1X7A0304.jpg"
   },
   {
    "id": "audi_s6-e-tron",
@@ -2526,7 +2574,7 @@
   {
    "id": "audi_s8-plus",
    "name": "S8 Plus",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_S8_plus_%28D4%29_rear.jpg/1280px-Audi_S8_plus_%28D4%29_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2017",
    "puissance_ch": 605,
    "vitesse_max_kmh": 250,
@@ -2550,7 +2598,10 @@
     "v8",
     "twin-turbo",
     "high-performance"
-   ]
+   ],
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S8_plus_(D4)_rear.jpg"
   },
   {
    "id": "audi_skysphere",
@@ -2585,7 +2636,7 @@
   {
    "id": "audi_sq2",
    "name": "SQ2",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_SQ2_IAA_2019_JM_0584.jpg/1280px-Audi_SQ2_IAA_2019_JM_0584.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 300,
    "vitesse_max_kmh": 250,
@@ -2610,7 +2661,10 @@
     "all-wheel drive",
     "audi",
     "german car"
-   ]
+   ],
+   "imageCredit": "Johannes Maximilian",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_SQ2_IAA_2019_JM_0584.jpg"
   },
   {
    "id": "audi_sq5",
@@ -2713,7 +2767,7 @@
   {
    "id": "audi_sq8",
    "name": "SQ8",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Audi_SQ8_e-tron_IMG_1780.jpg/1280px-Audi_SQ8_e-tron_IMG_1780.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 507,
    "vitesse_max_kmh": 250,
@@ -2738,7 +2792,10 @@
     "luxury car",
     "high-performance suv",
     "sports utility vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_SQ8_e-tron_IMG_1780.jpg"
   },
   {
    "id": "audi_sq8-e-tron",
@@ -2837,7 +2894,7 @@
   {
    "id": "audi_tt-offroad",
    "name": "TT offroad",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Audi_TT_Offroad_Concept_%2822%29.JPG/1280px-Audi_TT_Offroad_Concept_%2822%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 (Concept)",
    "puissance_ch": 408,
    "vitesse_max_kmh": 250,
@@ -2862,7 +2919,10 @@
     "motor vehicle",
     "all-wheel drive",
     "awd"
-   ]
+   ],
+   "imageCredit": "El monty",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_TT_Offroad_Concept_(22).JPG"
   },
   {
    "id": "audi_tt-rs",
@@ -2900,7 +2960,7 @@
   {
    "id": "audi_tt-s",
    "name": "TT S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2011_Audi_TT-S_TFSi_Quattro.jpg/1280px-2011_Audi_TT-S_TFSi_Quattro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - Aujourd'hui",
    "puissance_ch": 310,
    "vitesse_max_kmh": 250,
@@ -2925,12 +2985,15 @@
     "all-wheel drive",
     "turbocharged",
     "small car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Audi_TT-S_TFSi_Quattro.jpg"
   },
   {
    "id": "audi_urban-concept",
    "name": "Urban Concept",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Audi_Urban_Concept_%286147650964%29.jpg/1280px-Audi_Urban_Concept_%286147650964%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 (Concept)",
    "puissance_ch": 20,
    "vitesse_max_kmh": 100,
@@ -2954,7 +3017,10 @@
     "eco-friendly car",
     "urban vehicle",
     "small car"
-   ]
+   ],
+   "imageCredit": "Autoviva",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Urban_Concept_(6147650964).jpg"
   },
   {
    "id": "audi_v8",

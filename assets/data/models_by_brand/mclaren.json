@@ -288,7 +288,7 @@
   {
    "id": "mclaren_675lt_spider",
    "name": "675LT Spider",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/McLaren_675LT_Spider_in_Paris.jpg/1280px-McLaren_675LT_Spider_in_Paris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2017",
    "puissance_ch": 675,
    "vitesse_max_kmh": 326,
@@ -312,7 +312,10 @@
     "mid-engine",
     "two-seater",
     "roadster"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_675LT_Spider_in_Paris.jpg"
   },
   {
    "id": "mclaren_720s",
@@ -381,7 +384,7 @@
   {
    "id": "mclaren_750s",
    "name": "750S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/McLaren_750S_Spider_IMG_2458.jpg/1280px-McLaren_750S_Spider_IMG_2458.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 750,
    "vitesse_max_kmh": 332,
@@ -405,7 +408,10 @@
     "high-performance",
     "two-seater",
     "mid-engine"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_750S_Spider_IMG_2458.jpg"
   },
   {
    "id": "mclaren_765lt",
@@ -442,7 +448,7 @@
   {
    "id": "mclaren_765lt_spider",
    "name": "765LT Spider",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/McLaren_765LT_Spider_IMG_2445_%28cropped%29.jpg/1280px-McLaren_765LT_Spider_IMG_2445_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021",
    "puissance_ch": 765,
    "vitesse_max_kmh": 330,
@@ -466,7 +472,10 @@
     "high-performance",
     "two-seater",
     "mid-engine"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_765LT_Spider_IMG_2445_(cropped).jpg"
   },
   {
    "id": "mclaren_artura",
@@ -505,7 +514,7 @@
   {
    "id": "mclaren_artura_spider",
    "name": "Artura Spider",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2024_McLaren_Artura_Spider.jpg/1280px-2024_McLaren_Artura_Spider.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "puissance_ch": 680,
    "vitesse_max_kmh": 330,
@@ -529,7 +538,10 @@
     "vehicle",
     "british car",
     "grand tourer"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_McLaren_Artura_Spider.jpg"
   },
   {
    "id": "mclaren_elva",
@@ -726,7 +738,7 @@
   {
    "id": "mclaren_gts",
    "name": "GTS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/McLaren_GTS%2C_Frankfurt_am_Main_%28P1032580%29.jpg/1280px-McLaren_GTS%2C_Frankfurt_am_Main_%28P1032580%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 635,
    "vitesse_max_kmh": 326,
@@ -750,7 +762,10 @@
     "fast car",
     "powerful car",
     "automobile"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_GTS,_Frankfurt_am_Main_(P1032580).jpg"
   },
   {
    "id": "mclaren_mp4-12c",
@@ -819,7 +834,7 @@
   {
    "id": "mclaren_p1_gtr",
    "name": "P1 GTR",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/McLaren_P1_GTR_of_Mike_Whiddett_at_the_2026_Adelaide_Motorsport_Festival_%28DSCF2539%29.jpg/1280px-McLaren_P1_GTR_of_Mike_Whiddett_at_the_2026_Adelaide_Motorsport_Festival_%28DSCF2539%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2016",
    "puissance_ch": 986,
    "vitesse_max_kmh": 350,
@@ -843,7 +858,10 @@
     "mclaren",
     "limited edition",
     "gt car"
-   ]
+   ],
+   "imageCredit": "Yu Chu Chin",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_P1_GTR_of_Mike_Whiddett_at_the_2026_Adelaide_Motorsport_Festival_(DSCF2539).jpg"
   },
   {
    "id": "mclaren_senna",
@@ -1010,7 +1028,7 @@
   {
    "id": "mclaren_x-1",
    "name": "X-1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/McLaren_P11%2C_Hong_Kong_%28pixabay%29.jpg/1280px-McLaren_P11%2C_Hong_Kong_%28pixabay%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012",
    "puissance_ch": 625,
    "vitesse_max_kmh": 340,
@@ -1031,7 +1049,10 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "MK817",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_P11,_Hong_Kong_(pixabay).jpg"
   },
   {
    "id": "mclaren_mp4-5b",

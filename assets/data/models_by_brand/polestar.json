@@ -63,7 +63,7 @@
   {
    "id": "polestar_2_bst_edition_230",
    "name": "2 BST edition 230",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Polestar_2_BST_Edition_230_Auto_Zuerich_2023_1X7A1303.jpg/1280px-Polestar_2_BST_Edition_230_Auto_Zuerich_2023_1X7A1303.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 350,
    "vitesse_max_kmh": 210,
@@ -84,12 +84,15 @@
     "subcompact car",
     "economy car",
     "small car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Polestar_2_BST_Edition_230_Auto_Zuerich_2023_1X7A1303.jpg"
   },
   {
    "id": "polestar_2_long_range",
    "name": "2 Long Range",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Polestar_2_Long_Range_Dual_Motor_%28Facelift%29_%E2%80%93_h_05072025.jpg/1280px-Polestar_2_Long_Range_Dual_Motor_%28Facelift%29_%E2%80%93_h_05072025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 231,
    "vitesse_max_kmh": 205,
@@ -113,12 +116,15 @@
     "all-electric",
     "automobile",
     "crossover"
-   ]
+   ],
+   "imageCredit": "© M 93",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Polestar_2_Long_Range_Dual_Motor_(Facelift)_%E2%80%93_h_05072025.jpg"
   },
   {
    "id": "polestar_2_performance",
    "name": "2 Performance",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Polestar_Performance_AB_%2855008290371%29.jpg/1280px-Polestar_Performance_AB_%2855008290371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 408,
    "vitesse_max_kmh": 210,
@@ -144,7 +150,10 @@
     "powerful",
     "fast",
     "luxury"
-   ]
+   ],
+   "imageCredit": "Alexandre Prevot from Nancy, France",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Polestar_Performance_AB_(55008290371).jpg"
   },
   {
    "id": "polestar_2_standard_range",
@@ -299,7 +308,7 @@
   {
    "id": "polestar_6",
    "name": "6",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/2024_Polestar_6_Concept.jpg/1280px-2024_Polestar_6_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2026 (Prévu)",
    "puissance_ch": 884,
    "vitesse_max_kmh": 250,
@@ -321,7 +330,10 @@
     "economical car",
     "fuel-efficient car",
     "small car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Polestar_6_Concept.jpg"
   }
  ]
 }

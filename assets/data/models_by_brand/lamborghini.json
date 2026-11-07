@@ -96,7 +96,7 @@
   {
    "id": "lamborghini_400-gt-monza",
    "name": "400 GT Monza",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/1966_Lamborghini_400_GT_Monza.jpg/1280px-1966_Lamborghini_400_GT_Monza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1966 (Prototype)",
    "puissance_ch": 350,
    "vitesse_max_kmh": 260,
@@ -118,7 +118,10 @@
     "italian car",
     "classic car",
     "vintage car"
-   ]
+   ],
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Lamborghini_400_GT_Monza.jpg"
   },
   {
    "id": "lamborghini_asterion",
@@ -156,7 +159,7 @@
   {
    "id": "lamborghini_aventador_j",
    "name": "Aventador J",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Lamborghini_Aventador_-_Flickr_-_J.Smith831.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2012 (Pièce unique)",
    "puissance_ch": 700,
    "vitesse_max_kmh": 350,
@@ -181,12 +184,15 @@
     "exotic car",
     "limited edition",
     "concept car"
-   ]
+   ],
+   "imageCredit": "J.Smith831",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_-_Flickr_-_J.Smith831.jpg"
   },
   {
    "id": "lamborghini_aventador",
    "name": "Aventador LP 780-4 Ultimae",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Lamborghini_Aventador_LP_780-4_Ultimae_Roadster_2022_%282%29.jpg/1280px-Lamborghini_Aventador_LP_780-4_Ultimae_Roadster_2022_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2022",
    "puissance_ch": 780,
    "vitesse_max_kmh": 355,
@@ -211,12 +217,15 @@
     "vehicle",
     "lp780-4",
     "luxury car"
-   ]
+   ],
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_LP_780-4_Ultimae_Roadster_2022_(2).jpg"
   },
   {
    "id": "lamborghini_aventador_s",
    "name": "Aventador S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Lamborghini_Aventador_S_Roadster_Back_IMG_0717.jpg/1280px-Lamborghini_Aventador_S_Roadster_Back_IMG_0717.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2018",
    "puissance_ch": 740,
    "vitesse_max_kmh": 350,
@@ -240,12 +249,15 @@
     "naturally aspirated",
     "italian car",
     "high performance"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_S_Roadster_Back_IMG_0717.jpg"
   },
   {
    "id": "lamborghini_aventador_sv",
    "name": "Aventador SV",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Lamborghini_Aventador_LP750-4_SV_IMG_9103.jpg/1280px-Lamborghini_Aventador_LP750-4_SV_IMG_9103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2017",
    "puissance_ch": 750,
    "vitesse_max_kmh": 350,
@@ -269,7 +281,10 @@
     "vehicle",
     "luxury car",
     "high-performance"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_LP750-4_SV_IMG_9103.jpg"
   },
   {
    "id": "lamborghini_aventador_svj",
@@ -570,7 +585,7 @@
   {
    "id": "lamborghini_gallardo",
    "name": "Gallardo LP 560-4",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Lamborghini_-_Gallardo_LP_560-4_-_Mondial_de_l%27Automobile_de_Paris_2012_-_203.jpg/1280px-Lamborghini_-_Gallardo_LP_560-4_-_Mondial_de_l%27Automobile_de_Paris_2012_-_203.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2013",
    "puissance_ch": 560,
    "vitesse_max_kmh": 325,
@@ -594,7 +609,10 @@
     "vehicle",
     "italian car",
     "mid-engine"
-   ]
+   ],
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_-_Gallardo_LP_560-4_-_Mondial_de_l%27Automobile_de_Paris_2012_-_203.jpg"
   },
   {
    "id": "lamborghini_gallardo_superleggera",
@@ -829,7 +847,7 @@
   {
    "id": "lamborghini_lambo-v12-vision-gran-turismo",
    "name": "Lambo V12 Vision Gran Turismo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Lamborghini_Lambo_V12_Vision_Gran_Turismo_GIMS_2024_1X7A2041.jpg/1280px-Lamborghini_Lambo_V12_Vision_Gran_Turismo_GIMS_2024_1X7A2041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 (Concept)",
    "puissance_ch": 819,
    "vitesse_max_kmh": 350,
@@ -853,7 +871,10 @@
     "vehicle",
     "motor vehicle",
     "racing car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Lambo_V12_Vision_Gran_Turismo_GIMS_2024_1X7A2041.jpg"
   },
   {
    "id": "lamborghini_lm001",

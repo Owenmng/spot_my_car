@@ -36,7 +36,7 @@
   {
    "id": "rolls-royce_corniche_iv",
    "name": "Corniche IV",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Rolls-Royce_Corniche_%28IV%29_Miami_Metro_Area%2C_USA.jpg/1280px-Rolls-Royce_Corniche_%28IV%29_Miami_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2000",
    "puissance_ch": 325,
    "vitesse_max_kmh": 225,
@@ -60,12 +60,15 @@
     "two-door",
     "vintage car",
     "1970s car"
-   ]
+   ],
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Corniche_(IV)_Miami_Metro_Area,_USA.jpg"
   },
   {
    "id": "rolls-royce_corniche",
    "name": "Corniche V",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2000_Rolls-Royce_Corniche_V_in_White%2C_front_left.jpg/1280px-2000_Rolls-Royce_Corniche_V_in_White%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2002",
    "puissance_ch": 329,
    "vitesse_max_kmh": 217,
@@ -88,7 +91,10 @@
     "two-seater",
     "full-size car",
     "luxury convertible"
-   ]
+   ],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Rolls-Royce_Corniche_V_in_White,_front_left.jpg"
   },
   {
    "id": "rolls-royce_cullinan",
@@ -570,7 +576,7 @@
   {
    "id": "rolls-royce_touring-limousine",
    "name": "Touring Limousine",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/1956_Rolls-Royce_Silver_Wraith_Touring_Limousine_%28H.J._Mulliner%29_%2815445944109%29.jpg/1280px-1956_Rolls-Royce_Silver_Wraith_Touring_Limousine_%28H.J._Mulliner%29_%2815445944109%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2002",
    "puissance_ch": 326,
    "vitesse_max_kmh": 225,
@@ -594,12 +600,15 @@
     "chauffeured car",
     "high-end car",
     "premium car"
-   ]
+   ],
+   "imageCredit": "el.guy08_11",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Rolls-Royce_Silver_Wraith_Touring_Limousine_(H.J._Mulliner)_(15445944109).jpg"
   },
   {
    "id": "rolls-royce_wraith",
    "name": "Wraith",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/1956_Rolls-Royce_Silver_Wraith_by_Hooper_Classic-Gala_2025_DSC_0984.jpg/1280px-1956_Rolls-Royce_Silver_Wraith_by_Hooper_Classic-Gala_2025_DSC_0984.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - 2023",
    "puissance_ch": 632,
    "vitesse_max_kmh": 250,
@@ -623,7 +632,10 @@
     "v12",
     "luxury coupe",
     "executive car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Rolls-Royce_Silver_Wraith_by_Hooper_Classic-Gala_2025_DSC_0984.jpg"
   },
   {
    "id": "rolls-royce_20-hp",

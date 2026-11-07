@@ -3,7 +3,7 @@
   {
    "id": "aston-martin_amv8",
    "name": "AMV8",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2003_Aston_Martin_AMV8_Concept_Heritage_Motor_Centre%2C_Gaydon.jpg/1280px-2003_Aston_Martin_AMV8_Concept_Heritage_Motor_Centre%2C_Gaydon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1972 - 1989",
    "puissance_ch": 314,
    "vitesse_max_kmh": 257,
@@ -27,7 +27,10 @@
     "vehicle",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Mark Brown from Hampton, New Brunswick, Canada",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Aston_Martin_AMV8_Concept_Heritage_Motor_Centre,_Gaydon.jpg"
   },
   {
    "id": "aston-martin_bulldog",
@@ -94,7 +97,7 @@
   {
    "id": "aston-martin_db1",
    "name": "DB1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Aston_Martin_DB1_49104357091.jpg/1280px-Aston_Martin_DB1_49104357091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1948 - 1950",
    "puissance_ch": 90,
    "vitesse_max_kmh": 148,
@@ -118,7 +121,10 @@
     "car",
     "motor vehicle",
     "vintage car"
-   ]
+   ],
+   "imageCredit": "Andrew Bone",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB1_49104357091.jpg"
   },
   {
    "id": "aston-martin_db11",

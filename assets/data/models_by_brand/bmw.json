@@ -67,7 +67,7 @@
   {
    "id": "bmw_114",
    "name": "114",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/BMW_114_1802_FMO_12.06.22_JM_%282%29.jpg/1280px-BMW_114_1802_FMO_12.06.22_JM_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2013",
    "puissance_ch": 102,
    "vitesse_max_kmh": 195,
@@ -91,7 +91,10 @@
     "petrol car",
     "diesel car",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Johannes Maximilian",
+   "imageLicense": "GFDL 1.2",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_114_1802_FMO_12.06.22_JM_(2).jpg"
   },
   {
    "id": "bmw_116",
@@ -129,7 +132,7 @@
   {
    "id": "bmw_118",
    "name": "118",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/BMW_118i%2C_BMW_Welt%2C_M%C3%BAnich%2C_Alemania05.JPG/1280px-BMW_118i%2C_BMW_Welt%2C_M%C3%BAnich%2C_Alemania05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - Aujourd'hui",
    "puissance_ch": 136,
    "vitesse_max_kmh": 213,
@@ -152,12 +155,15 @@
     "premium compact",
     "hatchback car",
     "fuel efficient car"
-   ]
+   ],
+   "imageCredit": "Diego Delso",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_118i,_BMW_Welt,_M%C3%BAnich,_Alemania05.JPG"
   },
   {
    "id": "bmw_120",
    "name": "120",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/BMW_120_%28F70%29_IMG_1166.jpg/1280px-BMW_120_%28F70%29_IMG_1166.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - Aujourd'hui",
    "puissance_ch": 170,
    "vitesse_max_kmh": 225,
@@ -181,12 +187,15 @@
     "classic car",
     "vintage car",
     "italian car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_120_(F70)_IMG_1166.jpg"
   },
   {
    "id": "bmw_125",
    "name": "125",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/BMW_C1_125_%2816262701158%29.jpg/1280px-BMW_C1_125_%2816262701158%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - Aujourd'hui",
    "puissance_ch": 218,
    "vitesse_max_kmh": 240,
@@ -209,7 +218,10 @@
     "personal transport",
     "lightweight vehicle",
     "commuter vehicle"
-   ]
+   ],
+   "imageCredit": "Dennis Elzinga",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_C1_125_(16262701158).jpg"
   },
   {
    "id": "bmw_130",
@@ -244,7 +256,7 @@
   {
    "id": "bmw_135",
    "name": "135",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Wdog_BMW_135_Convertible.jpg/1280px-Wdog_BMW_135_Convertible.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2013",
    "puissance_ch": 306,
    "vitesse_max_kmh": 250,
@@ -269,7 +281,10 @@
     "luxury compact",
     "bmw 135i",
     "turbocharged"
-   ]
+   ],
+   "imageCredit": "wallerdog",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Wdog_BMW_135_Convertible.jpg"
   },
   {
    "id": "bmw_1500",
@@ -371,7 +386,7 @@
   {
    "id": "bmw_1600gt",
    "name": "1600 GT",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/BMW_1600_GT_Sachs_Franken_Classic_2018_P5201053.jpg/1280px-BMW_1600_GT_Sachs_Franken_Classic_2018_P5201053.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1968",
    "puissance_ch": 105,
    "vitesse_max_kmh": 175,
@@ -395,7 +410,10 @@
     "two-seater",
     "vintage car",
     "collectible car"
-   ]
+   ],
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_1600_GT_Sachs_Franken_Classic_2018_P5201053.jpg"
   },
   {
    "id": "bmw_1800",
@@ -433,7 +451,7 @@
   {
    "id": "bmw_1800ti",
    "name": "1800 TI",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/1965_BMW_1800_TI-SA.jpg/1280px-1965_BMW_1800_TI-SA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1963 - 1965",
    "puissance_ch": 110,
    "vitesse_max_kmh": 180,
@@ -457,7 +475,10 @@
     "motor vehicle",
     "vintage car",
     "classic coupe"
-   ]
+   ],
+   "imageCredit": "joannapoe",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1965_BMW_1800_TI-SA.jpg"
   },
   {
    "id": "bmw_1802",
@@ -621,7 +642,7 @@
   {
    "id": "bmw_2000",
    "name": "2000",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/BMW_2000_model_photographed_by_Julien_Chalendard_September_2013.jpg/1280px-BMW_2000_model_photographed_by_Julien_Chalendard_September_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1966 - 1972",
    "puissance_ch": 100,
    "vitesse_max_kmh": 180,
@@ -641,7 +662,10 @@
     "used car",
     "vintage car",
     "classic car"
-   ]
+   ],
+   "imageCredit": "Julien Chalendard",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2000_model_photographed_by_Julien_Chalendard_September_2013.jpg"
   },
   {
    "id": "bmw_2000tilux",
@@ -674,7 +698,7 @@
   {
    "id": "bmw_2000tii",
    "name": "2000 TII",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/BMW_2000_tii_h.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1969 - 1971",
    "puissance_ch": 130,
    "vitesse_max_kmh": 190,
@@ -698,12 +722,15 @@
     "motor vehicle",
     "classic car",
     "used car"
-   ]
+   ],
+   "imageCredit": "Norbert Schnitzler",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2000_tii_h.jpg"
   },
   {
    "id": "bmw_2002",
    "name": "2002",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BMW_2002_Turbo_%282008-06-28%29_ret.jpg/1280px-BMW_2002_Turbo_%282008-06-28%29_ret.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1975",
    "puissance_ch": 100,
    "vitesse_max_kmh": 180,
@@ -725,7 +752,10 @@
     "gasoline car",
     "internal combustion engine",
     "automobile"
-   ]
+   ],
+   "imageCredit": "Spurzem - Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2002_Turbo_(2008-06-28)_ret.jpg"
   },
   {
    "id": "bmw_2002-turbo",
@@ -763,7 +793,7 @@
   {
    "id": "bmw_2200",
    "name": "2200",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Vladivostok._The_historian-mechanic_museum_Automotoantiquity_%28%C2%ABAutomotostarina%C2%BB%29._BMW_R_35_DSC01252_2200.jpg/1280px-Vladivostok._The_historian-mechanic_museum_Automotoantiquity_%28%C2%ABAutomotostarina%C2%BB%29._BMW_R_35_DSC01252_2200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1972",
    "puissance_ch": 125,
    "vitesse_max_kmh": 190,
@@ -785,12 +815,15 @@
     "city car",
     "hatchback",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Alexxx1979",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vladivostok._The_historian-mechanic_museum_Automotoantiquity_(%C2%ABAutomotostarina%C2%BB)._BMW_R_35_DSC01252_2200.jpg"
   },
   {
    "id": "bmw_2500",
    "name": "2500",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bmw_2500_v_sst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1968 - 1972",
    "puissance_ch": 150,
    "vitesse_max_kmh": 200,
@@ -814,12 +847,15 @@
     "2500 series",
     "heavy-duty",
     "truck"
-   ]
+   ],
+   "imageCredit": "Sven Storbeck",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bmw_2500_v_sst.jpg"
   },
   {
    "id": "bmw_2800",
    "name": "2800",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/BMW_2800_California_Classic-Gala_2021_1X7A0277.jpg/1280px-BMW_2800_California_Classic-Gala_2021_1X7A0277.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1972",
    "puissance_ch": 170,
    "vitesse_max_kmh": 210,
@@ -843,7 +879,10 @@
     "sports car",
     "performance car",
     "mid-size car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2800_California_Classic-Gala_2021_1X7A0277.jpg"
   },
   {
    "id": "bmw_2800tilux",
@@ -1005,7 +1044,7 @@
   {
    "id": "bmw_3.3li",
    "name": "3.3 Li",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/BMW_3.3_Li_Automatic-1976_%2852858944695mod%29.jpg/1280px-BMW_3.3_Li_Automatic-1976_%2852858944695mod%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1971 - 1975",
    "puissance_ch": 200,
    "vitesse_max_kmh": 210,
@@ -1027,7 +1066,10 @@
     "li",
     "german car",
     "executive car"
-   ]
+   ],
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_3.3_Li_Automatic-1976_(52858944695mod).jpg"
   },
   {
    "id": "bmw_315",
@@ -1287,7 +1329,7 @@
   {
    "id": "bmw_502",
    "name": "502",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/BMW_502%2C_Typenschild.JPG/1280px-BMW_502%2C_Typenschild.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1963",
    "puissance_ch": 100,
    "vitesse_max_kmh": 170,
@@ -1311,7 +1353,10 @@
     "mid-size car",
     "pre-war car",
     "1930s car"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_502,_Typenschild.JPG"
   },
   {
    "id": "bmw_503",
@@ -1603,7 +1648,7 @@
   {
    "id": "alpina_b10",
    "name": "Alpina B10",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/1997_BMW_Alpina_B10.jpg/1280px-1997_BMW_Alpina_B10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 2004",
    "puissance_ch": 360,
    "vitesse_max_kmh": 291,
@@ -1627,12 +1672,15 @@
     "vehicle",
     "motor vehicle",
     "sports sedan"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_BMW_Alpina_B10.jpg"
   },
   {
    "id": "alpina_b11",
    "name": "Alpina B11",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/1989_BMW_Alpina_B11_3.5.jpg/1280px-1989_BMW_Alpina_B11_3.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1994",
    "puissance_ch": 250,
    "vitesse_max_kmh": 245,
@@ -1656,12 +1704,15 @@
     "vehicle",
     "motor vehicle",
     "executive car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_BMW_Alpina_B11_3.5.jpg"
   },
   {
    "id": "alpina_b12",
    "name": "Alpina B12",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/BMW_Alpina_B12_5.0.jpg/1280px-BMW_Alpina_B12_5.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1988 - 2000",
    "puissance_ch": 430,
    "vitesse_max_kmh": 291,
@@ -1685,12 +1736,15 @@
     "vehicle",
     "muscle car",
     "tuned car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B12_5.0.jpg"
   },
   {
    "id": "alpina_b3",
    "name": "Alpina B3",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/BMW_Alpina_B3_3.jpg/1280px-BMW_Alpina_B3_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - Aujourd'hui",
    "puissance_ch": 495,
    "vitesse_max_kmh": 305,
@@ -1714,12 +1768,15 @@
     "vehicle",
     "motor vehicle",
     "mid-size car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B3_3.jpg"
   },
   {
    "id": "alpina_b4",
    "name": "Alpina B4",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/BMW_Alpina_B4%2C_IAA_2017%2C_Frankfurt_%281Y7A3104%29.jpg/1280px-BMW_Alpina_B4%2C_IAA_2017%2C_Frankfurt_%281Y7A3104%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 495,
    "vitesse_max_kmh": 301,
@@ -1743,12 +1800,15 @@
     "vehicle",
     "gran coupe",
     "mid-size car"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B4,_IAA_2017,_Frankfurt_(1Y7A3104).jpg"
   },
   {
    "id": "alpina_b5",
    "name": "Alpina B5",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/BMW_Alpina_B5.jpg/1280px-BMW_Alpina_B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - Aujourd'hui",
    "puissance_ch": 621,
    "vitesse_max_kmh": 330,
@@ -1772,12 +1832,15 @@
     "high-performance sedan",
     "executive car",
     "sports sedan"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B5.jpg"
   },
   {
    "id": "alpina_b6",
    "name": "Alpina B6",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/1982_BMW_Alpina_B6_2.8_1.jpg/1280px-1982_BMW_Alpina_B6_2.8_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978 - 2018",
    "puissance_ch": 600,
    "vitesse_max_kmh": 322,
@@ -1802,12 +1865,15 @@
     "vehicle",
     "mid-size car",
     "biturbo"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1982_BMW_Alpina_B6_2.8_1.jpg"
   },
   {
    "id": "alpina_b7",
    "name": "Alpina B7",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/BMW_Alpina_B7_Turbo.jpg/1280px-BMW_Alpina_B7_Turbo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978 - Aujourd'hui",
    "puissance_ch": 608,
    "vitesse_max_kmh": 330,
@@ -1832,12 +1898,15 @@
     "executive car",
     "german car",
     "luxury sedan"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B7_Turbo.jpg"
   },
   {
    "id": "alpina_b8",
    "name": "Alpina B8",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2022_BMW_Alpina_B8_Gran_Coupe.jpg/1280px-2022_BMW_Alpina_B8_Gran_Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - Aujourd'hui",
    "puissance_ch": 621,
    "vitesse_max_kmh": 324,
@@ -1861,12 +1930,15 @@
     "vehicle",
     "twin-turbo",
     "v8"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_BMW_Alpina_B8_Gran_Coupe.jpg"
   },
   {
    "id": "alpina_b9",
    "name": "Alpina B9",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/BMW_Alpina_B9_3.5_%283782737112%29.jpg/1280px-BMW_Alpina_B9_3.5_%283782737112%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1985",
    "puissance_ch": 245,
    "vitesse_max_kmh": 240,
@@ -1890,12 +1962,15 @@
     "sports sedan",
     "executive car",
     "tuned car"
-   ]
+   ],
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B9_3.5_(3782737112).jpg"
   },
   {
    "id": "alpina_c1",
    "name": "Alpina C1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/BMW_Alpina_C1.jpg/1280px-BMW_Alpina_C1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - 1988",
    "puissance_ch": 125,
    "vitesse_max_kmh": 200,
@@ -1919,7 +1994,10 @@
     "classic car",
     "rare car",
     "collectible car"
-   ]
+   ],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_C1.jpg"
   },
   {
    "id": "alpina_c2",
@@ -1986,7 +2064,7 @@
   {
    "id": "alpina_d3",
    "name": "Alpina D3 S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/2023_BMW_Alpina_D3_S_Auto.jpg/1280px-2023_BMW_Alpina_D3_S_Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - Aujourd'hui",
    "puissance_ch": 355,
    "vitesse_max_kmh": 273,
@@ -2010,12 +2088,15 @@
     "vehicle",
     "german car",
     "tuned car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_BMW_Alpina_D3_S_Auto.jpg"
   },
   {
    "id": "alpina_d4",
    "name": "Alpina D4",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/2019_BMW_Alpina_D4_BiTurbo_Auto_1.jpg/1280px-2019_BMW_Alpina_D4_BiTurbo_Auto_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 355,
    "vitesse_max_kmh": 270,
@@ -2039,12 +2120,15 @@
     "vehicle",
     "mid-size car",
     "tuned car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_BMW_Alpina_D4_BiTurbo_Auto_1.jpg"
   },
   {
    "id": "alpina_d5",
    "name": "Alpina D5",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/2012_BMW_Alpina_D5_BiTurbo.jpg/1280px-2012_BMW_Alpina_D5_BiTurbo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 408,
    "vitesse_max_kmh": 286,
@@ -2070,7 +2154,10 @@
     "german car",
     "high-performance",
     "tuned car"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_BMW_Alpina_D5_BiTurbo.jpg"
   },
   {
    "id": "alpina_rle-roadster",
@@ -2104,7 +2191,7 @@
   {
    "id": "alpina_roadster-s",
    "name": "Alpina Roadster S",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/BMW_Alpina_Roadster_3.4_S_3.jpg/1280px-BMW_Alpina_Roadster_3.4_S_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2006",
    "puissance_ch": 300,
    "vitesse_max_kmh": 265,
@@ -2128,12 +2215,15 @@
     "vehicle",
     "open top",
     "two seater"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_Roadster_3.4_S_3.jpg"
   },
   {
    "id": "alpina_roadster-v8",
    "name": "Alpina Roadster V8",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/BMW_Alpina_V8_Roadster_%287712946758%29.jpg/1280px-BMW_Alpina_V8_Roadster_%287712946758%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2006",
    "puissance_ch": 381,
    "vitesse_max_kmh": 260,
@@ -2157,12 +2247,15 @@
     "bmw-based",
     "high-performance",
     "grand tourer"
-   ]
+   ],
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_V8_Roadster_(7712946758).jpg"
   },
   {
    "id": "alpina_xb7",
    "name": "Alpina XB7",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/BMW_Alpina_XB7.jpg/1280px-BMW_Alpina_XB7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 621,
    "vitesse_max_kmh": 290,
@@ -2186,12 +2279,15 @@
     "high-performance suv",
     "german car",
     "twin-turbo"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_XB7.jpg"
   },
   {
    "id": "alpina_xd3",
    "name": "Alpina XD3",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/BMW_Alpina_XD3_Biturbo_%2813547245763%29.jpg/1280px-BMW_Alpina_XD3_Biturbo_%2813547245763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 394,
    "vitesse_max_kmh": 267,
@@ -2215,12 +2311,15 @@
     "car",
     "vehicle",
     "twinpower turbo"
-   ]
+   ],
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_XD3_Biturbo_(13547245763).jpg"
   },
   {
    "id": "alpina_xd4",
    "name": "Alpina XD4",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/BMW_Alpina_XD4%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1258%29.jpg/1280px-BMW_Alpina_XD4%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1258%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 394,
    "vitesse_max_kmh": 268,
@@ -2244,7 +2343,10 @@
     "tuned car",
     "high-performance suv",
     "all-wheel drive"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_XD4,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1258).jpg"
   },
   {
    "id": "bmw_e9",
@@ -2448,7 +2550,7 @@
   {
    "id": "bmw_isetta",
    "name": "Isetta",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/BMW_Isetta_-_Bad_W%C3%B6rishofen_%282015-08-29_3164_b%29.jpg/1280px-BMW_Isetta_-_Bad_W%C3%B6rishofen_%282015-08-29_3164_b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1955 - 1962",
    "puissance_ch": 13,
    "vitesse_max_kmh": 85,
@@ -2474,7 +2576,10 @@
     "classic car",
     "car",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Isetta_-_Bad_W%C3%B6rishofen_(2015-08-29_3164_b).jpg"
   },
   {
    "id": "bmw_ix",
@@ -2545,7 +2650,7 @@
   {
    "id": "bmw_ix2",
    "name": "iX2",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/BMW_iX2_xDrive30_IMG_1811.jpg/1280px-BMW_iX2_xDrive30_IMG_1811.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 313,
    "vitesse_max_kmh": 180,
@@ -2571,7 +2676,10 @@
     "automobile",
     "premium suv",
     "compact luxury suv"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_iX2_xDrive30_IMG_1811.jpg"
   },
   {
    "id": "bmw_ix3",
@@ -2610,7 +2718,7 @@
   {
    "id": "bmw_ix5",
    "name": "iX5 Hydrogen",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/BMW_iX5_Hydrogen_IAA_2023_1X7A0718.jpg/1280px-BMW_iX5_Hydrogen_IAA_2023_1X7A0718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 (Flotte pilote)",
    "puissance_ch": 401,
    "vitesse_max_kmh": 185,
@@ -2635,7 +2743,10 @@
     "hydrogen technology",
     "alternative fuel vehicle",
     "crossover"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_iX5_Hydrogen_IAA_2023_1X7A0718.jpg"
   },
   {
    "id": "bmw_m1",
@@ -2762,7 +2873,7 @@
   {
    "id": "bmw_m235i",
    "name": "M235i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/BMW_M235i_Racing_Cup-Team_QSR_Racingschool.jpg/1280px-BMW_M235i_Racing_Cup-Team_QSR_Racingschool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - 2021",
    "puissance_ch": 326,
    "vitesse_max_kmh": 250,
@@ -2786,12 +2897,15 @@
     "vehicle",
     "bmw m235i",
     "german car"
-   ]
+   ],
+   "imageCredit": "Alberto-g-rovi",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M235i_Racing_Cup-Team_QSR_Racingschool.jpg"
   },
   {
    "id": "bmw_m240i",
    "name": "M240i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/BMW_G42_M240i_IMG_1914.jpg/1280px-BMW_G42_M240i_IMG_1914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -2815,7 +2929,10 @@
     "compact car",
     "bmw m series",
     "german car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_G42_M240i_IMG_1914.jpg"
   },
   {
    "id": "bmw_m3",
@@ -2884,7 +3001,7 @@
   {
    "id": "bmw_m340i",
    "name": "M340i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/BMW_M340i_%28G20%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg/1280px-BMW_M340i_%28G20%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 374,
    "vitesse_max_kmh": 250,
@@ -2909,7 +3026,10 @@
     "rear-wheel drive",
     "all-wheel drive",
     "turbocharged engine"
-   ]
+   ],
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M340i_(G20)_Washington_DC_Metro_Area,_USA_(1).jpg"
   },
   {
    "id": "bmw_m4",
@@ -2946,7 +3066,7 @@
   {
    "id": "bmw_m440i",
    "name": "M440i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2025_BMW_G22_M440i_IMG_2604.jpg/1280px-2025_BMW_G22_M440i_IMG_2604.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 374,
    "vitesse_max_kmh": 250,
@@ -2970,7 +3090,10 @@
     "german car",
     "two-door",
     "gasoline car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_BMW_G22_M440i_IMG_2604.jpg"
   },
   {
    "id": "bmw_m5",
@@ -3008,7 +3131,7 @@
   {
    "id": "bmw_m550i",
    "name": "M550i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/22_BMW_M550i_xDrive.jpg/1280px-22_BMW_M550i_xDrive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 530,
    "vitesse_max_kmh": 250,
@@ -3032,7 +3155,10 @@
     "gasoline car",
     "internal combustion engine",
     "rear-wheel drive"
-   ]
+   ],
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:22_BMW_M550i_xDrive.jpg"
   },
   {
    "id": "bmw_m6",
@@ -3101,7 +3227,7 @@
   {
    "id": "bmw_m760i",
    "name": "M760i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_%2839516099000%29.jpg/1280px-BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_%2839516099000%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2023",
    "puissance_ch": 585,
    "vitesse_max_kmh": 250,
@@ -3126,7 +3252,10 @@
     "vehicle",
     "motor vehicle",
     "grand tourer"
-   ]
+   ],
+   "imageCredit": "Nan Palmero from San Antonio, TX, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_(39516099000).jpg"
   },
   {
    "id": "bmw_m8",
@@ -3163,7 +3292,7 @@
   {
    "id": "bmw_m8-gran-coupe",
    "name": "M8 Gran Coupé",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/BMW_M8_Gran_Coupe_Competition_%28Facelift%29_1X7A6106.jpg/1280px-BMW_M8_Gran_Coupe_Competition_%28Facelift%29_1X7A6106.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 625,
    "vitesse_max_kmh": 250,
@@ -3188,7 +3317,10 @@
     "four-door coupe",
     "executive car",
     "luxury vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M8_Gran_Coupe_Competition_(Facelift)_1X7A6106.jpg"
   },
   {
    "id": "bmw_new-class",
@@ -3224,7 +3356,7 @@
   {
    "id": "bmw_vision-neue-klasse",
    "name": "Vision Neue Klasse",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg/1280px-BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 (Concept)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -3250,12 +3382,15 @@
     "vehicle",
     "car",
     "future car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg"
   },
   {
    "id": "bmw_vision-neue-klasse-x",
    "name": "Vision Neue Klasse X",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/BMW_Vision_Neue_Klasse_X_001.jpg/1280px-BMW_Vision_Neue_Klasse_X_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 (Concept)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -3280,7 +3415,10 @@
     "mid-size car",
     "executive car",
     "performance car"
-   ]
+   ],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Vision_Neue_Klasse_X_001.jpg"
   },
   {
    "id": "bmw_x1",
@@ -3666,7 +3804,7 @@
   {
    "id": "bmw_x6-m",
    "name": "X6 M",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/2023_BMW_X6_M_%28G06%29_1X7A1641.jpg/1280px-2023_BMW_X6_M_%28G06%29_1X7A1641.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - Aujourd'hui",
    "puissance_ch": 625,
    "vitesse_max_kmh": 250,
@@ -3691,12 +3829,15 @@
     "car",
     "motor vehicle",
     "sav"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_BMW_X6_M_(G06)_1X7A1641.jpg"
   },
   {
    "id": "bmw_x6-m50i",
    "name": "X6 M50i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2021_BMW_X6_M50i_Auto_1.jpg/1280px-2021_BMW_X6_M50i_Auto_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 530,
    "vitesse_max_kmh": 250,
@@ -3720,7 +3861,10 @@
     "twinpower turbo",
     "m performance",
     "high-performance suv"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_BMW_X6_M50i_Auto_1.jpg"
   },
   {
    "id": "bmw_x7",

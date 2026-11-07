@@ -36,7 +36,7 @@
   {
    "id": "mitsubishi_400",
    "name": "400",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/2010_Mitsubishi_EVO_X_FQ-400.jpg/1280px-2010_Mitsubishi_EVO_X_FQ-400.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1960 - 1962",
    "puissance_ch": 41,
    "vitesse_max_kmh": 120,
@@ -57,12 +57,15 @@
     "automobile",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Mitsubishi_EVO_X_FQ-400.jpg"
   },
   {
    "id": "mitsubishi_a6m-zero",
    "name": "A6M Zero (réplique)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Mitsubishi_A6M_Zero_Replica.jpg/1280px-Mitsubishi_A6M_Zero_Replica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2005",
    "puissance_ch": 120,
    "vitesse_max_kmh": 180,
@@ -88,12 +91,15 @@
     "wwii aircraft",
     "replica plane",
     "model airplane"
-   ]
+   ],
+   "imageCredit": "D. Miller",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_A6M_Zero_Replica.jpg"
   },
   {
    "id": "mitsubishi_airtek",
    "name": "Airtek",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Mitsubishi_Airtek_%2831532945351%29.jpg/1280px-Mitsubishi_Airtek_%2831532945351%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2005",
    "puissance_ch": 140,
    "vitesse_max_kmh": 190,
@@ -116,7 +122,10 @@
     "electric car",
     "hybrid",
     "phev"
-   ]
+   ],
+   "imageCredit": "FotoSleuth",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Airtek_(31532945351).jpg"
   },
   {
    "id": "mitsubishi_airtrek",
@@ -281,7 +290,7 @@
   {
    "id": "mitsubishi_celeste",
    "name": "Celeste",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mitsubishi_Celeste_Rotterdam_1976.jpg/1280px-Mitsubishi_Celeste_Rotterdam_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1975 - 1981",
    "puissance_ch": 105,
    "vitesse_max_kmh": 175,
@@ -305,7 +314,10 @@
     "electric car",
     "phev",
     "eco-friendly car"
-   ]
+   ],
+   "imageCredit": "Charles01",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Celeste_Rotterdam_1976.jpg"
   },
   {
    "id": "mitsubishi_colt",
@@ -627,7 +639,7 @@
   {
    "id": "mitsubishi_ek-active",
    "name": "eK Active",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mitsubishi_eK_active.JPG/1280px-Mitsubishi_eK_active.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2019",
    "puissance_ch": 64,
    "vitesse_max_kmh": 140,
@@ -651,12 +663,15 @@
     "japanese car",
     "mitsubishi",
     "ek-active"
-   ]
+   ],
+   "imageCredit": "Kuha455405",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_eK_active.JPG"
   },
   {
    "id": "mitsubishi_ek-custom",
    "name": "eK Custom",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/2014-2015_Mitsubishi_eK_Custom_G.jpg/1280px-2014-2015_Mitsubishi_eK_Custom_G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 64,
    "vitesse_max_kmh": 140,
@@ -680,7 +695,10 @@
     "mini vehicle",
     "small car",
     "subcompact car"
-   ]
+   ],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014-2015_Mitsubishi_eK_Custom_G.jpg"
   },
   {
    "id": "mitsubishi_ek-space",
@@ -748,7 +766,7 @@
   {
    "id": "mitsubishi_ek",
    "name": "eK Wagon",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2020_Mitsubishi_eK_Wagon_blue_grey_front.jpg/1280px-2020_Mitsubishi_eK_Wagon_blue_grey_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - Aujourd'hui",
    "puissance_ch": 52,
    "vitesse_max_kmh": 135,
@@ -772,7 +790,10 @@
     "mini car",
     "small car",
     "compact car"
-   ]
+   ],
+   "imageCredit": "Throwawayacc222",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Mitsubishi_eK_Wagon_blue_grey_front.jpg"
   },
   {
    "id": "mitsubishi_ek-wagon-custom",
@@ -871,7 +892,7 @@
   {
    "id": "mitsubishi_emeraude",
    "name": "Emeraude",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/1992_Mitsubishi_Emeraude_01.jpg/1280px-1992_Mitsubishi_Emeraude_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 1994",
    "puissance_ch": 170,
    "vitesse_max_kmh": 215,
@@ -895,7 +916,10 @@
     "vintage car",
     "classic car",
     "retro car"
-   ]
+   ],
+   "imageCredit": "Mytho88",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1992_Mitsubishi_Emeraude_01.jpg"
   },
   {
    "id": "mitsubishi_endeavor",
@@ -1182,7 +1206,7 @@
   {
    "id": "mitsubishi_l200",
    "name": "L200 (Triton)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Royal_Thai_Army%2C_Mitsubishi_L200-Triton_utility_vehicle..jpg/1280px-Royal_Thai_Army%2C_Mitsubishi_L200-Triton_utility_vehicle..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978 - Aujourd'hui",
    "puissance_ch": 181,
    "vitesse_max_kmh": 177,
@@ -1206,7 +1230,10 @@
     "4x4",
     "off-road",
     "work truck"
-   ]
+   ],
+   "imageCredit": "Manrat Thiusthas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Royal_Thai_Army,_Mitsubishi_L200-Triton_utility_vehicle..jpg"
   },
   {
    "id": "mitsubishi_lancer",
@@ -1502,7 +1529,7 @@
   {
    "id": "mitsubishi_libero",
    "name": "Libero",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mitsubishi_Libero_%28Japan%29.jpg/1280px-Mitsubishi_Libero_%28Japan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 2002",
    "puissance_ch": 110,
    "vitesse_max_kmh": 180,
@@ -1525,7 +1552,10 @@
     "small car",
     "urban car",
     "microcar"
-   ]
+   ],
+   "imageCredit": "NZ Car Freak",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Libero_(Japan).jpg"
   },
   {
    "id": "mitsubishi_magna",
@@ -1963,7 +1993,7 @@
   {
    "id": "mitsubishi_rosa",
    "name": "Rosa",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Mitsubishi_Fuso_Rosa_%28BE6_series%29_2015_King_George_Square_Brisbane_L1020576.jpg/1280px-Mitsubishi_Fuso_Rosa_%28BE6_series%29_2015_King_George_Square_Brisbane_L1020576.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - Aujourd'hui",
    "puissance_ch": 130,
    "vitesse_max_kmh": 140,
@@ -1986,7 +2016,10 @@
     "small car",
     "fuel-efficient car",
     "affordable car"
-   ]
+   ],
+   "imageCredit": "John Robert McPherson",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Fuso_Rosa_(BE6_series)_2015_King_George_Square_Brisbane_L1020576.jpg"
   },
   {
    "id": "mitsubishi_santamo",

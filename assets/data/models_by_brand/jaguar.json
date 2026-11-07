@@ -418,7 +418,7 @@
   {
    "id": "jaguar_project_8",
    "name": "Project 8",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Jaguar_XE_SV_Project_8_at_IAA_2019_IMG_0539.jpg/1280px-Jaguar_XE_SV_Project_8_at_IAA_2019_IMG_0539.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2019",
    "puissance_ch": 600,
    "vitesse_max_kmh": 322,
@@ -442,7 +442,10 @@
     "track car",
     "super sedan",
     "british car"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XE_SV_Project_8_at_IAA_2019_IMG_0539.jpg"
   },
   {
    "id": "jaguar_s-type",
@@ -1035,7 +1038,7 @@
   {
    "id": "jaguar_xkr",
    "name": "XKR",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Coup%C3%A9_Jaguar_XKR_%28X150%29_ventral.jpg/1280px-Coup%C3%A9_Jaguar_XKR_%28X150%29_ventral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2014",
    "puissance_ch": 550,
    "vitesse_max_kmh": 280,
@@ -1061,7 +1064,10 @@
     "car",
     "vehicle",
     "jaguar"
-   ]
+   ],
+   "imageCredit": "Didier Descouens",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Coup%C3%A9_Jaguar_XKR_(X150)_ventral.jpg"
   },
   {
    "id": "jaguar_c-type",

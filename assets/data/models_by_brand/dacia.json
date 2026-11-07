@@ -127,7 +127,7 @@
   {
    "id": "dacia_1410",
    "name": "1410 Sport",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Dacia_1410_Sport_%28mid_1980s%29_%2837538726910%29.jpg/1280px-Dacia_1410_Sport_%28mid_1980s%29_%2837538726910%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1992",
    "puissance_ch": 65,
    "vitesse_max_kmh": 150,
@@ -149,7 +149,10 @@
     "land vehicle",
     "classic car",
     "vintage car"
-   ]
+   ],
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_1410_Sport_(mid_1980s)_(37538726910).jpg"
   },
   {
    "id": "dacia_2000",
@@ -470,7 +473,7 @@
   {
    "id": "dacia_pickup",
    "name": "Pick-Up",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Dacia_1305_Pick-Up_DropSide_Ri_%28Front%29.jpg/1280px-Dacia_1305_Pick-Up_DropSide_Ri_%28Front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1975 - 2006",
    "puissance_ch": 54,
    "vitesse_max_kmh": 130,
@@ -493,7 +496,10 @@
     "utility vehicle",
     "heavy-duty truck",
     "light-duty truck"
-   ]
+   ],
+   "imageCredit": "(G)jabz",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_1305_Pick-Up_DropSide_Ri_(Front).jpg"
   },
   {
    "id": "dacia_sandero",
@@ -529,7 +535,7 @@
   {
    "id": "dacia_sandrider",
    "name": "Sandrider",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Dacia_Sandrider_GIMS_2024_1X7A2026.jpg/1280px-Dacia_Sandrider_GIMS_2024_1X7A2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 (Prototype)",
    "puissance_ch": 360,
    "vitesse_max_kmh": 170,
@@ -554,7 +560,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_Sandrider_GIMS_2024_1X7A2026.jpg"
   },
   {
    "id": "dacia_solenza",

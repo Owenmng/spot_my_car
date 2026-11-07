@@ -35,7 +35,7 @@
   {
    "id": "subaru_alcyone",
    "name": "Alcyone",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/1994_Subaru_Alcyone_SVX_Version_L.jpg/1280px-1994_Subaru_Alcyone_SVX_Version_L.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1991",
    "puissance_ch": 136,
    "vitesse_max_kmh": 200,
@@ -60,7 +60,10 @@
     "turbo",
     "awd",
     "all-wheel drive"
-   ]
+   ],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Subaru_Alcyone_SVX_Version_L.jpg"
   },
   {
    "id": "subaru_ascent",
@@ -130,7 +133,7 @@
   {
    "id": "subaru_bistro",
    "name": "Bistro",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Subaru_Vivio_Bistro_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1995 - 1998",
    "puissance_ch": 53,
    "vitesse_max_kmh": 130,
@@ -154,7 +157,10 @@
     "fuel-efficient car",
     "urban car",
     "microcar"
-   ]
+   ],
+   "imageCredit": "Tennen-Gas",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Vivio_Bistro_001.JPG"
   },
   {
    "id": "subaru_brz",
@@ -315,7 +321,7 @@
   {
    "id": "subaru_ff-1",
    "name": "FF-1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1971_Subaru_ff-1.jpg/1280px-1971_Subaru_ff-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1969 - 1973",
    "puissance_ch": 62,
    "vitesse_max_kmh": 145,
@@ -336,7 +342,10 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1971_Subaru_ff-1.jpg"
   },
   {
    "id": "subaru_forester",
@@ -596,7 +605,7 @@
   {
    "id": "subaru_libero",
    "name": "Libero",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Subaru_Libero_front_20070822.jpg/1280px-Subaru_Libero_front_20070822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1998",
    "puissance_ch": 54,
    "vitesse_max_kmh": 120,
@@ -619,7 +628,10 @@
     "small car",
     "urban car",
     "microcar"
-   ]
+   ],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Libero_front_20070822.jpg"
   },
   {
    "id": "subaru_lucra",
@@ -912,7 +924,7 @@
   {
    "id": "subaru_svx",
    "name": "SVX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Subaru_SVX_1X7A1538.jpg/1280px-Subaru_SVX_1X7A1538.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1996",
    "puissance_ch": 230,
    "vitesse_max_kmh": 235,
@@ -936,7 +948,10 @@
     "two-door",
     "all-wheel-drive coupe",
     "luxury coupe"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_SVX_1X7A1538.jpg"
   },
   {
    "id": "subaru_traviq",

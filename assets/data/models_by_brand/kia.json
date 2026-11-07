@@ -98,7 +98,7 @@
   {
    "id": "kia_borrego",
    "name": "Borrego (Mohave)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2009_Kia_Borrego_LX_--_NHTSA.jpg/1280px-2009_Kia_Borrego_LX_--_NHTSA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2020",
    "puissance_ch": 277,
    "vitesse_max_kmh": 190,
@@ -121,7 +121,10 @@
     "kia",
     "korean car",
     "body-on-frame suv"
-   ]
+   ],
+   "imageCredit": "U.S. National Highway Traffic Safety Administration",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2009_Kia_Borrego_LX_--_NHTSA.jpg"
   },
   {
    "id": "kia_cadenza",
@@ -218,7 +221,7 @@
   {
    "id": "kia_carstar",
    "name": "Carstar (Joice)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/00_kia_carstar_01.jpg/1280px-00_kia_carstar_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2003",
    "puissance_ch": 120,
    "vitesse_max_kmh": 175,
@@ -239,7 +242,10 @@
     "city car",
     "subcompact car",
     "hatchback"
-   ]
+   ],
+   "imageCredit": "Benespit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:00_kia_carstar_01.jpg"
   },
   {
    "id": "kia_ceed",
@@ -309,7 +315,7 @@
   {
    "id": "kia_clarus",
    "name": "Clarus",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/1996_Kia_Clarus_01.jpg/1280px-1996_Kia_Clarus_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2001",
    "puissance_ch": 116,
    "vitesse_max_kmh": 185,
@@ -331,7 +337,10 @@
     "motor vehicle",
     "land vehicle",
     "transportation"
-   ]
+   ],
+   "imageCredit": "No machine-readable author provided. Ilya p assumed (based on copyright claims).",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Kia_Clarus_01.jpg"
   },
   {
    "id": "kia_concord",
@@ -651,7 +660,7 @@
   {
    "id": "kia_frontier",
    "name": "Frontier",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Kia_Bongo_Frontier_ambulance_of_Filinvest_City_Emergency_Response_Group%2C_06-22-2024.jpg/1280px-Kia_Bongo_Frontier_ambulance_of_Filinvest_City_Emergency_Response_Group%2C_06-22-2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 2000",
    "puissance_ch": 75,
    "vitesse_max_kmh": 145,
@@ -675,7 +684,10 @@
     "4x4",
     "work truck",
     "compact pickup"
-   ]
+   ],
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Bongo_Frontier_ambulance_of_Filinvest_City_Emergency_Response_Group,_06-22-2024.jpg"
   },
   {
    "id": "kia_imagine",
@@ -741,7 +753,7 @@
   {
    "id": "kia_k2500",
    "name": "K2500",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/KIA_K2500_KIA_BONGO_HONGKONG.jpg/1280px-KIA_K2500_KIA_BONGO_HONGKONG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - 2004",
    "puissance_ch": 85,
    "vitesse_max_kmh": 140,
@@ -764,7 +776,10 @@
     "vehicle",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:KIA_K2500_KIA_BONGO_HONGKONG.jpg"
   },
   {
    "id": "kia_k3",
@@ -954,7 +969,7 @@
   {
    "id": "kia_leo",
    "name": "Leo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/20100905_kia_sephia_leo_1.jpg/1280px-20100905_kia_sephia_leo_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 1998",
    "puissance_ch": 75,
    "vitesse_max_kmh": 160,
@@ -976,12 +991,15 @@
     "fuel-efficient car",
     "city vehicle",
     "urban car"
-   ]
+   ],
+   "imageCredit": "Chu",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20100905_kia_sephia_leo_1.jpg"
   },
   {
    "id": "kia_lotze",
    "name": "Lotze",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/20110913_kia_lotze_taxi_01.jpg/1280px-20110913_kia_lotze_taxi_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - 2003",
    "puissance_ch": 148,
    "vitesse_max_kmh": 195,
@@ -1002,7 +1020,10 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "Chu",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20110913_kia_lotze_taxi_01.jpg"
   },
   {
    "id": "kia_magentis",
@@ -1199,7 +1220,7 @@
   {
    "id": "kia_optima",
    "name": "Optima",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/KIA_K5_OPTIMA_China.jpg/1280px-KIA_K5_OPTIMA_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2020",
    "puissance_ch": 180,
    "vitesse_max_kmh": 210,
@@ -1223,7 +1244,10 @@
     "motor vehicle",
     "sedan car",
     "fuel efficient car"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:KIA_K5_OPTIMA_China.jpg"
   },
   {
    "id": "kia_pegas",
@@ -1543,7 +1567,7 @@
   {
    "id": "kia_rocsta",
    "name": "Rocsta",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kia_%28Asia%29_Rocsta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1989 - 1999",
    "puissance_ch": 83,
    "vitesse_max_kmh": 140,
@@ -1567,12 +1591,15 @@
     "car",
     "off-road",
     "performance suv"
-   ]
+   ],
+   "imageCredit": "This file was created and uploaded by User:Szater Ten plik został stworzony i dodany przez Wikipedystę:Szater Szater Wik",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_(Asia)_Rocsta.jpg"
   },
   {
    "id": "kia_sedona",
    "name": "Sedona (Carnival)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Kia_Sedona_%28front%29.jpg/1280px-Kia_Sedona_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - Aujourd'hui",
    "puissance_ch": 276,
    "vitesse_max_kmh": 190,
@@ -1596,7 +1623,10 @@
     "people carrier",
     "family vehicle",
     "automotive"
-   ]
+   ],
+   "imageCredit": "Everyone Sinks Starco",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Sedona_(front).jpg"
   },
   {
    "id": "kia_seltos",
@@ -2075,7 +2105,7 @@
   {
    "id": "kia_towner",
    "name": "Towner",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Kia_Towner_rear.png/1280px-Kia_Towner_rear.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1999",
    "puissance_ch": 60,
    "vitesse_max_kmh": 130,
@@ -2100,7 +2130,10 @@
     "work truck",
     "vehicle",
     "car"
-   ]
+   ],
+   "imageCredit": "Used Cars (@offusedcars)",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Towner_rear.png"
   },
   {
    "id": "kia_venga",

@@ -788,7 +788,7 @@
   {
    "id": "dodge_raider",
    "name": "Raider",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Dodge_Raider_%2828970645393%29.jpg/1280px-Dodge_Raider_%2828970645393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1990",
    "puissance_ch": 118,
    "vitesse_max_kmh": 160,
@@ -811,12 +811,15 @@
     "off-road truck",
     "towing capacity",
     "payload capacity"
-   ]
+   ],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_Raider_(28970645393).jpg"
   },
   {
    "id": "dodge_ram",
    "name": "Ram 1500",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dodge_RAM_1500_in_Switzerland.jpg/1280px-Dodge_RAM_1500_in_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 2008",
    "puissance_ch": 350,
    "vitesse_max_kmh": 170,
@@ -838,7 +841,10 @@
     "light-duty truck",
     "half-ton truck",
     "american truck"
-   ]
+   ],
+   "imageCredit": "JoachimKohler-HB",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_RAM_1500_in_Switzerland.jpg"
   },
   {
    "id": "dodge_ram_srt10",
@@ -1157,7 +1163,7 @@
   {
    "id": "dodge_w100",
    "name": "W100",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/1977_Dodge_W100_Macho_Power_Wagon%2C_front_left%2C_08-25-2024.jpg/1280px-1977_Dodge_W100_Macho_Power_Wagon%2C_front_left%2C_08-25-2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1961 - 1971",
    "puissance_ch": 145,
    "vitesse_max_kmh": 150,
@@ -1178,7 +1184,10 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ]
+   ],
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1977_Dodge_W100_Macho_Power_Wagon,_front_left,_08-25-2024.jpg"
   },
   {
    "id": "dodge_town-panel",

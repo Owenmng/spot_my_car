@@ -1144,7 +1144,7 @@
   {
    "id": "bugatti_type-73c",
    "name": "Type 73C",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/1945_Bugatti_Type_73C.jpg/1280px-1945_Bugatti_Type_73C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1947 - 1950",
    "puissance_ch": 100,
    "vitesse_max_kmh": 160,
@@ -1168,7 +1168,10 @@
     "vintage car",
     "collectible car",
     "racing car"
-   ]
+   ],
+   "imageCredit": "Dave Hamster",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1945_Bugatti_Type_73C.jpg"
   },
   {
    "id": "bugatti_veyron",

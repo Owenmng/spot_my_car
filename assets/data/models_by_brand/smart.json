@@ -124,7 +124,7 @@
   {
    "id": "smart_coupe",
    "name": "Coupé",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Smart_City-Coup%C3%A9_passion_front.jpg/1280px-Smart_City-Coup%C3%A9_passion_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - 2006",
    "puissance_ch": 61,
    "vitesse_max_kmh": 150,
@@ -149,12 +149,15 @@
     "sports coupe",
     "car model",
     "automobile"
-   ]
+   ],
+   "imageCredit": "M 93",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_City-Coup%C3%A9_passion_front.jpg"
   },
   {
    "id": "smart_crossblade",
    "name": "Crossblade",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Smart_Crossblade_DSC_0686.jpg/1280px-Smart_Crossblade_DSC_0686.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2003",
    "puissance_ch": 71,
    "vitesse_max_kmh": 135,
@@ -178,12 +181,15 @@
     "motor vehicle",
     "performance car",
     "japanese car"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_Crossblade_DSC_0686.jpg"
   },
   {
    "id": "smart_ed",
    "name": "ED (Electric Drive)",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Car2Go_Amsterdam_Smart_ED_cropped.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2012 - 2014",
    "puissance_ch": 55,
    "vitesse_max_kmh": 120,
@@ -207,7 +213,10 @@
     "zero emissions vehicle",
     "eco-friendly car",
     "green car"
-   ]
+   ],
+   "imageCredit": "Car2Go_Amsterdam_Smart_ED_Herengracht.JPG: Brbbl derivative work: Mariordo (talk)",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Car2Go_Amsterdam_Smart_ED_cropped.JPG"
   },
   {
    "id": "smart_eq-fortwo",
@@ -245,7 +254,7 @@
   {
    "id": "smart_forfour",
    "name": "Forfour",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Berlin%2C_Flughafen_Tempelhof%2C_Smart_EQ_Forfour_--_2019_--_4342.jpg/1280px-Berlin%2C_Flughafen_Tempelhof%2C_Smart_EQ_Forfour_--_2019_--_4342.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2021",
    "puissance_ch": 90,
    "vitesse_max_kmh": 165,
@@ -267,7 +276,10 @@
     "smart",
     "2023 smart forfour",
     "2024 smart forfour"
-   ]
+   ],
+   "imageCredit": "Dietmar Rabich",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Berlin,_Flughafen_Tempelhof,_Smart_EQ_Forfour_--_2019_--_4342.jpg"
   },
   {
    "id": "smart_fortwo",
@@ -337,7 +349,7 @@
   {
    "id": "smart_k",
    "name": "K (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Smart_fortwo_Cabrio_electric%2C_IAA_2017%2C_Frankfurt_%281Y7A1891%29.jpg/1280px-Smart_fortwo_Cabrio_electric%2C_IAA_2017%2C_Frankfurt_%281Y7A1891%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -362,12 +374,15 @@
     "electric vehicle",
     "hybrid",
     "performance car"
-   ]
+   ],
+   "imageCredit": "MB-one",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_fortwo_Cabrio_electric,_IAA_2017,_Frankfurt_(1Y7A1891).jpg"
   },
   {
    "id": "smart_roadster",
    "name": "Roadster",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Smart_Roadster_Coupe_1.jpg/1280px-Smart_Roadster_Coupe_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2005",
    "puissance_ch": 82,
    "vitesse_max_kmh": 180,
@@ -391,12 +406,15 @@
     "speedster",
     "lightweight",
     "fun car"
-   ]
+   ],
+   "imageCredit": "D4m1en",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_Roadster_Coupe_1.jpg"
   },
   {
    "id": "smart_vision_eq",
    "name": "vision EQ fortwo (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Smart_Vision_EQ_ForTwo_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2017",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -420,7 +438,10 @@
     "vision eq fortwo",
     "smart eq fortwo",
     "compact car"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_Vision_EQ_ForTwo_Concept.jpg"
   },
   {
    "id": "smart_2",

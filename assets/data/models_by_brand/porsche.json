@@ -325,7 +325,7 @@
   {
    "id": "porsche_911r",
    "name": "911R",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Porsche_911R%2C_Pau_2015.jpg/1280px-Porsche_911R%2C_Pau_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1968",
    "puissance_ch": 210,
    "vitesse_max_kmh": 240,
@@ -350,7 +350,10 @@
     "car",
     "vehicle",
     "gt car"
-   ]
+   ],
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_911R,_Pau_2015.jpg"
   },
   {
    "id": "porsche_912",
@@ -388,7 +391,7 @@
   {
    "id": "porsche_912e",
    "name": "912E",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/1976_Porsche_912E_front.jpg/1280px-1976_Porsche_912E_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1975 - 1976",
    "puissance_ch": 90,
    "vitesse_max_kmh": 185,
@@ -413,7 +416,10 @@
     "performance car",
     "car",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1976_Porsche_912E_front.jpg"
   },
   {
    "id": "porsche_914",
@@ -1141,7 +1147,7 @@
   {
    "id": "porsche_macan_gts",
    "name": "Macan GTS",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/2020_Porsche_Macan_GTS_grey_front.jpg/1280px-2020_Porsche_Macan_GTS_grey_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - Aujourd'hui",
    "puissance_ch": 440,
    "vitesse_max_kmh": 272,
@@ -1165,7 +1171,10 @@
     "german car",
     "turbocharged",
     "all-wheel drive"
-   ]
+   ],
+   "imageCredit": "Throwawayacc222",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Porsche_Macan_GTS_grey_front.jpg"
   },
   {
    "id": "porsche_mission-e",

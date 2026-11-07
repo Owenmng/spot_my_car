@@ -3,7 +3,7 @@
   {
    "id": "tesla_cybercab",
    "name": "Cybercab (Robotaxi)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Tesla_Cybercab_at_Santana_Row_side_view_dllu.jpg/1280px-Tesla_Cybercab_at_Santana_Row_side_view_dllu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 (Prévu)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -28,7 +28,10 @@
     "autonomous driving",
     "ev",
     "battery electric vehicle"
-   ]
+   ],
+   "imageCredit": "Dllu",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tesla_Cybercab_at_Santana_Row_side_view_dllu.jpg"
   },
   {
    "id": "tesla_cybertruck",
@@ -261,7 +264,7 @@
   {
    "id": "tesla_semi",
    "name": "Semi",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Tesla_Semi_3.jpg/1280px-Tesla_Semi_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -285,7 +288,10 @@
     "heavy truck",
     "transportation",
     "logistics"
-   ]
+   ],
+   "imageCredit": "Korbitr",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tesla_Semi_3.jpg"
   },
   {
    "id": "tesla_elon-musk-s-tesla-roadster",

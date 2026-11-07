@@ -35,7 +35,7 @@
   {
    "id": "fiat_1100d",
    "name": "1100D",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/1964_Fiat_1100D_%2825373335941%29.jpg/1280px-1964_Fiat_1100D_%2825373335941%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1953 - 1957",
    "puissance_ch": 36,
    "vitesse_max_kmh": 110,
@@ -59,7 +59,10 @@
     "older car",
     "used car",
     "1960s car"
-   ]
+   ],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Fiat_1100D_(25373335941).jpg"
   },
   {
    "id": "fiat_124",
@@ -765,7 +768,7 @@
   {
    "id": "fiat_600",
    "name": "600e",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Fiat_600e_IMG_9948.jpg/1280px-Fiat_600e_IMG_9948.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 156,
    "vitesse_max_kmh": 150,
@@ -789,7 +792,10 @@
     "vehicle",
     "compact car",
     "fiat"
-   ]
+   ],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_600e_IMG_9948.jpg"
   },
   {
    "id": "fiat_850",
@@ -981,7 +987,7 @@
   {
    "id": "fiat_balilla",
    "name": "Balilla",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/1939_Fiat_508_C_Nuova_Balilla_1100_Classic-Gala_2025_DSC_0859.jpg/1280px-1939_Fiat_508_C_Nuova_Balilla_1100_Classic-Gala_2025_DSC_0859.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1932 - 1937",
    "puissance_ch": 20,
    "vitesse_max_kmh": 80,
@@ -1005,7 +1011,10 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1939_Fiat_508_C_Nuova_Balilla_1100_Classic-Gala_2025_DSC_0859.jpg"
   },
   {
    "id": "fiat_barchetta",
@@ -1170,7 +1179,7 @@
   {
    "id": "fiat_centoventi",
    "name": "Centoventi",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Fiat_Centoventi_Concept%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1326%29.jpg/1280px-Fiat_Centoventi_Concept%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1326%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 (Concept)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -1194,7 +1203,10 @@
     "vehicle",
     "modular design",
     "customizable car"
-   ]
+   ],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Centoventi_Concept,_GIMS_2019,_Le_Grand-Saconnex_(GIMS1326).jpg"
   },
   {
    "id": "fiat_cinquecento",
@@ -1391,7 +1403,7 @@
   {
    "id": "fiat_duna",
    "name": "Duna",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/1987_Fiat_Duna_60.jpg/1280px-1987_Fiat_Duna_60.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 2000",
    "puissance_ch": 58,
    "vitesse_max_kmh": 150,
@@ -1414,12 +1426,15 @@
     "fiat",
     "economy car",
     "budget car"
-   ]
+   ],
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Fiat_Duna_60.jpg"
   },
   {
    "id": "fiat_egea",
    "name": "Egea (Tipo)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Fiat_Egea_in_Pendik_Istanbul.jpg/1280px-Fiat_Egea_in_Pendik_Istanbul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 95,
    "vitesse_max_kmh": 185,
@@ -1441,7 +1456,10 @@
     "motor vehicle",
     "italian car",
     "european car"
-   ]
+   ],
+   "imageCredit": "Carl9311",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Egea_in_Pendik_Istanbul.jpg"
   },
   {
    "id": "fiat_fastback",
@@ -1512,7 +1530,7 @@
   {
    "id": "fiat_freemont",
    "name": "Freemont",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/FIAT_FREEMONT_China.jpg/1280px-FIAT_FREEMONT_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2016",
    "puissance_ch": 170,
    "vitesse_max_kmh": 197,
@@ -1536,7 +1554,10 @@
     "spacious suv",
     "used freemont",
     "reliable suv"
-   ]
+   ],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:FIAT_FREEMONT_China.jpg"
   },
   {
    "id": "fiat_fullback",
@@ -1758,7 +1779,7 @@
   {
    "id": "fiat_ottimo",
    "name": "Ottimo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Fiat_Ottimo_01_China_2014-05-01.jpg/1280px-Fiat_Ottimo_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - 2017",
    "puissance_ch": 120,
    "vitesse_max_kmh": 196,
@@ -1782,7 +1803,10 @@
     "petrol car",
     "diesel car",
     "gasoline car"
-   ]
+   ],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Ottimo_01_China_2014-05-01.jpg"
   },
   {
    "id": "fiat_palio",
@@ -2004,7 +2028,7 @@
   {
    "id": "fiat_qubo",
    "name": "Qubo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Fiat_Fiorino_Qubo_front_20100704.jpg/1280px-Fiat_Fiorino_Qubo_front_20100704.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2019",
    "puissance_ch": 80,
    "vitesse_max_kmh": 155,
@@ -2028,7 +2052,10 @@
     "italian car",
     "multi-purpose vehicle",
     "passenger car"
-   ]
+   ],
+   "imageCredit": "M 93",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Fiorino_Qubo_front_20100704.jpg"
   },
   {
    "id": "fiat_regata",
@@ -2318,7 +2345,7 @@
   {
    "id": "fiat_talento",
    "name": "Talento",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/DSC00776_Fiat_Talento_Prisoner_Transport_Vehicle%2C_Polizia_Penitenziaria%2C_Rear_Left.jpg/1280px-DSC00776_Fiat_Talento_Prisoner_Transport_Vehicle%2C_Polizia_Penitenziaria%2C_Rear_Left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2020",
    "puissance_ch": 120,
    "vitesse_max_kmh": 166,
@@ -2342,12 +2369,15 @@
     "vehicle",
     "motor vehicle",
     "transportation"
-   ]
+   ],
+   "imageCredit": "Aciarium",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DSC00776_Fiat_Talento_Prisoner_Transport_Vehicle,_Polizia_Penitenziaria,_Rear_Left.jpg"
   },
   {
    "id": "fiat_talento_2020",
    "name": "Talento (2020)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Fiat_Talento_170_Ecojet_%282020%29_%2854842013304%29.jpg/1280px-Fiat_Talento_170_Ecojet_%282020%29_%2854842013304%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 145,
    "vitesse_max_kmh": 170,
@@ -2372,7 +2402,10 @@
     "vehicle",
     "car",
     "motor vehicle"
-   ]
+   ],
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Talento_170_Ecojet_(2020)_(54842013304).jpg"
   },
   {
    "id": "fiat_tempra",
