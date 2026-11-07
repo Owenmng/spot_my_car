@@ -397,6 +397,7 @@ Réponds uniquement avec l'identifiant exact du modèle le plus proche, ou "none
     if (s.contains('permission') || s.contains('api has not been used') || s.contains('not enabled') || s.contains('403')) {
       return "L'analyse automatique n'est pas encore activée sur le serveur. Tu peux ajouter la voiture à la main.";
     }
-    return "L'analyse n'a pas abouti. Réessaie ou ajoute la voiture à la main.";
+    final code = e is GeminiException ? ' (code ${e.status})' : '';
+    return "L'analyse n'a pas abouti$code. Réessaie ou ajoute la voiture à la main.";
   }
 }

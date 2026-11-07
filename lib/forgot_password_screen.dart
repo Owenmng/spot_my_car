@@ -1,4 +1,3 @@
-import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/forgot_password_screen.dart
 
 import 'package:firebase_auth/firebase_auth.dart';
