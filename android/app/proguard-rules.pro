@@ -18,3 +18,9 @@
 -keep class com.google.gson.** { *; }
 -keep class sun.misc.Unsafe { *; }
 -dontwarn com.google.gson.**
+
+# flutter_local_notifications : sérialisation Gson des notifications programmées
+-keep class com.dexterous.** { *; }
+-keepattributes Signature
+-keep class com.google.gson.reflect.TypeToken { *; }
+-keep class * extends com.google.gson.reflect.TypeToken

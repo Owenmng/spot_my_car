@@ -15,6 +15,10 @@ enum SoundEffect {
   transitionPage,
   succesPrincipal,
   notification,
+  levelUp,
+  achievement,
+  flip,
+  shutter,
 }
 
 class AudioService with ChangeNotifier, WidgetsBindingObserver {
@@ -42,7 +46,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
   
   // === CONFIGURATION AUDIO OPTIMISÉE ===
   static const String _musicAsset = 'audio/musique_calme.mp3';
-  static const double _musicVolume = 0.3;
+  static const double _musicVolume = 0.16;
 
   AudioService._() {
     _initializeAudioService();
@@ -195,7 +199,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
   Future<Source> _prepareMobileAudioSource() async {
     try {
       final dir = await getTemporaryDirectory();
-      final musicFile = File('${dir.path}/background_music.mp3');
+      final musicFile = File('${dir.path}/night_drive_v2.mp3');
       
       // Copier le fichier si nécessaire
       if (!await musicFile.exists()) {
@@ -281,19 +285,27 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
     switch (effect) {
       // ===== CONFIGUREZ VOS VOLUMES ICI (1.0 = maximum) =====
       case SoundEffect.clicPrincipal:
-        return (path: 'audio/clic_principal.mp3', volume: 1.0);
+        return (path: 'audio/clic_principal.mp3', volume: 0.45);
         
       case SoundEffect.clicLeger:
-        return (path: 'audio/clic_leger.mp3', volume: 0.7);
+        return (path: 'audio/clic_leger.mp3', volume: 0.35);
         
       case SoundEffect.transitionPage:
-        return (path: 'audio/transition_page.mp3', volume: 0.8);
+        return (path: 'audio/transition_page.mp3', volume: 0.4);
         
       case SoundEffect.succesPrincipal:
-        return (path: 'audio/succes.mp3', volume: 0.9);
+        return (path: 'audio/succes.mp3', volume: 0.75);
         
       case SoundEffect.notification:
-        return (path: 'audio/notification.mp3', volume: 0.85);
+        return (path: 'audio/notification.mp3', volume: 0.6);
+      case SoundEffect.levelUp:
+        return (path: 'audio/level_up.mp3', volume: 0.8);
+      case SoundEffect.achievement:
+        return (path: 'audio/succes_debloque.mp3', volume: 0.7);
+      case SoundEffect.flip:
+        return (path: 'audio/flip.mp3', volume: 0.6);
+      case SoundEffect.shutter:
+        return (path: 'audio/shutter.mp3', volume: 0.6);
     }
   }
   

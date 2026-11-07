@@ -1,12 +1,17 @@
+import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:spot_my_car/community_screen.dart';
 import 'package:spot_my_car/map_screen.dart';
+import 'package:spot_my_car/quiz_screen.dart';
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/daily_challenge.dart';
+import 'package:spot_my_car/services/notification_service.dart';
+import 'package:spot_my_car/services/duel_service.dart';
 import 'package:spot_my_car/services/photo_store.dart';
 import 'package:spot_my_car/services/share_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
@@ -135,6 +140,10 @@ class _GarageScreenState extends State<GarageScreen> {
         builder: (context, snap) {
           final docs = snap.data?.docs ?? [];
           final cars = docs.map((d) => d.data()).toList();
+          if (snap.hasData && !snap.data!.metadata.hasPendingWrites) {
+            unawaited(NotificationService.instance.refresh(cars, streak: spotStreak(cars)));
+            DuelService.instance.syncDebounced(cars);
+          }
           final filtered = docs.where((d) => _matches(d.data())).toList();
           final loading = snap.connectionState == ConnectionState.waiting && !snap.hasData;
 
@@ -431,10 +440,136 @@ class _Header extends StatelessWidget {
                 cars: cars,
                 claimed: (data['dailyClaims'] as Map?)?[DailyChallenge.todayKey()] == true,
               ).animate().fadeIn(delay: 120.ms, duration: 350.ms),
+              const SizedBox(height: 12),
+              const _PlayStrip().animate().fadeIn(delay: 200.ms, duration: 350.ms),
             ],
           ),
         );
       },
+    );
+  }
+}
+
+/// Raccourcis jeu : duels entre amis et blind test du jour.
+class _PlayStrip extends StatelessWidget {
+  const _PlayStrip();
+
+  @override
+  Widget build(BuildContext context) {
+    final me = FirebaseAuth.instance.currentUser?.uid;
+    return Row(
+      children: [
+        Expanded(
+          child: StreamBuilder<List<Duel>>(
+            stream: DuelService.instance.watch(),
+            builder: (context, snap) {
+              final duels = snap.data ?? [];
+              final invites = duels.where((d) => d.isPending && d.opponentId == me).length;
+              final live = duels.where((d) => d.isActive).toList();
+              final toClaim = duels.where((d) => d.winner == me && d.claimed[me] != true).length;
+              String sub;
+              if (invites > 0) {
+                sub = invites == 1 ? '1 défi reçu !' : '$invites défis reçus !';
+              } else if (toClaim > 0) {
+                sub = 'Gains à encaisser';
+              } else if (live.isNotEmpty) {
+                final d = live.first;
+                final mine = d.scoreOf(me ?? ''), theirs = d.scoreOf(d.other(me ?? ''));
+                sub = mine > theirs ? 'Tu mènes ${d.scoreLabel(mine)}' : mine == theirs ? 'Égalité, accélère' : 'Tu es mené';
+              } else {
+                sub = 'Défie un ami';
+              }
+              return _PlayTile(
+                icon: Icons.sports_mma_rounded,
+                title: 'Duels',
+                subtitle: sub,
+                badge: invites + toClaim,
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => CommunityScreen(initialTab: invites + toClaim + live.length > 0 ? 1 : 0))),
+              );
+            },
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+            stream: me == null ? null : FirebaseFirestore.instance.collection('users').doc(me).snapshots(),
+            builder: (context, snap) {
+              final played = (snap.data?.data()?['quizClaims'] as Map?)?[DailyChallenge.todayKey()];
+              return _PlayTile(
+                icon: Icons.quiz_rounded,
+                title: 'Blind test',
+                subtitle: played == null ? 'Jusqu’à +50 XP' : 'Fait : +$played XP',
+                badge: played == null ? 1 : 0,
+                dot: true,
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const QuizScreen())),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PlayTile extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final int badge;
+  final bool dot;
+  final VoidCallback onTap;
+  const _PlayTile({required this.icon, required this.title, required this.subtitle, required this.onTap, this.badge = 0, this.dot = false});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return Pressable(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: AppColors.card,
+          borderRadius: BorderRadius.circular(AppRadius.lg),
+          border: Border.all(color: badge > 0 ? accent.withValues(alpha: 0.6) : AppColors.line),
+        ),
+        child: Row(
+          children: [
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                Container(
+                  width: 38,
+                  height: 38,
+                  decoration: BoxDecoration(color: accent.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(11)),
+                  child: Icon(icon, color: accent, size: 21),
+                ),
+                if (badge > 0)
+                  Positioned(
+                    right: -4,
+                    top: -4,
+                    child: Container(
+                      constraints: const BoxConstraints(minWidth: 16, minHeight: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      decoration: BoxDecoration(color: const Color(0xFFFFD447), borderRadius: BorderRadius.circular(99), border: Border.all(color: AppColors.card, width: 2)),
+                      alignment: Alignment.center,
+                      child: dot ? null : Text('$badge', style: AppText.mono(9.5, color: Colors.black)),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: AppText.body(14.5, weight: FontWeight.w800)),
+                  Text(subtitle, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(12, color: AppColors.inkSoft)),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

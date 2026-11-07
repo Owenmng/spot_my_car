@@ -155,7 +155,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+            AudioService.instance.playSfx(SoundEffect.clicLeger);
             if (isEditing) {
               Navigator.of(context).pop();
             } else {
@@ -241,7 +241,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                           suffixIcon: IconButton(
                               icon: const Icon(Icons.calendar_today_outlined),
                               onPressed: () {
-                                AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                                AudioService.instance.playSfx(SoundEffect.clicLeger);
                                 _selectDate(context);
                               })),
                       validator: (value) {
@@ -270,7 +270,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                       controller: _favoriteBrandController,
                       readOnly: true,
                       onTap: () {
-                        AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON CORRIGÉ
+                        AudioService.instance.playSfx(SoundEffect.clicLeger);
                         _selectFavoriteBrand();
                       },
                       decoration: const InputDecoration(
@@ -287,7 +287,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                           onPressed: () {
                             // On vérifie si le formulaire est valide avant de jouer le son
                             if (_formKey.currentState!.validate()) {
-                               AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
+                               AudioService.instance.playSfx(SoundEffect.clicPrincipal);
                                _saveProfile();
                             } else {
                                AudioService.instance.playSfx(SoundEffect.clicLeger); // Son d'erreur

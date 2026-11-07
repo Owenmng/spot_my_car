@@ -1,616 +1,438 @@
-import 'package:spot_my_car/theme/app_theme.dart';
-import 'package:spot_my_car/services/custom_cache_manager.dart';
-// Fichier: lib/community/friends_tab.dart
-
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:spot_my_car/community/duels_tab.dart';
 import 'package:spot_my_car/models/level_model.dart';
-import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/services/social_service.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
+import 'package:spot_my_car/widgets/user_avatar.dart';
 
+const _gold = Color(0xFFFFD447);
+const _silver = Color(0xFFC9CED6);
+const _bronze = Color(0xFFD08A4E);
 
+/// Classement entre amis (total ou semaine), demandes, invitation et défis.
 class FriendsTab extends StatefulWidget {
-  const FriendsTab({super.key});
+  final VoidCallback? onChallenged;
+  const FriendsTab({super.key, this.onChallenged});
 
   @override
   State<FriendsTab> createState() => _FriendsTabState();
 }
 
-class _FriendsTabState extends State<FriendsTab> {
+class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMixin {
+  bool _weekly = true;
+  late final Stream<List<Player>> _circle = SocialService.instance.watchCircle();
 
-  final List<Level> levels = [
-    Level(1, "Novice du Spotting", 0), Level(2, "Débutant", 100), Level(3, "Amateur", 250),
-    Level(4, "Passionné", 500), Level(5, "Connaisseur", 1000), Level(6, "Expert", 2000),
-    Level(7, "Chasseur d'Élite", 4000), Level(8, "Maître Spotter", 7500),
-    Level(9, "Légende de la Route", 12000), Level(10, "Dieu du Spotting", 20000),
-  ];
+  @override
+  bool get wantKeepAlive => true;
 
-  Level _getCurrentLevel(int totalXp) {
-    Level currentLevel = levels.first;
-    for (var level in levels) {
-      if (totalXp >= level.xpRequired) {
-        currentLevel = level;
-      } else {
-        break;
-      }
-    }
-    return currentLevel;
-  }
+  String get _me => FirebaseAuth.instance.currentUser!.uid;
 
-  final currentUser = FirebaseAuth.instance.currentUser!;
-
-  Future<void> _sendFriendRequest(String friendId) async {
-    final scaffoldMessenger = ScaffoldMessenger.of(context);
-    final navigator = Navigator.of(context);
-
-    try {
-      final querySnapshot = await FirebaseFirestore.instance
-          .collection('users')
-          .where('friendId', isEqualTo: friendId)
-          .limit(1)
-          .get();
-
-      if (querySnapshot.docs.isEmpty) {
-        scaffoldMessenger.showSnackBar(const SnackBar(
-            content: Text("Aucun utilisateur trouvé avec cet ID."),
-            backgroundColor: Colors.orange));
-        return;
-      }
-      
-      final recipientUserDoc = querySnapshot.docs.first;
-      final recipientId = recipientUserDoc.id;
-
-      if (recipientId == currentUser.uid) {
-        scaffoldMessenger.showSnackBar(const SnackBar(
-            content: Text("Tu ne peux pas t'ajouter toi-même !"),
-            backgroundColor: Colors.orange));
-        return;
-      }
-
-      final areAlreadyFriends = await FirebaseFirestore.instance
-          .collection('users').doc(currentUser.uid)
-          .collection('friends').doc(recipientId)
-          .get()
-          .then((doc) => doc.exists);
-
-      if (areAlreadyFriends) {
-        scaffoldMessenger.showSnackBar(const SnackBar(
-            content: Text("Vous êtes déjà amis !"),
-            backgroundColor: Colors.blue));
-        return;
-      }
-
-      // Vérification 2 : Ai-je déjà envoyé une demande à cette personne ?
-      final pendingRequestSent = await FirebaseFirestore.instance
-          .collection('friend_requests')
-          .where('fromUserId', isEqualTo: currentUser.uid)
-          .where('toUserId', isEqualTo: recipientId)
-          .where('status', isEqualTo: 'pending')
-          .limit(1)
-          .get()
-          .then((snapshot) => snapshot.docs.isNotEmpty);
-
-      if (pendingRequestSent) {
-         scaffoldMessenger.showSnackBar(const SnackBar(
-            content: Text("Tu as déjà envoyé une demande à cet utilisateur."),
-            backgroundColor: Colors.blue));
-        return;
-      }
-
-      // Vérification 3 : Ai-je une demande en attente de cette personne ?
-      final pendingRequestReceived = await FirebaseFirestore.instance
-          .collection('friend_requests')
-          .where('fromUserId', isEqualTo: recipientId)
-          .where('toUserId', isEqualTo: currentUser.uid)
-          .where('status', isEqualTo: 'pending')
-          .limit(1)
-          .get()
-          .then((snapshot) => snapshot.docs.isNotEmpty);
-      
-      if (pendingRequestReceived) {
-        scaffoldMessenger.showSnackBar(const SnackBar(
-            content: Text("Cet utilisateur t'a déjà envoyé une demande. Va l'accepter !"),
-            backgroundColor: Colors.blue));
-        return;
-      }
-
-      await FirebaseFirestore.instance.collection('friend_requests').add({
-        'fromUserId': currentUser.uid,
-        'toUserId': recipientId,
-        'status': 'pending',
-        'createdAt': FieldValue.serverTimestamp(),
-      });
-
-      navigator.pop();
-      scaffoldMessenger.showSnackBar(const SnackBar(
-          content: Text("Demande d'ami envoyée !"),
-          backgroundColor: Colors.green));
-
-    } catch (e) {
-      if (navigator.canPop()) {
-        navigator.pop();
-      }
-      scaffoldMessenger.showSnackBar(SnackBar(
-          content: Text("Une erreur est survenue : $e"),
-          backgroundColor: Colors.red));
-    }
-  }
-  
-  Future<void> _acceptFriendRequest(String requestId, String fromUserId) async {
-    final batch = FirebaseFirestore.instance.batch();
-
-    final requestRef = FirebaseFirestore.instance.collection('friend_requests').doc(requestId);
-    batch.update(requestRef, {'status': 'accepted'});
-
-    final currentUserFriendsRef = FirebaseFirestore.instance
-        .collection('users').doc(currentUser.uid)
-        .collection('friends').doc(fromUserId);
-    batch.set(currentUserFriendsRef, {'friendSince': FieldValue.serverTimestamp()});
-
-    final otherUserFriendsRef = FirebaseFirestore.instance
-        .collection('users').doc(fromUserId)
-        .collection('friends').doc(currentUser.uid);
-    batch.set(otherUserFriendsRef, {'friendSince': FieldValue.serverTimestamp()});
-
-    await batch.commit();
-
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-      content: Text("Vous êtes maintenant amis !"),
-      backgroundColor: Colors.green,
-    ));
-  }
-
-  Future<void> _declineFriendRequest(String requestId) async {
-    await FirebaseFirestore.instance.collection('friend_requests').doc(requestId).delete();
-     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-      content: Text("Demande refusée."),
-    ));
-  }
-
-Widget _buildFriendListItem(String friendUid) {
-    return FutureBuilder<DocumentSnapshot>(
-      future: FirebaseFirestore.instance.collection('users').doc(friendUid).get(),
-      builder: (context, snapshot) {
-        if (!snapshot.hasData) {
-          return const ListTile(
-            leading: CircleAvatar(backgroundColor: Color.fromARGB(255, 235, 240, 255), radius: 25),
-            title: Text("Chargement..."),
-          );
-        }
-
-        final friendData = snapshot.data?.data() as Map<String, dynamic>?;
-
-        if (friendData == null) {
-          return const ListTile(
-            leading: CircleAvatar(child: Icon(Icons.error_outline)),
-            title: Text("Utilisateur introuvable"),
-          );
-        }
-
-        final pseudo = friendData['pseudo'] as String?;
-        final friendId = friendData['friendId'] ?? 'ID inconnu';
-        final photoUrl = friendData['photoUrl'] as String?;
-        final totalXp = friendData['totalXp'] ?? 0;
-        final Level friendLevel = _getCurrentLevel(totalXp);
-        final stats = friendData['stats'] as Map<String, dynamic>? ?? {};
-        final totalSpots = stats['totalSpots'] ?? 0;
-        final favoriteBrand = stats['favoriteBrandName'] ?? 'Aucune';
-
-        // Si le pseudo n'est pas défini, on utilise l'ID Ami comme nom principal
-        final displayName = (pseudo != null && pseudo.isNotEmpty) ? pseudo : friendId;
-
-        return ListTile(
-          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          leading: CircleAvatar(
-            radius: 25,
-            backgroundColor: AppColors.paperDeep, // Arrière-plan si l'image charge
-            backgroundImage: (photoUrl != null && photoUrl.startsWith('http'))
-                ? NetworkImage(photoUrl, headers: kImageHeaders)
-                : (photoUrl != null && photoUrl.startsWith('assets/'))
-                    ? AssetImage(photoUrl) as ImageProvider
-                    : const AssetImage('assets/avatars/car_noir.png'),
-          ),
-          title: Text(displayName, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-          subtitle: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(friendId, style: TextStyle(color: AppColors.inkSoft, fontSize: 12)),
-              const SizedBox(height: 4),
-              Text("Niveau ${friendLevel.level} · Spots: $totalSpots"),
-              Text("Marque préférée : $favoriteBrand"),
-            ],
-          ),
-          trailing: IconButton(
-            icon: const Icon(Icons.person_remove_outlined, color: Colors.redAccent),
-            tooltip: 'Retirer cet ami', // C'est bien pour l'accessibilité
-            onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-              _removeFriend(friendUid, displayName);
-            },
-          ),
-        );
-      },
-    );
-  }
-
-    Future<void> _removeFriend(String friendUid, String friendPseudo) async {
-    // Confirmation de la suppression
-    final bool? confirmed = await showDialog<bool>(
+  Future<void> _addFriend() async {
+    final ctrl = TextEditingController();
+    final msg = await showModalBottomSheet<String>(
       context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Retirer un ami'),
-        content: Text("Es-tu sûr de vouloir retirer $friendPseudo de ta liste d'amis ?"),
-        actions: [
-          TextButton(
-            onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-              Navigator.of(context).pop(false);
-            }, 
-            child: const Text('Annuler')
-          ),
-          TextButton(
-            onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-              Navigator.of(context).pop(true);
-            }, 
-            child: const Text('Retirer', style: TextStyle(color: Colors.red))
-          ),
-        ],
+      isScrollControlled: true,
+      builder: (ctx) => Padding(
+        padding: EdgeInsets.fromLTRB(20, 8, 20, 20 + MediaQuery.viewInsetsOf(ctx).bottom),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text('Ajouter un ami', style: AppText.display(24)),
+            const SizedBox(height: 6),
+            Text("Demande-lui son identifiant : il est affiché en haut de son onglet Amis.", style: AppText.body(14, color: AppColors.inkSoft)),
+            const SizedBox(height: 16),
+            TextField(
+              controller: ctrl,
+              autofocus: true,
+              keyboardType: TextInputType.number,
+              style: AppText.mono(20),
+              decoration: const InputDecoration(hintText: '12345678', prefixIcon: Icon(Icons.tag_rounded)),
+            ),
+            const SizedBox(height: 14),
+            ElevatedButton(
+              onPressed: () async {
+                final r = await SocialService.instance.sendRequest(ctrl.text).catchError((_) => 'Erreur réseau, réessaie.');
+                if (ctx.mounted) Navigator.pop(ctx, r);
+              },
+              child: const Text('Envoyer la demande'),
+            ),
+          ],
+        ),
       ),
     );
+    if (msg != null && mounted) showAppSnack(context, msg, icon: Icons.person_add_alt_1_rounded);
+  }
 
-    if (confirmed != true) return;
-
-    try {
-      final batch = FirebaseFirestore.instance.batch();
-
-      // Étape 1 : Supprimer l'ami de la sous-collection de l'utilisateur actuel
-      final currentUserFriendRef = FirebaseFirestore.instance
-          .collection('users').doc(currentUser.uid)
-          .collection('friends').doc(friendUid);
-      batch.delete(currentUserFriendRef);
-
-      // Étape 2 : Supprimer l'utilisateur actuel de la sous-collection de l'ami
-      final otherUserFriendRef = FirebaseFirestore.instance
-          .collection('users').doc(friendUid)
-          .collection('friends').doc(currentUser.uid);
-      batch.delete(otherUserFriendRef);
-
-      await batch.commit();
-
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        content: Text("Ami retiré."),
-        backgroundColor: Colors.green,
-      ));
-
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text("Erreur lors de la suppression de l'ami : $e"),
-        backgroundColor: Colors.red,
-      ));
+  Future<void> _friendMenu(Player p) async {
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: UserAvatar(photoUrl: p.photoUrl, name: p.name, size: 40),
+              title: Text(p.name, style: AppText.body(16, weight: FontWeight.w800)),
+              subtitle: Text('Niveau ${levelForXp(p.xp).level} · ${p.spots} spots · ${p.duelsWon} duels gagnés'),
+            ),
+            const Divider(),
+            ListTile(leading: const Icon(Icons.sports_mma_rounded), title: const Text('Lancer un duel'), onTap: () => Navigator.pop(ctx, 'duel')),
+            ListTile(
+              leading: const Icon(Icons.person_remove_outlined, color: AppColors.danger),
+              title: const Text('Retirer de mes amis', style: TextStyle(color: AppColors.danger)),
+              onTap: () => Navigator.pop(ctx, 'remove'),
+            ),
+          ],
+        ),
+      ),
+    );
+    if (!mounted) return;
+    if (action == 'duel') {
+      final ok = await showNewDuelSheet(context, opponent: p);
+      if (ok == true) widget.onChallenged?.call();
+    } else if (action == 'remove') {
+      final confirm = await showDialog<bool>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('Retirer cet ami ?'),
+          content: Text('${p.name} ne verra plus ta progression dans son classement.'),
+          actions: [
+            TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Annuler')),
+            TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Retirer', style: TextStyle(color: AppColors.danger))),
+          ],
+        ),
+      );
+      if (confirm == true) {
+        await SocialService.instance.remove(p.uid);
+        if (mounted) showAppSnack(context, '${p.name} a été retiré.');
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.paperDeep,
-      body: FutureBuilder<DocumentSnapshot>(
-        // On va chercher une seule fois les infos de l'utilisateur actuel
-        future: FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get(),
-        builder: (context, snapshot) {
-          if (!snapshot.hasData) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          final currentUserData = snapshot.data!.data() as Map<String, dynamic>?;
-          final myFriendId = currentUserData?['friendId'] as String?;
+    super.build(context);
+    return StreamBuilder<List<Player>>(
+      stream: _circle,
+      builder: (context, snap) {
+        final players = snap.data ?? [];
+        final me = players.where((p) => p.uid == _me).firstOrNull;
+        final ranked = players.toList()..sort((a, b) => _weekly ? b.weekXp.compareTo(a.weekXp) : b.xp.compareTo(a.xp));
+        int score(Player p) => _weekly ? p.weekXp : p.xp;
+        final friendsCount = players.length - 1;
 
-          return SingleChildScrollView(
-            padding: const EdgeInsets.all(16.0),
+        return ListView(
+          padding: EdgeInsets.fromLTRB(16, 12, 16, 32 + MediaQuery.paddingOf(context).bottom),
+          children: [
+            _InviteCard(friendId: me?.data['friendId'] as String?, onAdd: _addFriend),
+            const _Requests(),
+            const SizedBox(height: 22),
+            Row(
+              children: [
+                Expanded(child: Text(_weekly ? 'CETTE SEMAINE' : 'DEPUIS TOUJOURS', style: AppText.label(11.5, color: AppColors.inkMuted))),
+                SegmentedButton<bool>(
+                  showSelectedIcon: false,
+                  style: const ButtonStyle(visualDensity: VisualDensity.compact),
+                  segments: const [ButtonSegment(value: true, label: Text('Semaine')), ButtonSegment(value: false, label: Text('Total'))],
+                  selected: {_weekly},
+                  onSelectionChanged: (s) => setState(() => _weekly = s.first),
+                ),
+              ],
+            ),
+            const SizedBox(height: 14),
+            if (snap.connectionState == ConnectionState.waiting && players.isEmpty)
+              const Padding(padding: EdgeInsets.all(40), child: Center(child: CircularProgressIndicator()))
+            else if (friendsCount <= 0)
+              EmptyState(
+                icon: Icons.groups_2_outlined,
+                title: 'Le paddock est vide',
+                message: 'Ajoute des amis pour comparer vos garages chaque semaine et vous lancer des duels.',
+                action: ElevatedButton.icon(onPressed: _addFriend, icon: const Icon(Icons.person_add_alt_1_rounded), label: const Text('Ajouter un ami')),
+              )
+            else ...[
+              RankPodium(players: ranked.take(3).toList(), score: score, me: _me, weekly: _weekly),
+              const SizedBox(height: 14),
+              for (var i = 0; i < ranked.length; i++)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: RankRow(
+                    rank: i + 1,
+                    player: ranked[i],
+                    score: score(ranked[i]),
+                    weekly: _weekly,
+                    isMe: ranked[i].uid == _me,
+                    onTap: ranked[i].uid == _me ? null : () => _friendMenu(ranked[i]),
+                    onDuel: ranked[i].uid == _me
+                        ? null
+                        : () async {
+                            final ok = await showNewDuelSheet(context, opponent: ranked[i]);
+                            if (ok == true) widget.onChallenged?.call();
+                          },
+                  ).animate().fadeIn(delay: (40 * i).ms, duration: 250.ms).slideX(begin: 0.04, end: 0),
+                ),
+            ],
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _InviteCard extends StatelessWidget {
+  final String? friendId;
+  final VoidCallback onAdd;
+  const _InviteCard({required this.friendId, required this.onAdd});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        gradient: LinearGradient(colors: [Color.lerp(AppColors.card, accent, 0.18)!, AppColors.card], begin: Alignment.topLeft, end: Alignment.bottomRight),
+        border: Border.all(color: AppColors.line),
+      ),
+      child: Row(
+        children: [
+          Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // === WIDGET AJOUTÉ ICI ===
-                if (myFriendId != null)
-                  Align(
-                    alignment: Alignment.topRight,
-                    child: InkWell(
-                      onTap: () {
-                        AudioService.instance.playSfx(SoundEffect.notification); // <-- SON AJOUTÉ
-                        Clipboard.setData(ClipboardData(text: myFriendId));
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: const Text('ID Ami copié dans le presse-papiers !'),
-                            backgroundColor: Theme.of(context).primaryColor, // Couleur de l'appli
-                          ),
-                        );
-                      },
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              "Mon ID : $myFriendId",
-                              style: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor),
-                            ),
-                            const SizedBox(width: 8),
-                            Icon(Icons.copy, size: 16, color: Theme.of(context).primaryColor),
-                          ],
-                        ),
-                      ),
-                    ),
+                Text('MON IDENTIFIANT', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                const SizedBox(height: 4),
+                GestureDetector(
+                  onTap: friendId == null
+                      ? null
+                      : () {
+                          Clipboard.setData(ClipboardData(text: friendId!));
+                          HapticFeedback.selectionClick();
+                          showAppSnack(context, 'Identifiant copié', icon: Icons.copy_rounded);
+                        },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(friendId ?? '········', style: AppText.mono(22)),
+                      const SizedBox(width: 8),
+                      const Icon(Icons.copy_rounded, size: 16, color: AppColors.inkMuted),
+                    ],
                   ),
-                if (myFriendId != null) const SizedBox(height: 16), // Espace après l'ID                
-                // Le reste de la page ne change pas
-                _buildFriendRequestsSection(),
-                const SizedBox(height: 32),
-                _buildFriendsListSection(),
+                ),
               ],
             ),
-          );
-        },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-          _showAddFriendDialog(context);
-        },
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
-        tooltip: 'Ajouter un ami',
-        child: const Icon(Icons.person_add_alt_1_outlined),
-      ),
-    );
-  }
-
-  Widget _buildSectionHeader(String title, IconData icon) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 4.0, bottom: 4.0),
-      child: Row(
-        children: [
-          Icon(icon, color: AppColors.inkSoft, size: 20),
-          const SizedBox(width: 8),
-          Text(
-            title,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.inkSoft),
           ),
+          IconButton.filledTonal(
+            tooltip: 'Inviter',
+            onPressed: friendId == null
+                ? null
+                : () => SharePlus.instance.share(ShareParams(
+                      text: 'On se défie sur Spot My Car ? Ajoute-moi avec mon identifiant : $friendId 🏎️',
+                    )),
+            icon: const Icon(Icons.ios_share_rounded),
+          ),
+          const SizedBox(width: 6),
+          IconButton.filled(tooltip: 'Ajouter un ami', onPressed: onAdd, icon: const Icon(Icons.person_add_alt_1_rounded)),
         ],
       ),
     );
   }
+}
 
-  Widget _buildFriendRequestsSection() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _buildSectionHeader("Demandes en attente", Icons.person_add_outlined),
-        const SizedBox(height: 8),
-        StreamBuilder<QuerySnapshot>(
-          stream: FirebaseFirestore.instance
-              .collection('friend_requests')
-              .where('toUserId', isEqualTo: currentUser.uid)
-              .where('status', isEqualTo: 'pending')
-              .snapshots(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-              return Card(
-                elevation: 2, margin: EdgeInsets.zero, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                child: const Padding(
-                  padding: EdgeInsets.all(24.0),
-                  child: Center(child: Text("Aucune nouvelle demande.", style: TextStyle(color: AppColors.inkMuted))),
-                ),
-              );
-            }
+class _Requests extends StatelessWidget {
+  const _Requests();
 
-            final requests = snapshot.data!.docs;
-
-            return ListView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              itemCount: requests.length,
-              itemBuilder: (context, index) {
-                final request = requests[index];
-                final requestData = request.data() as Map<String, dynamic>;
-
-                return FutureBuilder<DocumentSnapshot>(
-                  future: FirebaseFirestore.instance.collection('users').doc(requestData['fromUserId']).get(),
-                  builder: (context, userSnapshot) {
-                    
-                    // On affiche un loader pendant le chargement des infos de l'expéditeur
-                    if (!userSnapshot.hasData) {
-                      return const Card(
-                        margin: EdgeInsets.only(bottom: 8),
-                        child: ListTile(
-                          leading: CircleAvatar(radius: 25),
-                          title: Text("Chargement..."),
-                        ),
-      
-                      );
-                    }
-                    
-                    final senderData = userSnapshot.data?.data() as Map<String, dynamic>?;
-                    final fromPseudo = senderData?['pseudo'] as String?;
-                    final fromFriendId = senderData?['friendId'] ?? 'ID Inconnu';
-                    final fromPhotoUrl = senderData?['photoUrl'] as String?;
-                    
-                    // Si le pseudo est vide, on affiche l'ID Ami à la place
-                    final displayName = (fromPseudo != null && fromPseudo.isNotEmpty) ? fromPseudo : fromFriendId;
-
-                    return Card(
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+      stream: SocialService.instance.watchIncoming(),
+      builder: (context, snap) {
+        final docs = snap.data?.docs ?? [];
+        if (docs.isEmpty) return const SizedBox.shrink();
+        return Padding(
+          padding: const EdgeInsets.only(top: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('DEMANDES REÇUES', style: AppText.label(11.5, color: AppColors.inkMuted)),
+              const SizedBox(height: 8),
+              for (final d in docs)
+                FutureBuilder<Player?>(
+                  future: SocialService.instance.player(d.data()['fromUserId'] as String),
+                  builder: (context, ps) {
+                    final p = ps.data;
+                    return Container(
                       margin: const EdgeInsets.only(bottom: 8),
-                      elevation: 2,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      child: ListTile(
-                        leading: CircleAvatar(
-                          radius: 25,
-                          backgroundImage: (fromPhotoUrl != null && fromPhotoUrl.startsWith('http'))
-                              ? NetworkImage(fromPhotoUrl, headers: kImageHeaders)
-                              : (fromPhotoUrl != null && fromPhotoUrl.startsWith('assets/'))
-                                  ? AssetImage(fromPhotoUrl) as ImageProvider
-                                  : const AssetImage('assets/avatars/car_noir.png'),
-                        ),
-                        title: Text(displayName, style: const TextStyle(fontWeight: FontWeight.bold)),
-                        subtitle: const Text("veut devenir ton ami"),
-                        trailing: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            IconButton(
-                              icon: const Icon(Icons.check_circle, color: Colors.green),
-                              onPressed: () {
-                                AudioService.instance.playSfx(SoundEffect.succesPrincipal); // <-- SON AJOUTÉ
-                                _acceptFriendRequest(request.id, requestData['fromUserId']);
-                              },
-                              tooltip: 'Accepter',
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
+                      child: Row(
+                        children: [
+                          UserAvatar(photoUrl: p?.photoUrl, name: p?.name ?? '?', size: 40),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(p?.name ?? '…', style: AppText.body(15, weight: FontWeight.w800)),
+                                if (p != null) Text('Niveau ${levelForXp(p.xp).level} · ${p.spots} spots', style: AppText.body(12.5, color: AppColors.inkSoft)),
+                              ],
                             ),
-                            IconButton(
-                              icon: const Icon(Icons.cancel, color: Colors.red),
-                              onPressed: () {
-                                AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                                _declineFriendRequest(request.id);
-                              },
-                              tooltip: 'Refuser',
-                            ),
-                          ],
-                        ),
+                          ),
+                          IconButton(
+                            tooltip: 'Refuser',
+                            onPressed: () => SocialService.instance.decline(d.id),
+                            icon: const Icon(Icons.close_rounded, color: AppColors.inkMuted),
+                          ),
+                          IconButton.filled(
+                            tooltip: 'Accepter',
+                            onPressed: () async {
+                              await SocialService.instance.accept(d.id, d.data()['fromUserId'] as String);
+                              if (context.mounted) showAppSnack(context, 'Vous êtes amis !', icon: Icons.handshake_rounded);
+                            },
+                            icon: const Icon(Icons.check_rounded),
+                          ),
+                        ],
                       ),
                     );
-                  }
-                );
-              },
-            );
-          },
-        ),
-      ],
-    );
-  }
-
-Widget _buildFriendsListSection() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _buildSectionHeader("Mes Amis", Icons.people_outline),
-        const SizedBox(height: 8),
-        StreamBuilder<QuerySnapshot>(
-          // Étape 1: On écoute la sous-collection 'friends' de l'utilisateur actuel
-          stream: FirebaseFirestore.instance
-              .collection('users')
-              .doc(currentUser.uid)
-              .collection('friends')
-              .snapshots(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-              return Card(
-                elevation: 2,
-                margin: EdgeInsets.zero,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: Center(
-                    child: Text(
-                      "Ta liste d'amis est vide.",
-                      style: TextStyle(color: AppColors.inkSoft),
-                    ),
-                  ),
-                ),
-              );
-            }
-
-            final friendDocs = snapshot.data!.docs;
-            // On extrait les UID des amis
-            final friendUids = friendDocs.map((doc) => doc.id).toList();
-
-            return Card(
-              elevation: 2,
-              margin: EdgeInsets.zero,
-              clipBehavior: Clip.antiAlias,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              child: ListView.separated(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: friendUids.length,
-                separatorBuilder: (context, index) => const Divider(height: 1),
-                itemBuilder: (context, index) {
-                  // Pour chaque UID, on va chercher les infos de l'ami
-                  return _buildFriendListItem(friendUids[index]);
-                },
-              ),
-            );
-          },
-        ),
-      ],
-    );
-  }
-
-  void _showAddFriendDialog(BuildContext context) {
-    final TextEditingController idController = TextEditingController();
-    final formKey = GlobalKey<FormState>();
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          title: const Text("Ajouter un ami"),
-          content: Form(
-            key: formKey,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Text("Entre l'ID Ami à 8 chiffres de la personne que tu veux ajouter."),
-                const SizedBox(height: 16),
-                TextFormField(
-                  controller: idController,
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(
-                    labelText: "ID Ami",
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.tag),
-                  ),
-                  validator: (value) {
-                    if (value == null || value.trim().isEmpty) return "L'ID ne peut pas être vide.";
-                    if (value.trim().length != 8) return "L'ID doit contenir 8 chiffres.";
-                    return null;
                   },
                 ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class RankPodium extends StatelessWidget {
+  final List<Player> players;
+  final int Function(Player) score;
+  final String me;
+  final bool weekly;
+  const RankPodium({required this.players, required this.score, required this.me, required this.weekly});
+
+  @override
+  Widget build(BuildContext context) {
+    if (players.isEmpty) return const SizedBox.shrink();
+    // Ordre visuel : 2e, 1er, 3e
+    final order = [if (players.length > 1) 1, 0, if (players.length > 2) 2];
+    const heights = [96.0, 72.0, 56.0];
+    const colors = [_gold, _silver, _bronze];
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        for (final i in order)
+          Expanded(
+            child: Column(
+              children: [
+                if (i == 0) const Icon(Icons.emoji_events_rounded, color: _gold, size: 22).animate(onPlay: (c) => c.repeat(reverse: true)).moveY(begin: 0, end: -3, duration: 900.ms),
+                UserAvatar(photoUrl: players[i].photoUrl, name: players[i].name, size: i == 0 ? 64 : 52, ring: colors[i]),
+                const SizedBox(height: 6),
+                Text(
+                  players[i].uid == me ? 'Toi' : players[i].name,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppText.body(13.5, weight: FontWeight.w800),
+                ),
+                Text('${score(players[i])} XP', style: AppText.mono(12, color: colors[i])),
+                const SizedBox(height: 6),
+                Container(
+                  height: heights[i],
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [colors[i].withValues(alpha: 0.35), colors[i].withValues(alpha: 0.05)],
+                    ),
+                    border: Border(top: BorderSide(color: colors[i], width: 2)),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text('${i + 1}', style: AppText.display(30, color: colors[i])),
+                ).animate().scaleY(begin: 0, alignment: Alignment.bottomCenter, duration: 500.ms, delay: (120 * i).ms, curve: Curves.easeOutBack),
               ],
             ),
           ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                Navigator.of(context).pop();
-              },
-              child: const Text("Annuler"),
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).primaryColor,
-                foregroundColor: Colors.white,
+      ],
+    );
+  }
+}
+
+class RankRow extends StatelessWidget {
+  final int rank;
+  final Player player;
+  final int score;
+  final bool weekly;
+  final bool isMe;
+  final VoidCallback? onTap;
+  final VoidCallback? onDuel;
+
+  const RankRow({required this.rank, required this.player, required this.score, required this.weekly, required this.isMe, this.onTap, this.onDuel});
+
+  String _lastSeen() {
+    final t = player.lastSpotAt;
+    if (t == null) return 'Pas encore de spot';
+    final d = DateTime.now().difference(t);
+    if (d.inMinutes < 60) return 'A spotté il y a ${d.inMinutes} min';
+    if (d.inHours < 24) return 'A spotté il y a ${d.inHours} h';
+    if (d.inDays < 7) return 'A spotté il y a ${d.inDays} j';
+    return 'Au garage depuis un moment';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final level = levelForXp(player.xp);
+    return Pressable(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(12, 10, 10, 10),
+        decoration: BoxDecoration(
+          color: isMe ? Color.lerp(AppColors.card, accent, 0.12) : AppColors.card,
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border.all(color: isMe ? accent.withValues(alpha: 0.6) : AppColors.line),
+        ),
+        child: Row(
+          children: [
+            SizedBox(width: 26, child: Text('$rank', style: AppText.mono(15, color: rank <= 3 ? [_gold, _silver, _bronze][rank - 1] : AppColors.inkMuted))),
+            UserAvatar(photoUrl: player.photoUrl, name: player.name, size: 42),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(isMe ? '${player.name} (toi)' : player.name, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(15, weight: FontWeight.w800)),
+                  Text('Niv. ${level.level} ${level.title} · ${_lastSeen()}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(12, color: AppColors.inkSoft)),
+                ],
               ),
-              onPressed: () {
-                if (formKey.currentState!.validate()) {
-                  AudioService.instance.playSfx(SoundEffect.notification); // <-- SON AJOUTÉ
-                  _sendFriendRequest(idController.text.trim());
-                }
-              },
-              child: const Text("Envoyer"),
             ),
+            const SizedBox(width: 8),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text('$score', style: AppText.mono(16)),
+                Text(weekly ? 'XP sem.' : 'XP', style: AppText.label(9, color: AppColors.inkMuted)),
+              ],
+            ),
+            if (onDuel != null) ...[
+              const SizedBox(width: 6),
+              IconButton(
+                tooltip: 'Défier',
+                visualDensity: VisualDensity.compact,
+                onPressed: onDuel,
+                icon: Icon(Icons.sports_mma_rounded, color: accent),
+              ),
+            ],
           ],
-        );
-      },
+        ),
+      ),
     );
   }
 }

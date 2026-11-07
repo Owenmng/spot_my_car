@@ -95,6 +95,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
       final file = await _picker.pickImage(source: source, imageQuality: 82, maxWidth: 1600, maxHeight: 1600);
       if (file == null) return;
       final bytes = await file.readAsBytes();
+      if (source == ImageSource.camera) AudioService.instance.playSfx(SoundEffect.shutter);
       setState(() {
         _draft.photo = bytes;
         _result = null;
@@ -113,9 +114,16 @@ class _AddCarScreenState extends State<AddCarScreen> {
     }
   }
 
-  Future<void> _analyze(Uint8List bytes) async {
-    setState(() => _analyzing = true);
-    final result = await VehicleRecognitionService.instance.analyze(bytes);
+  bool _deep = false;
+
+  Future<void> _analyze(Uint8List bytes, {bool deep = false}) async {
+    setState(() {
+      _analyzing = true;
+      _deep = deep;
+      _result = null;
+      _picked = null;
+    });
+    final result = await VehicleRecognitionService.instance.analyze(bytes, deep: deep);
     if (!mounted || _draft.photo != bytes) return;
 
     setState(() {
@@ -251,10 +259,13 @@ class _AddCarScreenState extends State<AddCarScreen> {
       await navigator.push(SpotRevealScreen.route(draft: _draft, result: result));
       if (!mounted) return;
 
-      for (final a in result.newAchievements) {
+      // Un seul grand moment par spot : le succès le plus prestigieux. Les autres
+      // sont déjà listés sur la carte révélée, pas de rafale de pop-ups.
+      if (result.newAchievements.isNotEmpty && mounted) {
+        final a = (result.newAchievements.toList()..sort((x, y) => y.xpReward.compareTo(x.xpReward))).first;
         final parent = result.achievementsAfter.where((x) => x.levels.contains(a));
-        if (!mounted) return;
-        await showAchievementUnlocked(context, a, parent.isEmpty ? Icons.emoji_events_rounded : parent.first.icon);
+        await showAchievementUnlocked(context, a, parent.isEmpty ? Icons.emoji_events_rounded : parent.first.icon,
+            others: result.newAchievements.length - 1);
       }
       if (result.newLevel != null && mounted) {
         await showLevelUp(context, oldLevel: result.oldLevel, newLevel: result.newLevel!, oldXp: result.oldXp, newXp: result.newXp);
@@ -302,6 +313,10 @@ class _AddCarScreenState extends State<AddCarScreen> {
               onCamera: () => _pick(ImageSource.camera),
               onGallery: () => _pick(ImageSource.gallery),
             ),
+            if (_analyzing) ...[
+              const SizedBox(height: 18),
+              _AnalysisProgress(deep: _deep),
+            ],
             if (_draft.photo == null && !_manual) ...[
               const SizedBox(height: 18),
               Center(
@@ -322,6 +337,8 @@ class _AddCarScreenState extends State<AddCarScreen> {
                 onPick: _choose,
                 onManual: () => setState(() => _manual = true),
                 onRetry: () => _analyze(_draft.photo!),
+                onDeep: () => _analyze(_draft.photo!, deep: true),
+                deepDone: _deep,
               ).animate().fadeIn(duration: 300.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
             ],
             if (_manual) ...[
@@ -681,29 +698,9 @@ class _ScanOverlay extends StatefulWidget {
 
 class _ScanOverlayState extends State<_ScanOverlay> with SingleTickerProviderStateMixin {
   late final AnimationController _c = AnimationController(vsync: this, duration: const Duration(milliseconds: 1600))..repeat(reverse: true);
-  Timer? _timer;
-  int _step = 0;
-
-  static const _steps = [
-    'Je regarde la calandre…',
-    'Je compare les optiques…',
-    'Je cherche le logo…',
-    'Je date la génération…',
-    'Je lis la plaque…',
-    'Presque fini…',
-  ];
-
-  @override
-  void initState() {
-    super.initState();
-    _timer = Timer.periodic(const Duration(milliseconds: 1500), (_) {
-      if (mounted) setState(() => _step = (_step + 1) % _steps.length);
-    });
-  }
 
   @override
   void dispose() {
-    _timer?.cancel();
     _c.dispose();
     super.dispose();
   }
@@ -734,30 +731,173 @@ class _ScanOverlayState extends State<_ScanOverlay> with SingleTickerProviderSta
             ),
           ),
           const Positioned.fill(child: Padding(padding: EdgeInsets.all(18), child: CustomPaint(painter: _CornersPainter()))),
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 18,
-            child: Center(
-              child: AnimatedSwitcher(
-                duration: const Duration(milliseconds: 300),
-                transitionBuilder: (child, a) => FadeTransition(
-                  opacity: a,
-                  child: SlideTransition(position: Tween(begin: const Offset(0, 0.4), end: Offset.zero).animate(a), child: child),
-                ),
-                child: Container(
-                  key: ValueKey(_step),
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-                  decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.6), borderRadius: BorderRadius.circular(99)),
-                  child: Text(_steps[_step], style: AppText.body(13.5, color: Colors.white, weight: FontWeight.w700)),
-                ),
-              ),
-            ),
-          ),
         ],
       ),
     );
   }
+}
+
+/// Ce que fait l'IA, étape par étape : chaque ligne se coche une seule fois,
+/// puis une carte fantôme et une anecdote occupent l'écran jusqu'au résultat.
+class _AnalysisProgress extends StatefulWidget {
+  final bool deep;
+  const _AnalysisProgress({required this.deep});
+
+  @override
+  State<_AnalysisProgress> createState() => _AnalysisProgressState();
+}
+
+class _AnalysisProgressState extends State<_AnalysisProgress> {
+  static const _labels = ['Silhouette et carrosserie', 'Logo et calandre', 'Modèle et génération', 'Couleur et plaque'];
+  static const _facts = [
+    'La Bugatti Veyron change ses pneus pour environ 30 000 € le train.',
+    'La Lamborghini Miura est souvent citée comme la première supercar moderne.',
+    "Le logo Alfa Romeo mêle la croix de Milan et la guivre des Visconti.",
+    'La Porsche 911 garde son moteur en porte-à-faux arrière depuis 1963.',
+    'La Renault 5 Turbo avait son moteur à la place des sièges arrière.',
+    'Le nom « Countach » vient d’une exclamation piémontaise de surprise.',
+    'La McLaren F1 a un siège conducteur central, flanqué de deux passagers.',
+    'La Citroën DS fut la première voiture de série à freins à disque à l’avant.',
+    'La Ford Model T a été produite à plus de 15 millions d’exemplaires.',
+    'Le cheval cabré de Ferrari venait de l’avion du pilote Francesco Baracca.',
+    'La Peugeot 205 GTI est l’une des sportives les plus collectionnées de France.',
+    'La Toyota Corolla est la voiture la plus vendue de l’histoire.',
+  ];
+
+  int _done = 0;
+  final List<Timer> _timers = [];
+  late final String _fact = (_facts.toList()..shuffle()).first;
+
+  @override
+  void initState() {
+    super.initState();
+    final pace = widget.deep ? 2600 : 350;
+    for (var i = 1; i < _labels.length; i++) {
+      _timers.add(Timer(Duration(milliseconds: pace * i), () {
+        if (mounted) setState(() => _done = i);
+      }));
+    }
+  }
+
+  @override
+  void dispose() {
+    for (final t in _timers) {
+      t.cancel();
+    }
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Container(
+          padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+          decoration: BoxDecoration(
+            color: AppColors.card,
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            border: Border.all(color: AppColors.line),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(widget.deep ? 'ANALYSE POUSSÉE' : 'ANALYSE EN COURS', style: AppText.label(11.5, color: accent)),
+                  const Spacer(),
+                  SizedBox(width: 14, height: 14, child: CircularProgressIndicator(strokeWidth: 2, color: accent)),
+                ],
+              ),
+              const SizedBox(height: 12),
+              for (var i = 0; i < _labels.length; i++)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5),
+                  child: Row(
+                    children: [
+                      AnimatedSwitcher(
+                        duration: const Duration(milliseconds: 250),
+                        child: i < _done
+                            ? const Icon(Icons.check_circle_rounded, key: ValueKey('ok'), size: 20, color: AppColors.success)
+                            : i == _done
+                                ? SizedBox(key: const ValueKey('run'), width: 20, height: 20, child: Padding(padding: const EdgeInsets.all(3), child: CircularProgressIndicator(strokeWidth: 2, color: accent)))
+                                : const Icon(Icons.radio_button_unchecked_rounded, key: ValueKey('wait'), size: 20, color: AppColors.inkMuted),
+                      ),
+                      const SizedBox(width: 12),
+                      Text(
+                        _labels[i],
+                        style: AppText.body(14.5, weight: i <= _done ? FontWeight.w700 : FontWeight.w500, color: i <= _done ? AppColors.ink : AppColors.inkMuted),
+                      ),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ).animate().fadeIn(duration: 200.ms),
+        const SizedBox(height: 14),
+        // Carte fantôme : la forme du résultat qui arrive.
+        Container(
+          padding: const EdgeInsets.all(18),
+          decoration: BoxDecoration(
+            color: AppColors.card,
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            border: Border.all(color: AppColors.line),
+          ),
+          child: Row(
+            children: [
+              _bone(46, 46, circle: true),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [_bone(70, 10), const SizedBox(height: 8), _bone(170, 20), const SizedBox(height: 8), _bone(110, 12)],
+                ),
+              ),
+              _bone(44, 44, circle: true),
+            ],
+          ),
+        )
+            .animate(onPlay: (c) => c.repeat())
+            .shimmer(duration: 1400.ms, color: Colors.white.withValues(alpha: 0.08)),
+        const SizedBox(height: 14),
+        Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: accent.withValues(alpha: 0.08),
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            border: Border.all(color: accent.withValues(alpha: 0.25)),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(Icons.lightbulb_outline_rounded, color: accent, size: 20),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('LE SAVAIS-TU ?', style: AppText.label(10.5, color: accent)),
+                    const SizedBox(height: 4),
+                    Text(_fact, style: AppText.body(14, color: AppColors.inkSoft)),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ).animate().fadeIn(delay: 300.ms, duration: 300.ms),
+      ],
+    );
+  }
+
+  Widget _bone(double w, double h, {bool circle = false}) => Container(
+        width: w,
+        height: h,
+        decoration: BoxDecoration(
+          color: AppColors.panelHi,
+          borderRadius: BorderRadius.circular(circle ? 99 : 6),
+        ),
+      );
 }
 
 class _CornersPainter extends CustomPainter {
@@ -793,8 +933,18 @@ class _ResultPanel extends StatelessWidget {
   final void Function(VehicleCandidate, {Map<String, dynamic>? modelOverride}) onPick;
   final VoidCallback onManual;
   final VoidCallback onRetry;
+  final VoidCallback onDeep;
+  final bool deepDone;
 
-  const _ResultPanel({required this.result, required this.picked, required this.onPick, required this.onManual, required this.onRetry});
+  const _ResultPanel({
+    required this.result,
+    required this.picked,
+    required this.onPick,
+    required this.onManual,
+    required this.onRetry,
+    required this.onDeep,
+    required this.deepDone,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -831,7 +981,7 @@ class _ResultPanel extends StatelessWidget {
             Row(
               children: [
                 if (failed || result.status == RecognitionStatus.unclear)
-                  Expanded(child: OutlinedButton(onPressed: onRetry, child: const Text('Réessayer'))),
+                  Expanded(child: OutlinedButton(onPressed: deepDone ? onRetry : onDeep, child: Text(deepDone ? 'Réessayer' : 'Analyse poussée'))),
                 if (failed || result.status == RecognitionStatus.unclear) const SizedBox(width: 10),
                 Expanded(child: FilledButton(onPressed: onManual, child: const Text('Saisir à la main'))),
               ],
@@ -978,6 +1128,36 @@ class _ResultPanel extends StatelessWidget {
                 ),
               ),
             ),
+        ],
+        if (!deepDone && current.confidence < 0.93) ...[
+          const SizedBox(height: 8),
+          Pressable(
+            onTap: onDeep,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              decoration: BoxDecoration(
+                color: AppColors.panel,
+                borderRadius: BorderRadius.circular(AppRadius.md),
+                border: Border.all(color: AppColors.line),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.manage_search_rounded, color: accent),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Un doute ? Analyse poussée', style: AppText.body(14.5, weight: FontWeight.w800)),
+                        Text("Plus lente, l'IA examine chaque détail.", style: AppText.body(12.5, color: AppColors.inkSoft)),
+                      ],
+                    ),
+                  ),
+                  const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
+                ],
+              ),
+            ),
+          ),
         ],
         const SizedBox(height: 4),
         Center(

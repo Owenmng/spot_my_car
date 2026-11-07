@@ -113,7 +113,7 @@ class AchievementService {
           _l(4, 'Mégawatt', 'Spotter une voiture de 1 000 ch ou plus', 1000, 600),
         ]),
         Achievement(id: 'perf_vmax', category: 'Performances', icon: Icons.trending_up_rounded, levels: [
-          _l(1, 'Bridée à 250', 'Spotter une voiture capable de 250 km/h', 250, 40),
+          _l(1, 'Bridée à 250', 'Spotter une voiture capable de 260 km/h', 260, 40),
           _l(2, 'Club des 300', 'Spotter une voiture capable de 300 km/h', 300, 120),
           _l(3, 'Vmax', 'Spotter une voiture capable de 350 km/h', 350, 300),
           _l(4, 'Record du monde', 'Spotter une voiture capable de 400 km/h', 400, 700),
@@ -191,7 +191,7 @@ class AchievementService {
 
         // ------------------------------------------------------------- Spotter
         Achievement(id: 'spot_photo', category: 'Spotter', icon: Icons.photo_camera_rounded, levels: [
-          _l(1, 'Déclencheur', 'Ajouter 1 spot avec photo', 1, 10),
+          _l(1, 'Déclencheur', 'Ajouter 10 spots avec photo', 10, 40),
           _l(2, 'Photographe', 'Ajouter 25 spots avec photo', 25, 120),
           _l(3, 'Reporter', 'Ajouter 100 spots avec photo', 100, 400),
         ]),
@@ -215,7 +215,7 @@ class AchievementService {
           _l(2, 'Douanier', 'Spotter des plaques de 5 pays', 5, 200),
         ]),
         Achievement(id: 'spot_colors', category: 'Spotter', icon: Icons.palette_rounded, levels: [
-          _l(1, 'Nuancier', 'Spotter 5 couleurs différentes', 5, 25),
+          _l(1, 'Nuancier', 'Spotter 6 couleurs différentes', 6, 30),
           _l(2, 'Arc-en-ciel', 'Spotter 8 couleurs différentes', 8, 80),
           _l(3, 'Spectre complet', 'Spotter les 12 couleurs', 12, 200),
         ]),

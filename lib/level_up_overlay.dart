@@ -1,10 +1,15 @@
-import 'package:spot_my_car/theme/app_theme.dart';
-// Fichier: lib/level_up_overlay.dart
-import 'package:flutter/material.dart';
-import 'dart:ui';
 import 'dart:async';
-import 'package:spot_my_car/models/level_model.dart';
+import 'dart:math';
 
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:spot_my_car/models/level_model.dart';
+import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+
+/// Passage de rapport : le compte-tours grimpe jusqu'à la zone rouge, les
+/// shift-lights clignotent, puis le rapport (= niveau) passe au suivant.
 class LevelUpOverlay extends StatefulWidget {
   final Level oldLevel;
   final Level newLevel;
@@ -12,204 +17,251 @@ class LevelUpOverlay extends StatefulWidget {
   final int newXp;
   final VoidCallback onDismissed;
 
-  const LevelUpOverlay({
-    super.key,
-    required this.oldLevel,
-    required this.newLevel,
-    required this.oldXp,
-    required this.newXp,
-    required this.onDismissed,
-  });
+  const LevelUpOverlay({super.key, required this.oldLevel, required this.newLevel, required this.oldXp, required this.newXp, required this.onDismissed});
 
   @override
   State<LevelUpOverlay> createState() => _LevelUpOverlayState();
 }
 
 class _LevelUpOverlayState extends State<LevelUpOverlay> with TickerProviderStateMixin {
-  late AnimationController _controller;
-  late AnimationController _numberController;
-  late Animation<double> _progressAnimation;
-  late Animation<int> _levelNumberAnimation;
-  late Animation<double> _xpNumberAnimation;
+  late final AnimationController _rev = AnimationController(vsync: this, duration: const Duration(milliseconds: 1500));
+  late final AnimationController _flash = AnimationController(vsync: this, duration: const Duration(milliseconds: 120));
+  bool _shifted = false;
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(duration: const Duration(milliseconds: 1500), vsync: this);
-    _numberController = AnimationController(duration: const Duration(milliseconds: 500), vsync: this);
-
-    final double startProgress = (widget.oldXp - widget.oldLevel.xpRequired) / (widget.newLevel.xpRequired - widget.oldLevel.xpRequired);
-    
-    // Animation de la barre de progression circulaire
-    _progressAnimation = Tween<double>(begin: startProgress, end: 1.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeInOut)
-    )..addListener(() {
-      // Quand la barre atteint 100%, on déclenche l'animation du chiffre
-      if (_progressAnimation.value == 1.0 && _numberController.status != AnimationStatus.forward) {
-        _numberController.forward();
+    AudioService.instance.playSfx(SoundEffect.levelUp);
+    Future.delayed(const Duration(milliseconds: 250), () async {
+      if (!mounted) return;
+      await _rev.animateTo(1, curve: Curves.easeInQuad);
+      if (!mounted) return;
+      for (var i = 0; i < 3; i++) {
+        await _flash.forward(from: 0);
+        await _flash.reverse();
+        if (!mounted) return;
       }
-    });
-    
-    // Animation du chiffre du niveau qui change
-    _levelNumberAnimation = IntTween(begin: widget.oldLevel.level, end: widget.newLevel.level).animate(_numberController);
-    
-    // Animation du total d'XP qui augmente
-    _xpNumberAnimation = Tween<double>(begin: widget.oldXp.toDouble(), end: widget.newXp.toDouble()).animate(_controller);
-
-    // On attend un peu avant de lancer l'animation principale
-    Future.delayed(const Duration(milliseconds: 500), () {
-      if (mounted) _controller.forward();
+      HapticFeedback.heavyImpact();
+      setState(() => _shifted = true);
+      _rev.animateTo(0.35, duration: const Duration(milliseconds: 500), curve: Curves.easeOutCubic);
     });
   }
 
   @override
   void dispose() {
-    _controller.dispose();
-    _numberController.dispose();
+    _rev.dispose();
+    _flash.dispose();
     super.dispose();
   }
-  
+
   @override
-Widget build(BuildContext context) {
-  return Positioned.fill(
-    child: Material(
-      color: Colors.transparent,
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
-        child: Container(
-          color: Colors.black.withValues(alpha: 0.6),
-          child: Center(
-            child: AnimatedBuilder( // On anime l'apparition du panneau entier
-              animation: _controller,
-              child: Container(
-                // ==========================================================
-                // >>>>> LE NOUVEAU PANNEAU BLANC EST ICI <<<<<
-                // ==========================================================
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
-                decoration: BoxDecoration(
-                  color: AppColors.panel,
-                  border: Border.all(color: AppColors.line),
-                  borderRadius: BorderRadius.circular(24),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.1),
-                      blurRadius: 20,
-                      spreadRadius: 5,
-                    )
-                  ],
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final next = nextLevel(widget.newLevel);
+    final w = min(MediaQuery.sizeOf(context).width - 48, 360.0);
+
+    return Positioned.fill(
+      child: Material(
+        color: Colors.black.withValues(alpha: 0.88),
+        child: SafeArea(
+          child: SizedBox.expand(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(_shifted ? 'RAPPORT SUPÉRIEUR' : 'MONTÉE EN RÉGIME…', style: AppText.label(13, color: _shifted ? accent : Colors.white54)),
+                const SizedBox(height: 26),
+                SizedBox(
+                  width: w,
+                  child: AnimatedBuilder(
+                    animation: Listenable.merge([_rev, _flash]),
+                    builder: (_, _) => _ShiftLights(value: _rev.value, flash: _flash.value),
+                  ),
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min, // Très important
-                  children: [
-                    Text(
-                      "NIVEAU SUPÉRIEUR !",
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        color: Theme.of(context).primaryColor, // On utilise la couleur de ton app
-                        letterSpacing: 1.5,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    SizedBox(
-                      width: 180,
-                      height: 180,
-                      child: AnimatedBuilder(
-                        animation: Listenable.merge([_progressAnimation, _levelNumberAnimation]),
-                        builder: (context, child) {
-                          return Stack(
-                            fit: StackFit.expand,
+                const SizedBox(height: 26),
+                SizedBox(
+                  width: 210,
+                  height: 210,
+                  child: AnimatedBuilder(
+                    animation: _rev,
+                    builder: (_, _) => CustomPaint(
+                      painter: _TachoPainter(value: _rev.value, accent: accent),
+                      child: Center(
+                        child: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 380),
+                          transitionBuilder: (child, a) => ScaleTransition(
+                            scale: Tween(begin: 1.8, end: 1.0).animate(CurvedAnimation(parent: a, curve: Curves.easeOutBack)),
+                            child: FadeTransition(opacity: a, child: child),
+                          ),
+                          child: Column(
+                            key: ValueKey(_shifted),
+                            mainAxisSize: MainAxisSize.min,
                             children: [
-                              CircularProgressIndicator(
-                                value: _progressAnimation.value,
-                                strokeWidth: 12,
-                                backgroundColor: AppColors.paperDeep,
-                                valueColor: AlwaysStoppedAnimation<Color>(Colors.amber[600]!),
-                              ),
-                              Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text("NIVEAU", style: TextStyle(fontSize: 16, color: AppColors.inkSoft)),
-                                    Text(
-                                      _levelNumberAnimation.value.toString(),
-                                      style: const TextStyle(fontSize: 64, fontWeight: FontWeight.bold, color: AppColors.ink),
-                                    ),
-                                    Text(
-                                      widget.newLevel.title,
-                                      style: TextStyle(fontSize: 14, color: Colors.amber[800], fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                ),
+                              Text('NIVEAU', style: AppText.label(11, color: Colors.white38)),
+                              Text(
+                                '${_shifted ? widget.newLevel.level : widget.oldLevel.level}',
+                                style: AppText.mono(76, color: _shifted ? Colors.white : Colors.white60).copyWith(fontWeight: FontWeight.w700),
                               ),
                             ],
-                          );
-                        },
+                          ),
+                        ),
                       ),
                     ),
-                    const SizedBox(height: 16),
-                    AnimatedBuilder(
-                      animation: _xpNumberAnimation,
-                      builder: (context, child) {
-                        return Text(
-                          "${_xpNumberAnimation.value.toInt()} XP",
-                          style: TextStyle(fontSize: 18, color: AppColors.inkSoft, fontWeight: FontWeight.w300),
-                        );
-                      },
-                    ),
-                    const SizedBox(height: 32),
-                    ElevatedButton(
-                      onPressed: widget.onDismissed,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Theme.of(context).primaryColor,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                      ),
-                      child: const Text('Continuer', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-                    ),
-                  ],
-                ),
-              ),
-              // On ajoute une animation d'échelle et de fondu sur le panneau
-              builder: (context, child) {
-                return Transform.scale(
-                  scale: _controller.drive(CurveTween(curve: Curves.elasticOut)).value,
-                  child: Opacity(
-                    opacity: _controller.drive(CurveTween(curve: Curves.easeIn)).value,
-                    child: child,
                   ),
-                );
-              },
+                ),
+                const SizedBox(height: 18),
+                AnimatedOpacity(
+                  opacity: _shifted ? 1 : 0,
+                  duration: const Duration(milliseconds: 400),
+                  child: SizedBox(
+                    width: w,
+                    child: Column(
+                      children: [
+                        Text(widget.newLevel.title.toUpperCase(), textAlign: TextAlign.center, style: AppText.display(34, color: Colors.white)),
+                        const SizedBox(height: 6),
+                        Text('${widget.newXp} XP au compteur', style: AppText.mono(14, color: Colors.white54)),
+                        if (next != null) ...[
+                          const SizedBox(height: 16),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.06),
+                              borderRadius: BorderRadius.circular(AppRadius.md),
+                              border: Border.all(color: Colors.white12),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.flag_rounded, size: 16, color: Colors.white54),
+                                const SizedBox(width: 8),
+                                Flexible(
+                                  child: Text(
+                                    'Prochain rapport : ${next.title} à ${next.xpRequired} XP',
+                                    style: AppText.body(13, color: Colors.white70, weight: FontWeight.w600),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                        const SizedBox(height: 26),
+                        SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton(onPressed: _shifted ? widget.onDismissed : null, child: const Text('Passer la vitesse')),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ),
       ),
-    ));
+    ).animate().fadeIn(duration: 200.ms);
   }
 }
 
-// Fonction helper pour afficher l'overlay
+class _ShiftLights extends StatelessWidget {
+  final double value;
+  final double flash;
+  const _ShiftLights({required this.value, required this.flash});
+
+  @override
+  Widget build(BuildContext context) {
+    const count = 15;
+    final lit = (value * count).round();
+    return Row(
+      children: [
+        for (var i = 0; i < count; i++)
+          Expanded(
+            child: Container(
+              height: 14,
+              margin: EdgeInsets.only(right: i == count - 1 ? 0 : 4),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                color: flash > 0.5
+                    ? const Color(0xFF4DA3FF)
+                    : i < lit
+                        ? (i < 7 ? const Color(0xFF3DDC84) : i < 11 ? const Color(0xFFFFC53D) : const Color(0xFFFF4D4F))
+                        : Colors.white10,
+                boxShadow: flash > 0.5
+                    ? [const BoxShadow(color: Color(0xAA4DA3FF), blurRadius: 12)]
+                    : i < lit
+                        ? [BoxShadow(color: (i < 7 ? const Color(0xFF3DDC84) : i < 11 ? const Color(0xFFFFC53D) : const Color(0xFFFF4D4F)).withValues(alpha: 0.5), blurRadius: 8)]
+                        : null,
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _TachoPainter extends CustomPainter {
+  final double value;
+  final Color accent;
+  _TachoPainter({required this.value, required this.accent});
+
+  static const _start = pi * 0.75;
+  static const _sweep = pi * 1.5;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final c = size.center(Offset.zero);
+    final r = size.width / 2 - 8;
+    final rect = Rect.fromCircle(center: c, radius: r);
+
+    canvas.drawArc(rect, _start, _sweep, false, Paint()
+      ..color = Colors.white10
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 10
+      ..strokeCap = StrokeCap.round);
+    // zone rouge
+    canvas.drawArc(rect, _start + _sweep * 0.8, _sweep * 0.2, false, Paint()
+      ..color = const Color(0x55FF4D4F)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 10);
+    canvas.drawArc(rect, _start, _sweep * value, false, Paint()
+      ..shader = SweepGradient(startAngle: _start, endAngle: _start + _sweep, colors: [accent.withValues(alpha: 0.4), accent, const Color(0xFFFF4D4F)], transform: const GradientRotation(0)).createShader(rect)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 10
+      ..strokeCap = StrokeCap.round);
+
+    // graduations
+    final tick = Paint()
+      ..color = Colors.white38
+      ..strokeWidth = 2;
+    for (var i = 0; i <= 8; i++) {
+      final a = _start + _sweep * i / 8;
+      canvas.drawLine(c + Offset(cos(a), sin(a)) * (r - 18), c + Offset(cos(a), sin(a)) * (r - 26), tick);
+    }
+
+    // aiguille
+    final a = _start + _sweep * value;
+    canvas.drawLine(c + Offset(cos(a), sin(a)) * (r - 64), c + Offset(cos(a), sin(a)) * (r - 14), Paint()
+      ..color = const Color(0xFFFF4D4F)
+      ..strokeWidth = 3.5
+      ..strokeCap = StrokeCap.round);
+  }
+
+  @override
+  bool shouldRepaint(covariant _TachoPainter old) => old.value != value || old.accent != accent;
+}
+
 Future<void> showLevelUp(BuildContext context, {required Level oldLevel, required Level newLevel, required int oldXp, required int newXp}) {
   final completer = Completer<void>();
-  
-  final overlayEntry = OverlayEntry(
-    builder: (context) => LevelUpOverlay(
+  late final OverlayEntry entry;
+  entry = OverlayEntry(
+    builder: (_) => LevelUpOverlay(
       oldLevel: oldLevel,
       newLevel: newLevel,
       oldXp: oldXp,
       newXp: newXp,
       onDismissed: () {
-        if (!completer.isCompleted) {
-          completer.complete();
-        }
+        if (!completer.isCompleted) completer.complete();
       },
     ),
   );
-
-  Overlay.of(context).insert(overlayEntry);
-
-  return completer.future.then((_) {
-    overlayEntry.remove();
-  });
+  Overlay.of(context).insert(entry);
+  return completer.future.then((_) => entry.remove());
 }

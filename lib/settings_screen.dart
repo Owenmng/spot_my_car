@@ -2,6 +2,7 @@ import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/settings_screen.dart (Version Finale, Corrigée et Cohérente)
 
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:spot_my_car/profile_setup_screen.dart';
@@ -14,6 +15,7 @@ import 'package:spot_my_car/services/auth_service.dart';
 import 'package:spot_my_car/theme_selection_screen.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:provider/provider.dart';
+import 'package:spot_my_car/services/notification_service.dart';
 
 
 class SettingsScreen extends StatefulWidget {
@@ -26,40 +28,7 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen> {
   bool _isSigningOut = false;
 
-    Widget _buildAudioSwitchTile({
-      required BuildContext context,
-      required IconData icon,
-      required String title,
-      required bool value,
-      required ValueChanged<bool> onChanged,
-    }) {
-      return ListTile(
-        contentPadding: const EdgeInsets.only(left: 40.0, right: 16.0),
-        leading: Icon(icon, color: Theme.of(context).primaryColor, size: 22),
 
-        title: Text(
-          title,
-          // La modification est ici :
-          style: const TextStyle( 
-            fontWeight: FontWeight.w600, 
-            fontSize: 15,
-            color: AppColors.ink, // Texte en gris foncé
-          ),
-        ),
-
-        trailing: Transform.scale(
-          scale: 0.85,
-          child: Switch(
-            value: value,
-            onChanged: (newValue) {
-              AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-              onChanged(newValue); // On exécute l'action d'origine
-            },
-            activeColor: Theme.of(context).primaryColor,
-          ),
-        ),
-      );
-    }
 
   Widget _buildLegalCard({required IconData icon, required String title, required String content}) {
     return Card(
@@ -94,279 +63,170 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
+  Future<void> _signOut() async {
+    AudioService.instance.playSfx(SoundEffect.clicLeger);
+    setState(() => _isSigningOut = true);
+    try {
+      await AuthService.signOut();
+      if (mounted) {
+        Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => const AuthGate()), (route) => false);
+      }
+    } catch (e) {
+      if (mounted) {
+        showAppSnack(context, 'Déconnexion impossible, réessaie.', icon: Icons.error_outline);
+        setState(() => _isSigningOut = false);
+      }
+    }
+  }
+
+  void _openAbout() async {
+    final packageInfo = await PackageInfo.fromPlatform();
+    if (!mounted) return;
+    Navigator.push(context, MaterialPageRoute(builder: (context) => InfoPageScreen(
+      title: 'À propos',
+      content: Column(
+        children: [
+          const AppLogo(size: 84),
+          const SizedBox(height: 18),
+          Text('SPOT MY CAR', style: AppText.display(28)),
+          Text('Version ${packageInfo.version} (${packageInfo.buildNumber})', style: AppText.mono(13, color: AppColors.inkSoft)),
+          const SizedBox(height: 20),
+          Text(
+            "Chaque voiture croisée devient une carte de collection. Photographie, laisse l'IA reconnaître le modèle, complète ton garage et défie tes amis.",
+            textAlign: TextAlign.center,
+            style: AppText.body(15, color: AppColors.inkSoft),
+          ),
+          const SizedBox(height: 24),
+          _Group(children: [
+            const _Tile(icon: Icons.code_rounded, title: 'Conception et développement', subtitle: 'Owen Mengual'),
+            const _Tile(icon: Icons.photo_library_outlined, title: 'Photos du catalogue', subtitle: 'Wikimedia Commons, auteurs crédités sur chaque fiche'),
+            _Tile(icon: Icons.copyright_rounded, title: '© ${DateTime.now().year} Spot My Car', subtitle: 'Tous droits réservés'),
+          ]),
+        ],
+      ),
+    )));
+  }
+
+  void _openTerms() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => InfoPageScreen(
+      title: "Conditions d'utilisation",
+      content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Dernière mise à jour : novembre 2026', style: AppText.body(13, color: AppColors.inkSoft).copyWith(fontStyle: FontStyle.italic)),
+          const SizedBox(height: 20),
+          _buildLegalCard(
+            icon: Icons.check_circle_outline,
+            title: '1. Acceptation des conditions',
+            content: "En utilisant Spot My Car, tu acceptes les présentes conditions. Si tu ne les acceptes pas, n'utilise pas le service.",
+          ),
+          _buildLegalCard(
+            icon: Icons.rule_folder_outlined,
+            title: '2. Utilisation du service',
+            content: "Le service est destiné à un usage personnel. Ne publie pas de contenu illégal ou offensant, et ne photographie pas les personnes. Les fiches techniques sont fournies à titre indicatif.",
+          ),
+          _buildLegalCard(
+            icon: Icons.security_outlined,
+            title: '3. Confidentialité et données',
+            content: "Ton e-mail sert uniquement à l'authentification. Les photos de tes spots et leur localisation restent privées : seuls ton pseudo, ton niveau et tes statistiques sont visibles par les autres joueurs. Les photos sont analysées par l'IA Gemini de Google pour reconnaître le modèle.",
+          ),
+          _buildLegalCard(
+            icon: Icons.warning_amber_rounded,
+            title: '4. Limitation de responsabilité',
+            content: "Le service est fourni « en l'état ». Spot My Car ne pourra être tenu responsable des dommages résultant de son utilisation. Reste prudent : ne spotte jamais en conduisant.",
+          ),
+        ],
+      ),
+    )));
+  }
+
   @override
   Widget build(BuildContext context) {
     final currentUser = FirebaseAuth.instance.currentUser!;
+    final audio = context.watch<AudioService>();
+    final notifications = NotificationService.instance;
 
     return Scaffold(
-      appBar: AppBar(
-        // On ajoute le bouton de retour manuellement pour y mettre un son
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-            Navigator.of(context).pop();
-          },
-        ),
-        title: const Text('Paramètres'),
-        actions: [
-          // ==========================================================
-          // === LE BOUTON DE DÉCONNEXION FINAL ET CORRIGÉ EST ICI ===
-          // ==========================================================
-          IconButton(
-            tooltip: "Se déconnecter",
-            icon: Icon(
-              Icons.logout,
-              color: _isSigningOut ? Colors.white.withValues(alpha: 0.5) : Colors.white,
-            ),
-            onPressed: _isSigningOut
-                ? null
-                : () async {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    setState(() => _isSigningOut = true);
-                    try {
-                      // 1. On attend la fin de la déconnexion
-                      await AuthService.signOut(); 
-                      
-                      // 2. On navigue seulement après
-                      if (mounted) {
-                        Navigator.of(context).pushAndRemoveUntil(
-                          MaterialPageRoute(builder: (context) => const AuthGate()),
-                          (route) => false,
-                        );
-                      }
-                    } catch (e) {
-                      if (mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text("Erreur: ${e.toString()}")),
-                        );
-                        setState(() => _isSigningOut = false);
-                      }
-                    }
-                  },
-          )
-        ],
-      ),
-      backgroundColor: AppColors.paperDeep,
+      appBar: AppBar(title: const Text('Paramètres')),
       body: ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.fromLTRB(16, 8, 16, 32 + MediaQuery.paddingOf(context).bottom),
         children: [
-          _buildSectionTitle(context, 'Mon Compte'),
-          Card(
-            clipBehavior: Clip.antiAlias,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            child: Column(
-              children: [
-                _buildSettingsTile(
-                  context,
-                  icon: Icons.person_outline,
-                  title: 'Modifier le profil',
-                  subtitle: 'Pseudo, marque préférée ...',
-                  onTap: () async {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    final userDoc = await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
-                    if (context.mounted) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileSetupScreen(initialUserData: userDoc.data())));
-                    }
-                  },
-                  ),
-                _buildSettingsTile(
-                  context,
-                  icon: Icons.palette_outlined, // Une icône pour le thème
-                  title: 'Thème de l\'application',
-                  onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const ThemeSelectionScreen()),
-                    );
-                  },
-                ),
-                
-                Theme(
-                  // On copie le thème actuel mais on rend la couleur du séparateur transparente
-                  data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-                  child: Consumer<AudioService>(
-                    builder: (context, audioService, child) {
-                      return ExpansionTile(
-                        leading: Icon(Icons.volume_up_outlined, color: Theme.of(context).primaryColor),
-                        title: const Text('Paramètres audio', style: TextStyle(fontWeight: FontWeight.w600)),
-                        iconColor: Colors.black, 
-                        collapsedIconColor: Colors.black,
-                        onExpansionChanged: (_) => AudioService.instance.playSfx(SoundEffect.clicLeger), // <-- SON AJOUTÉ
-                        subtitle: Text(
-                          'Musique et effets sonores',
-                          style: TextStyle(color: AppColors.inkSoft),
-                        ),
-                        // Voici ce qui s'affiche quand on déplie le menu
-                        children: <Widget>[
-                          _buildAudioSwitchTile(
-                            context: context,
-                            icon: Icons.music_note_outlined,
-                            title: 'Musique principale',
-                            value: audioService.isMusicEnabled,
-                            onChanged: (isEnabled) {
-                              audioService.toggleMusic(isEnabled);
-                            },
-                          ),
-                          _buildAudioSwitchTile(
-                            context: context,
-                            icon: Icons.graphic_eq_outlined,
-                            title: 'Effets sonores',
-                            value: audioService.isSfxEnabled,
-                            onChanged: (isEnabled) {
-                              audioService.toggleSfx(isEnabled);
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  ),
-                ),
-
-                _buildSettingsTile(
-                  context,
-                  icon: Icons.lock_outline,
-                  title: 'Changer le mot de passe',
-                  onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    _sendPasswordResetEmail(context, currentUser.email!);
-                  },
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 24),
-          _buildSectionTitle(context, 'Support et Informations'),
-          Card(
-            clipBehavior: Clip.antiAlias,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            child: Column(
-              children: [
-                _buildSettingsTile(
-                  context,
-                  icon: Icons.help_outline,
-                  title: 'Contacter le support',
-                  subtitle: 'Pour toute question ou problème',
-                  onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactSupportScreen()));
-                  },
-                ),
-                _buildSettingsTile(
-                  context,
-                  icon: Icons.info_outline,
-                  title: 'À propos de l\'application',
-                  onTap: () async {
-                    final packageInfo = await PackageInfo.fromPlatform();
-                    if (context.mounted) {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => InfoPageScreen(
-                        title: 'À propos de SpotMyCar',
-                        content: Column(
-                          children: [
-                            Image.asset('assets/logo.png', height: 80),
-                            const SizedBox(height: 16),
-                            const Text('SpotMyCar', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-                            Text(
-                              'Version ${packageInfo.version}',
-                              style: TextStyle(fontSize: 16, color: AppColors.inkSoft),
-                            ),
-                            const SizedBox(height: 24),
-                            Text(
-                              'L\'application de référence pour tous les passionnés d\'automobile. Collectionnez les voitures que vous croisez, complétez votre garage et mesurez-vous à la communauté.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 16, color: AppColors.inkSoft),
-                            ),
-                            const SizedBox(height: 32),
-                            Card(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                              child: Column(
-                                children: [
-                                  const ListTile(
-                                    leading: Icon(Icons.code),
-                                    title: Text('Développeur'),
-                                    subtitle: Text('Owen MENGUAL'),
-                                  ),
-                                  const Divider(height: 1, indent: 16),
-                                  const ListTile(
-                                    leading: Icon(Icons.copyright),
-                                    title: Text('Copyright'),
-                                    subtitle: Text('© 2025 SpotMyCar\nTous droits réservés.'),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      )));
-                    }
-                  },
-                ),
-                _buildSettingsTile(
-                  context,
-                  icon: Icons.gavel_outlined,
-                  title: 'Conditions d\'utilisation',
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => InfoPageScreen(
-                      title: 'Conditions d\'Utilisation',
-                      content: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Dernière mise à jour : Septembre 2025',
-                            style: TextStyle(fontStyle: FontStyle.italic, color: AppColors.inkSoft),
-                          ),
-                          const Divider(height: 32),
-                          _buildLegalCard(
-                            icon: Icons.check_circle_outline,
-                            title: '1. Acceptation des conditions',
-                            content: 'En téléchargeant, installant ou utilisant l\'application mobile SpotMyCar, vous acceptez d\'être lié par les présentes Conditions d\'Utilisation. Si vous n\'acceptez pas ces Conditions, n\'utilisez pas le Service.',
-                          ),
-                          _buildLegalCard(
-                            icon: Icons.rule_folder_outlined,
-                            title: '2. Utilisation du Service',
-                            content: 'Le Service est destiné à un usage personnel et non commercial. Vous vous engagez à ne pas soumettre de contenu illégal, offensant ou inapproprié. Les données des véhicules sont fournies à titre indicatif ; nous ne garantissons pas leur exactitude à 100%.',
-                          ),
-                          _buildLegalCard(
-                            icon: Icons.security_outlined,
-                            title: '3. Confidentialité et Données',
-                            content: 'Nous respectons votre vie privée. Votre adresse email est utilisée uniquement pour l\'authentification. Les données de localisation de vos spots ne sont utilisées qu\'avec votre consentement explicite et ne sont pas partagées avec des tiers.',
-                          ),
-                          _buildLegalCard(
-                            icon: Icons.warning_amber_rounded,
-                            title: '4. Limitation de responsabilité',
-                            content: 'Le Service est fourni "en l\'état". SpotMyCar décline toute garantie et ne sera pas responsable des dommages directs ou indirects résultant de l\'utilisation ou de l\'incapacité à utiliser le Service.',
-                          ),
-                        ],
-                      ),
-                    )));
-                  },
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 24),
-                    Card(
-            clipBehavior: Clip.antiAlias,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            child: ListTile( // On utilise un ListTile directement
-              leading: const Icon(Icons.delete_forever_outlined, color: Colors.red),
-              title: const Text(
-                'Supprimer mon compte',
-                // La modification est ici :
-                style: TextStyle(
-                  color: Colors.red, 
-                  fontWeight: FontWeight.bold, // On met le texte en gras
-                ),
-              ),
-              // On ajoute la couleur rouge à la flèche
-              trailing: const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.red), 
-              onTap: () {
-                AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                _showDeleteAccountDialog(context, currentUser);
+          const _Header('Compte'),
+          _Group(children: [
+            _Tile(
+              icon: Icons.person_outline_rounded,
+              title: 'Modifier le profil',
+              subtitle: 'Pseudo, marque préférée, avatar',
+              onTap: () async {
+                AudioService.instance.playSfx(SoundEffect.clicLeger);
+                final userDoc = await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
+                if (context.mounted) {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileSetupScreen(initialUserData: userDoc.data())));
+                }
               },
             ),
-          ),
+            if (currentUser.providerData.any((p) => p.providerId == 'password'))
+              _Tile(
+                icon: Icons.lock_outline_rounded,
+                title: 'Changer le mot de passe',
+                onTap: () => _sendPasswordResetEmail(context, currentUser.email!),
+              ),
+          ]),
+          const _Header('Expérience'),
+          _Group(children: [
+            _Tile(
+              icon: Icons.palette_outlined,
+              title: "Couleur d'accent",
+              subtitle: 'Rosso corsa, Gulf, Papaye…',
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ThemeSelectionScreen())),
+            ),
+            _Tile(
+              icon: Icons.music_note_outlined,
+              title: "Musique d'ambiance",
+              subtitle: 'Night drive, très discrète',
+              trailing: Switch(value: audio.isMusicEnabled, onChanged: audio.toggleMusic),
+            ),
+            _Tile(
+              icon: Icons.graphic_eq_rounded,
+              title: 'Effets sonores',
+              subtitle: 'Déclencheur, montée en régime, succès',
+              trailing: Switch(value: audio.isSfxEnabled, onChanged: audio.toggleSfx),
+            ),
+            ListenableBuilder(
+              listenable: notifications,
+              builder: (context, _) => _Tile(
+                icon: Icons.notifications_none_rounded,
+                title: 'Rappels',
+                subtitle: 'Défi du jour, série en danger, bilan du dimanche',
+                trailing: Switch(value: notifications.enabled, onChanged: notifications.setEnabled),
+              ),
+            ),
+          ]),
+          const _Header('Aide'),
+          _Group(children: [
+            _Tile(
+              icon: Icons.support_agent_rounded,
+              title: 'Contacter le support',
+              subtitle: 'Une question, un bug, une idée',
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactSupportScreen())),
+            ),
+            _Tile(icon: Icons.info_outline_rounded, title: "À propos de l'application", onTap: _openAbout),
+            _Tile(icon: Icons.gavel_rounded, title: "Conditions d'utilisation", onTap: _openTerms),
+          ]),
+          const SizedBox(height: 22),
+          _Group(children: [
+            _Tile(
+              icon: Icons.logout_rounded,
+              title: _isSigningOut ? 'Déconnexion…' : 'Se déconnecter',
+              onTap: _isSigningOut ? null : _signOut,
+            ),
+            _Tile(
+              icon: Icons.delete_forever_outlined,
+              title: 'Supprimer mon compte',
+              danger: true,
+              onTap: () => _showDeleteAccountDialog(context, currentUser),
+            ),
+          ]),
         ],
       ),
     );
@@ -445,7 +305,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                         child: const Text('Problème avec cette adresse ?'),
                         onPressed: () {
-                          AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                          AudioService.instance.playSfx(SoundEffect.clicLeger);
                           setStateDialog(() {
                             // On passe en mode édition et on sélectionne le texte
                             isEditingEmail = true;
@@ -459,14 +319,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
               actions: [
                 TextButton(
                   onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                    AudioService.instance.playSfx(SoundEffect.clicLeger);
                     Navigator.of(context).pop();
                   },
                   child: const Text('Annuler'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                    AudioService.instance.playSfx(SoundEffect.clicLeger);
                     if (formKey.currentState!.validate()) {
                       Navigator.of(context).pop(emailController.text.trim());
                     }
@@ -504,14 +364,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
         actions: [
           TextButton(
             onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
+              AudioService.instance.playSfx(SoundEffect.clicPrincipal);
               Navigator.pop(dialogContext);
             }, 
             child: const Text('Annuler')
           ),
           TextButton(
             onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
+              AudioService.instance.playSfx(SoundEffect.clicPrincipal);
               _deleteUserAccount(dialogContext, context, user);
             },
             child: const Text('Supprimer', style: TextStyle(color: Colors.red)),
@@ -538,14 +398,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
       actions: [
         TextButton(
           onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
+            AudioService.instance.playSfx(SoundEffect.clicPrincipal);
             Navigator.pop(dialogContext);
           }, 
           child: const Text('Annuler')
         ),
         TextButton(
           onPressed: () async {
-            AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
+            AudioService.instance.playSfx(SoundEffect.clicPrincipal);
             if (passwordController.text.isEmpty) return;
             try {
               final cred = EmailAuthProvider.credential(email: user.email!, password: passwordController.text);
@@ -608,41 +468,94 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
-  Widget _buildSectionTitle(BuildContext context, String title) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(4, 0, 0, 8),
-      child: Text(
-        title.toUpperCase(),
-        style: TextStyle(
-          color: AppColors.inkSoft,
-          fontWeight: FontWeight.bold,
-          fontSize: 12,
+
+  
+
+
+
+}
+
+class _Header extends StatelessWidget {
+  final String text;
+  const _Header(this.text);
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.fromLTRB(4, 22, 4, 10),
+        child: Text(text.toUpperCase(), style: AppText.label(11.5, color: AppColors.inkMuted)),
+      );
+}
+
+class _Group extends StatelessWidget {
+  final List<Widget> children;
+  const _Group({required this.children});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: AppColors.line),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Column(
+        children: [
+          for (var i = 0; i < children.length; i++) ...[
+            if (i > 0) const Divider(height: 1, indent: 58, color: AppColors.line),
+            children[i],
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _Tile extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String? subtitle;
+  final Widget? trailing;
+  final VoidCallback? onTap;
+  final bool danger;
+
+  const _Tile({required this.icon, required this.title, this.subtitle, this.trailing, this.onTap, this.danger = false});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final color = danger ? AppColors.danger : accent;
+    return InkWell(
+      onTap: onTap == null
+          ? null
+          : () {
+              AudioService.instance.playSfx(SoundEffect.clicLeger);
+              onTap!();
+            },
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+        child: Row(
+          children: [
+            Container(
+              width: 32,
+              height: 32,
+              decoration: BoxDecoration(color: color.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(9)),
+              child: Icon(icon, size: 18, color: color),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: AppText.body(15, weight: FontWeight.w700, color: danger ? AppColors.danger : AppColors.ink)),
+                  if (subtitle != null) Text(subtitle!, style: AppText.body(12.5, color: AppColors.inkSoft)),
+                ],
+              ),
+            ),
+            trailing ?? (onTap != null ? const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted) : const SizedBox.shrink()),
+          ],
         ),
       ),
     );
   }
-  
-  Widget _buildSettingsTile(BuildContext context, {
-    required IconData icon,
-    required String title,
-    String? subtitle,
-    VoidCallback? onTap,
-    Color? color,
-  }) {
-    return ListTile(
-      leading: Icon(icon, color: color ?? Theme.of(context).primaryColor),
-      title: Text(title, style: TextStyle(fontWeight: FontWeight.w600, color: color)),
-      subtitle: subtitle != null ? Text(subtitle) : null,
-      trailing: (onTap != null) ? const Icon(Icons.arrow_forward_ios, size: 16) : null,
-      onTap: () {
-        // On ajoute le son par défaut pour toutes les tuiles
-        if (onTap != null) {
-          AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-          onTap();
-        }
-      },
-    );
-  }
-
-  Widget _buildDivider() => const Divider(height: 1, indent: 16, endIndent: 16);
 }

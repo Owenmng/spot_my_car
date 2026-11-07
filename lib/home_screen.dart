@@ -9,6 +9,7 @@ import 'package:spot_my_car/profile_screen.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/connectivity_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/notification_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/loading_animation_widget.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
@@ -27,7 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => context.read<DataManager>().loadAllData());
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<DataManager>().loadAllData();
+      Future.delayed(const Duration(seconds: 2), NotificationService.instance.requestPermission);
+    });
   }
 
   void _select(int i) {

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/models/rarity.dart';
+import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/spot_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/plate_badge.dart';
@@ -44,6 +45,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
   void _reveal() {
     if (!mounted || _revealed) return;
     setState(() => _revealed = true);
+    AudioService.instance.playSfx(SoundEffect.flip);
     _flip.forward();
     Future.delayed(const Duration(milliseconds: 450), () {
       if (!mounted) return;
@@ -61,16 +63,15 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
   Widget build(BuildContext context) {
     final rarity = _rarity ?? Rarity.commune;
     final size = MediaQuery.sizeOf(context);
-    final cardW = min(min(size.width - 72, 330.0), (size.height - 330) / 1.38);
+    final cardW = min(min(size.width - 72, 330.0), (size.height - 400) / 1.38);
 
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: SafeArea(
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Column(
+        child: SizedBox.expand(
+          child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   _rarity == null ? 'AJOUTÉE AU GARAGE' : 'NOUVELLE CARTE',
@@ -121,6 +122,38 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                     curve: Curves.easeOutCubic,
                     builder: (_, v, _) => Text('+$v XP', style: AppText.display(22, color: Colors.white)),
                   ).animate().fadeIn(delay: 900.ms),
+                if (widget.result.newAchievements.isNotEmpty) ...[
+                  const SizedBox(height: 14),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Wrap(
+                      alignment: WrapAlignment.center,
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        for (final a in widget.result.newAchievements.take(3))
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFFFD447).withValues(alpha: 0.12),
+                              borderRadius: BorderRadius.circular(99),
+                              border: Border.all(color: const Color(0xFFFFD447).withValues(alpha: 0.5)),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.emoji_events_rounded, size: 14, color: Color(0xFFFFD447)),
+                                const SizedBox(width: 6),
+                                Text(a.title, style: AppText.body(12.5, color: Colors.white, weight: FontWeight.w700)),
+                              ],
+                            ),
+                          ),
+                        if (widget.result.newAchievements.length > 3)
+                          Text('+${widget.result.newAchievements.length - 3}', style: AppText.mono(13, color: Colors.white60)),
+                      ],
+                    ),
+                  ).animate().fadeIn(delay: 1100.ms),
+                ],
                 if (widget.result.photoFailed) ...[
                   const SizedBox(height: 12),
                   Padding(
@@ -142,7 +175,6 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                 ).animate().fadeIn(delay: 1200.ms).slideY(begin: 0.3, end: 0),
               ],
             ),
-          ],
         ),
       ),
     );

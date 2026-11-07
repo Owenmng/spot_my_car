@@ -59,7 +59,7 @@ class _BrandSelectionState extends State<BrandSelection> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+            AudioService.instance.playSfx(SoundEffect.clicLeger);
             Navigator.of(context).pop();
           },
         ),
@@ -131,7 +131,7 @@ class _BrandSelectionState extends State<BrandSelection> {
 
                           return InkWell(
                             onTap: () {
-                              AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                              AudioService.instance.playSfx(SoundEffect.clicLeger);
                               Navigator.pop(context, brand);
                             },
                             borderRadius: BorderRadius.circular(8),

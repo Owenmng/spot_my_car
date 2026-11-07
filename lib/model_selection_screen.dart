@@ -58,7 +58,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+            AudioService.instance.playSfx(SoundEffect.clicLeger);
             Navigator.of(context).pop();
           },
         ),
@@ -97,7 +97,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
                       ),
                       subtitle: const Text("Le modèle que vous cherchez n'est pas dans la liste ?"),
                       onTap: () {
-                        AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                        AudioService.instance.playSfx(SoundEffect.clicLeger);
                         // On retourne une map spéciale qui sera reconnue par l'écran précédent
                         Navigator.of(context).pop({'id': 'other', 'name': 'Autre'});
                       },
@@ -120,7 +120,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
                   title: Text(model['name']),
                   subtitle: model['production_years'] == null ? null : Text(model['production_years'].toString()),
                   onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                    AudioService.instance.playSfx(SoundEffect.clicLeger);
                     Navigator.of(context).pop(model);
                   },
                 );

@@ -25,6 +25,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
     }
 
     // Étape 2 - Définir les configurations de signature (version Kotlin)
@@ -91,4 +92,7 @@ dependencies {
   implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
   implementation("com.google.firebase:firebase-analytics")
   // Add other Firebase dependencies here
+}
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }

@@ -1,79 +1,99 @@
-// Fichier: lib/community_screen.dart (Version Finale et Fiable pour le Son)
-
 import 'package:flutter/material.dart';
-import 'package:spot_my_car/theme/app_theme.dart';
-import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/community/duels_tab.dart';
 import 'package:spot_my_car/community/friends_tab.dart';
 import 'package:spot_my_car/community/leaderboard_tab.dart';
+import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/services/duel_service.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 
+/// Le paddock : amis, duels et classement mondial.
 class CommunityScreen extends StatefulWidget {
-  const CommunityScreen({super.key});
+  final int initialTab;
+  const CommunityScreen({super.key, this.initialTab = 0});
 
   @override
   State<CommunityScreen> createState() => _CommunityScreenState();
 }
 
-class _CommunityScreenState extends State<CommunityScreen> with TickerProviderStateMixin {
-  late final TabController _tabController;
-  int _previousTabIndex = 0; // On va stocker l'index précédent ici
+class _CommunityScreenState extends State<CommunityScreen> with SingleTickerProviderStateMixin {
+  late final TabController _tabs = TabController(length: 3, vsync: this, initialIndex: widget.initialTab);
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
-    
-    // On ajoute un listener qui se déclenche à chaque changement (tap ou swipe)
-    _tabController.addListener(() {
-      // On joue le son SEULEMENT si l'index a réellement changé
-      if (_tabController.index != _previousTabIndex) {
-        AudioService.instance.playSfx(SoundEffect.transitionPage);
-        // On met à jour l'index précédent pour la prochaine comparaison
-        setState(() {
-          _previousTabIndex = _tabController.index;
-        });
-      }
+    _tabs.addListener(() {
+      if (!_tabs.indexIsChanging) AudioService.instance.playSfx(SoundEffect.clicLeger);
     });
   }
 
   @override
   void dispose() {
-    _tabController.dispose();
+    _tabs.dispose();
     super.dispose();
   }
 
+  void goToDuels() => _tabs.animateTo(1);
+
   @override
   Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger);
-            Navigator.of(context).pop();
-          },
-        ),
-        title: const Text('Ma Communauté'),
-        bottom: TabBar(
-          // On passe notre controller
-          controller: _tabController,
-          // onTAP n'est plus nécessaire ici, le listener s'occupe de tout
-          labelColor: AppColors.ink,
-          unselectedLabelColor: AppColors.inkMuted,
-          indicatorColor: Theme.of(context).colorScheme.primary,
-          indicatorWeight: 3.0,
-          labelStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          unselectedLabelStyle: const TextStyle(fontSize: 16),
-          tabs: const [
-            Tab(text: 'Mes Amis'),
-            Tab(text: 'Classement'),
-          ],
+        title: const Text('Paddock'),
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(56),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
+            child: Container(
+              height: 44,
+              padding: const EdgeInsets.all(4),
+              decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
+              child: StreamBuilder<List<Duel>>(
+                stream: DuelService.instance.watch(),
+                builder: (context, snap) {
+                  final pending = (snap.data ?? []).where((d) => d.isPending).length;
+                  return TabBar(
+                    controller: _tabs,
+                    dividerColor: Colors.transparent,
+                    indicatorSize: TabBarIndicatorSize.tab,
+                    indicator: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(9)),
+                    labelColor: Theme.of(context).colorScheme.onPrimary,
+                    unselectedLabelColor: AppColors.inkSoft,
+                    labelStyle: AppText.body(14, weight: FontWeight.w800),
+                    unselectedLabelStyle: AppText.body(14, weight: FontWeight.w600),
+                    tabs: [
+                      const Tab(text: 'Amis'),
+                      Tab(
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Text('Duels'),
+                            if (pending > 0) ...[
+                              const SizedBox(width: 6),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                                decoration: BoxDecoration(color: const Color(0xFFFFD447), borderRadius: BorderRadius.circular(99)),
+                                child: Text('$pending', style: AppText.mono(11, color: Colors.black)),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                      const Tab(text: 'Mondial'),
+                    ],
+                  );
+                },
+              ),
+            ),
+          ),
         ),
       ),
       body: TabBarView(
-        controller: _tabController,
-        children: const [
-          FriendsTab(),
-          LeaderboardTab(),
+        controller: _tabs,
+        children: [
+          FriendsTab(onChallenged: goToDuels),
+          const DuelsTab(),
+          const LeaderboardTab(),
         ],
       ),
     );

@@ -7,6 +7,7 @@ import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/achievement_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/services/photo_store.dart';
+import 'package:spot_my_car/services/duel_service.dart';
 
 class SpotDraft {
   Map<String, dynamic>? brand;
@@ -177,6 +178,7 @@ class SpotService {
       userRef,
       {
         'totalXp': FieldValue.increment(gained),
+        'xpByWeek': {weekKey(): FieldValue.increment(gained)},
         'stats': {
           'totalSpots': FieldValue.increment(1),
           'uniqueBrands': spotsAfter.map((c) => c['brandId']).whereType<String>().toSet().length,

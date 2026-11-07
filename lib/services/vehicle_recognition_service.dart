@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/services/gemini_client.dart';
+import 'package:spot_my_car/services/photo_store.dart';
 
 enum RecognitionStatus { car, notACar, notReal, unclear, failed }
 
@@ -130,7 +131,7 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
 ''';
   }
 
-  Future<RecognitionResult> analyze(Uint8List imageBytes, {String mimeType = 'image/jpeg'}) async {
+  Future<RecognitionResult> analyze(Uint8List imageBytes, {String mimeType = 'image/jpeg', bool deep = false}) async {
     final data = DataManager.instance;
     if (!data.isDataLoaded) await data.loadAllData();
 
@@ -139,8 +140,9 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
 
     try {
       final text = await GeminiClient.generate(
-        parts: [GeminiClient.textPart(_prompt(data.brands)), GeminiClient.imagePart(imageBytes, mime: mimeType)],
+        parts: [GeminiClient.textPart(_prompt(data.brands)), GeminiClient.imagePart(await PhotoStore.forAnalysis(imageBytes), mime: 'image/jpeg')],
         schema: _schema,
+        deepMode: deep,
       );
       parsed = jsonDecode(_stripFences(text)) as Map<String, dynamic>;
     } catch (e) {

@@ -1,468 +1,392 @@
-import 'package:spot_my_car/theme/app_theme.dart';
-import 'package:spot_my_car/services/custom_cache_manager.dart';
-// Fichier: lib/map_screen.dart (Version Finale, TEMPS RÉEL avec StreamBuilder)
-
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
-import 'package:spot_my_car/spotted_car_detail_screen.dart';
 import 'package:intl/intl.dart';
-import 'package:spot_my_car/services/auth_service.dart'; // Adaptez le chemin selon votre structure
-import 'package:spot_my_car/auth_gate.dart'; // <-- LA LIGNE MANQUANTE
+import 'package:latlong2/latlong.dart';
+import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/location_service.dart';
+import 'package:spot_my_car/spotted_car_detail_screen.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/car_image.dart';
+import 'package:spot_my_car/widgets/plate_badge.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
-
-// Le modèle SpotPoint ne change pas
 class SpotPoint {
   final String id;
   final LatLng point;
-  final Map<String, dynamic> carData;
-  SpotPoint({required this.id, required this.point, required this.carData});
+  final Map<String, dynamic> car;
+  final Rarity rarity;
+  SpotPoint({required this.id, required this.point, required this.car, required this.rarity});
 }
 
+/// Carte de chasse : chaque spot est une épingle couleur rareté.
 class MapScreen extends StatefulWidget {
   const MapScreen({super.key});
 
   @override
   State<MapScreen> createState() => _MapScreenState();
 }
- 
-class _MapScreenState extends State<MapScreen>
-  with AutomaticKeepAliveClientMixin {
-  bool _isSigningOut = false;
-  @override
-  bool get wantKeepAlive => true;
 
-  final MapController _mapController = MapController();
-  bool _isRotationEnabled = false;
-  static const LatLng _defaultCenter = LatLng(46.603354, 1.888334);
-  static const double _defaultZoom = 5.2;
+class _MapScreenState extends State<MapScreen> {
+  final _map = MapController();
+  static const _france = LatLng(46.603354, 1.888334);
+  Rarity _minRarity = Rarity.commune;
+  bool _fitted = false;
+  LatLng? _me;
 
   @override
   void dispose() {
-    // Annulez explicitement le StreamBuilder
-    _mapController.dispose();
+    _map.dispose();
     super.dispose();
   }
 
-  int _buildInteractionFlags() {
-    // Les flags de base, toujours activés
-    int flags = InteractiveFlag.drag | InteractiveFlag.pinchZoom | InteractiveFlag.doubleTapZoom;
-    
-    // Si le mode rotation est activé, on ajoute le flag de rotation
-    if (_isRotationEnabled) {
-      flags |= InteractiveFlag.rotate; // L'opérateur |= ajoute le flag à la liste existante
+  void _fit(List<SpotPoint> points) {
+    if (points.isEmpty) return;
+    if (points.length == 1) {
+      _map.move(points.first.point, 13);
+      return;
     }
-    
-    return flags;
+    _map.fitCamera(CameraFit.coordinates(coordinates: points.map((p) => p.point).toList(), padding: const EdgeInsets.fromLTRB(50, 140, 50, 120), maxZoom: 14));
   }
 
-  Widget _buildSpotImage(Map<String, dynamic> carData) {
-    final userPhotoUrl = carData['userPhotoUrl'] as String?;
-    final modelImageUrl = carData['modelImageUrl'] as String?;
-    final brandId = carData['brandId'] as String?;
-    final isCatalogued = carData['isCatalogued'] as bool? ?? false;
-
-    // Cas 1 : Photo de l'utilisateur (inchangé)
-    if (userPhotoUrl != null && userPhotoUrl.isNotEmpty) {
-      return Image.network(userPhotoUrl, headers: kImageHeaders,
-        fit: BoxFit.cover,
-        loadingBuilder: (context, child, progress) => progress == null
-            ? child
-            : const Center(child: CircularProgressIndicator(strokeWidth: 2)),
-        errorBuilder: (c, e, s) =>
-            const Icon(Icons.sync_problem, size: 40, color: AppColors.inkMuted),
-      );
+  Future<void> _locate() async {
+    final loc = await LocationService.current().catchError((_) => null);
+    if (!mounted) return;
+    if (loc == null) {
+      showAppSnack(context, 'Position indisponible.', icon: Icons.location_off_outlined);
+      return;
     }
-    // Cas 2 : Image du modèle (inchangé)
-    else if (isCatalogued && modelImageUrl != null && modelImageUrl.isNotEmpty) {
-      return Image.network(modelImageUrl, headers: kImageHeaders,
-        fit: BoxFit.contain,
-        loadingBuilder: (context, child, progress) {
-          if (progress == null) return child;
-          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
-        },
-        errorBuilder: (c, e, s) =>
-            const Icon(Icons.image_not_supported, size: 40, color: AppColors.inkMuted),
-      );
-    }
-    // ==========================================================
-    // === LA CORRECTION EST ICI ================================
-    // ==========================================================
-    // Cas 3 : Logo de la marque
-    else if (isCatalogued && brandId != null && brandId.isNotEmpty) {
-      // On reconstruit l'URL publique du logo.
-      // Cette méthode suppose que le nom du fichier du logo est `[brandId].png`
-      const projectId = "car-spotter-app-779f2";
-      final logoUrl =
-          "https://firebasestorage.googleapis.com/v0/b/$projectId.appspot.com/o/logos%2F$brandId.png?alt=media";
-
-      return Image.network(logoUrl, headers: kImageHeaders,
-        fit: BoxFit.contain,
-        loadingBuilder: (context, child, progress) {
-          if (progress == null) return child;
-          return const Center(child: CircularProgressIndicator(strokeWidth: 2));
-        },
-        errorBuilder: (c, e, s) =>
-            const Icon(Icons.directions_car, size: 50, color: AppColors.inkMuted),
-      );
-    }
-    // ==========================================================
-    // Cas 4 : Icône par défaut
-    else {
-      return Container(
-        color: AppColors.paperDeep,
-        child: const Icon(Icons.directions_car, size: 50, color: AppColors.inkMuted),
-      );
-    }
+    setState(() => _me = LatLng(loc.latitude, loc.longitude));
+    _map.move(_me!, 13);
   }
 
-  void _showSpotInfo(BuildContext context, SpotPoint spot) {
-    showModalBottomSheet(
-      context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) {
-        final brandName = spot.carData['brandName'] ?? 'Marque Inconnue';
-        final modelName = spot.carData['modelName'] ?? 'Modèle Inconnu';
-        final plate = spot.carData['plate'] ?? 'N/A';
-        final location = spot.carData['locationName'] as String?;
-        final timestamp = spot.carData['spottedAt'] as Timestamp?;
-
-        final String date;
-        if (timestamp != null) {
-          date = DateFormat("'Le' dd/MM/yyyy", 'fr_FR').format(timestamp.toDate());
-        } else {
-          date = 'Date inconnue';
-        }
-
-        return GestureDetector(
-          onTap: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-            Navigator.of(context).pop();
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => SpottedCarDetailScreen(
-                      carId: spot.id, carData: spot.carData),
-                ));
-          },
-          child: Container(
-            padding: const EdgeInsets.all(16),
-            height: 150,
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 170,
-                  height: 170,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: _buildSpotImage(spot.carData),
-                  ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('$brandName $modelName',
-                          style: const TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis),
-                      const SizedBox(height: 4),
-                      Text(plate,
-                          style: const TextStyle(
-                              fontSize: 14, fontFamily: 'monospace')),
-                      const SizedBox(height: 8),
-                      if (location != null && location.isNotEmpty)
-                        Row(
-                          children: [
-                            Icon(Icons.location_on_outlined,
-                                size: 14, color: AppColors.inkSoft),
-                            const SizedBox(width: 4),
-                            Expanded(
-                                child: Text(location,
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        color: AppColors.inkSoft),
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis)),
-                          ],
-                        ),
-                      if (timestamp != null)
-                        Row(
-                          children: [
-                            Icon(Icons.calendar_today_outlined,
-                                size: 14, color: AppColors.inkSoft),
-                            const SizedBox(width: 4),
-                            Text(date,
-                                style: TextStyle(
-                                    fontSize: 12, color: AppColors.inkSoft)),
-                          ],
-                        ),
-                      const Spacer(),
-                      const Text("Appuyez pour voir les détails...",
-                          style: TextStyle(color: AppColors.inkMuted, fontSize: 10)),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      },
-    );
+  void _open(SpotPoint s) {
+    AudioService.instance.playSfx(SoundEffect.clicLeger);
+    HapticFeedback.selectionClick();
+    _map.move(s.point, _map.camera.zoom < 12 ? 12 : _map.camera.zoom);
+    showModalBottomSheet(context: context, builder: (_) => _SpotSheet(spot: s));
   }
 
   @override
   Widget build(BuildContext context) {
-    super.build(context);
-    // --- NOUVEAU : On récupère l'utilisateur ---
     final user = FirebaseAuth.instance.currentUser;
+    final accent = Theme.of(context).colorScheme.primary;
+    if (user == null) return const Scaffold(body: Center(child: CircularProgressIndicator()));
 
-    // --- NOUVEAU : On ajoute la garde de sécurité ---
-    if (user == null) {
-      return Scaffold(
-        appBar: AppBar(title: const Text('Carte des Spots')),
-        body: const Center(child: CircularProgressIndicator()),
-      );
-    }
-
-    // Si l'utilisateur existe, on retourne le Scaffold normal (ton ancien code)
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Carte des Spots'),
-        actions: [
-          IconButton(
-            tooltip: "Se déconnecter",
-            icon: Icon(
-              Icons.logout,
-              color: _isSigningOut ? Colors.white.withValues(alpha: 0.5) : Colors.white,
-            ),
-      onPressed: _isSigningOut
-          ? null
-          : () async {
-              AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-              setState(() => _isSigningOut = true);
-              try {
-                await AuthService.signOut(); 
-                if (mounted) { 
-                  Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => const AuthGate()),
-                    (route) => false,
-                  );
-                }
-              } catch (e) {
-                if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Erreur lors de la déconnexion: ${e.toString()}")),
-                  );
-                  // On remet le bouton à son état initial en cas d'erreur
-                  setState(() => _isSigningOut = false);
-                }
-              }
-            },
-          )
-        ],
+        title: const Text('Carte de chasse'),
+        backgroundColor: AppColors.paper.withValues(alpha: 0.85),
       ),
-      body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance
-            .collection('spotted_cars')
-            .where('userId', isEqualTo: user.uid) // On est sûr que user.uid existe
-            .where('locationCoords', isNotEqualTo: null)
-            .snapshots(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+      body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+        stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: user.uid).snapshots(),
+        builder: (context, snap) {
+          final all = <SpotPoint>[];
+          for (final d in snap.data?.docs ?? const []) {
+            final c = d.data()['locationCoords'];
+            if (c is GeoPoint) all.add(SpotPoint(id: d.id, point: LatLng(c.latitude, c.longitude), car: d.data(), rarity: rarityOfSpot(d.data())));
           }
-          if (snapshot.hasError) {
-            return const Center(
-                child: Text("Erreur de chargement de la carte."));
+          final points = all.where((p) => p.rarity.index >= _minRarity.index).toList();
+          if (!_fitted && all.isNotEmpty) {
+            _fitted = true;
+            WidgetsBinding.instance.addPostFrameCallback((_) => _fit(points));
           }
-          if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-            return _buildMapWidget([]);
-          }
-          final spotPoints = snapshot.data!.docs.map((doc) {
-            final data = doc.data() as Map<String, dynamic>;
-            final coordsData = data['locationCoords'];
-            if (coordsData is GeoPoint) {
-              return SpotPoint(
-                id: doc.id,
-                point: LatLng(coordsData.latitude, coordsData.longitude),
-                carData: data,
-              );
-            } else {
-              return null;
-            }
-          }).where((spot) => spot != null)
-            .cast<SpotPoint>()
-            .toList();
-          return _buildMapWidget(spotPoints);
+          final cities = all.map((p) => p.car['locationName']).whereType<String>().toSet().length;
+
+          return Stack(
+            children: [
+              FlutterMap(
+                mapController: _map,
+                options: const MapOptions(
+                  initialCenter: _france,
+                  initialZoom: 5.2,
+                  maxZoom: 18,
+                  interactionOptions: InteractionOptions(flags: InteractiveFlag.all & ~InteractiveFlag.rotate),
+                ),
+                children: [
+                  TileLayer(
+                    urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    userAgentPackageName: 'com.owenmengual.spotmycar',
+                    tileBuilder: darkModeTileBuilder,
+                  ),
+                  if (_me != null)
+                    MarkerLayer(markers: [
+                      Marker(
+                        point: _me!,
+                        width: 22,
+                        height: 22,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF4DA3FF),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 3),
+                            boxShadow: const [BoxShadow(color: Color(0x884DA3FF), blurRadius: 12, spreadRadius: 4)],
+                          ),
+                        ),
+                      ),
+                    ]),
+                  MarkerClusterLayerWidget(
+                    options: MarkerClusterLayerOptions(
+                      maxClusterRadius: 48,
+                      size: const Size(46, 46),
+                      padding: const EdgeInsets.all(60),
+                      markers: [
+                        for (final p in points)
+                          Marker(
+                            key: ValueKey(p.id),
+                            point: p.point,
+                            width: 40,
+                            height: 48,
+                            alignment: Alignment.topCenter,
+                            child: GestureDetector(onTap: () => _open(p), child: _Pin(spot: p)),
+                          ),
+                      ],
+                      builder: (context, markers) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: AppColors.card,
+                            border: Border.all(color: accent, width: 2.5),
+                            boxShadow: [BoxShadow(color: accent.withValues(alpha: 0.4), blurRadius: 12)],
+                          ),
+                          alignment: Alignment.center,
+                          child: Text('${markers.length}', style: AppText.mono(15)),
+                        );
+                      },
+                    ),
+                  ),
+                  const SimpleAttributionWidget(source: Text('OpenStreetMap'), backgroundColor: Color(0xAA000000)),
+                ],
+              ),
+              // Filtres de rareté + compteur
+              Positioned(
+                left: 0,
+                right: 0,
+                top: MediaQuery.paddingOf(context).top + kToolbarHeight + 8,
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 38,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        children: [
+                          for (final r in [Rarity.commune, Rarity.peuCommune, Rarity.rare, Rarity.epique, Rarity.legendaire])
+                            Padding(
+                              padding: const EdgeInsets.only(right: 8),
+                              child: ChoiceChip(
+                                label: Text(r == Rarity.commune ? 'Tous les spots' : '${r.label} +'),
+                                selected: _minRarity == r,
+                                avatar: r == Rarity.commune ? null : CircleAvatar(backgroundColor: r.color, radius: 5),
+                                onSelected: (_) => setState(() => _minRarity = r),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                    if (all.isNotEmpty)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.65), borderRadius: BorderRadius.circular(99)),
+                          child: Text(
+                            '${points.length} spot${points.length > 1 ? 's' : ''} · $cities ville${cities > 1 ? 's' : ''}',
+                            style: AppText.body(12.5, color: Colors.white, weight: FontWeight.w700),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+              if (snap.hasData && all.isEmpty)
+                Center(
+                  child: Container(
+                    margin: const EdgeInsets.all(32),
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(color: AppColors.card.withValues(alpha: 0.95), borderRadius: BorderRadius.circular(AppRadius.lg)),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.travel_explore_rounded, size: 40, color: accent),
+                        const SizedBox(height: 10),
+                        Text('Ta carte est vierge', style: AppText.display(22)),
+                        const SizedBox(height: 6),
+                        Text('Ajoute une ville ou ta position quand tu enregistres un spot : il apparaîtra ici.', textAlign: TextAlign.center, style: AppText.body(14, color: AppColors.inkSoft)),
+                      ],
+                    ),
+                  ),
+                ),
+              Positioned(
+                right: 16,
+                bottom: 24 + MediaQuery.paddingOf(context).bottom,
+                child: Column(
+                  children: [
+                    _MapButton(icon: Icons.my_location_rounded, tooltip: 'Ma position', onTap: _locate),
+                    const SizedBox(height: 10),
+                    _MapButton(icon: Icons.fit_screen_rounded, tooltip: 'Tout voir', onTap: () => _fit(points)),
+                  ],
+                ),
+              ),
+            ],
+          );
         },
       ),
     );
   }
+}
 
-  Widget _buildMapWidget(List<SpotPoint> spotPoints) {
-    final List<Marker> markers = spotPoints.map((spot) {
-      return Marker(
-        width: 30.0,
-        height: 30.0,
-        point: spot.point,
-        child: GestureDetector(
-          onTap: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-            _showSpotInfo(context, spot);
-          },
-          child:
-              Icon(Icons.location_pin, size: 30, color: Theme.of(context).primaryColor),
+class _MapButton extends StatelessWidget {
+  final IconData icon;
+  final String tooltip;
+  final VoidCallback onTap;
+  const _MapButton({required this.icon, required this.tooltip, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: tooltip,
+      child: Pressable(
+        onTap: onTap,
+        child: Container(
+          width: 48,
+          height: 48,
+          decoration: BoxDecoration(
+            color: AppColors.card,
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: AppColors.line),
+            boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 10)],
+          ),
+          child: Icon(icon, color: AppColors.ink),
         ),
-      );
-    }).toList();
+      ),
+    );
+  }
+}
 
-      return Stack(
-        children: [
-          // La carte elle-même
-          Listener(
-            onPointerSignal: (pointerSignal) {
-              if (pointerSignal is PointerScrollEvent) {
-                final delta = pointerSignal.scrollDelta.dy;
-                final zoomChange = delta > 0 ? -0.2 : 0.2;
-                final newZoom =
-                    (_mapController.camera.zoom + zoomChange).clamp(2.0, 18.0);
-                _mapController.move(_mapController.camera.center, newZoom);
-              }
-            },
-            child: FlutterMap(
-              mapController: _mapController,
-              options: MapOptions(
-                initialCenter: const LatLng(46.603354, 1.888334),
-                initialZoom: 5.2,
-                maxZoom: 18.0,
-                interactionOptions: InteractionOptions(
-                  flags: _buildInteractionFlags(),
-                ),
-              ),
-              children: [
-                TileLayer(
-                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                  userAgentPackageName: 'com.owenmengual.spotmycar',
-                  tileBuilder: darkModeTileBuilder,
-                ),
-                MarkerClusterLayerWidget(
-                  options: MarkerClusterLayerOptions(
-                    maxClusterRadius: 45,
-                    size: const Size(40, 40),
-                    // On ajoute l'action de zoomer avec un son
-                    onClusterTap: (cluster) => AudioService.instance.playSfx(SoundEffect.clicLeger), // <-- SON AJOUTÉ
-                    builder: (context, markers) {
-                      return Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Theme.of(context).primaryColor,
-                        ),
-                        child: Center(
-                          child: Text(
-                            markers.length.toString(),
-                            style: const TextStyle(
-                                color: Colors.white, fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      );
-                    },
-                    markers: markers,
-                  ),
-                ),
-              ],
-            ),
+class _Pin extends StatelessWidget {
+  final SpotPoint spot;
+  const _Pin({required this.spot});
+
+  @override
+  Widget build(BuildContext context) {
+    final brand = DataManager.instance.brands.whereType<Map>().where((b) => b['id'] == spot.car['brandId']);
+    final logo = brand.isEmpty ? null : brand.first['logoUrl'] as String?;
+    final c = spot.rarity.color;
+    return Column(
+      children: [
+        Container(
+          width: 36,
+          height: 36,
+          padding: const EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+            border: Border.all(color: c, width: 3),
+            boxShadow: [BoxShadow(color: c.withValues(alpha: 0.55), blurRadius: spot.rarity.index >= 3 ? 14 : 6)],
           ),
-
-          // Les boutons de zoom, en haut à DROITE
-          Positioned(
-            top: 16.0,
-            right: 16.0,
-            child: Column(
-              children: <Widget>[
-                FloatingActionButton(
-                  heroTag: "zoom_in_button",
-                  mini: true,
-                  backgroundColor: AppColors.card,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    final newZoom =
-                        (_mapController.camera.zoom + 1).clamp(2.0, 18.0);
-                    _mapController.move(_mapController.camera.center, newZoom);
-                  },
-                  child: const Icon(Icons.add),
-                ),
-                const SizedBox(height: 8),
-                FloatingActionButton(
-                  heroTag: "zoom_out_button",
-                  mini: true,
-                  backgroundColor: AppColors.card,
-                  foregroundColor: Theme.of(context).primaryColor,
-                  onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    final newZoom =
-                        (_mapController.camera.zoom - 1).clamp(2.0, 18.0);
-                    _mapController.move(_mapController.camera.center, newZoom);
-                  },
-                  child: const Icon(Icons.remove),
-                ),
-              ],
-            ),
-          ),
-
-          Positioned(
-          bottom: 16.0,
-          right: 16.0,
-          // On utilise une Column pour empiler les boutons verticalement
-          child: Column(
-            children: [
-              // Le bouton de rotation est maintenant ici (en haut de la colonne)
-              FloatingActionButton(
-                heroTag: "rotate_button",
-                mini: true, // On le garde en "mini" comme tu l'as demandé
-                backgroundColor: _isRotationEnabled ? Theme.of(context).primaryColor : Colors.white,
-                foregroundColor: _isRotationEnabled ? Colors.white : Theme.of(context).primaryColor,
-                onPressed: () {
-                  AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                  setState(() {
-                    _isRotationEnabled = !_isRotationEnabled;
-                    if (!_isRotationEnabled) {
-                      _mapController.rotate(0);
-                    }
-                  });
-                },
-                child: Icon(_isRotationEnabled ? Icons.explore : Icons.explore_off),
-              ),
-              const SizedBox(height: 8), // Espace entre les deux boutons
-
-              // Le bouton de recentrage est ici (en bas de la colonne)
-              FloatingActionButton(
-                heroTag: "recenter_button",
-                // On le met en "mini" aussi pour que ce soit cohérent visuellement
-                mini: true, 
-                backgroundColor: AppColors.card,
-                foregroundColor: Theme.of(context).primaryColor,
-                onPressed: () {
-                  AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                  _mapController.moveAndRotate(_defaultCenter, _defaultZoom, 0);
-                },
-                child: const Icon(Icons.map_outlined),
-              ),
-            ],
-          ),
+          child: logo != null
+              ? BrandLogo(url: logo, name: '${spot.car['brandName'] ?? '?'}', size: 22)
+              : Center(child: Text('${spot.car['brandName'] ?? '?'}'.characters.first, style: AppText.display(15, color: Colors.black))),
         ),
+        CustomPaint(size: const Size(10, 8), painter: _TipPainter(c)),
       ],
     );
   }
-    }
+}
+
+class _TipPainter extends CustomPainter {
+  final Color color;
+  _TipPainter(this.color);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    canvas.drawPath(
+      Path()
+        ..moveTo(0, 0)
+        ..lineTo(size.width, 0)
+        ..lineTo(size.width / 2, size.height)
+        ..close(),
+      Paint()..color = color,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _TipPainter old) => old.color != color;
+}
+
+class _SpotSheet extends StatelessWidget {
+  final SpotPoint spot;
+  const _SpotSheet({required this.spot});
+
+  @override
+  Widget build(BuildContext context) {
+    final car = spot.car;
+    final t = (car['spottedAt'] as Timestamp?)?.toDate();
+    final model = cleanModelName(car['modelName'] as String?);
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(AppRadius.lg),
+              child: AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    SpotImage(carId: spot.id, car: car),
+                    Positioned(top: 10, left: 10, child: RarityBadge(rarity: spot.rarity, compact: true)),
+                  ],
+                ),
+              ),
+            ).animate().fadeIn(duration: 200.ms),
+            const SizedBox(height: 14),
+            Text('${car['brandName'] ?? ''}'.toUpperCase(), style: AppText.label(11.5, color: AppColors.inkMuted)),
+            Text(model.isEmpty ? '—' : model, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.display(26)),
+            const SizedBox(height: 10),
+            Row(
+              children: [
+                PlateBadge(plate: '${car['plate'] ?? ''}', countryCode: car['plateCountryCode'] as String?, scale: 0.7),
+                const Spacer(),
+                if (car['xp'] is num && (car['xp'] as num) > 0) Text('+${car['xp']} XP', style: AppText.mono(13, color: spot.rarity.color)),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Row(
+              children: [
+                const Icon(Icons.place_outlined, size: 16, color: AppColors.inkSoft),
+                const SizedBox(width: 6),
+                Expanded(child: Text('${car['locationName'] ?? 'Lieu inconnu'}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(13.5, color: AppColors.inkSoft))),
+                if (t != null) ...[
+                  const Icon(Icons.event_outlined, size: 16, color: AppColors.inkSoft),
+                  const SizedBox(width: 6),
+                  Text(DateFormat('d MMM yyyy', 'fr_FR').format(t), style: AppText.body(13.5, color: AppColors.inkSoft)),
+                ],
+              ],
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (_) => SpottedCarDetailScreen(carId: spot.id, carData: car)));
+              },
+              child: const Text('Voir la fiche'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

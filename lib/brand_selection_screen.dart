@@ -64,7 +64,7 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+            AudioService.instance.playSfx(SoundEffect.clicLeger);
             Navigator.of(context).pop();
           },
         ),
@@ -103,7 +103,7 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
                       ),
                       subtitle: const Text("La marque que vous cherchez n'est pas dans la liste ?"),
                       onTap: () {
-                        AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                        AudioService.instance.playSfx(SoundEffect.clicLeger);
                         // On retourne une map spéciale qui sera reconnue par l'écran précédent
                         Navigator.of(context).pop({'id': 'other', 'name': 'Autre'});
                       },
@@ -117,7 +117,7 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
                   title: Text(brand['name']),
                   subtitle: brand['pays'] == null ? null : Text(brand['pays'].toString()),
                   onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
+                    AudioService.instance.playSfx(SoundEffect.clicLeger);
                     Navigator.of(context).pop(brand);
                   },
                 );

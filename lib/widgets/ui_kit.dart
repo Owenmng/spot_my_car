@@ -297,3 +297,26 @@ class RevLights extends StatelessWidget {
     );
   }
 }
+
+/// Le logo sur sa pastille claire : le dessin bleu marine reste lisible sur fond sombre.
+class AppLogo extends StatelessWidget {
+  final double size;
+  final bool glow;
+  const AppLogo({super.key, this.size = 56, this.glow = true});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return Container(
+      width: size,
+      height: size,
+      padding: EdgeInsets.all(size * 0.09),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(size * 0.28),
+        boxShadow: glow ? [BoxShadow(color: accent.withValues(alpha: 0.45), blurRadius: size * 0.4, spreadRadius: 1)] : null,
+      ),
+      child: Image.asset('assets/logo.png', fit: BoxFit.contain),
+    );
+  }
+}

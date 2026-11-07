@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
 /// Écran de démarrage : le logo respire pendant que le garage se charge.
 class LoadingAnimationWidget extends StatelessWidget {
@@ -17,10 +18,7 @@ class LoadingAnimationWidget extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(30),
-              child: Image.asset('assets/logo.png', width: 104, height: 104, fit: BoxFit.cover),
-            )
+            const AppLogo(size: 104)
                 .animate(onPlay: (c) => c.repeat(reverse: true))
                 .scale(begin: const Offset(1, 1), end: const Offset(1.06, 1.06), duration: 900.ms, curve: Curves.easeInOut),
             const SizedBox(height: 34),

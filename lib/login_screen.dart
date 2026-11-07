@@ -9,6 +9,7 @@ import 'package:spot_my_car/forgot_password_screen.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/signup_screen.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -203,136 +204,173 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final accent = Theme.of(context).colorScheme.primary;
-    final top = MediaQuery.paddingOf(context).top;
+    final pad = MediaQuery.paddingOf(context);
+    final keyboard = MediaQuery.viewInsetsOf(context).bottom > 0;
 
     return Scaffold(
       backgroundColor: AppColors.paper,
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            SizedBox(
-              height: 400 + top,
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  DecoratedBox(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [AppColors.paper, Color.lerp(AppColors.paper, accent, 0.28)!, Color.lerp(AppColors.paper, accent, 0.75)!],
-                        stops: const [0.0, 0.6, 1.0],
+      body: LayoutBuilder(
+        builder: (context, box) {
+          // Tout tient à l'écran : le haut s'adapte à la hauteur disponible,
+          // le défilement n'existe que si le clavier est ouvert.
+          final compact = box.maxHeight < 720;
+          return SingleChildScrollView(
+            physics: keyboard ? const ClampingScrollPhysics() : const NeverScrollableScrollPhysics(),
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: box.maxHeight),
+              child: IntrinsicHeight(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: Stack(
+                        children: [
+                          Positioned.fill(
+                            child: DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [AppColors.paper, Color.lerp(AppColors.paper, accent, 0.22)!, Color.lerp(AppColors.paper, accent, 0.6)!],
+                                  stops: const [0.0, 0.6, 1.0],
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Positioned.fill(child: _RoadLines()),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(24, pad.top + (compact ? 14 : 28), 24, 34),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  children: [
+                                    AppLogo(size: compact ? 50 : 58).animate().fadeIn(duration: 400.ms).scale(begin: const Offset(0.8, 0.8), curve: Curves.easeOutBack),
+                                    const SizedBox(width: 14),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text('SPOT MY CAR', style: AppText.display(compact ? 22 : 25, color: Colors.white)),
+                                        Text('LE CARSPOTTING, EN COLLECTION', style: AppText.label(9.5, color: Colors.white54)),
+                                      ],
+                                    ).animate().fadeIn(delay: 100.ms, duration: 400.ms).slideX(begin: -0.08, end: 0),
+                                  ],
+                                ),
+                                if (!keyboard) ...[
+                                  const SizedBox(height: 12),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text('Chaque voiture\ncroisée devient\nune carte.', style: AppText.display(compact ? 30 : 36, color: Colors.white))
+                                          .animate().fadeIn(delay: 120.ms, duration: 450.ms).slideY(begin: 0.15, end: 0),
+                                      const SizedBox(height: 8),
+                                      Text('Photographie, l’IA reconnaît, ta collection grandit.', style: AppText.body(compact ? 13.5 : 15, color: Colors.white70))
+                                          .animate().fadeIn(delay: 260.ms),
+                                    ],
+                                  ),
+                                ],
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                  ),
-                  const _RoadLines(),
-                  Positioned(
-                    right: -60,
-                    top: top + 40,
-                    child: Container(
-                      width: 220,
-                      height: 220,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        gradient: RadialGradient(colors: [accent.withValues(alpha: 0.55), accent.withValues(alpha: 0)]),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(22, compact ? 18 : 24, 22, (compact ? 10 : 18) + pad.bottom),
+                      transform: Matrix4.translationValues(0, -20, 0),
+                      decoration: const BoxDecoration(
+                        color: AppColors.paper,
+                        borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.xl + 4)),
                       ),
-                    ),
-                  ),
-                  Padding(
-              padding: EdgeInsets.fromLTRB(28, top + 36, 28, 40),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(22),
-                    child: Image.asset('assets/logo.png', height: 72, width: 72, fit: BoxFit.cover),
-                  ).animate().fadeIn(duration: 400.ms).scale(begin: const Offset(0.8, 0.8), curve: Curves.easeOutBack),
-                  const SizedBox(height: 28),
-                  Text('Chaque voiture\ncroisée devient\nune carte.', style: AppText.display(38, color: Colors.white))
-                      .animate().fadeIn(delay: 120.ms, duration: 450.ms).slideY(begin: 0.15, end: 0),
-                  const SizedBox(height: 14),
-                  Text('Photographie, l’IA reconnaît, ta collection grandit.', style: AppText.body(16, color: Colors.white60))
-                      .animate().fadeIn(delay: 260.ms),
-                ],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          OutlinedButton.icon(
+                            onPressed: _isLoading ? null : signInWithGoogle,
+                            icon: Image.asset('assets/google_logo.png', height: 20),
+                            label: const Text('Continuer avec Google'),
+                            style: OutlinedButton.styleFrom(backgroundColor: AppColors.card, minimumSize: Size(64, compact ? 50 : 54)),
+                          ),
+                          SizedBox(height: compact ? 10 : 14),
+                          Row(
+                            children: [
+                              const Expanded(child: Divider()),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 12),
+                                child: Text('ou avec ton e-mail', style: AppText.body(12.5, color: AppColors.inkMuted, weight: FontWeight.w600)),
+                              ),
+                              const Expanded(child: Divider()),
+                            ],
+                          ),
+                          SizedBox(height: compact ? 10 : 14),
+                          TextField(
+                            controller: _emailController,
+                            enabled: !_isLoading,
+                            keyboardType: TextInputType.emailAddress,
+                            autofillHints: const [AutofillHints.email],
+                            textInputAction: TextInputAction.next,
+                            decoration: InputDecoration(
+                              labelText: 'E-mail',
+                              prefixIcon: const Icon(Icons.alternate_email_rounded),
+                              isDense: compact,
+                            ),
+                          ),
+                          SizedBox(height: compact ? 8 : 10),
+                          TextField(
+                            controller: _passwordController,
+                            enabled: !_isLoading,
+                            obscureText: _isPasswordObscured,
+                            autofillHints: const [AutofillHints.password],
+                            onSubmitted: (_) => signInWithEmail(),
+                            decoration: InputDecoration(
+                              labelText: 'Mot de passe',
+                              isDense: compact,
+                              prefixIcon: const Icon(Icons.lock_outline_rounded),
+                              suffixIcon: IconButton(
+                                icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
+                                onPressed: () => setState(() => _isPasswordObscured = !_isPasswordObscured),
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: TextButton(
+                              style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen())),
+                              child: const Text('Mot de passe oublié ?'),
+                            ),
+                          ),
+                          ElevatedButton(
+                            onPressed: _isLoading ? null : signInWithEmail,
+                            style: ElevatedButton.styleFrom(minimumSize: Size(64, compact ? 50 : 54)),
+                            child: _isLoading
+                                ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4, color: Colors.white))
+                                : const Text('Se connecter'),
+                          ),
+                          const SizedBox(height: 4),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text('Nouveau ici ?', style: AppText.body(14, color: AppColors.inkSoft)),
+                              TextButton(
+                                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen())),
+                                style: TextButton.styleFrom(foregroundColor: accent, visualDensity: VisualDensity.compact),
+                                child: const Text('Créer un compte'),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ).animate().slideY(begin: 0.25, end: 0, duration: 500.ms, curve: Curves.easeOutCubic),
+                  ],
+                ),
               ),
             ),
-                ],
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.fromLTRB(24, 28, 24, 28 + MediaQuery.paddingOf(context).bottom),
-              transform: Matrix4.translationValues(0, -24, 0),
-              decoration: const BoxDecoration(
-                color: AppColors.paper,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.xl + 4)),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  OutlinedButton.icon(
-                    onPressed: _isLoading ? null : signInWithGoogle,
-                    icon: Image.asset('assets/google_logo.png', height: 20),
-                    label: const Text('Continuer avec Google'),
-                    style: OutlinedButton.styleFrom(backgroundColor: AppColors.card, minimumSize: const Size(64, 56)),
-                  ),
-                  const SizedBox(height: 22),
-                  Text('ou avec ton e-mail', textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkMuted, weight: FontWeight.w600)),
-                  const SizedBox(height: 16),
-                  TextField(
-                    controller: _emailController,
-                    enabled: !_isLoading,
-                    keyboardType: TextInputType.emailAddress,
-                    autofillHints: const [AutofillHints.email],
-                    decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.alternate_email_rounded)),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: _passwordController,
-                    enabled: !_isLoading,
-                    obscureText: _isPasswordObscured,
-                    autofillHints: const [AutofillHints.password],
-                    onSubmitted: (_) => signInWithEmail(),
-                    decoration: InputDecoration(
-                      labelText: 'Mot de passe',
-                      prefixIcon: const Icon(Icons.lock_outline_rounded),
-                      suffixIcon: IconButton(
-                        icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
-                        onPressed: () => setState(() => _isPasswordObscured = !_isPasswordObscured),
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton(
-                      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen())),
-                      child: const Text('Mot de passe oublié ?'),
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  ElevatedButton(
-                    onPressed: _isLoading ? null : signInWithEmail,
-                    child: _isLoading
-                        ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4, color: Colors.white))
-                        : const Text('Se connecter'),
-                  ),
-                  const SizedBox(height: 18),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Nouveau ici ?', style: AppText.body(14, color: AppColors.inkSoft)),
-                      TextButton(
-                        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen())),
-                        style: TextButton.styleFrom(foregroundColor: accent),
-                        child: const Text('Créer un compte'),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ).animate().slideY(begin: 0.25, end: 0, duration: 500.ms, curve: Curves.easeOutCubic),
-          ],
-        ),
+          );
+        },
       ),
     );
   }

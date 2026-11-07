@@ -104,6 +104,43 @@ service cloud.firestore {
             || request.auth.uid == resource.data.toUserId);
     }
 
+    // Duels entre amis : chaque joueur n'écrit que son propre score.
+    match /duels/{duelId} {
+      function isParticipant() {
+        return signedIn() && request.auth.uid in resource.data.participants;
+      }
+      function onlyMine(field) {
+        return request.resource.data.get(field, {}).diff(resource.data.get(field, {})).affectedKeys().hasOnly([request.auth.uid]);
+      }
+
+      allow read: if isParticipant();
+
+      allow create: if signedIn()
+        && request.resource.data.challengerId == request.auth.uid
+        && request.resource.data.opponentId is string
+        && request.resource.data.opponentId != request.auth.uid
+        && request.resource.data.participants == [request.auth.uid, request.resource.data.opponentId]
+        && request.resource.data.status == 'pending'
+        && request.resource.data.mode in ['xp', 'rarity', 'brands', 'theme']
+        && request.resource.data.hours in [24, 72, 168]
+        && request.resource.data.scores.size() == 0
+        && request.resource.data.claimed.size() == 0;
+
+      allow update: if isParticipant()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'startAt', 'endAt', 'scores', 'claimed'])
+        && onlyMine('scores')
+        && onlyMine('claimed')
+        && (
+          request.resource.data.status == resource.data.status
+          || (resource.data.status == 'pending' && request.auth.uid == resource.data.opponentId
+              && request.resource.data.status in ['active', 'declined'])
+          || (resource.data.status == 'pending' && request.auth.uid == resource.data.challengerId
+              && request.resource.data.status == 'cancelled')
+        );
+
+      allow delete: if isParticipant() && resource.data.status != 'active';
+    }
+
     // Messages de support : uniquement vers l'adresse du support, jamais relisibles.
     match /mail/{mailId} {
       allow create: if signedIn()

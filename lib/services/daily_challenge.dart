@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/duel_service.dart';
 import 'package:spot_my_car/widgets/spot_card.dart';
 
 class DailyChallenge {
@@ -53,6 +54,14 @@ class DailyChallenge {
     DailyChallenge(id: 'electric', title: 'Silence, ça roule', hint: 'Spotte une voiture électrique', icon: Icons.electric_bolt_rounded, target: 1, reward: 50, matches: (c) => '${c['type_carburant'] ?? ''}'.toLowerCase().contains('lectrique')),
   ];
 
+  static DailyChallenge? byId(String id) {
+    final r = _pool.where((c) => c.id == id);
+    return r.isEmpty ? null : r.first;
+  }
+
+  /// Thèmes jouables en duel (ceux qui se comptent voiture par voiture).
+  static List<DailyChallenge> get duelThemes => _pool.where((c) => c.id != 'three' && c.id != 'photo').toList();
+
   /// Le même défi pour tout le monde, un nouveau chaque jour.
   static DailyChallenge forDay([DateTime? now]) {
     final d = now ?? DateTime.now();
@@ -78,6 +87,7 @@ class DailyChallenge {
       if (claimed[todayKey()] == true) return false;
       tx.set(ref, {
         'totalXp': FieldValue.increment(c.reward),
+        'xpByWeek': {weekKey(): FieldValue.increment(c.reward)},
         'dailyClaims': {todayKey(): true},
       }, SetOptions(merge: true));
       return true;

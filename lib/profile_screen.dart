@@ -161,8 +161,8 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                       final pending = s.data?.docs.length ?? 0;
                       return _NavTile(
                         icon: Icons.leaderboard_rounded,
-                        title: 'Classement & amis',
-                        subtitle: pending > 0 ? '$pending demande${pending > 1 ? 's' : ''} d’ami en attente' : 'Compare-toi aux autres spotters',
+                        title: 'Paddock',
+                        subtitle: pending > 0 ? '$pending demande${pending > 1 ? 's' : ''} d’ami en attente' : 'Amis, duels et classement mondial',
                         badge: pending,
                         onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
                       );

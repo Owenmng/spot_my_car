@@ -18,7 +18,19 @@ class GeminiException implements Exception {
 class GeminiClient {
   GeminiClient._();
 
-  static const models = ['gemini-3.8-flash', 'gemini-3.5-flash-lite'];
+  /// Rapide d'abord (≈1 s), puis repli, puis le modèle lourd en dernier recours.
+  static const fast = [
+    ('gemini-3.5-flash-lite', {'thinkingLevel': 'MINIMAL'}),
+    ('gemini-3.5-flash-lite', null),
+    ('gemini-3.8-flash', {'thinkingBudget': 0}),
+  ];
+
+  /// Analyse approfondie, plus lente mais plus fine sur les cas difficiles.
+  static const deep = [
+    ('gemini-3.8-flash', null),
+    ('gemini-3.8-flash', {'thinkingBudget': 0}),
+    ('gemini-3.5-flash-lite', null),
+  ];
 
   static Future<String?> _appCheckToken() async {
     try {
@@ -32,13 +44,14 @@ class GeminiClient {
     required List<Map<String, dynamic>> parts,
     Map<String, dynamic>? schema,
     double temperature = 0.1,
-    Duration timeout = const Duration(seconds: 45),
+    Duration timeout = const Duration(seconds: 30),
+    bool deepMode = false,
   }) async {
     final opts = DefaultFirebaseOptions.currentPlatform;
     final token = await _appCheckToken();
     Object? last;
 
-    for (final model in models) {
+    for (final (model, thinking) in deepMode ? deep : fast) {
       final uri = Uri.parse('https://firebasevertexai.googleapis.com/v1beta/projects/${opts.projectId}/models/$model:generateContent');
       final body = {
         'contents': [
@@ -48,6 +61,7 @@ class GeminiClient {
           'temperature': temperature,
           if (schema != null) 'responseMimeType': 'application/json',
           if (schema != null) 'responseSchema': schema,
+          if (thinking != null) 'thinkingConfig': thinking,
         },
       };
       try {
@@ -62,7 +76,7 @@ class GeminiClient {
               },
               body: jsonEncode(body),
             )
-            .timeout(timeout);
+            .timeout(deepMode && model.contains('3.8') ? const Duration(seconds: 90) : timeout);
         if (res.statusCode != 200) {
           String msg = res.body;
           try {
@@ -70,7 +84,6 @@ class GeminiClient {
           } catch (_) {}
           last = GeminiException(res.statusCode, msg);
           debugPrint('$model -> ${res.statusCode} $msg');
-          if (res.statusCode == 400) break;
           continue;
         }
         final data = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;

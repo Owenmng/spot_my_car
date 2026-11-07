@@ -26,6 +26,19 @@ class PhotoStore {
     return out;
   }
 
+  /// Version 1024 px envoyée à l'IA : plus légère, donc plus rapide à analyser.
+  static Future<Uint8List> forAnalysis(Uint8List bytes) => compute(_analysis, bytes);
+
+  static Uint8List _analysis(Uint8List bytes) {
+    final decoded = img.decodeImage(bytes);
+    if (decoded == null) return bytes;
+    final o = img.bakeOrientation(decoded);
+    final r = (o.width > 1024 || o.height > 1024)
+        ? img.copyResize(o, width: o.width >= o.height ? 1024 : null, height: o.height > o.width ? 1024 : null, interpolation: img.Interpolation.average)
+        : o;
+    return Uint8List.fromList(img.encodeJpg(r, quality: 80));
+  }
+
   static DocumentReference<Map<String, dynamic>> ref(String carId) => _col.doc(carId);
 
   static Future<Uint8List?> load(String carId) {
