@@ -33,7 +33,7 @@ jobs:
         run: |
           flutter pub get
           echo "=== RESOLVED ==="
-          grep -B0 -A0 -E '^  [a-z_0-9]+:$|^    version:' pubspec.lock | paste - - | sed 's/ *version: */ /' | tr -s ' ' | grep -E 'firebase|cloud_|google_|flutter_animate|share_plus|geolocator|image_picker|cached|flutter_map|typeahead|provider|audioplayers|connectivity|url_launcher|package_info|confetti|intl|http |shared_pref'
+          flutter pub deps --style=compact --no-dev | grep -E "^- " || true
           echo "=== END RESOLVED ==="
 
       - name: Analyze

@@ -58,9 +58,9 @@ class PlateBadge extends StatelessWidget {
             child: Text(
               text,
               maxLines: 1,
-              style: GoogleFonts.robotoCondensed(
-                fontSize: 19 * scale,
-                fontWeight: FontWeight.w700,
+              style: GoogleFonts.barlowCondensed(
+                fontSize: 21 * scale,
+                fontWeight: FontWeight.w600,
                 color: AppColors.ink,
                 letterSpacing: 1.2 * scale,
               ),
