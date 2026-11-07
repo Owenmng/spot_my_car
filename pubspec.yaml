@@ -37,7 +37,7 @@ dependencies:
 
   # Utilitaires
   http: ^1.6.0
-  flutter_local_notifications: ^21.0.0
+  flutter_local_notifications: '>=21.0.0 <25.0.0'
   timezone: '>=0.10.0 <1.0.0'
   image_picker: ^1.2.4
   connectivity_plus: ^7.3.2
