@@ -1,11 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/intl.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/fact_sheet_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
+import 'package:spot_my_car/services/wishlist_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/car_image.dart';
 import 'package:spot_my_car/widgets/plate_badge.dart';
@@ -55,6 +57,49 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
               children: [
                 _Glass(icon: Icons.arrow_back_rounded, onTap: () => Navigator.pop(context)),
                 const Spacer(),
+                StreamBuilder<List<String>>(
+                  stream: WishlistService.instance.watch(),
+                  builder: (context, snap) {
+                    final list = snap.data ?? const [];
+                    final id = (widget.modelsList[_index] as Map)['id'] as String?;
+                    final on = id != null && list.contains(id);
+                    return Pressable(
+                      onTap: id == null
+                          ? null
+                          : () async {
+                              HapticFeedback.mediumImpact();
+                              final ok = await WishlistService.instance.toggle(id, add: !on, current: list.length);
+                              if (!context.mounted) return;
+                              showAppSnack(
+                                context,
+                                !ok
+                                    ? 'Viseur plein : ${WishlistService.maxTargets} cibles maximum.'
+                                    : on
+                                        ? 'Retirée du viseur'
+                                        : 'Dans le viseur ! +${WishlistService.bonusXp} XP bonus quand tu la spotteras.',
+                                icon: Icons.gps_fixed_rounded,
+                              );
+                            },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+                        decoration: BoxDecoration(
+                          color: on ? Theme.of(context).colorScheme.primary : Colors.black.withValues(alpha: 0.5),
+                          borderRadius: BorderRadius.circular(99),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(on ? Icons.gps_fixed_rounded : Icons.gps_not_fixed_rounded, size: 17, color: on ? Theme.of(context).colorScheme.onPrimary : Colors.white),
+                            const SizedBox(width: 6),
+                            Text(on ? 'Dans le viseur' : 'Viser', style: AppText.body(13, weight: FontWeight.w800, color: on ? Theme.of(context).colorScheme.onPrimary : Colors.white)),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(width: 8),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
                   decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.5), borderRadius: BorderRadius.circular(99)),

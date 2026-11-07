@@ -33,6 +33,13 @@ class DataManager with ChangeNotifier {
   /// Fiche catalogue d'un modèle par son identifiant (photo et specs à jour).
   Map<String, dynamic>? modelById(String? id) => id == null ? null : _modelById[id];
 
+  /// Marque d'un modèle (l'identifiant d'un modèle commence par celui de sa marque).
+  Map<String, dynamic>? brandOfModel(String modelId) {
+    final hits = brands.whereType<Map>().where((b) => modelId.startsWith('${b['id']}_')).toList()
+      ..sort((a, b) => '${b['id']}'.length.compareTo('${a['id']}'.length));
+    return hits.isEmpty ? null : Map<String, dynamic>.from(hits.first);
+  }
+
   bool _isDataLoaded = false;
   bool get isDataLoaded => _isDataLoaded;
 

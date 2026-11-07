@@ -7,9 +7,13 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/community_screen.dart';
 import 'package:spot_my_car/map_screen.dart';
 import 'package:spot_my_car/quiz_screen.dart';
+import 'package:spot_my_car/widgets/car_image.dart';
+import 'package:spot_my_car/model_detail_screen.dart';
+import 'package:spot_my_car/services/wishlist_service.dart';
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/daily_challenge.dart';
+import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/services/notification_service.dart';
 import 'package:spot_my_car/services/duel_service.dart';
 import 'package:spot_my_car/services/photo_store.dart';
@@ -442,6 +446,98 @@ class _Header extends StatelessWidget {
               ).animate().fadeIn(delay: 120.ms, duration: 350.ms),
               const SizedBox(height: 12),
               const _PlayStrip().animate().fadeIn(delay: 200.ms, duration: 350.ms),
+              const _TargetsStrip(),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+/// « Dans le viseur » : les modèles que le joueur veut croiser (bonus XP).
+class _TargetsStrip extends StatelessWidget {
+  const _TargetsStrip();
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return StreamBuilder<List<String>>(
+      stream: WishlistService.instance.watch(),
+      builder: (context, snap) {
+        final data = DataManager.instance;
+        final targets = (snap.data ?? const []).map(data.modelById).whereType<Map<String, dynamic>>().toList();
+        if (targets.isEmpty) return const SizedBox.shrink();
+        return Padding(
+          padding: const EdgeInsets.only(top: 18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.gps_fixed_rounded, size: 15, color: accent),
+                  const SizedBox(width: 6),
+                  Text('DANS LE VISEUR', style: AppText.label(11.5, color: AppColors.inkMuted)),
+                  const Spacer(),
+                  Text('+${WishlistService.bonusXp} XP chacune', style: AppText.body(12, color: AppColors.inkSoft, weight: FontWeight.w600)),
+                ],
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                height: 112,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: targets.length,
+                  separatorBuilder: (_, _) => const SizedBox(width: 10),
+                  itemBuilder: (context, i) {
+                    final m = targets[i];
+                    final brand = data.brandOfModel(m['id'] as String);
+                    return Pressable(
+                      onTap: brand == null
+                          ? null
+                          : () => Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (_) => ModelDetailScreen(modelsList: [m], initialIndex: 0, isSpotted: false, brand: brand)),
+                              ),
+                      child: SizedBox(
+                        width: 150,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(AppRadius.md),
+                          child: Stack(
+                            fit: StackFit.expand,
+                            children: [
+                              CarImage(urls: [m['imageUrl'] as String?], brandName: brand?['name'] as String?, modelName: cleanModelName(m['name'] as String?)),
+                              const DecoratedBox(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    stops: [0.45, 1],
+                                    colors: [Colors.transparent, Color(0xCC000000)],
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                left: 8,
+                                right: 8,
+                                bottom: 7,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text('${brand?['name'] ?? ''}'.toUpperCase(), maxLines: 1, style: AppText.label(9, color: Colors.white70)),
+                                    Text(cleanModelName(m['name'] as String?), maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.display(15, color: Colors.white)),
+                                  ],
+                                ),
+                              ),
+                              Positioned(top: 6, right: 6, child: Icon(Icons.gps_fixed_rounded, size: 16, color: accent)),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         );

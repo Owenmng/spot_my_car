@@ -122,6 +122,17 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                     curve: Curves.easeOutCubic,
                     builder: (_, v, _) => Text('+$v XP', style: AppText.display(22, color: Colors.white)),
                   ).animate().fadeIn(delay: 900.ms),
+                if (widget.result.targetHit) ...[
+                  const SizedBox(height: 10),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.gps_fixed_rounded, color: Theme.of(context).colorScheme.primary, size: 18),
+                      const SizedBox(width: 6),
+                      Text('Cible atteinte ! Bonus inclus', style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
+                    ],
+                  ).animate().fadeIn(delay: 1000.ms).scale(begin: const Offset(0.8, 0.8)),
+                ],
                 if (widget.result.newAchievements.isNotEmpty) ...[
                   const SizedBox(height: 14),
                   Padding(
