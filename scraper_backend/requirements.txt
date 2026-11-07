@@ -1,0 +1,4 @@
+functions-framework
+firebase-admin
+requests
+selenium

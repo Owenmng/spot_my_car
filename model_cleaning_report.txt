@@ -1,0 +1,95 @@
+RAPPORT DE NETTOYAGE DES MODÈLES
+================================
+Marques traitées: 54
+Modèles avant nettoyage: 3180
+Modèles après nettoyage: 3127
+Doublons intra-marque supprimés: 53
+
+DÉTAILS DES SUPPRESSIONS
+-----------------------
+Marque audi: 4 doublon(s) supprimé(s) - RS4 Avant, RS6 Avant, RS Q8, RS e-tron GT
+Marque ds: 1 doublon(s) supprimé(s) - DS 4
+Marque ford: 1 doublon(s) supprimé(s) - Capri
+Marque honda: 18 doublon(s) supprimé(s) - Edix (FR-V), e:Ny1, Element, Orthia, Rafaga, Saber, S800, Concerto, Capa, Elysion, S600, S-MX, Partner, Torneo, That's, Fit Aria (City), Domani, Today
+Marque hyundai: 1 doublon(s) supprimé(s) - S-Coupe
+Marque nissan: 2 doublon(s) supprimé(s) - Lucino, Rasheen
+Marque renault: 17 doublon(s) supprimé(s) - 8 Gordini, 20, 12, 10, 25, 8, 17, 6, 9 Turbo, 14, 19, 16, 15, 18, 21, 30, 9
+Marque toyota: 2 doublon(s) supprimé(s) - Sprinter Carib, MasterAce Surf
+Marque volvo: 7 doublon(s) supprimé(s) - 850, 760, 480, 960, 66, 740, 940
+
+MODÈLES PARTAGÉS ENTRE MARQUES
+------------------------------
+Modèle partagé: '124 Spider' présent chez abarth, fiat
+Modèle partagé: '500' présent chez abarth, fiat
+Modèle partagé: '500C' présent chez abarth, fiat
+Modèle partagé: '500e' présent chez abarth, fiat
+Modèle partagé: '600e' présent chez abarth, fiat
+Modèle partagé: 'Fastback' présent chez abarth, fiat
+Modèle partagé: 'Pulse' présent chez abarth, fiat
+Modèle partagé: 'Punto' présent chez abarth, fiat
+Modèle partagé: 'Punto Evo' présent chez abarth, fiat
+Modèle partagé: '145' présent chez alfa-romeo, volvo
+Modèle partagé: '164' présent chez alfa-romeo, volvo
+Modèle partagé: '1900' présent chez alfa-romeo, fiat
+Modèle partagé: '6' présent chez alfa-romeo, mazda, polestar, renault
+Modèle partagé: '90' présent chez alfa-romeo, audi
+Modèle partagé: 'GT' présent chez alfa-romeo, ford, mclaren, opel
+Modèle partagé: 'Spider' présent chez alfa-romeo, fiat
+Modèle partagé: '1300' présent chez alpine, dacia, mazda
+Modèle partagé: '1600' présent chez alpine, bmw
+Modèle partagé: '100' présent chez audi, skoda
+Modèle partagé: 'Coupé' présent chez audi, fiat, maserati, mini, smart
+Modèle partagé: 'Fox' présent chez audi, volkswagen
+Modèle partagé: 'S1' présent chez audi, bentley
+Modèle partagé: 'S2' présent chez audi, bentley
+Modèle partagé: 'S3' présent chez audi, bentley
+Modèle partagé: 'S-Type' présent chez bentley, jaguar
+Modèle partagé: '125' présent chez bmw, fiat
+Modèle partagé: '130' présent chez bmw, fiat, skoda
+Modèle partagé: '1500' présent chez bmw, fiat, seat
+Modèle partagé: '1800' présent chez bmw, fiat
+Modèle partagé: '2000' présent chez bmw, dacia
+Modèle partagé: 'XM' présent chez bmw, citroen
+Modèle partagé: 'Mistral' présent chez bugatti, maserati, nissan
+Modèle partagé: 'Fleetwood' présent chez cadillac, kia
+Modèle partagé: 'Model A' présent chez cadillac, ford
+Modèle partagé: 'Model S' présent chez cadillac, tesla
+Modèle partagé: 'Model T' présent chez cadillac, ford
+Modèle partagé: 'Astra' présent chez chevrolet, opel
+Modèle partagé: 'Classic' présent chez chevrolet, toyota
+Modèle partagé: 'Corsa' présent chez chevrolet, opel, toyota
+Modèle partagé: 'Monza' présent chez chevrolet, opel
+Modèle partagé: 'Omega' présent chez chevrolet, opel
+Modèle partagé: 'Vectra' présent chez chevrolet, opel
+Modèle partagé: '1100' présent chez dacia, fiat
+Modèle partagé: 'Avenger' présent chez dodge, jeep
+Modèle partagé: 'Dynasty' présent chez dodge, hyundai
+Modèle partagé: 'Lancer' présent chez dodge, mitsubishi
+Modèle partagé: 'Raider' présent chez dodge, mitsubishi
+Modèle partagé: '400 GT' présent chez ferrari, lamborghini
+Modèle partagé: '850' présent chez fiat, volvo
+Modèle partagé: 'Cronos' présent chez fiat, mazda
+Modèle partagé: 'Elite' présent chez ford, lotus
+Modèle partagé: 'Equator' présent chez ford, suzuki
+Modèle partagé: 'Partner' présent chez honda, peugeot
+Modèle partagé: 'Z' présent chez honda, nissan
+Modèle partagé: 'Lafesta' présent chez hyundai, nissan
+Modèle partagé: 'Matrix' présent chez hyundai, toyota
+Modèle partagé: 'Santamo' présent chez hyundai, mitsubishi
+Modèle partagé: 'Mark X' présent chez jaguar, toyota
+Modèle partagé: 'Bongo' présent chez kia, mazda
+Modèle partagé: 'Frontier' présent chez kia, nissan
+Modèle partagé: 'Bora' présent chez maserati, volkswagen
+Modèle partagé: '1000' présent chez mazda, mini, toyota
+Modèle partagé: '2' présent chez mazda, polestar
+Modèle partagé: '3' présent chez mazda, polestar, renault
+Modèle partagé: '5' présent chez mazda, polestar, renault
+Modèle partagé: 'Sprinter' présent chez mercedes-benz, toyota
+Modèle partagé: 'Roadster' présent chez mini, smart, tesla
+Modèle partagé: 'Traveller' présent chez mini, peugeot
+Modèle partagé: 'Van' présent chez mini, nissan
+Modèle partagé: 'Libero' présent chez mitsubishi, subaru
+Modèle partagé: 'Terra' présent chez nissan, seat
+Modèle partagé: 'RCZ' présent chez peugeot, renault
+Modèle partagé: '4' présent chez polestar, renault
+Modèle partagé: '360' présent chez subaru, volvo

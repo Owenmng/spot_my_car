@@ -1,0 +1,33 @@
+{
+  "models": [
+    {
+      "id": "ktm_x-bow",
+      "name": "X-Bow GT-XR",
+      "imageUrl": "https://storage.googleapis.com/car-spotter-app-779f2.firebasestorage.app/models/ktm_x-bow.jpg",
+      "production_years": "2022 - Aujourd'hui",
+      "puissance_ch": 500,
+      "vitesse_max_kmh": 280,
+      "zero_a_cent_s": 3.4,
+      "type_carburant": "Essence",
+      "consommation_mixte": "9.1 L/100km",
+      "dimensions_lwh_mm": "4626 x 2041 x 1164",
+      "poids_kg": 1250,
+      "prix_lancement_eur": 285000,
+      "tags": [
+        "x-bow gt-xr",
+        "sports car",
+        "roadster",
+        "performance car",
+        "track car",
+        "two-seater",
+        "open-top",
+        "lightweight car",
+        "car",
+        "vehicle",
+        "motor vehicle",
+        "high-performance car",
+        "extreme car"
+      ]
+    }
+  ]
+}

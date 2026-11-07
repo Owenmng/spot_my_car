@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "619341587877",
+    "project_id": "car-spotter-app-779f2",
+    "storage_bucket": "car-spotter-app-779f2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619341587877:android:999f7d1d7ce58153a5744c",
+        "android_client_info": {
+          "package_name": "com.example.spot_my_car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619341587877-gcr69pafpv7hd655qqoj5hbscudtlsp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spot_my_car",
+            "certificate_hash": "3ece7d860a9d2087535845271bfd8ff3f8b9b132"
+          }
+        },
+        {
+          "client_id": "619341587877-hvdjaq1c0a6k001fvai542haigksmton.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spot_my_car",
+            "certificate_hash": "fe8b16abb0715de7b5e829864674388d87af679e"
+          }
+        },
+        {
+          "client_id": "619341587877-hulof5pr10m197mfnckvvmsd6i0mtm76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALFJTfbrJk4Hj0SysuIV6RpvtuibNsul4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619341587877-h8afdrpblncum54ikkbui12rb3o1oi2q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "619341587877-5db9ubb60sgkkfhkb6tr4cgec9q9ek85.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.spotMyCar"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619341587877:android:7820a44f420e4a43a5744c",
+        "android_client_info": {
+          "package_name": "com.owenmengual.spotmycar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619341587877-hulof5pr10m197mfnckvvmsd6i0mtm76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALFJTfbrJk4Hj0SysuIV6RpvtuibNsul4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619341587877-h8afdrpblncum54ikkbui12rb3o1oi2q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "619341587877-5db9ubb60sgkkfhkb6tr4cgec9q9ek85.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.spotMyCar"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,143 @@
+Rapport d'unicité des modèles
+=============================
+
+Doublons trouvés dans les fichiers:
+- 850
+- 66
+- 940
+- 740
+- 760
+- 480
+- 960
+
+Modèles partagés entre marques:
+- '124 spider': abarth, fiat
+- '500': abarth, fiat
+- '500c': abarth, fiat
+- '500e': abarth, fiat
+- '600e': abarth, fiat
+- 'fastback': abarth, fiat
+- 'pulse': abarth, fiat
+- 'punto': abarth, fiat
+- 'punto evo': abarth, fiat
+- '145': alfa-romeo, volvo
+- '164': alfa-romeo, volvo
+- '1900': alfa-romeo, fiat
+- '6': alfa-romeo, mazda, polestar, renault, renault
+- '90': alfa-romeo, audi
+- 'gt': alfa-romeo, ford, mclaren, opel
+- 'spider': alfa-romeo, fiat
+- '1300': alpine, dacia, mazda
+- '1600': alpine, bmw
+- '100': audi, skoda
+- 'coupé': audi, fiat, maserati, mini, smart
+- 'fox': audi, volkswagen
+- 'rs e-tron gt': audi, audi
+- 'rs q8': audi, audi
+- 'rs4 avant': audi, audi
+- 'rs6 avant': audi, audi
+- 's1': audi, bentley
+- 's2': audi, bentley
+- 's3': audi, bentley
+- 's-type': bentley, jaguar
+- '125': bmw, fiat
+- '130': bmw, fiat, skoda
+- '1500': bmw, fiat, seat
+- '1800': bmw, fiat
+- '2000': bmw, dacia
+- 'xm': bmw, citroen
+- 'mistral': bugatti, maserati, nissan
+- 'fleetwood': cadillac, kia
+- 'model a': cadillac, ford
+- 'model s': cadillac, tesla
+- 'model t': cadillac, ford
+- 'astra': chevrolet, opel
+- 'classic': chevrolet, toyota
+- 'corsa': chevrolet, opel, toyota
+- 'monza': chevrolet, opel
+- 'omega': chevrolet, opel
+- 'vectra': chevrolet, opel
+- '1100': dacia, fiat
+- 'avenger': dodge, jeep
+- 'dynasty': dodge, hyundai
+- 'lancer': dodge, mitsubishi
+- 'raider': dodge, mitsubishi
+- 'ds 4': ds, ds
+- '400 gt': ferrari, lamborghini
+- '850': fiat, volvo, volvo
+- 'cronos': fiat, mazda
+- 'capri': ford, ford
+- 'elite': ford, lotus
+- 'equator': ford, suzuki
+- 'capa': honda, honda
+- 'concerto': honda, honda
+- 'domani': honda, honda
+- 'e:ny1': honda, honda
+- 'edix (fr-v)': honda, honda
+- 'element': honda, honda
+- 'elysion': honda, honda
+- 'fit aria (city)': honda, honda
+- 'orthia': honda, honda
+- 'partner': honda, honda, peugeot
+- 'rafaga': honda, honda
+- 's-mx': honda, honda
+- 's600': honda, honda
+- 's800': honda, honda
+- 'saber': honda, honda
+- 'that's': honda, honda
+- 'today': honda, honda
+- 'torneo': honda, honda
+- 'z': honda, nissan
+- 'lafesta': hyundai, nissan
+- 'matrix': hyundai, toyota
+- 's-coupe': hyundai, hyundai
+- 'santamo': hyundai, mitsubishi
+- 'mark x': jaguar, toyota
+- 'bongo': kia, mazda
+- 'frontier': kia, nissan
+- 'proceed': kia, mazda
+- 'bora': maserati, volkswagen
+- '1000': mazda, mini, toyota
+- '2': mazda, polestar
+- '3': mazda, polestar, renault
+- '5': mazda, polestar, renault
+- 'sprinter': mercedes-benz, toyota
+- 'roadster': mini, smart, tesla
+- 'traveller': mini, peugeot
+- 'van': mini, nissan
+- 'libero': mitsubishi, subaru
+- 'lucino': nissan, nissan
+- 'rasheen': nissan, nissan
+- 'terra': nissan, seat
+- 'rcz': peugeot, renault
+- '4': polestar, renault
+- '10': renault, renault
+- '12': renault, renault
+- '14': renault, renault
+- '15': renault, renault
+- '16': renault, renault
+- '17': renault, renault
+- '18': renault, renault
+- '19': renault, renault
+- '20': renault, renault
+- '21': renault, renault
+- '25': renault, renault
+- '30': renault, renault
+- '8': renault, renault
+- '8 gordini': renault, renault
+- '9': renault, renault
+- '9 turbo': renault, renault
+- '360': subaru, volvo
+- 'masterace surf': toyota, toyota
+- 'sprinter carib': toyota, toyota
+- '480': volvo, volvo
+- '66': volvo, volvo
+- '740': volvo, volvo
+- '760': volvo, volvo
+- '940': volvo, volvo
+- '960': volvo, volvo
+
+Statistiques:
+Marques analysées: 54
+Modèles uniques: 3036
+Occurrences totales: 3180
