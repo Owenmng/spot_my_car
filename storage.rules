@@ -1,0 +1,37 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isImage(maxMb) {
+      return request.resource.size < maxMb * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    // Photos officielles du catalogue et logos : publiques, lecture seule.
+    match /models/{file=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /logos/{file=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Photos prises par les joueurs.
+    match /user_spots/{userId}/{file=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null
+        && request.auth.uid == userId
+        && (request.resource == null || isImage(8));
+    }
+
+    match /profile_pictures/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null
+        && request.auth.uid == userId
+        && (request.resource == null || isImage(3));
+    }
+  }
+}

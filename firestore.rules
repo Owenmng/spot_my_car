@@ -1,0 +1,114 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMe(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function shortString(value, max) {
+      return value == null || (value is string && value.size() <= max);
+    }
+
+    // Profil public : pseudo, avatar, XP, stats. Lisible par les joueurs connectés.
+    match /users/{userId} {
+      allow read: if signedIn();
+
+      allow create: if isMe(userId)
+        && !request.resource.data.keys().hasAny(['isAdmin', 'rank'])
+        && request.resource.data.get('uid', userId) == userId
+        && request.resource.data.get('totalXp', 0) == 0
+        && shortString(request.resource.data.get('pseudo', null), 24);
+
+      allow update: if isMe(userId)
+        && !request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(['isAdmin', 'rank', 'uid', 'friendId', 'friendId_lowercase', 'createdAt'])
+        && request.resource.data.get('totalXp', 0) >= resource.data.get('totalXp', 0)
+        && request.resource.data.get('totalXp', 0) - resource.data.get('totalXp', 0) <= 3000
+        && shortString(request.resource.data.get('pseudo', null), 24);
+
+      allow delete: if isMe(userId);
+
+      // Données personnelles (email, date de naissance...) : visibles par leur seul propriétaire.
+      match /private/{docId} {
+        allow read, write: if isMe(userId);
+      }
+
+      match /friends/{friendId} {
+        allow read: if isMe(userId);
+        allow write: if signedIn()
+          && (request.auth.uid == userId || request.auth.uid == friendId);
+      }
+    }
+
+    // Chaque spot n'est lisible et modifiable que par son auteur.
+    match /spotted_cars/{carId} {
+      allow read: if signedIn() && resource.data.userId == request.auth.uid;
+
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.plate is string
+        && request.resource.data.plate.size() <= 20
+        && shortString(request.resource.data.get('brandName', null), 60)
+        && shortString(request.resource.data.get('modelName', null), 120)
+        && shortString(request.resource.data.get('note', null), 500);
+
+      allow update: if signedIn()
+        && resource.data.userId == request.auth.uid
+        && request.resource.data.userId == resource.data.userId
+        && shortString(request.resource.data.get('note', null), 500);
+
+      allow delete: if signedIn() && resource.data.userId == request.auth.uid;
+    }
+
+    // Classement : écrit uniquement par les Cloud Functions.
+    match /leaderboards/{leaderboardId} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /friend_requests/{requestId} {
+      allow read: if signedIn()
+        && (request.auth.uid == resource.data.fromUserId
+            || request.auth.uid == resource.data.toUserId);
+
+      allow create: if signedIn()
+        && request.resource.data.fromUserId == request.auth.uid
+        && request.resource.data.toUserId is string
+        && request.resource.data.toUserId != request.auth.uid
+        && request.resource.data.status == 'pending';
+
+      allow update: if signedIn()
+        && request.auth.uid == resource.data.toUserId
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+        && request.resource.data.status in ['accepted', 'declined'];
+
+      allow delete: if signedIn()
+        && (request.auth.uid == resource.data.fromUserId
+            || request.auth.uid == resource.data.toUserId);
+    }
+
+    // Messages de support : uniquement vers l'adresse du support, jamais relisibles.
+    match /mail/{mailId} {
+      allow create: if signedIn()
+        && request.resource.data.to == ['contact.spotmycar@gmail.com']
+        && request.resource.data.message.subject is string
+        && request.resource.data.message.subject.size() <= 200
+        && request.resource.data.message.html is string
+        && request.resource.data.message.html.size() <= 6000;
+      allow read, update, delete: if false;
+    }
+
+    // Signalements d'erreur de reconnaissance (aide à améliorer l'IA).
+    match /recognition_feedback/{feedbackId} {
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow read, update, delete: if false;
+    }
+  }
+}

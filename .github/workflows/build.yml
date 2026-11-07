@@ -30,13 +30,19 @@ jobs:
         run: flutter --version
 
       - name: Dependencies
-        run: flutter pub get
+        run: |
+          flutter pub get
+          echo "=== RESOLVED ==="
+          grep -B0 -A0 -E '^  [a-z_0-9]+:$|^    version:' pubspec.lock | paste - - | sed 's/ *version: */ /' | tr -s ' ' | grep -E 'firebase|cloud_|google_|flutter_animate|share_plus|geolocator|image_picker|cached|flutter_map|typeahead|provider|audioplayers|connectivity|url_launcher|package_info|confetti|intl|http |shared_pref'
+          echo "=== END RESOLVED ==="
 
       - name: Analyze
         run: flutter analyze --no-fatal-infos --no-fatal-warnings 2>&1 | tee analyze.txt
 
       - name: Build APK
-        run: flutter build apk --release 2>&1 | tee build.txt
+        run: |
+          set -o pipefail
+          flutter build apk --release 2>&1 | tee build.txt
 
       - name: Upload APK
         if: success()

@@ -1,49 +1,37 @@
-// Fichier: lib/widgets/car_image_card.dart (Version Corrigée)
-
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:spot_my_car/widgets/car_image.dart';
 
+/// Ancienne API conservée pour les écrans existants : délègue à [CarImage].
 class CarImageCard extends StatelessWidget {
   final String? imageUrl;
+  final List<String?> fallbackUrls;
   final BoxFit fit;
   final Widget? placeholder;
   final Widget? errorWidget;
-  final BorderRadius borderRadius; // <-- AJOUTE CETTE LIGNE
+  final BorderRadius borderRadius;
+  final String? brandName;
+  final String? modelName;
 
   const CarImageCard({
     super.key,
     required this.imageUrl,
+    this.fallbackUrls = const [],
     this.fit = BoxFit.cover,
     this.placeholder,
     this.errorWidget,
-    // On met une valeur par défaut pour ne pas casser le code existant
-    this.borderRadius = BorderRadius.zero, // <-- AJOUTE CETTE LIGNE
+    this.borderRadius = BorderRadius.zero,
+    this.brandName,
+    this.modelName,
   });
 
   @override
   Widget build(BuildContext context) {
-    // Le design que l'on veut réutiliser
-    return Card(
-      elevation: 4,
-      // ON UTILISE LE clipBehavior DU PARENT, MAIS LE shape VIENT D'ICI
-      clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: borderRadius, // <-- MODIFIE CETTE LIGNE
-      ),
-      child: Container(
-        // Fond gris pour les cas où l'image ne charge pas
-        color: Colors.grey[200],
-        child: (imageUrl != null && imageUrl!.isNotEmpty)
-            ? CachedNetworkImage(
-                imageUrl: imageUrl!,
-                fit: fit,
-                placeholder: (context, url) =>
-                    placeholder ?? const Center(child: CircularProgressIndicator(strokeWidth: 2.0)),
-                errorWidget: (context, url, error) =>
-                    errorWidget ?? const Icon(Icons.image_not_supported, color: Colors.grey),
-              )
-            : const Icon(Icons.directions_car, size: 40, color: Colors.grey),
-      ),
+    return CarImage(
+      urls: [imageUrl, ...fallbackUrls],
+      fit: fit,
+      borderRadius: borderRadius,
+      brandName: brandName,
+      modelName: modelName,
     );
   }
 }

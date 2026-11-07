@@ -1,115 +1,132 @@
-// Fichier: lib/theme_selection_screen.dart (Version Finale Complète)
-
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:spot_my_car/services/theme_notifier.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/plate_badge.dart';
 
 class ThemeSelectionScreen extends StatelessWidget {
   const ThemeSelectionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // On récupère notre ThemeNotifier pour savoir quel thème est actif et pour le changer
-    final themeNotifier = Provider.of<ThemeNotifier>(context);
+    final notifier = context.watch<ThemeNotifier>();
 
     return Scaffold(
-      // L'AppBar et le fond prennent automatiquement les couleurs du thème ACTUEL
-      appBar: AppBar(
-        title: const Text('Choisir un thème'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 16,
-            mainAxisSpacing: 16,
-            childAspectRatio: 1.2,
+      appBar: AppBar(title: const Text('Apparence')),
+      body: ListView(
+        padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
+        children: [
+          Text(
+            "Choisis la couleur qui t'accompagne partout dans l'appli.",
+            style: AppText.body(15, color: AppColors.inkSoft),
           ),
-          itemCount: themeNotifier.availableThemes.length,
-          itemBuilder: (context, index) {
-            final theme = themeNotifier.availableThemes[index];
-            final isSelected = theme.name == themeNotifier.currentAppTheme.name;
+          const SizedBox(height: 24),
+          _Preview(accent: notifier.accent),
+          const SizedBox(height: 28),
+          Wrap(
+            spacing: 14,
+            runSpacing: 18,
+            children: [
+              for (final theme in notifier.availableThemes)
+                _Swatch(
+                  theme: theme,
+                  selected: theme.name == notifier.currentAppTheme.name,
+                  onTap: () {
+                    HapticFeedback.selectionClick();
+                    notifier.setTheme(theme);
+                  },
+                ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
 
-            return GestureDetector(
-              onTap: () {
-                // Au clic, on change le thème global de l'application
-                themeNotifier.setTheme(theme);
-              },
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: isSelected ? theme.themeData.primaryColor : Colors.grey[300]!,
-                    width: isSelected ? 3 : 1,
+class _Swatch extends StatelessWidget {
+  final AppTheme theme;
+  final bool selected;
+  final VoidCallback onTap;
+
+  const _Swatch({required this.theme, required this.selected, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final width = (MediaQuery.sizeOf(context).width - 40 - 28) / 3;
+    return GestureDetector(
+      onTap: onTap,
+      child: SizedBox(
+        width: width,
+        child: Column(
+          children: [
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 220),
+              curve: Curves.easeOutBack,
+              width: selected ? 64 : 56,
+              height: selected ? 64 : 56,
+              decoration: BoxDecoration(
+                color: theme.accent,
+                shape: BoxShape.circle,
+                border: Border.all(color: selected ? AppColors.ink : Colors.white, width: 3),
+                boxShadow: [
+                  BoxShadow(
+                    color: theme.accent.withValues(alpha: selected ? 0.45 : 0.18),
+                    blurRadius: selected ? 18 : 8,
+                    offset: const Offset(0, 6),
                   ),
-                  // La couleur de fond de la carte est maintenant celle du thème qu'elle représente
-                  color: theme.themeData.colorScheme.surface,
-                  boxShadow: isSelected ? [
-                    BoxShadow(
-                      color: theme.themeData.primaryColor.withOpacity(0.3),
-                      blurRadius: 8,
-                      offset: const Offset(0, 4),
-                    )
-                  ] : [],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    // Le cercle bicolore
-                    ThemePreviewCircle(
-                      primaryColor: theme.themeData.primaryColor,
-                      backgroundColor: theme.themeData.scaffoldBackgroundColor,
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      theme.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                        // Le texte prend la couleur appropriée pour le fond de la carte
-                        color: theme.themeData.colorScheme.onSurface,
-                      ),
-                    ),
-                  ],
-                ),
+                ],
               ),
-            );
-          },
+              child: selected ? const Icon(Icons.check_rounded, color: Colors.white) : null,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              theme.name,
+              textAlign: TextAlign.center,
+              style: AppText.body(13, weight: selected ? FontWeight.w800 : FontWeight.w600),
+            ),
+          ],
         ),
       ),
     );
   }
 }
 
-// Widget dédié pour le cercle bicolore (corrigé)
-class ThemePreviewCircle extends StatelessWidget {
-  final Color primaryColor;
-  final Color backgroundColor;
-
-  const ThemePreviewCircle({
-    super.key,
-    required this.primaryColor,
-    required this.backgroundColor,
-  });
+class _Preview extends StatelessWidget {
+  final Color accent;
+  const _Preview({required this.accent});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 60,
-      height: 60,
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        border: Border.all(color: Colors.grey[300]!),
+        color: AppColors.ink,
+        borderRadius: BorderRadius.circular(AppRadius.xl),
       ),
-      child: ClipOval(
-        child: Row(
-          children: [
-            Expanded(child: Container(color: primaryColor)),
-            Expanded(child: Container(color: backgroundColor)),
-          ],
-        ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('APERÇU', style: AppText.label(11, color: Colors.white54)),
+                const SizedBox(height: 6),
+                Text('Porsche 911 GT3', style: AppText.display(20, color: Colors.white)),
+                const SizedBox(height: 12),
+                const PlateBadge(plate: 'GT-911-RS', countryCode: 'FR', scale: 0.8),
+              ],
+            ),
+          ),
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(AppRadius.md)),
+            child: Text('+250 XP', style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
+          ),
+        ],
       ),
     );
   }

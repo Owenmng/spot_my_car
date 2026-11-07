@@ -80,3 +80,4 @@ csvjson.json
 .dart_tool/
 android/.gradle/
 
+pubspec.lock
