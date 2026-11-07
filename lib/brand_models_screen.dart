@@ -1,3 +1,4 @@
+import 'package:spot_my_car/shared/natural_sort.dart';
 // Fichier: lib/brand_models_screen.dart (Version Corrigée pour l'appel)
 
 import 'package:flutter/material.dart';
@@ -79,9 +80,9 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
     _sortedModels.sort((a, b) {
       switch (_currentSortOption) {
         case SortOption.nameAsc: 
-        return a['name'].toString().toLowerCase().compareTo(b['name'].toString().toLowerCase());
+        return naturalCompare(a['name'].toString(), b['name'].toString());
         case SortOption.nameDesc: 
-        return b['name'].toString().toLowerCase().compareTo(a['name'].toString().toLowerCase());
+        return naturalCompare(b['name'].toString(), a['name'].toString());
         case SortOption.yearAsc: return _getYear(a['production_years']).compareTo(_getYear(b['production_years']));
         case SortOption.yearDesc: return _getYear(b['production_years']).compareTo(_getYear(a['production_years']));
       }
@@ -90,7 +91,8 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
 
   int _getYear(String? years) {
     if (years == null || years.isEmpty) return 0;
-    return int.tryParse(years.split(' ')[0]) ?? 0;
+    final m = RegExp(r'(18|19|20)\d{2}').firstMatch(years);
+    return m == null ? 0 : int.parse(m.group(0)!);
   }
   
   void _updateSortOption(SortOption? newOption) {

@@ -5,6 +5,7 @@ import 'dart:typed_data';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -397,8 +398,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                             style: TextStyle(fontSize: 16, color: Colors.grey[600])),
                         const SizedBox(height: 24),
                         Card(
-                          elevation: 4,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                          
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Column(
@@ -406,12 +406,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                                 Text("Niveau ${currentLevel.level} - ${currentLevel.title}",
                                     style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
                                 const SizedBox(height: 12),
-                                LinearProgressIndicator(
-                                    value: progress,
-                                    minHeight: 10,
-                                    borderRadius: BorderRadius.circular(5),
-                                    backgroundColor: Colors.grey[300],
-                                    valueColor: AlwaysStoppedAnimation<Color>(Colors.amber[700]!)),
+                                RevLights(value: progress, dark: false, height: 12),
                                 const SizedBox(height: 8),
                                 Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

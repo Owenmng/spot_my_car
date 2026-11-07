@@ -1,3 +1,5 @@
+import 'package:spot_my_car/widgets/car_image.dart';
+import 'package:spot_my_car/shared/natural_sort.dart';
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 
@@ -23,7 +25,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
   @override
   void initState() {
     super.initState();
-    _filteredModels = widget.models;
+    _filteredModels = List.of(widget.models)..sort((a, b) => naturalCompare(a['name'].toString(), b['name'].toString()));
     _searchController.addListener(() {
       _filterModels(_searchController.text);
     });
@@ -31,7 +33,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
 
   void _filterModels(String query) {
     if (query.isEmpty) {
-      setState(() => _filteredModels = widget.models);
+      setState(() => _filteredModels = List.of(widget.models)..sort((a, b) => naturalCompare(a['name'].toString(), b['name'].toString())));
       return;
     }
     setState(() {
@@ -71,12 +73,6 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
               decoration: InputDecoration(
                 hintText: 'Rechercher un modèle...',
                 prefixIcon: const Icon(Icons.search),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide.none,
-                ),
-                filled: true,
-                fillColor: Colors.grey[200],
               ),
             ),
           ),
@@ -111,7 +107,18 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
 
                 final model = _filteredModels[index - 1];
                 return ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                  leading: SizedBox(
+                    width: 72,
+                    height: 48,
+                    child: CarImage(
+                      urls: [model['imageUrl'] as String?],
+                      brandName: widget.brandName,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                   title: Text(model['name']),
+                  subtitle: model['production_years'] == null ? null : Text(model['production_years'].toString()),
                   onTap: () {
                     AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
                     Navigator.of(context).pop(model);
