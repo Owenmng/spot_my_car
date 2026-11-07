@@ -58,7 +58,10 @@ android {
     buildTypes {
         getByName("release") {
             // Signature
-            signingConfig = signingConfigs.getByName("release")
+            signingConfig = if (keystorePropertiesFile.exists())
+                signingConfigs.getByName("release")
+            else
+                signingConfigs.getByName("debug")
 
             // Minification + ProGuard
             isMinifyEnabled = true
