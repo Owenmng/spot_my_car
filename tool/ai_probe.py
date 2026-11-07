@@ -31,23 +31,32 @@ schema = {"type": "OBJECT", "properties": {
   "color": {"type": "STRING"}, "plateText": {"type": "STRING"}},
   "required": ["isRealPhoto", "vehicleType"]}
 
-for label, title in TESTS.items():
+import io
+try:
+    from PIL import Image
+except ImportError:
+    Image = None
+for label, title in list(TESTS.items())[:3]:
     url = thumb(title) or thumb(search_file(label + " car") or "")
     if not url:
         print(label, "NO IMAGE"); continue
     img = S.get(url).content
+    if Image:
+        im = Image.open(io.BytesIO(img)).convert("RGB"); im.thumbnail((1024, 1024)); b = io.BytesIO(); im.save(b, "JPEG", quality=80); img = b.getvalue()
     print("\n===", label, len(img), "bytes")
-    for model in ["gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"]:
+    for model, think in [("gemini-3.8-flash", None), ("gemini-3.8-flash", {"thinkingLevel": "MINIMAL"}), ("gemini-3.8-flash", {"thinkingLevel": "LOW"}), ("gemini-3.8-flash", {"thinkingBudget": 0}), ("gemini-3.5-flash-lite", None), ("gemini-3.5-flash-lite", {"thinkingLevel": "MINIMAL"})]:
+        gc = {"temperature": 0.1, "responseMimeType": "application/json", "responseSchema": schema}
+        if think: gc["thinkingConfig"] = think
         body = {"contents": [{"role": "user", "parts": [{"text": "Identifie la voiture principale (marque, modèle, génération). Réponds en JSON."},
                                                           {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(img).decode()}}]}],
-                "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json", "responseSchema": schema}}
-        for ep in [f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/{model}:generateContent"]:
-            r = requests.post(ep, json=body, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID, "x-goog-api-client": "gl-dart/3 fire/5"}, timeout=90)
-            txt = r.text
-            if r.ok:
-                try:
-                    txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-                except Exception: pass
-            print(model, r.status_code, txt[:600].replace("\n", " "))
-        time.sleep(1)
-# probe
+                "generationConfig": gc}
+        t = time.time()
+        r = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/{model}:generateContent", json=body, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=120)
+        dt = time.time() - t
+        out = r.text[:200].replace("\n", " ")
+        if r.ok:
+            try:
+                j = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"]); c = (j.get("candidates") or [{}])[0]
+                out = f"{c.get('make')} {c.get('model')} {c.get('generation')} conf={c.get('confidence')} usage={r.json().get('usageMetadata',{}).get('thoughtsTokenCount')}"
+            except Exception as e: out = str(e)
+        print(f"{model:24} {str(think):30} {r.status_code} {dt:5.1f}s {out}")

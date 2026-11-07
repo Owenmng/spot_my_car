@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install requests >/dev/null && python3 tool/ai_probe.py
+      - run: pip install requests pillow >/dev/null && python3 tool/ai_probe.py
