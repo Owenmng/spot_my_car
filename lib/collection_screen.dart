@@ -163,7 +163,7 @@ class _BrandTile extends StatelessWidget {
                     tween: Tween(begin: 0, end: progress),
                     duration: const Duration(milliseconds: 800),
                     curve: Curves.easeOutCubic,
-                    builder: (_, v, __) => CircularProgressIndicator(
+                    builder: (_, v, _) => CircularProgressIndicator(
                       value: v,
                       strokeWidth: 3.5,
                       strokeCap: StrokeCap.round,

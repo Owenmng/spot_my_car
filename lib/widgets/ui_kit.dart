@@ -159,8 +159,8 @@ class BrandLogo extends StatelessWidget {
               imageUrl: url!,
               cacheManager: CustomCacheManager(),
               fit: BoxFit.contain,
-              errorWidget: (_, __, ___) => fallback,
-              placeholder: (_, __) => const SizedBox.shrink(),
+              errorWidget: (_, _, _) => fallback,
+              placeholder: (_, _) => const SizedBox.shrink(),
             ),
     );
   }

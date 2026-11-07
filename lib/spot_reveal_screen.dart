@@ -22,8 +22,8 @@ class SpotRevealScreen extends StatefulWidget {
         opaque: false,
         barrierColor: Colors.black.withValues(alpha: 0.85),
         transitionDuration: const Duration(milliseconds: 350),
-        pageBuilder: (_, __, ___) => SpotRevealScreen(draft: draft, result: result),
-        transitionsBuilder: (_, a, __, child) => FadeTransition(opacity: a, child: child),
+        pageBuilder: (_, _, _) => SpotRevealScreen(draft: draft, result: result),
+        transitionsBuilder: (_, a, _, child) => FadeTransition(opacity: a, child: child),
       );
 
   @override
@@ -131,7 +131,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                     tween: IntTween(begin: 0, end: _revealed ? widget.result.xpGained : 0),
                     duration: const Duration(milliseconds: 1100),
                     curve: Curves.easeOutCubic,
-                    builder: (_, v, __) => Text('+$v XP', style: AppText.display(22, color: Colors.white)),
+                    builder: (_, v, _) => Text('+$v XP', style: AppText.display(22, color: Colors.white)),
                   ).animate().fadeIn(delay: 900.ms),
                 if (widget.result.photoFailed) ...[
                   const SizedBox(height: 12),

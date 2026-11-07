@@ -53,8 +53,8 @@ class _Chain extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       fadeInDuration: const Duration(milliseconds: 260),
-      placeholder: (_, __) => const _Shimmer(),
-      errorWidget: (_, __, ___) => index + 1 < sources.length
+      placeholder: (_, _) => const _Shimmer(),
+      errorWidget: (_, _, _) => index + 1 < sources.length
           ? _Chain(sources: sources, index: index + 1, fit: fit, fallback: fallback)
           : fallback(),
     );
@@ -154,7 +154,7 @@ class _ShimmerState extends State<_Shimmer> with SingleTickerProviderStateMixin 
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _c,
-      builder: (_, __) => DecoratedBox(
+      builder: (_, _) => DecoratedBox(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(-1.5 + 3 * _c.value, -0.3),

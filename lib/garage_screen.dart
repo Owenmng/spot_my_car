@@ -6,6 +6,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/map_screen.dart';
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
+import 'package:spot_my_car/services/daily_challenge.dart';
 import 'package:spot_my_car/services/share_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
@@ -422,10 +423,101 @@ class _Header extends StatelessWidget {
                   ],
                 ),
               ).animate().fadeIn(duration: 350.ms).slideY(begin: 0.05, end: 0),
+              const SizedBox(height: 12),
+              _ChallengeCard(
+                cars: cars,
+                claimed: (data['dailyClaims'] as Map?)?[DailyChallenge.todayKey()] == true,
+              ).animate().fadeIn(delay: 120.ms, duration: 350.ms),
             ],
           ),
         );
       },
+    );
+  }
+}
+
+
+class _ChallengeCard extends StatefulWidget {
+  final List<Map<String, dynamic>> cars;
+  final bool claimed;
+
+  const _ChallengeCard({required this.cars, required this.claimed});
+
+  @override
+  State<_ChallengeCard> createState() => _ChallengeCardState();
+}
+
+class _ChallengeCardState extends State<_ChallengeCard> {
+  bool _busy = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = DailyChallenge.forDay();
+    final p = c.progress(widget.cars).clamp(0, c.target);
+    final done = p >= c.target;
+    final accent = Theme.of(context).colorScheme.primary;
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: done && !widget.claimed ? accent : AppColors.line, width: done && !widget.claimed ? 1.8 : 1),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(color: accent.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(14)),
+            child: Icon(c.icon, color: accent),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('DÉFI DU JOUR · ${c.title.toUpperCase()}', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                const SizedBox(height: 3),
+                Text(c.hint, style: AppText.body(15, weight: FontWeight.w700)),
+                const SizedBox(height: 6),
+                Row(
+                  children: [
+                    for (var i = 0; i < c.target; i++)
+                      Container(
+                        width: 10,
+                        height: 10,
+                        margin: const EdgeInsets.only(right: 5),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: i < p ? accent : AppColors.paperDeep,
+                        ),
+                      ),
+                    const SizedBox(width: 4),
+                    Text('+${c.reward} XP', style: AppText.body(12.5, color: AppColors.inkSoft, weight: FontWeight.w700)),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          if (widget.claimed)
+            const Icon(Icons.check_circle_rounded, color: AppColors.success, size: 28)
+          else if (done)
+            FilledButton(
+              style: FilledButton.styleFrom(backgroundColor: accent, minimumSize: const Size(0, 42), padding: const EdgeInsets.symmetric(horizontal: 14)),
+              onPressed: _busy
+                  ? null
+                  : () async {
+                      setState(() => _busy = true);
+                      final ok = await DailyChallenge.claim(c).catchError((_) => false);
+                      if (!context.mounted) return;
+                      setState(() => _busy = false);
+                      if (ok) showAppSnack(context, 'Défi réussi ! +${c.reward} XP', icon: Icons.emoji_events_rounded);
+                    },
+              child: const Text('Réclamer'),
+            ),
+        ],
+      ),
     );
   }
 }
