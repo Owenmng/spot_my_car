@@ -97,10 +97,3 @@ dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 
-// androidx.core 1.19 exige AGP 9 + SDK 37 : on reste sur la dernière version compatible.
-configurations.all {
-    resolutionStrategy {
-        force("androidx.core:core:1.17.0")
-        force("androidx.core:core-ktx:1.17.0")
-    }
-}

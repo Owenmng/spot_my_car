@@ -37,7 +37,7 @@ dependencies:
 
   # Utilitaires
   http: ^1.6.0
-  flutter_local_notifications: '>=21.0.0 <25.0.0'
+  flutter_local_notifications: 22.3.1
   timezone: '>=0.10.0 <1.0.0'
   image_picker: ^1.2.4
   connectivity_plus: ^7.3.2
@@ -49,6 +49,10 @@ dependencies:
   share_plus: ^13.3.1
   geolocator: ^14.0.1
   image: ^4.5.4
+
+# Uniquement pour Linux : aligne dbus entre notifications et connectivity_plus.
+dependency_overrides:
+  dbus: ^0.8.0
 
 dev_dependencies:
   flutter_test:
