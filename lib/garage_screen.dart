@@ -396,11 +396,11 @@ class _Header extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(level.title, style: AppText.display(18, color: Colors.white)),
+                              Text(level.title, style: AppText.display(18)),
                               const SizedBox(height: 2),
                               Text(
                                 next == null ? '$xp XP · niveau max' : '$xp / ${next.xpRequired} XP',
-                                style: AppText.body(13, color: Colors.white60, weight: FontWeight.w600),
+                                style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600),
                               ),
                             ],
                           ),
@@ -410,12 +410,12 @@ class _Header extends StatelessWidget {
                             message: 'Jours de spot d’affilée',
                             child: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                              decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(99)),
+                              decoration: BoxDecoration(color: AppColors.panelHi, borderRadius: BorderRadius.circular(99)),
                               child: Row(
                                 children: [
                                   const Icon(Icons.local_fire_department_rounded, size: 16, color: Color(0xFFFF8A3D)),
                                   const SizedBox(width: 4),
-                                  Text('$streak j', style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
+                                  Text('$streak j', style: AppText.body(14, weight: FontWeight.w800)),
                                 ],
                               ),
                             ),

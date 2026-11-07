@@ -111,9 +111,9 @@ class _OfflineBanner extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Icon(Icons.cloud_off_rounded, color: Colors.white, size: 16),
+                  Icon(Icons.cloud_off_rounded, color: AppColors.ink, size: 16),
                   const SizedBox(width: 8),
-                  Text('Hors ligne — tes spots se synchroniseront', style: AppText.body(13, color: Colors.white, weight: FontWeight.w600)),
+                  Text('Hors ligne — tes spots se synchroniseront', style: AppText.body(13, weight: FontWeight.w600)),
                 ],
               ),
             ),

@@ -221,7 +221,7 @@ class _InviteCard extends StatelessWidget {
                     children: [
                       Text(friendId ?? '········', style: AppText.mono(22)),
                       const SizedBox(width: 8),
-                      const Icon(Icons.copy_rounded, size: 16, color: AppColors.inkMuted),
+                      Icon(Icons.copy_rounded, size: 16, color: AppColors.inkMuted),
                     ],
                   ),
                 ),
@@ -287,7 +287,7 @@ class _Requests extends StatelessWidget {
                           IconButton(
                             tooltip: 'Refuser',
                             onPressed: () => SocialService.instance.decline(d.id),
-                            icon: const Icon(Icons.close_rounded, color: AppColors.inkMuted),
+                            icon: Icon(Icons.close_rounded, color: AppColors.inkMuted),
                           ),
                           IconButton.filled(
                             tooltip: 'Accepter',

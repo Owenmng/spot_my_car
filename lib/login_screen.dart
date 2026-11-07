@@ -231,7 +231,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 gradient: LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
-                                  colors: [AppColors.paper, Color.lerp(AppColors.paper, accent, 0.22)!, Color.lerp(AppColors.paper, accent, 0.6)!],
+                                  colors: [const Color(0xFF0A0A0D), Color.lerp(const Color(0xFF0A0A0D), accent, 0.22)!, Color.lerp(const Color(0xFF0A0A0D), accent, 0.6)!],
                                   stops: const [0.0, 0.6, 1.0],
                                 ),
                               ),
@@ -280,7 +280,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Container(
                       padding: EdgeInsets.fromLTRB(22, compact ? 18 : 24, 22, (compact ? 10 : 18) + pad.bottom),
                       transform: Matrix4.translationValues(0, -20, 0),
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         color: AppColors.paper,
                         borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.xl + 4)),
                       ),

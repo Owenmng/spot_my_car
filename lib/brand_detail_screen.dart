@@ -77,7 +77,7 @@ class BrandDetailScreen extends StatelessWidget {
                   for (var i = 0; i < facts.length; i++)
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
-                      decoration: BoxDecoration(border: i == 0 ? null : const Border(top: BorderSide(color: AppColors.line))),
+                      decoration: BoxDecoration(border: i == 0 ? null : Border(top: BorderSide(color: AppColors.line))),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

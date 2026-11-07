@@ -39,7 +39,7 @@ class LoadingAnimationWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 18),
-            Text(loadingMessage, style: AppText.body(15, color: Colors.white70, weight: FontWeight.w600)),
+            Text(loadingMessage, style: AppText.body(15, color: AppColors.inkSoft, weight: FontWeight.w600)),
           ],
         ),
       ),

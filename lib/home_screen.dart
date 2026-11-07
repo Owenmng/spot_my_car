@@ -104,14 +104,14 @@ class _NavBar extends StatelessWidget {
                 AnimatedSwitcher(
                   duration: const Duration(milliseconds: 180),
                   transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
-                  child: Icon(selected ? active : icon, key: ValueKey(selected), color: selected ? Colors.white : Colors.white54, size: 24),
+                  child: Icon(selected ? active : icon, key: ValueKey(selected), color: selected ? AppColors.ink : AppColors.inkMuted, size: 24),
                 ),
                 const SizedBox(height: 4),
                 FittedBox(
                   fit: BoxFit.scaleDown,
                   child: AnimatedDefaultTextStyle(
                     duration: const Duration(milliseconds: 180),
-                    style: AppText.body(11, color: selected ? Colors.white : Colors.white54, weight: selected ? FontWeight.w800 : FontWeight.w600),
+                    style: AppText.body(11, color: selected ? AppColors.ink : AppColors.inkMuted, weight: selected ? FontWeight.w800 : FontWeight.w600),
                     child: Text(label, maxLines: 1),
                   ),
                 ),

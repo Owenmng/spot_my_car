@@ -163,7 +163,7 @@ class _ShimmerState extends State<_Shimmer> with SingleTickerProviderStateMixin 
           gradient: LinearGradient(
             begin: Alignment(-1.5 + 3 * _c.value, -0.3),
             end: Alignment(-0.5 + 3 * _c.value, 0.3),
-            colors: const [AppColors.paperDeep, Color(0xFFF7F4EF), AppColors.paperDeep],
+            colors: [AppColors.paperDeep, Color(0xFFF7F4EF), AppColors.paperDeep],
           ),
         ),
       ),

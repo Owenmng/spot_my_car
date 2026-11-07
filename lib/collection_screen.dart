@@ -168,7 +168,7 @@ class _BrandTile extends StatelessWidget {
                       strokeWidth: 3.5,
                       strokeCap: StrokeCap.round,
                       color: done ? const Color(0xFFFFD447) : accent,
-                      backgroundColor: done ? Colors.white12 : AppColors.paperDeep,
+                      backgroundColor: AppColors.paperDeep,
                     ),
                   ),
                 ),
@@ -189,7 +189,7 @@ class _BrandTile extends StatelessWidget {
             name,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: AppText.body(13, weight: FontWeight.w800, color: done ? Colors.white : AppColors.ink),
+            style: AppText.body(13, weight: FontWeight.w800),
           ),
           Text(
             done ? 'COMPLÈTE' : '$got / $total',

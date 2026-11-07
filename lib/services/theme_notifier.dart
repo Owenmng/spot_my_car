@@ -2,46 +2,63 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 
-class AppTheme {
-  final String name;
-  final Color accent;
-  final ThemeData themeData;
-
-  AppTheme(this.name, this.accent) : themeData = buildAppTheme(accent);
-}
-
+/// Apparence : une ambiance (sombre, bleu nuit, graphite, clair) et une couleur d'accent.
 class ThemeNotifier with ChangeNotifier {
-  static const _prefsKey = 'selected_theme';
+  static const _accentKey = 'selected_theme';
+  static const _paletteKey = 'selected_palette';
 
-  static final List<AppTheme> _availableThemes =
-      accentChoices.map((c) => AppTheme(c.name, c.color)).toList();
+  AccentChoice _accent;
+  AppPalette _palette;
+  late ThemeData _data;
 
-  AppTheme _currentTheme;
-
-  ThemeNotifier._(this._currentTheme);
-
-  static Future<ThemeNotifier> create() async {
-    AppTheme initial = _availableThemes.first;
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      final saved = prefs.getString(_prefsKey);
-      initial = _availableThemes.firstWhere(
-        (t) => t.name == saved,
-        orElse: () => _availableThemes.first,
-      );
-    } catch (_) {}
-    return ThemeNotifier._(initial);
+  ThemeNotifier._(this._accent, this._palette) {
+    _data = buildAppTheme(_accent.color, _palette);
   }
 
-  ThemeData get currentThemeData => _currentTheme.themeData;
-  AppTheme get currentAppTheme => _currentTheme;
-  Color get accent => _currentTheme.accent;
-  List<AppTheme> get availableThemes => _availableThemes;
+  static Future<ThemeNotifier> create() async {
+    var accent = accentChoices.first;
+    var palette = palettes.first;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final a = prefs.getString(_accentKey);
+      final p = prefs.getString(_paletteKey);
+      accent = accentChoices.firstWhere((c) => c.name == a, orElse: () => accentChoices.first);
+      palette = palettes.firstWhere((x) => x.id == p, orElse: () => palettes.first);
+    } catch (_) {}
+    return ThemeNotifier._(accent, palette);
+  }
 
-  void setTheme(AppTheme newTheme) {
-    if (newTheme.name == _currentTheme.name) return;
-    _currentTheme = newTheme;
+  ThemeData get currentThemeData => _data;
+  Color get accent => _accent.color;
+  AccentChoice get accentChoice => _accent;
+  AppPalette get palette => _palette;
+
+  void setAccent(AccentChoice a) {
+    if (a.name == _accent.name) return;
+    _accent = a;
+    _apply();
+    SharedPreferences.getInstance().then((p) => p.setString(_accentKey, a.name));
+  }
+
+  void setPalette(AppPalette p) {
+    if (p.id == _palette.id) return;
+    _palette = p;
+    _apply();
+    SharedPreferences.getInstance().then((prefs) => prefs.setString(_paletteKey, p.id));
+  }
+
+  void _apply() {
+    _data = buildAppTheme(_accent.color, _palette);
     notifyListeners();
-    SharedPreferences.getInstance().then((p) => p.setString(_prefsKey, newTheme.name));
+    // Les couleurs sont lues au moment du build : on redessine tout l'arbre,
+    // sans perdre la navigation ni l'état des écrans.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      void rebuild(Element e) {
+        e.markNeedsBuild();
+        e.visitChildren(rebuild);
+      }
+
+      WidgetsBinding.instance.rootElement?.visitChildren(rebuild);
+    });
   }
 }

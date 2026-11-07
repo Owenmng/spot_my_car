@@ -425,7 +425,7 @@ class _DuelCard extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(flex: ((mine / total) * 1000).round().clamp(1, 1000), child: ColoredBox(color: accent)),
-                        Expanded(flex: ((theirs / total) * 1000).round().clamp(1, 1000), child: const ColoredBox(color: AppColors.panelHi)),
+                        Expanded(flex: ((theirs / total) * 1000).round().clamp(1, 1000), child: ColoredBox(color: AppColors.panelHi)),
                       ],
                     ),
                   ),

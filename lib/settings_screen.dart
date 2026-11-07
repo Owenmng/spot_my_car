@@ -176,8 +176,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           _Group(children: [
             _Tile(
               icon: Icons.palette_outlined,
-              title: "Couleur d'accent",
-              subtitle: 'Rosso corsa, Gulf, Papaye…',
+              title: 'Apparence',
+              subtitle: 'Sombre, bleu nuit, clair… et ta couleur',
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ThemeSelectionScreen())),
             ),
             _Tile(
@@ -273,7 +273,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text("Nouvelle adresse :", style: TextStyle(fontSize: 12, color: AppColors.inkMuted)),
+                              Text("Nouvelle adresse :", style: TextStyle(fontSize: 12, color: AppColors.inkMuted)),
                               TextFormField(
                                 controller: emailController,
                                 keyboardType: TextInputType.emailAddress,
@@ -502,7 +502,7 @@ class _Group extends StatelessWidget {
       child: Column(
         children: [
           for (var i = 0; i < children.length; i++) ...[
-            if (i > 0) const Divider(height: 1, indent: 58, color: AppColors.line),
+            if (i > 0) Divider(height: 1, indent: 58, color: AppColors.line),
             children[i],
           ],
         ],
@@ -552,7 +552,7 @@ class _Tile extends StatelessWidget {
                 ],
               ),
             ),
-            trailing ?? (onTap != null ? const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted) : const SizedBox.shrink()),
+            trailing ?? (onTap != null ? Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted) : const SizedBox.shrink()),
           ],
         ),
       ),

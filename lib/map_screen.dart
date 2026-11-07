@@ -366,11 +366,11 @@ class _SpotSheet extends StatelessWidget {
             const SizedBox(height: 12),
             Row(
               children: [
-                const Icon(Icons.place_outlined, size: 16, color: AppColors.inkSoft),
+                Icon(Icons.place_outlined, size: 16, color: AppColors.inkSoft),
                 const SizedBox(width: 6),
                 Expanded(child: Text('${car['locationName'] ?? 'Lieu inconnu'}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(13.5, color: AppColors.inkSoft))),
                 if (t != null) ...[
-                  const Icon(Icons.event_outlined, size: 16, color: AppColors.inkSoft),
+                  Icon(Icons.event_outlined, size: 16, color: AppColors.inkSoft),
                   const SizedBox(width: 6),
                   Text(DateFormat('d MMM yyyy', 'fr_FR').format(t), style: AppText.body(13.5, color: AppColors.inkSoft)),
                 ],

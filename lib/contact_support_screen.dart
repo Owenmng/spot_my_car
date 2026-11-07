@@ -187,7 +187,7 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                   const SizedBox(height: 6),
                   Row(
                     children: [
-                      const Icon(Icons.info_outline_rounded, size: 15, color: AppColors.inkMuted),
+                      Icon(Icons.info_outline_rounded, size: 15, color: AppColors.inkMuted),
                       const SizedBox(width: 6),
                       Expanded(
                         child: Text('Ton pseudo, ton e-mail et la version de l’appli sont joints pour pouvoir te répondre.', style: AppText.body(12, color: AppColors.inkMuted)),

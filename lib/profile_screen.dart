@@ -249,7 +249,7 @@ class _Identity extends StatelessWidget {
                         Text('CODE AMI  ', style: AppText.label(10.5, color: AppColors.inkMuted)),
                         Text(friendId!, style: AppText.mono(12.5)),
                         const SizedBox(width: 6),
-                        const Icon(Icons.copy_rounded, size: 14, color: AppColors.inkSoft),
+                        Icon(Icons.copy_rounded, size: 14, color: AppColors.inkSoft),
                       ],
                     ),
                   ),
@@ -444,7 +444,7 @@ class _NavTile extends StatelessWidget {
                 child: Text('$badge', style: AppText.body(12, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800)),
               )
             else
-              const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
+              Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
           ],
         ),
       ),

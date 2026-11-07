@@ -472,7 +472,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
             child: Row(
               children: [
                 Text(country['flag']!, style: const TextStyle(fontSize: 22)),
-                const Icon(Icons.expand_more_rounded, size: 20, color: AppColors.inkSoft),
+                Icon(Icons.expand_more_rounded, size: 20, color: AppColors.inkSoft),
               ],
             ),
           ),
@@ -594,11 +594,11 @@ class _PhotoStage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('NOUVEAU SPOT', style: AppText.display(30, color: Colors.white)),
+            Text('NOUVEAU SPOT', style: AppText.display(30)),
             const SizedBox(height: 8),
             Text(
               'Photographie la voiture : marque, modèle, génération, couleur et plaque sont reconnus automatiquement.',
-              style: AppText.body(15, color: Colors.white70),
+              style: AppText.body(15, color: AppColors.inkSoft),
             ),
             const SizedBox(height: 24),
             Row(
@@ -629,10 +629,10 @@ class _PhotoStage extends StatelessWidget {
                     child: Container(
                       height: 58,
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.1),
+                        color: AppColors.panelHi,
                         borderRadius: BorderRadius.circular(AppRadius.md),
                       ),
-                      child: const Icon(Icons.photo_library_outlined, color: Colors.white),
+                      child: Icon(Icons.photo_library_outlined, color: AppColors.ink),
                     ),
                   ),
                 ),
@@ -822,7 +822,7 @@ class _AnalysisProgressState extends State<_AnalysisProgress> {
                             ? const Icon(Icons.check_circle_rounded, key: ValueKey('ok'), size: 20, color: AppColors.success)
                             : i == _done
                                 ? SizedBox(key: const ValueKey('run'), width: 20, height: 20, child: Padding(padding: const EdgeInsets.all(3), child: CircularProgressIndicator(strokeWidth: 2, color: accent)))
-                                : const Icon(Icons.radio_button_unchecked_rounded, key: ValueKey('wait'), size: 20, color: AppColors.inkMuted),
+                                : Icon(Icons.radio_button_unchecked_rounded, key: ValueKey('wait'), size: 20, color: AppColors.inkMuted),
                       ),
                       const SizedBox(width: 12),
                       Text(
@@ -859,7 +859,7 @@ class _AnalysisProgressState extends State<_AnalysisProgress> {
           ),
         )
             .animate(onPlay: (c) => c.repeat())
-            .shimmer(duration: 1400.ms, color: Colors.white.withValues(alpha: 0.08)),
+            .shimmer(duration: 1400.ms, color: AppColors.ink.withValues(alpha: 0.08)),
         const SizedBox(height: 14),
         Container(
           padding: const EdgeInsets.all(16),
@@ -1153,7 +1153,7 @@ class _ResultPanel extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
+                  Icon(Icons.chevron_right_rounded, color: AppColors.inkMuted),
                 ],
               ),
             ),
@@ -1233,7 +1233,7 @@ class _PickerTile extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
+              Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
             ],
           ),
         ),

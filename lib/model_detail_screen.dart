@@ -107,7 +107,7 @@ class _ModelPage extends StatelessWidget {
               fit: StackFit.expand,
               children: [
                 CarImage(urls: [model['imageUrl'] as String?], brandName: brand['name'] as String?, modelName: name),
-                const DecoratedBox(
+                DecoratedBox(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
@@ -322,7 +322,7 @@ class _MySpots extends StatelessWidget {
             decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
             child: Row(
               children: [
-                const Icon(Icons.visibility_outlined, color: AppColors.inkSoft),
+                Icon(Icons.visibility_outlined, color: AppColors.inkSoft),
                 const SizedBox(width: 12),
                 Expanded(child: Text('Pas encore spottée. Ouvre l’œil !', style: AppText.body(14, color: AppColors.inkSoft))),
               ],
@@ -364,7 +364,7 @@ class _MySpots extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
+                      Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
                     ],
                   ),
                 ),
