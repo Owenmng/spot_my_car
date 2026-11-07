@@ -1158,7 +1158,7 @@ class _SaveBar extends StatelessWidget {
       child: ElevatedButton(
         onPressed: saving ? null : onSave,
         child: saving
-            ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.6, color: Theme.of(context).colorScheme.onPrimary))
+            ? SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.6, color: Theme.of(context).colorScheme.onPrimary))
             : Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
