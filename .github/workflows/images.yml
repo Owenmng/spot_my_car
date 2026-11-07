@@ -1,0 +1,37 @@
+name: Image quality
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [refonte]
+    paths: ['tool/fix_images.py', 'tool/RUN_IMAGES', '.github/workflows/images.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: images
+  cancel-in-progress: false
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run
+        env:
+          BUDGET_MIN: '300'
+        run: |
+          pip install pillow requests >/dev/null
+          python3 -u tool/fix_images.py
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "SpotMyCar bot"
+          git config user.email "actions@github.com"
+          git add assets/data tool/reports 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Catalogue : photos uniques et extérieures [skip ci]" && git pull --rebase -X theirs origin refonte && git push)

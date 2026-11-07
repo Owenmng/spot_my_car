@@ -1,10 +1,21 @@
-import 'package:spot_my_car/theme/app_theme.dart';
-// Fichier: lib/contact_support_screen.dart
-import 'package:flutter/material.dart';
-import 'package:spot_my_car/shared/app_constants.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'dart:convert';
+import 'dart:io' show Platform;
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:http/http.dart' as http;
+import 'package:package_info_plus/package_info_plus.dart';
+import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/shared/app_constants.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+/// Contact support : le message part directement par e-mail, mis en forme,
+/// avec le contexte utile (version, compte) pour répondre vite.
 class ContactSupportScreen extends StatefulWidget {
   const ContactSupportScreen({super.key});
 
@@ -13,124 +24,187 @@ class ContactSupportScreen extends StatefulWidget {
 }
 
 class _ContactSupportScreenState extends State<ContactSupportScreen> {
-  final _subjectController = TextEditingController();
-  final _bodyController = TextEditingController();
+  static const _topics = {
+    'bug': ('Un bug', Icons.bug_report_outlined),
+    'idea': ('Une idée', Icons.lightbulb_outline_rounded),
+    'car': ('Voiture ou photo', Icons.directions_car_outlined),
+    'account': ('Mon compte', Icons.person_outline_rounded),
+    'other': ('Autre', Icons.chat_bubble_outline_rounded),
+  };
+
+  final _subject = TextEditingController();
+  final _message = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+  String _topic = 'bug';
+  bool _sending = false;
+  bool _sent = false;
 
-  Future<void> _sendEmail() async {
-    if (!_formKey.currentState!.validate()) return;
-
-    // On récupère l'email de l'utilisateur connecté pour savoir qui envoie le message
-    final userEmail = FirebaseAuth.instance.currentUser?.email ?? 'utilisateur-non-identifie@app.com';
-    final userPseudo = FirebaseAuth.instance.currentUser?.displayName ?? 'Pseudo inconnu';
-
-    try {
-      // On écrit dans la collection 'mail' (le nom par défaut de l'extension)
-      await FirebaseFirestore.instance.collection('mail').add({
-        'to': [AppConstants.supportEmail],
-        'replyTo': userEmail, // <-- CORRIGÉ : On envoie une simple chaîne de caractères
-        'message': {
-          'subject': '[Support SpotMyCar] - ${_subjectController.text.trim()}',
-          'html': """
-            <h3>Nouveau message de support</h3>
-            <p><strong>Utilisateur :</strong> ${userPseudo} (${userEmail})</p>
-            <hr>
-            <p><strong>Message :</strong></p>
-            <p>${_bodyController.text.trim()}</p>
-          """,
-        },
-      });
-
-      if (mounted) {
-        Navigator.pop(context); // On ferme la page de contact
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Votre message a bien été envoyé. Nous vous répondrons rapidement !'),
-            backgroundColor: Colors.green,
-          ),
-        );
-      }
-
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur lors de l\'envoi du message : $e'), backgroundColor: Colors.red),
-        );
-      }
-    }
-  }
-  
   @override
   void dispose() {
-    _subjectController.dispose();
-    _bodyController.dispose();
+    _subject.dispose();
+    _message.dispose();
     super.dispose();
   }
 
+  Future<Map<String, String>> _context() async {
+    final user = FirebaseAuth.instance.currentUser;
+    final info = await PackageInfo.fromPlatform();
+    String pseudo = '—';
+    try {
+      final doc = await FirebaseFirestore.instance.collection('users').doc(user?.uid).get();
+      pseudo = (doc.data()?['pseudo'] as String?) ?? '—';
+    } catch (_) {}
+    return {
+      'Pseudo': pseudo,
+      'E-mail du joueur': user?.email ?? '—',
+      'Identifiant': user?.uid ?? '—',
+      'Version': '${info.version} (${info.buildNumber})',
+      'Système': kIsWeb ? 'web' : '${Platform.operatingSystem} ${Platform.operatingSystemVersion}',
+    };
+  }
+
+  Future<void> _send() async {
+    if (!_formKey.currentState!.validate()) return;
+    FocusScope.of(context).unfocus();
+    setState(() => _sending = true);
+    final ctx = await _context();
+    final topic = _topics[_topic]!.$1;
+    final subject = '[Spot My Car · $topic] ${_subject.text.trim()}';
+
+    var ok = false;
+    try {
+      final res = await http
+          .post(
+            Uri.parse(AppConstants.supportRelay),
+            headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+            body: jsonEncode({
+              '_subject': subject,
+              '_template': 'table',
+              '_captcha': 'false',
+              if (ctx['E-mail du joueur'] != '—') '_replyto': ctx['E-mail du joueur'],
+              'Catégorie': topic,
+              'Objet': _subject.text.trim(),
+              'Message': _message.text.trim(),
+              ...ctx,
+            }),
+          )
+          .timeout(const Duration(seconds: 20));
+      ok = res.statusCode == 200 && '${jsonDecode(res.body)['success']}' == 'true';
+    } catch (_) {}
+
+    if (!mounted) return;
+    if (ok) {
+      AudioService.instance.playSfx(SoundEffect.succesPrincipal);
+      setState(() {
+        _sending = false;
+        _sent = true;
+      });
+      return;
+    }
+
+    // Plan B : on ouvre l'appli mail du téléphone avec le message pré-rempli.
+    setState(() => _sending = false);
+    final body = '${_message.text.trim()}\n\n---\n${ctx.entries.map((e) => '${e.key} : ${e.value}').join('\n')}';
+    final uri = Uri(scheme: 'mailto', path: AppConstants.supportEmail, query: _encode({'subject': subject, 'body': body}));
+    final opened = await launchUrl(uri).catchError((_) => false);
+    if (!opened && mounted) {
+      showAppSnack(context, "Envoi impossible pour l'instant. Réessaie plus tard.", icon: Icons.error_outline);
+    }
+  }
+
+  String _encode(Map<String, String> p) => p.entries.map((e) => '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}').join('&');
+
   @override
   Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Contacter le support'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.send_outlined),
-            onPressed: _sendEmail,
-            tooltip: 'Envoyer',
-          ),
-        ],
-      ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Form(
-          key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Text(
-                'Nous sommes là pour vous aider. Décrivez votre problème ou votre question ci-dessous.',
-                style: TextStyle(fontSize: 16, color: AppColors.inkMuted),
-              ),
-              const SizedBox(height: 24),
-              TextFormField(
-                controller: _subjectController,
-                decoration: InputDecoration(
-                  labelText: 'Objet',
-                  hintText: 'Ex: Problème de connexion',
-                  border: const OutlineInputBorder(),
-                  prefixIcon: const Icon(Icons.subject),
-                ),
-                validator: (value) => value == null || value.isEmpty ? 'Veuillez entrer un objet.' : null,
-              ),
-              const SizedBox(height: 16),
-              TextFormField(
-                controller: _bodyController,
-                decoration: InputDecoration(
-                  labelText: 'Votre message',
-                  hintText: 'Bonjour, je rencontre un problème avec...',
-                  border: const OutlineInputBorder(),
-                  alignLabelWithHint: true, // Pour que le label soit en haut
-                ),
-                maxLines: 10,
-                minLines: 5,
-                validator: (value) => value == null || value.isEmpty ? 'Veuillez écrire un message.' : null,
-              ),
-              const SizedBox(height: 24),
-              ElevatedButton.icon(
-                icon: const Icon(Icons.send_outlined),
-                label: const Text('Envoyer le message'),
-                onPressed: _sendEmail,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+      appBar: AppBar(title: const Text('Contacter le support')),
+      body: _sent
+          ? Center(
+              child: Padding(
+                padding: const EdgeInsets.all(32),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: 84,
+                      height: 84,
+                      decoration: BoxDecoration(color: AppColors.success.withValues(alpha: 0.15), shape: BoxShape.circle),
+                      child: const Icon(Icons.mark_email_read_outlined, size: 42, color: AppColors.success),
+                    ).animate().scale(curve: Curves.easeOutBack, duration: 450.ms),
+                    const SizedBox(height: 20),
+                    Text('Message envoyé', style: AppText.display(28)),
+                    const SizedBox(height: 8),
+                    Text('Merci ! On te répond par e-mail, en général sous 48 h.', textAlign: TextAlign.center, style: AppText.body(15, color: AppColors.inkSoft)),
+                    const SizedBox(height: 28),
+                    ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text('Retour')),
+                  ],
                 ),
               ),
-            ],
-          ),
-        ),
-      ),
+            )
+          : Form(
+              key: _formKey,
+              child: ListView(
+                padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + MediaQuery.paddingOf(context).bottom),
+                children: [
+                  Text('Une question, un bug, une idée ?', style: AppText.display(26)),
+                  const SizedBox(height: 6),
+                  Text('Le message arrive directement dans la boîte du créateur de l’appli.', style: AppText.body(14, color: AppColors.inkSoft)),
+                  const SizedBox(height: 20),
+                  Text('SUJET', style: AppText.label(11, color: AppColors.inkMuted)),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      for (final e in _topics.entries)
+                        ChoiceChip(
+                          avatar: Icon(e.value.$2, size: 16, color: _topic == e.key ? Theme.of(context).colorScheme.onPrimary : accent),
+                          label: Text(e.value.$1),
+                          selected: _topic == e.key,
+                          onSelected: (_) => setState(() => _topic = e.key),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 18),
+                  TextFormField(
+                    controller: _subject,
+                    textCapitalization: TextCapitalization.sentences,
+                    maxLength: 80,
+                    decoration: const InputDecoration(labelText: 'Objet', prefixIcon: Icon(Icons.short_text_rounded), counterText: ''),
+                    validator: (v) => (v == null || v.trim().isEmpty) ? 'Donne un titre à ton message' : null,
+                  ),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _message,
+                    textCapitalization: TextCapitalization.sentences,
+                    minLines: 6,
+                    maxLines: 12,
+                    maxLength: 2000,
+                    decoration: const InputDecoration(labelText: 'Ton message', alignLabelWithHint: true),
+                    validator: (v) => (v == null || v.trim().length < 10) ? 'Quelques mots de plus ?' : null,
+                  ),
+                  const SizedBox(height: 6),
+                  Row(
+                    children: [
+                      const Icon(Icons.info_outline_rounded, size: 15, color: AppColors.inkMuted),
+                      const SizedBox(width: 6),
+                      Expanded(
+                        child: Text('Ton pseudo, ton e-mail et la version de l’appli sont joints pour pouvoir te répondre.', style: AppText.body(12, color: AppColors.inkMuted)),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  ElevatedButton.icon(
+                    onPressed: _sending ? null : _send,
+                    icon: _sending
+                        ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
+                        : const Icon(Icons.send_rounded),
+                    label: Text(_sending ? 'Envoi…' : 'Envoyer'),
+                  ),
+                ],
+              ),
+            ),
     );
   }
 }

@@ -147,11 +147,8 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
     final bool isEditing = widget.initialUserData != null;
 
     return Scaffold(
-      backgroundColor: AppColors.card,
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: AppColors.card,
-        foregroundColor: Colors.black,
+        title: Text(isEditing ? 'Modifier le profil' : ''),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -201,6 +198,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                   TextFormField(
                       controller: _pseudoController,
                       maxLength: 20,
+                      textCapitalization: TextCapitalization.sentences,
                       decoration: const InputDecoration(labelText: 'Pseudo', prefixIcon: Icon(Icons.badge_outlined), counterText: ''),
                       validator: (value) => value == null || value.isEmpty
                           ? 'Le pseudo est obligatoire'
@@ -211,6 +209,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                       Expanded(
                           child: TextFormField(
                               controller: _firstNameController,
+                              textCapitalization: TextCapitalization.words,
                               decoration: const InputDecoration(labelText: 'Prénom'),
                               validator: (value) => value == null || value.isEmpty
                                   ? 'Le prénom est obligatoire'
@@ -219,6 +218,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                       Expanded(
                           child: TextFormField(
                               controller: _lastNameController,
+                              textCapitalization: TextCapitalization.words,
                               decoration: const InputDecoration(labelText: 'Nom'),
                               validator: (value) => value == null || value.isEmpty
                                   ? 'Le nom est obligatoire'

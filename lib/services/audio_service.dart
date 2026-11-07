@@ -46,11 +46,28 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
   
   // === CONFIGURATION AUDIO OPTIMISÉE ===
   static const String _musicAsset = 'audio/musique_calme.mp3';
-  static const double _musicVolume = 0.16;
+  static const double _musicVolume = 0.42;
 
   AudioService._() {
-    _initializeAudioService();
+    _ready = _initializeAudioService();
   }
+
+  late final Future<void> _ready;
+
+  /// Les effets ne demandent pas le focus audio : ils ne coupent jamais la musique.
+  static final _sfxContext = AudioContext(
+    android: const AudioContextAndroid(
+      isSpeakerphoneOn: false,
+      stayAwake: false,
+      contentType: AndroidContentType.sonification,
+      usageType: AndroidUsageType.game,
+      audioFocus: AndroidAudioFocus.none,
+    ),
+    iOS: AudioContextIOS(
+      category: AVAudioSessionCategory.ambient,
+      options: const {AVAudioSessionOptions.mixWithOthers},
+    ),
+  );
   
   static final AudioService instance = AudioService._();
   
@@ -64,7 +81,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
             stayAwake: false,
             contentType: AndroidContentType.music,
             usageType: AndroidUsageType.media,
-            audioFocus: AndroidAudioFocus.gainTransientMayDuck, // ← SOLUTION CLÉE !
+            audioFocus: AndroidAudioFocus.gain,
           ),
           iOS: AudioContextIOS(
             category: AVAudioSessionCategory.playback,
@@ -149,6 +166,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
   
   // === DÉMARRAGE ROBUSTE DE LA MUSIQUE ===
   Future<void> startMusic({bool force = false}) async {
+    await _ready;
     if (!_isMusicEnabled && !force) {
       return;
     }
@@ -250,6 +268,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
       final sfx = _getSfxProperties(effect);
       
       final sfxPlayer = AudioPlayer();
+      await sfxPlayer.setAudioContext(_sfxContext);
       await sfxPlayer.setPlayerMode(PlayerMode.lowLatency);
       await sfxPlayer.setReleaseMode(ReleaseMode.release); 
       

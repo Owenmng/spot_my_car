@@ -141,7 +141,7 @@ class BrandLogo extends StatelessWidget {
     final fallback = Center(
       child: Text(
         name.isEmpty ? '?' : name.characters.first.toUpperCase(),
-        style: AppText.display(size * 0.45),
+        style: AppText.display(size * 0.45, color: const Color(0xFF1A1A1F)),
       ),
     );
     return Container(

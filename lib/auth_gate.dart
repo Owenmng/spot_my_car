@@ -2,13 +2,33 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:spot_my_car/login_screen.dart';
+import 'package:spot_my_car/services/notification_service.dart';
 import 'package:spot_my_car/profile_setup_screen.dart';
 import 'package:spot_my_car/home_screen.dart';
 import 'package:spot_my_car/widgets/loading_animation_widget.dart';
 
-class AuthGate extends StatelessWidget {
+class AuthGate extends StatefulWidget {
   const AuthGate({super.key});
+
+  @override
+  State<AuthGate> createState() => _AuthGateState();
+}
+
+class _AuthGateState extends State<AuthGate> {
+  @override
+  void initState() {
+    super.initState();
+    // Dès le premier démarrage : demande d'autorisation des notifications.
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      final prefs = await SharedPreferences.getInstance();
+      if (prefs.getBool('notif_permission_asked') == true) return;
+      await prefs.setBool('notif_permission_asked', true);
+      await Future.delayed(const Duration(milliseconds: 600));
+      await NotificationService.instance.requestPermission();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
