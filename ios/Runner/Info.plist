@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Ta position sert à noter où tu as spotté la voiture.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Nous avons besoin d'accéder à votre appareil photo pour vous permettre de prendre une photo de la voiture que vous avez spottée.</string>
 	<key>NSPhotoLibraryUsageDescription</key>

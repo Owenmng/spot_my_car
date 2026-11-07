@@ -249,3 +249,50 @@ const Map<String, Color> kCarColorSwatches = {
   'Marron': Color(0xFF6B4226),
   'Beige': Color(0xFFD9C7A3),
 };
+
+/// Progression façon « shift lights » de volant de course : des diodes qui s'allument
+/// une à une, du vert au rouge. Plus vivant qu'une barre de progression.
+class RevLights extends StatelessWidget {
+  final double value;
+  final int count;
+  final double height;
+  final bool dark;
+
+  const RevLights({super.key, required this.value, this.count = 18, this.height = 16, this.dark = true});
+
+  Color _ledColor(int i) {
+    final t = i / (count - 1);
+    if (t < 0.55) return const Color(0xFF3DDC84);
+    if (t < 0.8) return const Color(0xFFFFC53D);
+    return const Color(0xFFFF4D4F);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0, end: value.clamp(0.0, 1.0)),
+      duration: const Duration(milliseconds: 1100),
+      curve: Curves.easeOutCubic,
+      builder: (context, v, _) {
+        final lit = (v * count).round();
+        return Row(
+          children: [
+            for (var i = 0; i < count; i++)
+              Expanded(
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 160),
+                  height: height,
+                  margin: EdgeInsets.only(right: i == count - 1 ? 0 : 3),
+                  decoration: BoxDecoration(
+                    color: i < lit ? _ledColor(i) : (dark ? Colors.white.withValues(alpha: 0.10) : AppColors.paperDeep),
+                    borderRadius: BorderRadius.circular(4),
+                    boxShadow: i < lit ? [BoxShadow(color: _ledColor(i).withValues(alpha: 0.55), blurRadius: 6)] : null,
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
+    );
+  }
+}

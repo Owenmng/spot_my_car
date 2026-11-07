@@ -1,702 +1,431 @@
-// Fichier: lib/garage_screen.dart (Version avec Recherche et Filtres Dynamiques)
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:spot_my_car/add_car_screen.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:spot_my_car/map_screen.dart';
+import 'package:spot_my_car/models/level_model.dart';
+import 'package:spot_my_car/models/rarity.dart';
+import 'package:spot_my_car/services/share_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:convert';
-import 'package:provider/provider.dart';
-import 'package:spot_my_car/services/connectivity_service.dart';
-import 'package:spot_my_car/auth_gate.dart';
-import 'package:spot_my_car/services/auth_service.dart'; // <-- AJOUTE CETTE LIGNE
-import 'package:spot_my_car/widgets/car_image_card.dart'; // <-- AJOUTE CETTE LIGNE
-import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
+enum _Filter { all, rare, week, photo }
 
 class GarageScreen extends StatefulWidget {
-  const GarageScreen({super.key});
+  final VoidCallback? onAddSpot;
+
+  const GarageScreen({super.key, this.onAddSpot});
+
   @override
   State<GarageScreen> createState() => _GarageScreenState();
 }
 
 class _GarageScreenState extends State<GarageScreen> {
-  final currentUser = FirebaseAuth.instance.currentUser!;
-  final _searchController = TextEditingController();
-  bool _isSigningOut = false;
-  final ValueNotifier<String> _searchQueryNotifier = ValueNotifier<String>('');
-  List<Map<String, dynamic>> _pendingSpots = [];
-  String? _selectedBrandFilter;
-  String? _selectedColorFilter;
-  String? _selectedDateFilter;
-  List<QueryDocumentSnapshot> _firebaseDocsCache = [];
+  final _search = TextEditingController();
+  String _query = '';
+  _Filter _filter = _Filter.all;
+  bool _searching = false;
 
-  @override
-  void initState() {
-    super.initState();
-    
-    _loadPendingSpots();
-  }
-
-  Future<void> _loadPendingSpots() async {
-    final prefs = await SharedPreferences.getInstance();
-    final List<String> pendingSpotsJson = prefs.getStringList('pending_spots') ?? [];
-    if (mounted) {
-      setState(() {
-        _pendingSpots = pendingSpotsJson
-            .map((jsonString) => jsonDecode(jsonString) as Map<String, dynamic>)
-            .toList();
-      });
-    }
-  }
+  User? get _user => FirebaseAuth.instance.currentUser;
 
   @override
   void dispose() {
-    _searchController.dispose();
+    _search.dispose();
     super.dispose();
   }
 
-  void _showFilterPanel(List<QueryDocumentSnapshot> allDocs) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true, // Très important pour que le clavier ne pose pas de problème
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) {
-        // Ce builder permet aux filtres d'avoir leur propre état
-        // sans reconstruire la page GarageScreen derrière.
-        return StatefulBuilder(
-          builder: (BuildContext context, StateSetter setModalState) {
-            // Logique pour extraire les marques et couleurs uniques
-            final List<String> availableBrands = allDocs
-                .map((doc) =>
-                    (doc.data() as Map<String, dynamic>)['brandName'] as String?)
-                .where((brand) => brand != null)
-                .cast<String>()
-                .toSet()
-                .toList()
-              ..sort();
-            
-            final List<String> availableColors = allDocs
-                .map((doc) =>
-                    (doc.data() as Map<String, dynamic>)['color'] as String?)
-                .where((color) => color != null)
-                .cast<String>()
-                .toSet()
-                .toList()
-              ..sort();
-
-            // >>>>> DÉBUT DES MODIFICATIONS PRINCIPALES <<<<<
-            return SingleChildScrollView(
-              child: Padding(
-                // Padding dynamique pour ne pas être caché par le clavier
-                padding: EdgeInsets.only(
-                  bottom: MediaQuery.of(context).viewInsets.bottom + 24.0,
-                  left: 24.0,
-                  right: 24.0,
-                  top: 24.0,
-                ),
-                // On utilise une Column pour une structure verticale claire
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    // Ligne du titre et du bouton "Réinitialiser"
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text('Filtrer les spots',
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                        TextButton(
-                          onPressed: () {
-                            AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                            // setModalState met à jour l'intérieur du panel
-                            setModalState(() {
-                              _selectedBrandFilter = null;
-                              _selectedColorFilter = null;
-                              _selectedDateFilter = null;
-                            });
-                          },
-                          child: const Text('Réinitialiser'),
-                        )
-                      ],
-                    ),
-                    const SizedBox(height: 20),
-
-                    // Filtre par Marque
-                    DropdownButtonFormField<String>(
-                      value: _selectedBrandFilter,
-                      onTap: () => AudioService.instance.playSfx(SoundEffect.clicLeger), // <-- SON AJOUTÉ
-                      hint: const Text('Toutes les marques'),
-                      decoration: const InputDecoration(
-                          labelText: 'Marque', border: OutlineInputBorder()),
-                      items: availableBrands
-                          .map((brand) =>
-                              DropdownMenuItem(value: brand, child: Text(brand)))
-                          .toList(),
-                      onChanged: (value) {
-                        AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                        setModalState(() => _selectedBrandFilter = value);
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    // Filtre par Couleur
-                    DropdownButtonFormField<String>(
-                      value: _selectedColorFilter,
-                      onTap: () => AudioService.instance.playSfx(SoundEffect.clicLeger), // <-- SON AJOUTÉ
-                      hint: const Text('Toutes les couleurs'),
-                      decoration: const InputDecoration(
-                          labelText: 'Couleur', border: OutlineInputBorder()),
-                      items: availableColors
-                          .map((color) =>
-                              DropdownMenuItem(value: color, child: Text(color)))
-                          .toList(),
-                      onChanged: (value) {
-                        AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                        setModalState(() => _selectedColorFilter = value);
-                      },
-                    ),
-                    const SizedBox(height: 24),
-
-                    // Titre pour le filtre de date
-                    const Text('Date du spot :',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 16)),
-                    const SizedBox(height: 12),
-
-                    // Le Wrap est parfait ici pour les boutons de date
-                   Row(
-                      children: ['Aujourd\'hui', 'Cette semaine', 'Ce mois-ci'].map((label) {
-                        final value = label.split(' ')[0].toLowerCase();
-                        final isSelected = _selectedDateFilter == value;
-
-                        return Flexible(
-                          fit: FlexFit.tight,
-                          child: Padding(
-                            padding: EdgeInsets.zero,
-                            child: ChoiceChip(
-                              labelPadding: EdgeInsets.zero,
-                              
-                              label: Text(
-                                label,
-                                style: TextStyle(
-                                  color: isSelected ? Colors.white : Colors.black87,
-                                  // Si vraiment ça ne passe pas, c'est ici qu'on mettrait un fontSize: 13
-                                  fontSize: 13,
-                                ),
-                                textAlign: TextAlign.center,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                              selected: isSelected,
-                              onSelected: (selected) {
-                                AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                                setModalState(() {
-                                  _selectedDateFilter = selected ? value : null;
-                                });
-                              },
-                              backgroundColor: Colors.grey[200],
-                              selectedColor: Theme.of(context).primaryColor,
-
-                              // >>>>> LA MODIFICATION FINALE EST ICI <<<<<
-                              shape: StadiumBorder(
-                                side: BorderSide(
-                                  color: isSelected
-                                      ? Colors.transparent // On peut rendre la bordure transparente quand c'est sélectionné pour un look plus clean
-                                      : Colors.grey[300]!,
-                                ),
-                              ),
-                              showCheckmark: false,
-                            ),
-                          ),
-                        );
-                      }).toList(),
-                    ),
-                    const SizedBox(height: 20),
-
-                    // Bouton pour appliquer les filtres et fermer le panel
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                          // On notifie l'écran principal que les filtres ont changé
-                          setState(() {});
-                          // Puis on ferme le panel
-                          // Puis on ferme le panel
-                          Navigator.pop(context);
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Theme.of(context).primaryColor,
-                          foregroundColor: Colors.white,
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12)
-                          )
-                        ),
-                        child: const Text('Appliquer les filtres'),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            );
-          },
-        );
-      },
-    );
+  bool _matches(Map<String, dynamic> car) {
+    if (_query.isNotEmpty) {
+      final q = _query.toLowerCase();
+      final hay = '${car['plate'] ?? ''} ${car['brandName'] ?? ''} ${car['modelName'] ?? ''} ${car['locationName'] ?? ''} ${car['color'] ?? ''}'.toLowerCase();
+      if (!hay.contains(q)) return false;
+    }
+    switch (_filter) {
+      case _Filter.all:
+        return true;
+      case _Filter.rare:
+        return rarityOfSpot(car).index >= Rarity.rare.index;
+      case _Filter.week:
+        final t = (car['spottedAt'] as Timestamp?)?.toDate();
+        return t != null && DateTime.now().difference(t).inDays < 7;
+      case _Filter.photo:
+        return car['userPhotoUrl'] != null;
+    }
   }
 
-  Future<void> _deleteCar(String carId, String carName) async {
-    final bool? confirmed = await showDialog<bool>(
+  Future<void> _delete(String id, Map<String, dynamic> car) async {
+    final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Supprimer la voiture'),
-        content: Text(
-            'Êtes-vous sûr de vouloir supprimer la $carName de votre garage ?'),
+        title: const Text('Retirer du garage ?'),
+        content: Text('${car['brandName'] ?? ''} ${cleanModelName(car['modelName'] as String?)} sera supprimée, avec sa photo.'),
         actions: [
+          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Garder')),
           TextButton(
-              onPressed: () {
-                AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                Navigator.of(context).pop(false);
-              },
-              child: const Text('Annuler')),
-          TextButton(
-              onPressed: () {
-                AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                Navigator.of(context).pop(true);
-              },
-              child: const Text('Supprimer',
-                  style: TextStyle(color: Colors.red))),
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: AppColors.danger),
+            child: const Text('Supprimer'),
+          ),
         ],
       ),
     );
-    if (confirmed != true) return;
+    if (ok != true) return;
     try {
-      final docRef =
-          FirebaseFirestore.instance.collection('spotted_cars').doc(carId);
-      final docSnapshot = await docRef.get();
-      final carData = docSnapshot.data();
-      if (carData != null && carData['userPhotoUrl'] != null) {
+      final url = car['userPhotoUrl'] as String?;
+      if (url != null) {
         try {
-          await FirebaseStorage.instance
-              .refFromURL(carData['userPhotoUrl'])
-              .delete();
-        } catch (e) {
-          print("Erreur de suppression photo: $e");
-        }
+          await FirebaseStorage.instance.refFromURL(url).delete();
+        } catch (_) {}
       }
-      await docRef.delete();
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-            content: Text('Voiture supprimée.'),
-            backgroundColor: Colors.green));
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Erreur: $e'), backgroundColor: Colors.red));
-      }
+      await FirebaseFirestore.instance.collection('spotted_cars').doc(id).delete();
+      if (mounted) showAppSnack(context, 'Voiture retirée du garage.', icon: Icons.delete_outline);
+    } catch (_) {
+      if (mounted) showAppSnack(context, 'La suppression a échoué.', icon: Icons.error_outline);
     }
   }
 
-  String _cleanModelName(String modelName) {
-    final parenthesisIndex = modelName.indexOf('(');
-    if (parenthesisIndex != -1) {
-      return modelName.substring(0, parenthesisIndex).trim();
-    }
-    return modelName;
+  void _quickActions(String id, Map<String, dynamic> car) {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.ios_share_rounded),
+              title: const Text('Partager la carte'),
+              onTap: () {
+                Navigator.pop(context);
+                ShareService.shareSpot(this.context, car);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.delete_outline, color: AppColors.danger),
+              title: const Text('Supprimer', style: TextStyle(color: AppColors.danger)),
+              onTap: () {
+                Navigator.pop(context);
+                _delete(id, car);
+              },
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    // --- NOUVEAU : On récupère l'utilisateur ---
-    final currentUser = FirebaseAuth.instance.currentUser;
+    final user = _user;
+    if (user == null) return const Scaffold(body: Center(child: CircularProgressIndicator()));
 
-    // --- NOUVEAU : On ajoute la garde de sécurité ---
-    if (currentUser == null) {
-      return Scaffold(
-        appBar: AppBar(title: const Text('Mon Garage')),
-        body: const Center(child: CircularProgressIndicator()),
-      );
-    }
-
-    // Si l'utilisateur existe, on retourne le Scaffold normal (ton ancien code)
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Mon Garage'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
-        actions: [
-          IconButton(
-            tooltip: "Se déconnecter",
-            icon: Icon(
-              Icons.logout,
-              color: _isSigningOut ? Colors.white.withOpacity(0.5) : Colors.white,
-            ),
-      onPressed: _isSigningOut
-          ? null
-          : () async {
-              setState(() => _isSigningOut = true);
-              try {
-                await AuthService.signOut(); 
-                if (mounted) { 
-                  Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => const AuthGate()),
-                    (route) => false,
-                  );
-                }
-              } catch (e) {
-                if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Erreur lors de la déconnexion: ${e.toString()}")),
-                  );
-                  // On remet le bouton à son état initial en cas d'erreur
-                  setState(() => _isSigningOut = false);
-                }
-              }
-            },
-          )
-        ],
-      ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
-            child: Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    controller: _searchController,
-                    onChanged: (query) => _searchQueryNotifier.value = query,
-                    decoration: InputDecoration(
-                      hintText: 'Rechercher',
-                      prefixIcon: const Icon(Icons.search),
-                      suffixIcon: ValueListenableBuilder<String>(
-                        valueListenable: _searchQueryNotifier,
-                        builder: (context, value, child) {
-                          if (value.isNotEmpty) {
-                            return IconButton(
-                              icon: const Icon(Icons.clear),
-                              onPressed: () {
-                                _searchController.clear();
-                                _searchQueryNotifier.value = '';
-                              },
-                            );
-                          } else {
-                            return const SizedBox.shrink();
-                          }
-                        },
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        borderSide: BorderSide.none,
-                      ),
-                      filled: true,
-                      fillColor: Colors.grey[200],
-                      contentPadding:
-                          const EdgeInsets.symmetric(vertical: 0),
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 12),
-                IconButton(
-                  onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    if (_firebaseDocsCache.isNotEmpty) {
-                      _showFilterPanel(_firebaseDocsCache);
-                    }
-                  },
-                  icon: const Icon(Icons.filter_list),
-                  style: IconButton.styleFrom(
-                    backgroundColor: Colors.grey[200],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    padding: const EdgeInsets.all(16),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Expanded(
-            child: StreamBuilder<QuerySnapshot>(
-              stream: FirebaseAuth.instance.authStateChanges().asyncExpand((user) {
-                  if (user == null) {
-                    // Retourne un stream vide si déconnecté
-                    return Stream<QuerySnapshot>.empty();
-                  }
-                  return FirebaseFirestore.instance
-                      .collection('spotted_cars')
-                      .where('userId', isEqualTo: user.uid)
-                      .orderBy('spottedAt', descending: true)
-                      .snapshots();
-                }),
-                builder: (context, snapshot) {
-                _firebaseDocsCache = snapshot.data?.docs ?? [];
-                if (snapshot.connectionState == ConnectionState.waiting &&
-                    _pendingSpots.isEmpty) {
-                  return const Center(child: CircularProgressIndicator());
-                }
-                if (snapshot.hasError) {
-                  return Center(child: Text('Erreur: ${snapshot.error}'));
-                }
-                final firebaseDocs = snapshot.data?.docs ?? [];
-                final allItems = [..._pendingSpots, ...firebaseDocs];
-                if (allItems.isEmpty) {
-                  return const Center(
-                      child: Padding(
-                          padding: EdgeInsets.all(24.0),
-                          child: Text(
-                              "Ton garage est vide. Ajoute ta première voiture spottée !",
-                              textAlign: TextAlign.center,
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.grey))));
-                }
-                return ValueListenableBuilder<String>(
-                  valueListenable: _searchQueryNotifier,
-                  builder: (context, searchQuery, child) {
-                    final filteredItems = allItems.where((item) {
-                      final car = item is Map<String, dynamic>
-                          ? item
-                          : (item as DocumentSnapshot).data() as Map<String, dynamic>;
-                      
-                      bool matchesSearch = true;
-                      if (searchQuery.isNotEmpty) {
-                        final searchLower = searchQuery.toLowerCase();
-                        final plate = (car['plate'] as String?)?.toLowerCase() ?? '';
-                        final brandName = (car['brandName'] as String?)?.toLowerCase() ?? '';
-                        final modelName = (car['modelName'] as String?)?.toLowerCase() ?? '';
-                        matchesSearch = plate.contains(searchLower) ||
-                            brandName.contains(searchLower) ||
-                            modelName.contains(searchLower);
-                      }
-                      if (!matchesSearch) return false;
-                      bool matchesBrand = true;
-                      if (_selectedBrandFilter != null) {
-                        matchesBrand = (car['brandName'] as String?) == _selectedBrandFilter;
-                      }
-                      if (!matchesBrand) return false;
-                      bool matchesColor = true;
-                      if (_selectedColorFilter != null) {
-                        matchesColor = (car['color'] as String?) == _selectedColorFilter;
-                      }
-                      if (!matchesColor) return false;
-                      bool matchesDate = true;
-                      if (_selectedDateFilter != null) {
-                        final spottedAtTimestamp = car['spottedAt'] as Timestamp?;
-                        if (spottedAtTimestamp == null) {
-                          matchesDate = false;
-                        } else {
-                          final spottedDate = spottedAtTimestamp.toDate();
-                          final now = DateTime.now();
-                          final today = DateTime(now.year, now.month, now.day);
-                          if (_selectedDateFilter == 'aujourd\'hui') {
-                            matchesDate = isSameDay(spottedDate, today);
-                          } else if (_selectedDateFilter == 'cette') {
-                            final startOfWeek = today.subtract(Duration(days: today.weekday - 1));
-                            matchesDate = spottedDate.isAfter(startOfWeek) || isSameDay(spottedDate, startOfWeek);
-                          } else if (_selectedDateFilter == 'ce') {
-                            matchesDate = spottedDate.year == now.year && spottedDate.month == now.month;
-                          }
-                        }
-                      }
-                      if (!matchesDate) return false;
-                      return true;
-                    }).toList();
-                    if (filteredItems.isEmpty) {
-                      return const Center(
-                          child: Padding(
-                              padding: EdgeInsets.all(24.0),
-                              child: Text(
-                                  "Aucun résultat ne correspond à tes critères.",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontSize: 18, color: Colors.grey))));
-                    }
-                    return ListView.builder(
-                          padding: const EdgeInsets.only(top: 8),
-                          itemCount: filteredItems.length,
-                      itemBuilder: (context, index) {
-                        final item = filteredItems[index];
-                        final bool isPending = item is Map<String, dynamic> && item['isPending'] == true;
-                        final Map<String, dynamic> carData;
-                        final String carId;
-                        if (isPending) {
-                          carData = item;
-                          carId = 'pending_${item['plate']}';
-                        } else {
-                          final carDocument = item as DocumentSnapshot;
-                          carData = carDocument.data() as Map<String, dynamic>;
-                          carId = carDocument.id;
-                        }
-                        final plate = carData['plate'] ?? 'N/A';
-                        final brandName = carData['brandName'] ?? 'Marque inconnue';
-                        final modelName = _cleanModelName(carData['modelName'] ?? 'Modèle inconnu');
-                        
-                        // ==========================================================
-                        // === LA LOGIQUE MANQUANTE EST ICI =========================
-                        // ==========================================================
-                        final userPhotoUrl = carData['userPhotoUrl'] as String?;
-                        final modelImageUrl = carData['modelImageUrl'] as String?;
-                        final brandId = carData['brandId'] as String?;
-                        final isCatalogued = carData['isCatalogued'] as bool? ?? false;
+      body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+        stream: FirebaseFirestore.instance
+            .collection('spotted_cars')
+            .where('userId', isEqualTo: user.uid)
+            .orderBy('spottedAt', descending: true)
+            .snapshots(),
+        builder: (context, snap) {
+          final docs = snap.data?.docs ?? [];
+          final cars = docs.map((d) => d.data()).toList();
+          final filtered = docs.where((d) => _matches(d.data())).toList();
+          final loading = snap.connectionState == ConnectionState.waiting && !snap.hasData;
 
-                        // 1. On détermine quelle URL et quel fit utiliser
-                        String? imageUrl;
-                        BoxFit imageFit = BoxFit.cover; 
-
-                        if (userPhotoUrl != null && userPhotoUrl.isNotEmpty) {
-                          imageUrl = userPhotoUrl;
-                        } else if (isCatalogued && modelImageUrl != null && modelImageUrl.isNotEmpty) {
-                          imageUrl = modelImageUrl;
-                          imageFit = BoxFit.contain;
-                        } else if (isCatalogued && brandId != null && brandId.isNotEmpty) {
-                          const projectId = "car-spotter-app-779f2";
-                          imageUrl = "https://firebasestorage.googleapis.com/v0/b/$projectId.appspot.com/o/logos%2F$brandId.png?alt=media";
-                          imageFit = BoxFit.contain;
-                        }
-                        // ==========================================================
-                        
-                        return Opacity(
-                          opacity: isPending ? 0.6 : 1.0,
-                          child: Card(
-                            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            clipBehavior: Clip.antiAlias,
-                            elevation: 4,
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                            // ==========================================================
-                            child: InkWell( // On utilise InkWell pour garder l'effet de clic
-                              onTap: isPending ? null : () {
-                                AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => SpottedCarDetailScreen(carId: carId, carData: carData)));
-                              },
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-                                child: Row(
-                                  children: [
-                                    // --- L'IMAGE ---
-                                    SizedBox(
-                                      width: 110,
-                                      height: 90,
-                                      child: Hero(
-                                        tag: 'carImage_$carId',
-                                        child: CarImageCard(
-                                          imageUrl: imageUrl,
-                                          fit: BoxFit.cover,
-                                          borderRadius: BorderRadius.circular(12.0),
-                                        ),
-                                      ),
-                                    ),
-                                    
-                                    // --- ESPACE ET TEXTE ---
-                                    Expanded(
-                                      child: Padding(
-                                        // === LA CORRECTION EST ICI : AJOUTER UN PADDING À GAUCHE ===
-                                        padding: const EdgeInsets.only(left: 25.0), 
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.center, // Garder le centrage vertical
-                                          children: [
-                                            Row(
-                                              children: [
-                                                Expanded(
-                                                    child: Text('$brandName $modelName',
-                                                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16))),
-                                                if (isPending)
-                                                  const Tooltip(
-                                                    message: "En attente de synchronisation",
-                                                    child: Icon(Icons.cloud_off, size: 18, color: Colors.orange),
-                                                  ),
-                                              ],
-                                            ),
-                                            const SizedBox(height: 4),
-                                            Text(plate,
-                                                style: const TextStyle(
-                                                    fontSize: 16, color: Colors.black87, fontFamily: 'monospace')),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    
-                                    // --- LA POUBELLE ---
-                                    IconButton(
-                                        icon: const Icon(Icons.delete_outline, color: Colors.redAccent),
-                                        onPressed: isPending ? null : () {
-                                          AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                                          _deleteCar(carId, '$brandName $modelName');
-                                        }),
-                                  ],
-                                ),
-                              ),
-                            ),
+          return CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(child: _Header(uid: user.uid, cars: cars, onMap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => const MapScreen()));
+              })),
+              if (cars.isNotEmpty) SliverToBoxAdapter(child: _toolbar()),
+              if (loading)
+                const SliverFillRemaining(hasScrollBody: false, child: Center(child: CircularProgressIndicator()))
+              else if (snap.hasError)
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: EmptyState(icon: Icons.cloud_off_rounded, title: 'Garage injoignable', message: "Impossible de charger tes voitures pour l'instant. Vérifie ta connexion."),
+                )
+              else if (cars.isEmpty)
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: EmptyState(
+                    icon: Icons.directions_car_outlined,
+                    title: 'Ton garage attend sa première voiture',
+                    message: 'Croise une belle auto, dégaine ton téléphone et prends-la en photo. Je m’occupe du reste.',
+                    action: widget.onAddSpot == null
+                        ? null
+                        : ElevatedButton.icon(
+                            onPressed: widget.onAddSpot,
+                            icon: const Icon(Icons.photo_camera_rounded),
+                            label: const Text('Mon premier spot'),
                           ),
-                        );
-                      },
-                    );
-                  },
-                );
-              },
-            ),
-          ),
-        ],
-      ),
-      floatingActionButton: Consumer<ConnectivityService>(
-        builder: (context, connectivityService, child) {
-          final bool isOnline = connectivityService.isOnline;
-          return FloatingActionButton(
-            onPressed: isOnline
-                ? () async {
-                    Provider.of<AudioService>(context, listen: false).playSfx(SoundEffect.clicPrincipal);
-                    final result = await Navigator.push<Map<String, dynamic>>(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const AddCarScreen()),
-                    );
-                    if (result != null) {
-                      _loadPendingSpots();
-                    }
-                  }
-                : () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text(
-                            "Une connexion internet est requise pour ajouter une voiture."),
-                        backgroundColor: Colors.orange,
-                      ),
-                    );
-                  },
-            backgroundColor:
-                isOnline ? Theme.of(context).primaryColor : Colors.grey[400],
-            tooltip: isOnline ? 'Ajouter une voiture' : 'Connexion requise',
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                const Icon(
-                  Icons.directions_car_filled_outlined,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 27.0, right: 33.0),
-                  child: Icon(
-                    Icons.add,
-                    color: Colors.white,
-                    size: 22,
+                  ),
+                )
+              else if (filtered.isEmpty)
+                const SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: EmptyState(icon: Icons.search_off_rounded, title: 'Rien par ici', message: 'Aucune voiture ne correspond à ta recherche.'),
+                )
+              else
+                SliverPadding(
+                  padding: EdgeInsets.fromLTRB(16, 4, 16, 120 + MediaQuery.paddingOf(context).bottom),
+                  sliver: SliverGrid.builder(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 14,
+                      crossAxisSpacing: 14,
+                      childAspectRatio: 0.72,
+                    ),
+                    itemCount: filtered.length,
+                    itemBuilder: (context, i) {
+                      final doc = filtered[i];
+                      final car = doc.data();
+                      return Pressable(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => SpottedCarDetailScreen(carId: doc.id, carData: car)),
+                        ),
+                        onLongPress: () => _quickActions(doc.id, car),
+                        child: SpotCard(car: car, heroTag: 'carImage_${doc.id}'),
+                      )
+                          .animate()
+                          .fadeIn(delay: (40 * (i % 10)).ms, duration: 280.ms)
+                          .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic);
+                    },
                   ),
                 ),
-              ],
-            ),
+            ],
           );
         },
       ),
     );
   }
-  // Petite fonction helper pour la comparaison de date
-  bool isSameDay(DateTime a, DateTime b) {
-    return a.year == b.year && a.month == b.month && a.day == b.day;
+
+  Widget _toolbar() {
+    final chips = {
+      _Filter.all: 'Tout',
+      _Filter.rare: 'Rares et +',
+      _Filter.week: 'Cette semaine',
+      _Filter.photo: 'Avec photo',
+    };
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 22, 16, 14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(child: Text('Ma collection', style: AppText.display(22))),
+              IconButton(
+                onPressed: () => setState(() {
+                  _searching = !_searching;
+                  if (!_searching) {
+                    _search.clear();
+                    _query = '';
+                  }
+                }),
+                icon: Icon(_searching ? Icons.close_rounded : Icons.search_rounded),
+              ),
+            ],
+          ),
+          AnimatedSize(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeOut,
+            child: _searching
+                ? Padding(
+                    padding: const EdgeInsets.only(top: 6, bottom: 12),
+                    child: TextField(
+                      controller: _search,
+                      autofocus: true,
+                      onChanged: (v) => setState(() => _query = v.trim()),
+                      decoration: const InputDecoration(
+                        hintText: 'Plaque, marque, modèle, ville…',
+                        prefixIcon: Icon(Icons.search_rounded),
+                      ),
+                    ),
+                  )
+                : const SizedBox(width: double.infinity),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                for (final e in chips.entries)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: ChoiceChip(
+                      label: Text(e.value),
+                      selected: _filter == e.key,
+                      onSelected: (_) => setState(() => _filter = e.key),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Nombre de jours consécutifs avec au moins un spot, en finissant aujourd'hui ou hier.
+int spotStreak(List<Map<String, dynamic>> cars) {
+  final days = cars
+      .map((c) => (c['spottedAt'] as Timestamp?)?.toDate())
+      .whereType<DateTime>()
+      .map((d) => DateTime(d.year, d.month, d.day))
+      .toSet();
+  if (days.isEmpty) return 0;
+  final now = DateTime.now();
+  var day = DateTime(now.year, now.month, now.day);
+  if (!days.contains(day)) day = day.subtract(const Duration(days: 1));
+  var streak = 0;
+  while (days.contains(day)) {
+    streak++;
+    day = day.subtract(const Duration(days: 1));
+  }
+  return streak;
+}
+
+class _Header extends StatelessWidget {
+  final String uid;
+  final List<Map<String, dynamic>> cars;
+  final VoidCallback onMap;
+
+  const _Header({required this.uid, required this.cars, required this.onMap});
+
+  String _greeting() {
+    final h = DateTime.now().hour;
+    if (h < 6) return 'Encore debout';
+    if (h < 12) return 'Bonjour';
+    if (h < 18) return 'Salut';
+    return 'Bonsoir';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final top = MediaQuery.paddingOf(context).top;
+
+    return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+      stream: FirebaseFirestore.instance.collection('users').doc(uid).snapshots(),
+      builder: (context, snap) {
+        final data = snap.data?.data() ?? {};
+        final pseudo = (data['pseudo'] as String?)?.trim();
+        final xp = (data['totalXp'] as num?)?.toInt() ?? 0;
+        final level = levelForXp(xp);
+        final next = nextLevel(level);
+        final progress = levelProgress(xp);
+        final streak = spotStreak(cars);
+        final rare = cars.where((c) => rarityOfSpot(c).index >= Rarity.rare.index).length;
+        final brands = cars.map((c) => c['brandName']).whereType<String>().toSet().length;
+
+        return Padding(
+          padding: EdgeInsets.fromLTRB(16, top + 12, 16, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(_greeting(), style: AppText.body(15, color: AppColors.inkSoft, weight: FontWeight.w600)),
+                        Text(pseudo == null || pseudo.isEmpty ? 'Mon garage' : pseudo, style: AppText.display(30)),
+                      ],
+                    ),
+                  ),
+                  Pressable(
+                    onTap: onMap,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: AppColors.card,
+                        borderRadius: BorderRadius.circular(99),
+                        border: Border.all(color: AppColors.line),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.map_outlined, size: 18),
+                          const SizedBox(width: 6),
+                          Text('Carte', style: AppText.body(14, weight: FontWeight.w700)),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 18),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: AppColors.ink,
+                  borderRadius: BorderRadius.circular(AppRadius.xl),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          width: 44,
+                          height: 44,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(14)),
+                          child: Text('${level.level}', style: AppText.display(20, color: Colors.white)),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(level.title, style: AppText.display(18, color: Colors.white)),
+                              const SizedBox(height: 2),
+                              Text(
+                                next == null ? '$xp XP · niveau max' : '$xp / ${next.xpRequired} XP',
+                                style: AppText.body(13, color: Colors.white60, weight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
+                        if (streak > 0)
+                          Tooltip(
+                            message: 'Jours de spot d’affilée',
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                              decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(99)),
+                              child: Row(
+                                children: [
+                                  const Text('🔥', style: TextStyle(fontSize: 15)),
+                                  const SizedBox(width: 4),
+                                  Text('$streak j', style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
+                                ],
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    RevLights(value: progress),
+                    const SizedBox(height: 18),
+                    Row(
+                      children: [
+                        Expanded(child: StatPill(value: '${cars.length}', label: 'spots', dark: true)),
+                        Expanded(child: StatPill(value: '$brands', label: 'marques', dark: true)),
+                        Expanded(child: StatPill(value: '$rare', label: 'rares et +', dark: true)),
+                      ],
+                    ),
+                  ],
+                ),
+              ).animate().fadeIn(duration: 350.ms).slideY(begin: 0.05, end: 0),
+            ],
+          ),
+        );
+      },
+    );
   }
 }
