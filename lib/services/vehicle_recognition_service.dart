@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:firebase_ai/firebase_ai.dart';
-import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:flutter/foundation.dart';
 import 'package:spot_my_car/services/data_manager.dart';
 
@@ -79,7 +78,7 @@ class VehicleRecognitionService {
   ];
 
   GenerativeModel _model(String name, {bool json = true}) {
-    return FirebaseAI.googleAI(appCheck: FirebaseAppCheck.instance).generativeModel(
+    return FirebaseAI.googleAI().generativeModel(
       model: name,
       generationConfig: GenerationConfig(
         temperature: 0.1,
