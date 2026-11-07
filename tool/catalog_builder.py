@@ -91,18 +91,33 @@ NEW_BRANDS = [
     ("SSC", 5, "SSC North America"), ("Zenvo", 5, "Zenvo Automotive"), ("Gordon Murray", 5, "Gordon Murray Automotive"), ("Lotus", None, None),
 ]
 
-CAR_DESC = re.compile(r"car|automobile|automotive|vehicle|marque|constructeur|voiture|manufacturer|brand", re.I)
+CAR_DESC = re.compile(r"car|automobile|automotive|automaker|carmaker|motor|vehicle|marque|constructeur|voiture|manufacturer|brand|company", re.I)
 BAD_DESC = re.compile(r"motorcycle|airline|aircraft|footballer|album|film|song|band|rapper|cycling|bicycle|family name|given name|river|city|comune", re.I)
 
 
-def search_brand(term):
+def search_brands(term, limit=3):
     d = http_json("https://www.wikidata.org/w/api.php", {
-        "action": "wbsearchentities", "format": "json", "language": "en", "type": "item", "limit": 10, "search": term})
+        "action": "wbsearchentities", "format": "json", "language": "en", "type": "item", "limit": 12, "search": term})
+    out = []
+    first_word = norm(term).split(" ")[0] if norm(term) else ""
     for x in (d or {}).get("search", []):
         desc = x.get("description") or ""
-        if CAR_DESC.search(desc) and not BAD_DESC.search(desc) and "car model" not in desc:
-            return x["id"], x.get("label"), desc
-    return None, None, None
+        label = x.get("label") or ""
+        if re.search(r"group|holding|conglomerate|multinational|parent company|subsidiary of", desc, re.I) and len(out) > 0:
+            continue
+        if not CAR_DESC.search(desc) or BAD_DESC.search(desc) or re.search(r"car model|motor vehicle|model of|car series|engine|dealership|museum|racing team|football|club", desc, re.I):
+            continue
+        if first_word and first_word not in norm(label):
+            continue
+        out.append((x["id"], label, desc))
+        if len(out) >= limit:
+            break
+    return out
+
+
+def search_brand(term):
+    r = search_brands(term, 1)
+    return r[0] if r else (None, None, None)
 
 
 BRAND_OVERRIDES = {"mustang": None, "amg": "Mercedes-AMG", "ktm": "KTM", "ds": "DS Automobiles", "mini": "Mini (marque)",
@@ -228,7 +243,7 @@ def good_image(info):
         return False, "pas une photo de voiture entière"
     if info["mime"] not in ("image/jpeg", "image/png", "image/webp", "image/tiff"):
         return False, f"format {info['mime']}"
-    if info["w"] < 900 or info["h"] < 450:
+    if info["w"] < 800 or info["h"] < 400:
         return False, f"trop petite ({info['w']}x{info['h']})"
     ratio = info["w"] / max(info["h"], 1)
     if ratio < 1.1 or ratio > 2.8:
@@ -300,10 +315,10 @@ def main():
         term = BRAND_OVERRIDES.get(b["id"], b["name"])
         if term is None:
             continue
-        q, label, desc = search_brand(term)
-        if q:
-            brand_qids[b["id"]] = q
-            log(f"marque {b['name']} -> {q} {label} ({desc})")
+        found = search_brands(term) or search_brands(b["name"])
+        if found:
+            brand_qids[b["id"]] = [f[0] for f in found]
+            log(f"marque {b['name']} -> {found}")
         else:
             log(f"marque {b['name']} -> introuvable")
         time.sleep(0.2)
@@ -314,6 +329,8 @@ def main():
             if bid in by_id or term is None:
                 continue
             q, label, desc = search_brand(term)
+            if not q:
+                q, label, desc = search_brand(name)
             if not q:
                 log(f"NOUVELLE marque {name}: introuvable")
                 continue
@@ -346,25 +363,34 @@ def main():
             brands.append(nb)
             by_id[bid] = nb
             catalog[bid] = []
-            brand_qids[bid] = q
+            brand_qids[bid] = [q]
             stats["brands_new"] += 1
             log(f"NOUVELLE marque {name} -> {q} ({desc}) pays={country_fr}")
             time.sleep(0.2)
 
     # 2. logos
     logo_files = {}
-    for bid, q in brand_qids.items():
-        ent = http_json("https://www.wikidata.org/w/api.php", {"action": "wbgetentities", "format": "json", "ids": q, "props": "claims"})
-        claims = (ent or {}).get("entities", {}).get(q, {}).get("claims", {})
-        for pid in ("P154", "P8972"):
-            for c in claims.get(pid, []):
-                v = c.get("mainsnak", {}).get("datavalue", {}).get("value")
-                if v:
-                    logo_files[bid] = "File:" + v.replace("_", " ")
-                    break
-            if bid in logo_files:
-                break
+    brand_enwiki = {}
+    for bid, qs in brand_qids.items():
+        ent = http_json("https://www.wikidata.org/w/api.php", {"action": "wbgetentities", "format": "json", "ids": "|".join(qs), "props": "claims|sitelinks", "sitefilter": "enwiki"})
+        for q in qs:
+            e = (ent or {}).get("entities", {}).get(q, {})
+            claims = e.get("claims", {})
+            if bid not in brand_enwiki and e.get("sitelinks", {}).get("enwiki"):
+                brand_enwiki[bid] = e["sitelinks"]["enwiki"]["title"]
+            for pid in ("P154", "P8972"):
+                for c in claims.get(pid, []):
+                    v = c.get("mainsnak", {}).get("datavalue", {}).get("value")
+                    if v and bid not in logo_files:
+                        logo_files[bid] = "File:" + v.replace("_", " ")
         time.sleep(0.15)
+    missing = {bid: t for bid, t in brand_enwiki.items() if bid not in logo_files}
+    if missing:
+        pi = wiki_page_images({"en": sorted(set(missing.values()))})
+        for bid, t in missing.items():
+            f = pi.get(("en", t))
+            if f and re.search(r"logo|emblem|badge|wordmark|\.svg", f, re.I):
+                logo_files[bid] = f
     for i in range(0, len(logo_files), 40):
         items = list(logo_files.items())[i:i + 40]
         d = http_json("https://commons.wikimedia.org/w/api.php", {"action": "query", "format": "json", "titles": "|".join(f for _, f in items),
@@ -382,14 +408,29 @@ def main():
     log(f"logos trouvés: {sum(1 for b in brands if (b.get('logoUrl') or '').startswith('https://upload.wikimedia.org'))}/{len(brands)}")
 
     # 3. modèles
-    for bid, bq in brand_qids.items():
+    for bid, qs in brand_qids.items():
         brand = by_id[bid]
-        wd_models = brand_models(bq)
+        seen_q = set()
+        wd_models = []
+        for bq in qs:
+            for wm in brand_models(bq):
+                if wm["qid"] not in seen_q:
+                    seen_q.add(wm["qid"])
+                    wd_models.append(wm)
         if bid == "ford" and "mustang" in by_id:
             pass
         log(f"{brand['name']}: {len(wd_models)} modèles Wikidata")
         existing = catalog[bid]
         index = {norm(m["name"]): m for m in existing}
+        other_names = sorted({norm(x["name"]) for x in brands if x["id"] != bid} - {norm(brand["name"])}, key=len, reverse=True)
+        own = norm(brand["name"])
+        kept = []
+        for wm in wd_models:
+            ln = norm(wm["label"])
+            if not ln.startswith(own) and any(ln.startswith(o + " ") or ln == o for o in other_names if o and o not in own):
+                continue
+            kept.append(wm)
+        wd_models = kept
         for wm in wd_models:
             wm["short"] = strip_brand(wm["label"], brand["name"])
             wm["key"] = norm(wm["short"])

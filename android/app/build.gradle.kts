@@ -29,8 +29,14 @@ android {
 
     // Étape 2 - Définir les configurations de signature (version Kotlin)
     signingConfigs {
-        getByName("debug") {
-            // Configuration de debug gérée automatiquement.
+        create("test") {
+            // Clé de test fixe (pas celle du Play Store) : même empreinte à chaque build,
+            // enregistrée dans Firebase pour que la connexion Google fonctionne sur les APK de test.
+            storeFile = file("test-signing.p12")
+            storePassword = "spotmycar-test"
+            keyAlias = "spotmycar-test"
+            keyPassword = "spotmycar-test"
+            storeType = "PKCS12"
         }
         create("release") {
             if (keystorePropertiesFile.exists()) {
@@ -57,7 +63,7 @@ android {
             signingConfig = if (keystorePropertiesFile.exists())
                 signingConfigs.getByName("release")
             else
-                signingConfigs.getByName("debug")
+                signingConfigs.getByName("test")
 
             // Minification + ProGuard
             isMinifyEnabled = true
