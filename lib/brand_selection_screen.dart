@@ -1,3 +1,4 @@
+import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -78,12 +79,6 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
               decoration: InputDecoration(
                 hintText: 'Rechercher une marque...',
                 prefixIcon: const Icon(Icons.search),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide.none,
-                ),
-                filled: true,
-                fillColor: Colors.grey[200],
               ),
             ),
           ),
@@ -118,7 +113,9 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
 
                 final brand = _filteredBrands[index - 1];
                 return ListTile(
+                  leading: BrandLogo(url: brand['logoUrl'] as String?, name: brand['name'] as String, size: 40),
                   title: Text(brand['name']),
+                  subtitle: brand['pays'] == null ? null : Text(brand['pays'].toString()),
                   onTap: () {
                     AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
                     Navigator.of(context).pop(brand);

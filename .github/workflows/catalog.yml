@@ -1,0 +1,30 @@
+name: Catalog builder
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [refonte]
+    paths: ['tool/**', '.github/workflows/catalog.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run
+        run: |
+          pip install pillow requests >/dev/null
+          if [ -f tool/catalog_builder.py ]; then python3 tool/catalog_builder.py; else python3 tool/wd_explore.py; fi
+      - name: Commit results
+        run: |
+          git config user.name "SpotMyCar bot"
+          git config user.email "actions@github.com"
+          git add assets/data tool/reports 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Catalogue: mise à jour automatique [skip ci]" && git push)
