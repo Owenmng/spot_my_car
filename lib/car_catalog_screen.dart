@@ -36,7 +36,7 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
       final models = data.modelsByBrand[brand['id']] ?? const [];
       for (var i = 0; i < models.length; i++) {
         final m = models[i];
-        if (m is! Map) continue;
+        if (m is! Map || ((m['imageUrl'] as String?)?.isEmpty ?? true)) continue;
         final hay = VehicleRecognitionService.normalize('${brand['name']} ${m['name']}');
         if (words.every(hay.contains)) out.add((brand, Map<String, dynamic>.from(m), i));
         if (out.length >= 60) return out;
@@ -48,10 +48,10 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
   @override
   Widget build(BuildContext context) {
     final data = context.watch<DataManager>();
-    final brands = data.brands.whereType<Map>().map((b) => Map<String, dynamic>.from(b)).toList()
+    final brands = data.brands.whereType<Map>().map((b) => Map<String, dynamic>.from(b)).where((b) => data.visibleModels(b['id'] as String).isNotEmpty).toList()
       ..sort((a, b) => (a['name'] as String).compareTo(b['name'] as String));
     final results = _results(data);
-    final total = data.modelsByBrand.values.fold<int>(0, (s, l) => s + l.length);
+    final total = brands.fold<int>(0, (s, b) => s + data.visibleModels(b['id'] as String).length);
     final top = MediaQuery.paddingOf(context).top;
 
     return Scaffold(
@@ -97,7 +97,7 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
                     child: EmptyState(icon: Icons.search_off_rounded, title: 'Aucun modèle', message: 'Essaie avec un autre mot-clé.'),
                   )
                 : SliverPadding(
-                    padding: EdgeInsets.fromLTRB(16, 0, 16, 120 + MediaQuery.paddingOf(context).bottom),
+                    padding: EdgeInsets.fromLTRB(16, 0, 16, 24),
                     sliver: SliverList.separated(
                       itemCount: results.length,
                       separatorBuilder: (_, _) => const SizedBox(height: 10),
@@ -169,7 +169,7 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
                   )
           else
             SliverPadding(
-              padding: EdgeInsets.fromLTRB(16, 0, 16, 120 + MediaQuery.paddingOf(context).bottom),
+              padding: EdgeInsets.fromLTRB(16, 0, 16, 24),
               sliver: SliverGrid.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
@@ -180,7 +180,7 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
                 itemCount: brands.length,
                 itemBuilder: (context, i) {
                   final b = brands[i];
-                  final count = data.modelsByBrand[b['id']]?.length ?? 0;
+                  final count = data.visibleModels(b['id'] as String).length;
                   return Pressable(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => BrandDetailScreen(brand: b))),
                     child: Container(

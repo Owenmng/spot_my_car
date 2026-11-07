@@ -26,7 +26,6 @@ dependencies:
   # Interface
   google_fonts: ^6.3.3
   flutter_animate: ^4.5.2
-  confetti: ^0.8.0
   cached_network_image: ^4.0.6
   flutter_cache_manager: ^3.5.0
   flutter_typeahead: ^5.2.0

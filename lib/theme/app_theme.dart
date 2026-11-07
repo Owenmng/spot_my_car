@@ -7,17 +7,25 @@ import 'package:google_fonts/google_fonts.dart';
 class AppColors {
   AppColors._();
 
-  static const paper = Color(0xFFF6F3EE);
-  static const paperDeep = Color(0xFFEDE8E0);
-  static const card = Color(0xFFFFFFFF);
-  static const ink = Color(0xFF16161A);
-  static const inkSoft = Color(0xFF55545C);
-  static const inkMuted = Color(0xFF8E8C94);
-  static const line = Color(0xFFE2DDD4);
+  /// Fond de l'appli (noir carbone).
+  static const paper = Color(0xFF0A0A0D);
+  /// Remplissage discret (pistes de jauges, champs inactifs).
+  static const paperDeep = Color(0xFF1E1E24);
+  /// Surface des cartes.
+  static const card = Color(0xFF141418);
+  /// Panneaux mis en avant (en-têtes, barre de navigation).
+  static const panel = Color(0xFF18181D);
+  static const panelHi = Color(0xFF222229);
+  /// Texte principal.
+  static const ink = Color(0xFFF4F4F6);
+  static const inkSoft = Color(0xFFA9A9B2);
+  static const inkMuted = Color(0xFF6E6E78);
+  static const line = Color(0xFF26262D);
+  static const plateInk = Color(0xFF111111);
 
-  static const success = Color(0xFF1F9D63);
-  static const warning = Color(0xFFE59A1A);
-  static const danger = Color(0xFFD9412B);
+  static const success = Color(0xFF34C77B);
+  static const warning = Color(0xFFF2A93B);
+  static const danger = Color(0xFFFF5A4E);
 
   static const plateBlue = Color(0xFF0B3EA8);
   static const plateYellow = Color(0xFFFFCC00);
@@ -31,24 +39,24 @@ class AccentChoice {
 }
 
 const List<AccentChoice> accentChoices = [
-  AccentChoice('Orange signal', Color(0xFFFF5A1F)),
-  AccentChoice('Bleu piste', Color(0xFF2F5BEA)),
-  AccentChoice('Vert anglais', Color(0xFF1E6B4E)),
-  AccentChoice('Rosso corsa', Color(0xFFD7262E)),
-  AccentChoice('Rose néon', Color(0xFFE5337A)),
-  AccentChoice('Carbone', Color(0xFF2A2A30)),
+  AccentChoice('Rosso corsa', Color(0xFFE5202E)),
+  AccentChoice('Orange papaye', Color(0xFFFF7A1A)),
+  AccentChoice('Bleu Gulf', Color(0xFF59B3E8)),
+  AccentChoice('Vert Lime', Color(0xFFB4F000)),
+  AccentChoice('Jaune Giallo', Color(0xFFFFC72C)),
+  AccentChoice('Violet Viper', Color(0xFF9B6BFF)),
 ];
 
 class AppText {
   AppText._();
 
   static TextStyle display(double size, {Color color = AppColors.ink, FontWeight weight = FontWeight.w800}) =>
-      GoogleFonts.archivo(
-        fontSize: size,
+      GoogleFonts.barlowCondensed(
+        fontSize: size * 1.12,
         fontWeight: weight,
         color: color,
-        height: 1.05,
-        letterSpacing: -0.5,
+        height: 1.0,
+        letterSpacing: 0.2,
       );
 
   static TextStyle body(double size, {Color color = AppColors.ink, FontWeight weight = FontWeight.w500}) =>
@@ -74,19 +82,22 @@ class AppRadius {
 }
 
 ThemeData buildAppTheme(Color accent) {
+  final onAccent = accent.computeLuminance() > 0.5 ? AppColors.paper : Colors.white;
   final scheme = ColorScheme.fromSeed(
     seedColor: accent,
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
   ).copyWith(
     primary: accent,
-    onPrimary: Colors.white,
+    onPrimary: onAccent,
     secondary: AppColors.ink,
-    onSecondary: Colors.white,
+    onSecondary: AppColors.paper,
     surface: AppColors.card,
     onSurface: AppColors.ink,
-    surfaceContainerLowest: AppColors.card,
-    surfaceContainerLow: AppColors.paper,
-    surfaceContainer: AppColors.paperDeep,
+    surfaceContainerLowest: AppColors.paper,
+    surfaceContainerLow: AppColors.card,
+    surfaceContainer: AppColors.panel,
+    surfaceContainerHigh: AppColors.panelHi,
+    surfaceContainerHighest: AppColors.paperDeep,
     error: AppColors.danger,
     outline: AppColors.line,
     outlineVariant: AppColors.line,
@@ -95,7 +106,7 @@ ThemeData buildAppTheme(Color accent) {
   final base = ThemeData(
     useMaterial3: true,
     colorScheme: scheme,
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
   );
 
   final textTheme = GoogleFonts.interTextTheme(base.textTheme).copyWith(
@@ -133,11 +144,24 @@ ThemeData buildAppTheme(Color accent) {
       scrolledUnderElevation: 0,
       centerTitle: false,
       titleTextStyle: AppText.display(22),
-      systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(
+      systemOverlayStyle: SystemUiOverlayStyle.light.copyWith(
         statusBarColor: Colors.transparent,
         systemNavigationBarColor: AppColors.paper,
-        systemNavigationBarIconBrightness: Brightness.dark,
+        systemNavigationBarIconBrightness: Brightness.light,
       ),
+    ),
+    iconTheme: const IconThemeData(color: AppColors.ink),
+    popupMenuTheme: const PopupMenuThemeData(color: AppColors.panelHi),
+    tabBarTheme: TabBarThemeData(
+      labelColor: AppColors.ink,
+      unselectedLabelColor: AppColors.inkMuted,
+      indicatorColor: accent,
+      dividerColor: Colors.transparent,
+      labelStyle: AppText.body(14, weight: FontWeight.w800),
+    ),
+    switchTheme: SwitchThemeData(
+      thumbColor: WidgetStateProperty.resolveWith((s) => s.contains(WidgetState.selected) ? onAccent : AppColors.inkSoft),
+      trackColor: WidgetStateProperty.resolveWith((s) => s.contains(WidgetState.selected) ? accent : AppColors.paperDeep),
     ),
     cardTheme: CardThemeData(
       color: AppColors.card,
@@ -153,6 +177,8 @@ ThemeData buildAppTheme(Color accent) {
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: AppColors.card,
+      prefixIconColor: AppColors.inkSoft,
+      suffixIconColor: AppColors.inkSoft,
       contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
       labelStyle: AppText.body(14, color: AppColors.inkSoft),
       floatingLabelStyle: AppText.body(13, color: accent, weight: FontWeight.w700),
@@ -166,7 +192,9 @@ ThemeData buildAppTheme(Color accent) {
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: accent,
-        foregroundColor: Colors.white,
+        foregroundColor: onAccent,
+        disabledBackgroundColor: AppColors.panelHi,
+        disabledForegroundColor: AppColors.inkMuted,
         elevation: 0,
         minimumSize: const Size(64, 54),
         padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 16),
@@ -177,7 +205,7 @@ ThemeData buildAppTheme(Color accent) {
     filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(
         backgroundColor: AppColors.ink,
-        foregroundColor: Colors.white,
+        foregroundColor: AppColors.paper,
         minimumSize: const Size(64, 54),
         textStyle: AppText.body(16, weight: FontWeight.w800),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadius.md)),
@@ -203,20 +231,21 @@ ThemeData buildAppTheme(Color accent) {
       selectedColor: AppColors.ink,
       side: const BorderSide(color: AppColors.line),
       labelStyle: AppText.body(13, weight: FontWeight.w600),
-      secondaryLabelStyle: AppText.body(13, color: Colors.white, weight: FontWeight.w700),
+      secondaryLabelStyle: AppText.body(13, color: AppColors.paper, weight: FontWeight.w700),
+      checkmarkColor: AppColors.paper,
       shape: const StadiumBorder(),
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
       showCheckmark: false,
     ),
     snackBarTheme: SnackBarThemeData(
       behavior: SnackBarBehavior.floating,
-      backgroundColor: AppColors.ink,
-      contentTextStyle: AppText.body(14, color: Colors.white, weight: FontWeight.w600),
+      backgroundColor: AppColors.panelHi,
+      contentTextStyle: AppText.body(14, color: AppColors.ink, weight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadius.md)),
       insetPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
     ),
     bottomSheetTheme: const BottomSheetThemeData(
-      backgroundColor: AppColors.paper,
+      backgroundColor: AppColors.panel,
       surfaceTintColor: Colors.transparent,
       showDragHandle: true,
       dragHandleColor: AppColors.line,
@@ -225,7 +254,7 @@ ThemeData buildAppTheme(Color accent) {
       ),
     ),
     dialogTheme: DialogThemeData(
-      backgroundColor: AppColors.paper,
+      backgroundColor: AppColors.panel,
       surfaceTintColor: Colors.transparent,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadius.xl)),
       titleTextStyle: AppText.display(22),
@@ -239,7 +268,7 @@ ThemeData buildAppTheme(Color accent) {
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: accent,
-      foregroundColor: Colors.white,
+      foregroundColor: onAccent,
       elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadius.lg)),
     ),
@@ -252,7 +281,8 @@ ThemeData buildAppTheme(Color accent) {
       style: SegmentedButton.styleFrom(
         backgroundColor: AppColors.card,
         selectedBackgroundColor: AppColors.ink,
-        selectedForegroundColor: Colors.white,
+        selectedForegroundColor: AppColors.paper,
+        foregroundColor: AppColors.ink,
         side: const BorderSide(color: AppColors.line),
         textStyle: AppText.body(14, weight: FontWeight.w700),
       ),

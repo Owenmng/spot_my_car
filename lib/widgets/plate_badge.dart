@@ -26,7 +26,7 @@ class PlateBadge extends StatelessWidget {
       decoration: BoxDecoration(
         color: yellow ? AppColors.plateYellow : Colors.white,
         borderRadius: BorderRadius.circular(5 * scale),
-        border: Border.all(color: AppColors.ink, width: 1.6 * scale),
+        border: Border.all(color: AppColors.plateInk, width: 1.6 * scale),
         boxShadow: [
           BoxShadow(color: Colors.black.withValues(alpha: 0.08), blurRadius: 4 * scale, offset: Offset(0, 2 * scale)),
         ],
@@ -61,7 +61,7 @@ class PlateBadge extends StatelessWidget {
               style: GoogleFonts.barlowCondensed(
                 fontSize: 21 * scale,
                 fontWeight: FontWeight.w600,
-                color: AppColors.ink,
+                color: AppColors.plateInk,
                 letterSpacing: 1.2 * scale,
               ),
             ),

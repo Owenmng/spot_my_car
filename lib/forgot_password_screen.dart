@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/forgot_password_screen.dart
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -55,7 +56,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             TextField(
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(hintText: 'Email', filled: true, fillColor: Colors.grey[100], border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none)),
+              decoration: const InputDecoration(hintText: 'E-mail', prefixIcon: Icon(Icons.alternate_email_rounded)),
               onSubmitted: (_) => resetPassword(),
             ),
             const SizedBox(height: 20),

@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -32,7 +31,6 @@ class SpotRevealScreen extends StatefulWidget {
 
 class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerProviderStateMixin {
   late final AnimationController _flip = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
-  late final ConfettiController _confetti = ConfettiController(duration: const Duration(milliseconds: 1600));
   bool _revealed = false;
 
   Rarity? get _rarity => widget.draft.isCatalogued ? widget.draft.rarity : null;
@@ -50,14 +48,12 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
     Future.delayed(const Duration(milliseconds: 450), () {
       if (!mounted) return;
       HapticFeedback.heavyImpact();
-      if ((_rarity?.index ?? 0) >= Rarity.rare.index) _confetti.play();
     });
   }
 
   @override
   void dispose() {
     _flip.dispose();
-    _confetti.dispose();
     super.dispose();
   }
 
@@ -65,7 +61,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
   Widget build(BuildContext context) {
     final rarity = _rarity ?? Rarity.commune;
     final size = MediaQuery.sizeOf(context);
-    final cardW = min(size.width - 72, 330.0);
+    final cardW = min(min(size.width - 72, 330.0), (size.height - 330) / 1.38);
 
     return Scaffold(
       backgroundColor: Colors.transparent,
@@ -73,16 +69,6 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Align(
-              alignment: Alignment.topCenter,
-              child: ConfettiWidget(
-                confettiController: _confetti,
-                blastDirectionality: BlastDirectionality.explosive,
-                numberOfParticles: 28,
-                gravity: 0.25,
-                colors: [...rarity.frame, Colors.white],
-              ),
-            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -109,6 +95,8 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                           height: cardW * 1.38,
                           child: showFront
                               ? _Front(draft: widget.draft, rarity: _rarity)
+                                  .animate(target: _flip.value >= 1 ? 1 : 0)
+                                  .shimmer(delay: 150.ms, duration: 1200.ms, color: rarity.color.withValues(alpha: 0.55), angle: 0.6)
                               : Transform(
                                   alignment: Alignment.center,
                                   transform: Matrix4.identity()..rotateY(pi),
@@ -215,7 +203,7 @@ class _Front extends StatelessWidget {
                 child: draft.photo != null
                     ? Image.memory(draft.photo!, fit: BoxFit.cover)
                     : ColoredBox(
-                        color: AppColors.ink,
+                        color: AppColors.panel,
                         child: Center(child: Text(draft.brandName.isEmpty ? '?' : draft.brandName[0], style: AppText.display(80, color: Colors.white24))),
                       ),
               ),

@@ -1,28 +1,15 @@
-import 'package:spot_my_car/widgets/car_image.dart';
-import 'package:spot_my_car/spotted_car_detail_screen.dart' show PhotoCredit;
-// Fichier: lib/model_detail_screen.dart (Version VRAIMENT, VRAIMENT Finale et Corrigée - 100% Complète)
-
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/intl.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:spot_my_car/services/custom_cache_manager.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:spot_my_car/widgets/car_image_card.dart';
-import 'package:spot_my_car/services/audio_service.dart';
-
-// La map des icônes ne change pas.
-const Map<String, IconData> specIcons = {
-  'Puissance': Icons.flash_on_outlined,
-  '0-100 km/h': Icons.timer_outlined,
-  'Vitesse Max': Icons.speed_outlined,
-  'Carburant': Icons.local_gas_station_outlined,
-  'Consommation': Icons.opacity_outlined,
-  'Poids': Icons.scale_outlined,
-  'Dimensions (L/l/h)': Icons.straighten_outlined,
-  'Prix de lancement': Icons.euro_symbol_outlined,
-};
+import 'package:spot_my_car/models/rarity.dart';
+import 'package:spot_my_car/services/fact_sheet_service.dart';
+import 'package:spot_my_car/spotted_car_detail_screen.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/car_image.dart';
+import 'package:spot_my_car/widgets/plate_badge.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
 class ModelDetailScreen extends StatefulWidget {
   final List<dynamic> modelsList;
@@ -30,459 +17,361 @@ class ModelDetailScreen extends StatefulWidget {
   final bool isSpotted;
   final Map<String, dynamic> brand;
 
-  const ModelDetailScreen({
-    super.key, 
-    required this.modelsList, 
-    required this.initialIndex, 
-    required this.isSpotted,
-    required this.brand,
-  });
+  const ModelDetailScreen({super.key, required this.modelsList, required this.initialIndex, required this.isSpotted, required this.brand});
 
   @override
   State<ModelDetailScreen> createState() => _ModelDetailScreenState();
 }
 
 class _ModelDetailScreenState extends State<ModelDetailScreen> {
-  late int _currentIndex;
-  late Map<String, dynamic> _currentModel;
-  
-  String _formatConsumption(String value) {
-    if (value.contains('L/100km')) {
-      return value.replaceAll('L/100km', ' L / 100 km');
-    }
-    return value;
+  late final PageController _pages = PageController(initialPage: widget.initialIndex);
+  late int _index = widget.initialIndex;
+
+  @override
+  void dispose() {
+    _pages.dispose();
+    super.dispose();
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          PageView.builder(
+            controller: _pages,
+            itemCount: widget.modelsList.length,
+            onPageChanged: (i) => setState(() => _index = i),
+            itemBuilder: (context, i) => _ModelPage(
+              model: Map<String, dynamic>.from(widget.modelsList[i] as Map),
+              brand: widget.brand,
+            ),
+          ),
+          Positioned(
+            top: MediaQuery.paddingOf(context).top + 8,
+            left: 12,
+            right: 12,
+            child: Row(
+              children: [
+                _Glass(icon: Icons.arrow_back_rounded, onTap: () => Navigator.pop(context)),
+                const Spacer(),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+                  decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.5), borderRadius: BorderRadius.circular(99)),
+                  child: Text('${_index + 1} / ${widget.modelsList.length}', style: AppText.mono(12, color: Colors.white)),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Glass extends StatelessWidget {
+  final IconData icon;
+  final VoidCallback onTap;
+  const _Glass({required this.icon, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) => Pressable(
+        onTap: onTap,
+        child: Container(
+          width: 42,
+          height: 42,
+          decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.5), shape: BoxShape.circle),
+          child: Icon(icon, color: Colors.white, size: 21),
+        ),
+      );
+}
+
+class _ModelPage extends StatelessWidget {
+  final Map<String, dynamic> model;
+  final Map<String, dynamic> brand;
+
+  const _ModelPage({required this.model, required this.brand});
+
+  @override
+  Widget build(BuildContext context) {
+    final rarity = rarityFor(brand: brand, model: model);
+    final name = model['name'] as String? ?? '';
+    final size = MediaQuery.sizeOf(context);
+
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+          child: SizedBox(
+            height: size.width * 0.82,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                CarImage(urls: [model['imageUrl'] as String?], brandName: brand['name'] as String?, modelName: name),
+                const DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      stops: [0, 0.3, 0.65, 1],
+                      colors: [Color(0x99000000), Colors.transparent, Colors.transparent, AppColors.paper],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 20,
+                  right: 20,
+                  bottom: 6,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text((brand['name'] as String? ?? '').toUpperCase(), style: AppText.label(12.5, color: AppColors.inkSoft)),
+                      Text(name, style: AppText.display(38)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(20, 10, 20, 32 + MediaQuery.paddingOf(context).bottom),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Wrap(
+                  spacing: 10,
+                  runSpacing: 8,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    RarityBadge(rarity: rarity),
+                    Text('+${rarity.xp} XP au spot', style: AppText.mono(12.5, color: rarity.color)),
+                    if (model['production_years'] != null)
+                      Text('${model['production_years']}'.replaceAll("Aujourd'hui", 'auj.'), style: AppText.mono(12.5, color: AppColors.inkSoft)),
+                  ],
+                ),
+                const SizedBox(height: 26),
+                Text('FICHE TECHNIQUE', style: AppText.label(12, color: AppColors.inkSoft)),
+                const SizedBox(height: 12),
+                SpecsGrid(model: model),
+                const SizedBox(height: 28),
+                _Dossier(model: model, brand: brand),
+                const SizedBox(height: 28),
+                Text('MES SPOTS', style: AppText.label(12, color: AppColors.inkSoft)),
+                const SizedBox(height: 12),
+                _MySpots(modelId: model['id'] as String?),
+                if (model['imageCredit'] != null) ...[
+                  const SizedBox(height: 24),
+                  PhotoCredit(model: model),
+                ],
+              ],
+            ).animate().fadeIn(duration: 300.ms),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _Dossier extends StatefulWidget {
+  final Map<String, dynamic> model;
+  final Map<String, dynamic> brand;
+  const _Dossier({required this.model, required this.brand});
+
+  @override
+  State<_Dossier> createState() => _DossierState();
+}
+
+class _DossierState extends State<_Dossier> {
+  FactSheet? _sheet;
+  bool _loading = false;
+  String? _error;
 
   @override
   void initState() {
     super.initState();
-    _currentIndex = widget.initialIndex;
-    _currentModel = widget.modelsList[_currentIndex];
-  }
-  
-  String? _formatDimensions(String? dimsInMm) {
-    if (dimsInMm == null || dimsInMm.isEmpty) return null;
-    List<String> parts = dimsInMm.split(' x ');
-    if (parts.length != 3) return dimsInMm;
-    try {
-      double lengthM = (double.parse(parts[0].trim())) / 1000.0;
-      double widthM = (double.parse(parts[1].trim())) / 1000.0;
-      double heightM = (double.parse(parts[2].trim())) / 1000.0;
-      String lengthStr = lengthM.toStringAsFixed(3).replaceAll('.', ',');
-      String widthStr = widthM.toStringAsFixed(3).replaceAll('.', ',');
-      String heightStr = heightM.toStringAsFixed(3).replaceAll('.', ',');
-      return '$lengthStr / $widthStr / $heightStr m';
-    } catch (e) { return dimsInMm; }
-  }
-
-  String? _formatPrice(dynamic priceRaw) {
-    if (priceRaw == null) return null;
-    try {
-      final priceInt = int.parse(priceRaw.toString());
-      final formatter = NumberFormat.currency(locale: 'fr_FR', symbol: '€', decimalDigits: 0);
-      return formatter.format(priceInt);
-    } catch (e) { return "${priceRaw.toString()} €"; }
-  }
-
-  void _goToNext() {
-    if (_currentIndex < widget.modelsList.length - 1) {
-      AudioService.instance.playSfx(SoundEffect.transitionPage); // <-- SON AJOUTÉ
-      setState(() { _currentIndex++; _currentModel = widget.modelsList[_currentIndex]; });
+    final id = widget.model['id'] as String?;
+    if (id != null) {
+      FactSheetService.cached(id).then((s) {
+        if (mounted && s != null) setState(() => _sheet = s);
+      });
     }
   }
 
-  void _goToPrevious() {
-    if (_currentIndex > 0) {
-      AudioService.instance.playSfx(SoundEffect.transitionPage); // <-- SON AJOUTÉ
-      setState(() { _currentIndex--; _currentModel = widget.modelsList[_currentIndex]; });
+  Future<void> _load() async {
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+    try {
+      final s = await FactSheetService.load(
+        modelId: widget.model['id'] as String? ?? '${widget.brand['id']}_${widget.model['name']}',
+        brand: widget.brand['name'] as String? ?? '',
+        model: widget.model['name'] as String? ?? '',
+        years: widget.model['production_years'] as String?,
+      );
+      if (mounted) setState(() => _sheet = s);
+    } catch (_) {
+      if (mounted) setState(() => _error = 'Impossible de charger la fiche pour le moment.');
+    } finally {
+      if (mounted) setState(() => _loading = false);
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    final currentUser = FirebaseAuth.instance.currentUser!;
-    final imageFileName = _currentModel['imageUrl'] as String?;
-    final Map<String, String?> dataToShow = {
-      'Puissance': _currentModel['puissance_ch'] != null ? '${_currentModel['puissance_ch']} ch' : null,
-      'Vitesse Max': _currentModel['vitesse_max_kmh'] != null ? '${_currentModel['vitesse_max_kmh']} km/h' : null,
-      '0-100 km/h': _currentModel['zero_a_cent_s'] != null ? '${_currentModel['zero_a_cent_s']} s' : null,
-      'Poids': _currentModel['poids_kg'] != null ? '${_currentModel['poids_kg']} kg' : null,
-      'Carburant': _currentModel['type_carburant']?.toString(),
-      'Consommation': _currentModel['consommation_mixte'] != null 
-          ? _formatConsumption(_currentModel['consommation_mixte'].toString()) 
-          : null,
-      'Prix de lancement': _formatPrice(_currentModel['prix_lancement_eur']),
-    };
+    final accent = Theme.of(context).colorScheme.primary;
+    final s = _sheet;
 
-    Widget navigationBar = Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
-      child: Row(
+    return Container(
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: AppColors.panel,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: AppColors.line),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Le bouton "Précédent"
-          IconButton(
-            icon: Icon(Icons.arrow_back_ios_new, color: _currentIndex > 0 ? Colors.black54 : Colors.grey[300]),
-            onPressed: _currentIndex > 0 ? _goToPrevious : null,
+          Row(
+            children: [
+              Icon(Icons.menu_book_rounded, color: accent, size: 20),
+              const SizedBox(width: 8),
+              Text('LE DOSSIER', style: AppText.label(12, color: accent)),
+            ],
           ),
-          
-          // La barre de progression interactive
-          Expanded(
-            child: SliderTheme(
-              data: SliderTheme.of(context).copyWith(
-                trackHeight: 3.0,
-                thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 8.0), // Point un peu plus gros pour être facile à saisir
-                overlayShape: const RoundSliderOverlayShape(overlayRadius: 16.0), // Halo de feedback au toucher
-                
-                // === COULEURS BLEU FONCÉ ===
-                activeTrackColor: Theme.of(context).primaryColor,     // Partie remplie de la barre
-                inactiveTrackColor: Colors.black26,              // Partie vide de la barre
-                thumbColor: Theme.of(context).primaryColor,            // Couleur du point
-                overlayColor: Theme.of(context).primaryColor.withOpacity(0.2), // Couleur du halo
-              ),
-              child: Slider(
-                value: _currentIndex.toDouble(),
-                min: 0,
-                // On s'assure que max est au moins 0 pour éviter les erreurs si la liste est vide ou n'a qu'un seul élément
-                max: (widget.modelsList.length - 1).toDouble().clamp(0.0, double.infinity),
-                // divisions permet au slider de se "clipser" sur chaque modèle
-                divisions: (widget.modelsList.length - 1) > 0 ? (widget.modelsList.length - 1) : null,
-
-                // === LA LOGIQUE INTERACTIVE EST ICI ===
-                onChanged: (double value) {
-                  setState(() {
-                    // On met à jour l'index et le modèle actuel
-                    _currentIndex = value.round();
-                    _currentModel = widget.modelsList[_currentIndex];
-                  });
-                },
-                // On ajoute le son quand l'utilisateur a fini de bouger le slider
-                onChangeEnd: (double value) {
-                  AudioService.instance.playSfx(SoundEffect.transitionPage); // <-- SON AJOUTÉ
-                },
-              ),
+          const SizedBox(height: 10),
+          if (s == null) ...[
+            Text('Histoire, moteur, chiffres clés, anecdotes et détails pour la reconnaître dans la rue.', style: AppText.body(14, color: AppColors.inkSoft)),
+            const SizedBox(height: 14),
+            if (_error != null) ...[
+              Text(_error!, style: AppText.body(13, color: AppColors.danger)),
+              const SizedBox(height: 10),
+            ],
+            FilledButton.icon(
+              onPressed: _loading ? null : _load,
+              icon: _loading
+                  ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
+                  : const Icon(Icons.auto_awesome_rounded, size: 18),
+              label: Text(_loading ? 'Rédaction en cours…' : 'Ouvrir le dossier'),
             ),
-          ),
-          
-          // Le bouton "Suivant"
-          IconButton(
-            icon: Icon(Icons.arrow_forward_ios, color: _currentIndex < widget.modelsList.length - 1 ? Colors.black54 : Colors.grey[300]),
-            onPressed: _currentIndex < widget.modelsList.length - 1 ? _goToNext : null,
-          ),
+          ] else ...[
+            Text(s.summary, style: AppText.body(15, color: AppColors.ink).copyWith(height: 1.5)),
+            _block('Moteur', s.engine),
+            _block('Chiffres clés', s.keyFigures),
+            _block('Production', s.production),
+            if (s.anecdotes.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              Text('ANECDOTES', style: AppText.label(11, color: AppColors.inkMuted)),
+              const SizedBox(height: 6),
+              for (final a in s.anecdotes)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(padding: const EdgeInsets.only(top: 7), child: Container(width: 5, height: 5, decoration: BoxDecoration(color: accent, shape: BoxShape.circle))),
+                      const SizedBox(width: 10),
+                      Expanded(child: Text(a, style: AppText.body(14, color: AppColors.ink).copyWith(height: 1.45))),
+                    ],
+                  ),
+                ),
+            ],
+            _block('Comment la reconnaître', s.howToSpot),
+            const SizedBox(height: 12),
+            Text('Rédigé par IA à partir de ses connaissances : vérifie les chiffres importants.', style: AppText.body(11.5, color: AppColors.inkMuted)),
+          ],
         ],
       ),
     );
-    
-    // Si on est sur le web, on utilise le design avec le grand header
-    if (kIsWeb) {
-      return Scaffold(
-        body: GestureDetector(
-          onHorizontalDragEnd: (details) {
-            if (details.primaryVelocity! < -500) _goToNext();
-            else if (details.primaryVelocity! > 500) _goToPrevious();
-          },
-          child: CustomScrollView(
-            slivers: [
-              SliverAppBar(
-                // On ajoute le bouton de retour manuellement pour y mettre un son
-                leading: IconButton(
-                  icon: const Icon(Icons.arrow_back),
-                  onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    Navigator.of(context).pop();
-                  },
-                ),
-                expandedHeight: 300, pinned: true, foregroundColor: Colors.white, backgroundColor: Theme.of(context).primaryColor,
-                flexibleSpace: FlexibleSpaceBar(
-                  centerTitle: true,
-                  title: Text(_currentModel['name'] ?? 'Modèle inconnu', style: const TextStyle(shadows: [Shadow(blurRadius: 2, color: Colors.black87)])),
-                  background: Stack(
-                    fit: StackFit.expand,
+  }
+
+  Widget _block(String title, String text) {
+    if (text.trim().isEmpty) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title.toUpperCase(), style: AppText.label(11, color: AppColors.inkMuted)),
+          const SizedBox(height: 4),
+          Text(text, style: AppText.body(14, color: AppColors.ink).copyWith(height: 1.45)),
+        ],
+      ),
+    );
+  }
+}
+
+class _MySpots extends StatelessWidget {
+  final String? modelId;
+  const _MySpots({required this.modelId});
+
+  @override
+  Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null || modelId == null) return const SizedBox.shrink();
+
+    return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+      stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: user.uid).where('modelId', isEqualTo: modelId).snapshots(),
+      builder: (context, snap) {
+        final docs = [...?snap.data?.docs]
+          ..sort((a, b) => ((b.data()['spottedAt'] as Timestamp?)?.millisecondsSinceEpoch ?? 0).compareTo((a.data()['spottedAt'] as Timestamp?)?.millisecondsSinceEpoch ?? 0));
+        if (docs.isEmpty) {
+          return Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
+            child: Row(
+              children: [
+                const Icon(Icons.visibility_outlined, color: AppColors.inkSoft),
+                const SizedBox(width: 12),
+                Expanded(child: Text('Pas encore spottée. Ouvre l’œil !', style: AppText.body(14, color: AppColors.inkSoft))),
+              ],
+            ),
+          );
+        }
+        return Column(
+          children: [
+            for (final d in docs)
+              Pressable(
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => SpottedCarDetailScreen(carId: d.id, carData: d.data()))),
+                child: Container(
+                  margin: const EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
+                  child: Row(
                     children: [
-                      CarImage(urls: [imageFileName], brandName: widget.brand['name'] as String?, modelName: _currentModel['name'] as String?),
-                      Container(decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Colors.transparent, Colors.black54]))),
+                      SizedBox(width: 72, height: 50, child: SpotImage(carId: d.id, car: d.data(), borderRadius: BorderRadius.circular(AppRadius.sm))),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              alignment: Alignment.centerLeft,
+                              child: PlateBadge(plate: d.data()['plate'] as String? ?? '', countryCode: d.data()['plateCountryCode'] as String?, scale: 0.6),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              [
+                                if (d.data()['spottedAt'] is Timestamp) DateFormat('d MMM yyyy', 'fr_FR').format((d.data()['spottedAt'] as Timestamp).toDate()),
+                                if (d.data()['locationName'] != null) d.data()['locationName'],
+                              ].join(' · '),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppText.body(12.5, color: AppColors.inkSoft),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
                     ],
                   ),
                 ),
               ),
-              SliverToBoxAdapter(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    navigationBar,
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '${widget.brand['name']} ${_currentModel['name']}',
-                            style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-                          ),
-                          const SizedBox(height: 4),
-                          if (_currentModel['production_years'] != null)
-                             Text('Production de ${_currentModel['production_years']}', style: TextStyle(fontSize: 16, color: Colors.grey[700], fontStyle: FontStyle.italic)),
-                          if (_currentModel['imageCredit'] != null) Padding(padding: const EdgeInsets.only(top: 6), child: PhotoCredit(model: Map<String, dynamic>.from(_currentModel))),
-                          const SizedBox(height: 28),
-                          const Text("Fiche Technique", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                          const SizedBox(height: 8),
-                            ListView(
-                              shrinkWrap: true,
-                              physics: const NeverScrollableScrollPhysics(),
-                              padding: EdgeInsets.zero,
-                              children: [
-                                // On affiche toutes les autres specs comme avant
-                                ...dataToShow.entries
-                                  .where((entry) => entry.value != null && entry.value!.isNotEmpty)
-                                  .map((entry) {
-                                    return ListTile(
-                                      leading: Icon(
-                                        specIcons[entry.key] ?? Icons.info_outline,
-                                        color: Colors.grey[600],
-                                      ),
-                                      title: Text(entry.key, style: const TextStyle(fontSize: 16)),
-                                      trailing: Text(
-                                        entry.value!,
-                                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                                      ),
-                                      dense: true,
-                                      contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                    );
-                                  }),
-
-                                // On crée maintenant les 3 lignes pour les dimensions
-                                Builder(
-                                  builder: (context) {
-                                    final dimsRaw = _currentModel['dimensions_lwh_mm']?.toString();
-                                    if (dimsRaw == null || !dimsRaw.contains('x')) {
-                                      return const SizedBox.shrink();
-                                    }
-                                    final parts = dimsRaw.split('x').map((e) => e.trim()).toList();
-                                    if (parts.length != 3) {
-                                      return const SizedBox.shrink();
-                                    }
-                                    final lengthM = (double.tryParse(parts[0]) ?? 0) / 1000.0;
-                                    final widthM = (double.tryParse(parts[1]) ?? 0) / 1000.0;
-                                    final heightM = (double.tryParse(parts[2]) ?? 0) / 1000.0;
-                                    return Column(
-                                      children: [
-                                        ListTile(
-                                          leading: Icon(Icons.north_east, color: Colors.grey[600]),
-                                          title: const Text("Longueur", style: TextStyle(fontSize: 16)),
-                                          trailing: Text("${lengthM.toStringAsFixed(2).replaceAll('.', ',')} m", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                          dense: true,
-                                          contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                        ),
-                                        ListTile(
-                                          leading: Icon(Icons.east, color: Colors.grey[600]),
-                                          title: const Text("Largeur", style: TextStyle(fontSize: 16)),
-                                          trailing: Text("${widthM.toStringAsFixed(2).replaceAll('.', ',')} m", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                          dense: true,
-                                          contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                        ),
-                                        ListTile(
-                                          leading: Icon(Icons.north, color: Colors.grey[600]),
-                                          title: const Text("Hauteur", style: TextStyle(fontSize: 16)),
-                                          trailing: Text("${heightM.toStringAsFixed(2).replaceAll('.', ',')} m", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                          dense: true,
-                                          contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-
-                          const SizedBox(height: 28),
-                            const Text("Mes Spots pour ce modèle", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                            const SizedBox(height: 16),
-                            StreamBuilder<QuerySnapshot>(
-                              stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: currentUser.uid).where('modelId', isEqualTo: _currentModel['id']).orderBy('spottedAt', descending: true).snapshots(),
-                              builder: (context, snapshot) {
-                                if (snapshot.connectionState == ConnectionState.waiting) return const Center(child: CircularProgressIndicator());
-                                if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-                                  return const Card(color: Color.fromARGB(255, 235, 240, 255), child: ListTile(leading: Icon(Icons.search_off), title: Text("Pas encore spotté !"), subtitle: Text("Pars à sa recherche pour l'ajouter à ta collection.")));
-                                }
-                                final spottedList = snapshot.data!.docs;
-                                return ListView.separated(
-                                  shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
-                                  itemCount: spottedList.length,
-                                  separatorBuilder: (context, index) => const Divider(height: 1),
-                                  itemBuilder: (context, index) {
-                                    final spot = spottedList[index].data() as Map<String, dynamic>;
-                                    final plate = spot['plate'] ?? 'N/A';
-                                    final timestamp = spot['spottedAt'] as Timestamp?;
-                                    final date = timestamp != null ? DateFormat('le dd/MM/yyyy à HH:mm', 'fr_FR').format(timestamp.toDate()) : 'Date inconnue';
-                                    return ListTile(
-                                      leading: Icon(Icons.shield_outlined, color: Theme.of(context).primaryColor),
-                                      title: Text(plate, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                                      subtitle: Text("Spottée $date"),
-                                    );
-                                  },
-                                );
-                              },
-                            ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-        ),
-      );
-    } 
-    // Sinon (sur mobile), on garde le nouveau design "Showroom"
-    // Sinon (sur mobile), on garde le nouveau design "Showroom"
-    else {
-      return Scaffold(
-        appBar: AppBar(
-          // On ajoute le bouton de retour manuellement pour y mettre un son
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-              Navigator.of(context).pop();
-            },
-          ),
-          title: Text(_currentModel['name'] ?? 'Détails du modèle'), 
-          backgroundColor: Theme.of(context).primaryColor, 
-          foregroundColor: Colors.white
-        ),
-        body: GestureDetector(
-          onHorizontalDragEnd: (details) {
-            if (details.primaryVelocity! < -500) _goToNext();
-            else if (details.primaryVelocity! > 500) _goToPrevious();
-          },
-          child: Column(
-            children: [
-               SizedBox(
-                height: 250, // On remet la hauteur à 250 pour être identique
-                width: double.infinity, // On force la largeur maximale
-                child: CarImageCard(
-                  imageUrl: imageFileName,
-                  fit: BoxFit.cover, // On force le mode 'cover'
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),             
-              navigationBar,
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Padding(padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 16.0), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(
-                      '${widget.brand['name']} ${_currentModel['name']}',
-                      style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-                    ),                    
-                    const SizedBox(height: 4),
-                    if (_currentModel['production_years'] != null) Text('Production de ${_currentModel['production_years']}', style: TextStyle(fontSize: 16, color: Colors.grey[700], fontStyle: FontStyle.italic)),
-                    const SizedBox(height: 20),
-                    const Text("Fiche Technique", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 8),
-                            ListView(
-                              shrinkWrap: true,
-                              physics: const NeverScrollableScrollPhysics(),
-                              padding: EdgeInsets.zero,
-                              children: [
-                                // On affiche toutes les autres specs comme avant
-                                ...dataToShow.entries
-                                  .where((entry) => entry.value != null && entry.value!.isNotEmpty)
-                                  .map((entry) {
-                                    return ListTile(
-                                      leading: Icon(
-                                        specIcons[entry.key] ?? Icons.info_outline,
-                                        color: Colors.grey[600],
-                                      ),
-                                      title: Text(entry.key, style: const TextStyle(fontSize: 16)),
-                                      trailing: Text(
-                                        entry.value!,
-                                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                                      ),
-                                      dense: true,
-                                      contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                    );
-                                  }),
-
-                                // On crée maintenant les 3 lignes pour les dimensions
-                                Builder(
-                                  builder: (context) {
-                                    final dimsRaw = _currentModel['dimensions_lwh_mm']?.toString();
-                                    if (dimsRaw == null || !dimsRaw.contains('x')) {
-                                      return const SizedBox.shrink();
-                                    }
-                                    final parts = dimsRaw.split('x').map((e) => e.trim()).toList();
-                                    if (parts.length != 3) {
-                                      return const SizedBox.shrink();
-                                    }
-                                    final lengthM = (double.tryParse(parts[0]) ?? 0) / 1000.0;
-                                    final widthM = (double.tryParse(parts[1]) ?? 0) / 1000.0;
-                                    final heightM = (double.tryParse(parts[2]) ?? 0) / 1000.0;
-                                    return Column(
-                                      children: [
-                                        ListTile(
-                                          leading: Icon(Icons.north_east, color: Colors.grey[600]),
-                                          title: const Text("Longueur", style: TextStyle(fontSize: 16)),
-                                          trailing: Text("${lengthM.toStringAsFixed(2).replaceAll('.', ',')} m", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                          dense: true,
-                                          contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                        ),
-                                        ListTile(
-                                          leading: Icon(Icons.east, color: Colors.grey[600]),
-                                          title: const Text("Largeur", style: TextStyle(fontSize: 16)),
-                                          trailing: Text("${widthM.toStringAsFixed(2).replaceAll('.', ',')} m", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                          dense: true,
-                                          contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                        ),
-                                        ListTile(
-                                          leading: Icon(Icons.north, color: Colors.grey[600]),
-                                          title: const Text("Hauteur", style: TextStyle(fontSize: 16)),
-                                          trailing: Text("${heightM.toStringAsFixed(2).replaceAll('.', ',')} m", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                                          dense: true,
-                                          contentPadding: const EdgeInsets.symmetric(horizontal: 4.0),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-
-                            if (_currentModel['imageCredit'] != null) Padding(padding: const EdgeInsets.only(top: 6), child: PhotoCredit(model: Map<String, dynamic>.from(_currentModel))),
-                          const SizedBox(height: 28),
-                            const Text("Mes Spots pour ce modèle", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                            const SizedBox(height: 16),
-                            StreamBuilder<QuerySnapshot>(
-                              stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: currentUser.uid).where('modelId', isEqualTo: _currentModel['id']).orderBy('spottedAt', descending: true).snapshots(),
-                              builder: (context, snapshot) {
-                                if (snapshot.connectionState == ConnectionState.waiting) return const Center(child: CircularProgressIndicator());
-                                if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-                                  return const Card(color: Color.fromARGB(255, 235, 240, 255), child: ListTile(leading: Icon(Icons.search_off), title: Text("Pas encore spotté !"), subtitle: Text("Pars à sa recherche pour l'ajouter à ta collection.")));
-                                }
-                                final spottedList = snapshot.data!.docs;
-                                return ListView.separated(
-                                  shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
-                                  itemCount: spottedList.length,
-                                  separatorBuilder: (context, index) => const Divider(height: 1),
-                                  itemBuilder: (context, index) {
-                                    final spot = spottedList[index].data() as Map<String, dynamic>;
-                                    final plate = spot['plate'] ?? 'N/A';
-                                    final timestamp = spot['spottedAt'] as Timestamp?;
-                                    final date = timestamp != null ? DateFormat('le dd/MM/yyyy à HH:mm', 'fr_FR').format(timestamp.toDate()) : 'Date inconnue';
-                                    return ListTile(
-                                      leading: Icon(Icons.shield_outlined, color: Theme.of(context).primaryColor),
-                                      title: Text(plate, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                                      subtitle: Text("Spottée $date"),
-                                    );
-                                  },
-                                );
-                              },
-                            ),
-                  ])),
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
-    }
+          ],
+        );
+      },
+    );
   }
 }

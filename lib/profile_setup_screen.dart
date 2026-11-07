@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/profile_setup_screen.dart (VERSION COMPLÈTE ET CORRIGÉE)
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -146,10 +147,10 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
     final bool isEditing = widget.initialUserData != null;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.card,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.card,
         foregroundColor: Colors.black,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -188,24 +189,19 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SizedBox(height: 5),
-                  Image.asset('assets/logo.png', height: 135),
-                  const SizedBox(height: 10),
-                  Text(
-                    isEditing ? 'Modifier mon profil' : 'Finalise ton profil',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor),
-                  ),
+                  Text(isEditing ? 'Mon profil' : 'Dernière ligne droite', style: AppText.display(34)),
                   const SizedBox(height: 8),
-                  const Text('Personnalise ton expérience de spotter !',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 16, color: Colors.grey)),
-                  const SizedBox(height: 40),
+                  Text(
+                    isEditing ? 'Mets à jour tes infos de spotter.' : 'Choisis ton pseudo : c’est lui qui apparaîtra au classement.',
+                    style: AppText.body(15, color: AppColors.inkSoft),
+                  ),
+                  const SizedBox(height: 28),
 
                   // === LE RESTE DU FORMULAIRE EST RESTAURÉ ICI ===
                   TextFormField(
                       controller: _pseudoController,
-                      decoration: const InputDecoration(labelText: 'Pseudo'),
+                      maxLength: 20,
+                      decoration: const InputDecoration(labelText: 'Pseudo', prefixIcon: Icon(Icons.badge_outlined), counterText: ''),
                       validator: (value) => value == null || value.isEmpty
                           ? 'Le pseudo est obligatoire'
                           : null),
@@ -297,12 +293,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                                AudioService.instance.playSfx(SoundEffect.clicLeger); // Son d'erreur
                             }
                           },
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: Theme.of(context).primaryColor,
-                              padding: const EdgeInsets.symmetric(vertical: 16),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                          child: Text(isEditing ? "Enregistrer les modifications" : "Enregistrer et commencer !",
-                              style: const TextStyle(fontSize: 18, color: Colors.white))),
+                          child: Text(isEditing ? 'Enregistrer' : 'C’est parti')),
                 ],
               ),
             ),

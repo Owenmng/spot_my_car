@@ -38,7 +38,6 @@ class SpotCard extends StatelessWidget {
     final rarity = rarityOfSpot(car);
     final brand = (car['brandName'] as String?) ?? 'Marque inconnue';
     final model = cleanModelName(car['modelName'] as String?);
-    final legendary = rarity == Rarity.legendaire;
 
     return Container(
       padding: EdgeInsets.all(large ? 4 : 2.5),
@@ -95,7 +94,7 @@ class SpotCard extends StatelessWidget {
                     Positioned(
                       top: 8,
                       left: 8,
-                      child: _Stars(count: rarity.stars, color: legendary ? const Color(0xFFFFD447) : Colors.white),
+                      child: _RarityTag(rarity: rarity),
                     ),
                     if (car['isPending'] == true)
                       const Positioned(top: 8, right: 8, child: Icon(Icons.cloud_upload_outlined, color: Colors.white, size: 18)),
@@ -139,10 +138,8 @@ class SpotCard extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 6),
-                        Text(
-                          rarity.label,
-                          style: AppText.body(large ? 12 : 10, color: rarity.color, weight: FontWeight.w800),
-                        ),
+                        if (car['xp'] is num && (car['xp'] as num) > 0)
+                          Text('+${car['xp']}', style: AppText.mono(large ? 12 : 10, color: rarity.color)),
                       ],
                     ),
                   ],
@@ -156,20 +153,22 @@ class SpotCard extends StatelessWidget {
   }
 }
 
-class _Stars extends StatelessWidget {
-  final int count;
-  final Color color;
-
-  const _Stars({required this.count, required this.color});
+class _RarityTag extends StatelessWidget {
+  final Rarity rarity;
+  const _RarityTag({required this.rarity});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-      decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.35), borderRadius: BorderRadius.circular(99)),
+      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+      decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.55), borderRadius: BorderRadius.circular(6)),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: List.generate(count, (_) => Icon(Icons.star_rounded, size: 12, color: color)),
+        children: [
+          Container(width: 6, height: 6, decoration: BoxDecoration(color: rarity.color, shape: BoxShape.circle)),
+          const SizedBox(width: 5),
+          Text(rarity.label.toUpperCase(), style: AppText.label(9, color: Colors.white)),
+        ],
       ),
     );
   }

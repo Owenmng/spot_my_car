@@ -28,7 +28,7 @@ class ShareService {
                     key: key,
                     child: Container(
                       padding: const EdgeInsets.fromLTRB(18, 18, 18, 14),
-                      decoration: BoxDecoration(color: AppColors.ink, borderRadius: BorderRadius.circular(AppRadius.xl)),
+                      decoration: BoxDecoration(color: AppColors.panel, borderRadius: BorderRadius.circular(AppRadius.xl)),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [

@@ -221,7 +221,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       gradient: LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
-                        colors: [AppColors.ink, Color.lerp(AppColors.ink, accent, 0.35)!, accent],
+                        colors: [AppColors.paper, Color.lerp(AppColors.paper, accent, 0.28)!, Color.lerp(AppColors.paper, accent, 0.75)!],
                         stops: const [0.0, 0.6, 1.0],
                       ),
                     ),

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/community/leaderboard_tab.dart (Version Finale, Corrigée)
 
 import 'package:flutter/material.dart';
@@ -135,7 +136,7 @@ class LeaderboardTab extends StatelessWidget {
 
     Color crownColor;
     if (rank == 1) { crownColor = Colors.amber; }
-    else if (rank == 2) { crownColor = Colors.grey[400]!; }
+    else if (rank == 2) { crownColor = AppColors.line; }
     else { crownColor = Colors.brown[400]!; }
 
     return Expanded(
@@ -184,7 +185,7 @@ class LeaderboardTab extends StatelessWidget {
               ),
               Text(
                 "$totalSpots spots",
-                style: TextStyle(color: Colors.grey[600], fontSize: 12), // Couleur grise
+                style: TextStyle(color: AppColors.inkSoft, fontSize: 12), // Couleur grise
               ),
             ],
           ),
@@ -197,7 +198,7 @@ class LeaderboardTab extends StatelessWidget {
               borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
+                  color: Colors.black.withValues(alpha: 0.2),
                   blurRadius: 4,
                   offset: const Offset(0, 2),
                 )
@@ -225,7 +226,7 @@ class LeaderboardTab extends StatelessWidget {
         separatorBuilder: (context, index) => Divider(
           height: 1, // Hauteur totale de 1 pixel
           thickness: 1.5, // Épaisseur de la ligne
-          color: Colors.grey[300], // Une couleur grise très claire
+          color: AppColors.line, // Une couleur grise très claire
           indent: 16, // Marge à gauche pour s'aligner après l'avatar
           endIndent: 16, // Marge à droite
         ),
@@ -239,14 +240,14 @@ class LeaderboardTab extends StatelessWidget {
 
           // Le InkWell a été retiré, on retourne directement le Container
           return Container(
-            color: isMe ? Theme.of(context).primaryColor.withOpacity(0.1) : null,
+            color: isMe ? Theme.of(context).primaryColor.withValues(alpha: 0.1) : null,
             child: ListTile(
                 contentPadding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 leading: SizedBox(
                   width: 40,
                   child: Text(
                     "${playerData['rank']}.",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.grey[600]),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.inkSoft),
                   ),
                 ),
                 title: Row(
@@ -279,7 +280,7 @@ class LeaderboardTab extends StatelessWidget {
                     ),
                     Text(
                       "$totalSpots spots",
-                      style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                      style: TextStyle(fontSize: 12, color: AppColors.inkSoft),
                     ),
                   ],
                 ),
@@ -317,7 +318,7 @@ class LeaderboardTab extends StatelessWidget {
             ),
             Text( 
               "$totalSpots spots",
-              style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(0.8)),
+              style: TextStyle(fontSize: 12, color: Colors.white.withValues(alpha: 0.8)),
             ),
           ],
         ),

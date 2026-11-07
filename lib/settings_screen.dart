@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/settings_screen.dart (Version Finale, Corrigée et Cohérente)
 
 import 'package:flutter/material.dart';
@@ -42,7 +43,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           style: const TextStyle( 
             fontWeight: FontWeight.w600, 
             fontSize: 15,
-            color: Colors.black, // Texte en gris foncé
+            color: AppColors.ink, // Texte en gris foncé
           ),
         ),
 
@@ -85,7 +86,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             const SizedBox(height: 12),
             Text(
               content,
-              style: TextStyle(fontSize: 15, height: 1.5, color: Colors.grey[700]),
+              style: TextStyle(fontSize: 15, height: 1.5, color: AppColors.inkSoft),
             ),
           ],
         ),
@@ -116,7 +117,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             tooltip: "Se déconnecter",
             icon: Icon(
               Icons.logout,
-              color: _isSigningOut ? Colors.white.withOpacity(0.5) : Colors.white,
+              color: _isSigningOut ? Colors.white.withValues(alpha: 0.5) : Colors.white,
             ),
             onPressed: _isSigningOut
                 ? null
@@ -146,7 +147,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           )
         ],
       ),
-      backgroundColor: Colors.grey[100],
+      backgroundColor: AppColors.paperDeep,
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
@@ -195,7 +196,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         onExpansionChanged: (_) => AudioService.instance.playSfx(SoundEffect.clicLeger), // <-- SON AJOUTÉ
                         subtitle: Text(
                           'Musique et effets sonores',
-                          style: TextStyle(color: Colors.grey[600]),
+                          style: TextStyle(color: AppColors.inkSoft),
                         ),
                         // Voici ce qui s'affiche quand on déplie le menu
                         children: <Widget>[
@@ -268,13 +269,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             const Text('SpotMyCar', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
                             Text(
                               'Version ${packageInfo.version}',
-                              style: TextStyle(fontSize: 16, color: Colors.grey[600]!),
+                              style: TextStyle(fontSize: 16, color: AppColors.inkSoft),
                             ),
                             const SizedBox(height: 24),
                             Text(
                               'L\'application de référence pour tous les passionnés d\'automobile. Collectionnez les voitures que vous croisez, complétez votre garage et mesurez-vous à la communauté.',
                               textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 16, color: Colors.grey[800]!),
+                              style: TextStyle(fontSize: 16, color: AppColors.inkSoft),
                             ),
                             const SizedBox(height: 32),
                             Card(
@@ -313,7 +314,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         children: [
                           Text(
                             'Dernière mise à jour : Septembre 2025',
-                            style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey[600]!),
+                            style: TextStyle(fontStyle: FontStyle.italic, color: AppColors.inkSoft),
                           ),
                           const Divider(height: 32),
                           _buildLegalCard(
@@ -412,7 +413,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text("Nouvelle adresse :", style: TextStyle(fontSize: 12, color: Colors.grey)),
+                              const Text("Nouvelle adresse :", style: TextStyle(fontSize: 12, color: AppColors.inkMuted)),
                               TextFormField(
                                 controller: emailController,
                                 keyboardType: TextInputType.emailAddress,
@@ -613,7 +614,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: Text(
         title.toUpperCase(),
         style: TextStyle(
-          color: Colors.grey[600],
+          color: AppColors.inkSoft,
           fontWeight: FontWeight.bold,
           fontSize: 12,
         ),

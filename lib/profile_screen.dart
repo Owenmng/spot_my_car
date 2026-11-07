@@ -1,536 +1,452 @@
-import 'package:spot_my_car/services/custom_cache_manager.dart';
-// Fichier: lib/screens/profile_screen.dart (Version Corrigée et 100% Complète)
-
-import 'dart:convert';
-import 'dart:typed_data';
-import 'dart:math';
-import 'package:flutter/material.dart';
-import 'package:spot_my_car/theme/app_theme.dart';
-import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/intl.dart';
-import 'package:spot_my_car/services/user_stats_service.dart';
+import 'package:provider/provider.dart';
 import 'package:spot_my_car/achievements_screen.dart';
-import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/community_screen.dart';
+import 'package:spot_my_car/garage_screen.dart' show spotStreak;
+import 'package:spot_my_car/models/level_model.dart';
+import 'package:spot_my_car/models/rarity.dart';
+import 'package:spot_my_car/services/achievement_service.dart';
+import 'package:spot_my_car/services/custom_cache_manager.dart';
+import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/settings_screen.dart';
-import 'package:spot_my_car/auth_gate.dart';
-import 'package:spot_my_car/services/auth_service.dart';
-import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
+
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen>
-    with AutomaticKeepAliveClientMixin {
-  final currentUser = FirebaseAuth.instance.currentUser!;
-  final List<String> defaultAvatars = [ 'assets/avatars/car_bleu.png', 'assets/avatars/car_violet.png', 'assets/avatars/car_rouge.png', 'assets/avatars/car_vert.png', 'assets/avatars/car_rose.png', 'assets/avatars/car_noir.png', 'assets/avatars/car_orange.png'];
-  bool _isSigningOut = false;
-  String? _randomAvatarPath;
-  final List<Level> levels = [ Level(1, "Novice du Spotting", 0), Level(2, "Débutant", 100), Level(3, "Amateur", 250), Level(4, "Passionné", 500), Level(5, "Connaisseur", 1000), Level(6, "Expert", 2000), Level(7, "Chasseur d'Élite", 4000), Level(8, "Maître Spotter", 7500), Level(9, "Légende de la Route", 12000), Level(10, "Dieu du Spotting", 20000), ];
+class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveClientMixin {
   @override
   bool get wantKeepAlive => true;
-  @override
-  void initState() { super.initState(); _randomAvatarPath = defaultAvatars[Random().nextInt(defaultAvatars.length)]; }
-
-  Future<void> _showChangeProfilePictureDialog(BuildContext context) async {
-    showModalBottomSheet(
-      context: context,
-      builder: (BuildContext ctx) {
-        return Container(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(bottom: 16),
-                child: Text('Choisis ton avatar', style: AppText.display(20)),
-              ),
-              Wrap(
-                spacing: 16,
-                runSpacing: 16,
-                alignment: WrapAlignment.center,
-                children: defaultAvatars.map((avatarPath) {
-                  return GestureDetector(
-                      onTap: () {
-                        AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                        Navigator.of(ctx).pop();
-                        _updateProfilePictureFromAsset(avatarPath);
-                      },
-                      child: CircleAvatar(
-                          radius: 35,
-                          backgroundColor: Colors.white,
-                          backgroundImage: AssetImage(avatarPath)));
-                }).toList(),
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-
-  Future<void> _uploadProfilePictureFromGallery() async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(
-        source: ImageSource.gallery, imageQuality: 50, maxWidth: 800);
-    if (pickedFile == null) return;
-    final imageBytes = await pickedFile.readAsBytes();
-    _uploadData(imageBytes);
-  }
-
-  Future<void> _updateProfilePictureFromAsset(String assetPath) async {
-    await FirebaseFirestore.instance
-        .collection('users')
-        .doc(currentUser.uid)
-        .set(
-      {
-        'photoUrl': assetPath,
-      },
-      SetOptions(merge: true),
-    );
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-          content: Text('Avatar mis à jour !'), backgroundColor: Colors.green));
-    }
-  }
-
-  Future<void> _uploadData(Uint8List data) async {
-    final scaffoldMessenger = ScaffoldMessenger.of(context);
-    try {
-      final storageRef = FirebaseStorage.instance
-          .ref()
-          .child('profile_pictures/${currentUser.uid}');
-      await storageRef.putData(data, SettableMetadata(contentType: 'image/jpeg'));
-      final imageUrl = await storageRef.getDownloadURL();
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(currentUser.uid)
-          .set(
-        {
-          'photoUrl': imageUrl,
-        },
-        SetOptions(merge: true),
-      );
-      scaffoldMessenger.showSnackBar(const SnackBar(
-          content: Text('Photo de profil mise à jour !'),
-          backgroundColor: Colors.green));
-    } catch (e) {
-      scaffoldMessenger.showSnackBar(
-          SnackBar(content: Text('Erreur: $e'), backgroundColor: Colors.red));
-    }
-  }
-// ----- NOUVELLE VERSION DE LA FONCTION -----
-
-  Widget _buildStatCard(String label, String value, IconData icon,
-      {VoidCallback? onTap, Color? iconColor}) { // <-- 1. On ajoute le paramètre ici
-    return Expanded(
-      child: Card(
-        elevation: 2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(12),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16.0),
-            child: Column(
-              children: [
-                Icon(
-                  icon, 
-                  size: 32, 
-                  // 2. On utilise la couleur fournie, ou la couleur du thème par défaut
-                  color: iconColor ?? Theme.of(context).primaryColor 
-                ),
-                const SizedBox(height: 8),
-                Text(value,
-                    style: const TextStyle(
-                        fontSize: 22, fontWeight: FontWeight.bold)),
-                const SizedBox(height: 4),
-                Text(label,
-                    style: const TextStyle(color: Colors.grey, fontSize: 12)),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  Future<Map<String, dynamic>?> _loadFavoriteBrandData(String? brandId) async {
-    if (brandId == null) return null;
-    try {
-      final response = await rootBundle.loadString('assets/data/brands.json');
-      final data = json.decode(response);
-      final List<dynamic> allBrands = data['brands'];
-      return allBrands.firstWhere((b) => b['id'] == brandId, orElse: () => null);
-    } catch (e) {
-      return null;
-    }
-  }
-
-  Level _getCurrentLevel(int totalXp) {
-    Level currentLevel = levels.first;
-    for (var level in levels) {
-      if (totalXp >= level.xpRequired) {
-        currentLevel = level;
-      } else {
-        break;
-      }
-    }
-    return currentLevel;
-  }
-
-  double _getlevelProgress(int totalXp, Level currentLevel) {
-    if (currentLevel.level >= levels.length) return 1.0;
-    final nextLevel = levels[currentLevel.level];
-    final xpForCurrentLevel = currentLevel.xpRequired;
-    final xpForNextLevel = nextLevel.xpRequired;
-    // === LA CORRECTION EST ICI : la déclaration de xpNeededForNextLevel ===
-    final xpNeededForNextLevel = xpForNextLevel - xpForCurrentLevel; 
-    // ======================================================================
-    if (xpNeededForNextLevel == 0) return 1.0;
-    final xpInThisLevel = totalXp - xpForCurrentLevel;
-    return xpInThisLevel / xpNeededForNextLevel;
-  }
 
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    if (FirebaseAuth.instance.currentUser == null) {
-      return Scaffold(
-        appBar: AppBar(title: const Text('Mon Profil')),
-        body: const Center(child: CircularProgressIndicator()),
-      );
-    }
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return const SizedBox.shrink();
+    final data = context.watch<DataManager>();
+    final top = MediaQuery.paddingOf(context).top;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Mon Profil'),
-        actions: [
-          IconButton(
-            tooltip: "Se déconnecter",
-            icon: Icon(
-              Icons.logout,
-              color: _isSigningOut ? AppColors.inkMuted : AppColors.ink,
-            ),
-            onPressed: _isSigningOut
-                ? null
-                : () async {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    setState(() => _isSigningOut = true);
-                    try {
-                      await AuthService.signOut(); 
-                      if (mounted) { 
-                        Navigator.of(context).pushAndRemoveUntil(
-                          MaterialPageRoute(builder: (context) => const AuthGate()),
-                          (route) => false,
-                        );
-                      }
-                    } catch (e) {
-                      if (mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text("Erreur lors de la déconnexion: ${e.toString()}")),
-                        );
-                        setState(() => _isSigningOut = false);
-                      }
-                    }
-                  },
-          ),
-        ],
-      ),
-      body: StreamBuilder<DocumentSnapshot>(
-        stream: FirebaseFirestore.instance.collection('users').doc(currentUser.uid).snapshots(),
-        builder: (context, userSnapshot) {
-          if (!userSnapshot.hasData) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          final userData = userSnapshot.data?.data() as Map<String, dynamic>? ?? {};
-          final totalXp = userData['totalXp'] ?? 0;
-          final currentLevel = _getCurrentLevel(totalXp);
-          final progress = _getlevelProgress(totalXp, currentLevel);
-          return StreamBuilder<QuerySnapshot>(
-            stream: FirebaseFirestore.instance.collection('friend_requests').where('toUserId', isEqualTo: currentUser.uid).where('status', isEqualTo: 'pending').snapshots(),
-            builder: (context, friendRequestSnapshot) {
-              final int friendRequestCount = friendRequestSnapshot.data?.docs.length ?? 0;
-              return StreamBuilder<QuerySnapshot>(
-                stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: currentUser.uid).snapshots(),
-                builder: (context, carSnapshot) {
-                  if (carSnapshot.connectionState == ConnectionState.waiting && !userSnapshot.hasData) {
-                    return const Center(child: CircularProgressIndicator());
-                  }
-                  final spottedCars = (carSnapshot.data?.docs ?? []).map((doc) => doc.data() as Map<String, dynamic>).toList();
-                  final statsService = UserStatsService(spottedCars: spottedCars);
-                  final stats = statsService.calculateStats();
-                  final displayName = '${userData['firstName'] ?? ''} ${userData['lastName'] ?? ''}'.trim();
-                  final joinDate = currentUser.metadata.creationTime != null ? DateFormat('dd MMMM yyyy', 'fr_FR').format(currentUser.metadata.creationTime!) : 'N/A';
-                  final photoUrl = userData['photoUrl'] as String?;
-                  final friendId = userData['friendId'] as String?;
-                  ImageProvider? profileImage;
-                  if (photoUrl != null && photoUrl.isNotEmpty) {
-                    if (photoUrl.startsWith('http')) {
-                      profileImage = NetworkImage(photoUrl, headers: kImageHeaders);
-                    } else if (photoUrl.startsWith('assets/')) {
-                      profileImage = AssetImage(photoUrl);
-                    }
-                  } else if (_randomAvatarPath != null) {
-                    profileImage = AssetImage(_randomAvatarPath!);
-                  }
-                  return RefreshIndicator(
-                    onRefresh: () async => setState(() {}),
-                    child: ListView(
-                      padding: const EdgeInsets.all(16.0),
+      body: StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+        stream: FirebaseFirestore.instance.collection('users').doc(user.uid).snapshots(),
+        builder: (context, userSnap) {
+          final u = userSnap.data?.data() ?? {};
+          return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+            stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: user.uid).snapshots(),
+            builder: (context, carsSnap) {
+              final cars = (carsSnap.data?.docs ?? []).map((d) => d.data()).toList();
+              final xp = (u['totalXp'] as num?)?.toInt() ?? 0;
+              final level = levelForXp(xp);
+              final next = nextLevel(level);
+              final pseudo = (u['pseudo'] as String?)?.trim();
+              final name = (pseudo == null || pseudo.isEmpty) ? (user.displayName ?? 'Spotter') : pseudo;
+              final achievements = AchievementService(allBrands: data.brands, spottedCars: cars).checkAchievements();
+              final unlockedLevels = achievements.fold<int>(0, (s, a) => s + a.unlockedLevel);
+              final totalLevels = achievements.fold<int>(0, (s, a) => s + a.levels.length);
+              final close = achievements.where((a) => !a.isFullyCompleted).toList()
+                ..sort((a, b) => b.progressToNext.compareTo(a.progressToNext));
+
+              final rarityCounts = List<int>.filled(Rarity.values.length, 0);
+              for (final c in cars) {
+                rarityCounts[rarityOfSpot(c).index]++;
+              }
+              final brandCounts = <String, int>{};
+              for (final c in cars) {
+                final b = c['brandName'] as String?;
+                if (b != null) brandCounts[b] = (brandCounts[b] ?? 0) + 1;
+              }
+              final topBrand = brandCounts.entries.isEmpty ? null : (brandCounts.entries.toList()..sort((a, b) => b.value.compareTo(a.value))).first;
+              final since = user.metadata.creationTime;
+
+              return ListView(
+                padding: EdgeInsets.fromLTRB(16, top + 12, 16, 32),
+                children: [
+                  Row(
+                    children: [
+                      Text('Profil', style: AppText.display(32)),
+                      const Spacer(),
+                      _IconPill(
+                        icon: Icons.tune_rounded,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 18),
+                  _Identity(name: name, photoUrl: u['photoUrl'] as String?, friendId: u['friendId'] as String?, levelTitle: level.title, since: since),
+                  const SizedBox(height: 14),
+                  Container(
+                    padding: const EdgeInsets.all(18),
+                    decoration: BoxDecoration(
+                      color: AppColors.panel,
+                      borderRadius: BorderRadius.circular(AppRadius.xl),
+                      border: Border.all(color: AppColors.line),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              InkWell(
-                                onTap: () {
-                                  AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => const SettingsScreen()),
-                                  );
-                                },
-                                borderRadius: BorderRadius.circular(20),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 8),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(Icons.settings_outlined, color: Colors.grey[700]),
-                                      const SizedBox(width: 5),
-                                      Text(
-                                        'Paramètres',
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w600,
-                                          color: Colors.grey[800],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              if (friendId != null)
-                                InkWell(
-                                  onTap: () {
-                                    AudioService.instance.playSfx(SoundEffect.notification); // <-- SON AJOUTÉ
-                                    Clipboard.setData(ClipboardData(text: friendId));
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text('ID Ami copié dans le presse-papiers !'),
-                                        backgroundColor: Theme.of(context).primaryColor,
-                                      ),
-                                    );
-                                  },
-                                  borderRadius: BorderRadius.circular(20),
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                                    decoration: BoxDecoration(
-                                      color: Theme.of(context).primaryColor.withOpacity(0.1),
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Text(
-                                          "Mon ID : $friendId",
-                                          style: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor),
-                                        ),
-                                        const SizedBox(width: 8),
-                                        Icon(Icons.copy, size: 16, color: Theme.of(context).primaryColor),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 15),
-                        Center(
-                          child: Stack(
-                            alignment: Alignment.bottomRight,
-                            children: [
-                              CircleAvatar(
-                                  radius: 50,
-                                  backgroundColor: Colors.white,
-                                  backgroundImage: profileImage,
-                                  child: profileImage == null
-                                      ? Icon(Icons.person, size: 60, color: Theme.of(context).primaryColor)
-                                      : null),
-                              GestureDetector(
-                                  onTap: () {
-                                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                                    _showChangeProfilePictureDialog(context);
-                                  },
-                                  child: Container(
-                                      padding: const EdgeInsets.all(6),
-                                      decoration: BoxDecoration(
-                                          color: Theme.of(context).primaryColor,
-                                          shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.white, width: 2)),
-                                      child: const Icon(Icons.edit, color: Colors.white, size: 18))),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                            displayName.isNotEmpty ? displayName : (currentUser.displayName ?? currentUser.email!.split('@')[0]),
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-                        const SizedBox(height: 4),
-                        Text(currentUser.email ?? '',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 16, color: Colors.grey[600])),
-                        const SizedBox(height: 24),
-                        Card(
-                          
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              children: [
-                                Text("Niveau ${currentLevel.level} - ${currentLevel.title}",
-                                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
-                                const SizedBox(height: 12),
-                                RevLights(value: progress, dark: false, height: 12),
-                                const SizedBox(height: 8),
-                                Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text("$totalXp XP", style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
-                                      if (currentLevel.level < levels.length)
-                                        Text("${levels[currentLevel.level].xpRequired} XP", style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.bold))
-                                    ])
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
                         Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            _buildStatCard('Spots', stats.totalSpots.toString(), Icons.directions_car),
-                            const SizedBox(width: 12),
-                            _buildStatCard('Marques', stats.uniqueBrands.toString(), Icons.stars),
-                            const SizedBox(width: 12),
-                            _buildStatCard('Modèles', stats.uniqueModels.toString(), Icons.shield),
+                            Text('NIV. ${level.level}', style: AppText.label(12, color: Theme.of(context).colorScheme.primary)),
+                            const Spacer(),
+                            Text(next == null ? '$xp XP' : '$xp / ${next.xpRequired} XP', style: AppText.mono(13, color: AppColors.inkSoft)),
                           ],
                         ),
-                        const SizedBox(height: 16),
-                        Card(
-                          elevation: 2,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                          child: ListTile(
-                            onTap: () {
-                              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON CORRIGÉ
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => const CommunityScreen()));
-                            },
-                            leading: Icon(Icons.groups_outlined, color: Theme.of(context).primaryColor),
-                            title: const Text("Ma Communauté", style: TextStyle(fontWeight: FontWeight.bold)),
-                            trailing: Stack(
-                              alignment: Alignment.center,
-                              clipBehavior: Clip.none,
-                              children: [
-                                const Icon(Icons.arrow_forward_ios, size: 16),
-                                if (friendRequestCount > 0)
-                                  Positioned(
-                                    top: -12,
-                                    right: -12,
-                                    child: Container(
-                                      padding: const EdgeInsets.all(2),
-                                      decoration: const BoxDecoration(color: Colors.red, shape: BoxShape.circle),
-                                      constraints: const BoxConstraints(minWidth: 16, minHeight: 16),
-                                      child: Text(
-                                        friendRequestCount.toString(),
-                                        style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Card(
-                          elevation: 2,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                          child: ListTile(
-                            onTap: () {
-                               AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON CORRIGÉ
-                               Navigator.push(context, MaterialPageRoute(builder: (context) => const AchievementsScreen()));
-                            },
-                            leading: Icon(Icons.emoji_events_outlined, color: Colors.amber[800]),
-                            title: const Text("Mes Succès", style: TextStyle(fontWeight: FontWeight.bold)),
-                            trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Card(
-                          elevation: 2,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                          child: ListTile(
-                            onTap: () {
-                              AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => const SettingsScreen()),
-                              );
-                            },
-                            leading: Icon(Icons.settings_outlined, color: Colors.grey[700]),
-                            title: const Text("Paramètres", style: TextStyle(fontWeight: FontWeight.bold)),
-                            trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                          ),
-                        ),
-                        const SizedBox(height: 40),
-                        Text('Informations & Préférences', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor)),
-                        const SizedBox(height: 16),
-                        FutureBuilder<Map<String, dynamic>?>(
-                          future: _loadFavoriteBrandData(userData['favoriteBrandId']),
-                          builder: (context, favoriteBrandSnapshot) {
-                            final favoriteBrand = favoriteBrandSnapshot.data;
-                            final logoUrl = favoriteBrand?['logoUrl'] as String?;
-                            return ListTile(
-                              leading: const Icon(Icons.favorite_outline, color: Colors.grey),
-                              title: const Text('Marque préférée'),
-                              trailing: favoriteBrand != null && logoUrl != null && logoUrl.isNotEmpty
-                                  ? Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Image.network(logoUrl, headers: kImageHeaders, height: 24, errorBuilder: (c, e, s) => const Icon(Icons.error, size: 24)),
-                                        const SizedBox(width: 8),
-                                        Text(favoriteBrand['name'], style: const TextStyle(fontSize: 16)),
-                                      ],
-                                    )
-                                  : const Text('Non renseignée', style: TextStyle(fontSize: 16)),
-                            );
-                          },
-                        ),
-                        ListTile(
-                            leading: const Icon(Icons.cake_outlined, color: Colors.grey),
-                            title: const Text('Date de naissance'),
-                            trailing: Text(userData['dateOfBirth'] ?? 'Non renseigné', style: const TextStyle(fontSize: 16))),
-                        ListTile(
-                            leading: const Icon(Icons.calendar_today_outlined, color: Colors.grey),
-                            title: const Text('Membre depuis'),
-                            trailing: Text(joinDate, style: const TextStyle(fontSize: 16))),
+                        const SizedBox(height: 4),
+                        Text(level.title, style: AppText.display(26)),
+                        const SizedBox(height: 14),
+                        RevLights(value: levelProgress(xp)),
+                        if (next != null) ...[
+                          const SizedBox(height: 10),
+                          Text('Encore ${next.xpRequired - xp} XP avant « ${next.title} »', style: AppText.body(13, color: AppColors.inkSoft)),
+                        ],
                       ],
                     ),
-                  );
-                },
+                  ),
+                  const SizedBox(height: 14),
+                  GridView.count(
+                    crossAxisCount: 3,
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 10,
+                    childAspectRatio: 1.15,
+                    children: [
+                      _Stat(value: '${cars.length}', label: 'Spots'),
+                      _Stat(value: '${cars.map((c) => c['modelId']).whereType<String>().toSet().length}', label: 'Modèles'),
+                      _Stat(value: '${brandCounts.length}', label: 'Marques'),
+                      _Stat(value: '${spotStreak(cars)} j', label: 'Série en cours'),
+                      _Stat(value: '${rarityCounts[3] + rarityCounts[4]}', label: 'Exotiques +'),
+                      _Stat(value: topBrand?.key ?? '—', label: 'Marque fétiche', small: true),
+                    ],
+                  ),
+                  const SizedBox(height: 22),
+                  _SectionHeader(title: 'Répartition par rareté'),
+                  const SizedBox(height: 10),
+                  _RarityBars(counts: rarityCounts),
+                  const SizedBox(height: 26),
+                  _SectionHeader(
+                    title: 'Succès',
+                    trailing: '$unlockedLevels / $totalLevels',
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AchievementsScreen())),
+                  ),
+                  const SizedBox(height: 10),
+                  for (final a in close.take(3)) _AchievementRow(a: a),
+                  const SizedBox(height: 8),
+                  OutlinedButton(
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AchievementsScreen())),
+                    child: const Text('Voir tous les succès'),
+                  ),
+                  const SizedBox(height: 26),
+                  _SectionHeader(title: 'Communauté'),
+                  const SizedBox(height: 10),
+                  StreamBuilder<QuerySnapshot>(
+                    stream: FirebaseFirestore.instance
+                        .collection('friend_requests')
+                        .where('toUserId', isEqualTo: user.uid)
+                        .where('status', isEqualTo: 'pending')
+                        .snapshots(),
+                    builder: (context, s) {
+                      final pending = s.data?.docs.length ?? 0;
+                      return _NavTile(
+                        icon: Icons.leaderboard_rounded,
+                        title: 'Classement & amis',
+                        subtitle: pending > 0 ? '$pending demande${pending > 1 ? 's' : ''} d’ami en attente' : 'Compare-toi aux autres spotters',
+                        badge: pending,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
+                      );
+                    },
+                  ),
+                ].animate(interval: 30.ms).fadeIn(duration: 260.ms),
               );
             },
           );
         },
+      ),
+    );
+  }
+}
+
+class _IconPill extends StatelessWidget {
+  final IconData icon;
+  final VoidCallback onTap;
+  const _IconPill({required this.icon, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Pressable(
+      onTap: onTap,
+      child: Container(
+        width: 44,
+        height: 44,
+        decoration: BoxDecoration(color: AppColors.card, shape: BoxShape.circle, border: Border.all(color: AppColors.line)),
+        child: const Icon(Icons.tune_rounded, size: 20),
+      ),
+    );
+  }
+}
+
+class _Identity extends StatelessWidget {
+  final String name;
+  final String? photoUrl;
+  final String? friendId;
+  final String levelTitle;
+  final DateTime? since;
+
+  const _Identity({required this.name, required this.photoUrl, required this.friendId, required this.levelTitle, required this.since});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final initials = name.trim().split(RegExp(r'\s+')).where((w) => w.isNotEmpty).take(2).map((w) => w[0].toUpperCase()).join();
+    final hasPhoto = photoUrl != null && photoUrl!.startsWith('http');
+
+    return Row(
+      children: [
+        Container(
+          width: 72,
+          height: 72,
+          padding: const EdgeInsets.all(3),
+          decoration: BoxDecoration(shape: BoxShape.circle, gradient: SweepGradient(colors: [accent, accent.withValues(alpha: 0.2), accent])),
+          child: CircleAvatar(
+            backgroundColor: AppColors.panelHi,
+            backgroundImage: hasPhoto ? NetworkImage(photoUrl!, headers: kImageHeaders) : null,
+            child: hasPhoto ? null : Text(initials.isEmpty ? '?' : initials, style: AppText.display(24)),
+          ),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(name, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.display(26)),
+              if (since != null)
+                Text('Spotter depuis ${DateFormat('MMMM yyyy', 'fr_FR').format(since!)}', style: AppText.body(13, color: AppColors.inkSoft)),
+              if (friendId != null) ...[
+                const SizedBox(height: 8),
+                Pressable(
+                  onTap: () {
+                    Clipboard.setData(ClipboardData(text: friendId!));
+                    showAppSnack(context, 'Code ami copié', icon: Icons.copy_rounded);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(99), border: Border.all(color: AppColors.line)),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text('CODE AMI  ', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                        Text(friendId!, style: AppText.mono(12.5)),
+                        const SizedBox(width: 6),
+                        const Icon(Icons.copy_rounded, size: 14, color: AppColors.inkSoft),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _Stat extends StatelessWidget {
+  final String value;
+  final String label;
+  final bool small;
+  const _Stat({required this.value, required this.label, this.small = false});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label.toUpperCase(), maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.label(9.5, color: AppColors.inkMuted)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(value, style: AppText.display(small ? 18 : 26)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SectionHeader extends StatelessWidget {
+  final String title;
+  final String? trailing;
+  final VoidCallback? onTap;
+  const _SectionHeader({required this.title, this.trailing, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(title.toUpperCase(), style: AppText.label(12, color: AppColors.inkSoft)),
+        const Spacer(),
+        if (trailing != null) Text(trailing!, style: AppText.mono(12.5, color: AppColors.inkSoft)),
+      ],
+    );
+  }
+}
+
+class _RarityBars extends StatelessWidget {
+  final List<int> counts;
+  const _RarityBars({required this.counts});
+
+  @override
+  Widget build(BuildContext context) {
+    final maxC = counts.fold<int>(1, (a, b) => a > b ? a : b);
+    return Container(
+      height: 150,
+      padding: const EdgeInsets.fromLTRB(14, 16, 14, 12),
+      decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.lg), border: Border.all(color: AppColors.line)),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          for (final r in Rarity.values)
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 5),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text('${counts[r.index]}', style: AppText.mono(12, color: r.color)),
+                    const SizedBox(height: 4),
+                    Flexible(
+                      child: TweenAnimationBuilder<double>(
+                        tween: Tween(begin: 0, end: counts[r.index] / maxC),
+                        duration: const Duration(milliseconds: 800),
+                        curve: Curves.easeOutCubic,
+                        builder: (_, v, _) => FractionallySizedBox(
+                          heightFactor: v.clamp(0.04, 1.0),
+                          alignment: Alignment.bottomCenter,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(6),
+                              gradient: LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [r.color.withValues(alpha: 0.35), r.color]),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(r.label, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(10, color: AppColors.inkSoft, weight: FontWeight.w700)),
+                  ],
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _AchievementRow extends StatelessWidget {
+  final Achievement a;
+  const _AchievementRow({required this.a});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final lvl = a.displayLevel;
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
+      child: Row(
+        children: [
+          SizedBox(
+            width: 42,
+            height: 42,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                CircularProgressIndicator(value: a.progressToNext, strokeWidth: 3, color: accent, backgroundColor: AppColors.paperDeep, strokeCap: StrokeCap.round),
+                Icon(a.icon, size: 19, color: AppColors.ink),
+              ],
+            ),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(lvl.title, style: AppText.body(15, weight: FontWeight.w800)),
+                Text(lvl.description, maxLines: 2, overflow: TextOverflow.ellipsis, style: AppText.body(12.5, color: AppColors.inkSoft)),
+              ],
+            ),
+          ),
+          const SizedBox(width: 8),
+          Text('${a.currentProgress.clamp(0, lvl.target)}/${lvl.target}', style: AppText.mono(12, color: AppColors.inkSoft)),
+        ],
+      ),
+    );
+  }
+}
+
+class _NavTile extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final int badge;
+  final VoidCallback onTap;
+  const _NavTile({required this.icon, required this.title, required this.subtitle, required this.onTap, this.badge = 0});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return Pressable(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.lg), border: Border.all(color: AppColors.line)),
+        child: Row(
+          children: [
+            Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(color: accent.withValues(alpha: 0.15), borderRadius: BorderRadius.circular(14)),
+              child: Icon(icon, color: accent),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: AppText.body(15.5, weight: FontWeight.w800)),
+                  Text(subtitle, style: AppText.body(13, color: AppColors.inkSoft)),
+                ],
+              ),
+            ),
+            if (badge > 0)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(99)),
+                child: Text('$badge', style: AppText.body(12, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800)),
+              )
+            else
+              const Icon(Icons.chevron_right_rounded, color: AppColors.inkSoft),
+          ],
+        ),
       ),
     );
   }

@@ -1,9 +1,9 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/signup_screen.dart (Version Finale avec Marque Préférée)
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:spot_my_car/hover_text.dart';
 import 'dart:math';
 
 class SignupScreen extends StatefulWidget {
@@ -135,7 +135,7 @@ class _SignupScreenState extends State<SignupScreen> {
       // Catcher les autres erreurs potentielles
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text("Une erreur inattendue est survenue: $e"),
+            content: const Text("L'inscription n'a pas abouti. Réessaie."),
             backgroundColor: Colors.red));
       }
     } finally {
@@ -154,97 +154,69 @@ class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Stack(
-          children: [
-            SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                child: Form( // On enveloppe la Column dans un Form
-                  key: _formKey,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const SizedBox(height: 35),
-                      Image.asset('assets/logo.png', height: 135),
-                      const SizedBox(height: 10),
-                      const Text('Créer un compte',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black),
-                      ),
-                      const SizedBox(height: 8),
-                      const Text('Rejoins la communauté en quelques secondes !',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16, color: Colors.grey),
-                      ),
-                      const SizedBox(height: 40),
-
-                      TextFormField(
-                        controller: _emailController,
-                        enabled: !_isLoading,
-                        keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(labelText: 'Email', filled: true, fillColor: Colors.grey[100], border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none)),
-                        validator: (value) => value == null || value.isEmpty ? 'Veuillez entrer un email' : null,
-                      ),
-                      const SizedBox(height: 16),
-                      TextFormField(
-                        controller: _passwordController,
-                        enabled: !_isLoading,
-                        obscureText: _isPasswordObscured,
-                        decoration: InputDecoration(
-                          labelText: 'Mot de passe (6+ caractères)', filled: true, fillColor: Colors.grey[100],
-                          suffixIcon: IconButton(icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined), onPressed: () => setState(() { _isPasswordObscured = !_isPasswordObscured; })),
-                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
-                        ),
-                        validator: (value) => (value?.length ?? 0) < 6 ? 'Le mot de passe doit faire au moins 6 caractères' : null,
-                      ),
-                      const SizedBox(height: 16),
-                      TextFormField(
-                        controller: _confirmPasswordController,
-                        enabled: !_isLoading,
-                        obscureText: _isConfirmPasswordObscured,
-                        onFieldSubmitted: (_) => signUp(),
-                        decoration: InputDecoration(
-                          labelText: 'Confirmer le mot de passe', filled: true, fillColor: Colors.grey[100],
-                          suffixIcon: IconButton(icon: Icon(_isConfirmPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined), onPressed: () => setState(() { _isConfirmPasswordObscured = !_isConfirmPasswordObscured; })),
-                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
-                        ),
-                        validator: (value) => value != _passwordController.text ? 'Les mots de passe ne correspondent pas' : null,
-                      ),
-                      const SizedBox(height: 16),
-                      
-                      
-                      const SizedBox(height: 30),
-                      _isLoading
-                        ? const Center(child: CircularProgressIndicator())
-                        : ElevatedButton(
-                            onPressed: signUp,
-                            style: ElevatedButton.styleFrom(backgroundColor: Theme.of(context).primaryColor, padding: const EdgeInsets.symmetric(vertical: 16), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                            child: const Text("S'inscrire", style: TextStyle(fontSize: 18, color: Colors.white)),
-                          ),
-                      const SizedBox(height: 40),
-                      Center(
-                        child: HoverUnderlineText(
-                          text: "Déjà un compte ? Se connecter",
-                          onTap: () => Navigator.pop(context),
-                        ),
-                      ),
-                      const SizedBox(height: 40),
-                    ],
+      appBar: AppBar(),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(24, 0, 24, 24 + MediaQuery.paddingOf(context).bottom),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text('Créer ton compte', style: AppText.display(36)),
+              const SizedBox(height: 8),
+              Text('Ton garage virtuel t’attend. Trente secondes, promis.', style: AppText.body(15, color: AppColors.inkSoft)),
+              const SizedBox(height: 30),
+              TextFormField(
+                controller: _emailController,
+                enabled: !_isLoading,
+                keyboardType: TextInputType.emailAddress,
+                autofillHints: const [AutofillHints.email],
+                decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.alternate_email_rounded)),
+                validator: (value) => value == null || !value.contains('@') ? 'Entre une adresse e-mail valide' : null,
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _passwordController,
+                enabled: !_isLoading,
+                obscureText: _isPasswordObscured,
+                autofillHints: const [AutofillHints.newPassword],
+                decoration: InputDecoration(
+                  labelText: 'Mot de passe (8 caractères min.)',
+                  prefixIcon: const Icon(Icons.lock_outline_rounded),
+                  suffixIcon: IconButton(
+                    icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
+                    onPressed: () => setState(() => _isPasswordObscured = !_isPasswordObscured),
                   ),
                 ),
+                validator: (value) => (value?.length ?? 0) < 8 ? 'Au moins 8 caractères' : null,
               ),
-            ),
-            Positioned(
-              top: 10,
-              left: 10,
-              child: IconButton(
-                icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black54),
-                onPressed: () => Navigator.pop(context),
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _confirmPasswordController,
+                enabled: !_isLoading,
+                obscureText: _isConfirmPasswordObscured,
+                onFieldSubmitted: (_) => signUp(),
+                decoration: InputDecoration(
+                  labelText: 'Confirme le mot de passe',
+                  prefixIcon: const Icon(Icons.lock_outline_rounded),
+                  suffixIcon: IconButton(
+                    icon: Icon(_isConfirmPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
+                    onPressed: () => setState(() => _isConfirmPasswordObscured = !_isConfirmPasswordObscured),
+                  ),
+                ),
+                validator: (value) => value != _passwordController.text ? 'Les mots de passe ne correspondent pas' : null,
               ),
-            ),
-          ],
+              const SizedBox(height: 28),
+              ElevatedButton(
+                onPressed: _isLoading ? null : signUp,
+                child: _isLoading
+                    ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4))
+                    : const Text('Créer mon compte'),
+              ),
+              const SizedBox(height: 14),
+              TextButton(onPressed: () => Navigator.pop(context), child: const Text('J’ai déjà un compte')),
+            ],
+          ),
         ),
       ),
     );

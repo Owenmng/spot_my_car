@@ -3,23 +3,23 @@ import 'package:flutter/material.dart';
 enum Rarity { commune, peuCommune, rare, epique, legendaire }
 
 extension RarityInfo on Rarity {
-  String get label => const ['Commune', 'Peu commune', 'Rare', 'Épique', 'Légendaire'][index];
+  String get label => const ['Commune', 'Sportive', 'Rare', 'Exotique', 'Mythique'][index];
 
   Color get color => const [
-        Color(0xFF8A8F98),
-        Color(0xFF2E9E6A),
-        Color(0xFF2F6BFF),
-        Color(0xFF8A3FFC),
-        Color(0xFFE0A100),
+        Color(0xFF9DA3AD),
+        Color(0xFF3DDC97),
+        Color(0xFF4DA3FF),
+        Color(0xFFB47CFF),
+        Color(0xFFFFC94D),
       ][index];
 
   /// Dégradé utilisé sur le cadre des cartes de collection.
   List<Color> get frame => const [
-        [Color(0xFFB9BDC4), Color(0xFF7D828B)],
-        [Color(0xFF5CD69B), Color(0xFF1E7F52)],
-        [Color(0xFF6E9BFF), Color(0xFF1F4FD6)],
-        [Color(0xFFB98AFF), Color(0xFF6420D8)],
-        [Color(0xFFFFE07A), Color(0xFFE89A00), Color(0xFFFFD447)],
+        [Color(0xFF3A3D44), Color(0xFF6B7079), Color(0xFF2A2C31)],
+        [Color(0xFF1C5E45), Color(0xFF3DDC97), Color(0xFF14432F)],
+        [Color(0xFF173D73), Color(0xFF4DA3FF), Color(0xFF102B52)],
+        [Color(0xFF3F2273), Color(0xFFB47CFF), Color(0xFF2B1650)],
+        [Color(0xFF7A5200), Color(0xFFFFD86B), Color(0xFFB37A00), Color(0xFFFFE9A8)],
       ][index];
 
   int get xp => const [10, 25, 50, 100, 250][index];

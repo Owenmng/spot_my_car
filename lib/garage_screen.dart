@@ -174,7 +174,7 @@ class _GarageScreenState extends State<GarageScreen> {
                 )
               else
                 SliverPadding(
-                  padding: EdgeInsets.fromLTRB(16, 4, 16, 120 + MediaQuery.paddingOf(context).bottom),
+                  padding: EdgeInsets.fromLTRB(16, 4, 16, 24),
                   sliver: SliverGrid.builder(
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
@@ -366,7 +366,8 @@ class _Header extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: AppColors.ink,
+                  color: AppColors.panel,
+                  border: Border.all(color: AppColors.line),
                   borderRadius: BorderRadius.circular(AppRadius.xl),
                 ),
                 child: Column(
@@ -379,7 +380,7 @@ class _Header extends StatelessWidget {
                           height: 44,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(14)),
-                          child: Text('${level.level}', style: AppText.display(20, color: Colors.white)),
+                          child: Text('${level.level}', style: AppText.display(20, color: Theme.of(context).colorScheme.onPrimary)),
                         ),
                         const SizedBox(width: 12),
                         Expanded(
@@ -403,7 +404,7 @@ class _Header extends StatelessWidget {
                               decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(99)),
                               child: Row(
                                 children: [
-                                  const Text('🔥', style: TextStyle(fontSize: 15)),
+                                  const Icon(Icons.local_fire_department_rounded, size: 16, color: Color(0xFFFF8A3D)),
                                   const SizedBox(width: 4),
                                   Text('$streak j', style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
                                 ],

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/services/custom_cache_manager.dart';
 // Fichier: lib/community/friends_tab.dart
 
@@ -203,7 +204,7 @@ Widget _buildFriendListItem(String friendUid) {
           contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           leading: CircleAvatar(
             radius: 25,
-            backgroundColor: Colors.grey[200], // Arrière-plan si l'image charge
+            backgroundColor: AppColors.paperDeep, // Arrière-plan si l'image charge
             backgroundImage: (photoUrl != null && photoUrl.startsWith('http'))
                 ? NetworkImage(photoUrl, headers: kImageHeaders)
                 : (photoUrl != null && photoUrl.startsWith('assets/'))
@@ -214,7 +215,7 @@ Widget _buildFriendListItem(String friendUid) {
           subtitle: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(friendId, style: TextStyle(color: Colors.grey[600], fontSize: 12)),
+              Text(friendId, style: TextStyle(color: AppColors.inkSoft, fontSize: 12)),
               const SizedBox(height: 4),
               Text("Niveau ${friendLevel.level} · Spots: $totalSpots"),
               Text("Marque préférée : $favoriteBrand"),
@@ -294,7 +295,7 @@ Widget _buildFriendListItem(String friendUid) {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[50],
+      backgroundColor: AppColors.paperDeep,
       body: FutureBuilder<DocumentSnapshot>(
         // On va chercher une seule fois les infos de l'utilisateur actuel
         future: FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get(),
@@ -329,7 +330,7 @@ Widget _buildFriendListItem(String friendUid) {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                         decoration: BoxDecoration(
-                          color: Theme.of(context).primaryColor.withOpacity(0.1),
+                          color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -374,11 +375,11 @@ Widget _buildFriendListItem(String friendUid) {
       padding: const EdgeInsets.only(left: 4.0, bottom: 4.0),
       child: Row(
         children: [
-          Icon(icon, color: Colors.grey[700], size: 20),
+          Icon(icon, color: AppColors.inkSoft, size: 20),
           const SizedBox(width: 8),
           Text(
             title,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey[800]),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.inkSoft),
           ),
         ],
       ),
@@ -406,7 +407,7 @@ Widget _buildFriendListItem(String friendUid) {
                 elevation: 2, margin: EdgeInsets.zero, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 child: const Padding(
                   padding: EdgeInsets.all(24.0),
-                  child: Center(child: Text("Aucune nouvelle demande.", style: TextStyle(color: Colors.grey))),
+                  child: Center(child: Text("Aucune nouvelle demande.", style: TextStyle(color: AppColors.inkMuted))),
                 ),
               );
             }
@@ -520,7 +521,7 @@ Widget _buildFriendsListSection() {
                   child: Center(
                     child: Text(
                       "Ta liste d'amis est vide.",
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: TextStyle(color: AppColors.inkSoft),
                     ),
                   ),
                 ),

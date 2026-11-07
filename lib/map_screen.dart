@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/services/custom_cache_manager.dart';
 // Fichier: lib/map_screen.dart (Version Finale, TEMPS RÉEL avec StreamBuilder)
 
@@ -74,7 +75,7 @@ class _MapScreenState extends State<MapScreen>
             ? child
             : const Center(child: CircularProgressIndicator(strokeWidth: 2)),
         errorBuilder: (c, e, s) =>
-            const Icon(Icons.sync_problem, size: 40, color: Colors.grey),
+            const Icon(Icons.sync_problem, size: 40, color: AppColors.inkMuted),
       );
     }
     // Cas 2 : Image du modèle (inchangé)
@@ -86,7 +87,7 @@ class _MapScreenState extends State<MapScreen>
           return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         },
         errorBuilder: (c, e, s) =>
-            const Icon(Icons.image_not_supported, size: 40, color: Colors.grey),
+            const Icon(Icons.image_not_supported, size: 40, color: AppColors.inkMuted),
       );
     }
     // ==========================================================
@@ -107,15 +108,15 @@ class _MapScreenState extends State<MapScreen>
           return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         },
         errorBuilder: (c, e, s) =>
-            const Icon(Icons.directions_car, size: 50, color: Colors.grey),
+            const Icon(Icons.directions_car, size: 50, color: AppColors.inkMuted),
       );
     }
     // ==========================================================
     // Cas 4 : Icône par défaut
     else {
       return Container(
-        color: Colors.grey[200],
-        child: const Icon(Icons.directions_car, size: 50, color: Colors.grey),
+        color: AppColors.paperDeep,
+        child: const Icon(Icons.directions_car, size: 50, color: AppColors.inkMuted),
       );
     }
   }
@@ -184,13 +185,13 @@ class _MapScreenState extends State<MapScreen>
                         Row(
                           children: [
                             Icon(Icons.location_on_outlined,
-                                size: 14, color: Colors.grey[600]),
+                                size: 14, color: AppColors.inkSoft),
                             const SizedBox(width: 4),
                             Expanded(
                                 child: Text(location,
                                     style: TextStyle(
                                         fontSize: 12,
-                                        color: Colors.grey[700]),
+                                        color: AppColors.inkSoft),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis)),
                           ],
@@ -199,16 +200,16 @@ class _MapScreenState extends State<MapScreen>
                         Row(
                           children: [
                             Icon(Icons.calendar_today_outlined,
-                                size: 14, color: Colors.grey[600]),
+                                size: 14, color: AppColors.inkSoft),
                             const SizedBox(width: 4),
                             Text(date,
                                 style: TextStyle(
-                                    fontSize: 12, color: Colors.grey[700])),
+                                    fontSize: 12, color: AppColors.inkSoft)),
                           ],
                         ),
                       const Spacer(),
                       const Text("Appuyez pour voir les détails...",
-                          style: TextStyle(color: Colors.grey, fontSize: 10)),
+                          style: TextStyle(color: AppColors.inkMuted, fontSize: 10)),
                     ],
                   ),
                 ),
@@ -243,7 +244,7 @@ class _MapScreenState extends State<MapScreen>
             tooltip: "Se déconnecter",
             icon: Icon(
               Icons.logout,
-              color: _isSigningOut ? Colors.white.withOpacity(0.5) : Colors.white,
+              color: _isSigningOut ? Colors.white.withValues(alpha: 0.5) : Colors.white,
             ),
       onPressed: _isSigningOut
           ? null
@@ -352,7 +353,8 @@ class _MapScreenState extends State<MapScreen>
               children: [
                 TileLayer(
                   urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                  userAgentPackageName: 'com.example.spot_my_car',
+                  userAgentPackageName: 'com.owenmengual.spotmycar',
+                  tileBuilder: darkModeTileBuilder,
                 ),
                 MarkerClusterLayerWidget(
                   options: MarkerClusterLayerOptions(
@@ -391,7 +393,7 @@ class _MapScreenState extends State<MapScreen>
                 FloatingActionButton(
                   heroTag: "zoom_in_button",
                   mini: true,
-                  backgroundColor: Colors.white,
+                  backgroundColor: AppColors.card,
                   foregroundColor: Theme.of(context).primaryColor,
                   onPressed: () {
                     AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
@@ -405,7 +407,7 @@ class _MapScreenState extends State<MapScreen>
                 FloatingActionButton(
                   heroTag: "zoom_out_button",
                   mini: true,
-                  backgroundColor: Colors.white,
+                  backgroundColor: AppColors.card,
                   foregroundColor: Theme.of(context).primaryColor,
                   onPressed: () {
                     AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
@@ -449,7 +451,7 @@ class _MapScreenState extends State<MapScreen>
                 heroTag: "recenter_button",
                 // On le met en "mini" aussi pour que ce soit cohérent visuellement
                 mini: true, 
-                backgroundColor: Colors.white,
+                backgroundColor: AppColors.card,
                 foregroundColor: Theme.of(context).primaryColor,
                 onPressed: () {
                   AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ

@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     return Scaffold(
-      extendBody: true,
+      extendBody: false,
       body: IndexedStack(
         index: _index,
         children: [
@@ -105,10 +105,13 @@ class _NavBar extends StatelessWidget {
                   child: Icon(selected ? active : icon, key: ValueKey(selected), color: selected ? Colors.white : Colors.white54, size: 24),
                 ),
                 const SizedBox(height: 4),
-                AnimatedDefaultTextStyle(
-                  duration: const Duration(milliseconds: 180),
-                  style: AppText.body(11, color: selected ? Colors.white : Colors.white54, weight: selected ? FontWeight.w800 : FontWeight.w600),
-                  child: Text(label),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: AnimatedDefaultTextStyle(
+                    duration: const Duration(milliseconds: 180),
+                    style: AppText.body(11, color: selected ? Colors.white : Colors.white54, weight: selected ? FontWeight.w800 : FontWeight.w600),
+                    child: Text(label, maxLines: 1),
+                  ),
                 ),
               ],
             ),
@@ -117,13 +120,15 @@ class _NavBar extends StatelessWidget {
       );
     }
 
-    return Padding(
-      padding: EdgeInsets.fromLTRB(14, 0, 14, bottom + 10),
+    return Container(
+      color: AppColors.paper,
+      padding: EdgeInsets.fromLTRB(12, 6, 12, bottom + 8),
       child: Container(
         height: 68,
         padding: const EdgeInsets.symmetric(horizontal: 6),
         decoration: BoxDecoration(
-          color: AppColors.ink,
+          color: AppColors.panel,
+          border: Border.all(color: AppColors.line),
           borderRadius: BorderRadius.circular(26),
           boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.25), blurRadius: 24, offset: const Offset(0, 10))],
         ),
@@ -144,7 +149,7 @@ class _NavBar extends StatelessWidget {
                     borderRadius: BorderRadius.circular(18),
                     boxShadow: [BoxShadow(color: accent.withValues(alpha: 0.5), blurRadius: 14, offset: const Offset(0, 4))],
                   ),
-                  child: const Icon(Icons.photo_camera_rounded, color: Colors.white, size: 26),
+                  child: Icon(Icons.photo_camera_rounded, color: Theme.of(context).colorScheme.onPrimary, size: 26),
                 ),
               ),
             ),

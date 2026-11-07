@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/contact_support_screen.dart
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/shared/app_constants.dart';
@@ -88,7 +89,7 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
             children: [
               const Text(
                 'Nous sommes là pour vous aider. Décrivez votre problème ou votre question ci-dessous.',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+                style: TextStyle(fontSize: 16, color: AppColors.inkMuted),
               ),
               const SizedBox(height: 24),
               TextFormField(

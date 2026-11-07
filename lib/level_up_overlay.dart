@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/level_up_overlay.dart
 import 'package:flutter/material.dart';
 import 'dart:ui';
@@ -76,7 +77,7 @@ Widget build(BuildContext context) {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
         child: Container(
-          color: Colors.black.withOpacity(0.6),
+          color: Colors.black.withValues(alpha: 0.6),
           child: Center(
             child: AnimatedBuilder( // On anime l'apparition du panneau entier
               animation: _controller,
@@ -86,11 +87,12 @@ Widget build(BuildContext context) {
                 // ==========================================================
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: AppColors.panel,
+                  border: Border.all(color: AppColors.line),
                   borderRadius: BorderRadius.circular(24),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 20,
                       spreadRadius: 5,
                     )
@@ -121,17 +123,17 @@ Widget build(BuildContext context) {
                               CircularProgressIndicator(
                                 value: _progressAnimation.value,
                                 strokeWidth: 12,
-                                backgroundColor: Colors.grey[200],
+                                backgroundColor: AppColors.paperDeep,
                                 valueColor: AlwaysStoppedAnimation<Color>(Colors.amber[600]!),
                               ),
                               Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("NIVEAU", style: TextStyle(fontSize: 16, color: Colors.grey[600])),
+                                    Text("NIVEAU", style: TextStyle(fontSize: 16, color: AppColors.inkSoft)),
                                     Text(
                                       _levelNumberAnimation.value.toString(),
-                                      style: const TextStyle(fontSize: 64, fontWeight: FontWeight.bold, color: Colors.black87),
+                                      style: const TextStyle(fontSize: 64, fontWeight: FontWeight.bold, color: AppColors.ink),
                                     ),
                                     Text(
                                       widget.newLevel.title,
@@ -151,7 +153,7 @@ Widget build(BuildContext context) {
                       builder: (context, child) {
                         return Text(
                           "${_xpNumberAnimation.value.toInt()} XP",
-                          style: TextStyle(fontSize: 18, color: Colors.grey[700], fontWeight: FontWeight.w300),
+                          style: TextStyle(fontSize: 18, color: AppColors.inkSoft, fontWeight: FontWeight.w300),
                         );
                       },
                     ),

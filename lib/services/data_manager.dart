@@ -23,6 +23,13 @@ class DataManager with ChangeNotifier {
 
   final Map<String, Map<String, dynamic>> _modelById = {};
 
+  /// Modèles affichés dans les listes : uniquement ceux qui ont une photo vérifiée.
+  List<Map<String, dynamic>> visibleModels(String brandId) => (_modelsByBrand[brandId] ?? const [])
+      .whereType<Map>()
+      .where((m) => (m['imageUrl'] as String?)?.isNotEmpty ?? false)
+      .map((m) => Map<String, dynamic>.from(m))
+      .toList();
+
   /// Fiche catalogue d'un modèle par son identifiant (photo et specs à jour).
   Map<String, dynamic>? modelById(String? id) => id == null ? null : _modelById[id];
 

@@ -12,7 +12,7 @@ class LoadingAnimationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final accent = Theme.of(context).colorScheme.primary;
     return Scaffold(
-      backgroundColor: AppColors.ink,
+      backgroundColor: AppColors.paper,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,

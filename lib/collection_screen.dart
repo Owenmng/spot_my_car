@@ -41,9 +41,9 @@ class _CollectionScreenState extends State<CollectionScreen> with AutomaticKeepA
             if (b != null && m != null) spotted.putIfAbsent(b, () => {}).add(m);
           }
 
-          final brands = data.brands.whereType<Map>().map((b) => Map<String, dynamic>.from(b)).toList();
-          int total(Map b) => data.modelsByBrand[b['id']]?.length ?? 0;
-          int got(Map b) => spotted[b['id']]?.length ?? 0;
+          final brands = data.brands.whereType<Map>().map((b) => Map<String, dynamic>.from(b)).where((b) => data.visibleModels(b['id'] as String).isNotEmpty).toList();
+          int total(Map b) => data.visibleModels(b['id'] as String).length;
+          int got(Map b) => (spotted[b['id']]?.length ?? 0).clamp(0, total(b));
           double pct(Map b) => total(b) == 0 ? 0 : got(b) / total(b);
 
           brands.sort((a, b) {
@@ -101,7 +101,7 @@ class _CollectionScreenState extends State<CollectionScreen> with AutomaticKeepA
                 ),
               ),
               SliverPadding(
-                padding: EdgeInsets.fromLTRB(16, 10, 16, 120 + MediaQuery.paddingOf(context).bottom),
+                padding: EdgeInsets.fromLTRB(16, 10, 16, 24),
                 sliver: SliverGrid.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
@@ -147,9 +147,9 @@ class _BrandTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 12, 8, 10),
       decoration: BoxDecoration(
-        color: done ? AppColors.ink : AppColors.card,
+        color: done ? AppColors.panelHi : AppColors.card,
         borderRadius: BorderRadius.circular(AppRadius.lg),
-        border: Border.all(color: done ? AppColors.ink : AppColors.line),
+        border: Border.all(color: done ? const Color(0xFFFFD447) : AppColors.line),
       ),
       child: Column(
         children: [
@@ -192,7 +192,7 @@ class _BrandTile extends StatelessWidget {
             style: AppText.body(13, weight: FontWeight.w800, color: done ? Colors.white : AppColors.ink),
           ),
           Text(
-            done ? 'Complète ★' : '$got / $total',
+            done ? 'COMPLÈTE' : '$got / $total',
             style: AppText.body(11.5, weight: FontWeight.w600, color: done ? const Color(0xFFFFD447) : AppColors.inkSoft),
           ),
         ],

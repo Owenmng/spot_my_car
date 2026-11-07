@@ -88,7 +88,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                 expandedHeight: 340,
                 pinned: true,
                 stretch: true,
-                backgroundColor: AppColors.ink,
+                backgroundColor: AppColors.paper,
                 foregroundColor: Colors.white,
                 leading: Padding(
                   padding: const EdgeInsets.all(8),
@@ -141,7 +141,6 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                             onSelectionChanged: (s) => setState(() => _showOfficial = s.first),
                           ),
                         ),
-                      Positioned(left: 20, bottom: 18, child: RarityBadge(rarity: rarity, onDark: true)),
                     ],
                   ),
                 ),
@@ -152,7 +151,12 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(brand.toUpperCase(), style: AppText.label(12, color: AppColors.inkMuted)),
+                      Row(
+                        children: [
+                          Expanded(child: Text(brand.toUpperCase(), style: AppText.label(12, color: AppColors.inkMuted))),
+                          RarityBadge(rarity: rarity, compact: true),
+                        ],
+                      ),
                       const SizedBox(height: 4),
                       Text(model, style: AppText.display(32)),
                       if (car['production_years'] != null) ...[

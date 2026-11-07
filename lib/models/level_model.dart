@@ -7,16 +7,16 @@ class Level {
 }
 
 const List<Level> kLevels = [
-  Level(1, 'Novice du Spotting', 0),
-  Level(2, 'Débutant', 100),
-  Level(3, 'Amateur', 250),
+  Level(1, 'Rookie', 0),
+  Level(2, 'Spotter', 100),
+  Level(3, 'Amateur éclairé', 250),
   Level(4, 'Passionné', 500),
   Level(5, 'Connaisseur', 1000),
   Level(6, 'Expert', 2000),
-  Level(7, "Chasseur d'Élite", 4000),
-  Level(8, 'Maître Spotter', 7500),
-  Level(9, 'Légende de la Route', 12000),
-  Level(10, 'Dieu du Spotting', 20000),
+  Level(7, 'Chasseur', 4000),
+  Level(8, 'Pro du trottoir', 7500),
+  Level(9, 'Légende', 12000),
+  Level(10, 'Icône', 20000),
 ];
 
 Level levelForXp(int xp) {

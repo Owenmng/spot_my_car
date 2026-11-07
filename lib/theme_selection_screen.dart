@@ -103,7 +103,8 @@ class _Preview extends StatelessWidget {
       duration: const Duration(milliseconds: 300),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: AppColors.ink,
+        color: AppColors.panel,
+        border: Border.all(color: AppColors.line),
         borderRadius: BorderRadius.circular(AppRadius.xl),
       ),
       child: Row(

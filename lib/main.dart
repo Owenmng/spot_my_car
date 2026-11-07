@@ -104,7 +104,7 @@ class _OfflineBanner extends StatelessWidget {
       child: IgnorePointer(
         child: Center(
           child: Material(
-            color: AppColors.ink,
+            color: AppColors.panelHi,
             borderRadius: BorderRadius.circular(99),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),

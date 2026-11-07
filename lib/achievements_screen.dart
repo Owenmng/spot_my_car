@@ -1,189 +1,182 @@
-// Fichier: lib/achievements_screen.dart (Version Finale Corrigée)
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'dart:convert';
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:provider/provider.dart';
 import 'package:spot_my_car/services/achievement_service.dart';
-import 'package:spot_my_car/services/audio_service.dart';
-
+import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 
 class AchievementsScreen extends StatelessWidget {
   const AchievementsScreen({super.key});
 
-  // ==========================================================
-  // === 1. ON AJOUTE BuildContext context EN PARAMÈTRE ========
-  // ==========================================================
-  Widget _buildAchievementTile(BuildContext context, Achievement achievement) {
-    final AchievementLevel levelToShow = achievement.displayLevel;
-    final bool isFullyCompleted = achievement.isFullyCompleted;
+  @override
+  Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser!;
+    final data = context.watch<DataManager>();
 
-    return Card(
-      elevation: 4,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      clipBehavior: Clip.antiAlias,
-      child: Container(
-        padding: const EdgeInsets.all(16.0),
-        decoration: BoxDecoration(
-          border: Border(
-            left: BorderSide(
-              color: isFullyCompleted ? Colors.green.shade700 : Colors.amber.shade700,
-              width: 5,
+    return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+      stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: user.uid).snapshots(),
+      builder: (context, snap) {
+        final cars = (snap.data?.docs ?? []).map((d) => d.data()).toList();
+        final all = AchievementService(allBrands: data.brands, spottedCars: cars).checkAchievements();
+        final done = all.fold<int>(0, (s, a) => s + a.unlockedLevel);
+        final total = all.fold<int>(0, (s, a) => s + a.levels.length);
+        final xp = all.fold<int>(0, (s, a) => s + a.levels.take(a.unlockedLevel).fold<int>(0, (x, l) => x + l.xpReward));
+
+        return DefaultTabController(
+          length: AchievementService.categories.length,
+          child: Scaffold(
+            appBar: AppBar(
+              title: const Text('Succès'),
+              bottom: TabBar(
+                isScrollable: true,
+                tabAlignment: TabAlignment.start,
+                tabs: [for (final c in AchievementService.categories) Tab(text: c)],
+              ),
             ),
-          ),
-          color: Colors.white,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            body: Column(
               children: [
-                // 'context' est maintenant connu ici, donc plus d'erreur !
-                Icon(achievement.icon, size: 32, color: Theme.of(context).primaryColor),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                Container(
+                  margin: const EdgeInsets.fromLTRB(16, 14, 16, 4),
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.panel,
+                    borderRadius: BorderRadius.circular(AppRadius.lg),
+                    border: Border.all(color: AppColors.line),
+                  ),
+                  child: Row(
                     children: [
-                      Text(
-                        levelToShow.title,
-                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                      ),
-                       if (!isFullyCompleted)
-                        Padding(
-                          padding: const EdgeInsets.only(top: 4.0),
-                          child: Chip(
-                            avatar: Icon(Icons.star, color: Colors.amber.shade800, size: 16),
-                            label: Text('+${levelToShow.xpReward} XP', style: const TextStyle(fontWeight: FontWeight.bold)),
-                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                            backgroundColor: Colors.amber.withOpacity(0.2),
-                            shape: StadiumBorder(side: BorderSide(color: Colors.amber.withOpacity(0.5))),
-                          ),
+                      Expanded(child: _Big(value: '$done / $total', label: 'paliers débloqués')),
+                      Expanded(child: _Big(value: '$xp', label: 'XP gagnés en succès')),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: TabBarView(
+                    children: [
+                      for (final cat in AchievementService.categories)
+                        ListView(
+                          padding: EdgeInsets.fromLTRB(16, 12, 16, 24 + MediaQuery.paddingOf(context).bottom),
+                          children: [
+                            for (final a in all.where((a) => a.category == cat)) _AchievementCard(a: a),
+                          ].animate(interval: 40.ms).fadeIn(duration: 250.ms).slideY(begin: 0.05, end: 0),
                         ),
                     ],
                   ),
                 ),
-                const SizedBox(width: 12),
-                _buildStarRating(achievement.unlockedLevel, achievement.levels.length),
               ],
             ),
-            const SizedBox(height: 8),
-            Text(
-              levelToShow.description,
-              style: TextStyle(color: Colors.grey.shade700, fontSize: 14),
-            ),
-            const SizedBox(height: 12),
-            if (!isFullyCompleted)
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  '${achievement.currentProgress} / ${levelToShow.target}',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.grey.shade800,
-                  ),
-                ),
-              )
-            else
-              Align(
-                alignment: Alignment.centerRight,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.check_circle, color: Colors.green.shade700, size: 16),
-                    const SizedBox(width: 4),
-                    Text(
-                      "Défi terminé !",
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green.shade700, fontSize: 14),
-                    ),
-                  ],
-                ),
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildStarRating(int unlockedLevel, int maxLevel) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: List.generate(maxLevel, (index) {
-        return Icon(
-          index < unlockedLevel ? Icons.star : Icons.star_border,
-          color: Colors.amber.shade800,
-          size: 20,
+          ),
         );
-      }),
+      },
     );
   }
+}
+
+class _Big extends StatelessWidget {
+  final String value;
+  final String label;
+  const _Big({required this.value, required this.label});
+
+  @override
+  Widget build(BuildContext context) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(value, style: AppText.display(26)),
+          Text(label, style: AppText.body(12, color: AppColors.inkSoft)),
+        ],
+      );
+}
+
+class _AchievementCard extends StatelessWidget {
+  final Achievement a;
+  const _AchievementCard({required this.a});
 
   @override
   Widget build(BuildContext context) {
-    final currentUser = FirebaseAuth.instance.currentUser!;
+    final accent = Theme.of(context).colorScheme.primary;
+    final done = a.isFullyCompleted;
+    final current = a.displayLevel;
+    const gold = Color(0xFFFFC94D);
 
-    return Scaffold(
-      appBar: AppBar(
-        // On ajoute le bouton de retour manuellement pour y mettre un son
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-            Navigator.of(context).pop();
-          },
-        ),
-        title: const Text('Mes Succès'),
-        // On utilise le thème pour l'AppBar, c'est plus propre
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: done ? gold.withValues(alpha: 0.6) : AppColors.line),
       ),
-      body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: currentUser.uid).snapshots(),
-        builder: (context, carSnapshot) {
-          if (carSnapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          if (carSnapshot.hasError) {
-            return Center(child: Text('Erreur: ${carSnapshot.error}'));
-          }
-          final spottedCars = (carSnapshot.data?.docs ?? []).map((doc) => doc.data() as Map<String, dynamic>).toList();
-
-          return FutureBuilder<List<dynamic>>(
-            future: _loadAllBrands(),
-            builder: (context, brandsSnapshot) {
-              if (!brandsSnapshot.hasData) {
-                return const Center(child: CircularProgressIndicator());
-              }
-              
-              final achievementService = AchievementService(allBrands: brandsSnapshot.data!, spottedCars: spottedCars);
-              final achievements = achievementService.checkAchievements();
-
-              if (achievements.isEmpty) {
-                 return const Center(child: Text("Aucun succès à afficher."));
-              }
-
-              return ListView.builder(
-                padding: const EdgeInsets.all(16),
-                itemCount: achievements.length,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 12.0),
-                    // ==========================================================
-                    // === 2. ON PASSE LE context LORS DE L'APPEL ==============
-                    // ==========================================================
-                    child: _buildAchievementTile(context, achievements[index]),
-                  );
-                },
-              );
-            },
-          );
-        },
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 46,
+                height: 46,
+                decoration: BoxDecoration(
+                  color: (done ? gold : a.unlockedLevel > 0 ? accent : AppColors.inkMuted).withValues(alpha: 0.15),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: Icon(a.icon, color: done ? gold : a.unlockedLevel > 0 ? accent : AppColors.inkSoft),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(done ? a.levels.last.title : current.title, style: AppText.body(16, weight: FontWeight.w800)),
+                    const SizedBox(height: 2),
+                    Text(done ? 'Tous les paliers sont débloqués' : current.description, style: AppText.body(13, color: AppColors.inkSoft)),
+                  ],
+                ),
+              ),
+              if (!done) Text('+${current.xpReward} XP', style: AppText.mono(12, color: accent)),
+            ],
+          ),
+          const SizedBox(height: 14),
+          Row(
+            children: [
+              for (var i = 0; i < a.levels.length; i++) ...[
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width: 22,
+                        height: 22,
+                        child: i < a.unlockedLevel
+                            ? Icon(Icons.check_circle_rounded, size: 22, color: done ? gold : accent)
+                            : CircularProgressIndicator(
+                                value: i == a.unlockedLevel ? a.progressToNext : 0,
+                                strokeWidth: 3,
+                                strokeCap: StrokeCap.round,
+                                color: accent,
+                                backgroundColor: AppColors.paperDeep,
+                              ),
+                      ),
+                      const SizedBox(height: 5),
+                      Text(
+                        a.levels[i].title,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppText.body(10.5, color: i < a.unlockedLevel ? AppColors.ink : AppColors.inkMuted, weight: FontWeight.w700),
+                      ),
+                    ],
+                  ),
+                ),
+                if (i < a.levels.length - 1) const SizedBox(width: 6),
+              ],
+            ],
+          ),
+          if (!done) ...[
+            const SizedBox(height: 8),
+            Text('${a.currentProgress.clamp(0, current.target)} / ${current.target}', style: AppText.mono(11.5, color: AppColors.inkSoft)),
+          ],
+        ],
       ),
     );
-  }
-
-  Future<List<dynamic>> _loadAllBrands() async {
-    final String response = await rootBundle.loadString('assets/data/brands.json');
-    return (json.decode(response))['brands'];
   }
 }

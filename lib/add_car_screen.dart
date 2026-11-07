@@ -281,12 +281,13 @@ class _AddCarScreenState extends State<AddCarScreen> {
         title: Text(_manual ? 'Ajout manuel' : 'Nouveau spot'),
         actions: [
           if (_draft.photo != null || _manual)
-            TextButton(
+            IconButton(
+              tooltip: _manual ? 'Reconnaissance automatique' : 'Saisir à la main',
               onPressed: () => setState(() {
                 _manual = !_manual;
                 if (!_manual && _draft.photo != null && _result == null && !_analyzing) _analyze(_draft.photo!);
               }),
-              child: Text(_manual ? 'Mode auto' : 'Saisir à la main'),
+              icon: Icon(_manual ? Icons.auto_awesome_rounded : Icons.edit_note_rounded),
             ),
         ],
       ),
@@ -569,16 +570,17 @@ class _PhotoStage extends StatelessWidget {
       return Container(
         padding: const EdgeInsets.fromLTRB(22, 26, 22, 22),
         decoration: BoxDecoration(
-          color: AppColors.ink,
+          color: AppColors.panel,
+          border: Border.all(color: AppColors.line),
           borderRadius: BorderRadius.circular(AppRadius.xl),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Une voiture te fait de l’œil ?', style: AppText.display(26, color: Colors.white)),
+            Text('NOUVEAU SPOT', style: AppText.display(30, color: Colors.white)),
             const SizedBox(height: 8),
             Text(
-              'Prends-la en photo : je reconnais la marque, le modèle, la génération et même la plaque.',
+              'Photographie la voiture : marque, modèle, génération, couleur et plaque sont reconnus automatiquement.',
               style: AppText.body(15, color: Colors.white70),
             ),
             const SizedBox(height: 24),
@@ -594,9 +596,9 @@ class _PhotoStage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Icon(Icons.photo_camera_rounded, color: Colors.white),
+                          Icon(Icons.photo_camera_rounded, color: Theme.of(context).colorScheme.onPrimary),
                           const SizedBox(width: 10),
-                          Text('Prendre une photo', style: AppText.body(16, color: Colors.white, weight: FontWeight.w800)),
+                          Flexible(child: Text('Prendre une photo', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(16, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800))),
                         ],
                       ),
                     ),
@@ -1156,7 +1158,7 @@ class _SaveBar extends StatelessWidget {
       child: ElevatedButton(
         onPressed: saving ? null : onSave,
         child: saving
-            ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.6, color: Colors.white))
+            ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.6, color: Theme.of(context).colorScheme.onPrimary))
             : Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -1165,8 +1167,8 @@ class _SaveBar extends StatelessWidget {
                     const SizedBox(width: 10),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                      decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.22), borderRadius: BorderRadius.circular(99)),
-                      child: Text('+$xp XP', style: AppText.body(13, color: Colors.white, weight: FontWeight.w800)),
+                      decoration: BoxDecoration(color: Theme.of(context).colorScheme.onPrimary.withValues(alpha: 0.18), borderRadius: BorderRadius.circular(99)),
+                      child: Text('+$xp XP', style: AppText.body(13, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800)),
                     ),
                   ],
                 ],

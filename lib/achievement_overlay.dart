@@ -1,3 +1,4 @@
+import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/achievement_overlay.dart
 import 'package:flutter/material.dart';
 import 'dart:ui';
@@ -76,7 +77,7 @@ class _AchievementOverlayState extends State<AchievementOverlay> with TickerProv
             BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
               child: Container(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withValues(alpha: 0.5),
               ),
             ),
             
@@ -91,9 +92,10 @@ class _AchievementOverlayState extends State<AchievementOverlay> with TickerProv
                     constraints: const BoxConstraints(maxWidth: 400),
                     padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 32.0),
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: AppColors.panel,
+                      border: Border.all(color: AppColors.line),
                       borderRadius: BorderRadius.circular(24),
-                      boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.25), blurRadius: 30, spreadRadius: 5)],
+                      boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.25), blurRadius: 30, spreadRadius: 5)],
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -109,7 +111,7 @@ class _AchievementOverlayState extends State<AchievementOverlay> with TickerProv
                         Text(
                           widget.achievement.description,
                           textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 16, color: Colors.grey[700]),
+                          style: TextStyle(fontSize: 16, color: AppColors.inkSoft),
                         ),
                         const SizedBox(height: 24),
 
@@ -122,7 +124,7 @@ class _AchievementOverlayState extends State<AchievementOverlay> with TickerProv
                               scale: _starAnimations[index],
                               child: Icon(
                                 isUnlocked ? Icons.star : Icons.star_border,
-                                color: isUnlocked ? Colors.amber[600] : Colors.grey[300],
+                                color: isUnlocked ? Colors.amber[600] : AppColors.line,
                                 size: 40,
                               ),
                             );
