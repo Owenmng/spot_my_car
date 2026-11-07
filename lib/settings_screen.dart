@@ -108,8 +108,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           },
         ),
         title: const Text('Paramètres'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         actions: [
           // ==========================================================
           // === LE BOUTON DE DÉCONNEXION FINAL ET CORRIGÉ EST ICI ===

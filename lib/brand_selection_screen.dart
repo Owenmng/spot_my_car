@@ -68,8 +68,6 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
           },
         ),
         title: const Text('Choisir une marque'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [

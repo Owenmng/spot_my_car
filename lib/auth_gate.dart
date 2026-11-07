@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:spot_my_car/login_screen.dart';
 import 'package:spot_my_car/profile_setup_screen.dart';
 import 'package:spot_my_car/home_screen.dart';
+import 'package:spot_my_car/widgets/loading_animation_widget.dart';
 
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
@@ -27,15 +28,12 @@ class AuthGate extends StatelessWidget {
             
             // Pendant qu'on attend la première donnée du stream -> OK, on ne touche pas
             if (userDocSnapshot.connectionState == ConnectionState.waiting) {
-              return const Scaffold(
-                backgroundColor: Colors.white,
-                body: Center(child: CircularProgressIndicator()),
-              );
+              return const LoadingAnimationWidget(loadingMessage: 'Connexion…');
             }
 
             // Si on a une erreur -> OK, on ne touche pas
             if (userDocSnapshot.hasError) {
-              return const Scaffold(body: Center(child: Text("Erreur de connexion.")));
+              return const LoadingAnimationWidget(loadingMessage: 'Reconnexion en cours…');
             }
 
             // Si le document n'existe pas ou si le profil n'est pas complet -> OK, on ne touche pas

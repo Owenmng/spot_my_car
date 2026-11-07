@@ -1,6 +1,7 @@
 // Fichier: lib/community_screen.dart (Version Finale et Fiable pour le Son)
 
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/community/friends_tab.dart';
 import 'package:spot_my_car/community/leaderboard_tab.dart';
@@ -52,15 +53,13 @@ class _CommunityScreenState extends State<CommunityScreen> with TickerProviderSt
           },
         ),
         title: const Text('Ma Communauté'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         bottom: TabBar(
           // On passe notre controller
           controller: _tabController,
           // onTAP n'est plus nécessaire ici, le listener s'occupe de tout
-          labelColor: Colors.white,
-          unselectedLabelColor: Colors.white70,
-          indicatorColor: Colors.white,
+          labelColor: AppColors.ink,
+          unselectedLabelColor: AppColors.inkMuted,
+          indicatorColor: Theme.of(context).colorScheme.primary,
           indicatorWeight: 3.0,
           labelStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           unselectedLabelStyle: const TextStyle(fontSize: 16),

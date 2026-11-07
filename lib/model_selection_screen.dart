@@ -61,8 +61,6 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
           },
         ),
         title: Text('Choisir un modèle ${widget.brandName}'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [

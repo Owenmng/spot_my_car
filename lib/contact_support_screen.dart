@@ -71,8 +71,6 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Contacter le support'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         actions: [
           IconButton(
             icon: const Icon(Icons.send_outlined),

@@ -5,7 +5,8 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:spot_my_car/forgot_password_screen.dart';
-import 'package:spot_my_car/hover_text.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -178,10 +179,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
       }
     } catch (e) {
-      print('Erreur complète Google Sign-In: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text("Une erreur est survenue lors de la connexion Google: ${e.toString()}"),
+            content: const Text("La connexion avec Google n'a pas abouti. Réessaie."),
             backgroundColor: Colors.red));
       }
     } finally {
@@ -200,100 +200,106 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  // Widget Build pour l'interface (inchangé)
   @override
   Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final top = MediaQuery.paddingOf(context).top;
+
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                const SizedBox(height: 35),
-                Image.asset('assets/logo.png', height: 135),
-                const SizedBox(height: 10),
-                const Text('Se Connecter', textAlign: TextAlign.center, style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black)),
-                const SizedBox(height: 8),
-                const Text('Retrouve ta collection de voitures', textAlign: TextAlign.center, style: TextStyle(fontSize: 16, color: Colors.grey)),
-                const SizedBox(height: 40),
-                OutlinedButton.icon(
-                  onPressed: _isLoading ? null : signInWithGoogle,
-                  icon: Image.asset('assets/google_logo.png', height: 18),
-                  label: const Text('Continuer avec Google', style: TextStyle(color: Colors.black87)),
-                  style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      side: BorderSide(color: Colors.grey.shade300)),
-                ),
-                const SizedBox(height: 24),
-                const Row(children: [
-                  Expanded(child: Divider(color: Colors.grey)),
-                  Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Text('OU', style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w600))),
-                  Expanded(child: Divider(color: Colors.grey))
-                ]),
-                const SizedBox(height: 24),
-                TextField(
-                  controller: _emailController,
-                  enabled: !_isLoading,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                      labelText: 'Email',
-                      filled: true,
-                      fillColor: Colors.grey[100],
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none)),
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _passwordController,
-                  enabled: !_isLoading,
-                  obscureText: _isPasswordObscured,
-                  onSubmitted: (_) => signInWithEmail(),
-                  decoration: InputDecoration(
-                    labelText: 'Mot de passe',
-                    filled: true,
-                    fillColor: Colors.grey[100],
-                    suffixIcon: IconButton(
-                      icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
-                      onPressed: () => setState(() {
-                        _isPasswordObscured = !_isPasswordObscured;
-                      }),
-                    ),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Align(
-                    alignment: Alignment.centerRight,
-                    child: HoverUnderlineText(
-                        text: 'Mot de passe oublié ?',
-                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen())))),
-                const SizedBox(height: 30),
-                _isLoading
-                    ? const Center(child: CircularProgressIndicator())
-                    : ElevatedButton(
-                        onPressed: signInWithEmail,
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Theme.of(context).primaryColor,
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                        child: const Text('Connexion', style: TextStyle(fontSize: 18, color: Colors.white)),
-                      ),
-                const SizedBox(height: 40),
-                Center(
-                  child: HoverUnderlineText(
-                    text: "Pas encore de compte ? S'inscrire",
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen())),
-                  ),
-                ),
-                const SizedBox(height: 40),
-              ],
+      backgroundColor: AppColors.ink,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(28, top + 36, 28, 30),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(22),
+                    child: Image.asset('assets/logo.png', height: 72, width: 72, fit: BoxFit.cover),
+                  ).animate().fadeIn(duration: 400.ms).scale(begin: const Offset(0.8, 0.8), curve: Curves.easeOutBack),
+                  const SizedBox(height: 28),
+                  Text('Chaque voiture\ncroisée devient\nune carte.', style: AppText.display(38, color: Colors.white))
+                      .animate().fadeIn(delay: 120.ms, duration: 450.ms).slideY(begin: 0.15, end: 0),
+                  const SizedBox(height: 14),
+                  Text('Photographie, l’IA reconnaît, ta collection grandit.', style: AppText.body(16, color: Colors.white60))
+                      .animate().fadeIn(delay: 260.ms),
+                ],
+              ),
             ),
-          ),
+            Container(
+              padding: EdgeInsets.fromLTRB(24, 28, 24, 28 + MediaQuery.paddingOf(context).bottom),
+              decoration: const BoxDecoration(
+                color: AppColors.paper,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.xl + 4)),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  OutlinedButton.icon(
+                    onPressed: _isLoading ? null : signInWithGoogle,
+                    icon: Image.asset('assets/google_logo.png', height: 20),
+                    label: const Text('Continuer avec Google'),
+                    style: OutlinedButton.styleFrom(backgroundColor: AppColors.card, minimumSize: const Size(64, 56)),
+                  ),
+                  const SizedBox(height: 22),
+                  Text('ou avec ton e-mail', textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkMuted, weight: FontWeight.w600)),
+                  const SizedBox(height: 16),
+                  TextField(
+                    controller: _emailController,
+                    enabled: !_isLoading,
+                    keyboardType: TextInputType.emailAddress,
+                    autofillHints: const [AutofillHints.email],
+                    decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.alternate_email_rounded)),
+                  ),
+                  const SizedBox(height: 12),
+                  TextField(
+                    controller: _passwordController,
+                    enabled: !_isLoading,
+                    obscureText: _isPasswordObscured,
+                    autofillHints: const [AutofillHints.password],
+                    onSubmitted: (_) => signInWithEmail(),
+                    decoration: InputDecoration(
+                      labelText: 'Mot de passe',
+                      prefixIcon: const Icon(Icons.lock_outline_rounded),
+                      suffixIcon: IconButton(
+                        icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
+                        onPressed: () => setState(() => _isPasswordObscured = !_isPasswordObscured),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen())),
+                      child: const Text('Mot de passe oublié ?'),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  ElevatedButton(
+                    onPressed: _isLoading ? null : signInWithEmail,
+                    child: _isLoading
+                        ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4, color: Colors.white))
+                        : const Text('Se connecter'),
+                  ),
+                  const SizedBox(height: 18),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Nouveau ici ?', style: AppText.body(14, color: AppColors.inkSoft)),
+                      TextButton(
+                        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen())),
+                        style: TextButton.styleFrom(foregroundColor: accent),
+                        child: const Text('Créer un compte'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ).animate().slideY(begin: 0.25, end: 0, duration: 500.ms, curve: Curves.easeOutCubic),
+          ],
         ),
       ),
     );

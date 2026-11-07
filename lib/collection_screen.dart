@@ -1,217 +1,202 @@
-// Fichier: lib/collection_screen.dart (Avec Cache Manager Forcé)
-
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:spot_my_car/services/data_manager.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:provider/provider.dart';
 import 'package:spot_my_car/brand_models_screen.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:spot_my_car/auth_gate.dart';
-import 'package:spot_my_car/services/auth_service.dart'; // <-- AJOUTE CETTE LIGNE
-import 'package:spot_my_car/services/custom_cache_manager.dart';
-import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
+enum _Sort { progress, name, rarity }
 
 class CollectionScreen extends StatefulWidget {
   const CollectionScreen({super.key});
+
   @override
   State<CollectionScreen> createState() => _CollectionScreenState();
 }
- 
-class _CollectionScreenState extends State<CollectionScreen>
-    with AutomaticKeepAliveClientMixin {
-      
-  List<dynamic> _allBrands = [];
-  Map<String, int> _spottedCounts = {};
-  Map<String, int> _totalModelsPerBrand = {};
-  bool _isSigningOut = false;
 
-  
+class _CollectionScreenState extends State<CollectionScreen> with AutomaticKeepAliveClientMixin {
+  _Sort _sort = _Sort.progress;
+
   @override
   bool get wantKeepAlive => true;
 
   @override
-  void initState() {
-    super.initState();
-    _initializeDataAndListenForSpotted();
+  Widget build(BuildContext context) {
+    super.build(context);
+    final user = FirebaseAuth.instance.currentUser;
+    final data = context.watch<DataManager>();
+    if (user == null) return const SizedBox.shrink();
+
+    return Scaffold(
+      body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+        stream: FirebaseFirestore.instance.collection('spotted_cars').where('userId', isEqualTo: user.uid).snapshots(),
+        builder: (context, snap) {
+          final spotted = <String, Set<String>>{};
+          for (final d in snap.data?.docs ?? const []) {
+            final b = d.data()['brandId'] as String?;
+            final m = d.data()['modelId'] as String?;
+            if (b != null && m != null) spotted.putIfAbsent(b, () => {}).add(m);
+          }
+
+          final brands = data.brands.whereType<Map>().map((b) => Map<String, dynamic>.from(b)).toList();
+          int total(Map b) => data.modelsByBrand[b['id']]?.length ?? 0;
+          int got(Map b) => spotted[b['id']]?.length ?? 0;
+          double pct(Map b) => total(b) == 0 ? 0 : got(b) / total(b);
+
+          brands.sort((a, b) {
+            switch (_sort) {
+              case _Sort.progress:
+                final c = pct(b).compareTo(pct(a));
+                return c != 0 ? c : (a['name'] as String).compareTo(b['name'] as String);
+              case _Sort.name:
+                return (a['name'] as String).compareTo(b['name'] as String);
+              case _Sort.rarity:
+                return ((b['rarete'] as num?) ?? 0).compareTo((a['rarete'] as num?) ?? 0);
+            }
+          });
+
+          final allModels = brands.fold<int>(0, (s, b) => s + total(b));
+          final allGot = brands.fold<int>(0, (s, b) => s + got(b));
+          final started = brands.where((b) => got(b) > 0).length;
+          final top = MediaQuery.paddingOf(context).top;
+
+          return CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(20, top + 16, 20, 8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Collection', style: AppText.display(32)),
+                      const SizedBox(height: 6),
+                      Text(
+                        allGot == 0
+                            ? 'Chaque modèle spotté remplit ton album. ${allModels.toString()} modèles t’attendent.'
+                            : '$allGot modèles sur $allModels, chez $started marques. Continue comme ça.',
+                        style: AppText.body(15, color: AppColors.inkSoft),
+                      ),
+                      const SizedBox(height: 18),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            for (final e in {_Sort.progress: 'Avancement', _Sort.name: 'A → Z', _Sort.rarity: 'Les plus rares'}.entries)
+                              Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: ChoiceChip(
+                                  label: Text(e.value),
+                                  selected: _sort == e.key,
+                                  onSelected: (_) => setState(() => _sort = e.key),
+                                ),
+                              ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SliverPadding(
+                padding: EdgeInsets.fromLTRB(16, 10, 16, 120 + MediaQuery.paddingOf(context).bottom),
+                sliver: SliverGrid.builder(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    mainAxisSpacing: 12,
+                    crossAxisSpacing: 12,
+                    childAspectRatio: 0.78,
+                  ),
+                  itemCount: brands.length,
+                  itemBuilder: (context, i) {
+                    final b = brands[i];
+                    return Pressable(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => BrandModelsScreen(brand: b, showAsGrayscaleCollection: true)),
+                      ),
+                      child: _BrandTile(brand: b, got: got(b), total: total(b)),
+                    ).animate().fadeIn(delay: (25 * (i % 12)).ms, duration: 250.ms);
+                  },
+                ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
   }
+}
 
-  void _initializeDataAndListenForSpotted() {
-    final currentUser = FirebaseAuth.instance.currentUser;
-    if (currentUser == null) return;
-    
-    final dataManager = Provider.of<DataManager>(context, listen: false);
+class _BrandTile extends StatelessWidget {
+  final Map<String, dynamic> brand;
+  final int got;
+  final int total;
 
-    _allBrands = dataManager.brands;
-    
-    for (var brand in _allBrands) {
-      final brandId = brand['id'];
-      _totalModelsPerBrand[brandId] = dataManager.modelsByBrand[brandId]?.length ?? 0;
-    }
-
-    FirebaseFirestore.instance
-        .collection('spotted_cars')
-        .where('userId', isEqualTo: currentUser.uid)
-        .snapshots()
-        .listen((snapshot) {
-      _calculateSpottedCounts(snapshot.docs);
-    });
-  }
-
-  void _calculateSpottedCounts(List<QueryDocumentSnapshot> docs) {
-    final newCounts = <String, int>{};
-    for (var brand in _allBrands) {
-      final brandId = brand['id'];
-      final count = docs.where((doc) {
-        final data = doc.data() as Map<String, dynamic>;
-        return data.containsKey('brandId') && data['brandId'] == brandId;
-      }).map((doc) => (doc.data() as Map<String, dynamic>)['modelId']).toSet().length;
-      newCounts[brandId] = count;
-    }
-    if (mounted) setState(() => _spottedCounts = newCounts);
-  }
+  const _BrandTile({required this.brand, required this.got, required this.total});
 
   @override
   Widget build(BuildContext context) {
-    super.build(context);
-    final currentUser = FirebaseAuth.instance.currentUser;
+    final accent = Theme.of(context).colorScheme.primary;
+    final done = total > 0 && got >= total;
+    final progress = total == 0 ? 0.0 : got / total;
+    final name = brand['name'] as String;
 
-    if (currentUser == null) {
-      return Scaffold(
-        appBar: AppBar(title: const Text('Collection')),
-        body: const Center(child: Text("Veuillez vous connecter pour voir votre collection.")),
-      );
-    }
-    
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Collection'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,        actions: [
-          IconButton(
-            tooltip: "Se déconnecter",
-            icon: Icon(
-              Icons.logout,
-              color: _isSigningOut ? Colors.white.withOpacity(0.5) : Colors.white,
-            ),
-      onPressed: _isSigningOut
-          ? null
-          : () async {
-              AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-              setState(() => _isSigningOut = true);
-              try {
-                await AuthService.signOut(); 
-                if (mounted) { 
-                  Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => const AuthGate()),
-                    (route) => false,
-                  );
-                }
-              } catch (e) {
-                if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Erreur lors de la déconnexion: ${e.toString()}")),
-                  );
-                  // On remet le bouton à son état initial en cas d'erreur
-                  setState(() => _isSigningOut = false);
-                }
-              }
-            },
-          )
-        ],
+    return Container(
+      padding: const EdgeInsets.fromLTRB(8, 12, 8, 10),
+      decoration: BoxDecoration(
+        color: done ? AppColors.ink : AppColors.card,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: done ? AppColors.ink : AppColors.line),
       ),
-      body: GridView.builder(
-              padding: const EdgeInsets.all(12.0),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: kIsWeb ? 6 : 3,
-                crossAxisSpacing: 8.0,
-                mainAxisSpacing: 8.0,
-                childAspectRatio: 1.0,
-              ),
-              itemCount: _allBrands.length,
-              itemBuilder: (context, index) {
-                final brand = _allBrands[index];
-                final brandId = brand['id'];
-                final spottedCount = _spottedCounts[brandId] ?? 0;
-                final totalModels = _totalModelsPerBrand[brandId] ?? 1;
-                final bool isCompleted =
-                    totalModels > 0 && spottedCount >= totalModels;
-                final logoUrl = brand['logoUrl'] as String?;
-                return GestureDetector(
-                  onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicPrincipal); // <-- SON AJOUTÉ
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => BrandModelsScreen(
-                          brand: brand, 
-                          showAsGrayscaleCollection: true
-                        )
-                      ) // <-- Voici la parenthèse manquante
-                    );
-                  },
-                  child: Card(
-                    elevation: 2,
-                    margin: EdgeInsets.zero,
-                    clipBehavior: Clip.antiAlias,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                    color: Colors.white,
-                    child: Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        if (logoUrl != null && logoUrl.isNotEmpty)
-                          Padding(
-                            padding: const EdgeInsets.all(12.0),
-                            child: CachedNetworkImage(
-                              // ==========================================================
-                              // === 2. ON FORCE L'UTILISATION DU CACHE PERSONNALISÉ =====
-                              // ==========================================================
-                              cacheManager: CustomCacheManager(),
-                              imageUrl: logoUrl,
-                              fit: BoxFit.contain,
-                              fadeInDuration: const Duration(milliseconds: 200),
-                              placeholder: (context, url) => Container(
-                                color: Colors.grey[200],
-                              ),
-                              errorWidget: (context, url, error) => const Icon(
-                                Icons.image_not_supported,
-                                color: Colors.grey
-                              ),
-                            ),
-                          ),
-                        if (!isCompleted)
-                          Container(
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  color: Colors.grey.withOpacity(1.0),
-                                  backgroundBlendMode: BlendMode.saturation)),
-                        Align(
-                          alignment: Alignment.bottomCenter,
-                          child: Container(
-                            padding:
-                                const EdgeInsets.symmetric(vertical: 2.0),
-                            width: double.infinity,
-                            color: isCompleted
-                                ? Colors.amber[800]
-                                : Colors.black.withOpacity(0.6),
-                            child: Text(
-                                "$spottedCount / $totalModels",
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 11)),
-                          ),
-                        ),
-                      ],
+      child: Column(
+        children: [
+          Expanded(
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                AspectRatio(
+                  aspectRatio: 1,
+                  child: TweenAnimationBuilder<double>(
+                    tween: Tween(begin: 0, end: progress),
+                    duration: const Duration(milliseconds: 800),
+                    curve: Curves.easeOutCubic,
+                    builder: (_, v, __) => CircularProgressIndicator(
+                      value: v,
+                      strokeWidth: 3.5,
+                      strokeCap: StrokeCap.round,
+                      color: done ? const Color(0xFFFFD447) : accent,
+                      backgroundColor: done ? Colors.white12 : AppColors.paperDeep,
                     ),
                   ),
-                );
-              },
+                ),
+                Opacity(
+                  opacity: got == 0 ? 0.45 : 1,
+                  child: ColorFiltered(
+                    colorFilter: got == 0
+                        ? const ColorFilter.matrix([0.33, 0.33, 0.33, 0, 0, 0.33, 0.33, 0.33, 0, 0, 0.33, 0.33, 0.33, 0, 0, 0, 0, 0, 1, 0])
+                        : const ColorFilter.mode(Colors.transparent, BlendMode.dst),
+                    child: BrandLogo(url: brand['logoUrl'] as String?, name: name, size: 48),
+                  ),
+                ),
+              ],
             ),
+          ),
+          const SizedBox(height: 10),
+          Text(
+            name,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppText.body(13, weight: FontWeight.w800, color: done ? Colors.white : AppColors.ink),
+          ),
+          Text(
+            done ? 'Complète ★' : '$got / $total',
+            style: AppText.body(11.5, weight: FontWeight.w600, color: done ? const Color(0xFFFFD447) : AppColors.inkSoft),
+          ),
+        ],
+      ),
     );
   }
 }

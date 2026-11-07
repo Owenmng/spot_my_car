@@ -1,73 +1,48 @@
-// Fichier: lib/widgets/loading_animation_widget.dart
-
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 
-class LoadingAnimationWidget extends StatefulWidget {
+/// Écran de démarrage : le logo respire pendant que le garage se charge.
+class LoadingAnimationWidget extends StatelessWidget {
   final String loadingMessage;
 
-  const LoadingAnimationWidget({
-    Key? key,
-    this.loadingMessage = "Chargement...",
-  }) : super(key: key);
-
-  @override
-  State<LoadingAnimationWidget> createState() => _LoadingAnimationWidgetState();
-}
-
-class _LoadingAnimationWidgetState extends State<LoadingAnimationWidget> with SingleTickerProviderStateMixin {
-  late final AnimationController _animationController;
-  late final Animation<double> _fadeAnimation;
-
-  @override
-  void initState() {
-    super.initState();
-    _animationController = AnimationController(vsync: this, duration: const Duration(milliseconds: 800));
-    _fadeAnimation = CurvedAnimation(parent: _animationController, curve: Curves.easeInOut);
-    _animationController.forward();
-  }
-
-  @override
-  void dispose() {
-    _animationController.dispose();
-    super.dispose();
-  }
+  const LoadingAnimationWidget({super.key, this.loadingMessage = 'Chargement…'});
 
   @override
   Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: AppColors.ink,
       body: Center(
-        child: FadeTransition(
-          opacity: _fadeAnimation,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(20),
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  shape: BoxShape.circle,
-                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.15), blurRadius: 10, spreadRadius: 2)],
-                ),
-                child: Image.asset('assets/logo.png'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(30),
+              child: Image.asset('assets/logo.png', width: 104, height: 104, fit: BoxFit.cover),
+            )
+                .animate(onPlay: (c) => c.repeat(reverse: true))
+                .scale(begin: const Offset(1, 1), end: const Offset(1.06, 1.06), duration: 900.ms, curve: Curves.easeInOut),
+            const SizedBox(height: 34),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: List.generate(
+                3,
+                (i) => Container(
+                  width: 9,
+                  height: 9,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: BoxDecoration(color: accent, shape: BoxShape.circle),
+                )
+                    .animate(onPlay: (c) => c.repeat())
+                    .fadeIn(delay: (160 * i).ms, duration: 300.ms)
+                    .then()
+                    .fadeOut(duration: 300.ms, delay: 300.ms),
               ),
-              const SizedBox(height: 40),
-              SizedBox(
-                width: 200,
-                child: LinearProgressIndicator(
-                  valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
-                  backgroundColor: Colors.white.withOpacity(0.3),
-                ),
-              ),
-              const SizedBox(height: 20),
-              Text(
-                widget.loadingMessage, // On utilise le message passé en paramètre
-                style: const TextStyle(color: Colors.white, fontSize: 16),
-              ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 18),
+            Text(loadingMessage, style: AppText.body(15, color: Colors.white70, weight: FontWeight.w600)),
+          ],
         ),
       ),
     );

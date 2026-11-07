@@ -1,6 +1,7 @@
 // Fichier: lib/car_catalog_screen.dart (Version Finale Corrigée)
 
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/brand_detail_screen.dart';
@@ -35,8 +36,6 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Catalogue des Marques'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         elevation: 1,
         actions: [
           // Le bouton de déconnexion fonctionne maintenant car setState et mounted existent.
@@ -44,7 +43,7 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
             tooltip: "Se déconnecter",
             icon: Icon(
               Icons.logout,
-              color: _isSigningOut ? Colors.white.withOpacity(0.5) : Colors.white,
+              color: _isSigningOut ? AppColors.inkMuted : AppColors.ink,
             ),
             onPressed: _isSigningOut
                 ? null

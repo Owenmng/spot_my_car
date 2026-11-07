@@ -112,8 +112,6 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
           },
         ),
         title: Text('Modèles ${widget.brand['name']}'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
       ),
       body: _isLoadingFirestoreData
           ? const Center(child: CircularProgressIndicator())

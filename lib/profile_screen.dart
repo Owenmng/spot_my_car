@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'dart:typed_data';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -215,14 +216,12 @@ class _ProfileScreenState extends State<ProfileScreen>
     return Scaffold(
       appBar: AppBar(
         title: const Text('Mon Profil'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         actions: [
           IconButton(
             tooltip: "Se déconnecter",
             icon: Icon(
               Icons.logout,
-              color: _isSigningOut ? Colors.white.withOpacity(0.5) : Colors.white,
+              color: _isSigningOut ? AppColors.inkMuted : AppColors.ink,
             ),
             onPressed: _isSigningOut
                 ? null

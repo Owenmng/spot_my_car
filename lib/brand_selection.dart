@@ -63,8 +63,6 @@ class _BrandSelectionState extends State<BrandSelection> {
           },
         ),
         title: const Text('Choisir une marque'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [

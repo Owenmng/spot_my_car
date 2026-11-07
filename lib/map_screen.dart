@@ -240,8 +240,6 @@ class _MapScreenState extends State<MapScreen>
     return Scaffold(
       appBar: AppBar(
         title: const Text('Carte des Spots'),
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         actions: [
           IconButton(
             tooltip: "Se déconnecter",
