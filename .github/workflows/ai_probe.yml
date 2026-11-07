@@ -1,0 +1,12 @@
+name: AI probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [refonte]
+    paths: ['tool/ai_probe.py']
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests >/dev/null && python3 tool/ai_probe.py
