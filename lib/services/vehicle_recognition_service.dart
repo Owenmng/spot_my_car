@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:firebase_ai/firebase_ai.dart';
 import 'package:flutter/foundation.dart';
 import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/gemini_client.dart';
 
 enum RecognitionStatus { car, notACar, notReal, unclear, failed }
 
@@ -71,55 +71,46 @@ class VehicleRecognitionService {
   VehicleRecognitionService._();
   static final VehicleRecognitionService instance = VehicleRecognitionService._();
 
-  static const _models = ['gemini-3.8-flash', 'gemini-3.5-flash-lite'];
-
   static const colorNames = [
     'Noir', 'Blanc', 'Gris', 'Argent', 'Rouge', 'Bleu', 'Vert', 'Jaune', 'Orange', 'Violet', 'Marron', 'Beige',
   ];
 
-  GenerativeModel _model(String name, {bool json = true}) {
-    return FirebaseAI.googleAI().generativeModel(
-      model: name,
-      generationConfig: GenerationConfig(
-        temperature: 0.1,
-        responseMimeType: json ? 'application/json' : null,
-        responseSchema: json ? _schema : null,
-      ),
-    );
-  }
-
-  static final Schema _schema = Schema.object(
-    properties: {
-      'isRealPhoto': Schema.boolean(
-        description: "false si c'est un dessin, un rendu 3D, une capture de jeu vidéo, un jouet ou une photo d'écran",
-      ),
-      'vehicleType': Schema.enumString(
-        enumValues: ['car', 'motorcycle', 'truck', 'van', 'bus', 'other', 'none'],
-        description: 'Type du véhicule principal visible',
-      ),
-      'candidates': Schema.array(
-        description: 'Jusqu\'à 3 hypothèses, de la plus probable à la moins probable',
-        items: Schema.object(
-          properties: {
-            'make': Schema.string(description: 'Constructeur, idéalement écrit comme dans la liste fournie'),
-            'model': Schema.string(description: 'Nom commercial du modèle, ex: "911", "Clio", "Série 3"'),
-            'variant': Schema.string(description: 'Version ou finition reconnaissable, ex: "GT3 RS", "RS", "M Sport"'),
-            'generation': Schema.string(description: 'Génération ou code châssis, ex: "992", "Mk7", "E46", "W205"'),
-            'yearFrom': Schema.integer(description: 'Première année de production de cette génération'),
-            'yearTo': Schema.integer(description: 'Dernière année de production, ou année actuelle si encore produite'),
-            'confidence': Schema.integer(description: 'Confiance de 0 à 100'),
-            'cues': Schema.string(description: 'Indices visuels décisifs, en français, une phrase courte'),
+  static const Map<String, dynamic> _schema = {
+    'type': 'OBJECT',
+    'properties': {
+      'isIllustration': {
+        'type': 'BOOLEAN',
+        'description': "true uniquement si l'image est un dessin, un rendu 3D, une capture de jeu vidéo ou un jouet/une miniature. Une photo pro, de presse ou de concession reste false.",
+      },
+      'vehicleType': {
+        'type': 'STRING',
+        'enum': ['car', 'motorcycle', 'truck', 'van', 'bus', 'other', 'none'],
+      },
+      'candidates': {
+        'type': 'ARRAY',
+        'description': "Jusqu'à 3 hypothèses, de la plus probable à la moins probable",
+        'items': {
+          'type': 'OBJECT',
+          'properties': {
+            'make': {'type': 'STRING', 'description': 'Constructeur, écrit comme dans la liste fournie'},
+            'model': {'type': 'STRING', 'description': 'Nom commercial du modèle seul, ex: "911", "Clio", "Golf", "3 Series"'},
+            'variant': {'type': 'STRING', 'description': 'Version sportive ou finition visible, ex: "GT3 RS", "RS", "GTI", "M Sport"'},
+            'generation': {'type': 'STRING', 'description': 'Code de génération court, ex: "992", "Mk8", "E46", "W205", "V"'},
+            'yearFrom': {'type': 'INTEGER'},
+            'yearTo': {'type': 'INTEGER'},
+            'confidence': {'type': 'INTEGER', 'description': 'Confiance de 0 à 100'},
+            'cues': {'type': 'STRING', 'description': 'Indices visuels décisifs, en français, une phrase courte'},
           },
-          optionalProperties: ['variant', 'generation', 'yearFrom', 'yearTo', 'cues'],
-        ),
-      ),
-      'color': Schema.enumString(enumValues: colorNames, description: 'Couleur de carrosserie dominante'),
-      'plateText': Schema.string(description: "Plaque lisible telle qu'écrite, sinon chaîne vide"),
-      'plateCountry': Schema.string(description: 'Code pays ISO à 2 lettres de la plaque si identifiable, sinon chaîne vide'),
-      'bodyType': Schema.string(description: 'Carrosserie : citadine, berline, break, SUV, coupé, cabriolet, monospace, pick-up…'),
+          'required': ['make', 'model', 'confidence'],
+        },
+      },
+      'color': {'type': 'STRING', 'enum': colorNames},
+      'plateText': {'type': 'STRING', 'description': "Plaque d'immatriculation lisible, sinon chaîne vide. Jamais un texte de cadre de plaque."},
+      'plateCountry': {'type': 'STRING', 'description': 'Code pays ISO à 2 lettres de la plaque, sinon chaîne vide'},
+      'bodyType': {'type': 'STRING'},
     },
-    optionalProperties: ['candidates', 'color', 'plateText', 'plateCountry', 'bodyType'],
-  );
+    'required': ['isIllustration', 'vehicleType'],
+  };
 
   String _prompt(List<dynamic> brands) {
     final names = brands.map((b) => b['name']).join(', ');
@@ -133,7 +124,8 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
 - Si tu hésites entre plusieurs modèles, donne-les tous dans "candidates" avec une confiance honnête. Ne gonfle jamais la confiance.
 - Écris le constructeur comme dans cette liste quand il y figure : $names.
 - Lis la plaque d'immatriculation si elle est lisible, sans rien inventer.
-- Si ce n'est pas une vraie photo (dessin, jeu vidéo, maquette, écran) mets isRealPhoto à false.
+- isIllustration = true seulement pour un dessin, un rendu 3D, un jeu vidéo ou une miniature. Une belle photo de presse reste une photo.
+- Les champs "model" et "generation" doivent rester courts (le nom, puis le code), sans phrase.
 - S'il n'y a aucune voiture, mets vehicleType à "none" et laisse candidates vide.
 ''';
   }
@@ -145,22 +137,15 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
     Map<String, dynamic>? parsed;
     Object? lastError;
 
-    for (final name in _models) {
-      try {
-        final response = await _model(name).generateContent([
-          Content.multi([
-            TextPart(_prompt(data.brands)),
-            InlineDataPart(mimeType, imageBytes),
-          ]),
-        ]).timeout(const Duration(seconds: 45));
-        final text = response.text;
-        if (text == null || text.trim().isEmpty) continue;
-        parsed = jsonDecode(_stripFences(text)) as Map<String, dynamic>;
-        break;
-      } catch (e) {
-        lastError = e;
-        debugPrint('Recognition with $name failed: $e');
-      }
+    try {
+      final text = await GeminiClient.generate(
+        parts: [GeminiClient.textPart(_prompt(data.brands)), GeminiClient.imagePart(imageBytes, mime: mimeType)],
+        schema: _schema,
+      );
+      parsed = jsonDecode(_stripFences(text)) as Map<String, dynamic>;
+    } catch (e) {
+      lastError = e;
+      debugPrint('Recognition failed: $e');
     }
 
     if (parsed == null) {
@@ -170,7 +155,7 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
       );
     }
 
-    final isReal = parsed['isRealPhoto'] != false;
+    final isReal = parsed['isIllustration'] != true;
     final type = (parsed['vehicleType'] as String?) ?? 'other';
     final color = parsed['color'] as String?;
     final plate = _cleanPlate(parsed['plateText'] as String?);
@@ -286,16 +271,14 @@ $names
 Le véhicule identifié est : "$description".
 Réponds uniquement avec l'identifiant exact du modèle le plus proche, ou "none" si aucun ne correspond vraiment.
 ''';
-    for (final name in _models) {
-      try {
-        final response = await _model(name, json: false).generateContent([Content.text(prompt)]).timeout(const Duration(seconds: 20));
-        final id = (response.text ?? '').trim().replaceAll('"', '').split(RegExp(r'\s')).first;
-        if (id.isEmpty || id == 'none') return null;
-        final match = models.whereType<Map>().firstWhere((m) => m['id'] == id, orElse: () => const {});
-        return match.isEmpty ? null : Map<String, dynamic>.from(match);
-      } catch (e) {
-        debugPrint('Model pick with $name failed: $e');
-      }
+    try {
+      final text = await GeminiClient.generate(parts: [GeminiClient.textPart(prompt)], timeout: const Duration(seconds: 20));
+      final id = text.trim().replaceAll('"', '').split(RegExp(r'\s')).first;
+      if (id.isEmpty || id == 'none') return null;
+      final match = models.whereType<Map>().firstWhere((m) => m['id'] == id, orElse: () => const {});
+      return match.isEmpty ? null : Map<String, dynamic>.from(match);
+    } catch (e) {
+      debugPrint('Model pick failed: $e');
     }
     return null;
   }
@@ -346,31 +329,33 @@ Réponds uniquement avec l'identifiant exact du modèle le plus proche, ou "none
     return null;
   }
 
-  /// Score de 0 à ~1.5 entre un modèle du catalogue et la description de l'IA.
+  /// Score entre un modèle du catalogue et la description de l'IA (≥ 0.45 = correspondance fiable).
   static double scoreModel(Map m, {required String model, String variant = '', String generation = '', int? yearFrom, int? yearTo}) {
     final catalogName = normalize(m['name']);
     final catalogTokens = tokens(m['name']);
-    final wanted = tokens('$model $variant');
-    if (wanted.isEmpty || catalogTokens.isEmpty) return 0;
+    final modelTokens = tokens(model);
+    final variantTokens = tokens(variant).difference(const {'coupe', 'hatchback', 'berline', 'sedan', 'break', 'estate', 'cabriolet', 'convertible', '5', '3', 'portes', 'door'});
+    final genTokens = tokens(generation).where((t) => t.length >= 2 && !const {'generation', 'gen', 'facelift', 'phase', 'restylage', 'nd', 'rd', 'th', 'st'}.contains(t)).toSet();
+    if (modelTokens.isEmpty || catalogTokens.isEmpty) return 0;
 
-    final common = wanted.intersection(catalogTokens).length;
-    if (common == 0 && !catalogName.contains(normalize(model))) return 0;
+    final modelHits = modelTokens.intersection(catalogTokens).length;
+    if (modelHits == 0 && !catalogName.contains(normalize(model))) return 0;
 
-    var score = common / wanted.length * 0.7 + common / catalogTokens.length * 0.3;
-    final gen0 = normalize(generation);
-    final extra = catalogTokens.difference(wanted).where((t) => t != gen0 && !RegExp(r'^\d{4}$').hasMatch(t)).length;
+    var score = modelHits / modelTokens.length * 0.6;
+    if (catalogName.startsWith(normalize(model))) score += 0.2;
+    score += variantTokens.intersection(catalogTokens).length * 0.18;
+    if (genTokens.any(catalogTokens.contains)) score += 0.35;
+
+    final explained = {...modelTokens, ...variantTokens, ...genTokens};
+    final extra = catalogTokens.difference(explained).where((t) => !RegExp(r'^\d{4}$').hasMatch(t)).length;
     score -= extra * 0.12;
-    if (normalize(model).isNotEmpty && catalogName.startsWith(normalize(model))) score += 0.15;
-
-    final gen = normalize(generation);
-    if (gen.isNotEmpty && catalogName.contains(gen)) score += 0.35;
 
     final years = RegExp(r'(19|20)\d{2}').allMatches('${m['production_years'] ?? ''}').map((x) => int.parse(x.group(0)!)).toList();
     if (yearFrom != null && years.isNotEmpty) {
       final from = years.first;
       final to = years.length > 1 ? years.last : DateTime.now().year;
-      final overlap = (yearFrom <= to) && ((yearTo ?? yearFrom) >= from);
-      score += overlap ? 0.2 : -0.25;
+      final overlap = (yearFrom <= to + 1) && ((yearTo ?? yearFrom) >= from - 1);
+      score += overlap ? 0.15 : -0.3;
     }
     return score;
   }

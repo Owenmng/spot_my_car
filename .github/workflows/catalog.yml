@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [refonte]
-    paths: ['tool/**', '.github/workflows/catalog.yml']
+    paths: ['tool/RUN_FILL', 'tool/catalog_builder.py', '.github/workflows/catalog.yml']
 
 permissions:
   contents: write
@@ -21,7 +21,7 @@ jobs:
       - name: Run
         run: |
           pip install pillow requests >/dev/null
-          if [ -f tool/catalog_builder.py ]; then python3 tool/catalog_builder.py; else python3 tool/wd_explore.py; fi
+          if [ -f tool/RUN_FILL ]; then python3 tool/fill_images.py; else python3 tool/catalog_builder.py; fi
       - name: Commit results
         run: |
           git config user.name "SpotMyCar bot"
