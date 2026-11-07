@@ -66,6 +66,17 @@ service cloud.firestore {
       allow delete: if signedIn() && resource.data.userId == request.auth.uid;
     }
 
+    // Photos des spots (compressées), visibles par leur seul auteur.
+    match /spot_photos/{carId} {
+      allow read: if signedIn() && resource.data.userId == request.auth.uid;
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.data is bytes
+        && request.resource.data.data.size() < 900 * 1024;
+      allow delete: if signedIn() && (resource == null || resource.data.userId == request.auth.uid);
+      allow update: if false;
+    }
+
     // Classement : écrit uniquement par les Cloud Functions.
     match /leaderboards/{leaderboardId} {
       allow read: if signedIn();

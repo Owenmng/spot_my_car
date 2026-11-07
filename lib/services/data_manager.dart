@@ -21,6 +21,11 @@ class DataManager with ChangeNotifier {
   List<dynamic> get brands => _brands;
   Map<String, List<dynamic>> get modelsByBrand => _modelsByBrand;
 
+  final Map<String, Map<String, dynamic>> _modelById = {};
+
+  /// Fiche catalogue d'un modèle par son identifiant (photo et specs à jour).
+  Map<String, dynamic>? modelById(String? id) => id == null ? null : _modelById[id];
+
   bool _isDataLoaded = false;
   bool get isDataLoaded => _isDataLoaded;
 
@@ -39,7 +44,11 @@ class DataManager with ChangeNotifier {
         if (brandId != null) {
           try {
             final modelsJsonString = await rootBundle.loadString('assets/data/models_by_brand/$brandId.json');
-            _modelsByBrand[brandId] = (json.decode(modelsJsonString))['models'];
+            final models = (json.decode(modelsJsonString))['models'] as List<dynamic>;
+            _modelsByBrand[brandId] = models;
+            for (final m in models) {
+              if (m is Map && m['id'] is String) _modelById[m['id'] as String] = Map<String, dynamic>.from(m);
+            }
           } catch (_) {
             _modelsByBrand[brandId] = [];
           }

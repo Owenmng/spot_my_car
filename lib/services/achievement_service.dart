@@ -300,7 +300,7 @@ class AchievementService {
         progress = spottedCars.isNotEmpty ? 1 : 0;
         break;
       case 'photographer':
-        progress = spottedCars.where((car) => car['userPhotoUrl'] != null).length;
+        progress = spottedCars.where((car) => car['userPhotoUrl'] != null || car['hasPhoto'] == true).length;
         break;
     }
     

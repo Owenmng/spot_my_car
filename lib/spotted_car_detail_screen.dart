@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:intl/intl.dart';
+import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/photo_store.dart';
 import 'package:spot_my_car/services/share_service.dart';
 import 'package:spot_my_car/services/vehicle_recognition_service.dart';
 import 'package:spot_my_car/shared/app_data.dart';
@@ -53,6 +55,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
         } catch (_) {}
       }
       await _ref.delete();
+      await PhotoStore.delete(widget.carId);
       if (mounted) Navigator.pop(context);
     } catch (_) {
       if (mounted) showAppSnack(context, 'La suppression a échoué.', icon: Icons.error_outline);
@@ -73,7 +76,9 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
         final model = cleanModelName(car['modelName'] as String?);
         final userPhoto = car['userPhotoUrl'] as String?;
         final official = car['modelImageUrl'] as String?;
-        final hasBoth = userPhoto != null && official != null;
+        final catalogModel = DataManager.instance.modelById(car['modelId'] as String?);
+        final officialUrl = (catalogModel?['imageUrl'] as String?) ?? official;
+        final hasBoth = (userPhoto != null || car['hasPhoto'] == true) && officialUrl != null;
         final date = (car['spottedAt'] as Timestamp?)?.toDate();
 
         return Scaffold(
@@ -90,7 +95,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                   child: _GlassButton(icon: Icons.arrow_back_rounded, onTap: () => Navigator.pop(context)),
                 ),
                 actions: [
-                  _GlassButton(icon: Icons.ios_share_rounded, onTap: () => ShareService.shareSpot(context, car)),
+                  _GlassButton(icon: Icons.ios_share_rounded, onTap: () => ShareService.shareSpot(context, car, carId: widget.carId)),
                   const SizedBox(width: 8),
                   _GlassButton(icon: Icons.more_horiz_rounded, onTap: () => _menu(car)),
                   const SizedBox(width: 12),
@@ -102,11 +107,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                     children: [
                       Hero(
                         tag: 'carImage_${widget.carId}',
-                        child: CarImage(
-                          urls: _showOfficial ? [official, userPhoto] : [userPhoto, official],
-                          brandName: brand,
-                          modelName: model,
-                        ),
+                        child: SpotImage(carId: widget.carId, car: car, preferOfficial: _showOfficial),
                       ),
                       const DecoratedBox(
                         decoration: BoxDecoration(
@@ -195,7 +196,11 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                         const SizedBox(height: 18),
                         Text('Fiche technique', style: AppText.display(22)),
                         const SizedBox(height: 14),
-                        SpecsGrid(model: car),
+                        SpecsGrid(model: {...car, ...?catalogModel}),
+                      ],
+                      if (catalogModel?['imageCredit'] != null) ...[
+                        const SizedBox(height: 18),
+                        PhotoCredit(model: catalogModel!),
                       ],
                     ],
                   ).animate().fadeIn(duration: 300.ms),
@@ -519,6 +524,23 @@ class _EditSheetState extends State<_EditSheet> {
           ],
         ),
       ),
+    );
+  }
+}
+
+
+/// Crédit obligatoire des photos Wikimedia Commons (licences libres).
+class PhotoCredit extends StatelessWidget {
+  final Map<String, dynamic> model;
+  const PhotoCredit({super.key, required this.model});
+
+  @override
+  Widget build(BuildContext context) {
+    final credit = model['imageCredit'] as String? ?? 'Wikimedia Commons';
+    final license = model['imageLicense'] as String? ?? '';
+    return Text(
+      'Photo officielle : $credit${license.isEmpty ? '' : ' · $license'} · Wikimedia Commons',
+      style: AppText.body(11.5, color: AppColors.inkMuted),
     );
   }
 }

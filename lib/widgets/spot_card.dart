@@ -28,9 +28,10 @@ String cleanModelName(String? name) {
 class SpotCard extends StatelessWidget {
   final Map<String, dynamic> car;
   final String heroTag;
+  final String? carId;
   final bool large;
 
-  const SpotCard({super.key, required this.car, required this.heroTag, this.large = false});
+  const SpotCard({super.key, required this.car, required this.heroTag, this.carId, this.large = false});
 
   @override
   Widget build(BuildContext context) {
@@ -69,11 +70,17 @@ class SpotCard extends StatelessWidget {
                   children: [
                     Hero(
                       tag: heroTag,
-                      child: CarImage(
-                        urls: [car['userPhotoUrl'] as String?, car['modelImageUrl'] as String?],
-                        brandName: brand,
-                        modelName: model,
-                      ),
+                      child: carId != null
+                          ? SpotImage(carId: carId!, car: car)
+                          : CarImage(
+                              urls: [
+                                car['userPhotoUrl'] as String?,
+                                DataManager.instance.modelById(car['modelId'] as String?)?['imageUrl'] as String?,
+                                car['modelImageUrl'] as String?,
+                              ],
+                              brandName: brand,
+                              modelName: model,
+                            ),
                     ),
                     const DecoratedBox(
                       decoration: BoxDecoration(

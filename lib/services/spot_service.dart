@@ -1,12 +1,12 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/achievement_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/photo_store.dart';
 
 class SpotDraft {
   Map<String, dynamic>? brand;
@@ -134,19 +134,17 @@ class SpotService {
     });
 
     var photoFailed = false;
+    Uint8List? photo;
     if (d.photo != null) {
       try {
-        final ref = FirebaseStorage.instance.ref('user_spots/${user.uid}/${carRef.id}.jpg');
-        await ref.putData(d.photo!, SettableMetadata(contentType: 'image/jpeg')).timeout(const Duration(seconds: 40));
-        car['userPhotoUrl'] = await ref.getDownloadURL();
+        photo = await PhotoStore.compress(d.photo!);
+        car['hasPhoto'] = true;
       } catch (e) {
-        debugPrint('Photo upload failed: $e');
+        debugPrint('Photo compression failed: $e');
         photoFailed = true;
-        car['userPhotoUrl'] = null;
       }
-    } else {
-      car['userPhotoUrl'] = null;
     }
+    car['userPhotoUrl'] = null;
 
     final spotsAfter = [...spotsBefore, car];
     final achievementsAfter = AchievementService(allBrands: data.brands, spottedCars: spotsAfter).checkAchievements(calculateProgress: true);
@@ -168,6 +166,13 @@ class SpotService {
     final gained = d.xp + achievementXp;
     final batch = _db.batch();
     batch.set(carRef, car);
+    if (photo != null) {
+      batch.set(PhotoStore.ref(carRef.id), {
+        'userId': user.uid,
+        'data': Blob(photo),
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+    }
     batch.set(
       userRef,
       {

@@ -48,15 +48,10 @@ class _ProfileScreenState extends State<ProfileScreen>
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              ListTile(
-                  leading: const Icon(Icons.photo_library_outlined),
-                  title: const Text('Choisir depuis la galerie'),
-                  onTap: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger); // <-- SON AJOUTÉ
-                    Navigator.of(ctx).pop();
-                    _uploadProfilePictureFromGallery();
-                  }),
-              const Divider(),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 16),
+                child: Text('Choisis ton avatar', style: AppText.display(20)),
+              ),
               Wrap(
                 spacing: 16,
                 runSpacing: 16,

@@ -578,6 +578,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       final spotDocs = await spotsQuery.get();
       for (var doc in spotDocs.docs) {
         batch.delete(doc.reference);
+        batch.delete(firestore.collection('spot_photos').doc(doc.id));
       }
       await batch.commit();
       try {

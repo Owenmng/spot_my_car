@@ -49,7 +49,7 @@ class DailyChallenge {
     DailyChallenge(id: 'rare', title: 'Chasseur de rareté', hint: 'Spotte une voiture Rare ou mieux', icon: Icons.diamond_outlined, target: 1, reward: 80, matches: (c) => rarityOfSpot(c).index >= Rarity.rare.index),
     DailyChallenge(id: 'three', title: 'Tournée du quartier', hint: 'Spotte 3 voitures aujourd’hui', icon: Icons.directions_walk_rounded, target: 3, reward: 50, matches: (_) => true),
     DailyChallenge(id: 'classic', title: 'Retour vers le passé', hint: 'Spotte un modèle lancé avant 1995', icon: Icons.history_rounded, target: 1, reward: 70, matches: (c) => _firstYear(c) < 1995),
-    DailyChallenge(id: 'photo', title: 'Œil de photographe', hint: 'Ajoute 2 spots avec photo', icon: Icons.photo_camera_outlined, target: 2, reward: 40, matches: (c) => c['userPhotoUrl'] != null),
+    DailyChallenge(id: 'photo', title: 'Œil de photographe', hint: 'Ajoute 2 spots avec photo', icon: Icons.photo_camera_outlined, target: 2, reward: 40, matches: (c) => c['userPhotoUrl'] != null || c['hasPhoto'] == true),
     DailyChallenge(id: 'electric', title: 'Silence, ça roule', hint: 'Spotte une voiture électrique', icon: Icons.electric_bolt_rounded, target: 1, reward: 50, matches: (c) => '${c['type_carburant'] ?? ''}'.toLowerCase().contains('lectrique')),
   ];
 

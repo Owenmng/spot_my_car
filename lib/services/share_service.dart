@@ -10,7 +10,7 @@ class ShareService {
   ShareService._();
 
   /// Aperçu de la carte puis partage en image (Insta, WhatsApp, Snap…).
-  static Future<void> shareSpot(BuildContext context, Map<String, dynamic> car) {
+  static Future<void> shareSpot(BuildContext context, Map<String, dynamic> car, {String? carId}) {
     final key = GlobalKey();
     return showModalBottomSheet(
       context: context,
@@ -35,7 +35,7 @@ class ShareService {
                           SizedBox(
                             width: 250,
                             height: 340,
-                            child: SpotCard(car: car, heroTag: 'share_${car.hashCode}', large: true),
+                            child: SpotCard(car: car, carId: carId, heroTag: 'share_${car.hashCode}', large: true),
                           ),
                           const SizedBox(height: 12),
                           Row(

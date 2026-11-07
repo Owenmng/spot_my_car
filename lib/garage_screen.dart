@@ -7,6 +7,7 @@ import 'package:spot_my_car/map_screen.dart';
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/daily_challenge.dart';
+import 'package:spot_my_car/services/photo_store.dart';
 import 'package:spot_my_car/services/share_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
@@ -53,7 +54,7 @@ class _GarageScreenState extends State<GarageScreen> {
         final t = (car['spottedAt'] as Timestamp?)?.toDate();
         return t != null && DateTime.now().difference(t).inDays < 7;
       case _Filter.photo:
-        return car['userPhotoUrl'] != null;
+        return car['userPhotoUrl'] != null || car['hasPhoto'] == true;
     }
   }
 
@@ -82,6 +83,7 @@ class _GarageScreenState extends State<GarageScreen> {
         } catch (_) {}
       }
       await FirebaseFirestore.instance.collection('spotted_cars').doc(id).delete();
+      await PhotoStore.delete(id);
       if (mounted) showAppSnack(context, 'Voiture retirée du garage.', icon: Icons.delete_outline);
     } catch (_) {
       if (mounted) showAppSnack(context, 'La suppression a échoué.', icon: Icons.error_outline);
@@ -100,7 +102,7 @@ class _GarageScreenState extends State<GarageScreen> {
               title: const Text('Partager la carte'),
               onTap: () {
                 Navigator.pop(context);
-                ShareService.shareSpot(this.context, car);
+                ShareService.shareSpot(this.context, car, carId: id);
               },
             ),
             ListTile(
@@ -190,7 +192,7 @@ class _GarageScreenState extends State<GarageScreen> {
                           MaterialPageRoute(builder: (_) => SpottedCarDetailScreen(carId: doc.id, carData: car)),
                         ),
                         onLongPress: () => _quickActions(doc.id, car),
-                        child: SpotCard(car: car, heroTag: 'carImage_${doc.id}'),
+                        child: SpotCard(car: car, carId: doc.id, heroTag: 'carImage_${doc.id}'),
                       )
                           .animate()
                           .fadeIn(delay: (40 * (i % 10)).ms, duration: 280.ms)

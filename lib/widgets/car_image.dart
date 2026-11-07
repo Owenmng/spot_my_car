@@ -1,6 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/services/custom_cache_manager.dart';
+import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/services/photo_store.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 
 /// Affiche la photo d'une voiture en essayant plusieurs sources dans l'ordre.
@@ -163,6 +166,45 @@ class _ShimmerState extends State<_Shimmer> with SingleTickerProviderStateMixin 
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Image d'un spot du garage : la photo du joueur (Firestore) si elle existe,
+/// sinon la photo officielle du catalogue, sinon la vignette aux couleurs de la marque.
+class SpotImage extends StatelessWidget {
+  final String carId;
+  final Map<String, dynamic> car;
+  final bool preferOfficial;
+  final BorderRadius borderRadius;
+
+  const SpotImage({super.key, required this.carId, required this.car, this.preferOfficial = false, this.borderRadius = BorderRadius.zero});
+
+  @override
+  Widget build(BuildContext context) {
+    final catalog = DataManager.instance.modelById(car['modelId'] as String?);
+    final official = [catalog?['imageUrl'] as String?, car['modelImageUrl'] as String?];
+    final fallback = CarImage(
+      urls: preferOfficial ? [...official, car['userPhotoUrl'] as String?] : [car['userPhotoUrl'] as String?, ...official],
+      brandName: car['brandName'] as String?,
+      modelName: car['modelName'] as String?,
+      borderRadius: borderRadius,
+    );
+    if (preferOfficial || car['hasPhoto'] != true) return fallback;
+
+    return FutureBuilder<Uint8List?>(
+      future: PhotoStore.load(carId),
+      builder: (context, snap) {
+        if (snap.connectionState != ConnectionState.done) {
+          return ClipRRect(borderRadius: borderRadius, child: const _Shimmer());
+        }
+        final bytes = snap.data;
+        if (bytes == null) return fallback;
+        return ClipRRect(
+          borderRadius: borderRadius,
+          child: Image.memory(bytes, fit: BoxFit.cover, width: double.infinity, height: double.infinity, gaplessPlayback: true),
+        );
+      },
     );
   }
 }

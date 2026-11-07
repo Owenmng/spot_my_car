@@ -5,7 +5,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:spot_my_car/services/audio_service.dart';
 
 // Logique de niveau, déplacée en dehors de la classe et rendue publique
 final List<Level> leaderboardLevels = [
@@ -36,9 +35,12 @@ class LeaderboardTab extends StatelessWidget {
     final currentUser = FirebaseAuth.instance.currentUser!;
 
     return Scaffold(
-      backgroundColor: Colors.grey[50],
-      body: StreamBuilder<DocumentSnapshot>(
-        stream: FirebaseFirestore.instance.collection('leaderboards').doc('top100').snapshots(),
+      body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+        stream: FirebaseFirestore.instance
+            .collection('users')
+            .orderBy('totalXp', descending: true)
+            .limit(100)
+            .snapshots(),
         builder: (context, leaderboardSnapshot) {
           
           return StreamBuilder<DocumentSnapshot>(
@@ -48,11 +50,24 @@ class LeaderboardTab extends StatelessWidget {
                 return const Center(child: CircularProgressIndicator());
               }
 
-              final leaderboardData = leaderboardSnapshot.data?.data() as Map<String, dynamic>?;
-              final top100Entries = (leaderboardData?['entries'] as List<dynamic>?) ?? [];
-              
+              final docs = leaderboardSnapshot.data?.docs ?? [];
+              final top100Entries = <Map<String, dynamic>>[
+                for (var i = 0; i < docs.length; i++)
+                  {
+                    'rank': i + 1,
+                    'uid': docs[i].id,
+                    'pseudo': docs[i].data()['pseudo'],
+                    'friendId': docs[i].data()['friendId'],
+                    'photoUrl': docs[i].data()['photoUrl'],
+                    'totalXp': (docs[i].data()['totalXp'] as num?)?.toInt() ?? 0,
+                    'level': levelForXp((docs[i].data()['totalXp'] as num?)?.toInt() ?? 0).level,
+                    'stats': docs[i].data()['stats'] ?? {},
+                  },
+              ];
+              final leaderboardData = top100Entries.isEmpty ? null : top100Entries;
+              final myIndex = top100Entries.indexWhere((e) => e['uid'] == currentUser.uid);
+              final myRank = myIndex >= 0 ? myIndex + 1 : null;
               final userData = userSnapshot.data?.data() as Map<String, dynamic>?;
-              final myRank = userData?['rank'] as int?;
 
               final podium = top100Entries.where((e) => e['rank'] <= 3).toList();
               final listEntries = top100Entries.where((e) => e['rank'] > 3).toList();
@@ -67,10 +82,7 @@ class LeaderboardTab extends StatelessWidget {
               }
 
               return RefreshIndicator(
-                onRefresh: () async {
-                  // Pour l'instant, un simple re-build suffit car les données sont en stream
-                  (context as Element).reassemble();
-                },
+                onRefresh: () async {},
                 child: ListView(
                   padding: const EdgeInsets.all(16.0),
                   children: [
