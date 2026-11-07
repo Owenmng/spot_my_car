@@ -6,7 +6,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 import 'package:intl/intl.dart';
-import 'package:latlong2/latlong.dart';
+import 'package:latlong2/latlong.dart' hide Path;
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
