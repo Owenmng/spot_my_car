@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/custom_cache_manager.dart';
 // Fichier: lib/screens/profile_screen.dart (Version Corrigée et 100% Complète)
 
 import 'dart:convert';
@@ -274,7 +275,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                   ImageProvider? profileImage;
                   if (photoUrl != null && photoUrl.isNotEmpty) {
                     if (photoUrl.startsWith('http')) {
-                      profileImage = NetworkImage(photoUrl);
+                      profileImage = NetworkImage(photoUrl, headers: kImageHeaders);
                     } else if (photoUrl.startsWith('assets/')) {
                       profileImage = AssetImage(photoUrl);
                     }
@@ -505,7 +506,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                                   ? Row(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
-                                        Image.network(logoUrl, height: 24, errorBuilder: (c, e, s) => const Icon(Icons.error, size: 24)),
+                                        Image.network(logoUrl, headers: kImageHeaders, height: 24, errorBuilder: (c, e, s) => const Icon(Icons.error, size: 24)),
                                         const SizedBox(width: 8),
                                         Text(favoriteBrand['name'], style: const TextStyle(fontSize: 16)),
                                       ],

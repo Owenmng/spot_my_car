@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/custom_cache_manager.dart';
 import 'dart:convert';
 import 'package:flutter/foundation.dart' show kIsWeb; // Import pour la détection de plateforme
 import 'package:flutter/material.dart';
@@ -145,8 +146,7 @@ class _BrandSelectionState extends State<BrandSelection> {
                                   children: [
                                     Expanded(
                                       child: logoUrl != null && logoUrl.isNotEmpty
-                                          ? Image.network(
-                                              logoUrl,
+                                          ? Image.network(logoUrl, headers: kImageHeaders,
                                               fit: BoxFit.contain,
                                               loadingBuilder:
                                                   (context, child, progress) {

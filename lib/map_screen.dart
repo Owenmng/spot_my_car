@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/custom_cache_manager.dart';
 // Fichier: lib/map_screen.dart (Version Finale, TEMPS RÉEL avec StreamBuilder)
 
 import 'package:flutter/material.dart';
@@ -67,8 +68,7 @@ class _MapScreenState extends State<MapScreen>
 
     // Cas 1 : Photo de l'utilisateur (inchangé)
     if (userPhotoUrl != null && userPhotoUrl.isNotEmpty) {
-      return Image.network(
-        userPhotoUrl,
+      return Image.network(userPhotoUrl, headers: kImageHeaders,
         fit: BoxFit.cover,
         loadingBuilder: (context, child, progress) => progress == null
             ? child
@@ -79,8 +79,7 @@ class _MapScreenState extends State<MapScreen>
     }
     // Cas 2 : Image du modèle (inchangé)
     else if (isCatalogued && modelImageUrl != null && modelImageUrl.isNotEmpty) {
-      return Image.network(
-        modelImageUrl,
+      return Image.network(modelImageUrl, headers: kImageHeaders,
         fit: BoxFit.contain,
         loadingBuilder: (context, child, progress) {
           if (progress == null) return child;
@@ -101,8 +100,7 @@ class _MapScreenState extends State<MapScreen>
       final logoUrl =
           "https://firebasestorage.googleapis.com/v0/b/$projectId.appspot.com/o/logos%2F$brandId.png?alt=media";
 
-      return Image.network(
-        logoUrl,
+      return Image.network(logoUrl, headers: kImageHeaders,
         fit: BoxFit.contain,
         loadingBuilder: (context, child, progress) {
           if (progress == null) return child;

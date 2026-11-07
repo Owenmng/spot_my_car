@@ -52,6 +52,7 @@ class _Chain extends StatelessWidget {
     return CachedNetworkImage(
       imageUrl: sources[index],
       cacheManager: CustomCacheManager(),
+      httpHeaders: kImageHeaders,
       fit: fit,
       width: double.infinity,
       height: double.infinity,

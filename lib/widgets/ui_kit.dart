@@ -158,6 +158,7 @@ class BrandLogo extends StatelessWidget {
           : CachedNetworkImage(
               imageUrl: url!,
               cacheManager: CustomCacheManager(),
+      httpHeaders: kImageHeaders,
               fit: BoxFit.contain,
               errorWidget: (_, _, _) => fallback,
               placeholder: (_, _) => const SizedBox.shrink(),

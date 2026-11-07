@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/custom_cache_manager.dart';
 // Fichier: lib/community/friends_tab.dart
 
 import 'package:flutter/material.dart';
@@ -204,7 +205,7 @@ Widget _buildFriendListItem(String friendUid) {
             radius: 25,
             backgroundColor: Colors.grey[200], // Arrière-plan si l'image charge
             backgroundImage: (photoUrl != null && photoUrl.startsWith('http'))
-                ? NetworkImage(photoUrl)
+                ? NetworkImage(photoUrl, headers: kImageHeaders)
                 : (photoUrl != null && photoUrl.startsWith('assets/'))
                     ? AssetImage(photoUrl) as ImageProvider
                     : const AssetImage('assets/avatars/car_noir.png'),
@@ -452,7 +453,7 @@ Widget _buildFriendListItem(String friendUid) {
                         leading: CircleAvatar(
                           radius: 25,
                           backgroundImage: (fromPhotoUrl != null && fromPhotoUrl.startsWith('http'))
-                              ? NetworkImage(fromPhotoUrl)
+                              ? NetworkImage(fromPhotoUrl, headers: kImageHeaders)
                               : (fromPhotoUrl != null && fromPhotoUrl.startsWith('assets/'))
                                   ? AssetImage(fromPhotoUrl) as ImageProvider
                                   : const AssetImage('assets/avatars/car_noir.png'),

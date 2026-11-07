@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/custom_cache_manager.dart';
 // Fichier: lib/brand_detail_screen.dart (Version Finale Corrigée)
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/brand_models_screen.dart';
@@ -128,8 +129,7 @@ class BrandDetailScreen extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(50.0),
                     child: logoUrl != null && logoUrl.isNotEmpty
-                        ? Image.network(
-                            logoUrl,
+                        ? Image.network(logoUrl, headers: kImageHeaders,
                             fit: BoxFit.contain,
                             loadingBuilder: (context, child, progress) {
                               if (progress == null) return child;

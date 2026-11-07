@@ -182,7 +182,7 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
                                   children: [
                                     if(imageUrl != null && imageUrl.isNotEmpty)
                                       CachedNetworkImage(
-                                        cacheManager: CustomCacheManager(),
+                                        cacheManager: CustomCacheManager(), httpHeaders: kImageHeaders,
                                         imageUrl: imageUrl,
                                         fit: BoxFit.cover,
                                         fadeInDuration: const Duration(milliseconds: 200),

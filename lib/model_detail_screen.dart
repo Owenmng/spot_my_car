@@ -1,3 +1,5 @@
+import 'package:spot_my_car/widgets/car_image.dart';
+import 'package:spot_my_car/spotted_car_detail_screen.dart' show PhotoCredit;
 // Fichier: lib/model_detail_screen.dart (Version VRAIMENT, VRAIMENT Finale et Corrigée - 100% Complète)
 
 import 'package:flutter/material.dart';
@@ -195,16 +197,7 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
                   background: Stack(
                     fit: StackFit.expand,
                     children: [
-                      Container(color: Colors.white), // Fond blanc pour les côtés
-                      if (imageFileName != null && imageFileName.isNotEmpty)
-                        CachedNetworkImage(
-                          cacheManager: CustomCacheManager(), 
-                          imageUrl: imageFileName, 
-                          fit: BoxFit.contain, // Pour voir toute l'image
-                          fadeInDuration: const Duration(milliseconds: 200), 
-                          placeholder: (c, u) => Container(color: Colors.white),
-                          errorWidget: (c, u, e) => const Icon(Icons.error, color: Colors.white)
-                        ),
+                      CarImage(urls: [imageFileName], brandName: widget.brand['name'] as String?, modelName: _currentModel['name'] as String?),
                       Container(decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Colors.transparent, Colors.black54]))),
                     ],
                   ),
@@ -227,7 +220,8 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
                           const SizedBox(height: 4),
                           if (_currentModel['production_years'] != null)
                              Text('Production de ${_currentModel['production_years']}', style: TextStyle(fontSize: 16, color: Colors.grey[700], fontStyle: FontStyle.italic)),
-                          const Divider(height: 40, thickness: 1),
+                          if (_currentModel['imageCredit'] != null) Padding(padding: const EdgeInsets.only(top: 6), child: PhotoCredit(model: Map<String, dynamic>.from(_currentModel))),
+                          const SizedBox(height: 28),
                           const Text("Fiche Technique", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                           const SizedBox(height: 8),
                             ListView(
@@ -298,7 +292,7 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
                               ],
                             ),
 
-                            const Divider(height: 40, thickness: 1),
+                          const SizedBox(height: 28),
                             const Text("Mes Spots pour ce modèle", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                             const SizedBox(height: 16),
                             StreamBuilder<QuerySnapshot>(
@@ -452,7 +446,8 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
                               ],
                             ),
 
-                            const Divider(height: 40, thickness: 1),
+                            if (_currentModel['imageCredit'] != null) Padding(padding: const EdgeInsets.only(top: 6), child: PhotoCredit(model: Map<String, dynamic>.from(_currentModel))),
+                          const SizedBox(height: 28),
                             const Text("Mes Spots pour ce modèle", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                             const SizedBox(height: 16),
                             StreamBuilder<QuerySnapshot>(

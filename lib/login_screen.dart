@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:spot_my_car/forgot_password_screen.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -134,8 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
           // Connexion à Firebase
           userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
         } catch (e) {
-          print('Erreur lors de la connexion Google mobile: $e');
-          throw e;
+          rethrow;
         }
       }
 
@@ -181,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: const Text("La connexion avec Google n'a pas abouti. Réessaie."),
+            content: Text("La connexion avec Google n'a pas abouti (${e is PlatformException ? e.code : e.runtimeType}). Réessaie."),
             backgroundColor: Colors.red));
       }
     } finally {
@@ -206,13 +206,41 @@ class _LoginScreenState extends State<LoginScreen> {
     final top = MediaQuery.paddingOf(context).top;
 
     return Scaffold(
-      backgroundColor: AppColors.ink,
+      backgroundColor: AppColors.paper,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Padding(
-              padding: EdgeInsets.fromLTRB(28, top + 36, 28, 30),
+            SizedBox(
+              height: 400 + top,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [AppColors.ink, Color.lerp(AppColors.ink, accent, 0.35)!, accent],
+                        stops: const [0.0, 0.6, 1.0],
+                      ),
+                    ),
+                  ),
+                  const _RoadLines(),
+                  Positioned(
+                    right: -60,
+                    top: top + 40,
+                    child: Container(
+                      width: 220,
+                      height: 220,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: RadialGradient(colors: [accent.withValues(alpha: 0.55), accent.withValues(alpha: 0)]),
+                      ),
+                    ),
+                  ),
+                  Padding(
+              padding: EdgeInsets.fromLTRB(28, top + 36, 28, 40),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -229,8 +257,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
             ),
+                ],
+              ),
+            ),
             Container(
               padding: EdgeInsets.fromLTRB(24, 28, 24, 28 + MediaQuery.paddingOf(context).bottom),
+              transform: Matrix4.translationValues(0, -24, 0),
               decoration: const BoxDecoration(
                 color: AppColors.paper,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.xl + 4)),
@@ -304,4 +336,62 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
+}
+
+/// Lignes de route en perspective qui défilent doucement derrière le titre.
+class _RoadLines extends StatefulWidget {
+  const _RoadLines();
+
+  @override
+  State<_RoadLines> createState() => _RoadLinesState();
+}
+
+class _RoadLinesState extends State<_RoadLines> with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(vsync: this, duration: const Duration(seconds: 3))..repeat();
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return IgnorePointer(
+      child: AnimatedBuilder(
+        animation: _c,
+        builder: (_, _) => CustomPaint(painter: _RoadPainter(_c.value)),
+      ),
+    );
+  }
+}
+
+class _RoadPainter extends CustomPainter {
+  final double t;
+  _RoadPainter(this.t);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final vanish = Offset(size.width * 0.78, size.height * 0.18);
+    final edge = Paint()
+      ..color = Colors.white.withValues(alpha: 0.07)
+      ..strokeWidth = 2;
+    canvas.drawLine(vanish, Offset(size.width * 0.2, size.height), edge);
+    canvas.drawLine(vanish, Offset(size.width * 1.35, size.height), edge);
+
+    final dash = Paint()
+      ..color = Colors.white.withValues(alpha: 0.16)
+      ..strokeCap = StrokeCap.round;
+    final bottom = Offset(size.width * 0.78, size.height);
+    for (var i = 0; i < 7; i++) {
+      final p = ((i / 7) + t) % 1.0;
+      final a = p * p;
+      final b = ((p + 0.06) * (p + 0.06)).clamp(0.0, 1.0);
+      dash.strokeWidth = 1 + 6 * a;
+      canvas.drawLine(Offset.lerp(vanish, bottom, a)!, Offset.lerp(vanish, bottom, b)!, dash);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _RoadPainter old) => old.t != t;
 }
