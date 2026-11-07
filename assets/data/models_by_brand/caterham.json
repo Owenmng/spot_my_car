@@ -1,0 +1,64 @@
+{
+ "models": [
+  {
+   "id": "caterham_7",
+   "name": "7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Caterham_7_Roadsport_SV.jpg/1280px-Caterham_7_Roadsport_SV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sjmmarsh at English Wikipedia",
+   "imageLicense": "CC BY 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Caterham_7_Roadsport_SV.jpg"
+  },
+  {
+   "id": "caterham_sp-300-r",
+   "name": "SP/300.R",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Caterham_SP300R_front-left_National_Motor_Museum%2C_Beaulieu.jpg/1280px-Caterham_SP300R_front-left_National_Motor_Museum%2C_Beaulieu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Morio",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Caterham_SP300R_front-left_National_Motor_Museum,_Beaulieu.jpg"
+  },
+  {
+   "id": "caterham_project-v",
+   "name": "Project V",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Caterham_Project_V_IAA_2025_DSC_1758.jpg/1280px-Caterham_Project_V_IAA_2025_DSC_1758.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Caterham_Project_V_IAA_2025_DSC_1758.jpg"
+  },
+  {
+   "id": "caterham_21",
+   "name": "21",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Caterham_21.jpg/1280px-Caterham_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Caterham_21.jpg"
+  },
+  {
+   "id": "caterham_7-csr",
+   "name": "7 CSR",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Caterham_CSR260.JPG/1280px-Caterham_CSR260.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Riguy at English Wikipedia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Caterham_CSR260.JPG"
+  },
+  {
+   "id": "caterham_7-roadsport",
+   "name": "7 Roadsport",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Caterham_7_Roadsport.jpg/1280px-Caterham_7_Roadsport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Brian Snelson from Hockley, Essex, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Caterham_7_Roadsport.jpg"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "models": [
+  {
+   "id": "hummer_h2",
+   "name": "H2",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Hummer_H2_%2852891415542%29_%28cropped%29.jpg/1280px-Hummer_H2_%2852891415542%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5000 x 2062 x 2012",
+   "poids_kg": 2903,
+   "imageCredit": "Alexandre Prevot from Nancy, France",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hummer_H2_(52891415542)_(cropped).jpg"
+  },
+  {
+   "id": "hummer_h3",
+   "name": "H3",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2007_Hummer_H3_--_NHTSA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "U.S. National Highway Traffic Safety Administration",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2007_Hummer_H3_--_NHTSA.jpg"
+  },
+  {
+   "id": "hummer_h1",
+   "name": "H1",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Hummer_H1_6.5L_Diesel_Detroit_1997_%28cropped%29.jpg/1280px-Hummer_H1_6.5L_Diesel_Detroit_1997_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4686 x 2191 x 2005",
+   "poids_kg": 2880,
+   "imageCredit": "Original: order_242 Derivative work: StomboyCarGeek",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hummer_H1_6.5L_Diesel_Detroit_1997_(cropped).jpg"
+  },
+  {
+   "id": "hummer_h3t",
+   "name": "H3T",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Hummer_H3T_NY.jpg/1280px-Hummer_H3T_NY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hummer_H3T_NY.jpg"
+  },
+  {
+   "id": "hummer_h2-sut",
+   "name": "H2 SUT",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2005_Hummer_H2_SUT_in_Black%2C_Rear_Left%2C_11-12-2022.jpg/1280px-2005_Hummer_H2_SUT_in_Black%2C_Rear_Left%2C_11-12-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Elise240SX",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005_Hummer_H2_SUT_in_Black,_Rear_Left,_11-12-2022.jpg"
+  }
+ ]
+}

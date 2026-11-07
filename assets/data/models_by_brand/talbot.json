@@ -1,0 +1,99 @@
+{
+ "models": [
+  {
+   "id": "talbot_1510",
+   "name": "1510",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Talbot_1510_Lahti.JPG/1280px-Talbot_1510_Lahti.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Gwafton",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_1510_Lahti.JPG"
+  },
+  {
+   "id": "talbot_samba",
+   "name": "Samba",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Talbot_Samba_Madrid_1982.jpg/1280px-Talbot_Samba_Madrid_1982.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 740,
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_Samba_Madrid_1982.jpg"
+  },
+  {
+   "id": "talbot_solara",
+   "name": "Solara",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Talbot_Solara_Lahti.JPG/1280px-Talbot_Solara_Lahti.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1040,
+   "imageCredit": "Gwafton",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_Solara_Lahti.JPG"
+  },
+  {
+   "id": "talbot_horizon",
+   "name": "Horizon",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Talbot_Horizon_Lahti5.JPG/1280px-Talbot_Horizon_Lahti5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3960 x 1680 x 1410",
+   "poids_kg": 950,
+   "imageCredit": "Gwafton",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_Horizon_Lahti5.JPG"
+  },
+  {
+   "id": "talbot_10-23-hp",
+   "name": "10/23 HP",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Talbot_10-23_1923_%286191005641%29.jpg/1280px-Talbot_10-23_1923_%286191005641%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "dawarwickphotography from Northampton",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_10-23_1923_(6191005641).jpg"
+  },
+  {
+   "id": "talbot_8-18hp",
+   "name": "8/18HP",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Talbot_8-18_1922.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. Malcolma assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_8-18_1922.jpg"
+  },
+  {
+   "id": "talbot_tagora",
+   "name": "Tagora",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Talbot_Tagora_SX.jpg/1280px-Talbot_Tagora_SX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4628 x 1810 x 1444",
+   "imageCredit": "Arnold.p",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_Tagora_SX.jpg"
+  },
+  {
+   "id": "talbot_express",
+   "name": "Express",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Fiat_e-Ducato_1X7A0350.jpg/1280px-Fiat_e-Ducato_1X7A0350.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_e-Ducato_1X7A0350.jpg"
+  },
+  {
+   "id": "talbot_talbot-lago-t26-c",
+   "name": "Talbot-Lago T26 C",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Talbot_Lago_Type_26C_of_Ron_Townley.jpg/1280px-Talbot_Lago_Type_26C_of_Ron_Townley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "GTHO",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_Lago_Type_26C_of_Ron_Townley.jpg"
+  }
+ ]
+}

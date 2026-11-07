@@ -1,0 +1,58 @@
+{
+ "models": [
+  {
+   "id": "brabus_e-v12",
+   "name": "E V12",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Mercedes-benz_EV12_Brabus_W212_%2810194903345%29.jpg/1280px-Mercedes-benz_EV12_Brabus_W212_%2810194903345%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-benz_EV12_Brabus_W212_(10194903345).jpg"
+  },
+  {
+   "id": "brabus_bullit",
+   "name": "Bullit",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Brabus_Bullit_V12_S_biturbo_%28C-Class%29.jpg/1280px-Brabus_Bullit_V12_S_biturbo_%28C-Class%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4707 x 1795 x 1361",
+   "poids_kg": 1820,
+   "imageCredit": "LSDSL",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Brabus_Bullit_V12_S_biturbo_(C-Class).jpg"
+  },
+  {
+   "id": "brabus_cv-8",
+   "name": "CV 8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/2001_Brabus_C_V8_%28W203%29_RKMT.jpg/1280px-2001_Brabus_C_V8_%28W203%29_RKMT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "vitesse_max_kmh": 84,
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2001_Brabus_C_V8_(W203)_RKMT.jpg"
+  },
+  {
+   "id": "brabus_rocket",
+   "name": "Rocket",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Brabus_Rocket_2.jpg/1280px-Brabus_Rocket_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "vitesse_max_kmh": 101,
+   "imageCredit": "LSDSL",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Brabus_Rocket_2.jpg"
+  },
+  {
+   "id": "brabus_rocket-900",
+   "name": "Rocket 900",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Brabus_900_Cabriolet_IMG_0555.jpg/1280px-Brabus_900_Cabriolet_IMG_0555.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Brabus_900_Cabriolet_IMG_0555.jpg"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "models": [
+  {
+   "id": "maybach_mercedes-maybach-gls",
+   "name": "Mercedes-Maybach GLS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Mercedes-Maybach_GLS600_IMG_5273.jpg/1280px-Mercedes-Maybach_GLS600_IMG_5273.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Maybach_GLS600_IMG_5273.jpg"
+  },
+  {
+   "id": "maybach_zeppelin",
+   "name": "Zeppelin",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/1932_Maybach_DS8_Zeppelin_V12_200hp_8000cc_160kmh_Bild_1.JPG/1280px-1932_Maybach_DS8_Zeppelin_V12_200hp_8000cc_160kmh_Bild_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alf van Beem",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1932_Maybach_DS8_Zeppelin_V12_200hp_8000cc_160kmh_Bild_1.JPG"
+  },
+  {
+   "id": "maybach_exelero",
+   "name": "Exelero",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Excelero.jpg/1280px-Excelero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "6230 x 2120 x 1376",
+   "poids_kg": 2660,
+   "vitesse_max_kmh": 97,
+   "imageCredit": "Simon Davison from Los Gatos, United States",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Excelero.jpg"
+  },
+  {
+   "id": "maybach_57-and-62",
+   "name": "57 and 62",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Mercedes_Maybach_57_and_62.jpg/1280px-Mercedes_Maybach_57_and_62.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Tribalninja",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_Maybach_57_and_62.jpg"
+  },
+  {
+   "id": "maybach_w5",
+   "name": "W5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Maybach_W5_pic3.jpg/1280px-Maybach_W5_pic3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5000 x 1760 x 1950",
+   "imageCredit": "AlfvanBeem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Maybach_W5_pic3.jpg"
+  },
+  {
+   "id": "maybach_sw-35",
+   "name": "SW 35",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/1935_Maybach_SW_35%2C_140hp%2C_3500cc%2C_140kmh.JPG/1280px-1935_Maybach_SW_35%2C_140hp%2C_3500cc%2C_140kmh.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alf van Beem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1935_Maybach_SW_35,_140hp,_3500cc,_140kmh.JPG"
+  }
+ ]
+}

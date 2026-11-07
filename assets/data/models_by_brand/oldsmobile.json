@@ -1,0 +1,364 @@
+{
+ "models": [
+  {
+   "id": "oldsmobile_series-70",
+   "name": "Series 70",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/1940_Oldsmobile_Dynamic_Series_70_Sedan_%2812492572503%29.jpg/1280px-1940_Oldsmobile_Dynamic_Series_70_Sedan_%2812492572503%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1940_Oldsmobile_Dynamic_Series_70_Sedan_(12492572503).jpg"
+  },
+  {
+   "id": "oldsmobile_series-28",
+   "name": "Series 28",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/1911_Oldsmobile_Autocrat_-_red_-_svr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rex Gray",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1911_Oldsmobile_Autocrat_-_red_-_svr.jpg"
+  },
+  {
+   "id": "oldsmobile_series-l",
+   "name": "Series L",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Oldsmobile_4-Door_Sedan_1934.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile_4-Door_Sedan_1934.jpg"
+  },
+  {
+   "id": "oldsmobile_model-20",
+   "name": "Model 20",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/1904-oldsmobile-archives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 951,
+   "imageCredit": "The original uploader was DougW at English Wikipedia.",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1904-oldsmobile-archives.jpg"
+  },
+  {
+   "id": "oldsmobile_model-s",
+   "name": "Model S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Oldsmobile_model_S_palacetouring.jpg/1280px-Oldsmobile_model_S_palacetouring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Unknown authorUnknown author",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile_model_S_palacetouring.jpg"
+  },
+  {
+   "id": "oldsmobile_light-eight",
+   "name": "Light Eight",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/1916_Oldsmobile_Model_44_Light_Eight_4-door_Touring%2C_front_left_%28Hershey_2019%29.jpg/1280px-1916_Oldsmobile_Model_44_Light_Eight_4-door_Touring%2C_front_left_%28Hershey_2019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1916_Oldsmobile_Model_44_Light_Eight_4-door_Touring,_front_left_(Hershey_2019).jpg"
+  },
+  {
+   "id": "oldsmobile_f-series",
+   "name": "F-Series",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/1931_Oldsmobile_%2828247125394%29.jpg/1280px-1931_Oldsmobile_%2828247125394%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1931_Oldsmobile_(28247125394).jpg"
+  },
+  {
+   "id": "oldsmobile_cutlass-calais",
+   "name": "Cutlass Calais",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/1991_Oldsmobile_Cutlass_Calais_4-door_Quad_4%2C_fL.jpg/1280px-1991_Oldsmobile_Cutlass_Calais_4-door_Quad_4%2C_fL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1985 - 1991",
+   "tags": [],
+   "dimensions_lwh_mm": "4554 x 1692 x 1331",
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1991_Oldsmobile_Cutlass_Calais_4-door_Quad_4,_fL.jpg"
+  },
+  {
+   "id": "oldsmobile_series-60",
+   "name": "Series 60",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/1941_Oldsmobile_Special_66_Club_Coupe%2C_front_right%2C_09-30-2023.jpg/1280px-1941_Oldsmobile_Special_66_Club_Coupe%2C_front_right%2C_09-30-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1941_Oldsmobile_Special_66_Club_Coupe,_front_right,_09-30-2023.jpg"
+  },
+  {
+   "id": "oldsmobile_fiesta",
+   "name": "Fiesta",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/1953_Oldsmobile_Ninety-Eight_Fiesta_Convertible_%2820662461536%29.jpg/1280px-1953_Oldsmobile_Ninety-Eight_Fiesta_Convertible_%2820662461536%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Joe deSousa",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1953_Oldsmobile_Ninety-Eight_Fiesta_Convertible_(20662461536).jpg"
+  },
+  {
+   "id": "oldsmobile_hurst-olds",
+   "name": "Hurst/Olds",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/1979_Hurst_Olds_W-30_front.jpg/1280px-1979_Hurst_Olds_W-30_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_Hurst_Olds_W-30_front.jpg"
+  },
+  {
+   "id": "oldsmobile_model-30",
+   "name": "Model 30",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/1927_Oldsmobile_Series_E_2-door_sedan%2C_front_left.jpg/1280px-1927_Oldsmobile_Series_E_2-door_sedan%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1927_Oldsmobile_Series_E_2-door_sedan,_front_left.jpg"
+  },
+  {
+   "id": "oldsmobile_super-88",
+   "name": "Super 88",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Warwick_%28Rhode_Island%2C_USA%29%2C_Oldsmobile_--_2006_--_4.jpg/1280px-Warwick_%28Rhode_Island%2C_USA%29%2C_Oldsmobile_--_2006_--_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dietmar Rabich",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Warwick_(Rhode_Island,_USA),_Oldsmobile_--_2006_--_4.jpg"
+  },
+  {
+   "id": "oldsmobile_lss",
+   "name": "LSS",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Olds-88.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Olds-88.jpg"
+  },
+  {
+   "id": "oldsmobile_cutlass-n-body",
+   "name": "Cutlass N-body",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/1998_Oldsmobile_Cutlass_GLS_in_Medium_Beige%2C_front_left%2C_9-06-2021.jpg/1280px-1998_Oldsmobile_Cutlass_GLS_in_Medium_Beige%2C_front_left%2C_9-06-2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1997 - 1999",
+   "tags": [],
+   "imageCredit": "Cutlass",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1998_Oldsmobile_Cutlass_GLS_in_Medium_Beige,_front_left,_9-06-2021.jpg"
+  },
+  {
+   "id": "oldsmobile_alero",
+   "name": "Alero",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Oldsmobile_Alero_sedan_--_03-16-2012.JPG/1280px-Oldsmobile_Alero_sedan_--_03-16-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4742 x 1781 x 1384",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile_Alero_sedan_--_03-16-2012.JPG"
+  },
+  {
+   "id": "oldsmobile_firenza",
+   "name": "Firenza",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Oldsmobile_Firenza_coupe_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile_Firenza_coupe_2.jpg"
+  },
+  {
+   "id": "oldsmobile_vista-cruiser",
+   "name": "Vista Cruiser",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/1966_Oldsmobile_Vista_Cruiser_%285279666074%29.jpg/1280px-1966_Oldsmobile_Vista_Cruiser_%285279666074%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "sv1ambo",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Oldsmobile_Vista_Cruiser_(5279666074).jpg"
+  },
+  {
+   "id": "oldsmobile_cutlass-ciera",
+   "name": "Cutlass Ciera",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/1996_Oldsmobile_Ciera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1982 - 1996",
+   "tags": [],
+   "dimensions_lwh_mm": "4785 x 1765 x 1374",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Oldsmobile_Ciera.jpg"
+  },
+  {
+   "id": "oldsmobile_starfire",
+   "name": "Starfire",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/1961_Oldsmobile_Starfire_convertible_front_right.jpg/1280px-1961_Oldsmobile_Starfire_convertible_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1961_Oldsmobile_Starfire_convertible_front_right.jpg"
+  },
+  {
+   "id": "oldsmobile_omega",
+   "name": "Omega",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%2780_Oldsmobile_Omega_Sedan.jpg/1280px-%2780_Oldsmobile_Omega_Sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2780_Oldsmobile_Omega_Sedan.jpg"
+  },
+  {
+   "id": "oldsmobile_achieva",
+   "name": "Achieva",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/1997_Oldsmobile_Achieva_SL.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4773 x 1730 x 1359",
+   "imageCredit": "The Oldsmobile Edge",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Oldsmobile_Achieva_SL.png"
+  },
+  {
+   "id": "oldsmobile_silhouette",
+   "name": "Silhouette",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2001-2004_Oldsmobile_Silhouette_--_01-20-2012.jpg/1280px-2001-2004_Oldsmobile_Silhouette_--_01-20-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2001-2004_Oldsmobile_Silhouette_--_01-20-2012.jpg"
+  },
+  {
+   "id": "oldsmobile_custom-cruiser",
+   "name": "Custom Cruiser",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/2nd-Oldsmobile-Custom-Cruiser.jpg/1280px-2nd-Oldsmobile-Custom-Cruiser.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2nd-Oldsmobile-Custom-Cruiser.jpg"
+  },
+  {
+   "id": "oldsmobile_toronado",
+   "name": "Toronado",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/1966_Oldsmobile_Toronado_%2828862800095%29.jpg/1280px-1966_Oldsmobile_Toronado_%2828862800095%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1966 - 1992",
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Oldsmobile_Toronado_(28862800095).jpg"
+  },
+  {
+   "id": "oldsmobile_curved-dash",
+   "name": "Curved Dash",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Oldsmobile_Curved_Dash_Runabout_1902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile_Curved_Dash_Runabout_1902.jpg"
+  },
+  {
+   "id": "oldsmobile_intrigue",
+   "name": "Intrigue",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Oldsmobile-Intrigue.jpg/1280px-Oldsmobile-Intrigue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4976 x 1869 x 1438",
+   "poids_kg": 1595,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile-Intrigue.jpg"
+  },
+  {
+   "id": "oldsmobile_aurora",
+   "name": "Aurora",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/1997_Oldsmobile_Aurora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "The Oldsmobile Edge",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Oldsmobile_Aurora.jpg"
+  },
+  {
+   "id": "oldsmobile_bravada",
+   "name": "Bravada",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/02-04_Oldsmobile_Bravada.jpg/1280px-02-04_Oldsmobile_Bravada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:02-04_Oldsmobile_Bravada.jpg"
+  },
+  {
+   "id": "oldsmobile_f-85",
+   "name": "F-85",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/1962_OLDSMOBILE_F85_CUTLASS_CONVERTIBLE.jpg/1280px-1962_OLDSMOBILE_F85_CUTLASS_CONVERTIBLE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ryanandlenny",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1962_OLDSMOBILE_F85_CUTLASS_CONVERTIBLE.jpg"
+  },
+  {
+   "id": "oldsmobile_cutlass-supreme",
+   "name": "Cutlass Supreme",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/1972_Oldsmobile_Cutlass_Supreme_Hardtop_--_10-19-2010.jpg/1280px-1972_Oldsmobile_Cutlass_Supreme_Hardtop_--_10-19-2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1965 - 1997",
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Oldsmobile_Cutlass_Supreme_Hardtop_--_10-19-2010.jpg"
+  },
+  {
+   "id": "oldsmobile_golden-rocket",
+   "name": "Golden Rocket",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Oldsmobile_Golden_Rocket.jpg/1280px-Oldsmobile_Golden_Rocket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5108 x 1915 x 1257",
+   "poids_kg": 1134,
+   "imageCredit": "General Motors",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oldsmobile_Golden_Rocket.jpg"
+  },
+  {
+   "id": "oldsmobile_88",
+   "name": "88",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/81-85_Oldsmobile_Delta_88.jpg/1280px-81-85_Oldsmobile_Delta_88.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:81-85_Oldsmobile_Delta_88.jpg"
+  },
+  {
+   "id": "oldsmobile_98",
+   "name": "98",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/91-96_Oldsmobile_Ninety-Eight.jpg/1280px-91-96_Oldsmobile_Ninety-Eight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:91-96_Oldsmobile_Ninety-Eight.jpg"
+  },
+  {
+   "id": "oldsmobile_442",
+   "name": "442",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/1971_Oldsmobile_442_Convertible_%2814362484524%29.jpg/1280px-1971_Oldsmobile_442_Convertible_%2814362484524%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1964 - 1987",
+   "tags": [],
+   "dimensions_lwh_mm": "5121 x 1935 x 1340",
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1971_Oldsmobile_442_Convertible_(14362484524).jpg"
+  }
+ ]
+}

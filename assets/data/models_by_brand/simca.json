@@ -1,0 +1,221 @@
+{
+ "models": [
+  {
+   "id": "simca_vedette",
+   "name": "Vedette",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Verasailles_1957.JPG/1280px-Verasailles_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1130,
+   "imageCredit": "Lebubu93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Verasailles_1957.JPG"
+  },
+  {
+   "id": "simca_1300-1500",
+   "name": "1300/1500",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/1964_Simca_1500.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "unknown, affiliated with Garage de l'Est, digitally modified and uploaded by User:Bravada",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Simca_1500.jpg"
+  },
+  {
+   "id": "simca_chambord",
+   "name": "Chambord",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/1966_Simca_Tuf%C3%A3o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4520 x 1750 x 1480",
+   "poids_kg": 1150,
+   "imageCredit": "Renzo Maia;cropped and adjusted by uploader Mr.choppers",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Simca_Tuf%C3%A3o.jpg"
+  },
+  {
+   "id": "simca_5",
+   "name": "5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Simca_5.jpg/1280px-Simca_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3220 x 1350 x 1400",
+   "poids_kg": 560,
+   "imageCredit": "joost j. bakker from ijmuiden, the netherlands",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_5.jpg"
+  },
+  {
+   "id": "simca_8",
+   "name": "8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Simca_8_2013-07-21_13-47-30_cropped_to_remove_distracting_Neighbo%28u%29r.JPG/1280px-Simca_8_2013-07-21_13-47-30_cropped_to_remove_distracting_Neighbo%28u%29r.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4019 x 1480 x 1530",
+   "poids_kg": 870,
+   "imageCredit": "Modified version of original by Berthold Werner (Cropping, brightness adjustment and minor changes made by Charles01).",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_8_2013-07-21_13-47-30_cropped_to_remove_distracting_Neighbo(u)r.JPG"
+  },
+  {
+   "id": "simca_1000-rallye",
+   "name": "1000 Rallye",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Simca_1000_Rallye_2_Blaye_2013_02.JPG/1280px-Simca_1000_Rallye_2_Blaye_2013_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Xabi Rome-Hérault",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_1000_Rallye_2_Blaye_2013_02.JPG"
+  },
+  {
+   "id": "simca_1301-1501",
+   "name": "1301/1501",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Simca_1301_Special_Front.JPG/1280px-Simca_1301_Special_Front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Kroelleboelle",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_1301_Special_Front.JPG"
+  },
+  {
+   "id": "simca_ariane",
+   "name": "Ariane",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Simca_Ariane_%281960%29.jpg/1280px-Simca_Ariane_%281960%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4495 x 1720 x 1480",
+   "poids_kg": 1130,
+   "imageCredit": "Palauenc05",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_Ariane_(1960).jpg"
+  },
+  {
+   "id": "simca_6",
+   "name": "6",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Simca6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3215 x 1275 x 1377",
+   "poids_kg": 560,
+   "imageCredit": "Alex75",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca6.jpg"
+  },
+  {
+   "id": "simca_1000",
+   "name": "1000",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/1963_Simca_1000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3785 x 1473 x 1335",
+   "imageCredit": "unknown, affiliated with Garage de l'Est, digitally modified and uploaded by User:Bravada",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Simca_1000.jpg"
+  },
+  {
+   "id": "simca_aronde",
+   "name": "Aronde",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sortie_Soupapes_d%C3%A9gripp%C3%A9es_07-04-2013_-_Simca_Aronde_-_trois-quarts_avant.jpg/1280px-Sortie_Soupapes_d%C3%A9gripp%C3%A9es_07-04-2013_-_Simca_Aronde_-_trois-quarts_avant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Clément Bucco-Lechat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Sortie_Soupapes_d%C3%A9gripp%C3%A9es_07-04-2013_-_Simca_Aronde_-_trois-quarts_avant.jpg"
+  },
+  {
+   "id": "simca_1307",
+   "name": "1307",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Simca_1307_GLS_1978.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "unknown, affiliated with Garage de l'Est, digitally modified and uploaded by User:328cia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_1307_GLS_1978.jpg"
+  },
+  {
+   "id": "simca_1200s",
+   "name": "1200S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Simca_1200S.JPG/1280px-Simca_1200S.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Patber P. Bernard",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_1200S.JPG"
+  },
+  {
+   "id": "simca_simca-fiat-6cv",
+   "name": "Simca-Fiat 6CV",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Fiat_508_Balilla_1933.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3245 x 1400 x 1530",
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_508_Balilla_1933.jpg"
+  },
+  {
+   "id": "simca_simca-fiat-11-cv",
+   "name": "Simca-Fiat 11 CV",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/1937_Simca-Fiat_11CV_Berline_5pl.jpg/1280px-1937_Simca-Fiat_11CV_Berline_5pl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4335 x 1670 x 1680",
+   "poids_kg": 1250,
+   "imageCredit": "jean-pierre 60;Cropped and levels adjusted by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1937_Simca-Fiat_11CV_Berline_5pl.jpg"
+  },
+  {
+   "id": "simca_abarth-1150",
+   "name": "Abarth 1150",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Simca_1150-Abarth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Luc106",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_1150-Abarth.jpg"
+  },
+  {
+   "id": "simca_aronde-p60",
+   "name": "Aronde P60",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Simca_Aronde_dutch_licence_registration_AL-43-33.JPG/1280px-Simca_Aronde_dutch_licence_registration_AL-43-33.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "AlfvanBeem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_Aronde_dutch_licence_registration_AL-43-33.JPG"
+  },
+  {
+   "id": "simca_aronde-1300",
+   "name": "Aronde 1300",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Simca_Aronde_195x.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1958 - 1977",
+   "tags": [],
+   "imageCredit": "Pibwl",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_Aronde_195x.jpg"
+  },
+  {
+   "id": "simca_alvorada",
+   "name": "Alvorada",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Simca_Chambord_Tuf%C3%A3o.jpg/1280px-Simca_Chambord_Tuf%C3%A3o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4520 x 1750 x 1480",
+   "poids_kg": 1150,
+   "imageCredit": "Renzo Maia;cropped and adjusted by uploader Mr.choppers",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_Chambord_Tuf%C3%A3o.jpg"
+  },
+  {
+   "id": "simca_9",
+   "name": "9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/1954_Simca_9_Sport_Figoni_%26_Falaschi.jpg/1280px-1954_Simca_9_Sport_Figoni_%26_Falaschi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "jean-pierre 60;Cropped, plates blanked, and levels adjusted by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1954_Simca_9_Sport_Figoni_%26_Falaschi.jpg"
+  }
+ ]
+}

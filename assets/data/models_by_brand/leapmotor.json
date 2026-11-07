@@ -1,0 +1,117 @@
+{
+ "models": [
+  {
+   "id": "leapmotor_t03",
+   "name": "T03",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Leapmotor_T03_Auto_Zuerich_2024_DSC_6327.jpg/1280px-Leapmotor_T03_Auto_Zuerich_2024_DSC_6327.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3620 x 1652 x 1577",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_T03_Auto_Zuerich_2024_DSC_6327.jpg"
+  },
+  {
+   "id": "leapmotor_c11",
+   "name": "C11",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Leapmotor_C11_IAA_2023_1X7A0243.jpg/1280px-Leapmotor_C11_IAA_2023_1X7A0243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_C11_IAA_2023_1X7A0243.jpg"
+  },
+  {
+   "id": "leapmotor_c10",
+   "name": "C10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Leapmotor_C10_Leonberg_2026_IMG_8600.jpg/1280px-Leapmotor_C10_Leonberg_2026_IMG_8600.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2023 - Aujourd'hui",
+   "tags": [],
+   "dimensions_lwh_mm": "4740 x 1900 x 1680",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_C10_Leonberg_2026_IMG_8600.jpg"
+  },
+  {
+   "id": "leapmotor_b10",
+   "name": "B10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Leapmotor_B10_IAA_2025_DSC_2067.jpg/1280px-Leapmotor_B10_IAA_2025_DSC_2067.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4515 x 1885 x 1655",
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_B10_IAA_2025_DSC_2067.jpg"
+  },
+  {
+   "id": "leapmotor_lafa-5",
+   "name": "Lafa 5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Leapmotor_B05_IMG_8272.jpg/1280px-Leapmotor_B05_IMG_8272.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_B05_IMG_8272.jpg"
+  },
+  {
+   "id": "leapmotor_s01",
+   "name": "S01",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Leapmotor_S01_IMG003.jpg/1280px-Leapmotor_S01_IMG003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Anonymousfox36",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_S01_IMG003.jpg"
+  },
+  {
+   "id": "leapmotor_c01",
+   "name": "C01",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Leapmotor_C01_REEV_001.jpg/1280px-Leapmotor_C01_REEV_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Quzhouliulian",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_C01_REEV_001.jpg"
+  },
+  {
+   "id": "leapmotor_b01",
+   "name": "B01",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Leapmotor_B01_005.jpg/1280px-Leapmotor_B01_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_B01_005.jpg"
+  },
+  {
+   "id": "leapmotor_d19",
+   "name": "D19",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Leapmotor_D19_005.jpg/1280px-Leapmotor_D19_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_D19_005.jpg"
+  },
+  {
+   "id": "leapmotor_a10",
+   "name": "A10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Leapmotor_B03X_Leonberg_2026_IMG_8589.jpg/1280px-Leapmotor_B03X_Leonberg_2026_IMG_8589.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Leapmotor_B03X_Leonberg_2026_IMG_8589.jpg"
+  },
+  {
+   "id": "leapmotor_d99",
+   "name": "D99",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/2026_Leapmotor_D99_%28front%29.jpg/1280px-2026_Leapmotor_D99_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User3204",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Leapmotor_D99_(front).jpg"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "models": [
+  {
+   "id": "venturi_400",
+   "name": "400",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Venturi_400_trophy_%2813114624795%29.jpg/1280px-Venturi_400_trophy_%2813114624795%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4140 x 1990 x 1170",
+   "poids_kg": 1000,
+   "imageCredit": "Ben",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Venturi_400_trophy_(13114624795).jpg"
+  },
+  {
+   "id": "venturi_fetish",
+   "name": "Fétish",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Stand_Venturi_Mondial_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3887 x 1884 x 1200",
+   "poids_kg": 980,
+   "imageCredit": "No machine-readable author provided. Mcassonnet assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Stand_Venturi_Mondial_2006.jpg"
+  },
+  {
+   "id": "venturi_atlantique",
+   "name": "Atlantique",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Venturi_300_Atlantique_3.4_front.jpg/1280px-Venturi_300_Atlantique_3.4_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4240 x 1840 x 1180",
+   "poids_kg": 1400,
+   "imageCredit": "No machine-readable author provided. Mcassonnet assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Venturi_300_Atlantique_3.4_front.jpg"
+  },
+  {
+   "id": "venturi_600-lm",
+   "name": "600 LM",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Venturi_600LM_Pilot_Jacadi.jpg/1280px-Venturi_600LM_Pilot_Jacadi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Unknown authorUnknown author",
+   "imageLicense": "Copyrighted free use",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Venturi_600LM_Pilot_Jacadi.jpg"
+  },
+  {
+   "id": "venturi_america",
+   "name": "America",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Venturi_America_-_Mondial_de_l%27Automobile_de_Paris_2014_-_005.jpg/1280px-Venturi_America_-_Mondial_de_l%27Automobile_de_Paris_2014_-_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Venturi_America_-_Mondial_de_l%27Automobile_de_Paris_2014_-_005.jpg"
+  }
+ ]
+}

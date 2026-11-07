@@ -1,0 +1,65 @@
+{
+ "models": [
+  {
+   "id": "ligier_js2",
+   "name": "JS2",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Ligier_JS2_vl_red.jpg/1280px-Ligier_JS2_vl_red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4250 x 1720 x 1151",
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ligier_JS2_vl_red.jpg"
+  },
+  {
+   "id": "ligier_x-too",
+   "name": "X-TOO",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Ligier_X-TOO_Microcar_2.jpg/1280px-Ligier_X-TOO_Microcar_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lucarelli",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ligier_X-TOO_Microcar_2.jpg"
+  },
+  {
+   "id": "ligier_easymile-ez10",
+   "name": "Easymile EZ10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Ligier_EZ10-IMG_8157.jpg/1280px-Ligier_EZ10-IMG_8157.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rama",
+   "imageLicense": "CC BY-SA 2.0 fr",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ligier_EZ10-IMG_8157.jpg"
+  },
+  {
+   "id": "ligier_js2-r",
+   "name": "JS2 R",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ligier-09.jpg/1280px-Ligier-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "United Autosports",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ligier-09.jpg"
+  },
+  {
+   "id": "ligier_myli",
+   "name": "Myli",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Ligier_Myli_2023_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Xaamev",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ligier_Myli_2023_front.jpg"
+  },
+  {
+   "id": "ligier_js60",
+   "name": "JS60",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/2021_Ligier_JS60.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Js60ultim",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Ligier_JS60.jpg"
+  }
+ ]
+}

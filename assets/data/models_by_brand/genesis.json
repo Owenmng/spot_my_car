@@ -1,0 +1,120 @@
+{
+ "models": [
+  {
+   "id": "genesis_g90",
+   "name": "G90",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Genesis_G90_%28RS4%29_Auto_Zuerich_2024_DSC_6598.jpg/1280px-Genesis_G90_%28RS4%29_Auto_Zuerich_2024_DSC_6598.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_G90_(RS4)_Auto_Zuerich_2024_DSC_6598.jpg"
+  },
+  {
+   "id": "genesis_g70",
+   "name": "G70",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Genesis_G70_IAA_2021_1X7A0227.jpg/1280px-Genesis_G70_IAA_2021_1X7A0227.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4685 x 1850 x 1400",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_G70_IAA_2021_1X7A0227.jpg"
+  },
+  {
+   "id": "genesis_gv80",
+   "name": "GV80",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Genesis_GV80_Auto_Zuerich_2021_IMG_0614.jpg/1280px-Genesis_GV80_Auto_Zuerich_2021_IMG_0614.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4945 x 1975 x 1715",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_GV80_Auto_Zuerich_2021_IMG_0614.jpg"
+  },
+  {
+   "id": "genesis_gv70",
+   "name": "GV70",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Genesis_GV70_IMG_1040.jpg/1280px-Genesis_GV70_IMG_1040.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4715 x 1910 x 1630",
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_GV70_IMG_1040.jpg"
+  },
+  {
+   "id": "genesis_gv60",
+   "name": "GV60",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Genesis_GV60_Classic-Gala_2022_1X7A0245.jpg/1280px-Genesis_GV60_Classic-Gala_2022_1X7A0245.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4515 x 1890 x 1580",
+   "poids_kg": 1985,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_GV60_Classic-Gala_2022_1X7A0245.jpg"
+  },
+  {
+   "id": "genesis_g80",
+   "name": "G80",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Genesis_G80_IAA_2021_1X7A0234.jpg/1280px-Genesis_G80_IAA_2021_1X7A0234.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4990 x 1890 x 1480",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_G80_IAA_2021_1X7A0234.jpg"
+  },
+  {
+   "id": "genesis_electrified-g80",
+   "name": "Electrified G80",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Genesis_Electrified_G80_Auto_Zuerich_2023_1X7A1133.jpg/1280px-Genesis_Electrified_G80_Auto_Zuerich_2023_1X7A1133.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_Electrified_G80_Auto_Zuerich_2023_1X7A1133.jpg"
+  },
+  {
+   "id": "genesis_gv90",
+   "name": "GV90",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Genesis_GV90_JG1_Baena_Green_%287%29.jpg/1280px-Genesis_GV90_JG1_Baena_Green_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_GV90_JG1_Baena_Green_(7).jpg"
+  },
+  {
+   "id": "genesis_g80-rg3",
+   "name": "G80 (RG3)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/000Genesis_G80_%28RG3%29.jpg/1280px-000Genesis_G80_%28RG3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Benespit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:000Genesis_G80_(RG3).jpg"
+  },
+  {
+   "id": "genesis_g90-rs4",
+   "name": "G90 (RS4)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/00_Genesis_G90_3.jpg/1280px-00_Genesis_G90_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Benespit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:00_Genesis_G90_3.jpg"
+  },
+  {
+   "id": "genesis_g90-hi",
+   "name": "G90 (HI)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Genesis_EQ900_HI_black_%285%29.jpg/1280px-Genesis_EQ900_HI_black_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Genesis_EQ900_HI_black_(5).jpg"
+  }
+ ]
+}

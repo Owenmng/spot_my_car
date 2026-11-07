@@ -1,0 +1,190 @@
+{
+ "models": [
+  {
+   "id": "mahindra_marazzo",
+   "name": "Marazzo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mahindra_Marazzo_MPV_SEP_18_%281%29.jpg/1280px-Mahindra_Marazzo_MPV_SEP_18_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "SnapMeUp",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Marazzo_MPV_SEP_18_(1).jpg"
+  },
+  {
+   "id": "mahindra_xuv300",
+   "name": "XUV300",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Mahindra_XUV_300_1.2T_W8_2024.jpg/1280px-Mahindra_XUV_300_1.2T_W8_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3995 x 1821 x 1617",
+   "imageCredit": "RL GNZLZ from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_XUV_300_1.2T_W8_2024.jpg"
+  },
+  {
+   "id": "mahindra_verito-vibe",
+   "name": "Verito Vibe",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Mahindra_Verito_Vibe_2015.JPG/1280px-Mahindra_Verito_Vibe_2015.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2018",
+   "tags": [],
+   "imageCredit": "SnapMeUp",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Verito_Vibe_2015.JPG"
+  },
+  {
+   "id": "mahindra_xuv700",
+   "name": "XUV700",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/2023_Mahindra_XUV700_AX7L_front.jpg/1280px-2023_Mahindra_XUV700_AX7L_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2021 - Aujourd'hui",
+   "tags": [],
+   "dimensions_lwh_mm": "1890 x 1890 x 1795",
+   "imageCredit": "LuvsMG481",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Mahindra_XUV700_AX7L_front.jpg"
+  },
+  {
+   "id": "mahindra_thar",
+   "name": "Thar",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Mahindra_Thar_2.5_CRDe_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "raul;Cropped and minor alterations by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Thar_2.5_CRDe_2011.jpg"
+  },
+  {
+   "id": "mahindra_scorpio",
+   "name": "Scorpio",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/2024_Mahindra_Scorpio_Z8L_front.jpg/1280px-2024_Mahindra_Scorpio_Z8L_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "LuvsMG481",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Mahindra_Scorpio_Z8L_front.jpg"
+  },
+  {
+   "id": "mahindra_bolero-camper",
+   "name": "Bolero Camper",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Mahindra_Bolero_ZLX.jpg/1280px-Mahindra_Bolero_ZLX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "RaNK001",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Bolero_ZLX.jpg"
+  },
+  {
+   "id": "mahindra_maxx",
+   "name": "Maxx",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mahindra_MaXX_Pik_Up_%22Chicken_King%22.jpg/1280px-Mahindra_MaXX_Pik_Up_%22Chicken_King%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "cell105 from Pune, India, cropped, face blurred and some advertising drawn away by uploader Mr.choppers",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_MaXX_Pik_Up_%22Chicken_King%22.jpg"
+  },
+  {
+   "id": "mahindra_xuv500",
+   "name": "XUV500",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Mahindra_XUV_SUV_at_Ashiana_Brahmananda_%28Ank_Kumar%2C_Infosys_Limited%29._01.jpg/1280px-Mahindra_XUV_SUV_at_Ashiana_Brahmananda_%28Ank_Kumar%2C_Infosys_Limited%29._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4585 x 1890 x 1785",
+   "imageCredit": "Ank Kumar",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_XUV_SUV_at_Ashiana_Brahmananda_(Ank_Kumar,_Infosys_Limited)._01.jpg"
+  },
+  {
+   "id": "mahindra_kuv100",
+   "name": "KUV100",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Mahindra_KUV100_G80_K8_2023_%2853285730521%29.jpg/1280px-Mahindra_KUV100_G80_K8_2023_%2853285730521%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3675 x 1705 x 1635",
+   "imageCredit": "RL GNZLZ from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_KUV100_G80_K8_2023_(53285730521).jpg"
+  },
+  {
+   "id": "mahindra_maxximo",
+   "name": "Maxximo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Mahindra_Maxximo_in_2011.jpg/1280px-Mahindra_Maxximo_in_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "RaNK001",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Maxximo_in_2011.jpg"
+  },
+  {
+   "id": "mahindra_scorpio-getaway",
+   "name": "Scorpio Getaway",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mahindra_Bilbao-_08_Marzo_30.jpg/1280px-Mahindra_Bilbao-_08_Marzo_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Viva Chile",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Bilbao-_08_Marzo_30.jpg"
+  },
+  {
+   "id": "mahindra_armada",
+   "name": "Armada",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Mahindra_mini_truck_-_panoramio.jpg/1280px-Mahindra_mini_truck_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Suresh Babunair",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_mini_truck_-_panoramio.jpg"
+  },
+  {
+   "id": "mahindra_quanto",
+   "name": "Quanto",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Mahindra_Quanto_image.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "CarTrade.com",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Quanto_image.JPG"
+  },
+  {
+   "id": "mahindra_genio",
+   "name": "Genio",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Mahindra_Genio_Double_Cab_%2817048883692%29.jpg/1280px-Mahindra_Genio_Double_Cab_%2817048883692%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Riley from Christchurch, New Zealand",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_Genio_Double_Cab_(17048883692).jpg"
+  },
+  {
+   "id": "mahindra_tuv300",
+   "name": "TUV300",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mahindra_TUV_300_Chennai_2016_%282%29.JPG/1280px-Mahindra_TUV_300_Chennai_2016_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "SnapMeUp",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_TUV_300_Chennai_2016_(2).JPG"
+  },
+  {
+   "id": "mahindra_roxor",
+   "name": "Roxor",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Red_2018_Mahindra_Roxor_with_after_market_hard_cab.jpeg/1280px-Red_2018_Mahindra_Roxor_with_after_market_hard_cab.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Abiez",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Red_2018_Mahindra_Roxor_with_after_market_hard_cab.jpeg"
+  },
+  {
+   "id": "mahindra_be-6",
+   "name": "BE 6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Mahindra_BE6_pic_1.jpg/1280px-Mahindra_BE6_pic_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4371 x 1907 x 1627",
+   "poids_kg": 1907,
+   "imageCredit": "Cppfront",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_BE6_pic_1.jpg"
+  }
+ ]
+}

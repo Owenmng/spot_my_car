@@ -1,0 +1,38 @@
+{
+ "models": [
+  {
+   "id": "zenvo_st1",
+   "name": "ST1",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2009_Zenvo_ST1.jpg/1280px-2009_Zenvo_ST1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4665 x 2041 x 1198",
+   "poids_kg": 1688,
+   "imageCredit": "Gaurang Patkar",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2009_Zenvo_ST1.jpg"
+  },
+  {
+   "id": "zenvo_ts1",
+   "name": "TS1",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/2016-03-01_Geneva_Motor_Show_G221.JPG/1280px-2016-03-01_Geneva_Motor_Show_G221.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4680 x 2155 x 1198",
+   "poids_kg": 1580,
+   "imageCredit": "Ghoster",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2016-03-01_Geneva_Motor_Show_G221.JPG"
+  },
+  {
+   "id": "zenvo_aurora",
+   "name": "Aurora",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/2024_Zenvo_Aurora_Tur_SP24.jpg/1280px-2024_Zenvo_Aurora_Tur_SP24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Zenvo_Aurora_Tur_SP24.jpg"
+  }
+ ]
+}

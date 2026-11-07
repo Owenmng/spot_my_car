@@ -1,0 +1,109 @@
+{
+ "models": [
+  {
+   "id": "lynk-and-co_01",
+   "name": "01",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Lynk_%26_Co_01_PHEV_1X7A7059.jpg/1280px-Lynk_%26_Co_01_PHEV_1X7A7059.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_01_PHEV_1X7A7059.jpg"
+  },
+  {
+   "id": "lynk-and-co_03",
+   "name": "03",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Lynk_%26_Co_03_facelift_001.jpg/1280px-Lynk_%26_Co_03_facelift_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4657 x 1840 x 1460",
+   "imageCredit": "Elizbeth smith",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_03_facelift_001.jpg"
+  },
+  {
+   "id": "lynk-and-co_02",
+   "name": "02",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Lynk_%26_Co_02_Hatchback_001.jpg/1280px-Lynk_%26_Co_02_Hatchback_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4448 x 1890 x 1528",
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_02_Hatchback_001.jpg"
+  },
+  {
+   "id": "lynk-and-co_05",
+   "name": "05",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Lynk_%26_Co_05_003.jpg/1280px-Lynk_%26_Co_05_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4592 x 1879 x 1628",
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_05_003.jpg"
+  },
+  {
+   "id": "lynk-and-co_03-tcr",
+   "name": "03 TCR",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Lynk_%26_Co_03_Cyan_Concept_and_Lynk_%26_Co_03_TCR.jpg/1280px-Lynk_%26_Co_03_Cyan_Concept_and_Lynk_%26_Co_03_TCR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JMeissner",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_03_Cyan_Concept_and_Lynk_%26_Co_03_TCR.jpg"
+  },
+  {
+   "id": "lynk-and-co_08",
+   "name": "08",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Lynk_%26_Co_08_EM-P_2024040401.jpg/1280px-Lynk_%26_Co_08_EM-P_2024040401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Evnerd",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_08_EM-P_2024040401.jpg"
+  },
+  {
+   "id": "lynk-and-co_07",
+   "name": "07",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lynk_%26_Co_07_EM-P_003.jpg/1280px-Lynk_%26_Co_07_EM-P_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_07_EM-P_003.jpg"
+  },
+  {
+   "id": "lynk-and-co_09",
+   "name": "09",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lynk_%26_Co_09_011.jpg/1280px-Lynk_%26_Co_09_011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5042 x 1977 x 1780",
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_09_011.jpg"
+  },
+  {
+   "id": "lynk-and-co_z10",
+   "name": "Z10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Lynk_%26_Co_Z10_003.jpg/1280px-Lynk_%26_Co_Z10_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5028 x 1966 x 1468",
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_Z10_003.jpg"
+  },
+  {
+   "id": "lynk-and-co_900",
+   "name": "900",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Lynk_%26_Co_900_010.jpg/1280px-Lynk_%26_Co_900_010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lynk_%26_Co_900_010.jpg"
+  }
+ ]
+}

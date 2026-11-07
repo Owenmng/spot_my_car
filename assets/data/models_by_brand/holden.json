@@ -1,0 +1,571 @@
+{
+ "models": [
+  {
+   "id": "holden_apollo",
+   "name": "Apollo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/1995_Holden_Apollo_%28JM%29_SLX_sedan_%282016-01-04%29_01.jpg/1280px-1995_Holden_Apollo_%28JM%29_SLX_sedan_%282016-01-04%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1995_Holden_Apollo_(JM)_SLX_sedan_(2016-01-04)_01.jpg"
+  },
+  {
+   "id": "holden_barina",
+   "name": "Barina",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/2018_Holden_Barina_%28TM_MY18%29_LS_hatchback_%282018-10-22%29_01.jpg/1280px-2018_Holden_Barina_%28TM_MY18%29_LS_hatchback_%282018-10-22%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "EurovisionNim",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Holden_Barina_(TM_MY18)_LS_hatchback_(2018-10-22)_01.jpg"
+  },
+  {
+   "id": "holden_efijy",
+   "name": "Efijy",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Efijy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "2005",
+   "tags": [],
+   "imageCredit": "Ferenghi http://www.carsaroundadelaide.com",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Efijy.jpg"
+  },
+  {
+   "id": "holden_rodeo",
+   "name": "Rodeo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/2007-2008_Holden_RA_Rodeo_LX_Crew_Cab_4-door_utility_01.jpg/1280px-2007-2008_Holden_RA_Rodeo_LX_Crew_Cab_4-door_utility_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2007-2008_Holden_RA_Rodeo_LX_Crew_Cab_4-door_utility_01.jpg"
+  },
+  {
+   "id": "holden_caprice",
+   "name": "Caprice",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/2016_Holden_Caprice_%28WN_II%29_V_sedan_%282018-03-26%29_01.jpg/1280px-2016_Holden_Caprice_%28WN_II%29_V_sedan_%282018-03-26%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "EurovisionNim",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Holden_Caprice_(WN_II)_V_sedan_(2018-03-26)_01.jpg"
+  },
+  {
+   "id": "holden_ute",
+   "name": "Ute",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/2008%E2%80%932009_Holden_VE_Ute_SV6.jpg/1280px-2008%E2%80%932009_Holden_VE_Ute_SV6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bidgee",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2008%E2%80%932009_Holden_VE_Ute_SV6.jpg"
+  },
+  {
+   "id": "holden_astra",
+   "name": "Astra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/2005_Holden_Astra_%28AH_MY05%29_CD_5-door_hatchback_%282015-08-07%29_01.jpg/1280px-2005_Holden_Astra_%28AH_MY05%29_CD_5-door_hatchback_%282015-08-07%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005_Holden_Astra_(AH_MY05)_CD_5-door_hatchback_(2015-08-07)_01.jpg"
+  },
+  {
+   "id": "holden_hurricane",
+   "name": "Hurricane",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Holden_Hurricane.jpg/1280px-Holden_Hurricane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "GTHO",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_Hurricane.jpg"
+  },
+  {
+   "id": "holden_commodore",
+   "name": "Commodore",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/2018_Holden_Commodore_%28ZB_MY18%29_LT_sedan_%282018-08-06%29_01.jpg/1280px-2018_Holden_Commodore_%28ZB_MY18%29_LT_sedan_%282018-08-06%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "EurovisionNim",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Holden_Commodore_(ZB_MY18)_LT_sedan_(2018-08-06)_01.jpg"
+  },
+  {
+   "id": "holden_camira",
+   "name": "Camira",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/1987_Holden_Camira_%28JD%29_SLE_sedan_%282015-07-14%29_01.jpg/1280px-1987_Holden_Camira_%28JD%29_SLE_sedan_%282015-07-14%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1038,
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Holden_Camira_(JD)_SLE_sedan_(2015-07-14)_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vf",
+   "name": "Commodore (VF)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2014_Holden_Commodore_%28VF_MY14%29_SS_Sportwagon_%2818698844380%29.jpg/1280px-2014_Holden_Commodore_%28VF_MY14%29_SS_Sportwagon_%2818698844380%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4966 x 1897 x 1471",
+   "poids_kg": 1803,
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_Holden_Commodore_(VF_MY14)_SS_Sportwagon_(18698844380).jpg"
+  },
+  {
+   "id": "holden_monaro",
+   "name": "Monaro",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/2001-2002_Holden_Monaro_%28V2%29_CV8_coupe_%282010-09-19%29_01.jpg/1280px-2001-2002_Holden_Monaro_%28V2%29_CV8_coupe_%282010-09-19%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2001-2002_Holden_Monaro_(V2)_CV8_coupe_(2010-09-19)_01.jpg"
+  },
+  {
+   "id": "holden_wm-caprice",
+   "name": "WM Caprice",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/2006-2008_Holden_WM_Caprice_sedan_02.jpg/1280px-2006-2008_Holden_WM_Caprice_sedan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Zelman Menashi from Dunedin, New Zealand",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006-2008_Holden_WM_Caprice_sedan_02.jpg"
+  },
+  {
+   "id": "holden_fj",
+   "name": "FJ",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Holden_FJ.jpg/1280px-Holden_FJ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4401 x 1702 x 1581",
+   "poids_kg": 1021,
+   "imageCredit": "David Jackmanson from Brisbane, Australia",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_FJ.jpg"
+  },
+  {
+   "id": "holden_special",
+   "name": "Special",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1956_Holden_Special_%28FJ%29_sedan_%2819518539303%29.jpg/1280px-1956_Holden_Special_%28FJ%29_sedan_%2819518539303%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Holden_Special_(FJ)_sedan_(19518539303).jpg"
+  },
+  {
+   "id": "holden_coupe-60",
+   "name": "Coupe 60",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2008_Holden_Coupe_60_%28concept%29_01.jpg/1280px-2008_Holden_Coupe_60_%28concept%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4837 x 1895 x 1400",
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2008_Holden_Coupe_60_(concept)_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vb",
+   "name": "Commodore (VB)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1979_Holden_VB_Commodore_Sedan_%2822623854399%29.jpg/1280px-1979_Holden_VB_Commodore_Sedan_%2822623854399%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_Holden_VB_Commodore_Sedan_(22623854399).jpg"
+  },
+  {
+   "id": "holden_commodore-vh",
+   "name": "Commodore (VH)",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/1981-1984_Holden_VH_Commodore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "The original uploader was Lwsjss at English Wikipedia.",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1981-1984_Holden_VH_Commodore.jpg"
+  },
+  {
+   "id": "holden_torana",
+   "name": "Torana",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/1978-1979_Holden_UC_Torana_SL_sedan_02.jpg/1280px-1978-1979_Holden_UC_Torana_SL_sedan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1978-1979_Holden_UC_Torana_SL_sedan_02.jpg"
+  },
+  {
+   "id": "holden_adventra",
+   "name": "Adventra",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/2005-2006_Holden_Adventra_%28VZ%29_SX6_station_wagon%2C_Ten_Eyewitness_News_%282008-03-09%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Nachoman-au",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005-2006_Holden_Adventra_(VZ)_SX6_station_wagon,_Ten_Eyewitness_News_(2008-03-09).jpg"
+  },
+  {
+   "id": "holden_gemini",
+   "name": "Gemini",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/1984_Holden_Gemini_%28TG%29_SL_sedan_%282015-07-15%29_01.jpg/1280px-1984_Holden_Gemini_%28TG%29_SL_sedan_%282015-07-15%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1984_Holden_Gemini_(TG)_SL_sedan_(2015-07-15)_01.jpg"
+  },
+  {
+   "id": "holden_brougham",
+   "name": "Brougham",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Holden_brougham.JPG/1280px-Holden_brougham.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4877 x 1816 x 1461",
+   "imageCredit": "Adam.J.W.C.",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_brougham.JPG"
+  },
+  {
+   "id": "holden_standard",
+   "name": "Standard",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/1961-1962_Holden_EK_Special_Station_Sedan_01.jpg/1280px-1961-1962_Holden_EK_Special_Station_Sedan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Chris Keating from Melbourne, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1961-1962_Holden_EK_Special_Station_Sedan_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vz",
+   "name": "Commodore (VZ)",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/WA_Police_MIG_sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Nachoman-au",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:WA_Police_MIG_sedan.jpg"
+  },
+  {
+   "id": "holden_commodore-vn",
+   "name": "Commodore (VN)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/1989_Holden_Commodore_%28VN%29_Executive_sedan_%282015-07-03%29_01.jpg/1280px-1989_Holden_Commodore_%28VN%29_Executive_sedan_%282015-07-03%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_Holden_Commodore_(VN)_Executive_sedan_(2015-07-03)_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vt",
+   "name": "Commodore (VT)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/1997-1999_Holden_VT_Berlina_station_wagon_01.jpg/1280px-1997-1999_Holden_VT_Berlina_station_wagon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1997-1999_Holden_VT_Berlina_station_wagon_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vx",
+   "name": "Commodore (VX)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/2001_Holden_Commodore_%28VX_II%29_Lumina_sedan_%282010-05-05%29.jpg/1280px-2001_Holden_Commodore_%28VX_II%29_Lumina_sedan_%282010-05-05%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2001_Holden_Commodore_(VX_II)_Lumina_sedan_(2010-05-05).jpg"
+  },
+  {
+   "id": "holden_commodore-vp",
+   "name": "Commodore (VP)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/1993_Holden_Commodore_%28VP_II%29_Executive_sedan_%282015-11-11%29_01.jpg/1280px-1993_Holden_Commodore_%28VP_II%29_Executive_sedan_%282015-11-11%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1993_Holden_Commodore_(VP_II)_Executive_sedan_(2015-11-11)_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vl",
+   "name": "Commodore (VL)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/1986-1988_Holden_VL_Commodore_Executive_sedan_03.jpg/1280px-1986-1988_Holden_VL_Commodore_Executive_sedan_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1986-1988_Holden_VL_Commodore_Executive_sedan_03.jpg"
+  },
+  {
+   "id": "holden_vk-commodore",
+   "name": "VK Commodore",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/VK_Commodore.jpg/1280px-VK_Commodore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "The original uploader was Ckkrm at English Wikipedia.",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VK_Commodore.jpg"
+  },
+  {
+   "id": "holden_commodore-vc",
+   "name": "Commodore (VC)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/1980-1981_Holden_VC_Commodore_L_station_wagon_01.jpg/1280px-1980-1981_Holden_VC_Commodore_L_station_wagon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1980-1981_Holden_VC_Commodore_L_station_wagon_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vs",
+   "name": "Commodore (VS)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/1996_Holden_Commodore_%28VS%29_Equipe_sedan_%282015-07-15%29_01.jpg/1280px-1996_Holden_Commodore_%28VS%29_Equipe_sedan_%282015-07-15%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Holden_Commodore_(VS)_Equipe_sedan_(2015-07-15)_01.jpg"
+  },
+  {
+   "id": "holden_commodore-vy",
+   "name": "Commodore (VY)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2002-2003_Holden_Berlina_%28VY%29_station_wagon_%282007-03-20%29.jpg/1280px-2002-2003_Holden_Berlina_%28VY%29_station_wagon_%282007-03-20%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2002-2003_Holden_Berlina_(VY)_station_wagon_(2007-03-20).jpg"
+  },
+  {
+   "id": "holden_one-tonner",
+   "name": "One Tonner",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/1980_Holden_HZ_One_Tonner_cab_chassis_01.jpg/1280px-1980_Holden_HZ_One_Tonner_cab_chassis_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "The original uploader was ElBarto at English Wikipedia.",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1980_Holden_HZ_One_Tonner_cab_chassis_01.jpg"
+  },
+  {
+   "id": "holden_kingswood",
+   "name": "Kingswood",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Holden_Kingswood_Utility_Darkred.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mick Stanic from Melbourne, Australia.",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_Kingswood_Utility_Darkred.jpg"
+  },
+  {
+   "id": "holden_hz",
+   "name": "HZ",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/1979-80_HZ_Kingswood_Palais_White%3D%3D.JPG/1280px-1979-80_HZ_Kingswood_Palais_White%3D%3D.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicbird",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979-80_HZ_Kingswood_Palais_White%3D%3D.JPG"
+  },
+  {
+   "id": "holden_nova",
+   "name": "Nova",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/1995_Holden_Nova_%28LG%29_GS_hatchback_%2820684982061%29.jpg/1280px-1995_Holden_Nova_%28LG%29_GS_hatchback_%2820684982061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1995_Holden_Nova_(LG)_GS_hatchback_(20684982061).jpg"
+  },
+  {
+   "id": "holden_commodore-ve",
+   "name": "Commodore (VE)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2006_Holden_Commodore_%28VE_MY07%29_Omega_sedan_%282006-08-17%29.jpg/1280px-2006_Holden_Commodore_%28VE_MY07%29_Omega_sedan_%282006-08-17%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "R Walker from Seven Hills, New South Wales, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Holden_Commodore_(VE_MY07)_Omega_sedan_(2006-08-17).jpg"
+  },
+  {
+   "id": "holden_special-vehicles-clubsport",
+   "name": "Special Vehicles ClubSport",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/HSV_Clubsport_R8_%2826256134388%29.jpg/1280px-HSV_Clubsport_R8_%2826256134388%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "FotoSleuth",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:HSV_Clubsport_R8_(26256134388).jpg"
+  },
+  {
+   "id": "holden_captiva",
+   "name": "Captiva",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/2017_Holden_Captiva_%28CG_MY17%29_Active_2WD_wagon_%282018-08-06%29_01.jpg/1280px-2017_Holden_Captiva_%28CG_MY17%29_Active_2WD_wagon_%282018-08-06%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "EurovisionNim",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Holden_Captiva_(CG_MY17)_Active_2WD_wagon_(2018-08-06)_01.jpg"
+  },
+  {
+   "id": "holden_eh",
+   "name": "EH",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Holden_EH_Special_%2816221238745%29.jpg/1280px-Holden_EH_Special_%2816221238745%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_EH_Special_(16221238745).jpg"
+  },
+  {
+   "id": "holden_hx",
+   "name": "HX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Holden_Kingswood_HX_%2815247601123%29.jpg/1280px-Holden_Kingswood_HX_%2815247601123%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_Kingswood_HX_(15247601123).jpg"
+  },
+  {
+   "id": "holden_utility",
+   "name": "Utility",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/2000_Holden_Commodore_%28VS_III%29_utility_%282015-07-03%29_02.jpg/1280px-2000_Holden_Commodore_%28VS_III%29_utility_%282015-07-03%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Holden_Commodore_(VS_III)_utility_(2015-07-03)_02.jpg"
+  },
+  {
+   "id": "holden_commodore-vr",
+   "name": "Commodore (VR)",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/1994_Holden_VR_Commodore_Executive_sedan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Original uploader was Stealthman (Rhys Gardiner) at en.wikipedia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Holden_VR_Commodore_Executive_sedan_01.jpg"
+  },
+  {
+   "id": "holden_vectra",
+   "name": "Vectra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/2003_Holden_Vectra_%28ZC_MY03%29_CD_hatchback_%282016-01-04%29_01.jpg/1280px-2003_Holden_Vectra_%28ZC_MY03%29_CD_hatchback_%282016-01-04%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Holden_Vectra_(ZC_MY03)_CD_hatchback_(2016-01-04)_01.jpg"
+  },
+  {
+   "id": "holden_vq-caprice",
+   "name": "VQ Caprice",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/1990-1991_Holden_VQ_Statesman_sedan_03.jpg/1280px-1990-1991_Holden_VQ_Statesman_sedan_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1990-1991_Holden_VQ_Statesman_sedan_03.jpg"
+  },
+  {
+   "id": "holden_bedford-rascal",
+   "name": "Bedford Rascal",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Holden_Scurry_%288082115079%29.jpg/1280px-Holden_Scurry_%288082115079%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Riley from Christchurch, New Zealand",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_Scurry_(8082115079).jpg"
+  },
+  {
+   "id": "holden_wk",
+   "name": "WK",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2003_Holden_Statesman_%28WK%29_sedan_%282009-09-17%29_01.jpg/1280px-2003_Holden_Statesman_%28WK%29_sedan_%282009-09-17%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2004",
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Holden_Statesman_(WK)_sedan_(2009-09-17)_01.jpg"
+  },
+  {
+   "id": "holden_ek",
+   "name": "EK",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/1961EK-Holden_Benambra%2CVic.jpg/1280px-1961EK-Holden_Benambra%2CVic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jjron",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1961EK-Holden_Benambra,Vic.jpg"
+  },
+  {
+   "id": "holden_suburban",
+   "name": "Suburban",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1998_Holden_Suburban_1500_V8_5.7.jpg/1280px-1998_Holden_Suburban_1500_V8_5.7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1998_Holden_Suburban_1500_V8_5.7.jpg"
+  },
+  {
+   "id": "holden_sandman",
+   "name": "Sandman",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/1979_Holden_HZ_Sandman_Panel_Van_%2837438684516%29.jpg/1280px-1979_Holden_HZ_Sandman_Panel_Van_%2837438684516%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_Holden_HZ_Sandman_Panel_Van_(37438684516).jpg"
+  },
+  {
+   "id": "holden_hq",
+   "name": "HQ",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/HoldenHQPanelvanCropped.jpg/1280px-HoldenHQPanelvanCropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Matilda, formerly AYArktos",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:HoldenHQPanelvanCropped.jpg"
+  },
+  {
+   "id": "holden_shuttle",
+   "name": "Shuttle",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Isuzu_Fargo_Wagon_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Tennen-Gas",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Isuzu_Fargo_Wagon_001.jpg"
+  },
+  {
+   "id": "holden_belmont",
+   "name": "Belmont",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/1971-1974_Holden_HQ_Kingswood_sedan_01.jpg/1280px-1971-1974_Holden_HQ_Kingswood_sedan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Chris Keating from Melbourne, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1971-1974_Holden_HQ_Kingswood_sedan_01.jpg"
+  },
+  {
+   "id": "holden_utility-vg",
+   "name": "Utility (VG)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Holden_VG_Ute_%2816033983368%29.jpg/1280px-Holden_VG_Ute_%2816033983368%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Holden_VG_Ute_(16033983368).jpg"
+  },
+  {
+   "id": "holden_hsv-vl-ss-group-a-sv",
+   "name": "HSV VL SS Group A SV",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/1986-88_VL_Walky_SV_Group_A%3D%3D.JPG/1280px-1986-88_VL_Walky_SV_Group_A%3D%3D.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1986-88_VL_Walky_SV_Group_A%3D%3D.JPG"
+  }
+ ]
+}

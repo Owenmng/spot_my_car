@@ -1,0 +1,46 @@
+{
+ "models": [
+  {
+   "id": "fisker_karma",
+   "name": "Karma",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Fisker_Karma_2.jpg/1280px-Fisker_Karma_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4998 x 1985 x 1330",
+   "poids_kg": 2400,
+   "imageCredit": "Indianhilbilly",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fisker_Karma_2.jpg"
+  },
+  {
+   "id": "fisker_ocean",
+   "name": "Ocean",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Fisker_Ocean_Motorworld_Munich_1X7A0079.jpg/1280px-Fisker_Ocean_Motorworld_Munich_1X7A0079.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fisker_Ocean_Motorworld_Munich_1X7A0079.jpg"
+  },
+  {
+   "id": "fisker_alaska",
+   "name": "Alaska",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Fisker_Alaska_Motorworld_Munich_1X7A0128.jpg/1280px-Fisker_Alaska_Motorworld_Munich_1X7A0128.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fisker_Alaska_Motorworld_Munich_1X7A0128.jpg"
+  },
+  {
+   "id": "fisker_pear",
+   "name": "Pear",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Fisker_Pear_Motorworld_Munich_1X7A0123.jpg/1280px-Fisker_Pear_Motorworld_Munich_1X7A0123.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fisker_Pear_Motorworld_Munich_1X7A0123.jpg"
+  }
+ ]
+}

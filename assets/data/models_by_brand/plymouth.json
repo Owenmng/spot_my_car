@@ -1,0 +1,390 @@
+{
+ "models": [
+  {
+   "id": "plymouth_valiant",
+   "name": "Valiant",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/J66105_Bazou_20130810-162312_45.52341%2C-73.56051%2C326%2C42m_Valiant1960.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1959 - 1976",
+   "tags": [],
+   "dimensions_lwh_mm": "4670 x 1790 x 1350",
+   "poids_kg": 1250,
+   "imageCredit": "Emdx",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:J66105_Bazou_20130810-162312_45.52341,-73.56051,326,42m_Valiant1960.jpg"
+  },
+  {
+   "id": "plymouth_barracuda",
+   "name": "Barracuda",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/%2770_Plymouth_Barracuda_%28%2711_Auto_classique_VAQ_Mont_St-Hilaire%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1964 - 1974",
+   "tags": [],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2770_Plymouth_Barracuda_(%2711_Auto_classique_VAQ_Mont_St-Hilaire).JPG"
+  },
+  {
+   "id": "plymouth_caravelle",
+   "name": "Caravelle",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Plymouth_Caravelle%2C_83-85.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4717 x 1737 x 1349",
+   "imageCredit": "55allegro",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Caravelle,_83-85.png"
+  },
+  {
+   "id": "plymouth_road-runner",
+   "name": "Road Runner",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Plymouth_Road_Runner_1969_5312706.jpg/1280px-Plymouth_Road_Runner_1969_5312706.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Road_Runner_1969_5312706.jpg"
+  },
+  {
+   "id": "plymouth_superbird",
+   "name": "Superbird",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Superbird_Yellow.jpg/1280px-Superbird_Yellow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1742,
+   "imageCredit": "BUTTON74",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Superbird_Yellow.jpg"
+  },
+  {
+   "id": "plymouth_prowler",
+   "name": "Prowler",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Plymouth_Prowler_1X7A6128.jpg/1280px-Plymouth_Prowler_1X7A6128.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4199 x 1943 x 1293",
+   "poids_kg": 1268,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Prowler_1X7A6128.jpg"
+  },
+  {
+   "id": "plymouth_belvedere",
+   "name": "Belvedere",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/1957_Plymouth_Belvedere.jpg/1280px-1957_Plymouth_Belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User:Morven",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1957_Plymouth_Belvedere.jpg"
+  },
+  {
+   "id": "plymouth_gran-fury",
+   "name": "Gran Fury",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/1986_Plymouth_Gran_Fury_Salon_%2814870099854%29_%28cropped%29.jpg/1280px-1986_Plymouth_Gran_Fury_Salon_%2814870099854%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1986_Plymouth_Gran_Fury_Salon_(14870099854)_(cropped).jpg"
+  },
+  {
+   "id": "plymouth_duster",
+   "name": "Duster",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/1970_Plymouth_Valiant_Duster_340_%2827366262585%29_%28cropped%29.jpg/1280px-1970_Plymouth_Valiant_Duster_340_%2827366262585%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4785 x 1805 x 1370",
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Plymouth_Valiant_Duster_340_(27366262585)_(cropped).jpg"
+  },
+  {
+   "id": "plymouth_fury",
+   "name": "Fury",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/1971_Plymouth_Fury_II_4-door_sedan%2C_front_left_%28Hershey_2019%29.jpg/1280px-1971_Plymouth_Fury_II_4-door_sedan%2C_front_left_%28Hershey_2019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1959 - 1978",
+   "tags": [],
+   "dimensions_lwh_mm": "5412 x 1973 x 1424",
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1971_Plymouth_Fury_II_4-door_sedan,_front_left_(Hershey_2019).jpg"
+  },
+  {
+   "id": "plymouth_savoy",
+   "name": "Savoy",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/PlymouthWithFrameAndBlackBoxAndTextBrightened2.jpg/1280px-PlymouthWithFrameAndBlackBoxAndTextBrightened2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ben Deutschman",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:PlymouthWithFrameAndBlackBoxAndTextBrightened2.jpg"
+  },
+  {
+   "id": "plymouth_voyager",
+   "name": "Voyager",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Plymouth-Grand-Voyager.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth-Grand-Voyager.jpg"
+  },
+  {
+   "id": "plymouth_acclaim",
+   "name": "Acclaim",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/93-95_Plymouth_Acclaim-1.jpg/1280px-93-95_Plymouth_Acclaim-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4602 x 1730 x 1410",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:93-95_Plymouth_Acclaim-1.jpg"
+  },
+  {
+   "id": "plymouth_neon",
+   "name": "Neon",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/%2795_Plymouth_Neon_Sedan.JPG/1280px-%2795_Plymouth_Neon_Sedan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2795_Plymouth_Neon_Sedan.JPG"
+  },
+  {
+   "id": "plymouth_breeze",
+   "name": "Breeze",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Plymouth_Breeze_.jpg/1280px-Plymouth_Breeze_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4732 x 1821 x 1318",
+   "poids_kg": 1327,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Breeze_.jpg"
+  },
+  {
+   "id": "plymouth_reliant",
+   "name": "Reliant",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Ply_Reliant_Coupe.jpg/1280px-Ply_Reliant_Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1043,
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ply_Reliant_Coupe.jpg"
+  },
+  {
+   "id": "plymouth_plaza",
+   "name": "Plaza",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/1958_Plymouth_Plaza_%287437303206%29.jpg/1280px-1958_Plymouth_Plaza_%287437303206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1958_Plymouth_Plaza_(7437303206).jpg"
+  },
+  {
+   "id": "plymouth_concord",
+   "name": "Concord",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/1951_Plymouth_P-23_Concord_Coupe_%2832057369335%29.jpg/1280px-1951_Plymouth_P-23_Concord_Coupe_%2832057369335%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1951_Plymouth_P-23_Concord_Coupe_(32057369335).jpg"
+  },
+  {
+   "id": "plymouth_gtx",
+   "name": "GTX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/1970_Plymouth_GTX.jpg/1280px-1970_Plymouth_GTX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Plymouth_GTX.jpg"
+  },
+  {
+   "id": "plymouth_cranbrook",
+   "name": "Cranbrook",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/1952_Plymouth_Cranbrook.jpg/1280px-1952_Plymouth_Cranbrook.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "dave_7",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1952_Plymouth_Cranbrook.jpg"
+  },
+  {
+   "id": "plymouth_deluxe",
+   "name": "Deluxe",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Chrysler%2C_Dodge%2C_Plymouth_%26_DeSoto_automobiles_-_NARA_-_283638.jpg/1280px-Chrysler%2C_Dodge%2C_Plymouth_%26_DeSoto_automobiles_-_NARA_-_283638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Unknown authorUnknown author or not provided",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler,_Dodge,_Plymouth_%26_DeSoto_automobiles_-_NARA_-_283638.jpg"
+  },
+  {
+   "id": "plymouth_sundance",
+   "name": "Sundance",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Plymouth-Sundance-Sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4361 x 1709 x 1339",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth-Sundance-Sedan.jpg"
+  },
+  {
+   "id": "plymouth_new-finer",
+   "name": "New Finer",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Plymouth_PB_Roadster_1932.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_PB_Roadster_1932.jpg"
+  },
+  {
+   "id": "plymouth_business",
+   "name": "Business",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Plymouth_4-Door_Sedan_1935_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_4-Door_Sedan_1935_2.jpg"
+  },
+  {
+   "id": "plymouth_cricket",
+   "name": "Cricket",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Rally_Plymouth_Cricket.jpg/1280px-Rally_Plymouth_Cricket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JOHN LLOYD from Hanover, Pennsylvania, United States",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rally_Plymouth_Cricket.jpg"
+  },
+  {
+   "id": "plymouth_cambridge",
+   "name": "Cambridge",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/1951_Plymouth_Cranbrook_%282426271060%29.jpg/1280px-1951_Plymouth_Cranbrook_%282426271060%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "dave_7 from Lethbridge, Canada",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1951_Plymouth_Cranbrook_(2426271060).jpg"
+  },
+  {
+   "id": "plymouth_fury-b-body",
+   "name": "Fury B-body",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/1978_Plymouth_Fury.JPG/1280px-1978_Plymouth_Fury.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1975 - 1978",
+   "tags": [],
+   "dimensions_lwh_mm": "5545 x 1975 x 1370",
+   "imageCredit": "J. Maierle",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1978_Plymouth_Fury.JPG"
+  },
+  {
+   "id": "plymouth_model-30u",
+   "name": "Model 30U",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Plymouth_30-U_4-Door_Sedan_1930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_30-U_4-Door_Sedan_1930.jpg"
+  },
+  {
+   "id": "plymouth_model-q",
+   "name": "Model Q",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/1928_Plymouth.jpg/1280px-1928_Plymouth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User:gadfium",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1928_Plymouth.jpg"
+  },
+  {
+   "id": "plymouth_model-pa",
+   "name": "Model PA",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Plymouth_PA_De_Luxe_4-Door_Sedan_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_PA_De_Luxe_4-Door_Sedan_1931.jpg"
+  },
+  {
+   "id": "plymouth_sapporo",
+   "name": "Sapporo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Plymouth_Sapporo_%281159952762%29.jpg/1280px-Plymouth_Sapporo_%281159952762%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4651 x 1666 x 1326",
+   "imageCredit": "dave_7 from Lethbridge, Canada",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Sapporo_(1159952762).jpg"
+  },
+  {
+   "id": "plymouth_turismo",
+   "name": "Turismo",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Plymouth_Duster_EEK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. Sfoskett~commonswiki assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Duster_EEK.jpg"
+  },
+  {
+   "id": "plymouth_laser",
+   "name": "Laser",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/1990_Plymouth_Laser_RS_Turbo_red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1148,
+   "imageCredit": "Distancerunner15",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1990_Plymouth_Laser_RS_Turbo_red.jpg"
+  },
+  {
+   "id": "plymouth_belmont",
+   "name": "Belmont",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Plymouth_Belmont_%284261739024%29.jpg/1280px-Plymouth_Belmont_%284261739024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JOHN LLOYD from Concrete, Washington, United States",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Belmont_(4261739024).jpg"
+  },
+  {
+   "id": "plymouth_volare",
+   "name": "Volare",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Flickr_-_Hugo90_-_1976-77_Plymouth_Volare.jpg/1280px-Flickr_-_Hugo90_-_1976-77_Plymouth_Volare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JOHN LLOYD from Concrete, Washington, United States",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Flickr_-_Hugo90_-_1976-77_Plymouth_Volare.jpg"
+  },
+  {
+   "id": "plymouth_vip",
+   "name": "VIP",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/1968_Plymouth_VIP_hardtop_%286335467413%29.jpg/1280px-1968_Plymouth_VIP_hardtop_%286335467413%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "sv1ambo",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1968_Plymouth_VIP_hardtop_(6335467413).jpg"
+  },
+  {
+   "id": "plymouth_colt-vista",
+   "name": "Colt Vista",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Plymouth_Colt_Vista_2.0_1988_%2815168580470%29.jpg/1280px-Plymouth_Colt_Vista_2.0_1988_%2815168580470%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "order_242 from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Colt_Vista_2.0_1988_(15168580470).jpg"
+  }
+ ]
+}

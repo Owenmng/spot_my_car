@@ -1,0 +1,158 @@
+{
+ "models": [
+  {
+   "id": "lada_vaz-2103",
+   "name": "VAZ-2103",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Vaz_2103_1972_time_series_%283%29.jpg/1280px-Vaz_2103_1972_time_series_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4116 x 1611 x 1440",
+   "poids_kg": 1030,
+   "imageCredit": "Bricizar",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vaz_2103_1972_time_series_(3).jpg"
+  },
+  {
+   "id": "lada_priora",
+   "name": "Priora",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/VAZ-2171_LADA_Priora_estate_1.JPG/1280px-VAZ-2171_LADA_Priora_estate_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4350 x 1680 x 1420",
+   "poids_kg": 1088,
+   "imageCredit": "Sah68 at Russian Wikipedia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VAZ-2171_LADA_Priora_estate_1.JPG"
+  },
+  {
+   "id": "lada_largus",
+   "name": "Largus",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/%D0%9F%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%8F%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_-_Police%2C_Moscow_15.jpg/1280px-%D0%9F%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%8F%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_-_Police%2C_Moscow_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4470 x 1750 x 1670",
+   "imageCredit": "Pulux11",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%8F,_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_-_Police,_Moscow_15.jpg"
+  },
+  {
+   "id": "lada_nadezhda",
+   "name": "Nadezhda",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/VAZ-2120_blue_colored_%28front_view%29.jpg/1280px-VAZ-2120_blue_colored_%28front_view%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4290 x 1770 x 1690",
+   "poids_kg": 1400,
+   "imageCredit": "Kirill Borisenko",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VAZ-2120_blue_colored_(front_view).jpg"
+  },
+  {
+   "id": "lada_niva",
+   "name": "Niva",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Lada_Niva_2020.jpg/1280px-Lada_Niva_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4048 x 1800 x 1680",
+   "imageCredit": "Milhouse35",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lada_Niva_2020.jpg"
+  },
+  {
+   "id": "lada_vesta",
+   "name": "Vesta",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Vladimir_Putin_driving_Lada_Vesta_04.jpg/1280px-Vladimir_Putin_driving_Lada_Vesta_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4410 x 1764 x 1497",
+   "imageCredit": "Пресс-служба Президента России",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_driving_Lada_Vesta_04.jpg"
+  },
+  {
+   "id": "lada_samara",
+   "name": "Samara",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/VAZ-21093-20.jpg/1280px-VAZ-21093-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VAZ-21093-20.jpg"
+  },
+  {
+   "id": "lada_kalina",
+   "name": "Kalina",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Lada_Kalina_1118_Cranberry.JPG/1280px-Lada_Kalina_1118_Cranberry.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Thomas doerfer",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lada_Kalina_1118_Cranberry.JPG"
+  },
+  {
+   "id": "lada_111",
+   "name": "111",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Lada_21112_%286%29.jpg/1280px-Lada_21112_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4285 x 1680 x 1480",
+   "imageCredit": "Qashqai",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lada_21112_(6).jpg"
+  },
+  {
+   "id": "lada_x-cross-5",
+   "name": "X-Cross 5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2023_Lada_X-Cross_5_red_front.jpg/1280px-2023_Lada_X-Cross_5_red_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "gleb",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Lada_X-Cross_5_red_front.jpg"
+  },
+  {
+   "id": "lada_110",
+   "name": "110",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/LADA-110.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "DL24",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LADA-110.jpg"
+  },
+  {
+   "id": "lada_vaz-1111",
+   "name": "VAZ-1111",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Oka-Auto.jpg/1280px-Oka-Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3200 x 1420 x 1400",
+   "poids_kg": 645,
+   "imageCredit": "Schlurcher",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Oka-Auto.jpg"
+  },
+  {
+   "id": "lada_granta",
+   "name": "Granta",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/2017_Lada_Granta_219010_blue_front.jpg/1280px-2017_Lada_Granta_219010_blue_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4260 x 1700 x 1500",
+   "imageCredit": "Throwawayacc222",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Lada_Granta_219010_blue_front.jpg"
+  },
+  {
+   "id": "lada_xray",
+   "name": "XRAY",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Lada_XRay_Cross_concept_on_MIAS_2016_-_rear_view.jpg/1280px-Lada_XRay_Cross_concept_on_MIAS_2016_-_rear_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4165 x 1764 x 1570",
+   "imageCredit": "Kirill Borisenko",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lada_XRay_Cross_concept_on_MIAS_2016_-_rear_view.jpg"
+  }
+ ]
+}

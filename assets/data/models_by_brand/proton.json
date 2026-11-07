@@ -1,0 +1,284 @@
+{
+ "models": [
+  {
+   "id": "proton_x50",
+   "name": "X50",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2020_Proton_X50_1.5_TGDi_Flagship_%28front_view%29.png/1280px-2020_Proton_X50_1.5_TGDi_Flagship_%28front_view%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4330 x 1800 x 1609",
+   "imageCredit": "Vernonchan.com",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Proton_X50_1.5_TGDi_Flagship_(front_view).png"
+  },
+  {
+   "id": "proton_satria",
+   "name": "Satria",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/1997_Proton_Satria_%28C90%29_XLi_hatchback_%2825815361420%29.jpg/1280px-1997_Proton_Satria_%28C90%29_XLi_hatchback_%2825815361420%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Proton_Satria_(C90)_XLi_hatchback_(25815361420).jpg"
+  },
+  {
+   "id": "proton_juara",
+   "name": "Juara",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Proton_Juara%2C_Kuala_Lumpur.jpg/1280px-Proton_Juara%2C_Kuala_Lumpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3660 x 1535 x 1810",
+   "poids_kg": 1005,
+   "imageCredit": "User:Two hundred percent.",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Juara,_Kuala_Lumpur.jpg"
+  },
+  {
+   "id": "proton_emas",
+   "name": "EMAS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Proton_emas_geneva_2.jpg/1280px-Proton_emas_geneva_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "David Villarreal Fernández",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_emas_geneva_2.jpg"
+  },
+  {
+   "id": "proton_saga",
+   "name": "Saga",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Three_generations_of_Proton_Saga_%2830383928616%29.jpg/1280px-Three_generations_of_Proton_Saga_%2830383928616%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Manoj Prasad from Kuala Lumpur, Malaysia",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Three_generations_of_Proton_Saga_(30383928616).jpg"
+  },
+  {
+   "id": "proton_savvy",
+   "name": "Savvy",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Proton_Savvy_%28first_generation%29_%28front%29%2C_Serdang.jpg/1280px-Proton_Savvy_%28first_generation%29_%28front%29%2C_Serdang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3710 x 1643 x 1480",
+   "imageCredit": "User:Two hundred percent.",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Savvy_(first_generation)_(front),_Serdang.jpg"
+  },
+  {
+   "id": "proton_arena",
+   "name": "Arena",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/2003_Proton_Jumbuck_%28C90%29_GLSi_utility_%2823352098994%29.jpg/1280px-2003_Proton_Jumbuck_%28C90%29_GLSi_utility_%2823352098994%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4455 x 1690 x 1420",
+   "poids_kg": 1045,
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Proton_Jumbuck_(C90)_GLSi_utility_(23352098994).jpg"
+  },
+  {
+   "id": "proton_waja",
+   "name": "Waja",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/2005_Proton_Waja_1.6_%284G18%29_in_Puchong%2C_Malaysia_%2801%29.jpg/1280px-2005_Proton_Waja_1.6_%284G18%29_in_Puchong%2C_Malaysia_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4465 x 1740 x 1420",
+   "imageCredit": "Aero777",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005_Proton_Waja_1.6_(4G18)_in_Puchong,_Malaysia_(01).jpg"
+  },
+  {
+   "id": "proton_wira",
+   "name": "Wira",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/1996_Proton_Wira_%28C90%29_XLi_sedan_%282010-07-30%29.jpg/1280px-1996_Proton_Wira_%28C90%29_XLi_sedan_%282010-07-30%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Proton_Wira_(C90)_XLi_sedan_(2010-07-30).jpg"
+  },
+  {
+   "id": "proton_exora",
+   "name": "Exora",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/2013_Proton_Exora_Bold_1.6_Premium_CFE_in_Cyberjaya%2C_Malaysia_%2803%29.jpg/1280px-2013_Proton_Exora_Bold_1.6_Premium_CFE_in_Cyberjaya%2C_Malaysia_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4592 x 1809 x 1691",
+   "imageCredit": "Aero777",
+   "imageLicense": "CC BY-SA 2.5 my",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Proton_Exora_Bold_1.6_Premium_CFE_in_Cyberjaya,_Malaysia_(03).jpg"
+  },
+  {
+   "id": "proton_tiara",
+   "name": "Tiara",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Proton_Tiara_%28front%29%2C_Sungai_Besi.jpg/1280px-Proton_Tiara_%28front%29%2C_Sungai_Besi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 780,
+   "imageCredit": "User:Two hundred percent.",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Tiara_(front),_Sungai_Besi.jpg"
+  },
+  {
+   "id": "proton_gen2",
+   "name": "GEN•2",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Proton_Gen.2_%28front%29%2C_Serdang.jpg/1280px-Proton_Gen.2_%28front%29%2C_Serdang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4310 x 1725 x 1435",
+   "imageCredit": "User:Two hundred percent",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Gen.2_(front),_Serdang.jpg"
+  },
+  {
+   "id": "proton_persona",
+   "name": "Persona",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2012_Proton_Persona_Standard_in_Cyberjaya%2C_Malaysia_%2801%29.jpg/1280px-2012_Proton_Persona_Standard_in_Cyberjaya%2C_Malaysia_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Aero777",
+   "imageLicense": "CC BY-SA 2.5 my",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Proton_Persona_Standard_in_Cyberjaya,_Malaysia_(01).jpg"
+  },
+  {
+   "id": "proton_putra",
+   "name": "Putra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Proton_Putra_%28front%29%2C_Kuala_Lumpur.jpg/1280px-Proton_Putra_%28front%29%2C_Kuala_Lumpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4225 x 1690 x 1365",
+   "poids_kg": 1007,
+   "imageCredit": "User:Two hundred percent.",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Putra_(front),_Kuala_Lumpur.jpg"
+  },
+  {
+   "id": "proton_perdana",
+   "name": "Perdana",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/2003-2010_Proton_Perdana_Executive_V6_in_Petaling_Jaya%2C_Malaysia_%2801%29.jpg/1280px-2003-2010_Proton_Perdana_Executive_V6_in_Petaling_Jaya%2C_Malaysia_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4615 x 1730 x 1400",
+   "poids_kg": 1336,
+   "imageCredit": "Aero777",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003-2010_Proton_Perdana_Executive_V6_in_Petaling_Jaya,_Malaysia_(01).jpg"
+  },
+  {
+   "id": "proton_inspira",
+   "name": "Inspira",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/2012_Proton_Inspira_2.0_Premium_4-door_sedan_%2819699612942%29.jpg/1280px-2012_Proton_Inspira_2.0_Premium_4-door_sedan_%2819699612942%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4570 x 1760 x 1490",
+   "imageCredit": "Manoj Prasad from Kuala Lumpur, Malaysia",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Proton_Inspira_2.0_Premium_4-door_sedan_(19699612942).jpg"
+  },
+  {
+   "id": "proton_preve",
+   "name": "Prevé",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2013_Proton_Prev%C3%A9_Executive_in_Cyberjaya%2C_Malaysia_%2803%29.jpg/1280px-2013_Proton_Prev%C3%A9_Executive_in_Cyberjaya%2C_Malaysia_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4543 x 1786 x 1524",
+   "imageCredit": "Aero777",
+   "imageLicense": "CC BY-SA 2.5 my",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Proton_Prev%C3%A9_Executive_in_Cyberjaya,_Malaysia_(03).jpg"
+  },
+  {
+   "id": "proton_satria-neo",
+   "name": "Satria Neo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Proton_Satria_Neo%2C_Kuala_Lumpur.jpg/1280px-Proton_Satria_Neo%2C_Kuala_Lumpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "vitesse_max_kmh": 52,
+   "imageCredit": "User:Two hundred percent",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Satria_Neo,_Kuala_Lumpur.jpg"
+  },
+  {
+   "id": "proton_p2-30a",
+   "name": "P2-30A",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/2014_Proton_Iriz_1.6L_Premium_in_Shah_Alam%2C_Malaysia_%2801%29.jpg/1280px-2014_Proton_Iriz_1.6L_Premium_in_Shah_Alam%2C_Malaysia_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3920 x 1722 x 1544",
+   "imageCredit": "Aero777",
+   "imageLicense": "CC BY-SA 2.5 my",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_Proton_Iriz_1.6L_Premium_in_Shah_Alam,_Malaysia_(01).jpg"
+  },
+  {
+   "id": "proton_persona-cm",
+   "name": "Persona (CM)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Proton_Persona_%28front%29%2C_Serdang.jpg/1280px-Proton_Persona_%28front%29%2C_Serdang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User:Two hundred percent",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Persona_(front),_Serdang.jpg"
+  },
+  {
+   "id": "proton_persona-bh",
+   "name": "Persona (BH)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/2018_Proton_Persona_Standard_pre-facelift_front.jpg/1280px-2018_Proton_Persona_Standard_pre-facelift_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "LuvsMG481",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Proton_Persona_Standard_pre-facelift_front.jpg"
+  },
+  {
+   "id": "proton_saga-third-generation",
+   "name": "Saga (third generation)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2016_Proton_Saga_%28BT%2C_Mk4%29_Premium_4-door_sedan_%2801%29_%2830333943901%29.jpg/1280px-2016_Proton_Saga_%28BT%2C_Mk4%29_Premium_4-door_sedan_%2801%29_%2830333943901%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Manoj Prasad from Kuala Lumpur, Malaysia",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Proton_Saga_(BT,_Mk4)_Premium_4-door_sedan_(01)_(30333943901).jpg"
+  },
+  {
+   "id": "proton_ertiga",
+   "name": "Ertiga",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Proton_Ertiga.jpg/1280px-Proton_Ertiga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4265 x 1695 x 1685",
+   "imageCredit": "Ya Lah Media",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Ertiga.jpg"
+  },
+  {
+   "id": "proton_jebat",
+   "name": "Jebat",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2010_Proton_Jebat_concept_at_the_2011_Hari_Merdeka_%26_Malaysia_celebrations_in_Dataran_Merdeka%2C_Kuala_Lumpur.jpg/1280px-2010_Proton_Jebat_concept_at_the_2011_Hari_Merdeka_%26_Malaysia_celebrations_in_Dataran_Merdeka%2C_Kuala_Lumpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Phalinn Ooi",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Proton_Jebat_concept_at_the_2011_Hari_Merdeka_%26_Malaysia_celebrations_in_Dataran_Merdeka,_Kuala_Lumpur.jpg"
+  },
+  {
+   "id": "proton_lekiu",
+   "name": "Lekiu",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Proton_Lekiu_Front.jpg/1280px-Proton_Lekiu_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "zulrosle",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Proton_Lekiu_Front.jpg"
+  },
+  {
+   "id": "proton_x70",
+   "name": "X70",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2024_Proton_X70_Premium_X_front_facelifted.jpg/1280px-2024_Proton_X70_Premium_X_front_facelifted.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4519 x 1831 x 1694",
+   "imageCredit": "LuvsMG481",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Proton_X70_Premium_X_front_facelifted.jpg"
+  }
+ ]
+}

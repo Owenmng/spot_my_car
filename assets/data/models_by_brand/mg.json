@@ -1,0 +1,149 @@
+{
+ "models": [
+  {
+   "id": "mg_350",
+   "name": "350",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Roewe_350_China_2012-05-01.JPG/1280px-Roewe_350_China_2012-05-01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4251 x 1788 x 1492",
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Roewe_350_China_2012-05-01.JPG"
+  },
+  {
+   "id": "mg_6",
+   "name": "6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/MG_6_Pro_004_%28cropped%29.jpg/1280px-MG_6_Pro_004_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_6_Pro_004_(cropped).jpg"
+  },
+  {
+   "id": "mg_motor-mg3-mk-ii-2011",
+   "name": "Motor MG3 Mk II (2011)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/MG_3_II_2_China_2012-05-01.JPG/1280px-MG_3_II_2_China_2012-05-01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_3_II_2_China_2012-05-01.JPG"
+  },
+  {
+   "id": "mg_motor-mg3-mk-i-2008",
+   "name": "Motor MG3 Mk I (2008)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/China_MG_3_2010_StreetWise.jpg/1280px-China_MG_3_2010_StreetWise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Swoolverton",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:China_MG_3_2010_StreetWise.jpg"
+  },
+  {
+   "id": "mg_gs",
+   "name": "GS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/MG_GS_China_%282%29.jpg/1280px-MG_GS_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4500 x 1855 x 1699",
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_GS_China_(2).jpg"
+  },
+  {
+   "id": "mg_gt",
+   "name": "GT",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/MG_GT_0001_China_2015-04-20.jpg/1280px-MG_GT_0001_China_2015-04-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4612 x 1804 x 1488",
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_GT_0001_China_2015-04-20.jpg"
+  },
+  {
+   "id": "mg_zs",
+   "name": "ZS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/MG_ZS_Hybrid%2B_Luxury_%28II%29_%E2%80%93_f_01012025.jpg/1280px-MG_ZS_Hybrid%2B_Luxury_%28II%29_%E2%80%93_f_01012025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "© M 93",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_ZS_Hybrid%2B_Luxury_(II)_%E2%80%93_f_01012025.jpg"
+  },
+  {
+   "id": "mg_zs-ev",
+   "name": "ZS EV",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/MG_ZS_EV_Facelift_1X7A5867.jpg/1280px-MG_ZS_EV_Facelift_1X7A5867.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4314 x 1809 x 1620",
+   "poids_kg": 1502,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_ZS_EV_Facelift_1X7A5867.jpg"
+  },
+  {
+   "id": "mg_s5-ev",
+   "name": "S5 EV",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/MG_S5_EV%2C_Auto_2025%2C_Zurich_%2820251029-P1074528%29.jpg/1280px-MG_S5_EV%2C_Auto_2025%2C_Zurich_%2820251029-P1074528%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_S5_EV,_Auto_2025,_Zurich_(20251029-P1074528).jpg"
+  },
+  {
+   "id": "mg_hs",
+   "name": "HS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/2024_MG_HS_3.jpg/1280px-2024_MG_HS_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_MG_HS_3.jpg"
+  },
+  {
+   "id": "mg_marvel-r",
+   "name": "Marvel R",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/MG_Marvel_R_IMG_6320.jpg/1280px-MG_Marvel_R_IMG_6320.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_Marvel_R_IMG_6320.jpg"
+  },
+  {
+   "id": "mg_mg5",
+   "name": "MG5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/MG_5_EV_%28EP22%29_1X7A6207.jpg/1280px-MG_5_EV_%28EP22%29_1X7A6207.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_5_EV_(EP22)_1X7A6207.jpg"
+  },
+  {
+   "id": "mg_4-ev",
+   "name": "4 EV",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/MG4_EV_Automesse_Ludwigsburg_2022_1X7A5920.jpg/1280px-MG4_EV_Automesse_Ludwigsburg_2022_1X7A5920.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG4_EV_Automesse_Ludwigsburg_2022_1X7A5920.jpg"
+  },
+  {
+   "id": "mg_s5",
+   "name": "S5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/MG_ZS_%28crossover%2C_second_generation%29_DSC_8542.jpg/1280px-MG_ZS_%28crossover%2C_second_generation%29_DSC_8542.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MG_ZS_(crossover,_second_generation)_DSC_8542.jpg"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "models": [
+  {
+   "id": "rivian_r2",
+   "name": "R2",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/RivianR2.jpg/1280px-RivianR2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lcaa9",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:RivianR2.jpg"
+  },
+  {
+   "id": "rivian_r1t",
+   "name": "R1T",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Rivian_R1T_on_Sunset_Blvd.jpg/1280px-Rivian_R1T_on_Sunset_Blvd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5514 x 2078 x 1923",
+   "poids_kg": 3100,
+   "imageCredit": "Chris Yarzab",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rivian_R1T_on_Sunset_Blvd.jpg"
+  },
+  {
+   "id": "rivian_r1s",
+   "name": "R1S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Rivian_R1S_IMG_6516.jpg/1280px-Rivian_R1S_IMG_6516.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rivian_R1S_IMG_6516.jpg"
+  },
+  {
+   "id": "rivian_edv",
+   "name": "EDV",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Rivian_EDV-700_in_downtown_Omaha_2.jpg/1280px-Rivian_EDV-700_in_downtown_Omaha_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mliu92",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rivian_EDV-700_in_downtown_Omaha_2.jpg"
+  }
+ ]
+}

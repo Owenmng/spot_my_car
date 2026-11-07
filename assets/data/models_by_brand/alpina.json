@@ -1,0 +1,263 @@
+{
+ "models": [
+  {
+   "id": "alpina_b4",
+   "name": "B4",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Alpina_B4_BiTurbo.jpg/1280px-Alpina_B4_BiTurbo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B4_BiTurbo.jpg"
+  },
+  {
+   "id": "alpina_xd4",
+   "name": "XD4",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Alpina_XD4_Genf_2018.jpg/1280px-Alpina_XD4_Genf_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4751 x 1927 x 1615",
+   "poids_kg": 2045,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_XD4_Genf_2018.jpg"
+  },
+  {
+   "id": "alpina_b10-bi-turbo",
+   "name": "B10 Bi-Turbo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Alpina_B10_BiTurbo_BASIS_BMW_5er_Gen3_E34_1989-1994_frontleft_2011-06-04_U.jpg/1280px-Alpina_B10_BiTurbo_BASIS_BMW_5er_Gen3_E34_1989-1994_frontleft_2011-06-04_U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4718 x 1750 x 1397",
+   "poids_kg": 1695,
+   "imageCredit": "Detectandpreserve",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B10_BiTurbo_BASIS_BMW_5er_Gen3_E34_1989-1994_frontleft_2011-06-04_U.jpg"
+  },
+  {
+   "id": "alpina_b5",
+   "name": "B5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Alpina_B5_Biturbo_Touring_IMG_0752.jpg/1280px-Alpina_B5_Biturbo_Touring_IMG_0752.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B5_Biturbo_Touring_IMG_0752.jpg"
+  },
+  {
+   "id": "alpina_b7-turbo-e12",
+   "name": "B7 Turbo (E12)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Alpina_B7_%28E12%29_DSC_0642.jpg/1280px-Alpina_B7_%28E12%29_DSC_0642.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4620 x 1690 x 1405",
+   "poids_kg": 1485,
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B7_(E12)_DSC_0642.jpg"
+  },
+  {
+   "id": "alpina_b12",
+   "name": "B12",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BMW_850_Alpina_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. CrazyD assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_850_Alpina_3.jpg"
+  },
+  {
+   "id": "alpina_b8",
+   "name": "B8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/BMW_Alpina_B8_4.6_E36_%2814280870073%29.jpg/1280px-BMW_Alpina_B8_4.6_E36_%2814280870073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4443 x 1710 x 1346",
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B8_4.6_E36_(14280870073).jpg"
+  },
+  {
+   "id": "alpina_b3",
+   "name": "B3",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/2024_Alpina_B3_%28G20%29_IMG_0711.jpg/1280px-2024_Alpina_B3_%28G20%29_IMG_0711.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Alpina_B3_(G20)_IMG_0711.jpg"
+  },
+  {
+   "id": "alpina_d3",
+   "name": "D3",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Alpina_D3_Touring_IMG_0788.jpg/1280px-Alpina_D3_Touring_IMG_0788.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_D3_Touring_IMG_0788.jpg"
+  },
+  {
+   "id": "alpina_b7",
+   "name": "B7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/B7Limousine.JPG/1280px-B7Limousine.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alpina yuki",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:B7Limousine.JPG"
+  },
+  {
+   "id": "alpina_b10",
+   "name": "B10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Alpina_B10_%28E28%29_1X7A6617.jpg/1280px-Alpina_B10_%28E28%29_1X7A6617.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B10_(E28)_1X7A6617.jpg"
+  },
+  {
+   "id": "alpina_b6",
+   "name": "B6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/B6%E3%82%AF%E3%83%BC%E3%83%9A.JPG/1280px-B6%E3%82%AF%E3%83%BC%E3%83%9A.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alpina yuki",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:B6%E3%82%AF%E3%83%BC%E3%83%9A.JPG"
+  },
+  {
+   "id": "alpina_d4",
+   "name": "D4",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Alpina_D4_BiTurbo.jpg/1280px-Alpina_D4_BiTurbo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_D4_BiTurbo.jpg"
+  },
+  {
+   "id": "alpina_d5",
+   "name": "D5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Alpina_D5_%28G31%29_1X7A6076.jpg/1280px-Alpina_D5_%28G31%29_1X7A6076.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_D5_(G31)_1X7A6076.jpg"
+  },
+  {
+   "id": "alpina_xd3",
+   "name": "XD3",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Alpina_XD3_%28G01%29_1X7A6085.jpg/1280px-Alpina_XD3_%28G01%29_1X7A6085.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_XD3_(G01)_1X7A6085.jpg"
+  },
+  {
+   "id": "alpina_roadster-s",
+   "name": "Roadster S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/BMW_Alpina_Roadster_3%2C4_S_%283537987805%29.jpg/1280px-BMW_Alpina_Roadster_3%2C4_S_%283537987805%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4091 x 1781 x 1295",
+   "poids_kg": 1395,
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_Roadster_3,4_S_(3537987805).jpg"
+  },
+  {
+   "id": "alpina_b3-f30",
+   "name": "B3 (F30)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Alpina_B3S_Touring_IMG_0791.jpg/1280px-Alpina_B3S_Touring_IMG_0791.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B3S_Touring_IMG_0791.jpg"
+  },
+  {
+   "id": "alpina_b5-e60",
+   "name": "B5 (E60)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Bmw_Alpina_B5_%286402340167%29.jpg/1280px-Bmw_Alpina_B5_%286402340167%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ben from LONDON, United Kingdom",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bmw_Alpina_B5_(6402340167).jpg"
+  },
+  {
+   "id": "alpina_b10-e39",
+   "name": "B10 (E39)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/BMW_Alpina_B10_%283538792066%29.jpg/1280px-BMW_Alpina_B10_%283538792066%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B10_(3538792066).jpg"
+  },
+  {
+   "id": "alpina_b3-e30",
+   "name": "B3 (E30)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Alpina_B3_at_Legendy_2018_in_Prague.jpg/1280px-Alpina_B3_at_Legendy_2018_in_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jiří Sedláček",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B3_at_Legendy_2018_in_Prague.jpg"
+  },
+  {
+   "id": "alpina_b6-f06",
+   "name": "B6 (F06)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/BMW_Alpina_B6_2.4.18.jpg/1280px-BMW_Alpina_B6_2.4.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Kevauto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_B6_2.4.18.jpg"
+  },
+  {
+   "id": "alpina_d3-f31",
+   "name": "D3 (F31)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/BMW_Alpina_D3_Biturbo_at_Legendy_2014.JPG/1280px-BMW_Alpina_D3_Biturbo_at_Legendy_2014.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jiří Sedláček",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_D3_Biturbo_at_Legendy_2014.JPG"
+  },
+  {
+   "id": "alpina_xd3-f25",
+   "name": "XD3 (F25)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/BMW_Alpina_XD3_at_Legendy_2014.JPG/1280px-BMW_Alpina_XD3_at_Legendy_2014.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jiří Sedláček",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Alpina_XD3_at_Legendy_2014.JPG"
+  },
+  {
+   "id": "alpina_xb7",
+   "name": "XB7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Alpina_XB7_Auto_Zuerich_2021_IMG_0069.jpg/1280px-Alpina_XB7_Auto_Zuerich_2021_IMG_0069.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_XB7_Auto_Zuerich_2021_IMG_0069.jpg"
+  },
+  {
+   "id": "alpina_b3-s",
+   "name": "B3 S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/E46_Alpina_B3_S.jpg/1280px-E46_Alpina_B3_S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:E46_Alpina_B3_S.jpg"
+  }
+ ]
+}

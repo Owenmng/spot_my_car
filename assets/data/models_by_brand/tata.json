@@ -1,0 +1,309 @@
+{
+ "models": [
+  {
+   "id": "tata_sierra",
+   "name": "Sierra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Tata_Sierra_Turbo_GJ10DA0696_%28cropped%29.jpg/1280px-Tata_Sierra_Turbo_GJ10DA0696_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1979",
+   "tags": [],
+   "poids_kg": 1530,
+   "imageCredit": "File:Tata Sierra Turbo GJ10DA0696.jpg: Raisahabone derivative work: Mr.choppers",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Sierra_Turbo_GJ10DA0696_(cropped).jpg"
+  },
+  {
+   "id": "tata_407",
+   "name": "407",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Tata_trucks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "https://www.flickr.com/photos/vm2827/",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_trucks.jpg"
+  },
+  {
+   "id": "tata_aria",
+   "name": "Aria",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gedee_Car_Museum-Indian_Cars_Section-WUS-Tata_Aria-05428.jpg/1280px-Gedee_Car_Museum-Indian_Cars_Section-WUS-Tata_Aria-05428.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4780 x 1895 x 1780",
+   "poids_kg": 2305,
+   "imageCredit": "Rainer Halama",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Gedee_Car_Museum-Indian_Cars_Section-WUS-Tata_Aria-05428.jpg"
+  },
+  {
+   "id": "tata_magic-iris",
+   "name": "Magic Iris",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Tata_Magic_Iris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "solarisgirl",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Magic_Iris.jpg"
+  },
+  {
+   "id": "tata_indigo",
+   "name": "Indigo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tata_Manza_LHD_in_QC_front.JPG/1280px-Tata_Manza_LHD_in_QC_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4150 x 1620 x 1540",
+   "imageCredit": "Ominae",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Manza_LHD_in_QC_front.JPG"
+  },
+  {
+   "id": "tata_ultra",
+   "name": "Ultra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Homebound_Tata_Ultra_1312_truck%2CBangladesh._%2830825840421%29.jpg/1280px-Homebound_Tata_Ultra_1312_truck%2CBangladesh._%2830825840421%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Shadman Samee from Dhaka, Bangladesh",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Homebound_Tata_Ultra_1312_truck,Bangladesh._(30825840421).jpg"
+  },
+  {
+   "id": "tata_xenon",
+   "name": "Xenon",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Tata_Xenon.JPG/1280px-Tata_Xenon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. Luc106 assumed (based on copyright claims).",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Xenon.JPG"
+  },
+  {
+   "id": "tata_bolt",
+   "name": "Bolt",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Bolt.jpg/1280px-Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Bolt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3825 x 1695 x 1562",
+   "imageCredit": "Clément Bucco-Lechat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Bolt.jpg"
+  },
+  {
+   "id": "tata_zest",
+   "name": "Zest",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Zest.jpg/1280px-Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Zest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3995 x 1706 x 1570",
+   "imageCredit": "Clément Bucco-Lechat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Zest.jpg"
+  },
+  {
+   "id": "tata_tiago",
+   "name": "Tiago",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/2022_Tata_Tiago_XZA%2B_front_20230512.jpg/1280px-2022_Tata_Tiago_XZA%2B_front_20230512.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3746 x 1647 x 1475",
+   "imageCredit": "Dairokkan9",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Tata_Tiago_XZA%2B_front_20230512.jpg"
+  },
+  {
+   "id": "tata_hexa",
+   "name": "Hexa",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/TATA_HEXA_.jpg/1280px-TATA_HEXA_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4788 x 1903 x 1791",
+   "imageCredit": "Thebanerscave",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TATA_HEXA_.jpg"
+  },
+  {
+   "id": "tata_nexon",
+   "name": "Nexon",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2023_Tata_Nexon_XZA%2B_front_view.jpg/1280px-2023_Tata_Nexon_XZA%2B_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3994 x 1811 x 1607",
+   "imageCredit": "Dairokkan9",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Tata_Nexon_XZA%2B_front_view.jpg"
+  },
+  {
+   "id": "tata_harrier",
+   "name": "Harrier",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Tata_Buzzard_Sport%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0651%29.jpg/1280px-Tata_Buzzard_Sport%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0651%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Buzzard_Sport,_GIMS_2019,_Le_Grand-Saconnex_(GIMS0651).jpg"
+  },
+  {
+   "id": "tata_nano",
+   "name": "Nano",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Tata_-_Nano_-_Kolkata_2011-09-15_5184.JPG/1280px-Tata_-_Nano_-_Kolkata_2011-09-15_5184.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3100 x 1495 x 1652",
+   "imageCredit": "Biswarup Ganguly",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_-_Nano_-_Kolkata_2011-09-15_5184.JPG"
+  },
+  {
+   "id": "tata_tl",
+   "name": "TL",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/MHV_Tatamobile_207_01.jpg/1280px-MHV_Tatamobile_207_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "MartinHansV",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MHV_Tatamobile_207_01.jpg"
+  },
+  {
+   "id": "tata_estate",
+   "name": "Estate",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Tata_Estate%2C_rear_view_%28Goa%2C_1994%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Estate,_rear_view_(Goa,_1994).jpg"
+  },
+  {
+   "id": "tata_safari",
+   "name": "Safari",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Tata_Safari_Storme%2C_by_SouLSteer%2C_Maharaj_Bada_from_Gwalior%2C_April_2013.jpg/1280px-Tata_Safari_Storme%2C_by_SouLSteer%2C_Maharaj_Bada_from_Gwalior%2C_April_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4650 x 1918 x 1925",
+   "poids_kg": 1920,
+   "imageCredit": "Shobhit Gosain",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Safari_Storme,_by_SouLSteer,_Maharaj_Bada_from_Gwalior,_April_2013.jpg"
+  },
+  {
+   "id": "tata_indica",
+   "name": "Indica",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/2000_Tata_Indica_blue.JPG/1280px-2000_Tata_Indica_blue.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Corvettec6r",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Tata_Indica_blue.JPG"
+  },
+  {
+   "id": "tata_sumo",
+   "name": "Sumo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tata_Sumo_EX_2.0_TDi_4x4_2001_%2815260028476%29.jpg/1280px-Tata_Sumo_EX_2.0_TDi_4x4_2001_%2815260028476%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "order_242 from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Sumo_EX_2.0_TDi_4x4_2001_(15260028476).jpg"
+  },
+  {
+   "id": "tata_winger",
+   "name": "Winger",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Tata_Winger.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4520 x 1905 x 2050",
+   "imageCredit": "User:MikeSense80",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Winger.png"
+  },
+  {
+   "id": "tata_altroz",
+   "name": "Altroz",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Tata_Altroz_front_20230617.jpg/1280px-Tata_Altroz_front_20230617.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dairokkan9",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tata_Altroz_front_20230617.jpg"
+  },
+  {
+   "id": "tata_onecat",
+   "name": "OneCAT",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Catvertroquette.jpg/1280px-Catvertroquette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Deepak Gupta",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Catvertroquette.jpg"
+  },
+  {
+   "id": "tata_magic",
+   "name": "Magic",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Yellow_color_minivan_2013-12-30_18-58.jpg/1280px-Yellow_color_minivan_2013-12-30_18-58.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User:Adityamadhav83",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Yellow_color_minivan_2013-12-30_18-58.jpg"
+  },
+  {
+   "id": "tata_sumo-grande",
+   "name": "Sumo Grande",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Picture6sumo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User:Deepak",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Picture6sumo.jpg"
+  },
+  {
+   "id": "tata_indica-vista",
+   "name": "Indica Vista",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/2012_Tata_Indica_Safire_front.JPG/1280px-2012_Tata_Indica_Safire_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Corvettec6r",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Tata_Indica_Safire_front.JPG"
+  },
+  {
+   "id": "tata_super-ace",
+   "name": "Super Ace",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Siso.jpg/1280px-Siso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4340 x 1565 x 1864",
+   "imageCredit": "Kaushl666",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Siso.jpg"
+  },
+  {
+   "id": "tata_tamo-racemo",
+   "name": "TaMo Racemo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/TaMo_Racemo_%28cropped%29.jpg/1280px-TaMo_Racemo_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "NauyopTaiwan",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TaMo_Racemo_(cropped).jpg"
+  },
+  {
+   "id": "tata_tigor",
+   "name": "Tigor",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/TATA_Tigor_at_Shillong_Peak_View_%28cropped%29.jpg/1280px-TATA_Tigor_at_Shillong_Peak_View_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3992 x 1677 x 1537",
+   "imageCredit": "Prabhat114",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TATA_Tigor_at_Shillong_Peak_View_(cropped).jpg"
+  },
+  {
+   "id": "tata_lpta",
+   "name": "LPTA",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Vehicle_Factory_Jabalpur_%28VFJ%29%27s_LPTA_715_Truck_for_the_Indian_Army.jpg/1280px-Vehicle_Factory_Jabalpur_%28VFJ%29%27s_LPTA_715_Truck_for_the_Indian_Army.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Vehicle Factory Jabalpur, Government of India",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vehicle_Factory_Jabalpur_(VFJ)%27s_LPTA_715_Truck_for_the_Indian_Army.jpg"
+  }
+ ]
+}

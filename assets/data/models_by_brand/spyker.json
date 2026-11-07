@@ -1,0 +1,76 @@
+{
+ "models": [
+  {
+   "id": "spyker_c8-aileron",
+   "name": "C8 Aileron",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Spyker-C8Aileron.jpg/1280px-Spyker-C8Aileron.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Spyker-C8Aileron.jpg"
+  },
+  {
+   "id": "spyker_b6",
+   "name": "B6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Geneva_MotorShow_2013_-_Spyker_B6_Venator.jpg/1280px-Geneva_MotorShow_2013_-_Spyker_B6_Venator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1400,
+   "imageCredit": "Clément Bucco-Lechat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Spyker_B6_Venator.jpg"
+  },
+  {
+   "id": "spyker_silvestris-v8",
+   "name": "Silvestris V8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Spyker_Silvestris_V8_-_Flickr_-_edvvc_%281%29.jpg/1280px-Spyker_Silvestris_V8_-_Flickr_-_edvvc_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "edvvc from London, UK",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Spyker_Silvestris_V8_-_Flickr_-_edvvc_(1).jpg"
+  },
+  {
+   "id": "spyker_c8",
+   "name": "C8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2009_Spyker_C8_Spyder_fL.jpg/1280px-2009_Spyker_C8_Spyder_fL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4185 x 1880 x 1080",
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2009_Spyker_C8_Spyder_fL.jpg"
+  },
+  {
+   "id": "spyker_d8",
+   "name": "D8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Spyker_D12.jpg/1280px-Spyker_D12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2005",
+   "tags": [],
+   "imageCredit": "Simon Davison from Los Gatos, United States",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Spyker_D12.jpg"
+  },
+  {
+   "id": "spyker_c12-zagato",
+   "name": "C12 Zagato",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/STA42533.JPG/1280px-STA42533.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Joosthug",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:STA42533.JPG"
+  },
+  {
+   "id": "spyker_c12-la-turbie",
+   "name": "C12 La Turbie",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Spyker_%28319313606%29.jpg/1280px-Spyker_%28319313606%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Tracey Adams from Atascadero, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Spyker_(319313606).jpg"
+  }
+ ]
+}

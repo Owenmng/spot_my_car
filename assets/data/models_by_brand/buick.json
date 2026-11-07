@@ -1,0 +1,535 @@
+{
+ "models": [
+  {
+   "id": "buick_marquette",
+   "name": "Marquette",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/1930Marquette.jpg/1280px-1930Marquette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Liftarn",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1930Marquette.jpg"
+  },
+  {
+   "id": "buick_master-six",
+   "name": "Master Six",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Buick_Master_Six_Touring_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lglswe",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Master_Six_Touring_1923.jpg"
+  },
+  {
+   "id": "buick_modell-10",
+   "name": "Modell 10",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/08_Buick_Model_10.jpg/1280px-08_Buick_Model_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:08_Buick_Model_10.jpg"
+  },
+  {
+   "id": "buick_modell-19",
+   "name": "Modell 19",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/1910_Buick_Model_19_Tourer_%2822040732774%29.jpg/1280px-1910_Buick_Model_19_Tourer_%2822040732774%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1910_Buick_Model_19_Tourer_(22040732774).jpg"
+  },
+  {
+   "id": "buick_opel",
+   "name": "Opel",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/1976_Buick_Opel_-_90%2C000km_%2816816206825%29.jpg/1280px-1976_Buick_Opel_-_90%2C000km_%2816816206825%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1974",
+   "tags": [],
+   "imageCredit": "TuRbO_J from Adelaide, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1976_Buick_Opel_-_90,000km_(16816206825).jpg"
+  },
+  {
+   "id": "buick_series-d-four",
+   "name": "Serie D-Four",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1922_Buick_roadster.JPG/1280px-1922_Buick_roadster.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1922_Buick_roadster.JPG"
+  },
+  {
+   "id": "buick_series-d-six",
+   "name": "Serie D-Six",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Buick_E-Six_45_%281918%29_1Y7A6067.jpg/1280px-Buick_E-Six_45_%281918%29_1Y7A6067.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_E-Six_45_(1918)_1Y7A6067.jpg"
+  },
+  {
+   "id": "buick_standard-six",
+   "name": "Standard Six",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Buick_Standard_Model_25_Touring_1925_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lglswe",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Standard_Model_25_Touring_1925_2.jpg"
+  },
+  {
+   "id": "buick_century",
+   "name": "Century",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/BUICK_GL8_CENTURY_%28BUICK_GL8_FOURTH_GENENRATION%29_China_%2815%29.jpg/1280px-BUICK_GL8_CENTURY_%28BUICK_GL8_FOURTH_GENENRATION%29_China_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_GL8_CENTURY_(BUICK_GL8_FOURTH_GENENRATION)_China_(15).jpg"
+  },
+  {
+   "id": "buick_gl6",
+   "name": "GL6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/BUICK_GL6_China_%285%29.jpg/1280px-BUICK_GL6_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4692 x 1794 x 1626",
+   "vitesse_max_kmh": 54,
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_GL6_China_(5).jpg"
+  },
+  {
+   "id": "buick_enclave-c1yb",
+   "name": "Enclave C1YB",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Buick_Enclave_%28C1XX%29_1X7A6179.jpg/1280px-Buick_Enclave_%28C1XX%29_1X7A6179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5189 x 2001 x 1775",
+   "poids_kg": 1977,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Enclave_(C1XX)_1X7A6179.jpg"
+  },
+  {
+   "id": "buick_enclave-gmt967",
+   "name": "Enclave GMT967",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Buick_Enclave_%28Lambda%29_IMG_3854.jpg/1280px-Buick_Enclave_%28Lambda%29_IMG_3854.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5113 x 2007 x 1842",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Enclave_(Lambda)_IMG_3854.jpg"
+  },
+  {
+   "id": "buick_velite-6",
+   "name": "Velite 6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Buick_Velite_6_001.jpg/1280px-Buick_Velite_6_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Velite_6_001.jpg"
+  },
+  {
+   "id": "buick_park-avenue-china",
+   "name": "Park Avenue (China)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Buick_Park_Avenue_CN_Sanming_01_2022-11-26.jpg/1280px-Buick_Park_Avenue_CN_Sanming_01_2022-11-26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JamesYoung8167",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Park_Avenue_CN_Sanming_01_2022-11-26.jpg"
+  },
+  {
+   "id": "buick_riviera-e-body-1971-1973",
+   "name": "Riviera (E-body; 1971-1973)",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/18-06-23-Roadrunners_Race_61_Finowfurt_RRK5143.jpg/1280px-18-06-23-Roadrunners_Race_61_Finowfurt_RRK5143.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ralf Roletschek",
+   "imageLicense": "GFDL 1.2",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:18-06-23-Roadrunners_Race_61_Finowfurt_RRK5143.jpg"
+  },
+  {
+   "id": "buick_xp2000",
+   "name": "XP2000",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/1995_Buick_XP2000.jpg/1280px-1995_Buick_XP2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Buick (General Motors)",
+   "imageLicense": "CC BY 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1995_Buick_XP2000.jpg"
+  },
+  {
+   "id": "buick_electra-e5",
+   "name": "Electra E5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BUICK_ELECTRA_E5_China_%283%29.jpg/1280px-BUICK_ELECTRA_E5_China_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_ELECTRA_E5_China_(3).jpg"
+  },
+  {
+   "id": "buick_electra-e4",
+   "name": "Electra E4",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/SAIC-GM_Buick_Electra_E4_at_Auto_Guangzhou_2023_20231126.jpg/1280px-SAIC-GM_Buick_Electra_E4_at_Auto_Guangzhou_2023_20231126.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Tim Wu",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAIC-GM_Buick_Electra_E4_at_Auto_Guangzhou_2023_20231126.jpg"
+  },
+  {
+   "id": "buick_excelle-gx",
+   "name": "Excelle GX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BUICK_EXCELLE_GX_China.jpg/1280px-BUICK_EXCELLE_GX_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_EXCELLE_GX_China.jpg"
+  },
+  {
+   "id": "buick_lucerne",
+   "name": "Lucerne",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Buick_Lucerne_V8_Washington_DC_Metro_Area%2C_USA_%281%29.jpg/1280px-Buick_Lucerne_V8_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5161 x 1875 x 1473",
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Lucerne_V8_Washington_DC_Metro_Area,_USA_(1).jpg"
+  },
+  {
+   "id": "buick_wildcat",
+   "name": "Wildcat",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/1963_Buick_Wildcat_--_06-18-2011_2.jpg/1280px-1963_Buick_Wildcat_--_06-18-2011_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1963 - 1970",
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Buick_Wildcat_--_06-18-2011_2.jpg"
+  },
+  {
+   "id": "buick_terraza",
+   "name": "Terraza",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2006_Buick_Terraza_CXL.JPG/1280px-2006_Buick_Terraza_CXL.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5207 x 1829 x 1831",
+   "poids_kg": 2008,
+   "imageCredit": "2001FordRangerXLT",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Buick_Terraza_CXL.JPG"
+  },
+  {
+   "id": "buick_verano",
+   "name": "Verano",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/2012_Buick_Verano_--_04-30-2012.JPG/1280px-2012_Buick_Verano_--_04-30-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Buick_Verano_--_04-30-2012.JPG"
+  },
+  {
+   "id": "buick_excelle",
+   "name": "Excelle",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Buick_Excelle_XT_China_2012-04-15.JPG/1280px-Buick_Excelle_XT_China_2012-04-15.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2003",
+   "tags": [],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Excelle_XT_China_2012-04-15.JPG"
+  },
+  {
+   "id": "buick_estate",
+   "name": "Estate",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Buick_Roadmaster_Wagon.jpg/1280px-Buick_Roadmaster_Wagon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5601 x 2013 x 1506",
+   "poids_kg": 1789,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Roadmaster_Wagon.jpg"
+  },
+  {
+   "id": "buick_electra",
+   "name": "Electra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/1965_Buick_Electra_225_%2825674105731%29.jpg/1280px-1965_Buick_Electra_225_%2825674105731%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1959 - 1990",
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1965_Buick_Electra_225_(25674105731).jpg"
+  },
+  {
+   "id": "buick_gl8",
+   "name": "GL8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/BUICK_GL8_LS_%285%29.jpg/1280px-BUICK_GL8_LS_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_GL8_LS_(5).jpg"
+  },
+  {
+   "id": "buick_invicta",
+   "name": "Invicta",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Buick_Invicta_Convertible_1961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1959",
+   "tags": [],
+   "dimensions_lwh_mm": "5522 x 2057 x 1450",
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Invicta_Convertible_1961.jpg"
+  },
+  {
+   "id": "buick_limited",
+   "name": "Limited",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/1937_Buick_Limited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Don O'Brien",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1937_Buick_Limited.jpg"
+  },
+  {
+   "id": "buick_lesabre",
+   "name": "LeSabre",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/1964_Buick_LeSabre_Custom_vf.jpg/1280px-1964_Buick_LeSabre_Custom_vf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1959 - 2005",
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Buick_LeSabre_Custom_vf.jpg"
+  },
+  {
+   "id": "buick_park-avenue",
+   "name": "Park Avenue",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/New_Buick_Park_Avenue.jpg/1280px-New_Buick_Park_Avenue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Poeloq",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:New_Buick_Park_Avenue.jpg"
+  },
+  {
+   "id": "buick_reatta",
+   "name": "Reatta",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Buick_Reatta_coupe.jpg/1280px-Buick_Reatta_coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4666 x 1854 x 1300",
+   "vitesse_max_kmh": 55,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Reatta_coupe.jpg"
+  },
+  {
+   "id": "buick_rainier",
+   "name": "Rainier",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Buick_Rainier_--_04-05-2011.jpg/1280px-Buick_Rainier_--_04-05-2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4912 x 1915 x 1892",
+   "poids_kg": 2004,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Rainier_--_04-05-2011.jpg"
+  },
+  {
+   "id": "buick_rendezvous",
+   "name": "Rendezvous",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/04-07_Buick_Rendezvous_.jpg/1280px-04-07_Buick_Rendezvous_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4737 x 1869 x 1750",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:04-07_Buick_Rendezvous_.jpg"
+  },
+  {
+   "id": "buick_regal",
+   "name": "Regal",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/BUICK_REGAL_SIXTH_GENERATION_%28OPEL_INSIGNIA_B%29_China_%2813%29.jpg/1280px-BUICK_REGAL_SIXTH_GENERATION_%28OPEL_INSIGNIA_B%29_China_%2813%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_REGAL_SIXTH_GENERATION_(OPEL_INSIGNIA_B)_China_(13).jpg"
+  },
+  {
+   "id": "buick_somerset",
+   "name": "Somerset",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Buick_Somerset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4572 x 1410 x 1323",
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Somerset.jpg"
+  },
+  {
+   "id": "buick_riviera",
+   "name": "Riviera",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/1972_Buick_Riviera_in_Finland.jpg/1280px-1972_Buick_Riviera_in_Finland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1963 - 1999",
+   "tags": [],
+   "imageCredit": "Jukka Peura from Pori, Suomi,cropped and altered by uploader Mr.choppers",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Buick_Riviera_in_Finland.jpg"
+  },
+  {
+   "id": "buick_skyhawk",
+   "name": "Skyhawk",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Buick_Skyhawk_4-door_white.jpg/1280px-Buick_Skyhawk_4-door_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "CZmarlin — Christopher Ziemnowicz, releases all rights but a photo credit would be appreciated if this image is used any",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Skyhawk_4-door_white.jpg"
+  },
+  {
+   "id": "buick_lacrosse",
+   "name": "LaCrosse",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/BUICK_LACROSSE_FOURTH_GENERATION_China_%285%29.jpg/1280px-BUICK_LACROSSE_FOURTH_GENERATION_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_LACROSSE_FOURTH_GENERATION_China_(5).jpg"
+  },
+  {
+   "id": "buick_enclave",
+   "name": "Enclave",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/26_Buick_Enclave_Avenir.jpg/1280px-26_Buick_Enclave_Avenir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5113 x 2007 x 1842",
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:26_Buick_Enclave_Avenir.jpg"
+  },
+  {
+   "id": "buick_encore-gx",
+   "name": "Encore GX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/25_Buick_Encore_GX_Sport_Touring.jpg/1280px-25_Buick_Encore_GX_Sport_Touring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4463 x 1813 x 1642",
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:25_Buick_Encore_GX_Sport_Touring.jpg"
+  },
+  {
+   "id": "buick_envista",
+   "name": "Envista",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Buick_Envista_GS_IMG005.jpg/1280px-Buick_Envista_GS_IMG005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Zotyefan",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Envista_GS_IMG005.jpg"
+  },
+  {
+   "id": "buick_roadmaster",
+   "name": "Roadmaster",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Buick_Roadmaster_Wagon.jpg/1280px-Buick_Roadmaster_Wagon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Roadmaster_Wagon.jpg"
+  },
+  {
+   "id": "buick_special",
+   "name": "Special",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Buick_4-Dorrars_Sedan_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_4-Dorrars_Sedan_1937.jpg"
+  },
+  {
+   "id": "buick_centurion",
+   "name": "Centurion",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/1972_Buick_Centurion_Formal_Coupe%2C_front_left_%282022_Back_to_the_50%27s_Weekend%29.jpg/1280px-1972_Buick_Centurion_Formal_Coupe%2C_front_left_%282022_Back_to_the_50%27s_Weekend%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1971 - 1973",
+   "tags": [],
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Buick_Centurion_Formal_Coupe,_front_left_(2022_Back_to_the_50%27s_Weekend).jpg"
+  },
+  {
+   "id": "buick_apollo",
+   "name": "Apollo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/1973_Buick_Apollo.jpg/1280px-1973_Buick_Apollo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1973 - 1975",
+   "tags": [],
+   "vitesse_max_kmh": 52,
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1973_Buick_Apollo.jpg"
+  },
+  {
+   "id": "buick_super",
+   "name": "Super",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Buick_Super_Serie_50_BW_2.JPG/1280px-Buick_Super_Serie_50_BW_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Berthold Werner",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Super_Serie_50_BW_2.JPG"
+  },
+  {
+   "id": "buick_skylark",
+   "name": "Skylark",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/1972_Buick_Skylark_Front.jpg/1280px-1972_Buick_Skylark_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1953 - 1998",
+   "tags": [],
+   "imageCredit": "Bejara70",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Buick_Skylark_Front.jpg"
+  },
+  {
+   "id": "buick_gsx",
+   "name": "GSX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/1970_Buick_GSX_455_Coupe_%2833285990451%29.jpg/1280px-1970_Buick_GSX_455_Coupe_%2833285990451%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Buick_GSX_455_Coupe_(33285990451).jpg"
+  },
+  {
+   "id": "buick_envision",
+   "name": "Envision",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Buick_Envision_Plus_IMG001.jpg/1280px-Buick_Envision_Plus_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Anonymousfox36",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Envision_Plus_IMG001.jpg"
+  },
+  {
+   "id": "buick_encore",
+   "name": "Encore",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Buick_Encore_facelift_China_2017-03-26.jpg/1280px-Buick_Encore_facelift_China_2017-03-26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4278 x 1781 x 1661",
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Encore_facelift_China_2017-03-26.jpg"
+  }
+ ]
+}

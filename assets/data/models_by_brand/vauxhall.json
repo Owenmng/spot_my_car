@@ -1,0 +1,106 @@
+{
+ "models": [
+  {
+   "id": "vauxhall_14-6",
+   "name": "14-6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/1947_Vauxhall_14_4691383736.jpg/1280px-1947_Vauxhall_14_4691383736.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1080,
+   "imageCredit": "Graham Robertson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1947_Vauxhall_14_4691383736.jpg"
+  },
+  {
+   "id": "vauxhall_vectra",
+   "name": "Vectra",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2003_Vauxhall_Vectra_Active_1.8.jpg/1280px-2003_Vauxhall_Vectra_Active_1.8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Vauxhall_Vectra_Active_1.8.jpg"
+  },
+  {
+   "id": "vauxhall_light-six",
+   "name": "Light Six",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Vauxhall_14_Light_6_registered_October_1935_1782cc.JPG/1280px-Vauxhall_14_Light_6_registered_October_1935_1782cc.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vauxhall_14_Light_6_registered_October_1935_1782cc.JPG"
+  },
+  {
+   "id": "vauxhall_12-4",
+   "name": "12-4",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Vauxhall_sedan_regd_June_1939.JPG/1280px-Vauxhall_sedan_regd_June_1939.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vauxhall_sedan_regd_June_1939.JPG"
+  },
+  {
+   "id": "vauxhall_chevette",
+   "name": "Chevette",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG/1280px-Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rept0n1x",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG"
+  },
+  {
+   "id": "vauxhall_23-60",
+   "name": "23-60",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MelbourneAnzacDay2009Car1.JPG/1280px-MelbourneAnzacDay2009Car1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mattinbgn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MelbourneAnzacDay2009Car1.JPG"
+  },
+  {
+   "id": "vauxhall_12",
+   "name": "12",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Vauxhall_Light_6_1530cc_Sep_1933.JPG/1280px-Vauxhall_Light_6_1530cc_Sep_1933.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vauxhall_Light_6_1530cc_Sep_1933.JPG"
+  },
+  {
+   "id": "vauxhall_14-40",
+   "name": "14-40",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Vauxhall_-_Flickr_-_mick_-_Lumix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1800,
+   "imageCredit": "Mick from Northamptonshire, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Vauxhall_-_Flickr_-_mick_-_Lumix.jpg"
+  },
+  {
+   "id": "vauxhall_big-six",
+   "name": "Big Six",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/1934_Vauxhall_BX_Big_Six_sedan_RF.jpg/1280px-1934_Vauxhall_BX_Big_Six_sedan_RF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "sv1ambo",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1934_Vauxhall_BX_Big_Six_sedan_RF.jpg"
+  },
+  {
+   "id": "vauxhall_insignia",
+   "name": "Insignia",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/2018_Vauxhall_Insignia_SRi_NAV_Turbo_1.5_Front.jpg/1280px-2018_Vauxhall_Insignia_SRi_NAV_Turbo_1.5_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Vauxhall_Insignia_SRi_NAV_Turbo_1.5_Front.jpg"
+  }
+ ]
+}

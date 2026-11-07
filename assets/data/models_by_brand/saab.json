@@ -1,0 +1,289 @@
+{
+ "models": [
+  {
+   "id": "saab_9-3-sport-hatch",
+   "name": "9-3 Sport-Hatch",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Saab_9-3_Sport_Combi_Vector_1.9_TiD.JPG/1280px-Saab_9-3_Sport_Combi_Vector_1.9_TiD.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Thomas doerfer",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_9-3_Sport_Combi_Vector_1.9_TiD.JPG"
+  },
+  {
+   "id": "saab_formula-junior",
+   "name": "Formula Junior",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/SAAB_Formula_Junior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAAB_Formula_Junior.jpg"
+  },
+  {
+   "id": "saab_gran-turismo",
+   "name": "Gran Turismo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/1959-SAAB93B-750GT.jpg/1280px-1959-SAAB93B-750GT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4010 x 1570 x 1450",
+   "poids_kg": 810,
+   "imageCredit": "Liftarn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1959-SAAB93B-750GT.jpg"
+  },
+  {
+   "id": "saab_90",
+   "name": "90",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Saab_90.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4580 x 1690 x 1430",
+   "poids_kg": 1225,
+   "imageCredit": "José Teixeira",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_90.jpg"
+  },
+  {
+   "id": "saab_600",
+   "name": "600",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/1981_SAAB-Lancia_600.jpg/1280px-1981_SAAB-Lancia_600.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Uploader's father, digitized and altered by Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1981_SAAB-Lancia_600.jpg"
+  },
+  {
+   "id": "saab_95",
+   "name": "95",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/SAAB_95_De_Luxe_1961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1959",
+   "tags": [],
+   "poids_kg": 900,
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAAB_95_De_Luxe_1961.jpg"
+  },
+  {
+   "id": "saab_9-3-cabriolet",
+   "name": "9-3 Cabriolet",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/1st-Saab-9-3-Convertible.jpg/1280px-1st-Saab-9-3-Convertible.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1st-Saab-9-3-Convertible.jpg"
+  },
+  {
+   "id": "saab_93",
+   "name": "93",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/1959-SAAB93B-750GT.jpg/1280px-1959-SAAB93B-750GT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4010 x 1570 x 1450",
+   "poids_kg": 880,
+   "imageCredit": "Liftarn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1959-SAAB93B-750GT.jpg"
+  },
+  {
+   "id": "saab_92",
+   "name": "92",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/SAAB_92_1949.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3950 x 1620 x 1450",
+   "poids_kg": 880,
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAAB_92_1949.jpg"
+  },
+  {
+   "id": "saab_99",
+   "name": "99",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/1969-SAAB99.jpg/1280px-1969-SAAB99.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Liftarn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1969-SAAB99.jpg"
+  },
+  {
+   "id": "saab_sport",
+   "name": "Sport",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Intsaab2016_13_-_Saab_GT850.jpg/1280px-Intsaab2016_13_-_Saab_GT850.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Herranderssvensson",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Intsaab2016_13_-_Saab_GT850.jpg"
+  },
+  {
+   "id": "saab_9000",
+   "name": "9000",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/SAAB9000.jpg/1280px-SAAB9000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Liftarn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAAB9000.jpg"
+  },
+  {
+   "id": "saab_sonett",
+   "name": "Sonett",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/SAAB94.jpg/1280px-SAAB94.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Liftarn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAAB94.jpg"
+  },
+  {
+   "id": "saab_9-2x",
+   "name": "9-2X",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Saab9-2x_iota.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4460 x 1694 x 1466",
+   "imageCredit": "Iota",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab9-2x_iota.jpg"
+  },
+  {
+   "id": "saab_9-7x",
+   "name": "9-7X",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2006_Saab_9-7X_blue.jpg/1280px-2006_Saab_9-7X_blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4907 x 1915 x 1740",
+   "imageCredit": "S. Foskett",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Saab_9-7X_blue.jpg"
+  },
+  {
+   "id": "saab_96",
+   "name": "96",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/SAAB_96_%2825825262244%29.jpg/1280px-SAAB_96_%2825825262244%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4050 x 1570 x 1470",
+   "poids_kg": 950,
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SAAB_96_(25825262244).jpg"
+  },
+  {
+   "id": "saab_9-5",
+   "name": "9-5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Saab_9-5_3.0T_Griffin_2003_%2813522331175%29_%28cropped%29.jpg/1280px-Saab_9-5_3.0T_Griffin_2003_%2813522331175%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "order_242 from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_9-5_3.0T_Griffin_2003_(13522331175)_(cropped).jpg"
+  },
+  {
+   "id": "saab_9-3",
+   "name": "9-3",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Saab_9-3_Aero_MY14_02.jpg/1280px-Saab_9-3_Aero_MY14_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Nevs",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_9-3_Aero_MY14_02.jpg"
+  },
+  {
+   "id": "saab_9-3x",
+   "name": "9-3X",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Saab_9-3X_%E2%80%93_Frontansicht%2C_13._M%C3%A4rz_2011%2C_Wuppertal.jpg/1280px-Saab_9-3X_%E2%80%93_Frontansicht%2C_13._M%C3%A4rz_2011%2C_Wuppertal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "M 93",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_9-3X_%E2%80%93_Frontansicht,_13._M%C3%A4rz_2011,_Wuppertal.jpg"
+  },
+  {
+   "id": "saab_9-1x",
+   "name": "9-1X",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Saab_9-X_BioHybrid_001.JPG/1280px-Saab_9-X_BioHybrid_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "El monty",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_9-X_BioHybrid_001.JPG"
+  },
+  {
+   "id": "saab_catherina",
+   "name": "Catherina",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Saab_Catherina.JPG/1280px-Saab_Catherina.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 800,
+   "imageCredit": "Lukasz19930915",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_Catherina.JPG"
+  },
+  {
+   "id": "saab_60",
+   "name": "60",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Saab60front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4050 x 1570 x 1471",
+   "imageCredit": "Ballista",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab60front.jpg"
+  },
+  {
+   "id": "saab_9-x-air",
+   "name": "9-X Air",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Saab_9-X_Air_010.JPG/1280px-Saab_9-X_Air_010.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2005",
+   "tags": [],
+   "imageCredit": "El monty",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_9-X_Air_010.JPG"
+  },
+  {
+   "id": "saab_94",
+   "name": "94",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Saab_Sonett_V4_IMGP0092_wp.jpg/1280px-Saab_Sonett_V4_IMGP0092_wp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Smial",
+   "imageLicense": "FAL",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_Sonett_V4_IMGP0092_wp.jpg"
+  },
+  {
+   "id": "saab_sonnett-ii",
+   "name": "Sonnett II",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/1966-Sonett2.jpg/1280px-1966-Sonett2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Liftarn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1966-Sonett2.jpg"
+  },
+  {
+   "id": "saab_9-3-sporthatch",
+   "name": "9-3 SportHatch",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Ty%C5%82_9-3_SportHatch.JPG/1280px-Ty%C5%82_9-3_SportHatch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lukasz19930915",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ty%C5%82_9-3_SportHatch.JPG"
+  },
+  {
+   "id": "saab_900-first-generation-convertible",
+   "name": "900 (first generation) convertible",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/1993_Saab_900T_Convertible.jpg/1280px-1993_Saab_900T_Convertible.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. Sfoskett~commonswiki assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1993_Saab_900T_Convertible.jpg"
+  }
+ ]
+}

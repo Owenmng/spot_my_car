@@ -1,0 +1,383 @@
+{
+ "models": [
+  {
+   "id": "triumph_tr",
+   "name": "TR",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Triumph_TR2_-_Flickr_-_exfordy.jpg/1280px-Triumph_TR2_-_Flickr_-_exfordy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Brian Snelson from Hockley, Essex, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_TR2_-_Flickr_-_exfordy.jpg"
+  },
+  {
+   "id": "triumph_tr8",
+   "name": "TR8",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Joes8Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Paul MacDonald",
+   "imageLicense": "FAL",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Joes8Coupe.jpg"
+  },
+  {
+   "id": "triumph_tr4a",
+   "name": "TR4A",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Triumph_TR4A_dutch_licence_registration_AL-47-75_pic1.JPG/1280px-Triumph_TR4A_dutch_licence_registration_AL-47-75_pic1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "AlfvanBeem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_TR4A_dutch_licence_registration_AL-47-75_pic1.JPG"
+  },
+  {
+   "id": "triumph_dolomite-straight-eight",
+   "name": "Dolomite Straight Eight",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Triumph_Dolomite_Straight_Eight2.jpg/1280px-Triumph_Dolomite_Straight_Eight2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 965,
+   "imageCredit": "FDS2",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Dolomite_Straight_Eight2.jpg"
+  },
+  {
+   "id": "triumph_vitesse",
+   "name": "Vitesse",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Triumph_Vitesse_Six.jpg/1280px-Triumph_Vitesse_Six.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "FDS2",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Vitesse_Six.jpg"
+  },
+  {
+   "id": "triumph_super-9",
+   "name": "Super 9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/KV3479.jpg/1280px-KV3479.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Purder",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:KV3479.jpg"
+  },
+  {
+   "id": "triumph_tr7-sprint",
+   "name": "TR7 Sprint",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/TR7_Sprint_from_side.jpg/1280px-TR7_Sprint_from_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Graham.Fountain",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TR7_Sprint_from_side.jpg"
+  },
+  {
+   "id": "triumph_southern-cross",
+   "name": "Southern Cross",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Triumph_Souther_Cross.jpg/1280px-Triumph_Souther_Cross.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "FDS2",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Souther_Cross.jpg"
+  },
+  {
+   "id": "triumph_1800-saloon",
+   "name": "1800 saloon",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Triumph_1800_%2832776624664%29.jpg/1280px-Triumph_1800_%2832776624664%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "pyntofmyld",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_1800_(32776624664).jpg"
+  },
+  {
+   "id": "triumph_gt6",
+   "name": "GT6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/1973.triumph.gt6.red.arp.jpg/1280px-1973.triumph.gt6.red.arp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Adrian Pingstone",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1973.triumph.gt6.red.arp.jpg"
+  },
+  {
+   "id": "triumph_italia",
+   "name": "Italia",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/1960_Triumph_Italia_2000_GT_in_Midnight_Blue%2C_front_left.jpg/1280px-1960_Triumph_Italia_2000_GT_in_Midnight_Blue%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1959",
+   "tags": [],
+   "dimensions_lwh_mm": "3940 x 1454 x 1240",
+   "poids_kg": 1120,
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1960_Triumph_Italia_2000_GT_in_Midnight_Blue,_front_left.jpg"
+  },
+  {
+   "id": "triumph_roadster",
+   "name": "Roadster",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Triumph_1800_roadster_FR.jpg/1280px-Triumph_1800_roadster_FR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. Malcolma assumed (based on copyright claims).",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_1800_roadster_FR.jpg"
+  },
+  {
+   "id": "triumph_renown",
+   "name": "Renown",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Triumph_Renown_first_registered_April_1954.jpg/1280px-Triumph_Renown_first_registered_April_1954.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1207,
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Renown_first_registered_April_1954.jpg"
+  },
+  {
+   "id": "triumph_mayflower",
+   "name": "Mayflower",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Triumph_Mayflower.JPG/1280px-Triumph_Mayflower.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3962 x 1575 x 1524",
+   "poids_kg": 889,
+   "imageCredit": "RobertG",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Mayflower.JPG"
+  },
+  {
+   "id": "triumph_spitfire",
+   "name": "Spitfire",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Triumph_Spitfire_%28Ottawa_British_Car_Show_%2710%29.jpg/1280px-Triumph_Spitfire_%28Ottawa_British_Car_Show_%2710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3683 x 1448 x 1219",
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Spitfire_(Ottawa_British_Car_Show_%2710).jpg"
+  },
+  {
+   "id": "triumph_tr4",
+   "name": "TR4",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Triumph_TR4_%28Hudson%29.JPG/1280px-Triumph_TR4_%28Hudson%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3962 x 1460 x 1270",
+   "poids_kg": 1010,
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_TR4_(Hudson).JPG"
+  },
+  {
+   "id": "triumph_toledo",
+   "name": "Toledo",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/1975_Triumph_Toledo_1.3_Front.jpg/1280px-1975_Triumph_Toledo_1.3_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3962 x 1575 x 1372",
+   "poids_kg": 888,
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1975_Triumph_Toledo_1.3_Front.jpg"
+  },
+  {
+   "id": "triumph_1500",
+   "name": "1500",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Triumph_1500_1493cc_registered_January_1973_so_apparently_from_before_they_switched_away_from_fwd.JPG/1280px-Triumph_1500_1493cc_registered_January_1973_so_apparently_from_before_they_switched_away_from_fwd.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4115 x 1568 x 1372",
+   "poids_kg": 950,
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_1500_1493cc_registered_January_1973_so_apparently_from_before_they_switched_away_from_fwd.JPG"
+  },
+  {
+   "id": "triumph_tr7",
+   "name": "TR7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/1975_Triumph_TR7_3.5_Front.jpg/1280px-1975_Triumph_TR7_3.5_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1975_Triumph_TR7_3.5_Front.jpg"
+  },
+  {
+   "id": "triumph_tr2",
+   "name": "TR2",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Triumph-tr2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3835 x 1397 x 1270",
+   "poids_kg": 839,
+   "imageCredit": "Softeis",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph-tr2.jpg"
+  },
+  {
+   "id": "triumph_1300",
+   "name": "1300",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/1300fwd20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3886 x 1568 x 1372",
+   "imageCredit": "en:User:Parknest",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1300fwd20.jpg"
+  },
+  {
+   "id": "triumph_2000",
+   "name": "2000",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/1971_Triumph_2000_sedan_front_modified.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Paul Brown",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1971_Triumph_2000_sedan_front_modified.jpg"
+  },
+  {
+   "id": "triumph_tr6",
+   "name": "TR6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/1975_Triumph_TR6_Injection_2.5_Front.jpg/1280px-1975_Triumph_TR6_Injection_2.5_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4037 x 1473 x 1270",
+   "poids_kg": 1030,
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1975_Triumph_TR6_Injection_2.5_Front.jpg"
+  },
+  {
+   "id": "triumph_tr5",
+   "name": "TR5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/1969.triumph.tr5.front.jpg/1280px-1969.triumph.tr5.front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3902 x 1473 x 1270",
+   "poids_kg": 1030,
+   "imageCredit": "Jbattersby",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1969.triumph.tr5.front.jpg"
+  },
+  {
+   "id": "triumph_10-20",
+   "name": "10/20",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Triumph_10-20.jpg/1280px-Triumph_10-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 864,
+   "imageCredit": "FDS2",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_10-20.jpg"
+  },
+  {
+   "id": "triumph_tr3",
+   "name": "TR3",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Triumph_TR3_%281957%29_-_18320015345.jpg/1280px-Triumph_TR3_%281957%29_-_18320015345.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1955 - 1962",
+   "tags": [],
+   "dimensions_lwh_mm": "3835 x 1422 x 1270",
+   "poids_kg": 955,
+   "imageCredit": "SG2012",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_TR3_(1957)_-_18320015345.jpg"
+  },
+  {
+   "id": "triumph_dolomite",
+   "name": "Dolomite",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Triumph_Dolomite_1500_reg_1980_1493_cc.JPG/1280px-Triumph_Dolomite_1500_reg_1980_1493_cc.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4115 x 1575 x 1372",
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Dolomite_1500_reg_1980_1493_cc.JPG"
+  },
+  {
+   "id": "triumph_stag",
+   "name": "Stag",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1974_Triumph_Stag_3.0.jpg/1280px-1974_Triumph_Stag_3.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4410 x 1610 x 1260",
+   "poids_kg": 1270,
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1974_Triumph_Stag_3.0.jpg"
+  },
+  {
+   "id": "triumph_herald",
+   "name": "Herald",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Triumph_Herald_1200_first_registered_April_1964_1147cc.jpg/1280px-Triumph_Herald_1200_first_registered_April_1964_1147cc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1959",
+   "tags": [],
+   "dimensions_lwh_mm": "3886 x 1524 x 1321",
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Herald_1200_first_registered_April_1964_1147cc.jpg"
+  },
+  {
+   "id": "triumph_acclaim",
+   "name": "Acclaim",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Triumph_Acclaim_August_1983_1335cc.JPG/1280px-Triumph_Acclaim_August_1983_1335cc.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4089 x 1600 x 1346",
+   "poids_kg": 785,
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Acclaim_August_1983_1335cc.JPG"
+  },
+  {
+   "id": "triumph_gloria",
+   "name": "Gloria",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Triumph_Gloria_1935_-_Flickr_-_mick_-_Lumix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mick from Northamptonshire, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Gloria_1935_-_Flickr_-_mick_-_Lumix.jpg"
+  },
+  {
+   "id": "triumph_super-7",
+   "name": "Super 7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Triumph_Super_seven_1930.jpg/1280px-Triumph_Super_seven_1930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Malcolma",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Super_seven_1930.jpg"
+  },
+  {
+   "id": "triumph_tr3a",
+   "name": "TR3A",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/1960_Triumph_TR3A_-_red_-_fvr.jpg/1280px-1960_Triumph_TR3A_-_red_-_fvr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rex Gray from Southern California",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1960_Triumph_TR3A_-_red_-_fvr.jpg"
+  },
+  {
+   "id": "triumph_fury",
+   "name": "Fury",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/1964_Triumph_Fury.jpg/1280px-1964_Triumph_Fury.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Triumph_Fury.jpg"
+  },
+  {
+   "id": "triumph_tr250",
+   "name": "TR250",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Triumph_TR250_1968.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "User ChiemseeMan on de.wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_TR250_1968.JPG"
+  }
+ ]
+}

@@ -1,0 +1,311 @@
+{
+ "models": [
+  {
+   "id": "tvr_tamora",
+   "name": "Tamora",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/TVR_Tamora.jpg/1280px-TVR_Tamora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3925 x 1715 x 1204",
+   "vitesse_max_kmh": 75,
+   "imageCredit": "Robin Corps from Crowthorne, England",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Tamora.jpg"
+  },
+  {
+   "id": "tvr_s-series",
+   "name": "S Series",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Tvr_s2.jpg/1280px-Tvr_s2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3958 x 1665 x 1223",
+   "poids_kg": 1070,
+   "imageCredit": "Parrot of Doom",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tvr_s2.jpg"
+  },
+  {
+   "id": "tvr_tasmin",
+   "name": "Tasmin",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/TVR_Tasmin_%28280i%29.jpg/1280px-TVR_Tasmin_%28280i%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4014 x 1730 x 1195",
+   "imageCredit": "Tony Harrison from Farnborough, UK;cropped and plates cleared by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Tasmin_(280i).jpg"
+  },
+  {
+   "id": "tvr_tuscan",
+   "name": "Tuscan",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/TVR_Tuscan.jpg/1280px-TVR_Tuscan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "TheK",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Tuscan.jpg"
+  },
+  {
+   "id": "tvr_cerbera-speed-12",
+   "name": "Cerbera Speed 12",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Cerbera_Speed_12.jpg/1280px-Cerbera_Speed_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4300 x 1960 x 1100",
+   "poids_kg": 999,
+   "imageCredit": "Brian Snelson (flickr account)",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cerbera_Speed_12.jpg"
+  },
+  {
+   "id": "tvr_griffith-200",
+   "name": "Griffith 200",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/TVR_Griffith_200_at_Brands_Hatch.jpg/1280px-TVR_Griffith_200_at_Brands_Hatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3600 x 1664 x 1194",
+   "imageCredit": "Paul Woloschuk",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Griffith_200_at_Brands_Hatch.jpg"
+  },
+  {
+   "id": "tvr_chimaera",
+   "name": "Chimaera",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/TVR_Chimaera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3965 x 1730 x 1223",
+   "poids_kg": 1060,
+   "imageCredit": "User Etimbo on en.wikipedia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Chimaera.jpg"
+  },
+  {
+   "id": "tvr_420-seac",
+   "name": "420 SEAC",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/TVR_420_SEAC.jpg/1280px-TVR_420_SEAC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3860 x 1480 x 1205",
+   "poids_kg": 1130,
+   "imageCredit": "daveoflogic from Reading, UKCropped, non-standard rollbar removed by uploader Mr.choppers",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_420_SEAC.jpg"
+  },
+  {
+   "id": "tvr_m-series-3000m-taimar-and-3000s",
+   "name": "M Series#3000M, Taimar, and 3000S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/TVR_M_Series_at_British_Invasion_2009.jpg/1280px-TVR_M_Series_at_British_Invasion_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "ColinMB",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_M_Series_at_British_Invasion_2009.jpg"
+  },
+  {
+   "id": "tvr_vixen",
+   "name": "Vixen",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/TVR_1972_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "No machine-readable author provided. ChiemseeMan assumed (based on copyright claims).",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_1972_1.jpg"
+  },
+  {
+   "id": "tvr_t350",
+   "name": "T350",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/TVR_T350c.jpg/1280px-TVR_T350c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4235 x 1810 x 1200",
+   "poids_kg": 1230,
+   "imageCredit": "Coptic Light",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_T350c.jpg"
+  },
+  {
+   "id": "tvr_griffith",
+   "name": "Griffith",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/TVR_Griffith_-_Flickr_-_mick_-_Lumix.jpg/1280px-TVR_Griffith_-_Flickr_-_mick_-_Lumix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3892 x 1943 x 1205",
+   "imageCredit": "Mick from Northamptonshire, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Griffith_-_Flickr_-_mick_-_Lumix.jpg"
+  },
+  {
+   "id": "tvr_sagaris",
+   "name": "Sagaris",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/TVR_Sagaris_1X7A6549.jpg/1280px-TVR_Sagaris_1X7A6549.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4057 x 1850 x 1175",
+   "poids_kg": 1078,
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Sagaris_1X7A6549.jpg"
+  },
+  {
+   "id": "tvr_tuscan-speed-six",
+   "name": "Tuscan Speed Six",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/TVR_Tuscan_Speed_Six_%282000%29_Classic-Gala_2021_1X7A0106.jpg/1280px-TVR_Tuscan_Speed_Six_%282000%29_Classic-Gala_2021_1X7A0106.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4235 x 1810 x 1200",
+   "poids_kg": 1100,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Tuscan_Speed_Six_(2000)_Classic-Gala_2021_1X7A0106.jpg"
+  },
+  {
+   "id": "tvr_420se",
+   "name": "420SE",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/TVR_420SE_fl.jpg/1280px-TVR_420SE_fl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "James Rugman, cropped and plates anonymized by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_420SE_fl.jpg"
+  },
+  {
+   "id": "tvr_cerbera",
+   "name": "Cerbera",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/TVRCerbera4.5.jpg/1280px-TVRCerbera4.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4280 x 1865 x 1220",
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVRCerbera4.5.jpg"
+  },
+  {
+   "id": "tvr_grantura",
+   "name": "Grantura",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/TVRGrantura.jpg/1280px-TVRGrantura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVRGrantura.jpg"
+  },
+  {
+   "id": "tvr_350se",
+   "name": "350SE",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Tvr-350-number-1.JPG/1280px-Tvr-350-number-1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Cthomas01 at English Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tvr-350-number-1.JPG"
+  },
+  {
+   "id": "tvr_390se",
+   "name": "390SE",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/1987_TVR_390SE_%28515094120%29.jpg/1280px-1987_TVR_390SE_%28515094120%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4013 x 1728 x 1205",
+   "imageCredit": "dave_7 from Lethbridge, Canada",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_TVR_390SE_(515094120).jpg"
+  },
+  {
+   "id": "tvr_griffith-400",
+   "name": "Griffith 400",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/1966Griffith400.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3600 x 1664 x 1194",
+   "imageCredit": "Profdeuce at English Wikipedia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1966Griffith400.JPG"
+  },
+  {
+   "id": "tvr_450-seac",
+   "name": "450 SEAC",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/TVR_450SEAC_fr.jpg/1280px-TVR_450SEAC_fr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4013 x 1782 x 1205",
+   "poids_kg": 1216,
+   "imageCredit": "Jon RB from UKCropped, plates blurred by uploader Mr.choppers",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_450SEAC_fr.jpg"
+  },
+  {
+   "id": "tvr_typhon",
+   "name": "Typhon",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/The_3_Typhons_Together.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1000,
+   "imageCredit": "Tim Morris",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_3_Typhons_Together.jpg"
+  },
+  {
+   "id": "tvr_350i",
+   "name": "350i",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/TVR_350i_Bahamas_at_speed.jpg/1280px-TVR_350i_Bahamas_at_speed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "jeremyparr,cropped and altered by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_350i_Bahamas_at_speed.jpg"
+  },
+  {
+   "id": "tvr_m-series",
+   "name": "M-Series",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tvr_1600_av.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lebubu93",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tvr_1600_av.jpg"
+  },
+  {
+   "id": "tvr_taimar",
+   "name": "Taimar",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/TVR_Taimar_Front.jpg/1280px-TVR_Taimar_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Robotriot",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Taimar_Front.jpg"
+  },
+  {
+   "id": "tvr_400se",
+   "name": "400SE",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/TVR_400_SE.jpg/1280px-TVR_400_SE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "blackhole522Plates anonymized by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_400_SE.jpg"
+  },
+  {
+   "id": "tvr_tuscan-challenge",
+   "name": "Tuscan Challenge",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Castle_Combe_Circuit_MMB_D5_Castle_Combe_Sports_%26_GT_Championship.jpg/1280px-Castle_Combe_Circuit_MMB_D5_Castle_Combe_Sports_%26_GT_Championship.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "mattbuck (category)",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Castle_Combe_Circuit_MMB_D5_Castle_Combe_Sports_%26_GT_Championship.jpg"
+  },
+  {
+   "id": "tvr_3000s",
+   "name": "3000S",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/1979_tvr_3000s.jpg/1280px-1979_tvr_3000s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3937 x 1626 x 1118",
+   "poids_kg": 1020,
+   "imageCredit": "ColinMB at English Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_tvr_3000s.jpg"
+  }
+ ]
+}

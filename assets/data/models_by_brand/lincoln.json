@@ -1,0 +1,337 @@
+{
+ "models": [
+  {
+   "id": "lincoln_capri",
+   "name": "Capri",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Lincoln_Capri_Sedan_1953.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Capri_Sedan_1953.jpg"
+  },
+  {
+   "id": "lincoln_cosmopolitan",
+   "name": "Cosmopolitan",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/1949_Lincoln_Cosmopolitan_convertible.JPG/1280px-1949_Lincoln_Cosmopolitan_convertible.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1949_Lincoln_Cosmopolitan_convertible.JPG"
+  },
+  {
+   "id": "lincoln_blackwood",
+   "name": "Blackwood",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/2002_Lincoln_Blackwood%2C_front_left%2C_4-05-2021.jpg/1280px-2002_Lincoln_Blackwood%2C_front_left%2C_4-05-2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5593 x 1981 x 1869",
+   "imageCredit": "BlueCrabRedCrab",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Lincoln_Blackwood,_front_left,_4-05-2021.jpg"
+  },
+  {
+   "id": "lincoln_custom",
+   "name": "Custom",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Lincoln_1941_custom_car.jpg/1280px-Lincoln_1941_custom_car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bill McChesney",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_1941_custom_car.jpg"
+  },
+  {
+   "id": "lincoln_mkr",
+   "name": "MKR",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Lincoln-MKR-concept-DC.jpg/1280px-Lincoln-MKR-concept-DC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2005",
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln-MKR-concept-DC.jpg"
+  },
+  {
+   "id": "lincoln_mark-lt",
+   "name": "Mark LT",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2006_Lincoln_Mark_LT_in_White%2C_front_left.jpg/1280px-2006_Lincoln_Mark_LT_in_White%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Lincoln_Mark_LT_in_White,_front_left.jpg"
+  },
+  {
+   "id": "lincoln_town-car",
+   "name": "Town Car",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/1996_Lincoln_Town_Car_Diamond_Anniversary_Edition.jpg/1280px-1996_Lincoln_Town_Car_Diamond_Anniversary_Edition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ruben de Rijcke",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Lincoln_Town_Car_Diamond_Anniversary_Edition.jpg"
+  },
+  {
+   "id": "lincoln_lincoln-zephyr",
+   "name": "Lincoln-Zephyr",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lincoln_Zephyr_1939.jpg/1280px-Lincoln_Zephyr_1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "emperornie",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Zephyr_1939.jpg"
+  },
+  {
+   "id": "lincoln_premiere",
+   "name": "Premiere",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/1957_Lincoln_Premiere_Classic-Gala_2021_1X7A0264.jpg/1280px-1957_Lincoln_Premiere_Classic-Gala_2021_1X7A0264.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1957_Lincoln_Premiere_Classic-Gala_2021_1X7A0264.jpg"
+  },
+  {
+   "id": "lincoln_mkt",
+   "name": "MKT",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/2010_Lincoln_MKT_--_11-25-2009.jpg/1280px-2010_Lincoln_MKT_--_11-25-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5273 x 1930 x 1715",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Lincoln_MKT_--_11-25-2009.jpg"
+  },
+  {
+   "id": "lincoln_mks",
+   "name": "MKS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2013_Lincoln_MKS_--_2012_NYIAS.JPG/1280px-2013_Lincoln_MKS_--_2012_NYIAS.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5184 x 1928 x 1565",
+   "poids_kg": 1883,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Lincoln_MKS_--_2012_NYIAS.JPG"
+  },
+  {
+   "id": "lincoln_mkz",
+   "name": "MKZ",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Lincoln_MKZ_II_facelift_001_China_2017-03-24.jpg/1280px-Lincoln_MKZ_II_facelift_001_China_2017-03-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2005 - 2020",
+   "tags": [],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_MKZ_II_facelift_001_China_2017-03-24.jpg"
+  },
+  {
+   "id": "lincoln_aviator",
+   "name": "Aviator",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Lincoln_Aviator_%28U611%29_IAA_2025_DSC_1441.jpg/1280px-Lincoln_Aviator_%28U611%29_IAA_2025_DSC_1441.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4909 x 1931 x 1814",
+   "poids_kg": 2269,
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Aviator_(U611)_IAA_2025_DSC_1441.jpg"
+  },
+  {
+   "id": "lincoln_versailles",
+   "name": "Versailles",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Lincoln_Versailles.jpg/1280px-Lincoln_Versailles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1977 - 1980",
+   "tags": [],
+   "dimensions_lwh_mm": "5098 x 1892 x 1374",
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Versailles.jpg"
+  },
+  {
+   "id": "lincoln_ls",
+   "name": "LS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/00-02_Lincoln_LS_2.jpg/1280px-00-02_Lincoln_LS_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4910 x 1859 x 1424",
+   "poids_kg": 1675,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:00-02_Lincoln_LS_2.jpg"
+  },
+  {
+   "id": "lincoln_continental",
+   "name": "Continental",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/LINCOLN_CONTINENTAL_TENTH_GENERATION_China_%282%29.jpg/1280px-LINCOLN_CONTINENTAL_TENTH_GENERATION_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LINCOLN_CONTINENTAL_TENTH_GENERATION_China_(2).jpg"
+  },
+  {
+   "id": "lincoln_navigator",
+   "name": "Navigator",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/2025_Lincoln_Navigator_au_SIAM_2025.jpg/1280px-2025_Lincoln_Navigator_au_SIAM_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Lincoln_Navigator_au_SIAM_2025.jpg"
+  },
+  {
+   "id": "lincoln_mark-series",
+   "name": "Mark series",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/1970_Continental_Mark_III.jpg/1280px-1970_Continental_Mark_III.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Continental_Mark_III.jpg"
+  },
+  {
+   "id": "lincoln_zephyr",
+   "name": "Zephyr",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/2022_Chang%27an-Lincoln_Zephyr.jpg/1280px-2022_Chang%27an-Lincoln_Zephyr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4982 x 1865 x 1485",
+   "poids_kg": 2054,
+   "imageCredit": "User3204",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Chang%27an-Lincoln_Zephyr.jpg"
+  },
+  {
+   "id": "lincoln_mkx",
+   "name": "MKX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/LINCOLN_MKX_SECOND_GENERATION_China_%287%29.jpg/1280px-LINCOLN_MKX_SECOND_GENERATION_China_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LINCOLN_MKX_SECOND_GENERATION_China_(7).jpg"
+  },
+  {
+   "id": "lincoln_el-series",
+   "name": "EL-series",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Lincoln_Convertible_Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Convertible_Coupe.jpg"
+  },
+  {
+   "id": "lincoln_mkc",
+   "name": "MKC",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/LINCOLN_MKC_China_%285%29.jpg/1280px-LINCOLN_MKC_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LINCOLN_MKC_China_(5).jpg"
+  },
+  {
+   "id": "lincoln_k-series",
+   "name": "K-series",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/1933_Lincoln_KB_Convertible_Victoria_-_fvl_%283895001221%29.jpg/1280px-1933_Lincoln_KB_Convertible_Victoria_-_fvl_%283895001221%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rex Gray",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1933_Lincoln_KB_Convertible_Victoria_-_fvl_(3895001221).jpg"
+  },
+  {
+   "id": "lincoln_lido",
+   "name": "Lido",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lincoln_Coupe_1946.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Coupe_1946.jpg"
+  },
+  {
+   "id": "lincoln_mark-viii",
+   "name": "Mark VIII",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/93_Lincoln_Mark_VIII_%289674876061%29.jpg/1280px-93_Lincoln_Mark_VIII_%289674876061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:93_Lincoln_Mark_VIII_(9674876061).jpg"
+  },
+  {
+   "id": "lincoln_c",
+   "name": "C",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Lincoln_C--DC.jpg/1280px-Lincoln_C--DC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_C--DC.jpg"
+  },
+  {
+   "id": "lincoln_continental-mark-vii",
+   "name": "Continental Mark VII",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/89mark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Original uploaded by X570 (Transfered by Peter.shaman)",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:89mark.jpg"
+  },
+  {
+   "id": "lincoln_1960-lincoln",
+   "name": "1960 Lincoln",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Lincoln_Capri_Sedan_1953.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Capri_Sedan_1953.jpg"
+  },
+  {
+   "id": "lincoln_mk9",
+   "name": "MK9",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Lincoln_MK9_concept_car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Craig Howell",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_MK9_concept_car.jpg"
+  },
+  {
+   "id": "lincoln_y-block-v8-engine",
+   "name": "Y-block V8 engine",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Lincoln_Premiere%2C_1957_%284%29.jpg/1280px-Lincoln_Premiere%2C_1957_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Cjp24",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Premiere,_1957_(4).jpg"
+  },
+  {
+   "id": "lincoln_corsair",
+   "name": "Corsair",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/2020_Lincoln_Corsair_%27Signature%27_2.0L_Ecoboost%2C_front_2.20.20.jpg/1280px-2020_Lincoln_Corsair_%27Signature%27_2.0L_Ecoboost%2C_front_2.20.20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Kevauto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Lincoln_Corsair_%27Signature%27_2.0L_Ecoboost,_front_2.20.20.jpg"
+  },
+  {
+   "id": "lincoln_nautilus",
+   "name": "Nautilus",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/LINCOLN_NAUTILUS_%28CDX707%29_China_%287%29.jpg/1280px-LINCOLN_NAUTILUS_%28CDX707%29_China_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4826 x 1935 x 1681",
+   "poids_kg": 1879,
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LINCOLN_NAUTILUS_(CDX707)_China_(7).jpg"
+  }
+ ]
+}

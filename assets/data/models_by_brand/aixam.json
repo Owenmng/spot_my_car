@@ -1,0 +1,34 @@
+{
+ "models": [
+  {
+   "id": "aixam_mega-track",
+   "name": "Mega Track",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Mega-track-1993-front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mega-track-1993-front.jpg"
+  },
+  {
+   "id": "aixam_mega-multitruck",
+   "name": "Mega MultiTruck",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Mega_MultiTruck.jpg/1280px-Mega_MultiTruck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2003",
+   "tags": [],
+   "imageCredit": "Reise Reise",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mega_MultiTruck.jpg"
+  },
+  {
+   "id": "aixam_city",
+   "name": "City",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/City_premium_voiture_sans_permis_aixam_pour_Wikipedia.jpg/1280px-City_premium_voiture_sans_permis_aixam_pour_Wikipedia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Aixam Mega France",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:City_premium_voiture_sans_permis_aixam_pour_Wikipedia.jpg"
+  }
+ ]
+}

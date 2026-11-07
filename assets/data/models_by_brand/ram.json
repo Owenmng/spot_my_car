@@ -1,0 +1,34 @@
+{
+ "models": [
+  {
+   "id": "ram_promaster",
+   "name": "ProMaster",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/2014_Ram_1500_ProMaster_Tradesman_SWB_std_roof_front.jpg/1280px-2014_Ram_1500_ProMaster_Tradesman_SWB_std_roof_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_Ram_1500_ProMaster_Tradesman_SWB_std_roof_front.jpg"
+  },
+  {
+   "id": "ram_promaster-city",
+   "name": "ProMaster City",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/2015_Ram_ProMaster_City_Tradesman_Cargo_Van%2C_front_left.jpg/1280px-2015_Ram_ProMaster_City_Tradesman_Cargo_Van%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Ram_ProMaster_City_Tradesman_Cargo_Van,_front_left.jpg"
+  },
+  {
+   "id": "ram_1200",
+   "name": "1200",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Ram_1200_GLS_2019.jpg/1280px-Ram_1200_GLS_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "RL GNZLZ",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ram_1200_GLS_2019.jpg"
+  }
+ ]
+}

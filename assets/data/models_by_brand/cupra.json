@@ -1,0 +1,45 @@
+{
+ "models": [
+  {
+   "id": "cupra_ateca",
+   "name": "Ateca",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/2020_Cupra_Ateca_300_TSi_4Drive.jpg/1280px-2020_Cupra_Ateca_300_TSi_4Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Cupra_Ateca_300_TSi_4Drive.jpg"
+  },
+  {
+   "id": "cupra_tavascan",
+   "name": "Tavascan",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Cupra_Tavascan_DSC_7785.jpg/1280px-Cupra_Tavascan_DSC_7785.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cupra_Tavascan_DSC_7785.jpg"
+  },
+  {
+   "id": "cupra_leon",
+   "name": "León",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Cupra_Leon_Mk4_ST_IMG_3663.jpg/1280px-Cupra_Leon_Mk4_ST_IMG_3663.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cupra_Leon_Mk4_ST_IMG_3663.jpg"
+  },
+  {
+   "id": "cupra_urbanrebel-concept",
+   "name": "UrbanRebel Concept",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Cupra_UrbanRebel_Concept_IAA_2023_1X7A0433.jpg/1280px-Cupra_UrbanRebel_Concept_IAA_2023_1X7A0433.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2021 - Aujourd'hui",
+   "tags": [],
+   "dimensions_lwh_mm": "4080 x 1795 x 1444",
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cupra_UrbanRebel_Concept_IAA_2023_1X7A0433.jpg"
+  }
+ ]
+}

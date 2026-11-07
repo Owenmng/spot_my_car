@@ -1,0 +1,153 @@
+{
+ "models": [
+  {
+   "id": "nio_et5",
+   "name": "ET5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/NIO_ET5_Touring_Motorworld_Munich_1X7A0033.jpg/1280px-NIO_ET5_Touring_Motorworld_Munich_1X7A0033.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4790 x 1960 x 1499",
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NIO_ET5_Touring_Motorworld_Munich_1X7A0033.jpg"
+  },
+  {
+   "id": "nio_onvo-l60",
+   "name": "Onvo L60",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Onvo_L60_001_%28cropped%29.jpg/1280px-Onvo_L60_001_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Onvo_L60_001_(cropped).jpg"
+  },
+  {
+   "id": "nio_ep9",
+   "name": "EP9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Nio_EP9_BS_O24.jpg/1280px-Nio_EP9_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4888 x 2230 x 1150",
+   "poids_kg": 1735,
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nio_EP9_BS_O24.jpg"
+  },
+  {
+   "id": "nio_es6",
+   "name": "ES6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Nio_ES6_II_IMG01.jpg/1280px-Nio_ES6_II_IMG01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Maxhdtenda",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nio_ES6_II_IMG01.jpg"
+  },
+  {
+   "id": "nio_ec6",
+   "name": "EC6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/NIO_EC6_009.jpg/1280px-NIO_EC6_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NIO_EC6_009.jpg"
+  },
+  {
+   "id": "nio_et7",
+   "name": "ET7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/NIO_ET7_1X7A6679.jpg/1280px-NIO_ET7_1X7A6679.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5098 x 1987 x 1505",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NIO_ET7_1X7A6679.jpg"
+  },
+  {
+   "id": "nio_es8",
+   "name": "ES8",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/NIO_ES8_2020_facelift.jpg/1280px-NIO_ES8_2020_facelift.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4978 x 1962 x 1756",
+   "poids_kg": 2460,
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NIO_ES8_2020_facelift.jpg"
+  },
+  {
+   "id": "nio_es7",
+   "name": "ES7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/NIO_EL7_Motorworld_Munich_1X7A0037.jpg/1280px-NIO_EL7_Motorworld_Munich_1X7A0037.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4912 x 1987 x 1720",
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NIO_EL7_Motorworld_Munich_1X7A0037.jpg"
+  },
+  {
+   "id": "nio_ec7",
+   "name": "EC7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Nio_EC7_IMG003.jpg/1280px-Nio_EC7_IMG003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4968 x 1974 x 1714",
+   "imageCredit": "Zotyefan",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nio_EC7_IMG003.jpg"
+  },
+  {
+   "id": "nio_et9",
+   "name": "ET9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Nio_ET9_MY2025_IMG01.jpg/1280px-Nio_ET9_MY2025_IMG01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Poprace",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nio_ET9_MY2025_IMG01.jpg"
+  },
+  {
+   "id": "nio_firefly",
+   "name": "Firefly",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Firefly_EV_01_China_2025-04-19.jpg/1280px-Firefly_EV_01_China_2025-04-19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Firefly_EV_01_China_2025-04-19.jpg"
+  },
+  {
+   "id": "nio_onvo-l90",
+   "name": "Onvo L90",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Onvo_L90_001.jpg/1280px-Onvo_L90_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5145 x 1998 x 1676",
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Onvo_L90_001.jpg"
+  },
+  {
+   "id": "nio_es9",
+   "name": "ES9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Nio_ES9_001.jpg/1280px-Nio_ES9_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nio_ES9_001.jpg"
+  },
+  {
+   "id": "nio_onvo-l80",
+   "name": "Onvo L80",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Onvo_L90_001.jpg/1280px-Onvo_L90_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Onvo_L90_001.jpg"
+  }
+ ]
+}

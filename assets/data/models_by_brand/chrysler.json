@@ -1,0 +1,530 @@
+{
+ "models": [
+  {
+   "id": "chrysler_cordoba",
+   "name": "Cordoba",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/1978_Chrysler_Cordoba.jpg/1280px-1978_Chrysler_Cordoba.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5469 x 1358 x 1336",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1978_Chrysler_Cordoba.jpg"
+  },
+  {
+   "id": "chrysler_300",
+   "name": "300",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Chrysler_300_SRT8_%28LX%29_Washington_DC_Metro_Area%2C_USA.jpg/1280px-Chrysler_300_SRT8_%28LX%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2004",
+   "tags": [],
+   "dimensions_lwh_mm": "5001 x 1880 x 1483",
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_300_SRT8_(LX)_Washington_DC_Metro_Area,_USA.jpg"
+  },
+  {
+   "id": "chrysler_e-class",
+   "name": "E-Class",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/1984_Chrysler_E-Class_-_Flickr_-_dave_7_%281%29_%28cropped%29.jpg/1280px-1984_Chrysler_E-Class_-_Flickr_-_dave_7_%281%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4717 x 1727 x 1369",
+   "poids_kg": 1144,
+   "imageCredit": "dave_7 from Canada",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1984_Chrysler_E-Class_-_Flickr_-_dave_7_(1)_(cropped).jpg"
+  },
+  {
+   "id": "chrysler_airflow",
+   "name": "Airflow",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Chrysler_CU_Airflow_Eight_Sedan_1934.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5280 x 1790 x 1780",
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_CU_Airflow_Eight_Sedan_1934.jpg"
+  },
+  {
+   "id": "chrysler_centura",
+   "name": "Centura",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1975-1977_Chrysler_Centura_%28KB%29_GL_sedan_%282015-11-11%29_01.jpg/1280px-1975-1977_Chrysler_Centura_%28KB%29_GL_sedan_%282015-11-11%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4580 x 1730 x 1430",
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1975-1977_Chrysler_Centura_(KB)_GL_sedan_(2015-11-11)_01.jpg"
+  },
+  {
+   "id": "chrysler_windsor",
+   "name": "Windsor",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/1951_Chrysler_Windsor_De_luxe_photo-2.JPG/1280px-1951_Chrysler_Windsor_De_luxe_photo-2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "AlfvanBeem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1951_Chrysler_Windsor_De_luxe_photo-2.JPG"
+  },
+  {
+   "id": "chrysler_airstream",
+   "name": "Airstream",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/1936_Chrysler_Airstream.jpg/1280px-1936_Chrysler_Airstream.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bidgee",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1936_Chrysler_Airstream.jpg"
+  },
+  {
+   "id": "chrysler_royal",
+   "name": "Royal",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/1933_Chrysler_Royal_Eight_coupe_%285987431032%29.jpg/1280px-1933_Chrysler_Royal_Eight_coupe_%285987431032%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "sv1ambo",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1933_Chrysler_Royal_Eight_coupe_(5987431032).jpg"
+  },
+  {
+   "id": "chrysler_neon",
+   "name": "Neon",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/1st-Dodge-Neon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1993 - 2021",
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1st-Dodge-Neon.jpg"
+  },
+  {
+   "id": "chrysler_300-letter-series",
+   "name": "300 letter series",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Chrysler-300C.jpg/1280px-Chrysler-300C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1955 - 1970",
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler-300C.jpg"
+  },
+  {
+   "id": "chrysler_300m",
+   "name": "300M",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Chrysler_300M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1999 - 2004",
+   "tags": [],
+   "dimensions_lwh_mm": "5025 x 1890 x 1420",
+   "poids_kg": 1660,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_300M.jpg"
+  },
+  {
+   "id": "chrysler_executive",
+   "name": "Executive",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/1984_Chrysler_Executive_Limousine_%2834737251540%29.jpg/1280px-1984_Chrysler_Executive_Limousine_%2834737251540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1984_Chrysler_Executive_Limousine_(34737251540).jpg"
+  },
+  {
+   "id": "chrysler_300-non-letter-series",
+   "name": "300 non-letter series",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/%2771_Chrysler_300_%28Orange_Julep_%2710%29.jpg/1280px-%2771_Chrysler_300_%28Orange_Julep_%2710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "1962 - 1971",
+   "tags": [],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2771_Chrysler_300_(Orange_Julep_%2710).jpg"
+  },
+  {
+   "id": "chrysler_newport",
+   "name": "Newport",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/1962_Chrysler_-_Flickr_-_dave_7_%281%29.jpg/1280px-1962_Chrysler_-_Flickr_-_dave_7_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "dave_7 from Canada",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1962_Chrysler_-_Flickr_-_dave_7_(1).jpg"
+  },
+  {
+   "id": "chrysler_200",
+   "name": "200",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/2015_Chrysler_200_Limited_2.4L_front_1.27.18.jpg/1280px-2015_Chrysler_200_Limited_2.4L_front_1.27.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Kevauto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Chrysler_200_Limited_2.4L_front_1.27.18.jpg"
+  },
+  {
+   "id": "chrysler_pt-cruiser",
+   "name": "PT Cruiser",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Chrysler-PT-Cruiser.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1417,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler-PT-Cruiser.jpg"
+  },
+  {
+   "id": "chrysler_lebaron",
+   "name": "LeBaron",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/1989_chrysler_lebaron_premium_25.jpg/1280px-1989_chrysler_lebaron_premium_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Ruben de Rijcke",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_chrysler_lebaron_premium_25.jpg"
+  },
+  {
+   "id": "chrysler_new-yorker",
+   "name": "New Yorker",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Chrysler_New_Yorker_5.jpg/1280px-Chrysler_New_Yorker_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_New_Yorker_5.jpg"
+  },
+  {
+   "id": "chrysler_saratoga",
+   "name": "Saratoga",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/1957_Chrysler_Saratoga_%285111369539%29.jpg/1280px-1957_Chrysler_Saratoga_%285111369539%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "sv1ambo",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1957_Chrysler_Saratoga_(5111369539).jpg"
+  },
+  {
+   "id": "chrysler_pacifica",
+   "name": "Pacifica",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Chrysler_Pacifica_red.jpg/1280px-Chrysler_Pacifica_red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2003",
+   "tags": [],
+   "imageCredit": "Łukasz Golowanow",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Pacifica_red.jpg"
+  },
+  {
+   "id": "chrysler_aspen",
+   "name": "Aspen",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Chrysler_012.jpg/1280px-Chrysler_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5101 x 1930 x 1887",
+   "imageCredit": "Karrmann",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_012.jpg"
+  },
+  {
+   "id": "chrysler_ca",
+   "name": "CA",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Chrysler_Series_CA_4-Door_Sedan_1934.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Series_CA_4-Door_Sedan_1934.jpg"
+  },
+  {
+   "id": "chrysler_cirrus",
+   "name": "Cirrus",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chrysler_Cirrus_--_01-27-2012.jpg/1280px-Chrysler_Cirrus_--_01-27-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4732 x 1821 x 1318",
+   "poids_kg": 1327,
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Cirrus_--_01-27-2012.jpg"
+  },
+  {
+   "id": "chrysler_concorde",
+   "name": "Concorde",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/2002-04_Chrysler-Concorde.jpg/1280px-2002-04_Chrysler-Concorde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2002-04_Chrysler-Concorde.jpg"
+  },
+  {
+   "id": "chrysler_g-70",
+   "name": "G-70",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/1926_Chrysler_G-70_Roadster_%2821644684033%29.jpg/1280px-1926_Chrysler_G-70_Roadster_%2821644684033%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1926_Chrysler_G-70_Roadster_(21644684033).jpg"
+  },
+  {
+   "id": "chrysler_crossfire",
+   "name": "Crossfire",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Chrysler_Crossfire_Roadster_IMG_7328.jpg/1280px-Chrysler_Crossfire_Roadster_IMG_7328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Crossfire_Roadster_IMG_7328.jpg"
+  },
+  {
+   "id": "chrysler_imperial-parade-phaeton",
+   "name": "Imperial Parade Phaeton",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/1956_Imperial_Parade_Phaeton_-_Dwight_Eisenhower_car_-_fvl.jpg/1280px-1956_Imperial_Parade_Phaeton_-_Dwight_Eisenhower_car_-_fvl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rex Gray",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Imperial_Parade_Phaeton_-_Dwight_Eisenhower_car_-_fvl.jpg"
+  },
+  {
+   "id": "chrysler_imperial",
+   "name": "Imperial",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Chrysler_Imperial_E80_Touring_1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": "1993",
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Imperial_E80_Touring_1926.jpg"
+  },
+  {
+   "id": "chrysler_lhs",
+   "name": "LHS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/LHS_1995-97.JPG/1280px-LHS_1995-97.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LHS_1995-97.JPG"
+  },
+  {
+   "id": "chrysler_sigma",
+   "name": "Sigma",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/1977-1980_Chrysler_Sigma_%28GE%29_SE_sedan_%282012-02-26%29.jpg/1280px-1977-1980_Chrysler_Sigma_%28GE%29_SE_sedan_%282012-02-26%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "GTHO",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1977-1980_Chrysler_Sigma_(GE)_SE_sedan_(2012-02-26).jpg"
+  },
+  {
+   "id": "chrysler_sebring",
+   "name": "Sebring",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chrysler_Sebring_front_20090302.jpg/1280px-Chrysler_Sebring_front_20090302.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Sebring_front_20090302.jpg"
+  },
+  {
+   "id": "chrysler_sunbeam",
+   "name": "Sunbeam",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Talbot_sunbeam_lotus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "3829 x 1603 x 1395",
+   "imageCredit": "User Kierant on en.wikipedia",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_sunbeam_lotus.jpg"
+  },
+  {
+   "id": "chrysler_tc-by-maserati",
+   "name": "TC by Maserati",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/1990_Chrysler_TC_By_Maserati.jpg/1280px-1990_Chrysler_TC_By_Maserati.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4465 x 1740 x 1318",
+   "poids_kg": 1374,
+   "imageCredit": "Mesatrooper",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1990_Chrysler_TC_By_Maserati.jpg"
+  },
+  {
+   "id": "chrysler_vip",
+   "name": "VIP",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Chrysler_VIP_VG_Series_%2816416690164%29.jpg/1280px-Chrysler_VIP_VG_Series_%2816416690164%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4986 x 1448 x 1448",
+   "poids_kg": 1474,
+   "imageCredit": "TuRbO_J from Adelaide, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_VIP_VG_Series_(16416690164).jpg"
+  },
+  {
+   "id": "chrysler_valiant-charger",
+   "name": "Valiant Charger",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Chrysler_VH_Valiant_Charger_R-T_HEMI_Six-Pack.jpg/1280px-Chrysler_VH_Valiant_Charger_R-T_HEMI_Six-Pack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Chris Keating from Mel-bourrrrrrrrrrrrrrrrrrrrrrrrrrrne, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_VH_Valiant_Charger_R-T_HEMI_Six-Pack.jpg"
+  },
+  {
+   "id": "chrysler_valiant",
+   "name": "Valiant",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Chrysler_VF_Valiant_Regal_Sedan.JPG/1280px-Chrysler_VF_Valiant_Regal_Sedan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4666 x 1788 x 1399",
+   "poids_kg": 1194,
+   "imageCredit": "GTHO",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_VF_Valiant_Regal_Sedan.JPG"
+  },
+  {
+   "id": "chrysler_town-and-country",
+   "name": "Town & Country",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2011_Chrysler_Town_%26_Country_Touring_-_L_--_04-22-2011.jpg/1280px-2011_Chrysler_Town_%26_Country_Touring_-_L_--_04-22-2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Chrysler_Town_%26_Country_Touring_-_L_--_04-22-2011.jpg"
+  },
+  {
+   "id": "chrysler_touring",
+   "name": "Touring",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Chrysler_70_Touring_1924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_70_Touring_1924.jpg"
+  },
+  {
+   "id": "chrysler_70",
+   "name": "70",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Walter_P._Chrysler_Museum_DSC00981_%2830965629333%29.jpg/1280px-Walter_P._Chrysler_Museum_DSC00981_%2830965629333%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Walter_P._Chrysler_Museum_DSC00981_(30965629333).jpg"
+  },
+  {
+   "id": "chrysler_cj",
+   "name": "CJ",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Chrysler_CJ_Coupe_1930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_CJ_Coupe_1930.jpg"
+  },
+  {
+   "id": "chrysler_lebaron-gts",
+   "name": "LeBaron GTS",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Chrysler_LeBaron_Hatchback.JPG/1280px-Chrysler_LeBaron_Hatchback.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4582 x 1735 x 1346",
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_LeBaron_Hatchback.JPG"
+  },
+  {
+   "id": "chrysler_laser",
+   "name": "Laser",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Chrysler-Laser.jpg/1280px-Chrysler-Laser.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4445 x 1760 x 1278",
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler-Laser.jpg"
+  },
+  {
+   "id": "chrysler_valiant-rv1",
+   "name": "Valiant RV1",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/1962_R_Series%3D%3D.JPG/1280px-1962_R_Series%3D%3D.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4666 x 1788 x 1397",
+   "poids_kg": 1181,
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1962_R_Series%3D%3D.JPG"
+  },
+  {
+   "id": "chrysler_six",
+   "name": "Six",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/1926_Chrysler_G-70_Roadster_%2826782001792%29.jpg/1280px-1926_Chrysler_G-70_Roadster_%2826782001792%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1926_Chrysler_G-70_Roadster_(26782001792).jpg"
+  },
+  {
+   "id": "chrysler_new-yorker-fifth-avenue",
+   "name": "New Yorker Fifth Avenue",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/1993_Chrysler_New_Yorker_Fifth_Avenue_%2826568820676%29.jpg/1280px-1993_Chrysler_New_Yorker_Fifth_Avenue_%2826568820676%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1993_Chrysler_New_Yorker_Fifth_Avenue_(26568820676).jpg"
+  },
+  {
+   "id": "chrysler_by-chrysler",
+   "name": "by Chrysler",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Chrysler_CH_Sedan_%28white%29.JPG/1280px-Chrysler_CH_Sedan_%28white%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "poids_kg": 1620,
+   "imageCredit": "GTHO",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_CH_Sedan_(white).JPG"
+  },
+  {
+   "id": "chrysler_voyager",
+   "name": "Voyager",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/2020_Chrysler_Voyager_LXI_in_Velvet_Red_Pearlcoat%2C_front_right%2C_12-31-2021.jpg/1280px-2020_Chrysler_Voyager_LXI_in_Velvet_Red_Pearlcoat%2C_front_right%2C_12-31-2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Cutlass",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Chrysler_Voyager_LXI_in_Velvet_Red_Pearlcoat,_front_right,_12-31-2021.jpg"
+  },
+  {
+   "id": "chrysler_chronos",
+   "name": "Chronos",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Chrysler_021.jpg/1280px-Chrysler_021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Karrmann",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_021.jpg"
+  },
+  {
+   "id": "chrysler_falcon",
+   "name": "Falcon",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/ChryslerFalconConceptfront.jpg/1280px-ChryslerFalconConceptfront.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4623 x 1734 x 1299",
+   "poids_kg": 1497,
+   "imageCredit": "Alden Jewell",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:ChryslerFalconConceptfront.jpg"
+  },
+  {
+   "id": "chrysler_s-platform",
+   "name": "S platform",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/87-90_Dodge_Grand_Caravan.jpg/1280px-87-90_Dodge_Grand_Caravan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:87-90_Dodge_Grand_Caravan.jpg"
+  }
+ ]
+}

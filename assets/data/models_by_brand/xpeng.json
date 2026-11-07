@@ -1,0 +1,137 @@
+{
+ "models": [
+  {
+   "id": "xpeng_p7",
+   "name": "P7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/XPeng_P7i_DSC_1243.jpg/1280px-XPeng_P7i_DSC_1243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_P7i_DSC_1243.jpg"
+  },
+  {
+   "id": "xpeng_p5",
+   "name": "P5",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/XPeng_P5_IMG012.jpg/1280px-XPeng_P5_IMG012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4808 x 1840 x 1530",
+   "imageCredit": "Anonymousfox36",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_P5_IMG012.jpg"
+  },
+  {
+   "id": "xpeng_g9",
+   "name": "G9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/XPeng_G9_IAA_2023_1X7A0606.jpg/1280px-XPeng_G9_IAA_2023_1X7A0606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_G9_IAA_2023_1X7A0606.jpg"
+  },
+  {
+   "id": "xpeng_g6",
+   "name": "G6",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/XPeng_G6_%282025%29_IAA_2025_DSC_1710.jpg/1280px-XPeng_G6_%282025%29_IAA_2025_DSC_1710.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_G6_(2025)_IAA_2025_DSC_1710.jpg"
+  },
+  {
+   "id": "xpeng_mona-m03",
+   "name": "Mona M03",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%28CHN-Hubei%29_Showcar_XPeng_Mona_M03_No-plate_rear_2024-12-03.jpg/1280px-%28CHN-Hubei%29_Showcar_XPeng_Mona_M03_No-plate_rear_2024-12-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "4780 x 1896 x 1445",
+   "imageCredit": "S5A-0043",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:(CHN-Hubei)_Showcar_XPeng_Mona_M03_No-plate_rear_2024-12-03.jpg"
+  },
+  {
+   "id": "xpeng_g3",
+   "name": "G3",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/XPeng_G3_01_China_2019-04-01.jpg/1280px-XPeng_G3_01_China_2019-04-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2018",
+   "tags": [],
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_G3_01_China_2019-04-01.jpg"
+  },
+  {
+   "id": "xpeng_identy-x",
+   "name": "IDENTY X",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Xpeng_Identity_X_in_Yangpu_Shanghai_2021020702.jpg/1280px-Xpeng_Identity_X_in_Yangpu_Shanghai_2021020702.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": "2017",
+   "tags": [],
+   "imageCredit": "Evnerd",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Xpeng_Identity_X_in_Yangpu_Shanghai_2021020702.jpg"
+  },
+  {
+   "id": "xpeng_x9",
+   "name": "X9",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/XPeng_X9_IAA_2025_DSC_2063.jpg/1280px-XPeng_X9_IAA_2025_DSC_2063.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "dimensions_lwh_mm": "5293 x 1988 x 1785",
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_X9_IAA_2025_DSC_2063.jpg"
+  },
+  {
+   "id": "xpeng_g7",
+   "name": "G7",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/XPeng_G7_001.jpg/1280px-XPeng_G7_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "KitsuneDP",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_G7_001.jpg"
+  },
+  {
+   "id": "xpeng_gx",
+   "name": "GX",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/XPeng_GX_001.jpg/1280px-XPeng_GX_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_GX_001.jpg"
+  },
+  {
+   "id": "xpeng_mona-l03",
+   "name": "Mona L03",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/XPeng_Mona_L03_007.jpg/1280px-XPeng_Mona_L03_007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_Mona_L03_007.jpg"
+  },
+  {
+   "id": "xpeng_mona-l05",
+   "name": "Mona L05",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/XPeng_Mona_L05_MY2027_IMG01.jpg/1280px-XPeng_Mona_L05_MY2027_IMG01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "Poprace",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_Mona_L05_MY2027_IMG01.jpg"
+  },
+  {
+   "id": "xpeng_g9l",
+   "name": "G9L",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/XPeng_G9L_001.jpg/1280px-XPeng_G9L_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "production_years": null,
+   "tags": [],
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:XPeng_G9L_001.jpg"
+  }
+ ]
+}
