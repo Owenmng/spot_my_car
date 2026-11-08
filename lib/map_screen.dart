@@ -353,7 +353,7 @@ class _SpotSheet extends StatelessWidget {
               ),
             ).animate().fadeIn(duration: 200.ms),
             const SizedBox(height: 14),
-            Text('${car['brandName'] ?? ''}'.toUpperCase(), style: AppText.label(11.5, color: AppColors.inkMuted)),
+            Text(brandHeader(car['brandName'] as String?, car['modelName'] as String?).toUpperCase(), style: AppText.label(11.5, color: AppColors.inkMuted)),
             Text(model.isEmpty ? '—' : model, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.display(26)),
             const SizedBox(height: 10),
             Row(

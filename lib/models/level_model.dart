@@ -6,17 +6,25 @@ class Level {
   const Level(this.level, this.title, this.xpRequired);
 }
 
+/// Courbe progressive : les premiers niveaux arrivent vite pour accrocher,
+/// puis chaque palier demande nettement plus que le précédent (≈ ×1,45).
 const List<Level> kLevels = [
   Level(1, 'Rookie', 0),
-  Level(2, 'Spotter', 100),
-  Level(3, 'Amateur éclairé', 250),
-  Level(4, 'Passionné', 500),
-  Level(5, 'Connaisseur', 1000),
-  Level(6, 'Expert', 2000),
-  Level(7, 'Chasseur', 4000),
-  Level(8, 'Pro du trottoir', 7500),
-  Level(9, 'Légende', 12000),
-  Level(10, 'Icône', 20000),
+  Level(2, 'Spotter', 120),
+  Level(3, 'Curieux', 300),
+  Level(4, 'Amateur éclairé', 600),
+  Level(5, 'Passionné', 1000),
+  Level(6, 'Connaisseur', 1600),
+  Level(7, 'Œil affûté', 2400),
+  Level(8, 'Expert', 3500),
+  Level(9, 'Chasseur', 5000),
+  Level(10, 'Pro du trottoir', 7000),
+  Level(11, 'Traqueur', 9700),
+  Level(12, 'Collectionneur', 13300),
+  Level(13, 'Maître spotteur', 18000),
+  Level(14, 'Légende', 24500),
+  Level(15, 'Icône', 33000),
+  Level(16, 'Mythe vivant', 45000),
 ];
 
 Level levelForXp(int xp) {

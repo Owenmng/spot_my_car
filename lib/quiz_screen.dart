@@ -27,7 +27,9 @@ class _Question {
 /// « Blind test » : 10 photos du catalogue, 10 secondes chacune.
 /// D'abord la marque, puis le modèle exact. XP gagnés une fois par jour.
 class QuizScreen extends StatefulWidget {
-  const QuizScreen({super.key});
+  /// En duel : les deux amis reçoivent exactement les mêmes questions.
+  final Duel? duel;
+  const QuizScreen({super.key, this.duel});
 
   static const rounds = 10;
   static const secondsPerQuestion = 10;
@@ -38,7 +40,7 @@ class QuizScreen extends StatefulWidget {
 }
 
 class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateMixin {
-  final _rng = Random();
+  late Random _rng = widget.duel != null ? Random(widget.duel!.quizSeed) : Random();
   late final AnimationController _timer = AnimationController(vsync: this, duration: const Duration(seconds: QuizScreen.secondsPerQuestion))
     ..addStatusListener((s) {
       if (s == AnimationStatus.completed) _answer(null);
@@ -62,11 +64,16 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
 
   @override
   void dispose() {
+    // Quitter un duel en cours de partie compte comme terminé (pas de seconde chance).
+    if (widget.duel != null && !_finished && _questions.isNotEmpty && (_index > 0 || _picked != null)) {
+      DuelService.instance.submitQuiz(widget.duel!, _score).catchError((_) {});
+    }
     _timer.dispose();
     super.dispose();
   }
 
   Future<void> _start() async {
+    if (widget.duel != null) _rng = Random(widget.duel!.quizSeed);
     await DataManager.instance.loadAllData();
     final prefs = await SharedPreferences.getInstance();
     _best = prefs.getInt('quiz_best') ?? 0;
@@ -150,6 +157,11 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
     AudioService.instance.playSfx(_score >= 7 ? SoundEffect.achievement : SoundEffect.notification);
     final prefs = await SharedPreferences.getInstance();
     if (_score > _best) await prefs.setInt('quiz_best', _score);
+    if (widget.duel != null) {
+      await DuelService.instance.submitQuiz(widget.duel!, _score).catchError((_) {});
+      if (mounted) setState(() => _xpEarned = 0);
+      return;
+    }
     final xp = await _claim(_score * QuizScreen.xpPerAnswer);
     if (mounted) setState(() => _xpEarned = xp);
   }
@@ -178,7 +190,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Blind test')),
+      appBar: AppBar(title: Text(widget.duel == null ? 'Blind test' : 'Blind test · duel')),
       body: _questions.isEmpty ? const Center(child: CircularProgressIndicator()) : _finished ? _results() : _question(),
     );
   }
@@ -306,14 +318,19 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
                 Expanded(child: StatPill(value: _xpEarned == null ? '…' : '+$_xpEarned', label: 'XP')),
               ],
             ),
-            if (_xpEarned == 0) ...[
+            if (widget.duel != null) ...[
+              const SizedBox(height: 14),
+              Text('Score envoyé à ton adversaire. Le vainqueur remporte +${widget.duel!.stake} XP dans l’onglet Duels.', textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkSoft)),
+            ] else if (_xpEarned == 0) ...[
               const SizedBox(height: 14),
               Text('Les XP du blind test se gagnent sur la première partie du jour.', textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkMuted)),
             ],
             const SizedBox(height: 28),
-            SizedBox(width: double.infinity, child: ElevatedButton.icon(onPressed: _start, icon: const Icon(Icons.replay_rounded), label: const Text('Rejouer'))),
-            const SizedBox(height: 8),
-            TextButton(onPressed: () => Navigator.pop(context), child: const Text('Retour au garage')),
+            if (widget.duel == null) ...[
+              SizedBox(width: double.infinity, child: ElevatedButton.icon(onPressed: _start, icon: const Icon(Icons.replay_rounded), label: const Text('Rejouer'))),
+              const SizedBox(height: 8),
+            ],
+            TextButton(onPressed: () => Navigator.pop(context), child: Text(widget.duel == null ? 'Retour au garage' : 'Voir le duel')),
           ],
         ).animate().fadeIn(duration: 300.ms).slideY(begin: 0.05, end: 0),
       ),

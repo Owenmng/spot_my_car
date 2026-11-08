@@ -85,7 +85,7 @@ class ShareService {
     final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
     if (bytes == null) return;
 
-    final name = '${car['brandName'] ?? ''} ${cleanModelName(car['modelName'] as String?)}'.trim();
+    final name = fullCarName(car['brandName'] as String?, car['modelName'] as String?);
     await SharePlus.instance.share(ShareParams(
       files: [XFile.fromData(bytes.buffer.asUint8List(), mimeType: 'image/png', name: 'spotmycar.png')],
       text: 'Regarde ce que je viens de spotter : $name 👀',

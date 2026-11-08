@@ -140,7 +140,11 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text((brand['name'] as String).toUpperCase(), style: AppText.label(10.5, color: AppColors.inkMuted)),
-                                      Text(model['name'] as String, style: AppText.body(16, weight: FontWeight.w800)),
+                                      FittedBox(
+                                        fit: BoxFit.scaleDown,
+                                        alignment: Alignment.centerLeft,
+                                        child: Text(model['name'] as String, maxLines: 1, style: AppText.body(16, weight: FontWeight.w800)),
+                                      ),
                                       const SizedBox(height: 4),
                                       Row(
                                         children: [

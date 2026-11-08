@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:spot_my_car/quiz_screen.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/daily_challenge.dart';
 import 'package:spot_my_car/services/duel_service.dart';
@@ -16,17 +17,58 @@ import 'package:spot_my_car/widgets/user_avatar.dart';
 const _gold = Color(0xFFFFD447);
 
 /// Feuille « nouveau duel » : mode, thème éventuel, durée.
-Future<bool?> showNewDuelSheet(BuildContext context, {Player? opponent}) {
+Future<bool?> showNewDuelSheet(BuildContext context, {Player? opponent, DuelMode initialMode = DuelMode.xp}) {
   return showModalBottomSheet<bool>(
     context: context,
     isScrollControlled: true,
-    builder: (_) => _NewDuelSheet(opponent: opponent),
+    builder: (_) => _NewDuelSheet(opponent: opponent, initialMode: initialMode),
   );
+}
+
+class _GameTile extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
+  const _GameTile({required this.icon, required this.title, required this.subtitle, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    return Pressable(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.lg), border: Border.all(color: AppColors.line)),
+        child: Row(
+          children: [
+            Container(
+              width: 36,
+              height: 36,
+              decoration: BoxDecoration(color: accent.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(10)),
+              child: Icon(icon, color: accent, size: 20),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(14, weight: FontWeight.w800)),
+                  Text(subtitle, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(11.5, color: AppColors.inkSoft)),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 class _NewDuelSheet extends StatefulWidget {
   final Player? opponent;
-  const _NewDuelSheet({this.opponent});
+  final DuelMode initialMode;
+  const _NewDuelSheet({this.opponent, this.initialMode = DuelMode.xp});
 
   @override
   State<_NewDuelSheet> createState() => _NewDuelSheetState();
@@ -43,6 +85,7 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
   void initState() {
     super.initState();
     _opponent = widget.opponent;
+    _mode = widget.initialMode;
   }
 
   Future<void> _send() async {
@@ -66,7 +109,7 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
   @override
   Widget build(BuildContext context) {
     final accent = Theme.of(context).colorScheme.primary;
-    final stake = _hours <= 24 ? 100 : _hours <= 72 ? 150 : 250;
+    final stake = _mode == DuelMode.quiz ? 60 : _hours <= 24 ? 100 : _hours <= 72 ? 150 : 250;
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(20, 4, 20, 16),
@@ -259,6 +302,28 @@ class _DuelsTabState extends State<DuelsTab> with AutomaticKeepAliveClientMixin 
             padding: EdgeInsets.fromLTRB(16, 12, 16, 32 + MediaQuery.paddingOf(context).bottom),
             children: [
               _Record(wins: wins, losses: losses, onNew: () => showNewDuelSheet(context)),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Expanded(
+                    child: _GameTile(
+                      icon: Icons.quiz_rounded,
+                      title: 'Blind test solo',
+                      subtitle: 'Jusqu’à +50 XP / jour',
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const QuizScreen())),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _GameTile(
+                      icon: Icons.groups_rounded,
+                      title: 'Blind test à 2',
+                      subtitle: 'Mêmes photos, +60 XP',
+                      onTap: () => showNewDuelSheet(context, initialMode: DuelMode.quiz),
+                    ),
+                  ),
+                ],
+              ),
               if (snap.connectionState == ConnectionState.waiting && duels.isEmpty)
                 const Padding(padding: EdgeInsets.all(40), child: Center(child: CircularProgressIndicator())),
               if (snap.hasData && duels.isEmpty)
@@ -408,12 +473,20 @@ class _DuelCard extends StatelessWidget {
               const SizedBox(height: 14),
               Row(
                 children: [
-                  _Side(label: 'Toi', score: duel.isPending ? null : duel.scoreLabel(mine), win: winner == me, alignEnd: false),
+                  _Side(label: 'Toi', score: duel.isPending || (duel.mode == DuelMode.quiz && !duel.hasPlayed(me)) ? null : duel.scoreLabel(mine), win: winner == me, alignEnd: false),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Text('VS', style: AppText.display(18, color: AppColors.inkMuted)),
                   ),
-                  _Side(label: name, photoUrl: other?.photoUrl, score: duel.isPending ? null : duel.scoreLabel(theirs), win: winner == otherUid, alignEnd: true),
+                  _Side(
+                    label: name,
+                    photoUrl: other?.photoUrl,
+                    score: duel.isPending || (duel.mode == DuelMode.quiz && (!duel.hasPlayed(otherUid) || (!duel.hasPlayed(me) && !duel.isFinished)))
+                        ? (duel.mode == DuelMode.quiz && duel.hasPlayed(otherUid) && !duel.isPending ? '✓ joué' : null)
+                        : duel.scoreLabel(theirs),
+                    win: winner == otherUid,
+                    alignEnd: true,
+                  ),
                 ],
               ),
               if (!duel.isPending && duel.status != 'declined') ...[
@@ -478,6 +551,19 @@ class _DuelCard extends StatelessWidget {
           TextButton(onPressed: () => svc.remove(duel), child: const Text('Effacer')),
         ],
       );
+    }
+    if (duel.isActive && duel.mode == DuelMode.quiz) {
+      if (!duel.hasPlayed(me)) {
+        return SizedBox(
+          width: double.infinity,
+          child: ElevatedButton.icon(
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => QuizScreen(duel: duel))),
+            icon: const Icon(Icons.play_arrow_rounded),
+            label: const Text('Jouer mon blind test'),
+          ),
+        );
+      }
+      return Text('Ton score est enregistré. En attente de $name…', style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600));
     }
     if (duel.isActive) {
       return Text(

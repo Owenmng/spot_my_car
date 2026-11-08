@@ -124,14 +124,15 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                           right: 16,
                           bottom: 16,
                           child: SegmentedButton<bool>(
-                            showSelectedIcon: false,
+                            showSelectedIcon: true,
                             style: SegmentedButton.styleFrom(
-                              backgroundColor: Colors.black.withValues(alpha: 0.4),
-                              foregroundColor: Colors.white,
-                              selectedBackgroundColor: Colors.white,
-                              selectedForegroundColor: AppColors.ink,
-                              side: BorderSide.none,
+                              backgroundColor: Colors.black.withValues(alpha: 0.55),
+                              foregroundColor: Colors.white70,
+                              selectedBackgroundColor: Theme.of(context).colorScheme.primary,
+                              selectedForegroundColor: Theme.of(context).colorScheme.onPrimary,
+                              side: const BorderSide(color: Colors.white24),
                               visualDensity: VisualDensity.compact,
+                              textStyle: AppText.body(13, weight: FontWeight.w800),
                             ),
                             segments: const [
                               ButtonSegment(value: false, label: Text('Mon spot')),
@@ -153,12 +154,16 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                     children: [
                       Row(
                         children: [
-                          Expanded(child: Text(brand.toUpperCase(), style: AppText.label(12, color: AppColors.inkMuted))),
+                          Expanded(child: Text(brandHeader(brand, car['modelName'] as String?).toUpperCase(), style: AppText.label(12, color: AppColors.inkMuted))),
                           RarityBadge(rarity: rarity, compact: true),
                         ],
                       ),
                       const SizedBox(height: 4),
-                      Text(model, style: AppText.display(32)),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(model, maxLines: 1, style: AppText.display(32)),
+                      ),
                       if (car['production_years'] != null) ...[
                         const SizedBox(height: 4),
                         Text('Produite ${car['production_years']}'.replaceAll("Aujourd'hui", "aujourd'hui"), style: AppText.body(14, color: AppColors.inkSoft, weight: FontWeight.w600)),

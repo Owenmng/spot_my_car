@@ -195,7 +195,11 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(m['name'] as String? ?? '', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(14, weight: FontWeight.w800)),
+                                  FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    alignment: Alignment.centerLeft,
+                                    child: Text(m['name'] as String? ?? '', maxLines: 1, style: AppText.body(14, weight: FontWeight.w800)),
+                                  ),
                                   const SizedBox(height: 2),
                                   Row(
                                     children: [

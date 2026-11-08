@@ -53,6 +53,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
   final _picker = ImagePicker();
   final _formKey = GlobalKey<FormState>();
   final _plateCtrl = TextEditingController();
+  bool _noPlate = false;
   final _brandCtrl = TextEditingController();
   final _modelCtrl = TextEditingController();
   final _noteCtrl = TextEditingController();
@@ -236,7 +237,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
     }
 
     _draft
-      ..plate = _plateCtrl.text
+      ..plate = _noPlate ? '' : _plateCtrl.text
       ..customBrand = _brandCtrl.text
       ..customModel = _modelCtrl.text
       ..note = _noteCtrl.text;
@@ -385,7 +386,42 @@ class _AddCarScreenState extends State<AddCarScreen> {
             if (_showDetails) ...[
               const SizedBox(height: 26),
               _sectionLabel('La plaque'),
-              _plateField(),
+              AnimatedSize(
+                duration: const Duration(milliseconds: 220),
+                curve: Curves.easeOutCubic,
+                child: _noPlate
+                    ? Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(14),
+                        decoration: BoxDecoration(
+                          color: AppColors.card,
+                          borderRadius: BorderRadius.circular(AppRadius.md),
+                          border: Border.all(color: AppColors.line),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.visibility_off_outlined, color: AppColors.inkSoft, size: 20),
+                            const SizedBox(width: 10),
+                            Expanded(child: Text('Spot enregistré sans plaque.', style: AppText.body(14, color: AppColors.inkSoft, weight: FontWeight.w600))),
+                          ],
+                        ),
+                      )
+                    : _plateField(),
+              ),
+              const SizedBox(height: 6),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: FilterChip(
+                  avatar: Icon(_noPlate ? Icons.check_rounded : Icons.do_not_disturb_alt_rounded, size: 16),
+                  showCheckmark: false,
+                  label: const Text("Je n'ai pas la plaque"),
+                  selected: _noPlate,
+                  onSelected: (v) {
+                    HapticFeedback.selectionClick();
+                    setState(() => _noPlate = v);
+                  },
+                ),
+              ),
               const SizedBox(height: 26),
               _sectionLabel('La couleur'),
               _ColorPicker(

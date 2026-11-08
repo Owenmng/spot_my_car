@@ -8,6 +8,7 @@ import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/spot_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/plate_badge.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
 
 /// Moment « ouverture de pochette » après chaque spot : la carte se retourne,
@@ -255,9 +256,9 @@ class _Front extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(draft.brandName.toUpperCase(), style: AppText.label(11.5, color: AppColors.inkMuted)),
+                    Text(brandHeader(draft.brandName, model).toUpperCase(), style: AppText.label(11.5, color: AppColors.inkMuted)),
                     const SizedBox(height: 3),
-                    Text(model, maxLines: 2, overflow: TextOverflow.ellipsis, style: AppText.display(24)),
+                    FittedBox(fit: BoxFit.scaleDown, alignment: Alignment.centerLeft, child: Text(cleanModelName(model), maxLines: 1, style: AppText.display(24))),
                     const SizedBox(height: 12),
                     Row(
                       children: [

@@ -72,7 +72,7 @@ class _GarageScreenState extends State<GarageScreen> {
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Retirer du garage ?'),
-        content: Text('${car['brandName'] ?? ''} ${cleanModelName(car['modelName'] as String?)} sera supprimée, avec sa photo.'),
+        content: Text('${fullCarName(car['brandName'] as String?, car['modelName'] as String?)} sera supprimée, avec sa photo.'),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Garder')),
           TextButton(

@@ -24,6 +24,33 @@ String cleanModelName(String? name) {
   return (i > 0 ? n.substring(0, i) : n).trim();
 }
 
+/// Nom complet sans répétition : « Mustang » + « Mustang » → « Mustang »,
+/// « Ford Mustang » + « Mustang Mach-E » → « Ford Mustang Mach-E ».
+String fullCarName(String? brand, String? model) {
+  final b = (brand ?? '').trim();
+  final m = cleanModelName(model);
+  if (b.isEmpty) return m;
+  if (m.isEmpty) return b;
+  final bl = b.toLowerCase(), ml = m.toLowerCase();
+  if (ml == bl || ml.startsWith('$bl ')) return m;
+  final first = ml.split(' ').first;
+  if (bl.endsWith(first)) return '$b${m.substring(first.length)}';
+  return '$b $m';
+}
+
+/// Libellé « marque » au-dessus du nom : quand la marque est aussi le nom du modèle
+/// (Mustang, Mini…), on affiche plutôt le constructeur parent.
+String brandHeader(String? brand, String? model) {
+  final b = (brand ?? '').trim();
+  final m = cleanModelName(model).toLowerCase();
+  if (b.isNotEmpty && (m == b.toLowerCase() || m.startsWith('${b.toLowerCase()} '))) {
+    final hit = DataManager.instance.brands.whereType<Map>().where((x) => x['name'] == b);
+    final parent = hit.isEmpty ? null : hit.first['societe_mere'] as String?;
+    if (parent != null && parent.isNotEmpty && parent.length < 20 && parent.toLowerCase() != b.toLowerCase()) return parent;
+  }
+  return b;
+}
+
 /// Carte de collection : la voiture, son cadre de rareté, sa plaque.
 class SpotCard extends StatelessWidget {
   final Map<String, dynamic> car;
@@ -103,7 +130,7 @@ class SpotCard extends StatelessWidget {
                       right: 10,
                       bottom: 8,
                       child: Text(
-                        brand.toUpperCase(),
+                        brandHeader(brand, car['modelName'] as String?).toUpperCase(),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: AppText.label(large ? 12 : 10, color: Colors.white.withValues(alpha: 0.85)),

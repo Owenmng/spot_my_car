@@ -9,6 +9,7 @@ import 'package:spot_my_car/services/fact_sheet_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
 import 'package:spot_my_car/services/wishlist_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:spot_my_car/widgets/car_image.dart';
 import 'package:spot_my_car/widgets/plate_badge.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
@@ -169,8 +170,15 @@ class _ModelPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text((brand['name'] as String? ?? '').toUpperCase(), style: AppText.label(12.5, color: AppColors.inkSoft)),
-                      Text(name, style: AppText.display(38)),
+                      Text(brandHeader(brand['name'] as String?, name).toUpperCase(), style: AppText.label(12.5, color: AppColors.inkSoft)),
+                      // Toujours sur une ligne : la police se réduit plutôt que de cacher la photo.
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(cleanModelName(name), maxLines: 1, style: AppText.display(38)),
+                      ),
+                      if (RegExp(r'\((.+)\)').firstMatch(name)?.group(1) case final gen?)
+                        Text(gen, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(13.5, color: AppColors.inkSoft, weight: FontWeight.w700)),
                     ],
                   ),
                 ),

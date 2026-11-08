@@ -18,7 +18,9 @@ String weekKey([DateTime? date]) {
   return '${thursday.year}W${week.toString().padLeft(2, '0')}';
 }
 
-enum DuelMode { xp, rarity, brands, theme }
+/// `quiz` est stocké comme un thème « quiz:<graine> » : les deux joueurs reçoivent
+/// exactement les mêmes 10 questions.
+enum DuelMode { xp, rarity, brands, theme, quiz }
 
 extension DuelModeInfo on DuelMode {
   String get title => switch (this) {
@@ -26,6 +28,7 @@ extension DuelModeInfo on DuelMode {
         DuelMode.rarity => 'Le plus rare',
         DuelMode.brands => 'Tour des marques',
         DuelMode.theme => 'Thème imposé',
+        DuelMode.quiz => 'Blind test',
       };
 
   String get rule => switch (this) {
@@ -33,6 +36,7 @@ extension DuelModeInfo on DuelMode {
         DuelMode.rarity => 'La voiture la plus rare spottée pendant le duel l’emporte.',
         DuelMode.brands => 'Le plus de marques différentes spottées.',
         DuelMode.theme => 'Le plus de voitures correspondant au thème.',
+        DuelMode.quiz => 'Les mêmes 10 photos pour vous deux : le meilleur score gagne.',
       };
 
   IconData get icon => switch (this) {
@@ -40,6 +44,7 @@ extension DuelModeInfo on DuelMode {
         DuelMode.rarity => Icons.diamond_rounded,
         DuelMode.brands => Icons.grid_view_rounded,
         DuelMode.theme => Icons.casino_rounded,
+        DuelMode.quiz => Icons.quiz_rounded,
       };
 }
 
@@ -74,11 +79,12 @@ class Duel {
 
   factory Duel.fromDoc(DocumentSnapshot<Map<String, dynamic>> d) {
     final m = d.data() ?? {};
+    final isQuiz = m['mode'] == 'theme' && (m['themeId'] as String? ?? '').startsWith('quiz:');
     return Duel(
       id: d.id,
       challengerId: m['challengerId'] as String? ?? '',
       opponentId: m['opponentId'] as String? ?? '',
-      mode: DuelMode.values.firstWhere((x) => x.name == m['mode'], orElse: () => DuelMode.xp),
+      mode: isQuiz ? DuelMode.quiz : DuelMode.values.firstWhere((x) => x.name == m['mode'], orElse: () => DuelMode.xp),
       themeId: m['themeId'] as String?,
       hours: (m['hours'] as num?)?.toInt() ?? 24,
       status: m['status'] as String? ?? 'pending',
@@ -90,13 +96,19 @@ class Duel {
     );
   }
 
-  DailyChallenge? get theme => themeId == null ? null : DailyChallenge.byId(themeId!);
+  DailyChallenge? get theme => themeId == null || mode == DuelMode.quiz ? null : DailyChallenge.byId(themeId!);
+
+  /// Graine commune du blind test (mêmes questions pour les deux joueurs).
+  int get quizSeed => int.tryParse((themeId ?? '').replaceFirst('quiz:', '')) ?? id.hashCode;
+  bool hasPlayed(String uid) => scores.containsKey(uid);
+  bool needsMyQuiz(String? uid) => uid != null && mode == DuelMode.quiz && status == 'active' && !hasPlayed(uid) && endAt != null && DateTime.now().isBefore(endAt!);
 
   String get title => mode == DuelMode.theme && theme != null ? theme!.title : mode.title;
   String get rule => mode == DuelMode.theme && theme != null ? theme!.hint : mode.rule;
 
-  bool get isActive => status == 'active' && endAt != null && DateTime.now().isBefore(endAt!);
-  bool get isFinished => status == 'active' && endAt != null && !DateTime.now().isBefore(endAt!);
+  bool get _quizDone => mode == DuelMode.quiz && hasPlayed(challengerId) && hasPlayed(opponentId);
+  bool get isActive => status == 'active' && endAt != null && DateTime.now().isBefore(endAt!) && !_quizDone;
+  bool get isFinished => status == 'active' && ((endAt != null && !DateTime.now().isBefore(endAt!)) || _quizDone);
   bool get isPending => status == 'pending';
 
   String other(String uid) => uid == challengerId ? opponentId : challengerId;
@@ -110,7 +122,7 @@ class Duel {
     return a > b ? challengerId : opponentId;
   }
 
-  int get stake => switch (hours) { <= 24 => 100, <= 72 => 150, _ => 250 };
+  int get stake => mode == DuelMode.quiz ? 60 : switch (hours) { <= 24 => 100, <= 72 => 150, _ => 250 };
 
   String scoreLabel(int score) {
     if (mode == DuelMode.rarity) {
@@ -118,6 +130,7 @@ class Duel {
       return Rarity.values.lastWhere((r) => r.xp <= score, orElse: () => Rarity.commune).label;
     }
     if (mode == DuelMode.xp) return '$score XP';
+    if (mode == DuelMode.quiz) return '$score/10';
     return '$score';
   }
 }
@@ -128,6 +141,7 @@ class DuelService {
 
   final _col = FirebaseFirestore.instance.collection('duels');
   String? get _uid => FirebaseAuth.instance.currentUser?.uid;
+  String? get myUid => _uid;
 
   Stream<List<Duel>> watch() {
     final uid = _uid;
@@ -147,12 +161,13 @@ class DuelService {
   Future<void> challenge({required String opponentUid, required DuelMode mode, String? themeId, required int hours}) async {
     final uid = _uid;
     if (uid == null) return;
+    final isQuiz = mode == DuelMode.quiz;
     await _col.add({
       'challengerId': uid,
       'opponentId': opponentUid,
       'participants': [uid, opponentUid],
-      'mode': mode.name,
-      'themeId': themeId,
+      'mode': isQuiz ? 'theme' : mode.name,
+      'themeId': isQuiz ? 'quiz:${DateTime.now().millisecondsSinceEpoch % 1000000007}' : themeId,
       'hours': hours,
       'status': 'pending',
       'scores': <String, int>{},
@@ -190,6 +205,8 @@ class DuelService {
       case DuelMode.theme:
         final t = d.theme;
         return t == null ? 0 : inWindow.where(t.matches).length;
+      case DuelMode.quiz:
+        return d.scoreOf(FirebaseAuth.instance.currentUser?.uid ?? '');
     }
   }
 
@@ -216,7 +233,7 @@ class DuelService {
       final seen = prefs.getStringList('duels_seen') ?? [];
       for (final doc in snap.docs) {
         final d = Duel.fromDoc(doc);
-        if (d.status == 'active' && d.endAt != null && DateTime.now().isBefore(d.endAt!.add(const Duration(days: 2)))) {
+        if (d.mode != DuelMode.quiz && d.status == 'active' && d.endAt != null && DateTime.now().isBefore(d.endAt!.add(const Duration(days: 2)))) {
           final score = computeScore(d, cars);
           if (score != d.scoreOf(uid)) await doc.reference.update({'scores.$uid': score});
         }
@@ -230,6 +247,13 @@ class DuelService {
     } catch (e) {
       debugPrint('duels sync: $e');
     }
+  }
+
+  /// Score d'un blind test en duel : écrit une seule fois.
+  Future<void> submitQuiz(Duel d, int score) async {
+    final uid = _uid;
+    if (uid == null || d.hasPlayed(uid)) return;
+    await _col.doc(d.id).update({'scores.$uid': score});
   }
 
   /// Le vainqueur encaisse la mise une seule fois.
