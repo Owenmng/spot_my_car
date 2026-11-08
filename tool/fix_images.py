@@ -133,7 +133,7 @@ def vision_ok(thumb_url, label):
             if resp.status_code in (429, 500, 503):
                 time.sleep(10 * (attempt + 1))
                 continue
-            time.sleep(3)  # on laisse de la marge au quota pour les vrais joueurs
+            time.sleep(1.5)  # on laisse de la marge au quota pour les vrais joueurs
             if not resp.ok:
                 log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
                 return None
