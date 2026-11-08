@@ -157,26 +157,19 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
                 action: ElevatedButton.icon(onPressed: _addFriend, icon: const Icon(Icons.person_add_alt_1_rounded), label: const Text('Ajouter un ami')),
               )
             else ...[
-              RankPodium(players: ranked.take(3).toList(), score: score, me: _me, weekly: _weekly),
-              const SizedBox(height: 14),
-              for (var i = 0; i < ranked.length; i++)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: RankRow(
-                    rank: i + 1,
-                    player: ranked[i],
-                    score: score(ranked[i]),
-                    weekly: _weekly,
-                    isMe: ranked[i].uid == _me,
-                    onTap: ranked[i].uid == _me ? null : () => _friendMenu(ranked[i]),
-                    onDuel: ranked[i].uid == _me
-                        ? null
-                        : () async {
-                            final ok = await showNewDuelSheet(context, opponent: ranked[i]);
-                            if (ok == true) widget.onChallenged?.call();
-                          },
-                  ).animate().fadeIn(delay: (40 * i).ms, duration: 250.ms).slideX(begin: 0.04, end: 0),
-                ),
+              RankSummary(ranked: ranked, score: score, me: _me, weekly: _weekly).animate().fadeIn(duration: 250.ms),
+              const SizedBox(height: 12),
+              RankTable(
+                ranked: ranked,
+                score: score,
+                me: _me,
+                weekly: _weekly,
+                onTap: _friendMenu,
+                onDuel: (p) async {
+                  final ok = await showNewDuelSheet(context, opponent: p);
+                  if (ok == true) widget.onChallenged?.call();
+                },
+              ),
             ],
           ],
         );
@@ -310,127 +303,213 @@ class _Requests extends StatelessWidget {
   }
 }
 
-class RankPodium extends StatelessWidget {
-  final List<Player> players;
+/// Carte « ta position » : place, écart avec le pilote devant, avance sur celui derrière.
+class RankSummary extends StatelessWidget {
+  final List<Player> ranked;
   final int Function(Player) score;
   final String me;
   final bool weekly;
-  const RankPodium({required this.players, required this.score, required this.me, required this.weekly});
-
-  @override
-  Widget build(BuildContext context) {
-    if (players.isEmpty) return const SizedBox.shrink();
-    // Ordre visuel : 2e, 1er, 3e
-    final order = [if (players.length > 1) 1, 0, if (players.length > 2) 2];
-    const heights = [96.0, 72.0, 56.0];
-    const colors = [_gold, _silver, _bronze];
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: [
-        for (final i in order)
-          Expanded(
-            child: Column(
-              children: [
-                if (i == 0) const Icon(Icons.emoji_events_rounded, color: _gold, size: 22).animate(onPlay: (c) => c.repeat(reverse: true)).moveY(begin: 0, end: -3, duration: 900.ms),
-                UserAvatar(photoUrl: players[i].photoUrl, name: players[i].name, size: i == 0 ? 64 : 52, ring: colors[i]),
-                const SizedBox(height: 6),
-                Text(
-                  players[i].uid == me ? 'Toi' : players[i].name,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppText.body(13.5, weight: FontWeight.w800),
-                ),
-                Text('${score(players[i])} XP', style: AppText.mono(12, color: colors[i])),
-                const SizedBox(height: 6),
-                Container(
-                  height: heights[i],
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [colors[i].withValues(alpha: 0.35), colors[i].withValues(alpha: 0.05)],
-                    ),
-                    border: Border(top: BorderSide(color: colors[i], width: 2)),
-                  ),
-                  alignment: Alignment.center,
-                  child: Text('${i + 1}', style: AppText.display(30, color: colors[i])),
-                ).animate().scaleY(begin: 0, alignment: Alignment.bottomCenter, duration: 500.ms, delay: (120 * i).ms, curve: Curves.easeOutBack),
-              ],
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-class RankRow extends StatelessWidget {
-  final int rank;
-  final Player player;
-  final int score;
-  final bool weekly;
-  final bool isMe;
-  final VoidCallback? onTap;
-  final VoidCallback? onDuel;
-
-  const RankRow({required this.rank, required this.player, required this.score, required this.weekly, required this.isMe, this.onTap, this.onDuel});
-
-  String _lastSeen() {
-    final t = player.lastSpotAt;
-    if (t == null) return 'Pas encore de spot';
-    final d = DateTime.now().difference(t);
-    if (d.inMinutes < 60) return 'A spotté il y a ${d.inMinutes} min';
-    if (d.inHours < 24) return 'A spotté il y a ${d.inHours} h';
-    if (d.inDays < 7) return 'A spotté il y a ${d.inDays} j';
-    return 'Au garage depuis un moment';
-  }
+  const RankSummary({super.key, required this.ranked, required this.score, required this.me, required this.weekly});
 
   @override
   Widget build(BuildContext context) {
     final accent = Theme.of(context).colorScheme.primary;
-    final level = levelForXp(player.xp);
-    return Pressable(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.fromLTRB(12, 10, 10, 10),
-        decoration: BoxDecoration(
-          color: isMe ? Color.lerp(AppColors.card, accent, 0.12) : AppColors.card,
-          borderRadius: BorderRadius.circular(AppRadius.md),
-          border: Border.all(color: isMe ? accent.withValues(alpha: 0.6) : AppColors.line),
-        ),
-        child: Row(
-          children: [
-            SizedBox(width: 26, child: Text('$rank', style: AppText.mono(15, color: rank <= 3 ? [_gold, _silver, _bronze][rank - 1] : AppColors.inkMuted))),
-            UserAvatar(photoUrl: player.photoUrl, name: player.name, size: 42),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    final i = ranked.indexWhere((p) => p.uid == me);
+    if (i < 0 || ranked.isEmpty) return const SizedBox.shrink();
+    final mine = score(ranked[i]);
+    final ahead = i > 0 ? ranked[i - 1] : null;
+    final behind = i < ranked.length - 1 ? ranked[i + 1] : null;
+    final gapAhead = ahead == null ? 0 : score(ahead) - mine;
+    final lead = behind == null ? 0 : mine - score(behind);
+    final progress = ahead == null ? 1.0 : (mine / (score(ahead) == 0 ? 1 : score(ahead))).clamp(0.0, 1.0);
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: AppColors.line),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Text('P${i + 1}', style: AppText.mono(44, color: i == 0 ? _gold : AppColors.ink)),
+              const SizedBox(width: 8),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Text('/ ${ranked.length}', style: AppText.mono(15, color: AppColors.inkMuted)),
+              ),
+              const Spacer(),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(isMe ? '${player.name} (toi)' : player.name, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(15, weight: FontWeight.w800)),
-                  Text('Niv. ${level.level} ${level.title} · ${_lastSeen()}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(12, color: AppColors.inkSoft)),
+                  Text(weekly ? 'XP CETTE SEMAINE' : 'XP TOTAL', style: AppText.label(10, color: AppColors.inkMuted)),
+                  Text('$mine', style: AppText.mono(24)),
                 ],
               ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(3),
+            child: TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0, end: progress),
+              duration: const Duration(milliseconds: 900),
+              curve: Curves.easeOutCubic,
+              builder: (_, v, _) => LinearProgressIndicator(value: v, minHeight: 5, color: i == 0 ? _gold : accent, backgroundColor: AppColors.paperDeep),
             ),
-            const SizedBox(width: 8),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text('$score', style: AppText.mono(16)),
-                Text(weekly ? 'XP sem.' : 'XP', style: AppText.label(9, color: AppColors.inkMuted)),
-              ],
-            ),
-            if (onDuel != null) ...[
+          ),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Icon(ahead == null ? Icons.flag_rounded : Icons.keyboard_double_arrow_up_rounded, size: 16, color: ahead == null ? _gold : accent),
               const SizedBox(width: 6),
-              IconButton(
-                tooltip: 'Défier',
-                visualDensity: VisualDensity.compact,
-                onPressed: onDuel,
-                icon: Icon(Icons.sports_mma_rounded, color: accent),
+              Expanded(
+                child: Text(
+                  ahead == null
+                      ? (behind == null ? 'Seul en piste pour l’instant' : 'En tête · $lead XP d’avance sur ${behind.name}')
+                      : gapAhead == 0
+                          ? 'À égalité avec ${ahead.name}'
+                          : '$gapAhead XP pour dépasser ${ahead.name}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppText.body(13, weight: FontWeight.w700, color: AppColors.inkSoft),
+                ),
               ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Tableau de classement façon « timing » : position, pilote, XP, écart au leader.
+class RankTable extends StatelessWidget {
+  final List<Player> ranked;
+  final int Function(Player) score;
+  final String me;
+  final bool weekly;
+  final int startRank;
+  final void Function(Player)? onTap;
+  final void Function(Player)? onDuel;
+
+  const RankTable({
+    super.key,
+    required this.ranked,
+    required this.score,
+    required this.me,
+    required this.weekly,
+    this.startRank = 1,
+    this.onTap,
+    this.onDuel,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final accent = Theme.of(context).colorScheme.primary;
+    final leaderScore = ranked.isEmpty ? 0 : score(ranked.first);
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: AppColors.line),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(14, 10, 14, 8),
+            child: Row(
+              children: [
+                SizedBox(width: 34, child: Text('POS', style: AppText.label(9.5, color: AppColors.inkMuted))),
+                Expanded(child: Text('SPOTTER', style: AppText.label(9.5, color: AppColors.inkMuted))),
+                SizedBox(width: 64, child: Text(weekly ? 'XP SEM.' : 'XP', textAlign: TextAlign.right, style: AppText.label(9.5, color: AppColors.inkMuted))),
+                SizedBox(width: 58, child: Text('ÉCART', textAlign: TextAlign.right, style: AppText.label(9.5, color: AppColors.inkMuted))),
+                if (onDuel != null) const SizedBox(width: 36),
+              ],
+            ),
+          ),
+          for (var i = 0; i < ranked.length; i++) ...[
+            Divider(height: 1, color: AppColors.line),
+            _row(context, i, ranked[i], accent, leaderScore).animate().fadeIn(delay: (25 * (i % 20)).ms, duration: 220.ms),
           ],
+        ],
+      ),
+    );
+  }
+
+  Widget _row(BuildContext context, int i, Player p, Color accent, int leaderScore) {
+    final rank = startRank + i;
+    final isMe = p.uid == me;
+    final level = levelForXp(p.xp);
+    final stripe = rank == 1 ? _gold : rank == 2 ? _silver : rank == 3 ? _bronze : (isMe ? accent : Colors.transparent);
+    final gap = leaderScore - score(p);
+    return InkWell(
+      onTap: onTap == null || isMe ? null : () => onTap!(p),
+      child: Container(
+        color: isMe ? accent.withValues(alpha: 0.10) : null,
+        child: IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(width: 3, color: stripe),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(11, 10, 14, 10),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 31,
+                        child: Text('$rank', style: AppText.mono(15, color: rank <= 3 ? stripe : AppColors.inkSoft)),
+                      ),
+                      UserAvatar(photoUrl: p.photoUrl, name: p.name, size: 32),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              isMe ? '${p.name} · toi' : p.name,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppText.body(14, weight: FontWeight.w800),
+                            ),
+                            Text('Niv. ${level.level} · ${level.title}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(11.5, color: AppColors.inkMuted)),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 64, child: Text('${score(p)}', textAlign: TextAlign.right, style: AppText.mono(14))),
+                      SizedBox(
+                        width: 58,
+                        child: Text(
+                          rank == 1 && startRank == 1 ? 'LEADER' : '−$gap',
+                          textAlign: TextAlign.right,
+                          style: rank == 1 && startRank == 1 ? AppText.label(9.5, color: _gold) : AppText.mono(12, color: AppColors.inkMuted),
+                        ),
+                      ),
+                      if (onDuel != null)
+                        SizedBox(
+                          width: 36,
+                          child: isMe
+                              ? null
+                              : IconButton(
+                                  tooltip: 'Défier',
+                                  visualDensity: VisualDensity.compact,
+                                  padding: EdgeInsets.zero,
+                                  onPressed: () => onDuel!(p),
+                                  icon: Icon(Icons.sports_mma_rounded, size: 19, color: accent),
+                                ),
+                        ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

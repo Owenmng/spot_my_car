@@ -12,7 +12,6 @@ import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/shared/app_constants.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 /// Contact support : le message part directement par e-mail, mis en forme,
 /// avec le contexte utile (version, compte) pour répondre vite.
@@ -76,7 +75,12 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
       final res = await http
           .post(
             Uri.parse(AppConstants.supportRelay),
-            headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+              'Origin': 'https://formsubmit.co',
+              'Referer': 'https://formsubmit.co/',
+            },
             body: jsonEncode({
               '_subject': subject,
               '_template': 'table',
@@ -102,17 +106,10 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
       return;
     }
 
-    // Plan B : on ouvre l'appli mail du téléphone avec le message pré-rempli.
+    // Pas d'appli mail externe : on reste dans Spot My Car et on propose de réessayer.
     setState(() => _sending = false);
-    final body = '${_message.text.trim()}\n\n---\n${ctx.entries.map((e) => '${e.key} : ${e.value}').join('\n')}';
-    final uri = Uri(scheme: 'mailto', path: AppConstants.supportEmail, query: _encode({'subject': subject, 'body': body}));
-    final opened = await launchUrl(uri).catchError((_) => false);
-    if (!opened && mounted) {
-      showAppSnack(context, "Envoi impossible pour l'instant. Réessaie plus tard.", icon: Icons.error_outline);
-    }
+    showAppSnack(context, "Le message n'est pas parti (connexion ?). Réessaie dans un instant.", icon: Icons.wifi_off_rounded);
   }
-
-  String _encode(Map<String, String> p) => p.entries.map((e) => '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}').join('&');
 
   @override
   Widget build(BuildContext context) {
@@ -149,7 +146,7 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                 children: [
                   Text('Une question, un bug, une idée ?', style: AppText.display(26)),
                   const SizedBox(height: 6),
-                  Text('Le message arrive directement dans la boîte du créateur de l’appli.', style: AppText.body(14, color: AppColors.inkSoft)),
+                  Text('Écris ton message ici, l’équipe Spot My Car te répond par e-mail.', style: AppText.body(14, color: AppColors.inkSoft)),
                   const SizedBox(height: 20),
                   Text('SUJET', style: AppText.label(11, color: AppColors.inkMuted)),
                   const SizedBox(height: 8),

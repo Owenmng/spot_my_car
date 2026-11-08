@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/community/friends_tab.dart';
 import 'package:spot_my_car/services/social_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
@@ -52,22 +51,17 @@ class _LeaderboardTabState extends State<LeaderboardTab> with AutomaticKeepAlive
               if (players.isEmpty)
                 const EmptyState(icon: Icons.leaderboard_outlined, title: 'Personne au classement', message: 'Spotte une voiture pour ouvrir le bal.')
               else ...[
-                RankPodium(players: players.take(3).toList(), score: (p) => p.xp, me: me, weekly: false),
-                const SizedBox(height: 14),
-                if (myIndex < 0)
+                if (myIndex >= 0) ...[
+                  RankSummary(ranked: players, score: (p) => p.xp, me: me, weekly: false),
+                  const SizedBox(height: 12),
+                ] else
                   Container(
                     margin: const EdgeInsets.only(bottom: 12),
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
-                    child: Text('Tu n’es pas encore dans le top 100. Chaque spot rare te rapproche du podium.', style: AppText.body(13.5, color: AppColors.inkSoft)),
+                    child: Text('Tu n’es pas encore dans le top 100. Chaque spot rare te rapproche du classement.', style: AppText.body(13.5, color: AppColors.inkSoft)),
                   ),
-                for (var i = 3; i < players.length; i++)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: RankRow(rank: i + 1, player: players[i], score: players[i].xp, weekly: false, isMe: players[i].uid == me)
-                        .animate()
-                        .fadeIn(delay: (20 * (i % 15)).ms, duration: 250.ms),
-                  ),
+                RankTable(ranked: players, score: (p) => p.xp, me: me, weekly: false),
               ],
             ],
           ),
