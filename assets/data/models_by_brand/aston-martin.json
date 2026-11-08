@@ -388,7 +388,7 @@
   {
    "id": "aston-martin_db6-volante",
    "name": "DB6 Volante",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/1967_Aston_Martin_DB6_HCC22.jpg/1280px-1967_Aston_Martin_DB6_HCC22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1970_Aston_Martin_DB6_Volante.jpg/1280px-1970_Aston_Martin_DB6_Volante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965 - 1970",
    "puissance_ch": 286,
    "vitesse_max_kmh": 241,
@@ -413,9 +413,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "MrWalkr",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1967_Aston_Martin_DB6_HCC22.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Aston_Martin_DB6_Volante.jpg"
   },
   {
    "id": "aston-martin_db7",
@@ -869,7 +869,7 @@
   {
    "id": "aston-martin_v8-vantage-zagato",
    "name": "V8 Vantage Zagato",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1974_Aston_Martin_V8_Vantage.jpg/1280px-1974_Aston_Martin_V8_Vantage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/1987_and_1991_Aston_Martin_V8_Vantage_Zagato_20043%2C_front_left_%28Greenwich_2019%29.jpg/1280px-1987_and_1991_Aston_Martin_V8_Vantage_Zagato_20043%2C_front_left_%28Greenwich_2019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1986 - 1990",
    "puissance_ch": 432,
    "vitesse_max_kmh": 290,
@@ -895,9 +895,9 @@
     "handcrafted",
     "bespoke"
    ],
-   "imageCredit": "MrWalkr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1974_Aston_Martin_V8_Vantage.jpg"
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_and_1991_Aston_Martin_V8_Vantage_Zagato_20043,_front_left_(Greenwich_2019).jpg"
   },
   {
    "id": "aston-martin_valhalla",

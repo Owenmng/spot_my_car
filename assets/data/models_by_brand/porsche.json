@@ -131,7 +131,7 @@
   {
    "id": "porsche_901",
    "name": "901/911",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Porsche_911E_ca_1969.jpg/1280px-Porsche_911E_ca_1969.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Porsche_911T_%28type_901%29_front.jpg/1280px-Porsche_911T_%28type_901%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1963 - 1964",
    "puissance_ch": 130,
    "vitesse_max_kmh": 210,
@@ -157,14 +157,14 @@
     "iconic car",
     "luxury sports car"
    ],
-   "imageCredit": "Charles01",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_911E_ca_1969.jpg"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_911T_(type_901)_front.jpg"
   },
   {
    "id": "porsche_911",
    "name": "911 Carrera (992)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Porsche_911_No_1000000%2C_70_Years_Porsche_Sports_Car%2C_Berlin_%281X7A3888%29.jpg/1280px-Porsche_911_No_1000000%2C_70_Years_Porsche_Sports_Car%2C_Berlin_%281X7A3888%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2025_Porsche_911_Carrera_S_rear.jpg/1280px-2025_Porsche_911_Carrera_S_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1964 - Aujourd'hui",
    "puissance_ch": 385,
    "vitesse_max_kmh": 293,
@@ -189,9 +189,9 @@
     "all-wheel drive",
     "sports coupe"
    ],
-   "imageCredit": "Matti Blume",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_911_No_1000000,_70_Years_Porsche_Sports_Car,_Berlin_(1X7A3888).jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Porsche_911_Carrera_S_rear.jpg"
   },
   {
    "id": "porsche_911_gt1",
@@ -524,7 +524,7 @@
   {
    "id": "porsche_924",
    "name": "924",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Porsche_924_Le_Mans_1980_%2801%29.jpg/1280px-Porsche_924_Le_Mans_1980_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Porsche_924_in_the_Porsche-Museum_%282009%29_1X7A0347.jpg/1280px-Porsche_924_in_the_Porsche-Museum_%282009%29_1X7A0347.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1988",
    "puissance_ch": 125,
    "vitesse_max_kmh": 204,
@@ -550,9 +550,9 @@
     "1970s car",
     "1980s car"
    ],
-   "imageCredit": "Zoltán Krepsz",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_924_Le_Mans_1980_(01).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_924_in_the_Porsche-Museum_(2009)_1X7A0347.jpg"
   },
   {
    "id": "porsche_928",
@@ -1016,7 +1016,7 @@
   {
    "id": "porsche_cayenne_hybrid",
    "name": "Cayenne Hybrid",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Porsche_Cayenne_%28III%2C_Facelift%29_%E2%80%93_f_01012025.jpg/1280px-Porsche_Cayenne_%28III%2C_Facelift%29_%E2%80%93_f_01012025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Porsche_Cayenne_S_Hybrid_Concept_IMG_0840.jpg/1280px-Porsche_Cayenne_S_Hybrid_Concept_IMG_0840.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2010 - Aujourd'hui",
    "puissance_ch": 462,
    "vitesse_max_kmh": 253,
@@ -1043,9 +1043,9 @@
     "hybrid suv",
     "performance suv"
    ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Cayenne_(III,_Facelift)_%E2%80%93_f_01012025.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Cayenne_S_Hybrid_Concept_IMG_0840.jpg"
   },
   {
    "id": "porsche_cayman",
@@ -1083,7 +1083,7 @@
   {
    "id": "porsche_cayman_gt4",
    "name": "Cayman GT4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Porsche_718_Boxster_Spyder_IMG_2961.jpg/1280px-Porsche_718_Boxster_Spyder_IMG_2961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Porsche_718_Cayman_GT4_Solitude_Revival_2022_1X7A0107.jpg/1280px-Porsche_718_Cayman_GT4_Solitude_Revival_2022_1X7A0107.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 420,
    "vitesse_max_kmh": 304,
@@ -1110,7 +1110,7 @@
    ],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_718_Boxster_Spyder_IMG_2961.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_718_Cayman_GT4_Solitude_Revival_2022_1X7A0107.jpg"
   },
   {
    "id": "porsche_macan",
@@ -1212,7 +1212,7 @@
   {
    "id": "porsche_mission-x",
    "name": "Mission X (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Porsche_Mission_S.jpg/1280px-Porsche_Mission_S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Porsche_Mission_X_IAA_2023_1X7A0014.jpg/1280px-Porsche_Mission_X_IAA_2023_1X7A0014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023",
    "puissance_ch": 1700,
    "vitesse_max_kmh": "non renseigné",
@@ -1237,9 +1237,9 @@
     "land vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Sqqieerqw",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Mission_S.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Mission_X_IAA_2023_1X7A0014.jpg"
   },
   {
    "id": "porsche_panamera",
@@ -1277,7 +1277,7 @@
   {
    "id": "porsche_panamera_gts",
    "name": "Panamera GTS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Porsche_972_Turbo_E-Hybrid_IMG_0445.jpg/1280px-Porsche_972_Turbo_E-Hybrid_IMG_0445.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Porsche_971_Panamera_GTS_Black_%2817%29.jpg/1280px-Porsche_971_Panamera_GTS_Black_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 480,
    "vitesse_max_kmh": 300,
@@ -1304,9 +1304,9 @@
     "high-performance",
     "german car"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Damian B Oh",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_972_Turbo_E-Hybrid_IMG_0445.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_971_Panamera_GTS_Black_(17).jpg"
   },
   {
    "id": "porsche_panamera_turbo_s",
@@ -1465,12 +1465,12 @@
   {
    "id": "porsche_911-gt3",
    "name": "911 GT3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Porsche_992_GT3_1X7A0323.jpg/1280px-Porsche_992_GT3_1X7A0323.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Porsche_911_GT3_Touring%2C_IAA_2017%2C_Frankfurt_%281Y7A2766%29.jpg/1280px-Porsche_911_GT3_Touring%2C_IAA_2017%2C_Frankfurt_%281Y7A2766%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_992_GT3_1X7A0323.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3_Touring,_IAA_2017,_Frankfurt_(1Y7A2766).jpg"
   },
   {
    "id": "porsche_962",
@@ -1615,12 +1615,12 @@
   {
    "id": "porsche_boxster-2",
    "name": "Boxster",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Porsche_718_Boxster_T_Genf_2019_1Y7A5424.jpg/1280px-Porsche_718_Boxster_T_Genf_2019_1Y7A5424.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Porsche_Boxster_Concept%2C_70_Years_Porsche_Sports_Car%2C_Berlin_%281X7A3896%29.jpg/1280px-Porsche_Boxster_Concept%2C_70_Years_Porsche_Sports_Car%2C_Berlin_%281X7A3896%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_718_Boxster_T_Genf_2019_1Y7A5424.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Boxster_Concept,_70_Years_Porsche_Sports_Car,_Berlin_(1X7A3896).jpg"
   },
   {
    "id": "porsche_804",
@@ -1637,12 +1637,12 @@
   {
    "id": "porsche_cayman-2",
    "name": "Cayman",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Porsche_718_Cayman_GT4_Motorworld_Munich_1X7A0061.jpg/1280px-Porsche_718_Cayman_GT4_Motorworld_Munich_1X7A0061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2018_Porsche_718_Cayman.jpg/1280px-2018_Porsche_718_Cayman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_718_Cayman_GT4_Motorworld_Munich_1X7A0061.jpg"
+   "imageCredit": "多多123",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Porsche_718_Cayman.jpg"
   },
   {
    "id": "porsche_961",
@@ -1867,12 +1867,8 @@
   {
    "id": "porsche_boxster-and-cayman",
    "name": "Boxster and Cayman",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Porsche_718_Boxster_T_Genf_2019_1Y7A5424.jpg/1280px-Porsche_718_Boxster_T_Genf_2019_1Y7A5424.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_718_Boxster_T_Genf_2019_1Y7A5424.jpg"
+   "tags": []
   },
   {
    "id": "porsche_718-2",

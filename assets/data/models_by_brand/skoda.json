@@ -35,7 +35,7 @@
   {
    "id": "skoda_1000_mb",
    "name": "1000 MB",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Skoda_1000_MB_%281965%29_%28cropped%29.jpg/1280px-Skoda_1000_MB_%281965%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Skoda1000MBdeLuxe_%287%29.JPG/1280px-Skoda1000MBdeLuxe_%287%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1964 - 1969",
    "puissance_ch": 42,
    "vitesse_max_kmh": 120,
@@ -58,9 +58,9 @@
     "economy car",
     "budget car"
    ],
-   "imageCredit": "Ardy van Driel",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda_1000_MB_(1965)_(cropped).jpg"
+   "imageCredit": "Alofok",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda1000MBdeLuxe_(7).JPG"
   },
   {
    "id": "skoda_105_120",
@@ -717,7 +717,7 @@
   {
    "id": "skoda_octavia",
    "name": "Octavia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Skoda_Octavia_IV_Combi_IMG_2617.jpg/1280px-Skoda_Octavia_IV_Combi_IMG_2617.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/%C5%A0koda_Octavia_IV_Scout_IMG_7906.jpg/1280px-%C5%A0koda_Octavia_IV_Scout_IMG_7906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - Aujourd'hui",
    "puissance_ch": 150,
    "vitesse_max_kmh": 230,
@@ -743,9 +743,9 @@
     "hybrid car",
     "plug-in hybrid"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda_Octavia_IV_Combi_IMG_2617.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_Octavia_IV_Scout_IMG_7906.jpg"
   },
   {
    "id": "skoda_octavia_tour",
@@ -876,7 +876,7 @@
   {
    "id": "skoda_rapid_old",
    "name": "Rapid (Ancien)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/2014_Skoda_Rapid_SE_Connect_TSi_1.2_Front.jpg/1280px-2014_Skoda_Rapid_SE_Connect_TSi_1.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Skoda_Rapid_at_Pfingsttreffen_Puetnitz_2018%2C_Ribnitz-Damgarten_%281X7A2428%29.jpg/1280px-Skoda_Rapid_at_Pfingsttreffen_Puetnitz_2018%2C_Ribnitz-Damgarten_%281X7A2428%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1935 - 1947",
    "puissance_ch": 30,
    "vitesse_max_kmh": 100,
@@ -901,9 +901,9 @@
     "older skoda",
     "small car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_Skoda_Rapid_SE_Connect_TSi_1.2_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda_Rapid_at_Pfingsttreffen_Puetnitz_2018,_Ribnitz-Damgarten_(1X7A2428).jpg"
   },
   {
    "id": "skoda_roomster",
@@ -1147,13 +1147,13 @@
   {
    "id": "skoda_440-2",
    "name": "440",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Skoda_440_red_vr_TCE.jpg/1280px-Skoda_440_red_vr_TCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/%C5%A0koda_440_%C4%8Derveno-b%C3%ADl%C3%A1.jpg/1280px-%C5%A0koda_440_%C4%8Derveno-b%C3%ADl%C3%A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4065 x 1600 x 1430",
-   "imageCredit": "Stahlkocher",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda_440_red_vr_TCE.jpg"
+   "imageCredit": "Addvisor",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_440_%C4%8Derveno-b%C3%ADl%C3%A1.jpg"
   },
   {
    "id": "skoda_1101-1102",
@@ -1211,13 +1211,13 @@
   {
    "id": "skoda_enyaq-iv",
    "name": "Enyaq iV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/%C5%A0koda_Enyaq_IMG_1190.jpg/1280px-%C5%A0koda_Enyaq_IMG_1190.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Skoda_Enyaq_iV_80_%E2%80%93_f1_03052021.jpg/1280px-Skoda_Enyaq_iV_80_%E2%80%93_f1_03052021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017",
    "tags": [],
    "dimensions_lwh_mm": "4655 x 2148 x 1616",
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_Enyaq_IMG_1190.jpg"
+   "imageCredit": "© M 93",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda_Enyaq_iV_80_%E2%80%93_f1_03052021.jpg"
   },
   {
    "id": "skoda_octavia-iv",
@@ -1503,12 +1503,12 @@
   {
    "id": "skoda_fabia-r5",
    "name": "Fabia R5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Rally_de_Portugal_2019_-_%C5%A0KODA_FABIA_Rally2_evo.jpg/1280px-Rally_de_Portugal_2019_-_%C5%A0KODA_FABIA_Rally2_evo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Paulo_Meireles_Skoda_Fabia_R5_%282%29.jpg/1280px-Paulo_Meireles_Skoda_Fabia_R5_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "ŠMotorsport",
+   "imageCredit": "Harpagornis",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Rally_de_Portugal_2019_-_%C5%A0KODA_FABIA_Rally2_evo.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Paulo_Meireles_Skoda_Fabia_R5_(2).jpg"
   },
   {
    "id": "skoda_rapid-spaceback",

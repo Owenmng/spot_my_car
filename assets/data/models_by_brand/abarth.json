@@ -254,7 +254,7 @@
   {
    "id": "abarth_595_esseesse",
    "name": "595 esseesse",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Fiat_Abarth_595_esseesse_IMG_3014.jpg/1280px-Fiat_Abarth_595_esseesse_IMG_3014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/2019_Abarth_595_Esseesse_1.jpg/1280px-2019_Abarth_595_Esseesse_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2015",
    "puissance_ch": 160,
    "vitesse_max_kmh": 215,
@@ -279,14 +279,14 @@
     "small car",
     "hot hatch"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Abarth_595_esseesse_IMG_3014.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Abarth_595_Esseesse_1.jpg"
   },
   {
    "id": "abarth_600e",
    "name": "600e",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Fiat_600_Hybrid_1.2_T3_Pop_%28III%29_%E2%80%93_f_24032026.jpg/1280px-Fiat_600_Hybrid_1.2_T3_Pop_%28III%29_%E2%80%93_f_24032026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Abarth_600e_Scorpionissima_Auto_Zuerich_2024_DSC_6151.jpg/1280px-Abarth_600e_Scorpionissima_Auto_Zuerich_2024_DSC_6151.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "puissance_ch": 240,
    "vitesse_max_kmh": 200,
@@ -311,9 +311,9 @@
     "compact car",
     "fiat"
    ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_600_Hybrid_1.2_T3_Pop_(III)_%E2%80%93_f_24032026.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_600e_Scorpionissima_Auto_Zuerich_2024_DSC_6151.jpg"
   },
   {
    "id": "abarth_695",
@@ -645,12 +645,12 @@
   {
    "id": "abarth_1500-biposto",
    "name": "1500 Biposto",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/1952_Abarth_1500_Biposto_BAT_1_-_Flickr_-_edvvc.jpg/1280px-1952_Abarth_1500_Biposto_BAT_1_-_Flickr_-_edvvc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/1952_Abarth_1500_Biposto_Bertone_Carlo_Abarth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1950",
    "tags": [],
-   "imageCredit": "edvvc from London, UK",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1952_Abarth_1500_Biposto_BAT_1_-_Flickr_-_edvvc.jpg"
+   "imageCredit": "Unknown photographer",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1952_Abarth_1500_Biposto_Bertone_Carlo_Abarth.jpg"
   },
   {
    "id": "abarth_205",

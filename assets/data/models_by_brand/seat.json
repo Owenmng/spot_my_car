@@ -461,7 +461,7 @@
   {
    "id": "seat_mii",
    "name": "Mii",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2013_Volkswagen_Take_UP%21_1.0.jpg/1280px-2013_Volkswagen_Take_UP%21_1.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/SEAT_Mii_Electric_1X7A6117.jpg/1280px-SEAT_Mii_Electric_1X7A6117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2021",
    "puissance_ch": 75,
    "vitesse_max_kmh": 171,
@@ -485,9 +485,9 @@
     "compact car",
     "economical car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Volkswagen_Take_UP!_1.0.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SEAT_Mii_Electric_1X7A6117.jpg"
   },
   {
    "id": "seat_malaga",
@@ -671,12 +671,12 @@
   {
    "id": "seat_ateca-fr",
    "name": "Ateca FR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Paris_Motor_Show_2018%2C_Paris_%281Y7A2062%29.jpg/1280px-Paris_Motor_Show_2018%2C_Paris_%281Y7A2062%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/SEAT_Ateca_FR_2017.jpg/1280px-SEAT_Ateca_FR_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Matti Blume",
+   "imageCredit": "Carlosseat",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_Motor_Show_2018,_Paris_(1Y7A2062).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SEAT_Ateca_FR_2017.jpg"
   },
   {
    "id": "seat_altea-xl-freetrack",

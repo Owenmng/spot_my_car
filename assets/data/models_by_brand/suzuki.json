@@ -125,7 +125,7 @@
   {
    "id": "suzuki_baleno",
    "name": "Baleno",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/2017_Suzuki_Baleno_SZ3_Dualjet_1.2_Front.jpg/1280px-2017_Suzuki_Baleno_SZ3_Dualjet_1.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Suzuki_Baleno%2C_Satoru_Gojo_Jujutsu_Kaisen.jpg/1280px-Suzuki_Baleno%2C_Satoru_Gojo_Jujutsu_Kaisen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1995 - Aujourd'hui",
    "puissance_ch": 111,
    "vitesse_max_kmh": 200,
@@ -151,9 +151,9 @@
     "automatic car",
     "manual car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Rjcastillo",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Suzuki_Baleno_SZ3_Dualjet_1.2_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_Baleno,_Satoru_Gojo_Jujutsu_Kaisen.jpg"
   },
   {
    "id": "suzuki_cappuccino",
@@ -1480,7 +1480,7 @@
   {
    "id": "suzuki_wagon-r+",
    "name": "Wagon R+",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Suzuki_Wagon_R_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Suzuki_Wagon_R_Plus_%28first_generation%29_IMG_6009.jpg/1280px-Suzuki_Wagon_R_Plus_%28first_generation%29_IMG_6009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - 2008",
    "puissance_ch": 76,
    "vitesse_max_kmh": 155,
@@ -1504,9 +1504,9 @@
     "economical car",
     "fuel-efficient car"
    ],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_Wagon_R_001.JPG"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_Wagon_R_Plus_(first_generation)_IMG_6009.jpg"
   },
   {
    "id": "suzuki_x-90",
@@ -1640,13 +1640,13 @@
   {
    "id": "suzuki_escudo-2",
    "name": "Escudo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Suzuki_ESCUDO_%284BA-YEA1S-MBTL-2%29_front.jpg/1280px-Suzuki_ESCUDO_%284BA-YEA1S-MBTL-2%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/2005-2008_Suzuki_Escudo_5dr_2.png/1280px-2005-2008_Suzuki_Escudo_5dr_2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 1219,
-   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageCredit": "Kalmarle",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_ESCUDO_(4BA-YEA1S-MBTL-2)_front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005-2008_Suzuki_Escudo_5dr_2.png"
   },
   {
    "id": "suzuki_e-vitara",
@@ -1672,12 +1672,12 @@
   {
    "id": "suzuki_aerio-2",
    "name": "Aerio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/%2702-%2704_Suzuki_Aerio_Sedan.JPG/1280px-%2702-%2704_Suzuki_Aerio_Sedan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/02-04_Suzuki_Aerio_sedan.jpg/1280px-02-04_Suzuki_Aerio_sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Bull-Doser",
+   "imageCredit": "IFCAR",
    "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%2702-%2704_Suzuki_Aerio_Sedan.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:02-04_Suzuki_Aerio_sedan.jpg"
   },
   {
    "id": "suzuki_apv",
@@ -1743,12 +1743,12 @@
   {
    "id": "suzuki_cultus-2",
    "name": "Cultus",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/1989_Suzuki_Cultus_Eleny_5-door_in_Superior_White%2C_front_left.jpg/1280px-1989_Suzuki_Cultus_Eleny_5-door_in_Superior_White%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Suzuki_Cultus_rear.jpg/1280px-Suzuki_Cultus_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 2003",
    "tags": [],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_Suzuki_Cultus_Eleny_5-door_in_Superior_White,_front_left.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_Cultus_rear.jpg"
   },
   {
    "id": "suzuki_palette",
@@ -1878,14 +1878,14 @@
   {
    "id": "suzuki_cultus-crescent",
    "name": "Cultus Crescent",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/99-00_Suzuki_Esteem_sedan.jpg/1280px-99-00_Suzuki_Esteem_sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/1997_Suzuki_Cultus_Crescent_silver_rear.jpg/1280px-1997_Suzuki_Cultus_Crescent_silver_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4225 x 1695 x 1395",
    "poids_kg": 1405,
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:99-00_Suzuki_Esteem_sedan.jpg"
+   "imageCredit": "Throwawayacc222",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Suzuki_Cultus_Crescent_silver_rear.jpg"
   },
   {
    "id": "suzuki_maruti-suzuki-alto",

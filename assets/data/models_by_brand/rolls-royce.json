@@ -382,7 +382,6 @@
   {
    "id": "rolls-royce_park-ward",
    "name": "Silver Seraph Park Ward",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Rolls-Royce_Silver_Seraph_1999.jpg/1280px-Rolls-Royce_Silver_Seraph_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2002",
    "puissance_ch": 326,
    "vitesse_max_kmh": 225,
@@ -408,10 +407,7 @@
     "car",
     "vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "Jagvar",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Seraph_1999.jpg"
+   ]
   },
   {
    "id": "rolls-royce_silver_shadow",
@@ -480,7 +476,7 @@
   {
    "id": "rolls-royce_silver-spur",
    "name": "Silver Spur",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Rolls-Royce_Silver_Seraph_1999.jpg/1280px-Rolls-Royce_Silver_Seraph_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Rolls-Royce_Silver_Spur_Classic-Days_2022_DSC_0043.jpg/1280px-Rolls-Royce_Silver_Spur_Classic-Days_2022_DSC_0043.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - 1999",
    "puissance_ch": 240,
    "vitesse_max_kmh": 193,
@@ -504,9 +500,9 @@
     "classic car",
     "vintage car"
    ],
-   "imageCredit": "Jagvar",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Seraph_1999.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Spur_Classic-Days_2022_DSC_0043.jpg"
   },
   {
    "id": "rolls-royce_silver_wraith",

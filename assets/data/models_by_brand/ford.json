@@ -194,7 +194,7 @@
   {
    "id": "ford_bronco-sport",
    "name": "Bronco Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ford_Bronco_Sport_Badlands_1X7A0168.jpg/1280px-Ford_Bronco_Sport_Badlands_1X7A0168.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ford_Bronco_Sport_Badlands_1X7A0384.jpg/1280px-Ford_Bronco_Sport_Badlands_1X7A0384.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 184,
    "vitesse_max_kmh": 190,
@@ -222,7 +222,7 @@
    ],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Bronco_Sport_Badlands_1X7A0168.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Bronco_Sport_Badlands_1X7A0384.jpg"
   },
   {
    "id": "ford_c-max",
@@ -3221,14 +3221,14 @@
   {
    "id": "ford_zx2",
    "name": "ZX2",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/MyZX2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Ford_Escort_ZX2_%284784646045%29.jpg/1280px-Ford_Escort_ZX2_%284784646045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4450 x 1710 x 1320",
    "vitesse_max_kmh": 66,
-   "imageCredit": "Logicisme",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:MyZX2.png"
+   "imageCredit": "dave_7 from Lethbridge, Canada",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Escort_ZX2_(4784646045).jpg"
   },
   {
    "id": "ford_country-sedan",
@@ -3811,14 +3811,14 @@
   {
    "id": "ford_gt40",
    "name": "GT40",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/GT40_at_Goodwood.jpg/1280px-GT40_at_Goodwood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Ford_GT40_%281966%29_Solitude_Revival_2022_1X7A0005.jpg/1280px-Ford_GT40_%281966%29_Solitude_Revival_2022_1X7A0005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4064 x 1778 x 1029",
    "poids_kg": 980,
-   "imageCredit": "edvvc from London, UK",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:GT40_at_Goodwood.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_GT40_(1966)_Solitude_Revival_2022_1X7A0005.jpg"
   },
   {
    "id": "ford_ranger-americas",
@@ -4896,13 +4896,13 @@
   {
    "id": "ford_taunus-transit",
    "name": "Taunus Transit",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Ford_Taunus_Transit_Feuerwehr.jpg/1280px-Ford_Taunus_Transit_Feuerwehr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ford_Taunus_Transit%2C_TC_24%2C_Essen_%28TCE43164%29.jpg/1280px-Ford_Taunus_Transit%2C_TC_24%2C_Essen_%28TCE43164%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4300 x 1740 x 1965",
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Taunus_Transit_Feuerwehr.jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Taunus_Transit,_TC_24,_Essen_(TCE43164).jpg"
   },
   {
    "id": "ford_xl",

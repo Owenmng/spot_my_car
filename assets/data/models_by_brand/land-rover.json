@@ -66,7 +66,7 @@
   {
    "id": "land-rover_defender_90",
    "name": "Defender 90",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg/1280px-2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Land_Rover_Defender_90_%28L663%29_IMG_9441.jpg/1280px-Land_Rover_Defender_90_%28L663%29_IMG_9441.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - Aujourd'hui",
    "puissance_ch": 249,
    "vitesse_max_kmh": 188,
@@ -91,9 +91,9 @@
     "motor vehicle",
     "off-roader"
    ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Land_Rover_Defender_(L316_MY15)_90_3-door_wagon_(2015-10-24)_01.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_90_(L663)_IMG_9441.jpg"
   },
   {
    "id": "land-rover_discovery",
@@ -130,7 +130,7 @@
   {
    "id": "land-rover_discovery_1",
    "name": "Discovery 1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Land_Rover_Discovery_4_HSE_2016.jpg/1280px-Land_Rover_Discovery_4_HSE_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Land_Rover_Discovery%2C_Auto_2025%2C_Zurich_%2820251029-P1074250%29.jpg/1280px-Land_Rover_Discovery%2C_Auto_2025%2C_Zurich_%2820251029-P1074250%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - 1998",
    "puissance_ch": 182,
    "vitesse_max_kmh": 180,
@@ -156,9 +156,9 @@
     "motor vehicle",
     "mid-size suv"
    ],
-   "imageCredit": "DeFacto",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery,_Auto_2025,_Zurich_(20251029-P1074250).jpg"
   },
   {
    "id": "land-rover_discovery_3",

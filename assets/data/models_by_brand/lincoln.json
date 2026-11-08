@@ -304,12 +304,8 @@
   {
    "id": "lincoln_y-block-v8-engine",
    "name": "Y-block V8 engine",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Lincoln_Premiere%2C_1957_%284%29.jpg/1280px-Lincoln_Premiere%2C_1957_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Cjp24",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lincoln_Premiere,_1957_(4).jpg"
+   "tags": []
   },
   {
    "id": "lincoln_corsair",

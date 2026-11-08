@@ -541,7 +541,7 @@
   {
    "id": "nissan_avenir",
    "name": "Avenir",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nissan_Avenir_Salut_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/NISSAN_Avenir_%28cropped%29.jpg/1280px-NISSAN_Avenir_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 2005",
    "puissance_ch": 230,
    "vitesse_max_kmh": 220,
@@ -568,9 +568,9 @@
     "refined",
     "sophisticated"
    ],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Avenir_Salut_001.JPG"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NISSAN_Avenir_(cropped).jpg"
   },
   {
    "id": "nissan_bassara",
@@ -1238,7 +1238,7 @@
   {
    "id": "nissan_homy",
    "name": "Homy",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Homy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Nissan_Homy_E24_coach_%28RDM-403%29_%282%29.jpg/1280px-Nissan_Homy_E24_coach_%28RDM-403%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965-1998",
    "puissance_ch": 95,
    "vitesse_max_kmh": 130,
@@ -1262,9 +1262,9 @@
     "spacious van",
     "large van"
    ],
-   "imageCredit": "Ypy31",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Homy.jpg"
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Homy_E24_coach_(RDM-403)_(2).jpg"
   },
   {
    "id": "nissan_n7",
@@ -3092,7 +3092,7 @@
   {
    "id": "nissan_sway",
    "name": "Sway (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Nissan_Sway_-_wn%C4%99trze_%28MSP15%29.JPG/1280px-Nissan_Sway_-_wn%C4%99trze_%28MSP15%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Nissan_Sway_-_ty%C5%82_%28MSP15%29.JPG/1280px-Nissan_Sway_-_ty%C5%82_%28MSP15%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -3120,7 +3120,7 @@
    ],
    "imageCredit": "Jakub \"Flyz1\" Maciejewski",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Sway_-_wn%C4%99trze_(MSP15).JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Sway_-_ty%C5%82_(MSP15).JPG"
   },
   {
    "id": "nissan_sylphy",

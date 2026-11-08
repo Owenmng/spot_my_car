@@ -1178,13 +1178,9 @@
   {
    "id": "subaru_sumo",
    "name": "Sumo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Subaru_Libero_front_20070822.jpg/1280px-Subaru_Libero_front_20070822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "poids_kg": 1040,
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Libero_front_20070822.jpg"
+   "poids_kg": 1040
   },
   {
    "id": "subaru_legacy-third-generation",
@@ -1422,12 +1418,12 @@
   {
    "id": "subaru_outback-sixth-generation",
    "name": "Outback (sixth generation)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/2023_Subaru_Outback_Limited_in_Magnetite_Gray_Metallic%2C_front_left.jpg/1280px-2023_Subaru_Outback_Limited_in_Magnetite_Gray_Metallic%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/2021_Subaru_Outback_%28sixth_generation%2C_BT%29.jpg/1280px-2021_Subaru_Outback_%28sixth_generation%2C_BT%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Subaru_Outback_Limited_in_Magnetite_Gray_Metallic,_front_left.jpg"
+   "imageCredit": "CybaTruc",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Subaru_Outback_(sixth_generation,_BT).jpg"
   },
   {
    "id": "subaru_ff-1-star",
@@ -1474,13 +1470,13 @@
   {
    "id": "subaru_stella-2",
    "name": "Stella",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/1st_generation_Subaru_Stella_Custom.jpg/1280px-1st_generation_Subaru_Stella_Custom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Subaru_Stella_RN_rear.jpg/1280px-Subaru_Stella_RN_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3395 x 1475 x 1645",
    "imageCredit": "TTTNIS",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1st_generation_Subaru_Stella_Custom.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Stella_RN_rear.jpg"
   },
   {
    "id": "subaru_rex",
@@ -1495,24 +1491,24 @@
   {
    "id": "subaru_r1-2",
    "name": "R1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/2005_Subaru_R1.jpg/1280px-2005_Subaru_R1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Subaru_R1_102.jpg/1280px-Subaru_R1_102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3285 x 1475 x 1510",
    "poids_kg": 800,
-   "imageCredit": "Tak",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2005_Subaru_R1.jpg"
+   "imageCredit": "天然ガス",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_R1_102.jpg"
   },
   {
    "id": "subaru_pleo-2",
    "name": "Pleo",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Subaru_Pleo_003.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2nd_generation_Subaru_Pleo_Plus_F.jpg/1280px-2nd_generation_Subaru_Pleo_Plus_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Pleo_003.JPG"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2nd_generation_Subaru_Pleo_Plus_F.jpg"
   },
   {
    "id": "subaru_xt",
@@ -1552,14 +1548,14 @@
   {
    "id": "subaru_vivio-2",
    "name": "Vivio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/1992_Subaru_Vivio_01.jpg/1280px-1992_Subaru_Vivio_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Subaru_Vivio_Bistro_007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3298 x 1409 x 1380",
    "poids_kg": 640,
-   "imageCredit": "Mytho88",
+   "imageCredit": "Tennen-Gas",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1992_Subaru_Vivio_01.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Vivio_Bistro_007.JPG"
   },
   {
    "id": "subaru_1000",
@@ -1576,14 +1572,14 @@
   {
    "id": "subaru_r2-2",
    "name": "R2",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/2003_Subaru_R2_01.jpg/1280px-2003_Subaru_R2_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Subaru_R2%2C_facelift%2C_front_view.jpg/1280px-Subaru_R2%2C_facelift%2C_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3395 x 1475 x 1520",
    "poids_kg": 880,
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Subaru_R2_01.jpg"
+   "imageCredit": "EurovisionNim",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_R2,_facelift,_front_view.jpg"
   },
   {
    "id": "subaru_r-2",

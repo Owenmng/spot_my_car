@@ -1040,7 +1040,7 @@
   {
    "id": "bmw_3.3li",
    "name": "3.3 Li",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/BMW_3.3_Li_Automatic-1976_%2852858944695mod%29.jpg/1280px-BMW_3.3_Li_Automatic-1976_%2852858944695mod%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/BMW_3.3_Li_E3_%287868295130crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1971 - 1975",
    "puissance_ch": 200,
    "vitesse_max_kmh": 210,
@@ -1063,9 +1063,9 @@
     "german car",
     "executive car"
    ],
-   "imageCredit": "Charles from Port Chester, New York",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_3.3_Li_Automatic-1976_(52858944695mod).jpg"
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_3.3_Li_E3_(7868295130crop).jpg"
   },
   {
    "id": "bmw_315",

@@ -2691,12 +2691,8 @@
   {
    "id": "mercedes-benz_interim-fast-attack-vehicle",
    "name": "Interim Fast Attack Vehicle",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/USMC_Fast_Attack_Vehicle_%28IFAV%29.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "CAPT CHARLES G. GROW, USMC",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:USMC_Fast_Attack_Vehicle_(IFAV).2.jpg"
+   "tags": []
   },
   {
    "id": "mercedes-benz_w114",
@@ -3703,12 +3699,12 @@
   {
    "id": "mercedes-benz_accelo",
    "name": "Accelo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/CBMDF_%286125366180%29.jpg/1280px-CBMDF_%286125366180%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mercedes-Benz_Accelo%2C_El_Chalt%C3%A9n.jpg/1280px-Mercedes-Benz_Accelo%2C_El_Chalt%C3%A9n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Andre Gustavo Stumpf Filho from Brasil",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:CBMDF_(6125366180).jpg"
+   "imageCredit": "Raf24~commonswiki",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Accelo,_El_Chalt%C3%A9n.jpg"
   },
   {
    "id": "mercedes-benz_gle-coupe",

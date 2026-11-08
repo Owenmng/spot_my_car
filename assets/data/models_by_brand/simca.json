@@ -168,12 +168,8 @@
   {
    "id": "simca_abarth-1150",
    "name": "Abarth 1150",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Simca_1150-Abarth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Luc106",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Simca_1150-Abarth.jpg"
+   "tags": []
   },
   {
    "id": "simca_aronde-p60",

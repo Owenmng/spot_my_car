@@ -3,7 +3,7 @@
   {
    "id": "amg_a35-177",
    "name": "AMG A 35 (177)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Mercedes-Benz_SLS_AMG_%28C_197%29_%E2%80%93_Frontansicht_ge%C3%B6ffnet%2C_10._August_2011%2C_D%C3%BCsseldorf.jpg/1280px-Mercedes-Benz_SLS_AMG_%28C_197%29_%E2%80%93_Frontansicht_ge%C3%B6ffnet%2C_10._August_2011%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Mercedes-AMG_A_35_4MATIC_Limousine_%28V_177%2C_Facelift%29_%E2%80%93_f_11102025.jpg/1280px-Mercedes-AMG_A_35_4MATIC_Limousine_%28V_177%2C_Facelift%29_%E2%80%93_f_11102025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 306,
    "vitesse_max_kmh": 250,
@@ -29,9 +29,9 @@
     "turbocharged",
     "gasoline engine"
    ],
-   "imageCredit": "M 93",
+   "imageCredit": "© M 93",
    "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG_(C_197)_%E2%80%93_Frontansicht_ge%C3%B6ffnet,_10._August_2011,_D%C3%BCsseldorf.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_A_35_4MATIC_Limousine_(V_177,_Facelift)_%E2%80%93_f_11102025.jpg"
   },
   {
    "id": "amg_a35-177-limousine",
@@ -427,7 +427,6 @@
   {
    "id": "amg_e63-238",
    "name": "AMG E 63 (238)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Mercedes-Benz_AMG_GT_63S_%2851750035016%29_%28cropped%29.jpg/1280px-Mercedes-Benz_AMG_GT_63S_%2851750035016%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 612,
    "vitesse_max_kmh": 300,
@@ -453,10 +452,7 @@
     "car",
     "vehicle",
     "2023"
-   ],
-   "imageCredit": "Jason Lawrence from New York",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_AMG_GT_63S_(51750035016)_(cropped).jpg"
+   ]
   },
   {
    "id": "amg_e63-238-estate",
@@ -883,7 +879,6 @@
   {
    "id": "amg_s65-223",
    "name": "AMG S 65 (223)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Mercedes-Benz_G63_AMG_6x6%2C_Monaco_diplomatic_plates%2C_front_right.jpg/1280px-Mercedes-Benz_G63_AMG_6x6%2C_Monaco_diplomatic_plates%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 630,
    "vitesse_max_kmh": 250,
@@ -908,10 +903,7 @@
     "vehicle",
     "executive car",
     "high-performance sedan"
-   ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_G63_AMG_6x6,_Monaco_diplomatic_plates,_front_right.jpg"
+   ]
   },
   {
    "id": "amg_sl43-r232",

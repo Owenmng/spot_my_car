@@ -1743,12 +1743,8 @@
   {
    "id": "bugatti_type-47",
    "name": "Type 47",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Bugatti_Type_47_2.jpg/1280px-Bugatti_Type_47_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Arnaud 25",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_47_2.jpg"
+   "tags": []
   }
  ]
 }

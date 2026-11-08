@@ -34,7 +34,7 @@
   {
    "id": "renault_11",
    "name": "11",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/R9_phase_1_bis_Broadway.jpg/1280px-R9_phase_1_bis_Broadway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Renault_11_en_Mar%C3%ADn.jpg/1280px-Renault_11_en_Mar%C3%ADn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1989",
    "puissance_ch": 68,
    "vitesse_max_kmh": 160,
@@ -57,14 +57,14 @@
     "microcar",
     "small car"
    ],
-   "imageCredit": "DarkPrinz",
+   "imageCredit": "Bene Riobó",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R9_phase_1_bis_Broadway.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_11_en_Mar%C3%ADn.jpg"
   },
   {
    "id": "renault_r11_turbo",
    "name": "11 Turbo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/1981_Renault_5_Turbo_LC23.jpg/1280px-1981_Renault_5_Turbo_LC23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Renault_11_Turbo_%2822948678672%29.jpg/1280px-Renault_11_Turbo_%2822948678672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1989",
    "puissance_ch": 115,
    "vitesse_max_kmh": 195,
@@ -90,9 +90,9 @@
     "speed",
     "engine"
    ],
-   "imageCredit": "MrWalkr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1981_Renault_5_Turbo_LC23.jpg"
+   "imageCredit": "TuRbO_J from Adelaide, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_11_Turbo_(22948678672).jpg"
   },
   {
    "id": "renault_r12",
@@ -571,7 +571,7 @@
   {
    "id": "renault_r4_plein_air",
    "name": "4 Plein Air",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/1984_Renault_4_GTL%2C_front_left_%28Germany%29.jpg/1280px-1984_Renault_4_GTL%2C_front_left_%28Germany%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Renault_4_Plein-Air_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1968 - 1970",
    "puissance_ch": 34,
    "vitesse_max_kmh": 120,
@@ -595,9 +595,9 @@
     "compact car",
     "small car"
    ],
-   "imageCredit": "Mr.choppers",
+   "imageCredit": "Tennen-Gas",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1984_Renault_4_GTL,_front_left_(Germany).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_4_Plein-Air_001.JPG"
   },
   {
    "id": "renault_4ever-trophy",
@@ -730,7 +730,7 @@
   {
    "id": "renault_r5_gordini",
    "name": "5 Gordini",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/1990_Renault_5_1.4_Auto_%289743019740%29.jpg/1280px-1990_Renault_5_1.4_Auto_%289743019740%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Renault_5_Gordini_BS_O24.jpg/1280px-Renault_5_Gordini_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1972 - 1976",
    "puissance_ch": 93,
    "vitesse_max_kmh": 175,
@@ -755,14 +755,14 @@
     "vehicle",
     "1970s car"
    ],
-   "imageCredit": "Charlie from United Kingdom",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1990_Renault_5_1.4_Auto_(9743019740).jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_5_Gordini_BS_O24.jpg"
   },
   {
    "id": "renault_r5_maxi",
    "name": "5 Maxi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/1981_Renault_5_Turbo_LC23.jpg/1280px-1981_Renault_5_Turbo_LC23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/1985_Renault_5_Maxi_Turbo_HSH_Collection.jpg/1280px-1985_Renault_5_Maxi_Turbo_HSH_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978 - 1986",
    "puissance_ch": 140,
    "vitesse_max_kmh": 200,
@@ -789,12 +789,12 @@
    ],
    "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1981_Renault_5_Turbo_LC23.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1985_Renault_5_Maxi_Turbo_HSH_Collection.jpg"
   },
   {
    "id": "renault_r5_tl",
    "name": "5 TL",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/1990_Renault_5_1.4_Auto_%289743019740%29.jpg/1280px-1990_Renault_5_1.4_Auto_%289743019740%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Renault_5_TL.jpg/1280px-Renault_5_TL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1972 - 1984",
    "puissance_ch": 55,
    "vitesse_max_kmh": 140,
@@ -818,9 +818,9 @@
     "city vehicle",
     "urban car"
    ],
-   "imageCredit": "Charlie from United Kingdom",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1990_Renault_5_1.4_Auto_(9743019740).jpg"
+   "imageCredit": "Krzysztof Golik",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_5_TL.jpg"
   },
   {
    "id": "renault_r5_turbo",
@@ -1049,7 +1049,7 @@
   {
    "id": "renault_r9_tl",
    "name": "9 TL",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/R9_phase_1_bis_Broadway.jpg/1280px-R9_phase_1_bis_Broadway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Renault_9_TL_1987_%2812782832023%29.jpg/1280px-Renault_9_TL_1987_%2812782832023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1989",
    "puissance_ch": 55,
    "vitesse_max_kmh": 145,
@@ -1072,14 +1072,14 @@
     "turkish car",
     "affordable car"
    ],
-   "imageCredit": "DarkPrinz",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R9_phase_1_bis_Broadway.jpg"
+   "imageCredit": "order_242 from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_9_TL_1987_(12782832023).jpg"
   },
   {
    "id": "renault_r9_ts",
    "name": "9 TS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/R9_phase_1_bis_Broadway.jpg/1280px-R9_phase_1_bis_Broadway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Camion_citerne_Renault_sur_ch%C3%A2ssis_TS_%281931%29.jpg/1280px-Camion_citerne_Renault_sur_ch%C3%A2ssis_TS_%281931%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1989",
    "puissance_ch": 72,
    "vitesse_max_kmh": 160,
@@ -1104,14 +1104,14 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "DarkPrinz",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R9_phase_1_bis_Broadway.jpg"
+   "imageCredit": "Unknown authorUnknown author",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Camion_citerne_Renault_sur_ch%C3%A2ssis_TS_(1931).jpg"
   },
   {
    "id": "renault_r9_turbo",
    "name": "9 Turbo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/1981_Renault_5_Turbo_LC23.jpg/1280px-1981_Renault_5_Turbo_LC23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Renault_9_Turbo_at_Schaffen_Diest_2019.jpg/1280px-Renault_9_Turbo_at_Schaffen_Diest_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1984 - 1990",
    "puissance_ch": 115,
    "vitesse_max_kmh": 195,
@@ -1138,9 +1138,9 @@
     "iconic car",
     "classic car"
    ],
-   "imageCredit": "MrWalkr",
+   "imageCredit": "Charles01",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1981_Renault_5_Turbo_LC23.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_9_Turbo_at_Schaffen_Diest_2019.jpg"
   },
   {
    "id": "renault_alaskan",
@@ -1435,7 +1435,7 @@
   {
    "id": "renault_clio_v6",
    "name": "Clio V6",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Renault_Clio_%28V%2C_Facelift%29_%E2%80%93_f_02092025.jpg/1280px-Renault_Clio_%28V%2C_Facelift%29_%E2%80%93_f_02092025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/2002_Renault_Clio_V6.jpg/1280px-2002_Renault_Clio_V6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2005",
    "puissance_ch": 255,
    "vitesse_max_kmh": 235,
@@ -1461,9 +1461,9 @@
     "2000s car",
     "sports hatchback"
    ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Clio_(V,_Facelift)_%E2%80%93_f_02092025.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Renault_Clio_V6.jpg"
   },
   {
    "id": "renault_dauphine",
@@ -1532,7 +1532,7 @@
   {
    "id": "renault_espace",
    "name": "Espace",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Renault_Espace_VI_Auto_Zuerich_2023_1X7A0947.jpg/1280px-Renault_Espace_VI_Auto_Zuerich_2023_1X7A0947.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Renault_Espace_Initiale%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1310%29.jpg/1280px-Renault_Espace_Initiale%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1310%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1984 - Aujourd'hui",
    "puissance_ch": 200,
    "vitesse_max_kmh": 175,
@@ -1557,9 +1557,9 @@
     "eight seater",
     "family vehicle"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_VI_Auto_Zuerich_2023_1X7A0947.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_Initiale,_GIMS_2019,_Le_Grand-Saconnex_(GIMS1310).jpg"
   },
   {
    "id": "renault_espace_f1",
@@ -2354,7 +2354,6 @@
   {
    "id": "renault_megane-e-tech-electric",
    "name": "Megane E-Tech Electric",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/2022_Renault_Megane_E-Tech_Techno_EV_Front.jpg/1280px-2022_Renault_Megane_E-Tech_Techno_EV_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 220,
    "vitesse_max_kmh": 160,
@@ -2378,10 +2377,7 @@
     "automobile",
     "zero emissions",
     "electric hatchback"
-   ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Renault_Megane_E-Tech_Techno_EV_Front.jpg"
+   ]
   },
   {
    "id": "renault_megane_rs",
@@ -2795,7 +2791,7 @@
   {
    "id": "renault_super-5",
    "name": "Super 5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/1990_Renault_5_1.4_Auto_%289743019740%29.jpg/1280px-1990_Renault_5_1.4_Auto_%289743019740%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/1964_Renault_Super_5.jpg/1280px-1964_Renault_Super_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1984 - 1996",
    "puissance_ch": 120,
    "vitesse_max_kmh": 204,
@@ -2820,9 +2816,9 @@
     "motor vehicle",
     "classic car"
    ],
-   "imageCredit": "Charlie from United Kingdom",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1990_Renault_5_1.4_Auto_(9743019740).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Renault_Super_5.jpg"
   },
   {
    "id": "renault_symbioz",
@@ -3186,13 +3182,13 @@
   {
    "id": "renault_40cv",
    "name": "40CV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1922_Renault_40CV_Type_JP_Touring_Wiederkehr_p1.JPG/1280px-1922_Renault_40CV_Type_JP_Touring_Wiederkehr_p1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/1922_Renault_40CV_%2819339752928%29.jpg/1280px-1922_Renault_40CV_%2819339752928%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5340 x 1770 x 1660",
-   "imageCredit": "AlfvanBeem",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1922_Renault_40CV_Type_JP_Touring_Wiederkehr_p1.JPG"
+   "imageCredit": "emperornie",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1922_Renault_40CV_(19339752928).jpg"
   },
   {
    "id": "renault_type-a",
@@ -3258,14 +3254,14 @@
   {
    "id": "renault_megane-iv",
    "name": "Mégane IV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg/1280px-2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Renault_Megane_IV_Grandtour_E-Tech_IMG_3333.jpg/1280px-Renault_Megane_IV_Grandtour_E-Tech_IMG_3333.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "tags": [],
    "dimensions_lwh_mm": "4359 x 1810 x 1447",
    "poids_kg": 1205,
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Megane_IV_Grandtour_E-Tech_IMG_3333.jpg"
   },
   {
    "id": "renault_type-x",
@@ -3291,12 +3287,8 @@
   {
    "id": "renault_acx-and-adx",
    "name": "ACx and ADx",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Camion_de_pompier_-_Flickr_-_besopha.jpg/1280px-Camion_de_pompier_-_Flickr_-_besopha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "besopha",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Camion_de_pompier_-_Flickr_-_besopha.jpg"
+   "tags": []
   },
   {
    "id": "renault_pn",
@@ -3362,33 +3354,33 @@
   {
    "id": "renault_megane-iv-rs",
    "name": "Mégane IV RS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg/1280px-2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Renault_M%C3%A9gane_IV_RS_%2841760824301%29.jpg/1280px-Renault_M%C3%A9gane_IV_RS_%2841760824301%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg"
+   "imageCredit": "Guillaume Vachey from Chalon sur Saone, France",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_IV_RS_(41760824301).jpg"
   },
   {
    "id": "renault_scala-2",
    "name": "Scala",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Renault_Scala_India_%28front_view%29_02.jpg/1280px-Renault_Scala_India_%28front_view%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Renault_Scala.JPG/1280px-Renault_Scala.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4425 x 1695 x 1505",
-   "imageCredit": "Prateek Dubey",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Scala_India_(front_view)_02.jpg"
+   "imageCredit": "Bull-Doser at English Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Scala.JPG"
   },
   {
    "id": "renault_r23",
    "name": "R23",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Jarno_Trulli_2003.jpg/1280px-Jarno_Trulli_2003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Renault_R23B_front-left_2017_Museo_Fernando_Alonso.jpg/1280px-Renault_R23B_front-left_2017_Museo_Fernando_Alonso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rick Dikeman",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Jarno_Trulli_2003.jpg"
+   "imageCredit": "Morio",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_R23B_front-left_2017_Museo_Fernando_Alonso.jpg"
   },
   {
    "id": "renault_clio-iii",
@@ -3561,12 +3553,12 @@
   {
    "id": "renault_9",
    "name": "9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/R9_phase_1_bis_Broadway.jpg/1280px-R9_phase_1_bis_Broadway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Renault_9_and_11%2C_France_%283976867472%29.jpg/1280px-Renault_9_and_11%2C_France_%283976867472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "DarkPrinz",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R9_phase_1_bis_Broadway.jpg"
+   "imageCredit": "Mic from Reading - Berkshire, United Kingdom",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_9_and_11,_France_(3976867472).jpg"
   },
   {
    "id": "renault_type-k",
@@ -3953,13 +3945,13 @@
   {
    "id": "renault_type-ag",
    "name": "Type AG",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Renault_AG-Fiacre_Paris.jpg/1280px-Renault_AG-Fiacre_Paris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Renault_Type_AG_9_CV_1910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
    "poids_kg": 1050,
-   "imageCredit": "tomislav medak",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_AG-Fiacre_Paris.jpg"
+   "imageCredit": "Lglswe",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Type_AG_9_CV_1910.jpg"
   },
   {
    "id": "renault_16-tx",
@@ -4141,12 +4133,12 @@
   {
    "id": "renault_espace-iii",
    "name": "Espace III",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/2002_Renault_Espace_Expression_DCi_2.2_Front.jpg/1280px-2002_Renault_Espace_Expression_DCi_2.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Renault_Espace_III_en_Valencia.jpg/1280px-Renault_Espace_III_en_Valencia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2002",
    "tags": [],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Dorieo",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Renault_Espace_Expression_DCi_2.2_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_III_en_Valencia.jpg"
   },
   {
    "id": "renault_espace-i",
@@ -4246,13 +4238,13 @@
   {
    "id": "renault_15-17",
    "name": "15/17",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Renault_15_near_Biggleswade_1289cc_first_registered_May_1976.jpg/1280px-Renault_15_near_Biggleswade_1289cc_first_registered_May_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/1972_Renault_15-17_pic1.JPG/1280px-1972_Renault_15-17_pic1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4260 x 1630 x 1310",
-   "imageCredit": "Charles01",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_15_near_Biggleswade_1289cc_first_registered_May_1976.jpg"
+   "imageCredit": "Alf van Beem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Renault_15-17_pic1.JPG"
   },
   {
    "id": "renault_alpine-gta-a610",
@@ -4323,12 +4315,12 @@
   {
    "id": "renault_symbol-2",
    "name": "Symbol",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Renault_Symbol_1.6_Privilege_2015_%2816336448189%29.jpg/1280px-Renault_Symbol_1.6_Privilege_2015_%2816336448189%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_Symbol_Taxi_Turkey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "order_242 from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Symbol_1.6_Privilege_2015_(16336448189).jpg"
+   "imageCredit": "Pal Negyesi",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Symbol_Taxi_Turkey.jpg"
   },
   {
    "id": "renault_taxi-de-la-marne",
@@ -4385,25 +4377,25 @@
   {
    "id": "renault_espace-v",
    "name": "Espace V",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Renault_Espace_Intens_ENERGY_dCi_160_EDC_%28V%29_%E2%80%93_Frontansicht%2C_2._Mai_2015%2C_D%C3%BCsseldorf.jpg/1280px-Renault_Espace_Intens_ENERGY_dCi_160_EDC_%28V%29_%E2%80%93_Frontansicht%2C_2._Mai_2015%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/2020_Renault_Espace_V_DSC_7866.jpg/1280px-2020_Renault_Espace_V_DSC_7866.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4857 x 1888 x 1675",
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_Intens_ENERGY_dCi_160_EDC_(V)_%E2%80%93_Frontansicht,_2._Mai_2015,_D%C3%BCsseldorf.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Renault_Espace_V_DSC_7866.jpg"
   },
   {
    "id": "renault_20-30",
    "name": "20/30",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/1983_Renault_20_TX_automatique%2C_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2011-2013_Renault_Latitude_%28X43%29_dCi_sedan_%282015-07-30%29.jpg/1280px-2011-2013_Renault_Latitude_%28X43%29_dCi_sedan_%282015-07-30%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4520 x 1726 x 1350",
    "poids_kg": 1250,
-   "imageCredit": "https://www.flickr.com/people/nakedcharlton/",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1983_Renault_20_TX_automatique,_front_view.jpg"
+   "imageCredit": "EurovisionNim",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2011-2013_Renault_Latitude_(X43)_dCi_sedan_(2015-07-30).jpg"
   },
   {
    "id": "renault_4cv",
@@ -4461,12 +4453,12 @@
   {
    "id": "renault_espace-vi",
    "name": "Espace VI",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Renault_Espace_VI_IMG_9423.jpg/1280px-Renault_Espace_VI_IMG_9423.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Renault_Espace_VI_Automesse_Ludwigsburg_2024_IMG_1501.jpg/1280px-Renault_Espace_VI_Automesse_Ludwigsburg_2024_IMG_1501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_VI_IMG_9423.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_VI_Automesse_Ludwigsburg_2024_IMG_1501.jpg"
   },
   {
    "id": "renault_trafic-iii",
@@ -4678,12 +4670,8 @@
   {
    "id": "renault_automobile-4-cv-m-106-801",
    "name": "automobile 4 CV M-106.801",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Renault4%2C_Museo_de_la_Ciencia_02.jpg/1280px-Renault4%2C_Museo_de_la_Ciencia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1953",
-   "tags": [],
-   "imageCredit": "Rodelar",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault4,_Museo_de_la_Ciencia_02.jpg"
+   "tags": []
   },
   {
    "id": "renault_boreal",
@@ -4740,12 +4728,8 @@
   {
    "id": "renault_pulse-2",
    "name": "Pulse",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Renault_Pulse.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2017",
-   "tags": [],
-   "imageCredit": "CarTrade",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Pulse.JPG"
+   "tags": []
   },
   {
    "id": "renault_vivasport",
@@ -4853,22 +4837,22 @@
   {
    "id": "renault_megane-iv-rs-trophy",
    "name": "Mégane IV RS Trophy",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg/1280px-2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Renault_M%C3%A9gane_IV_RS_Trophy-R_-_R%C3%A9trosport_2025.jpg/1280px-Renault_M%C3%A9gane_IV_RS_Trophy-R_-_R%C3%A9trosport_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg"
+   "imageCredit": "Kilyann Le Hen",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_IV_RS_Trophy-R_-_R%C3%A9trosport_2025.jpg"
   },
   {
    "id": "renault_clio-rs-iii",
    "name": "Clio RS III",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Renault_Clio_RS_2.0_16V_AME.jpg/1280px-Renault_Clio_RS_2.0_16V_AME.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Renault_Clio_III_RS_phase_1.jpg/1280px-Renault_Clio_III_RS_phase_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Thomas doerfer",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Clio_RS_2.0_16V_AME.jpg"
+   "imageCredit": "Kev22",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Clio_III_RS_phase_1.jpg"
   },
   {
    "id": "renault_trafic-ii",

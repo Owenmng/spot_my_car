@@ -3,7 +3,7 @@
   {
    "id": "mitsubishi_3000-gt",
    "name": "3000GT",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Mitsubishi_3000GT_--_03-21-2012.JPG/1280px-Mitsubishi_3000GT_--_03-21-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Mitsubishi_3000GT_VR4.jpg/1280px-Mitsubishi_3000GT_VR4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 1999",
    "puissance_ch": 324,
    "vitesse_max_kmh": 250,
@@ -29,9 +29,9 @@
     "90s car",
     "classic car"
    ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_3000GT_--_03-21-2012.JPG"
+   "imageCredit": "Jacob Frey 4A",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_3000GT_VR4.jpg"
   },
   {
    "id": "mitsubishi_400",
@@ -2675,13 +2675,13 @@
   {
    "id": "mitsubishi_gto",
    "name": "GTO",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/3000gtlev.jpg/1280px-3000gtlev.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Niigata_Prefectural_Police_Mitsubishi_GTO_Twin_Turbo_Z16A.jpg/1280px-Niigata_Prefectural_Police_Mitsubishi_GTO_Twin_Turbo_Z16A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4600 x 1840 x 1285",
-   "imageCredit": "User Thaian07 on en.wikipedia",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:3000gtlev.jpg"
+   "imageCredit": "Ypy31",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Niigata_Prefectural_Police_Mitsubishi_GTO_Twin_Turbo_Z16A.jpg"
   },
   {
    "id": "mitsubishi_jeep",

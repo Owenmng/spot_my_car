@@ -2783,12 +2783,8 @@
   {
    "id": "fiat_6640a",
    "name": "6640A",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Fiat_6640_AMDS_Vigili_del_Fuoco%2C_vista_anteriore_sinistra_2.jpg/1280px-Fiat_6640_AMDS_Vigili_del_Fuoco%2C_vista_anteriore_sinistra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Threecharlie",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_6640_AMDS_Vigili_del_Fuoco,_vista_anteriore_sinistra_2.jpg"
+   "tags": []
   },
   {
    "id": "fiat_850-spider",
@@ -3352,14 +3348,14 @@
   {
    "id": "fiat_s76",
    "name": "S76",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Fiat_S76_Record.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Fiat_S76_%2852342855762%29.jpg/1280px-Fiat_S76_%2852342855762%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 1650,
    "vitesse_max_kmh": 59,
-   "imageCredit": "Unknown authorUnknown author",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_S76_Record.jpg"
+   "imageCredit": "Neil",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_S76_(52342855762).jpg"
   },
   {
    "id": "fiat_850-coupe-abarth-2000-ot",
@@ -3815,12 +3811,12 @@
   {
    "id": "fiat_abarth-124-rally",
    "name": "Abarth 124 Rally",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Cambiaghi_sanfront_rally_delle_regioni_1975.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Fiat_Abarth_124_Rally_frontale.jpg/1280px-Fiat_Abarth_124_Rally_frontale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Unknown authorUnknown author",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Cambiaghi_sanfront_rally_delle_regioni_1975.jpg"
+   "imageCredit": "Vllmtt",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Abarth_124_Rally_frontale.jpg"
   },
   {
    "id": "fiat_iveco-massif",

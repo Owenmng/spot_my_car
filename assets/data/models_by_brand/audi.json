@@ -3600,12 +3600,8 @@
   {
    "id": "audi_s-and-rs-models",
    "name": "S and RS models",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/RS_S_AA.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1983",
-   "tags": [],
-   "imageCredit": "Anton V.",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:RS_S_AA.png"
+   "tags": []
   },
   {
    "id": "audi_quattro-a1",
@@ -3768,14 +3764,14 @@
   {
    "id": "audi_sport-quattro",
    "name": "Sport quattro",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/1986AudiSportQuattroS1.jpg/1280px-1986AudiSportQuattroS1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Audi_Sport_quattro_concept.jpg/1280px-Audi_Sport_quattro_concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4164 x 1803 x 1345",
    "poids_kg": 1300,
-   "imageCredit": "Brian Snelson",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1986AudiSportQuattroS1.jpg"
+   "imageCredit": "Thomas Wolf, www.foto-tw.de",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Sport_quattro_concept.jpg"
   },
   {
    "id": "audi_a4-dtm",
@@ -3855,12 +3851,12 @@
   {
    "id": "audi_a8-d4",
    "name": "A8 D4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Audi_A8_III_4.2_TDI_quattro_front_20100416.jpg/1280px-Audi_A8_III_4.2_TDI_quattro_front_20100416.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Audi_A8_%28D4%29_Washington_DC_Metro_Area%2C_USA.jpg/1280px-Audi_A8_%28D4%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A8_III_4.2_TDI_quattro_front_20100416.jpg"
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A8_(D4)_Washington_DC_Metro_Area,_USA.jpg"
   },
   {
    "id": "audi_a8-d2",
