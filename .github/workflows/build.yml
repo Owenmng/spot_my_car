@@ -47,6 +47,7 @@ jobs:
         run: |
           set -o pipefail
           flutter build apk --release 2>&1 | tee build.txt
+          flutter build appbundle --release 2>&1 | tee -a build.txt
 
       - name: Upload APK
         if: success()
@@ -62,8 +63,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp build/app/outputs/flutter-apk/app-release.apk SpotMyCar-test.apk
+          cp build/app/outputs/bundle/release/app-release.aab SpotMyCar-PlayStore.aab
           gh release delete test-latest --yes --cleanup-tag || true
-          gh release create test-latest SpotMyCar-test.apk --prerelease --target ${{ github.sha }} \
+          gh release create test-latest SpotMyCar-test.apk SpotMyCar-PlayStore.aab --prerelease --target ${{ github.sha }} \
             --title "Version de test (${GITHUB_SHA::7})" \
             --notes "APK de test compilé automatiquement depuis la branche refonte."
 

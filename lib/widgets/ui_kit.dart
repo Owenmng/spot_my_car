@@ -229,7 +229,7 @@ void showAppSnack(BuildContext context, String message, {IconData? icon, Color? 
     ..showSnackBar(SnackBar(
       content: Row(
         children: [
-          if (icon != null) ...[Icon(icon, color: color ?? Colors.white, size: 20), const SizedBox(width: 10)],
+          if (icon != null) ...[Icon(icon, color: color ?? AppColors.ink, size: 20), const SizedBox(width: 10)],
           Expanded(child: Text(message)),
         ],
       ),
@@ -257,9 +257,10 @@ class RevLights extends StatelessWidget {
   final double value;
   final int count;
   final double height;
-  final bool dark;
+  final bool? _dark;
+  bool get dark => _dark ?? AppColors.isDark;
 
-  const RevLights({super.key, required this.value, this.count = 18, this.height = 16, this.dark = true});
+  const RevLights({super.key, required this.value, this.count = 18, this.height = 16, bool? dark}) : _dark = dark;
 
   Color _ledColor(int i) {
     final t = i / (count - 1);

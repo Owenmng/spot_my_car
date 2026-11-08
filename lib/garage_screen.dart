@@ -431,9 +431,9 @@ class _Header extends StatelessWidget {
                     const SizedBox(height: 18),
                     Row(
                       children: [
-                        Expanded(child: StatPill(value: '${cars.length}', label: 'spots', dark: true)),
-                        Expanded(child: StatPill(value: '$brands', label: 'marques', dark: true)),
-                        Expanded(child: StatPill(value: '$rare', label: 'rares et +', dark: true)),
+                        Expanded(child: StatPill(value: '${cars.length}', label: 'spots')),
+                        Expanded(child: StatPill(value: '$brands', label: 'marques')),
+                        Expanded(child: StatPill(value: '$rare', label: 'rares et +')),
                       ],
                     ),
                   ],

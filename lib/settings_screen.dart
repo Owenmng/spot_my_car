@@ -196,7 +196,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               listenable: notifications,
               builder: (context, _) => _Tile(
                 icon: Icons.notifications_none_rounded,
-                title: 'Rappels',
+                title: 'Notifications',
                 subtitle: 'Défi du jour, série en danger, bilan du dimanche',
                 trailing: Switch(value: notifications.enabled, onChanged: notifications.setEnabled),
               ),
