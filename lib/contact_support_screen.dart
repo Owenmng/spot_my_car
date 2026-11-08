@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:convert';
 import 'dart:io' show Platform;
 
@@ -23,12 +24,12 @@ class ContactSupportScreen extends StatefulWidget {
 }
 
 class _ContactSupportScreenState extends State<ContactSupportScreen> {
-  static const _topics = {
-    'bug': ('Un bug', Icons.bug_report_outlined),
-    'idea': ('Une idée', Icons.lightbulb_outline_rounded),
-    'car': ('Voiture ou photo', Icons.directions_car_outlined),
-    'account': ('Mon compte', Icons.person_outline_rounded),
-    'other': ('Autre', Icons.chat_bubble_outline_rounded),
+  static Map<String, (String, IconData)> get _topics => {
+    'bug': (tr('Un bug'), Icons.bug_report_outlined),
+    'idea': (tr('Une idée'), Icons.lightbulb_outline_rounded),
+    'car': (tr('Voiture ou photo'), Icons.directions_car_outlined),
+    'account': (tr('Mon compte'), Icons.person_outline_rounded),
+    'other': (tr('Autre'), Icons.chat_bubble_outline_rounded),
   };
 
   final _subject = TextEditingController();
@@ -68,7 +69,7 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
     setState(() => _sending = true);
     final ctx = await _context();
     final topic = _topics[_topic]!.$1;
-    final subject = '[Spot My Car · $topic] ${_subject.text.trim()}';
+    final subject = tr('[Spot My Car · {0}] {1}', [topic, _subject.text.trim()]);
 
     var ok = false;
     try {
@@ -108,14 +109,14 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
 
     // Pas d'appli mail externe : on reste dans Spot My Car et on propose de réessayer.
     setState(() => _sending = false);
-    showAppSnack(context, "Le message n'est pas parti (connexion ?). Réessaie dans un instant.", icon: Icons.wifi_off_rounded);
+    showAppSnack(context, tr('Le message n\'est pas parti (connexion ?). Réessaie dans un instant.'), icon: Icons.wifi_off_rounded);
   }
 
   @override
   Widget build(BuildContext context) {
     final accent = Theme.of(context).colorScheme.primary;
     return Scaffold(
-      appBar: AppBar(title: const Text('Contacter le support')),
+      appBar: AppBar(title: Text(tr('Contacter le support'))),
       body: _sent
           ? Center(
               child: Padding(
@@ -130,11 +131,11 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                       child: const Icon(Icons.mark_email_read_outlined, size: 42, color: AppColors.success),
                     ).animate().scale(curve: Curves.easeOutBack, duration: 450.ms),
                     const SizedBox(height: 20),
-                    Text('Message envoyé', style: AppText.display(28)),
+                    Text(tr('Message envoyé'), style: AppText.display(28)),
                     const SizedBox(height: 8),
-                    Text('Merci ! On te répond par e-mail, en général sous 48 h.', textAlign: TextAlign.center, style: AppText.body(15, color: AppColors.inkSoft)),
+                    Text(tr('Merci ! On te répond par e-mail, en général sous 48 h.'), textAlign: TextAlign.center, style: AppText.body(15, color: AppColors.inkSoft)),
                     const SizedBox(height: 28),
-                    ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text('Retour')),
+                    ElevatedButton(onPressed: () => Navigator.pop(context), child: Text(tr('Retour'))),
                   ],
                 ),
               ),
@@ -144,9 +145,9 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
               child: ListView(
                 padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + MediaQuery.paddingOf(context).bottom),
                 children: [
-                  Text('Une question, un bug, une idée ?', style: AppText.display(26)),
+                  Text(tr('Une question, un bug, une idée ?'), style: AppText.display(26)),
                   const SizedBox(height: 6),
-                  Text('Écris ton message ici, l’équipe Spot My Car te répond par e-mail.', style: AppText.body(14, color: AppColors.inkSoft)),
+                  Text(tr('Écris ton message ici, l’équipe Spot My Car te répond par e-mail.'), style: AppText.body(14, color: AppColors.inkSoft)),
                   const SizedBox(height: 20),
                   Text('SUJET', style: AppText.label(11, color: AppColors.inkMuted)),
                   const SizedBox(height: 8),
@@ -168,8 +169,8 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                     controller: _subject,
                     textCapitalization: TextCapitalization.sentences,
                     maxLength: 80,
-                    decoration: const InputDecoration(labelText: 'Objet', prefixIcon: Icon(Icons.short_text_rounded), counterText: ''),
-                    validator: (v) => (v == null || v.trim().isEmpty) ? 'Donne un titre à ton message' : null,
+                    decoration: InputDecoration(labelText: tr('Objet'), prefixIcon: Icon(Icons.short_text_rounded), counterText: ''),
+                    validator: (v) => (v == null || v.trim().isEmpty) ? tr('Donne un titre à ton message') : null,
                   ),
                   const SizedBox(height: 12),
                   TextFormField(
@@ -178,8 +179,8 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                     minLines: 6,
                     maxLines: 12,
                     maxLength: 2000,
-                    decoration: const InputDecoration(labelText: 'Ton message', alignLabelWithHint: true),
-                    validator: (v) => (v == null || v.trim().length < 10) ? 'Quelques mots de plus ?' : null,
+                    decoration: InputDecoration(labelText: tr('Ton message'), alignLabelWithHint: true),
+                    validator: (v) => (v == null || v.trim().length < 10) ? tr('Quelques mots de plus ?') : null,
                   ),
                   const SizedBox(height: 6),
                   Row(
@@ -187,7 +188,7 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                       Icon(Icons.info_outline_rounded, size: 15, color: AppColors.inkMuted),
                       const SizedBox(width: 6),
                       Expanded(
-                        child: Text('Ton pseudo, ton e-mail et la version de l’appli sont joints pour pouvoir te répondre.', style: AppText.body(12, color: AppColors.inkMuted)),
+                        child: Text(tr('Ton pseudo, ton e-mail et la version de l’appli sont joints pour pouvoir te répondre.'), style: AppText.body(12, color: AppColors.inkMuted)),
                       ),
                     ],
                   ),
@@ -197,7 +198,7 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
                     icon: _sending
                         ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
                         : const Icon(Icons.send_rounded),
-                    label: Text(_sending ? 'Envoi…' : 'Envoyer'),
+                    label: Text(_sending ? tr('Envoi…') : tr('Envoyer')),
                   ),
                 ],
               ),

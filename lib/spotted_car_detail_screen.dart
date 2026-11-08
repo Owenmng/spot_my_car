@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:intl/intl.dart';
@@ -34,14 +35,14 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Retirer du garage ?'),
-        content: const Text('Cette voiture et sa photo seront supprimées définitivement.'),
+        title: Text(tr('Retirer du garage ?')),
+        content: Text(tr('Cette voiture et sa photo seront supprimées définitivement.')),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Garder')),
+          TextButton(onPressed: () => Navigator.pop(context, false), child: Text(tr('Garder'))),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: AppColors.danger),
-            child: const Text('Supprimer'),
+            child: Text(tr('Supprimer')),
           ),
         ],
       ),
@@ -58,7 +59,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
       await PhotoStore.delete(widget.carId);
       if (mounted) Navigator.pop(context);
     } catch (_) {
-      if (mounted) showAppSnack(context, 'La suppression a échoué.', icon: Icons.error_outline);
+      if (mounted) showAppSnack(context, tr('La suppression a échoué.'), icon: Icons.error_outline);
     }
   }
 
@@ -72,7 +73,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
         }
         final car = snap.data?.data() ?? widget.carData;
         final rarity = rarityOfSpot(car);
-        final brand = (car['brandName'] as String?) ?? 'Marque inconnue';
+        final brand = (car['brandName'] as String?) ?? tr('Marque inconnue');
         final model = cleanModelName(car['modelName'] as String?);
         final userPhoto = car['userPhotoUrl'] as String?;
         final official = car['modelImageUrl'] as String?;
@@ -134,9 +135,9 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                               visualDensity: VisualDensity.compact,
                               textStyle: AppText.body(13, weight: FontWeight.w800),
                             ),
-                            segments: const [
-                              ButtonSegment(value: false, label: Text('Mon spot')),
-                              ButtonSegment(value: true, label: Text('Officielle')),
+                            segments: [
+                              ButtonSegment(value: false, label: Text(tr('Mon spot'))),
+                              ButtonSegment(value: true, label: Text(tr('Officielle'))),
                             ],
                             selected: {_showOfficial},
                             onSelectionChanged: (s) => setState(() => _showOfficial = s.first),
@@ -166,7 +167,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                       ),
                       if (car['production_years'] != null) ...[
                         const SizedBox(height: 4),
-                        Text('Produite ${car['production_years']}'.replaceAll("Aujourd'hui", "aujourd'hui"), style: AppText.body(14, color: AppColors.inkSoft, weight: FontWeight.w600)),
+                        Text(tr('Produite {0}', [car['production_years']]).replaceAll("Aujourd'hui", "aujourd'hui"), style: AppText.body(14, color: AppColors.inkSoft, weight: FontWeight.w600)),
                       ],
                       const SizedBox(height: 16),
                       PlateBadge(plate: (car['plate'] as String?) ?? '', countryCode: car['plateCountryCode'] as String?),
@@ -176,11 +177,11 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                         runSpacing: 10,
                         children: [
                           if (date != null)
-                            _InfoChip(icon: Icons.event_outlined, text: DateFormat("d MMMM yyyy 'à' HH'h'mm", 'fr_FR').format(date)),
-                          _InfoChip(icon: Icons.place_outlined, text: (car['locationName'] as String?) ?? 'Lieu inconnu', muted: car['locationName'] == null),
+                            _InfoChip(icon: Icons.event_outlined, text: DateFormat.yMMMMd(I18n.instance.dateLocale).add_Hm().format(date)),
+                          _InfoChip(icon: Icons.place_outlined, text: (car['locationName'] as String?) ?? tr('Lieu inconnu'), muted: car['locationName'] == null),
                           _ColorChip(color: car['color'] as String?),
                           if ((car['xp'] as num?) != null && (car['xp'] as num) > 0)
-                            _InfoChip(icon: Icons.bolt_rounded, text: '+${car['xp']} XP'),
+                            _InfoChip(icon: Icons.bolt_rounded, text: tr('+{0} XP', [car['xp']])),
                         ],
                       ),
                       if ((car['note'] as String?)?.isNotEmpty ?? false) ...[
@@ -198,12 +199,12 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
                         child: TextButton.icon(
                           onPressed: () => _edit(car),
                           icon: const Icon(Icons.edit_outlined, size: 18),
-                          label: const Text('Modifier les infos du spot'),
+                          label: Text(tr('Modifier les infos du spot')),
                         ),
                       ),
                       if (car['isCatalogued'] == true) ...[
                         const SizedBox(height: 18),
-                        Text('Fiche technique', style: AppText.display(22)),
+                        Text(tr('Fiche technique'), style: AppText.display(22)),
                         const SizedBox(height: 14),
                         SpecsGrid(model: {...car, ...?catalogModel}),
                       ],
@@ -231,7 +232,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
           children: [
             ListTile(
               leading: const Icon(Icons.edit_outlined),
-              title: const Text('Modifier'),
+              title: Text(tr('Modifier')),
               onTap: () {
                 Navigator.pop(context);
                 _edit(car);
@@ -239,7 +240,7 @@ class _SpottedCarDetailScreenState extends State<SpottedCarDetailScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.delete_outline, color: AppColors.danger),
-              title: const Text('Supprimer', style: TextStyle(color: AppColors.danger)),
+              title: Text(tr('Supprimer'), style: TextStyle(color: AppColors.danger)),
               onTap: () {
                 Navigator.pop(context);
                 _delete(car);
@@ -334,7 +335,7 @@ class _ColorChip extends StatelessWidget {
             decoration: BoxDecoration(color: swatch ?? AppColors.paperDeep, shape: BoxShape.circle, border: Border.all(color: AppColors.line)),
           ),
           const SizedBox(width: 7),
-          Text(color ?? 'Couleur ?', style: AppText.body(13.5, weight: FontWeight.w600, color: color == null ? AppColors.inkMuted : AppColors.ink)),
+          Text(color != null ? tr(color!) : tr('Couleur ?'), style: AppText.body(13.5, weight: FontWeight.w600, color: color == null ? AppColors.inkMuted : AppColors.ink)),
         ],
       ),
     );
@@ -348,7 +349,7 @@ class SpecsGrid extends StatelessWidget {
 
   static String _num(dynamic v) {
     if (v == null) return '';
-    if (v is num) return NumberFormat.decimalPattern('fr_FR').format(v);
+    if (v is num) return NumberFormat.decimalPattern(I18n.instance.dateLocale).format(v);
     return v.toString();
   }
 
@@ -356,17 +357,17 @@ class SpecsGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final dims = (model['dimensions_lwh_mm'] as String?)?.split(RegExp(r'\s*x\s*'));
     final specs = <(IconData, String, String)>[
-      if (model['puissance_ch'] != null) (Icons.bolt_rounded, 'Puissance', '${_num(model['puissance_ch'])} ch'),
-      if (model['zero_a_cent_s'] != null) (Icons.timer_outlined, '0 à 100 km/h', '${_num(model['zero_a_cent_s'])} s'),
-      if (model['vitesse_max_kmh'] != null) (Icons.speed_rounded, 'Vitesse max', '${_num(model['vitesse_max_kmh'])} km/h'),
-      if (model['poids_kg'] != null) (Icons.scale_outlined, 'Poids', '${_num(model['poids_kg'])} kg'),
-      if (model['type_carburant'] != null) (Icons.local_gas_station_outlined, 'Énergie', '${model['type_carburant']}'),
-      if (model['consommation_mixte'] != null) (Icons.water_drop_outlined, 'Consommation', '${model['consommation_mixte']}'),
-      if (model['prix_lancement_eur'] != null) (Icons.euro_rounded, 'Prix de lancement', '${_num(model['prix_lancement_eur'])} €'),
-      if (dims != null && dims.length == 3) (Icons.straighten_rounded, 'L × l × h', '${_num(int.tryParse(dims[0]) ?? dims[0])} × ${dims[1]} × ${dims[2]} mm'),
+      if (model['puissance_ch'] != null) (Icons.bolt_rounded, tr('Puissance'), '${_num(model['puissance_ch'])} ch'),
+      if (model['zero_a_cent_s'] != null) (Icons.timer_outlined, tr('0 à 100 km/h'), '${_num(model['zero_a_cent_s'])} s'),
+      if (model['vitesse_max_kmh'] != null) (Icons.speed_rounded, tr('Vitesse max'), '${_num(model['vitesse_max_kmh'])} km/h'),
+      if (model['poids_kg'] != null) (Icons.scale_outlined, tr('Poids'), '${_num(model['poids_kg'])} kg'),
+      if (model['type_carburant'] != null) (Icons.local_gas_station_outlined, tr('Énergie'), '${model['type_carburant']}'),
+      if (model['consommation_mixte'] != null) (Icons.water_drop_outlined, tr('Consommation'), '${model['consommation_mixte']}'),
+      if (model['prix_lancement_eur'] != null) (Icons.euro_rounded, tr('Prix de lancement'), '${_num(model['prix_lancement_eur'])} €'),
+      if (dims != null && dims.length == 3) (Icons.straighten_rounded, tr('L × l × h'), tr('{0} × {1} × {2} mm', [_num(int.tryParse(dims[0]) ?? dims[0]), dims[1], dims[2]])),
     ];
     if (specs.isEmpty) {
-      return Text('Pas encore de données techniques pour ce modèle.', style: AppText.body(14, color: AppColors.inkSoft));
+      return Text(tr('Pas encore de données techniques pour ce modèle.'), style: AppText.body(14, color: AppColors.inkSoft));
     }
 
     return LayoutBuilder(
@@ -446,7 +447,7 @@ class _EditSheetState extends State<_EditSheet> {
     } catch (_) {
       if (mounted) {
         setState(() => _saving = false);
-        showAppSnack(context, "Impossible d'enregistrer.", icon: Icons.error_outline);
+        showAppSnack(context, tr('Impossible d\'enregistrer.'), icon: Icons.error_outline);
       }
     }
   }
@@ -460,7 +461,7 @@ class _EditSheetState extends State<_EditSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Modifier le spot', style: AppText.display(22)),
+            Text(tr('Modifier le spot'), style: AppText.display(22)),
             const SizedBox(height: 20),
             Text('COULEUR', style: AppText.label(11.5, color: AppColors.inkMuted)),
             const SizedBox(height: 10),
@@ -491,7 +492,7 @@ class _EditSheetState extends State<_EditSheet> {
               builder: (context, controller, focusNode) => TextField(
                 controller: controller,
                 focusNode: focusNode,
-                decoration: const InputDecoration(hintText: 'Ville', prefixIcon: Icon(Icons.place_outlined)),
+                decoration: InputDecoration(hintText: tr('Ville'), prefixIcon: Icon(Icons.place_outlined)),
                 onChanged: (_) => _coords = null,
               ),
               suggestionsCallback: (pattern) {
@@ -518,7 +519,7 @@ class _EditSheetState extends State<_EditSheet> {
               maxLines: 3,
               minLines: 2,
               textCapitalization: TextCapitalization.sentences,
-              decoration: const InputDecoration(hintText: 'Un souvenir de ce spot…', counterText: ''),
+              decoration: InputDecoration(hintText: tr('Un souvenir de ce spot…'), counterText: ''),
             ),
             const SizedBox(height: 20),
             SizedBox(
@@ -527,7 +528,7 @@ class _EditSheetState extends State<_EditSheet> {
                 onPressed: _saving ? null : _save,
                 child: _saving
                     ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4, color: Colors.white))
-                    : const Text('Enregistrer'),
+                    : Text(tr('Enregistrer')),
               ),
             ),
           ],
@@ -545,10 +546,10 @@ class PhotoCredit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final credit = model['imageCredit'] as String? ?? 'Wikimedia Commons';
+    final credit = model['imageCredit'] as String? ?? tr('Wikimedia Commons');
     final license = model['imageLicense'] as String? ?? '';
     return Text(
-      'Photo officielle : $credit${license.isEmpty ? '' : ' · $license'} · Wikimedia Commons',
+      tr('Photo officielle : {0}{1} · Wikimedia Commons', [credit, license.isEmpty ? '' : ' · $license']),
       style: AppText.body(11.5, color: AppColors.inkMuted),
     );
   }

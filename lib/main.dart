@@ -14,6 +14,7 @@ import 'package:spot_my_car/firebase_options.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/connectivity_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/services/theme_notifier.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 
@@ -28,7 +29,8 @@ Future<void> main() async {
     FlutterError.presentError(details);
   };
 
-  await initializeDateFormatting('fr_FR', null);
+  await initializeDateFormatting();
+  await I18n.instance.init();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   if (!kIsWeb) {
@@ -52,6 +54,7 @@ Future<void> main() async {
         ChangeNotifierProvider.value(value: DataManager.instance),
         ChangeNotifierProvider.value(value: AudioService.instance),
         ChangeNotifierProvider.value(value: themeNotifier),
+        ChangeNotifierProvider.value(value: I18n.instance),
       ],
       child: const SpotMyCarApp(),
     ),
@@ -64,13 +67,14 @@ class SpotMyCarApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = context.watch<ThemeNotifier>().currentThemeData;
+    final i18n = context.watch<I18n>();
 
     return MaterialApp(
       title: 'SpotMyCar',
       debugShowCheckedModeBanner: false,
       theme: theme,
-      locale: const Locale('fr', 'FR'),
-      supportedLocales: const [Locale('fr', 'FR'), Locale('en')],
+      locale: i18n.locale,
+      supportedLocales: i18n.supportedLocales,
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -113,7 +117,7 @@ class _OfflineBanner extends StatelessWidget {
                 children: [
                   Icon(Icons.cloud_off_rounded, color: AppColors.ink, size: 16),
                   const SizedBox(width: 8),
-                  Text('Hors ligne — tes spots se synchroniseront', style: AppText.body(13, weight: FontWeight.w600)),
+                  Text(tr('Hors ligne — tes spots se synchroniseront'), style: AppText.body(13, weight: FontWeight.w600)),
                 ],
               ),
             ),

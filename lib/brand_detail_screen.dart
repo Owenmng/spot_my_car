@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
@@ -31,14 +32,14 @@ class BrandDetailScreen extends StatelessWidget {
     final accent = Theme.of(context).colorScheme.primary;
 
     final facts = <(String, String?)>[
-      ('Fondation', _clean(brand['annee_fondation'])),
-      ('Pays', _clean(brand['pays'])),
-      ('Fondateur', _clean(brand['fondateur'])),
-      ('Siège', _clean(brand['siege_social'])),
-      ('Groupe', _clean(brand['societe_mere'])),
-      ('Ventes / an', _clean(brand['ventes_annuelles'])),
-      ('Effectif', _clean(brand['nombre_employes'])),
-      ('Chiffre d’affaires', _clean(brand['chiffre_affaires'])),
+      (tr('Fondation'), _clean(brand['annee_fondation'])),
+      (tr('Pays'), _clean(brand['pays'])),
+      (tr('Fondateur'), _clean(brand['fondateur'])),
+      (tr('Siège'), _clean(brand['siege_social'])),
+      (tr('Groupe'), _clean(brand['societe_mere'])),
+      (tr('Ventes / an'), _clean(brand['ventes_annuelles'])),
+      (tr('Effectif'), _clean(brand['nombre_employes'])),
+      (tr('Chiffre d’affaires'), _clean(brand['chiffre_affaires'])),
     ].where((f) => f.$2 != null).toList();
 
     return Scaffold(
@@ -99,13 +100,13 @@ class BrandDetailScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   if (_clean(brand['modele_emblematique']) != null) ...[
-                    Text('MODÈLE EMBLÉMATIQUE', style: AppText.label(11, color: accent)),
+                    Text(tr('MODÈLE EMBLÉMATIQUE'), style: AppText.label(11, color: accent)),
                     const SizedBox(height: 4),
                     Text(brand['modele_emblematique'] as String, style: AppText.display(20)),
                   ],
                   if (_clean(brand['fait_marquant']) != null) ...[
                     const SizedBox(height: 14),
-                    Text('LE SAVAIS-TU ?', style: AppText.label(11, color: accent)),
+                    Text(tr('LE SAVAIS-TU ?'), style: AppText.label(11, color: accent)),
                     const SizedBox(height: 4),
                     Text(brand['fait_marquant'] as String, style: AppText.body(14, color: AppColors.ink).copyWith(height: 1.5)),
                   ],
@@ -116,9 +117,9 @@ class BrandDetailScreen extends StatelessWidget {
           const SizedBox(height: 26),
           Row(
             children: [
-              Text('LES PLUS RARES', style: AppText.label(12, color: AppColors.inkSoft)),
+              Text(tr('LES PLUS RARES'), style: AppText.label(12, color: AppColors.inkSoft)),
               const Spacer(),
-              Text('${models.length} modèles', style: AppText.mono(12, color: AppColors.inkSoft)),
+              Text(tr('{0} modèles', [models.length]), style: AppText.mono(12, color: AppColors.inkSoft)),
             ],
           ),
           const SizedBox(height: 12),
@@ -155,14 +156,14 @@ class BrandDetailScreen extends StatelessWidget {
           const SizedBox(height: 18),
           ElevatedButton(
             onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => BrandModelsScreen(brand: brand))),
-            child: Text('Voir les ${models.length} modèles'),
+            child: Text(tr('Voir les {0} modèles', [models.length])),
           ),
           if (_clean(brand['site_officiel']) != null) ...[
             const SizedBox(height: 10),
             OutlinedButton.icon(
               onPressed: () => launchUrl(Uri.parse(brand['site_officiel'] as String), mode: LaunchMode.externalApplication),
               icon: const Icon(Icons.open_in_new_rounded, size: 18),
-              label: const Text('Site officiel'),
+              label: Text(tr('Site officiel')),
             ),
           ],
         ].animate(interval: 25.ms).fadeIn(duration: 250.ms),

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -68,7 +69,7 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
             Navigator.of(context).pop();
           },
         ),
-        title: const Text('Choisir une marque'),
+        title: Text(tr('Choisir une marque')),
       ),
       body: Column(
         children: [
@@ -77,7 +78,7 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Rechercher une marque...',
+                hintText: tr('Rechercher une marque...'),
                 prefixIcon: const Icon(Icons.search),
               ),
             ),
@@ -98,14 +99,14 @@ class _BrandSelectionScreenState extends State<BrandSelectionScreen> {
                     child: ListTile(
                       leading: Icon(Icons.add_circle_outline, color: Theme.of(context).primaryColor),
                       title: Text(
-                        "Autre marque...", 
+                        tr('Autre marque...'), 
                         style: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor)
                       ),
-                      subtitle: const Text("La marque que vous cherchez n'est pas dans la liste ?"),
+                      subtitle: Text(tr('La marque que vous cherchez n\'est pas dans la liste ?')),
                       onTap: () {
                         AudioService.instance.playSfx(SoundEffect.clicLeger);
                         // On retourne une map spéciale qui sera reconnue par l'écran précédent
-                        Navigator.of(context).pop({'id': 'other', 'name': 'Autre'});
+                        Navigator.of(context).pop({'id': 'other', 'name': tr('Autre')});
                       },
                     ),
                   );

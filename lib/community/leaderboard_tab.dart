@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class _LeaderboardTabState extends State<LeaderboardTab> with AutomaticKeepAlive
       builder: (context, snap) {
         if (!snap.hasData) {
           return snap.hasError
-              ? const EmptyState(icon: Icons.cloud_off_rounded, title: 'Classement indisponible', message: 'Vérifie ta connexion et réessaie.')
+              ? EmptyState(icon: Icons.cloud_off_rounded, title: tr('Classement indisponible'), message: tr('Vérifie ta connexion et réessaie.'))
               : const Center(child: CircularProgressIndicator());
         }
         final players = snap.data!;
@@ -49,7 +50,7 @@ class _LeaderboardTabState extends State<LeaderboardTab> with AutomaticKeepAlive
             padding: EdgeInsets.fromLTRB(16, 16, 16, 32 + MediaQuery.paddingOf(context).bottom),
             children: [
               if (players.isEmpty)
-                const EmptyState(icon: Icons.leaderboard_outlined, title: 'Personne au classement', message: 'Spotte une voiture pour ouvrir le bal.')
+                EmptyState(icon: Icons.leaderboard_outlined, title: tr('Personne au classement'), message: tr('Spotte une voiture pour ouvrir le bal.'))
               else ...[
                 if (myIndex >= 0) ...[
                   RankSummary(ranked: players, score: (p) => p.xp, me: me, weekly: false),
@@ -59,7 +60,7 @@ class _LeaderboardTabState extends State<LeaderboardTab> with AutomaticKeepAlive
                     margin: const EdgeInsets.only(bottom: 12),
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(color: AppColors.card, borderRadius: BorderRadius.circular(AppRadius.md), border: Border.all(color: AppColors.line)),
-                    child: Text('Tu n’es pas encore dans le top 100. Chaque spot rare te rapproche du classement.', style: AppText.body(13.5, color: AppColors.inkSoft)),
+                    child: Text(tr('Tu n’es pas encore dans le top 100. Chaque spot rare te rapproche du classement.'), style: AppText.body(13.5, color: AppColors.inkSoft)),
                   ),
                 RankTable(ranked: players, score: (p) => p.xp, me: me, weekly: false),
               ],

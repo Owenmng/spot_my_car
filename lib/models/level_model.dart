@@ -1,9 +1,13 @@
+import 'package:spot_my_car/l10n/i18n.dart';
+
 class Level {
   final int level;
-  final String title;
+  final String _title;
   final int xpRequired;
 
-  const Level(this.level, this.title, this.xpRequired);
+  const Level(this.level, this._title, this.xpRequired);
+
+  String get title => tr(_title);
 }
 
 /// Courbe progressive : les premiers niveaux arrivent vite pour accrocher,

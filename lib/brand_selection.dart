@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/services/audio_service.dart';
@@ -36,7 +37,7 @@ class _BrandSelectionState extends State<BrandSelection> {
       ..sort((a, b) => '${a['name']}'.compareTo('${b['name']}'));
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Marque préférée')),
+      appBar: AppBar(title: Text(tr('Marque préférée'))),
       body: Column(
         children: [
           Padding(
@@ -45,14 +46,14 @@ class _BrandSelectionState extends State<BrandSelection> {
               autofocus: false,
               textCapitalization: TextCapitalization.words,
               onChanged: (v) => setState(() => _query = v),
-              decoration: const InputDecoration(hintText: 'Rechercher une marque', prefixIcon: Icon(Icons.search_rounded)),
+              decoration: InputDecoration(hintText: tr('Rechercher une marque'), prefixIcon: Icon(Icons.search_rounded)),
             ),
           ),
           Expanded(
             child: DataManager.instance.brands.isEmpty
                 ? const Center(child: CircularProgressIndicator())
                 : brands.isEmpty
-                    ? const EmptyState(icon: Icons.search_off_rounded, title: 'Aucune marque', message: 'Essaie une autre orthographe.')
+                    ? EmptyState(icon: Icons.search_off_rounded, title: tr('Aucune marque'), message: tr('Essaie une autre orthographe.'))
                     : GridView.builder(
                         padding: EdgeInsets.fromLTRB(16, 0, 16, 24 + MediaQuery.paddingOf(context).bottom),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

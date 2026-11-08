@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
@@ -43,7 +44,7 @@ class ShareService {
                             children: [
                               const Icon(Icons.directions_car_filled_rounded, color: Colors.white54, size: 16),
                               const SizedBox(width: 6),
-                              Text('Spotté avec SpotMyCar', style: AppText.body(12.5, color: Colors.white54, weight: FontWeight.w700)),
+                              Text(tr('Spotté avec SpotMyCar'), style: AppText.body(12.5, color: Colors.white54, weight: FontWeight.w700)),
                             ],
                           ),
                         ],
@@ -65,7 +66,7 @@ class ShareService {
                               }
                             },
                       icon: const Icon(Icons.ios_share_rounded),
-                      label: Text(busy ? 'Préparation…' : 'Partager'),
+                      label: Text(busy ? tr('Préparation…') : tr('Partager')),
                     ),
                   ),
                 ],
@@ -88,7 +89,7 @@ class ShareService {
     final name = fullCarName(car['brandName'] as String?, car['modelName'] as String?);
     await SharePlus.instance.share(ShareParams(
       files: [XFile.fromData(bytes.buffer.asUint8List(), mimeType: 'image/png', name: 'spotmycar.png')],
-      text: 'Regarde ce que je viens de spotter : $name 👀',
+      text: tr('Regarde ce que je viens de spotter : {0} 👀', [name]),
     ));
   }
 }

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/widgets/car_image.dart';
 import 'package:spot_my_car/shared/natural_sort.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +63,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
             Navigator.of(context).pop();
           },
         ),
-        title: Text('Choisir un modèle ${widget.brandName}'),
+        title: Text(tr('Choisir un modèle {0}', [widget.brandName])),
       ),
       body: Column(
         children: [
@@ -71,7 +72,7 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Rechercher un modèle...',
+                hintText: tr('Rechercher un modèle...'),
                 prefixIcon: const Icon(Icons.search),
               ),
             ),
@@ -92,14 +93,14 @@ class _ModelSelectionScreenState extends State<ModelSelectionScreen> {
                     child: ListTile(
                       leading: Icon(Icons.add_circle_outline, color: Theme.of(context).primaryColor),
                       title: Text(
-                        "Autre modèle...", 
+                        tr('Autre modèle...'), 
                         style: TextStyle(fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor)
                       ),
-                      subtitle: const Text("Le modèle que vous cherchez n'est pas dans la liste ?"),
+                      subtitle: Text(tr('Le modèle que vous cherchez n\'est pas dans la liste ?')),
                       onTap: () {
                         AudioService.instance.playSfx(SoundEffect.clicLeger);
                         // On retourne une map spéciale qui sera reconnue par l'écran précédent
-                        Navigator.of(context).pop({'id': 'other', 'name': 'Autre'});
+                        Navigator.of(context).pop({'id': 'other', 'name': tr('Autre')});
                       },
                     ),
                   );

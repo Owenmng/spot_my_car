@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -71,14 +72,14 @@ class _GarageScreenState extends State<GarageScreen> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Retirer du garage ?'),
-        content: Text('${fullCarName(car['brandName'] as String?, car['modelName'] as String?)} sera supprimée, avec sa photo.'),
+        title: Text(tr('Retirer du garage ?')),
+        content: Text(tr('{0} sera supprimée, avec sa photo.', [fullCarName(car['brandName'] as String?, car['modelName'] as String?)])),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Garder')),
+          TextButton(onPressed: () => Navigator.pop(context, false), child: Text(tr('Garder'))),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: AppColors.danger),
-            child: const Text('Supprimer'),
+            child: Text(tr('Supprimer')),
           ),
         ],
       ),
@@ -93,9 +94,9 @@ class _GarageScreenState extends State<GarageScreen> {
       }
       await FirebaseFirestore.instance.collection('spotted_cars').doc(id).delete();
       await PhotoStore.delete(id);
-      if (mounted) showAppSnack(context, 'Voiture retirée du garage.', icon: Icons.delete_outline);
+      if (mounted) showAppSnack(context, tr('Voiture retirée du garage.'), icon: Icons.delete_outline);
     } catch (_) {
-      if (mounted) showAppSnack(context, 'La suppression a échoué.', icon: Icons.error_outline);
+      if (mounted) showAppSnack(context, tr('La suppression a échoué.'), icon: Icons.error_outline);
     }
   }
 
@@ -108,7 +109,7 @@ class _GarageScreenState extends State<GarageScreen> {
           children: [
             ListTile(
               leading: const Icon(Icons.ios_share_rounded),
-              title: const Text('Partager la carte'),
+              title: Text(tr('Partager la carte')),
               onTap: () {
                 Navigator.pop(context);
                 ShareService.shareSpot(this.context, car, carId: id);
@@ -116,7 +117,7 @@ class _GarageScreenState extends State<GarageScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.delete_outline, color: AppColors.danger),
-              title: const Text('Supprimer', style: TextStyle(color: AppColors.danger)),
+              title: Text(tr('Supprimer'), style: TextStyle(color: AppColors.danger)),
               onTap: () {
                 Navigator.pop(context);
                 _delete(id, car);
@@ -162,28 +163,28 @@ class _GarageScreenState extends State<GarageScreen> {
               else if (snap.hasError)
                 SliverFillRemaining(
                   hasScrollBody: false,
-                  child: EmptyState(icon: Icons.cloud_off_rounded, title: 'Garage injoignable', message: "Impossible de charger tes voitures pour l'instant. Vérifie ta connexion."),
+                  child: EmptyState(icon: Icons.cloud_off_rounded, title: tr('Garage injoignable'), message: tr('Impossible de charger tes voitures pour l\'instant. Vérifie ta connexion.')),
                 )
               else if (cars.isEmpty)
                 SliverFillRemaining(
                   hasScrollBody: false,
                   child: EmptyState(
                     icon: Icons.directions_car_outlined,
-                    title: 'Ton garage attend sa première voiture',
-                    message: 'Croise une belle auto, dégaine ton téléphone et prends-la en photo. Je m’occupe du reste.',
+                    title: tr('Ton garage attend sa première voiture'),
+                    message: tr('Croise une belle auto, dégaine ton téléphone et prends-la en photo. Je m’occupe du reste.'),
                     action: widget.onAddSpot == null
                         ? null
                         : ElevatedButton.icon(
                             onPressed: widget.onAddSpot,
                             icon: const Icon(Icons.photo_camera_rounded),
-                            label: const Text('Mon premier spot'),
+                            label: Text(tr('Mon premier spot')),
                           ),
                   ),
                 )
               else if (filtered.isEmpty)
-                const SliverFillRemaining(
+                SliverFillRemaining(
                   hasScrollBody: false,
-                  child: EmptyState(icon: Icons.search_off_rounded, title: 'Rien par ici', message: 'Aucune voiture ne correspond à ta recherche.'),
+                  child: EmptyState(icon: Icons.search_off_rounded, title: tr('Rien par ici'), message: tr('Aucune voiture ne correspond à ta recherche.')),
                 )
               else
                 SliverPadding(
@@ -222,10 +223,10 @@ class _GarageScreenState extends State<GarageScreen> {
 
   Widget _toolbar() {
     final chips = {
-      _Filter.all: 'Tout',
-      _Filter.rare: 'Rares et +',
-      _Filter.week: 'Cette semaine',
-      _Filter.photo: 'Avec photo',
+      _Filter.all: tr('Tout'),
+      _Filter.rare: tr('Rares et +'),
+      _Filter.week: tr('Cette semaine'),
+      _Filter.photo: tr('Avec photo'),
     };
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 22, 16, 14),
@@ -234,7 +235,7 @@ class _GarageScreenState extends State<GarageScreen> {
         children: [
           Row(
             children: [
-              Expanded(child: Text('Ma collection', style: AppText.display(22))),
+              Expanded(child: Text(tr('Ma collection'), style: AppText.display(22))),
               IconButton(
                 onPressed: () => setState(() {
                   _searching = !_searching;
@@ -257,8 +258,8 @@ class _GarageScreenState extends State<GarageScreen> {
                       controller: _search,
                       autofocus: true,
                       onChanged: (v) => setState(() => _query = v.trim()),
-                      decoration: const InputDecoration(
-                        hintText: 'Plaque, marque, modèle, ville…',
+                      decoration: InputDecoration(
+                        hintText: tr('Plaque, marque, modèle, ville…'),
                         prefixIcon: Icon(Icons.search_rounded),
                       ),
                     ),
@@ -315,10 +316,10 @@ class _Header extends StatelessWidget {
 
   String _greeting() {
     final h = DateTime.now().hour;
-    if (h < 6) return 'Encore debout';
-    if (h < 12) return 'Bonjour';
-    if (h < 18) return 'Salut';
-    return 'Bonsoir';
+    if (h < 6) return tr('Encore debout');
+    if (h < 12) return tr('Bonjour');
+    if (h < 18) return tr('Salut');
+    return tr('Bonsoir');
   }
 
   @override
@@ -351,7 +352,7 @@ class _Header extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(_greeting(), style: AppText.body(15, color: AppColors.inkSoft, weight: FontWeight.w600)),
-                        Text(pseudo == null || pseudo.isEmpty ? 'Mon garage' : pseudo, style: AppText.display(30)),
+                        Text(pseudo == null || pseudo.isEmpty ? tr('Mon garage') : pseudo, style: AppText.display(30)),
                       ],
                     ),
                   ),
@@ -368,7 +369,7 @@ class _Header extends StatelessWidget {
                         children: [
                           const Icon(Icons.map_outlined, size: 18),
                           const SizedBox(width: 6),
-                          Text('Carte', style: AppText.body(14, weight: FontWeight.w700)),
+                          Text(tr('Carte'), style: AppText.body(14, weight: FontWeight.w700)),
                         ],
                       ),
                     ),
@@ -403,7 +404,7 @@ class _Header extends StatelessWidget {
                               Text(level.title, style: AppText.display(18)),
                               const SizedBox(height: 2),
                               Text(
-                                next == null ? '$xp XP · niveau max' : '$xp / ${next.xpRequired} XP',
+                                next == null ? tr('{0} XP · niveau max', [xp]) : tr('{0} / {1} XP', [xp, next.xpRequired]),
                                 style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600),
                               ),
                             ],
@@ -411,7 +412,7 @@ class _Header extends StatelessWidget {
                         ),
                         if (streak > 0)
                           Tooltip(
-                            message: 'Jours de spot d’affilée',
+                            message: tr('Jours de spot d’affilée'),
                             child: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                               decoration: BoxDecoration(color: AppColors.panelHi, borderRadius: BorderRadius.circular(99)),
@@ -433,7 +434,7 @@ class _Header extends StatelessWidget {
                       children: [
                         Expanded(child: StatPill(value: '${cars.length}', label: 'spots')),
                         Expanded(child: StatPill(value: '$brands', label: 'marques')),
-                        Expanded(child: StatPill(value: '$rare', label: 'rares et +')),
+                        Expanded(child: StatPill(value: '$rare', label: tr('rares et +'))),
                       ],
                     ),
                   ],
@@ -453,7 +454,7 @@ class _Header extends StatelessWidget {
                     style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: const EdgeInsets.symmetric(horizontal: 6)),
                     onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
                     icon: const Icon(Icons.leaderboard_rounded, size: 16),
-                    label: const Text('Amis & classement'),
+                    label: Text(tr('Amis & classement')),
                   ),
                 ],
               ),
@@ -490,9 +491,9 @@ class _TargetsStrip extends StatelessWidget {
                 children: [
                   Icon(Icons.gps_fixed_rounded, size: 15, color: accent),
                   const SizedBox(width: 6),
-                  Text('DANS LE VISEUR', style: AppText.label(11.5, color: AppColors.inkMuted)),
+                  Text(tr('DANS LE VISEUR'), style: AppText.label(11.5, color: AppColors.inkMuted)),
                   const Spacer(),
-                  Text('+${WishlistService.bonusXp} XP chacune', style: AppText.body(12, color: AppColors.inkSoft, weight: FontWeight.w600)),
+                  Text(tr('+{0} XP chacune', [WishlistService.bonusXp]), style: AppText.body(12, color: AppColors.inkSoft, weight: FontWeight.w600)),
                 ],
               ),
               const SizedBox(height: 10),
@@ -578,19 +579,19 @@ class _PlayStrip extends StatelessWidget {
               final toClaim = duels.where((d) => d.winner == me && d.claimed[me] != true).length;
               String sub;
               if (invites > 0) {
-                sub = invites == 1 ? '1 défi reçu !' : '$invites défis reçus !';
+                sub = invites == 1 ? tr('1 défi reçu !') : tr('{0} défis reçus !', [invites]);
               } else if (toClaim > 0) {
-                sub = 'Gains à encaisser';
+                sub = tr('Gains à encaisser');
               } else if (live.isNotEmpty) {
                 final d = live.first;
                 final mine = d.scoreOf(me ?? ''), theirs = d.scoreOf(d.other(me ?? ''));
-                sub = mine > theirs ? 'Tu mènes ${d.scoreLabel(mine)}' : mine == theirs ? 'Égalité, accélère' : 'Tu es mené';
+                sub = mine > theirs ? tr('Tu mènes {0}', [d.scoreLabel(mine)]) : mine == theirs ? tr('Égalité, accélère') : tr('Tu es mené');
               } else {
-                sub = 'Défie un ami';
+                sub = tr('Défie un ami');
               }
               return _PlayTile(
                 icon: Icons.sports_mma_rounded,
-                title: 'Duels',
+                title: tr('Duels'),
                 subtitle: sub,
                 badge: invites + toClaim,
                 onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => CommunityScreen(initialTab: invites + toClaim + live.length > 0 ? 1 : 0))),
@@ -606,8 +607,8 @@ class _PlayStrip extends StatelessWidget {
               final played = (snap.data?.data()?['quizClaims'] as Map?)?[DailyChallenge.todayKey()];
               return _PlayTile(
                 icon: Icons.quiz_rounded,
-                title: 'Blind test',
-                subtitle: played == null ? 'Jusqu’à +50 XP' : 'Fait : +$played XP',
+                title: tr('Blind test'),
+                subtitle: played == null ? tr('Jusqu’à +50 XP') : tr('Fait : +{0} XP', [played]),
                 badge: played == null ? 1 : 0,
                 dot: true,
                 onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const QuizScreen())),
@@ -724,7 +725,7 @@ class _ChallengeCardState extends State<_ChallengeCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('DÉFI DU JOUR · ${c.title.toUpperCase()}', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                Text(tr('DÉFI DU JOUR · {0}', [c.title.toUpperCase()]), style: AppText.label(10.5, color: AppColors.inkMuted)),
                 const SizedBox(height: 3),
                 Text(c.hint, style: AppText.body(15, weight: FontWeight.w700)),
                 const SizedBox(height: 6),
@@ -741,7 +742,7 @@ class _ChallengeCardState extends State<_ChallengeCard> {
                         ),
                       ),
                     const SizedBox(width: 4),
-                    Text('+${c.reward} XP', style: AppText.body(12.5, color: AppColors.inkSoft, weight: FontWeight.w700)),
+                    Text(tr('+{0} XP', [c.reward]), style: AppText.body(12.5, color: AppColors.inkSoft, weight: FontWeight.w700)),
                   ],
                 ),
               ],
@@ -759,9 +760,9 @@ class _ChallengeCardState extends State<_ChallengeCard> {
                       final ok = await DailyChallenge.claim(c).catchError((_) => false);
                       if (!context.mounted) return;
                       setState(() => _busy = false);
-                      if (ok) showAppSnack(context, 'Défi réussi ! +${c.reward} XP', icon: Icons.emoji_events_rounded);
+                      if (ok) showAppSnack(context, tr('Défi réussi ! +{0} XP', [c.reward]), icon: Icons.emoji_events_rounded);
                     },
-              child: const Text('Réclamer'),
+              child: Text(tr('Réclamer')),
             ),
         ],
       ),

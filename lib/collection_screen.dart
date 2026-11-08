@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -71,12 +72,12 @@ class _CollectionScreenState extends State<CollectionScreen> with AutomaticKeepA
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Collection', style: AppText.display(32)),
+                      Text(tr('Collection'), style: AppText.display(32)),
                       const SizedBox(height: 6),
                       Text(
                         allGot == 0
-                            ? 'Chaque modèle spotté remplit ton album. ${allModels.toString()} modèles t’attendent.'
-                            : '$allGot modèles sur $allModels, chez $started marques. Continue comme ça.',
+                            ? tr('Chaque modèle spotté remplit ton album. {0} modèles t’attendent.', [allModels.toString()])
+                            : tr('{0} modèles sur {1}, chez {2} marques. Continue comme ça.', [allGot, allModels, started]),
                         style: AppText.body(15, color: AppColors.inkSoft),
                       ),
                       const SizedBox(height: 18),
@@ -84,7 +85,7 @@ class _CollectionScreenState extends State<CollectionScreen> with AutomaticKeepA
                         scrollDirection: Axis.horizontal,
                         child: Row(
                           children: [
-                            for (final e in {_Sort.progress: 'Avancement', _Sort.name: 'A → Z', _Sort.rarity: 'Les plus rares'}.entries)
+                            for (final e in {_Sort.progress: tr('Avancement'), _Sort.name: tr('A → Z'), _Sort.rarity: tr('Les plus rares')}.entries)
                               Padding(
                                 padding: const EdgeInsets.only(right: 8),
                                 child: ChoiceChip(
@@ -192,7 +193,7 @@ class _BrandTile extends StatelessWidget {
             style: AppText.body(13, weight: FontWeight.w800),
           ),
           Text(
-            done ? 'COMPLÈTE' : '$got / $total',
+            done ? tr('COMPLÈTE') : '$got / $total',
             style: AppText.body(11.5, weight: FontWeight.w600, color: done ? const Color(0xFFFFD447) : AppColors.inkSoft),
           ),
         ],

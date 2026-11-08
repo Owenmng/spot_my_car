@@ -1,4 +1,5 @@
 // Fichier: lib/auth_gate.dart
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -48,12 +49,12 @@ class _AuthGateState extends State<AuthGate> {
             
             // Pendant qu'on attend la première donnée du stream -> OK, on ne touche pas
             if (userDocSnapshot.connectionState == ConnectionState.waiting) {
-              return const LoadingAnimationWidget(loadingMessage: 'Connexion…');
+              return LoadingAnimationWidget(loadingMessage: tr('Connexion…'));
             }
 
             // Si on a une erreur -> OK, on ne touche pas
             if (userDocSnapshot.hasError) {
-              return const LoadingAnimationWidget(loadingMessage: 'Reconnexion en cours…');
+              return LoadingAnimationWidget(loadingMessage: tr('Reconnexion en cours…'));
             }
 
             // Si le document n'existe pas ou si le profil n'est pas complet -> OK, on ne touche pas

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
@@ -7,7 +8,7 @@ import 'package:spot_my_car/widgets/ui_kit.dart';
 class LoadingAnimationWidget extends StatelessWidget {
   final String loadingMessage;
 
-  const LoadingAnimationWidget({super.key, this.loadingMessage = 'Chargement…'});
+  LoadingAnimationWidget({super.key, this.loadingMessage = tr('Chargement…')});
 
   @override
   Widget build(BuildContext context) {

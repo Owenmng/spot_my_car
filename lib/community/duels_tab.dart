@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -97,11 +98,11 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
       AudioService.instance.playSfx(SoundEffect.notification);
       HapticFeedback.mediumImpact();
       if (mounted) Navigator.pop(context, true);
-      if (mounted) showAppSnack(context, 'Défi envoyé à ${o.name} !', icon: Icons.sports_mma_rounded);
+      if (mounted) showAppSnack(context, tr('Défi envoyé à {0} !', [o.name]), icon: Icons.sports_mma_rounded);
     } catch (_) {
       if (mounted) {
         setState(() => _sending = false);
-        showAppSnack(context, "Le défi n'est pas parti. Réessaie.", icon: Icons.error_outline);
+        showAppSnack(context, tr('Le défi n\'est pas parti. Réessaie.'), icon: Icons.error_outline);
       }
     }
   }
@@ -118,7 +119,7 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text('Nouveau duel', style: AppText.display(26)),
+              Text(tr('Nouveau duel'), style: AppText.display(26)),
               const SizedBox(height: 14),
               if (_opponent == null)
                 StreamBuilder<List<Player>>(
@@ -127,7 +128,7 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
                     final me = FirebaseAuth.instance.currentUser?.uid;
                     final friends = (snap.data ?? []).where((p) => p.uid != me).toList();
                     if (friends.isEmpty) {
-                      return Text("Ajoute d'abord un ami dans l'onglet Amis.", style: AppText.body(14, color: AppColors.inkSoft));
+                      return Text(tr('Ajoute d\'abord un ami dans l\'onglet Amis.'), style: AppText.body(14, color: AppColors.inkSoft));
                     }
                     return SizedBox(
                       height: 84,
@@ -158,8 +159,8 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
                   children: [
                     UserAvatar(photoUrl: _opponent!.photoUrl, name: _opponent!.name, size: 40, ring: accent),
                     const SizedBox(width: 12),
-                    Expanded(child: Text('Contre ${_opponent!.name}', style: AppText.body(16, weight: FontWeight.w800))),
-                    if (widget.opponent == null) TextButton(onPressed: () => setState(() => _opponent = null), child: const Text('Changer')),
+                    Expanded(child: Text(tr('Contre {0}', [_opponent!.name]), style: AppText.body(16, weight: FontWeight.w800))),
+                    if (widget.opponent == null) TextButton(onPressed: () => setState(() => _opponent = null), child: Text(tr('Changer'))),
                   ],
                 ),
               const SizedBox(height: 18),
@@ -193,7 +194,7 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
                           ),
                           if (m == DuelMode.theme && _mode == m)
                             IconButton(
-                              tooltip: 'Autre thème',
+                              tooltip: tr('Autre thème'),
                               onPressed: () {
                                 HapticFeedback.selectionClick();
                                 final pool = DailyChallenge.duelThemes.where((t) => t.id != _theme.id).toList()..shuffle();
@@ -207,14 +208,14 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
                   ),
                 ),
               const SizedBox(height: 10),
-              Text('DURÉE', style: AppText.label(11, color: AppColors.inkMuted)),
+              Text(tr('DURÉE'), style: AppText.label(11, color: AppColors.inkMuted)),
               const SizedBox(height: 8),
               SegmentedButton<int>(
                 showSelectedIcon: false,
-                segments: const [
-                  ButtonSegment(value: 24, label: Text('24 h')),
-                  ButtonSegment(value: 72, label: Text('3 jours')),
-                  ButtonSegment(value: 168, label: Text('1 semaine')),
+                segments: [
+                  ButtonSegment(value: 24, label: Text(tr('24 h'))),
+                  ButtonSegment(value: 72, label: Text(tr('3 jours'))),
+                  ButtonSegment(value: 168, label: Text(tr('1 semaine'))),
                 ],
                 selected: {_hours},
                 onSelectionChanged: (s) => setState(() => _hours = s.first),
@@ -224,14 +225,14 @@ class _NewDuelSheetState extends State<_NewDuelSheet> {
                 children: [
                   const Icon(Icons.emoji_events_outlined, color: _gold, size: 18),
                   const SizedBox(width: 8),
-                  Expanded(child: Text('Le vainqueur remporte +$stake XP. Le chrono démarre quand ${_opponent?.name ?? 'ton ami'} accepte.', style: AppText.body(13, color: AppColors.inkSoft))),
+                  Expanded(child: Text(tr('Le vainqueur remporte +{0} XP. Le chrono démarre quand {1} accepte.', [stake, _opponent?.name ?? tr('ton ami')]), style: AppText.body(13, color: AppColors.inkSoft))),
                 ],
               ),
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 onPressed: _opponent == null || _sending ? null : _send,
                 icon: const Icon(Icons.sports_mma_rounded),
-                label: Text(_sending ? 'Envoi…' : 'Lancer le défi'),
+                label: Text(_sending ? tr('Envoi…') : tr('Lancer le défi')),
               ),
             ],
           ),
@@ -308,8 +309,8 @@ class _DuelsTabState extends State<DuelsTab> with AutomaticKeepAliveClientMixin 
                   Expanded(
                     child: _GameTile(
                       icon: Icons.quiz_rounded,
-                      title: 'Blind test solo',
-                      subtitle: 'Jusqu’à +50 XP / jour',
+                      title: tr('Blind test solo'),
+                      subtitle: tr('Jusqu’à +50 XP / jour'),
                       onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const QuizScreen())),
                     ),
                   ),
@@ -317,8 +318,8 @@ class _DuelsTabState extends State<DuelsTab> with AutomaticKeepAliveClientMixin 
                   Expanded(
                     child: _GameTile(
                       icon: Icons.groups_rounded,
-                      title: 'Blind test à 2',
-                      subtitle: 'Mêmes photos, +60 XP',
+                      title: tr('Blind test à 2'),
+                      subtitle: tr('Mêmes photos, +60 XP'),
                       onTap: () => showNewDuelSheet(context, initialMode: DuelMode.quiz),
                     ),
                   ),
@@ -327,28 +328,28 @@ class _DuelsTabState extends State<DuelsTab> with AutomaticKeepAliveClientMixin 
               if (snap.connectionState == ConnectionState.waiting && duels.isEmpty)
                 const Padding(padding: EdgeInsets.all(40), child: Center(child: CircularProgressIndicator())),
               if (snap.hasData && duels.isEmpty)
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(top: 12),
                   child: EmptyState(
                     icon: Icons.sports_mma_rounded,
-                    title: 'Aucun duel pour l’instant',
-                    message: 'Défie un ami : course aux XP, chasse à la voiture la plus rare, tour des marques ou thème imposé.',
+                    title: tr('Aucun duel pour l’instant'),
+                    message: tr('Défie un ami : course aux XP, chasse à la voiture la plus rare, tour des marques ou thème imposé.'),
                   ),
                 ),
               if (invites.isNotEmpty) ...[
-                _label('ON TE DÉFIE'),
+                _label(tr('ON TE DÉFIE')),
                 for (final d in invites) _DuelCard(duel: d, me: me, player: _player),
               ],
               if (live.isNotEmpty) ...[
-                _label('EN COURS'),
+                _label(tr('EN COURS')),
                 for (final d in live) _DuelCard(duel: d, me: me, player: _player),
               ],
               if (waiting.isNotEmpty) ...[
-                _label('EN ATTENTE DE RÉPONSE'),
+                _label(tr('EN ATTENTE DE RÉPONSE')),
                 for (final d in waiting) _DuelCard(duel: d, me: me, player: _player),
               ],
               if (done.isNotEmpty) ...[
-                _label('TERMINÉS'),
+                _label(tr('TERMINÉS')),
                 for (final d in done.take(15)) _DuelCard(duel: d, me: me, player: _player),
               ],
             ],
@@ -386,7 +387,7 @@ class _Record extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('PALMARÈS', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                Text(tr('PALMARÈS'), style: AppText.label(10.5, color: AppColors.inkMuted)),
                 const SizedBox(height: 4),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -401,7 +402,7 @@ class _Record extends StatelessWidget {
               ],
             ),
           ),
-          ElevatedButton.icon(onPressed: onNew, icon: const Icon(Icons.add_rounded), label: const Text('Défier')),
+          ElevatedButton.icon(onPressed: onNew, icon: const Icon(Icons.add_rounded), label: Text(tr('Défier'))),
         ],
       ),
     );
@@ -418,9 +419,9 @@ class _DuelCard extends StatelessWidget {
     final end = duel.endAt;
     if (end == null) return '';
     final d = end.difference(DateTime.now());
-    if (d.isNegative) return 'Terminé';
-    if (d.inHours >= 24) return '${d.inDays} j ${d.inHours % 24} h';
-    if (d.inMinutes >= 60) return '${d.inHours} h ${d.inMinutes % 60} min';
+    if (d.isNegative) return tr('Terminé');
+    if (d.inHours >= 24) return tr('{0} j {1} h', [d.inDays, d.inHours % 24]);
+    if (d.inMinutes >= 60) return tr('{0} h {1} min', [d.inHours, d.inMinutes % 60]);
     return '${d.inMinutes} min';
   }
 
@@ -465,7 +466,7 @@ class _DuelCard extends StatelessWidget {
                       ],
                     )
                   else
-                    Text('+${duel.stake} XP', style: AppText.mono(12, color: _gold)),
+                    Text(tr('+{0} XP', [duel.stake]), style: AppText.mono(12, color: _gold)),
                 ],
               ),
               const SizedBox(height: 4),
@@ -473,7 +474,7 @@ class _DuelCard extends StatelessWidget {
               const SizedBox(height: 14),
               Row(
                 children: [
-                  _Side(label: 'Toi', score: duel.isPending || (duel.mode == DuelMode.quiz && !duel.hasPlayed(me)) ? null : duel.scoreLabel(mine), win: winner == me, alignEnd: false),
+                  _Side(label: tr('Toi'), score: duel.isPending || (duel.mode == DuelMode.quiz && !duel.hasPlayed(me)) ? null : duel.scoreLabel(mine), win: winner == me, alignEnd: false),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Text('VS', style: AppText.display(18, color: AppColors.inkMuted)),
@@ -482,7 +483,7 @@ class _DuelCard extends StatelessWidget {
                     label: name,
                     photoUrl: other?.photoUrl,
                     score: duel.isPending || (duel.mode == DuelMode.quiz && (!duel.hasPlayed(otherUid) || (!duel.hasPlayed(me) && !duel.isFinished)))
-                        ? (duel.mode == DuelMode.quiz && duel.hasPlayed(otherUid) && !duel.isPending ? '✓ joué' : null)
+                        ? (duel.mode == DuelMode.quiz && duel.hasPlayed(otherUid) && !duel.isPending ? tr('✓ joué') : null)
                         : duel.scoreLabel(theirs),
                     win: winner == otherUid,
                     alignEnd: true,
@@ -516,10 +517,10 @@ class _DuelCard extends StatelessWidget {
   Widget _actions(BuildContext context, String name) {
     final svc = DuelService.instance;
     if (duel.isPending && duel.opponentId == me) {
-      final days = duel.hours < 48 ? '24 h' : '${duel.hours ~/ 24} jours';
+      final days = duel.hours < 48 ? tr('24 h') : '${duel.hours ~/ 24} jours';
       return Row(
         children: [
-          Expanded(child: OutlinedButton(onPressed: () => svc.decline(duel), child: const Text('Refuser'))),
+          Expanded(child: OutlinedButton(onPressed: () => svc.decline(duel), child: Text(tr('Refuser')))),
           const SizedBox(width: 10),
           Expanded(
             flex: 2,
@@ -528,9 +529,9 @@ class _DuelCard extends StatelessWidget {
                 await svc.accept(duel);
                 HapticFeedback.heavyImpact();
                 AudioService.instance.playSfx(SoundEffect.notification);
-                if (context.mounted) showAppSnack(context, 'C’est parti pour $days !', icon: Icons.flag_rounded);
+                if (context.mounted) showAppSnack(context, tr('C’est parti pour {0} !', [days]), icon: Icons.flag_rounded);
               },
-              child: Text('Accepter ($days)'),
+              child: Text(tr('Accepter ({0})', [days])),
             ),
           ),
         ],
@@ -539,16 +540,16 @@ class _DuelCard extends StatelessWidget {
     if (duel.isPending) {
       return Row(
         children: [
-          Expanded(child: Text('En attente de $name…', style: AppText.body(13, color: AppColors.inkSoft))),
-          TextButton(onPressed: () => svc.cancel(duel), child: const Text('Annuler')),
+          Expanded(child: Text(tr('En attente de {0}…', [name]), style: AppText.body(13, color: AppColors.inkSoft))),
+          TextButton(onPressed: () => svc.cancel(duel), child: Text(tr('Annuler'))),
         ],
       );
     }
     if (duel.status == 'declined') {
       return Row(
         children: [
-          Expanded(child: Text('$name a décliné.', style: AppText.body(13, color: AppColors.inkSoft))),
-          TextButton(onPressed: () => svc.remove(duel), child: const Text('Effacer')),
+          Expanded(child: Text(tr('{0} a décliné.', [name]), style: AppText.body(13, color: AppColors.inkSoft))),
+          TextButton(onPressed: () => svc.remove(duel), child: Text(tr('Effacer'))),
         ],
       );
     }
@@ -559,19 +560,19 @@ class _DuelCard extends StatelessWidget {
           child: ElevatedButton.icon(
             onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => QuizScreen(duel: duel))),
             icon: const Icon(Icons.play_arrow_rounded),
-            label: const Text('Jouer mon blind test'),
+            label: Text(tr('Jouer mon blind test')),
           ),
         );
       }
-      return Text('Ton score est enregistré. En attente de $name…', style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600));
+      return Text(tr('Ton score est enregistré. En attente de {0}…', [name]), style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600));
     }
     if (duel.isActive) {
       return Text(
         duel.scoreOf(me) > duel.scoreOf(duel.other(me))
-            ? 'Tu mènes. Garde le rythme !'
+            ? tr('Tu mènes. Garde le rythme !')
             : duel.scoreOf(me) == duel.scoreOf(duel.other(me))
-                ? 'Égalité parfaite. Le prochain spot fait la différence.'
-                : '$name mène. Sors spotter !',
+                ? tr('Égalité parfaite. Le prochain spot fait la différence.')
+                : tr('{0} mène. Sors spotter !', [name]),
         style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600),
       );
     }
@@ -582,7 +583,7 @@ class _DuelCard extends StatelessWidget {
         children: [
           const Icon(Icons.emoji_events_rounded, color: _gold),
           const SizedBox(width: 8),
-          Expanded(child: Text('Victoire !', style: AppText.body(15, weight: FontWeight.w800, color: _gold))),
+          Expanded(child: Text(tr('Victoire !'), style: AppText.body(15, weight: FontWeight.w800, color: _gold))),
           if (!claimed)
             ElevatedButton(
               onPressed: () async {
@@ -591,16 +592,16 @@ class _DuelCard extends StatelessWidget {
                   AudioService.instance.playSfx(SoundEffect.succesPrincipal);
                   HapticFeedback.heavyImpact();
                 }
-                if (context.mounted) showAppSnack(context, ok ? '+${duel.stake} XP encaissés' : 'Déjà encaissé', icon: Icons.emoji_events_rounded);
+                if (context.mounted) showAppSnack(context, ok ? tr('+{0} XP encaissés', [duel.stake]) : tr('Déjà encaissé'), icon: Icons.emoji_events_rounded);
               },
-              child: Text('Encaisser +${duel.stake}'),
+              child: Text(tr('Encaisser +{0}', [duel.stake])),
             )
           else
-            Text('Encaissé', style: AppText.body(13, color: AppColors.inkSoft)),
+            Text(tr('Encaissé'), style: AppText.body(13, color: AppColors.inkSoft)),
         ],
       );
     }
-    return Text(w == '' ? 'Match nul. Revanche ?' : '$name l’emporte. Revanche ?', style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600));
+    return Text(w == '' ? tr('Match nul. Revanche ?') : tr('{0} l’emporte. Revanche ?', [name]), style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600));
   }
 }
 

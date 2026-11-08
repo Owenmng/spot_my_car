@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 import 'dart:math';
 
@@ -190,7 +191,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.duel == null ? 'Blind test' : 'Blind test · duel')),
+      appBar: AppBar(title: Text(widget.duel == null ? tr('Blind test') : tr('Blind test · duel'))),
       body: _questions.isEmpty ? const Center(child: CircularProgressIndicator()) : _finished ? _results() : _question(),
     );
   }
@@ -212,7 +213,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
                 Text('${_index + 1}/${_questions.length}', style: AppText.mono(14, color: AppColors.inkSoft)),
                 const Spacer(),
                 if (_streak >= 2)
-                  Text('🔥 $_streak d’affilée', style: AppText.body(13, weight: FontWeight.w800, color: const Color(0xFFFFC53D))).animate(key: ValueKey(_streak)).scale(begin: const Offset(1.3, 1.3)),
+                  Text(tr('🔥 {0} d’affilée', [_streak]), style: AppText.body(13, weight: FontWeight.w800, color: const Color(0xFFFFC53D))).animate(key: ValueKey(_streak)).scale(begin: const Offset(1.3, 1.3)),
                 const SizedBox(width: 12),
                 Text('$_score pts', style: AppText.mono(14)),
               ],
@@ -234,7 +235,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
                       Positioned(
                         right: 8,
                         bottom: 6,
-                        child: Text('Photo : $credit', style: AppText.body(10, color: Colors.white70)),
+                        child: Text(tr('Photo : {0}', [credit]), style: AppText.body(10, color: Colors.white70)),
                       ),
                   ],
                 ),
@@ -242,7 +243,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
             ),
             const SizedBox(height: 14),
             Text(
-              q.aboutBrand ? 'Quelle marque ?' : 'Quelle ${q.brand['name']} ?',
+              q.aboutBrand ? tr('Quelle marque ?') : tr('Quelle {0} ?', [q.brand['name']]),
               textAlign: TextAlign.center,
               style: AppText.display(24),
             ),
@@ -282,7 +283,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
                 ),
               ),
             if (_picked == '')
-              Text('Temps écoulé !', textAlign: TextAlign.center, style: AppText.body(13, color: accent, weight: FontWeight.w700)),
+              Text(tr('Temps écoulé !'), textAlign: TextAlign.center, style: AppText.body(13, color: accent, weight: FontWeight.w700)),
           ],
         ),
       ),
@@ -291,12 +292,12 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
 
   Widget _results() {
     final verdict = _score == 10
-        ? 'Sans faute. Respect.'
+        ? tr('Sans faute. Respect.')
         : _score >= 8
-            ? 'Œil de connaisseur.'
+            ? tr('Œil de connaisseur.')
             : _score >= 5
-                ? 'Pas mal du tout.'
-                : 'Il est temps de feuilleter le catalogue.';
+                ? tr('Pas mal du tout.')
+                : tr('Il est temps de feuilleter le catalogue.');
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -313,24 +314,24 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
             const SizedBox(height: 24),
             Row(
               children: [
-                Expanded(child: StatPill(value: '$_bestStreak', label: 'meilleure série')),
+                Expanded(child: StatPill(value: '$_bestStreak', label: tr('meilleure série'))),
                 Expanded(child: StatPill(value: '${max(_best, _score)}', label: 'record')),
                 Expanded(child: StatPill(value: _xpEarned == null ? '…' : '+$_xpEarned', label: 'XP')),
               ],
             ),
             if (widget.duel != null) ...[
               const SizedBox(height: 14),
-              Text('Score envoyé à ton adversaire. Le vainqueur remporte +${widget.duel!.stake} XP dans l’onglet Duels.', textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkSoft)),
+              Text(tr('Score envoyé à ton adversaire. Le vainqueur remporte +{0} XP dans l’onglet Duels.', [widget.duel!.stake]), textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkSoft)),
             ] else if (_xpEarned == 0) ...[
               const SizedBox(height: 14),
-              Text('Les XP du blind test se gagnent sur la première partie du jour.', textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkMuted)),
+              Text(tr('Les XP du blind test se gagnent sur la première partie du jour.'), textAlign: TextAlign.center, style: AppText.body(13, color: AppColors.inkMuted)),
             ],
             const SizedBox(height: 28),
             if (widget.duel == null) ...[
-              SizedBox(width: double.infinity, child: ElevatedButton.icon(onPressed: _start, icon: const Icon(Icons.replay_rounded), label: const Text('Rejouer'))),
+              SizedBox(width: double.infinity, child: ElevatedButton.icon(onPressed: _start, icon: const Icon(Icons.replay_rounded), label: Text(tr('Rejouer')))),
               const SizedBox(height: 8),
             ],
-            TextButton(onPressed: () => Navigator.pop(context), child: Text(widget.duel == null ? 'Retour au garage' : 'Voir le duel')),
+            TextButton(onPressed: () => Navigator.pop(context), child: Text(widget.duel == null ? tr('Retour au garage') : tr('Voir le duel'))),
           ],
         ).animate().fadeIn(duration: 300.ms).slideY(begin: 0.05, end: 0),
       ),

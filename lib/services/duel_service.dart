@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -24,19 +25,19 @@ enum DuelMode { xp, rarity, brands, theme, quiz }
 
 extension DuelModeInfo on DuelMode {
   String get title => switch (this) {
-        DuelMode.xp => 'Course aux XP',
-        DuelMode.rarity => 'Le plus rare',
-        DuelMode.brands => 'Tour des marques',
-        DuelMode.theme => 'Thème imposé',
-        DuelMode.quiz => 'Blind test',
+        DuelMode.xp => tr('Course aux XP'),
+        DuelMode.rarity => tr('Le plus rare'),
+        DuelMode.brands => tr('Tour des marques'),
+        DuelMode.theme => tr('Thème imposé'),
+        DuelMode.quiz => tr('Blind test'),
       };
 
   String get rule => switch (this) {
-        DuelMode.xp => 'Le plus d’XP gagnés en spottant pendant le duel.',
-        DuelMode.rarity => 'La voiture la plus rare spottée pendant le duel l’emporte.',
-        DuelMode.brands => 'Le plus de marques différentes spottées.',
-        DuelMode.theme => 'Le plus de voitures correspondant au thème.',
-        DuelMode.quiz => 'Les mêmes 10 photos pour vous deux : le meilleur score gagne.',
+        DuelMode.xp => tr('Le plus d’XP gagnés en spottant pendant le duel.'),
+        DuelMode.rarity => tr('La voiture la plus rare spottée pendant le duel l’emporte.'),
+        DuelMode.brands => tr('Le plus de marques différentes spottées.'),
+        DuelMode.theme => tr('Le plus de voitures correspondant au thème.'),
+        DuelMode.quiz => tr('Les mêmes 10 photos pour vous deux : le meilleur score gagne.'),
       };
 
   IconData get icon => switch (this) {
@@ -240,7 +241,7 @@ class DuelService {
         // Nouveau défi reçu : petite notification locale, une seule fois.
         if (d.isPending && d.opponentId == uid && !seen.contains(d.id)) {
           seen.add(d.id);
-          unawaited(NotificationService.instance.showNow(500 + seen.length % 50, 'Nouveau duel : ${d.title}', 'Un ami te défie pendant ${d.hours < 48 ? '24 h' : '${d.hours ~/ 24} jours'}. Relève le défi !'));
+          unawaited(NotificationService.instance.showNow(500 + seen.length % 50, tr('Nouveau duel : {0}', [d.title]), tr('Un ami te défie pendant {0}. Relève le défi !', [d.hours < 48 ? tr('24 h') : '${d.hours ~/ 24} jours'])));
         }
       }
       await prefs.setStringList('duels_seen', seen.length > 100 ? seen.sublist(seen.length - 100) : seen);

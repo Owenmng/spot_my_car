@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
@@ -64,16 +65,16 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Catalogue', style: AppText.display(32)),
+                  Text(tr('Catalogue'), style: AppText.display(32)),
                   const SizedBox(height: 6),
-                  Text('${brands.length} marques, $total modèles. De la Twingo à la Chiron.', style: AppText.body(15, color: AppColors.inkSoft)),
+                  Text(tr('{0} marques, {1} modèles. De la Twingo à la Chiron.', [brands.length, total]), style: AppText.body(15, color: AppColors.inkSoft)),
                   const SizedBox(height: 16),
                   TextField(
                     controller: _search,
                     onChanged: (v) => setState(() => _q = v),
                     textInputAction: TextInputAction.search,
                     decoration: InputDecoration(
-                      hintText: 'Cherche une voiture… « golf gti », « 911 »',
+                      hintText: tr('Cherche une voiture… « golf gti », « 911 »'),
                       prefixIcon: const Icon(Icons.search_rounded),
                       suffixIcon: _q.isEmpty
                           ? null
@@ -92,9 +93,9 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
           ),
           if (_q.trim().isNotEmpty)
             results.isEmpty
-                ? const SliverFillRemaining(
+                ? SliverFillRemaining(
                     hasScrollBody: false,
-                    child: EmptyState(icon: Icons.search_off_rounded, title: 'Aucun modèle', message: 'Essaie avec un autre mot-clé.'),
+                    child: EmptyState(icon: Icons.search_off_rounded, title: tr('Aucun modèle'), message: tr('Essaie avec un autre mot-clé.')),
                   )
                 : SliverPadding(
                     padding: EdgeInsets.fromLTRB(16, 0, 16, 24),
@@ -199,7 +200,7 @@ class _CarCatalogScreenState extends State<CarCatalogScreen> {
                           Expanded(child: Center(child: BrandLogo(url: b['logoUrl'] as String?, name: b['name'] as String, size: 54))),
                           const SizedBox(height: 8),
                           Text(b['name'] as String, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(13, weight: FontWeight.w800)),
-                          Text('$count modèles', style: AppText.body(11.5, color: AppColors.inkSoft, weight: FontWeight.w600)),
+                          Text(tr('{0} modèles', [count]), style: AppText.body(11.5, color: AppColors.inkSoft, weight: FontWeight.w600)),
                         ],
                       ),
                     ),

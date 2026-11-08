@@ -71,6 +71,7 @@ flutter:
     - assets/data/world_cities.json
     - assets/avatars/
     - assets/audio/
+    - assets/i18n/
 
 flutter_launcher_icons:
   android: true

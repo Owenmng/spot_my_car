@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/settings_screen.dart (Version Finale, Corrigée et Cohérente)
 
@@ -73,7 +74,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       }
     } catch (e) {
       if (mounted) {
-        showAppSnack(context, 'Déconnexion impossible, réessaie.', icon: Icons.error_outline);
+        showAppSnack(context, tr('Déconnexion impossible, réessaie.'), icon: Icons.error_outline);
         setState(() => _isSigningOut = false);
       }
     }
@@ -83,24 +84,24 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final packageInfo = await PackageInfo.fromPlatform();
     if (!mounted) return;
     Navigator.push(context, MaterialPageRoute(builder: (context) => InfoPageScreen(
-      title: 'À propos',
+      title: tr('À propos'),
       content: Column(
         children: [
           const AppLogo(size: 84),
           const SizedBox(height: 18),
-          Text('SPOT MY CAR', style: AppText.display(28)),
-          Text('Version ${packageInfo.version} (${packageInfo.buildNumber})', style: AppText.mono(13, color: AppColors.inkSoft)),
+          Text(tr('SPOT MY CAR'), style: AppText.display(28)),
+          Text(tr('Version {0} ({1})', [packageInfo.version, packageInfo.buildNumber]), style: AppText.mono(13, color: AppColors.inkSoft)),
           const SizedBox(height: 20),
           Text(
-            "Chaque voiture croisée devient une carte de collection. Photographie, laisse l'IA reconnaître le modèle, complète ton garage et défie tes amis.",
+            tr('Chaque voiture croisée devient une carte de collection. Photographie, laisse l\'IA reconnaître le modèle, complète ton garage et défie tes amis.'),
             textAlign: TextAlign.center,
             style: AppText.body(15, color: AppColors.inkSoft),
           ),
           const SizedBox(height: 24),
           _Group(children: [
-            const _Tile(icon: Icons.code_rounded, title: 'Conception et développement', subtitle: 'Owen Mengual'),
-            const _Tile(icon: Icons.photo_library_outlined, title: 'Photos du catalogue', subtitle: 'Wikimedia Commons, auteurs crédités sur chaque fiche'),
-            _Tile(icon: Icons.copyright_rounded, title: '© ${DateTime.now().year} Spot My Car', subtitle: 'Tous droits réservés'),
+            _Tile(icon: Icons.code_rounded, title: tr('Conception et développement'), subtitle: tr('Owen Mengual')),
+            _Tile(icon: Icons.photo_library_outlined, title: tr('Photos du catalogue'), subtitle: tr('Wikimedia Commons, auteurs crédités sur chaque fiche')),
+            _Tile(icon: Icons.copyright_rounded, title: tr('© {0} Spot My Car', [DateTime.now().year]), subtitle: tr('Tous droits réservés')),
           ]),
         ],
       ),
@@ -109,31 +110,31 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   void _openTerms() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => InfoPageScreen(
-      title: "Conditions d'utilisation",
+      title: tr('Conditions d\'utilisation'),
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Dernière mise à jour : novembre 2026', style: AppText.body(13, color: AppColors.inkSoft).copyWith(fontStyle: FontStyle.italic)),
+          Text(tr('Dernière mise à jour : novembre 2026'), style: AppText.body(13, color: AppColors.inkSoft).copyWith(fontStyle: FontStyle.italic)),
           const SizedBox(height: 20),
           _buildLegalCard(
             icon: Icons.check_circle_outline,
-            title: '1. Acceptation des conditions',
-            content: "En utilisant Spot My Car, tu acceptes les présentes conditions. Si tu ne les acceptes pas, n'utilise pas le service.",
+            title: tr('1. Acceptation des conditions'),
+            content: tr('En utilisant Spot My Car, tu acceptes les présentes conditions. Si tu ne les acceptes pas, n\'utilise pas le service.'),
           ),
           _buildLegalCard(
             icon: Icons.rule_folder_outlined,
-            title: '2. Utilisation du service',
-            content: "Le service est destiné à un usage personnel. Ne publie pas de contenu illégal ou offensant, et ne photographie pas les personnes. Les fiches techniques sont fournies à titre indicatif.",
+            title: tr('2. Utilisation du service'),
+            content: tr('Le service est destiné à un usage personnel. Ne publie pas de contenu illégal ou offensant, et ne photographie pas les personnes. Les fiches techniques sont fournies à titre indicatif.'),
           ),
           _buildLegalCard(
             icon: Icons.security_outlined,
-            title: '3. Confidentialité et données',
-            content: "Ton e-mail sert uniquement à l'authentification. Les photos de tes spots et leur localisation restent privées : seuls ton pseudo, ton niveau et tes statistiques sont visibles par les autres joueurs. Les photos sont analysées par l'IA Gemini de Google pour reconnaître le modèle.",
+            title: tr('3. Confidentialité et données'),
+            content: tr('Ton e-mail sert uniquement à l\'authentification. Les photos de tes spots et leur localisation restent privées : seuls ton pseudo, ton niveau et tes statistiques sont visibles par les autres joueurs. Les photos sont analysées par l\'IA Gemini de Google pour reconnaître le modèle.'),
           ),
           _buildLegalCard(
             icon: Icons.warning_amber_rounded,
-            title: '4. Limitation de responsabilité',
-            content: "Le service est fourni « en l'état ». Spot My Car ne pourra être tenu responsable des dommages résultant de son utilisation. Reste prudent : ne spotte jamais en conduisant.",
+            title: tr('4. Limitation de responsabilité'),
+            content: tr('Le service est fourni « en l\'état ». Spot My Car ne pourra être tenu responsable des dommages résultant de son utilisation. Reste prudent : ne spotte jamais en conduisant.'),
           ),
         ],
       ),
@@ -147,16 +148,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final notifications = NotificationService.instance;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Paramètres')),
+      appBar: AppBar(title: Text(tr('Paramètres'))),
       body: ListView(
         padding: EdgeInsets.fromLTRB(16, 8, 16, 32 + MediaQuery.paddingOf(context).bottom),
         children: [
-          const _Header('Compte'),
+          _Header(tr('Compte')),
           _Group(children: [
             _Tile(
               icon: Icons.person_outline_rounded,
-              title: 'Modifier le profil',
-              subtitle: 'Pseudo, marque préférée, avatar',
+              title: tr('Modifier le profil'),
+              subtitle: tr('Pseudo, marque préférée, avatar'),
               onTap: () async {
                 AudioService.instance.playSfx(SoundEffect.clicLeger);
                 final userDoc = await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
@@ -168,61 +169,61 @@ class _SettingsScreenState extends State<SettingsScreen> {
             if (currentUser.providerData.any((p) => p.providerId == 'password'))
               _Tile(
                 icon: Icons.lock_outline_rounded,
-                title: 'Changer le mot de passe',
+                title: tr('Changer le mot de passe'),
                 onTap: () => _sendPasswordResetEmail(context, currentUser.email!),
               ),
           ]),
-          const _Header('Expérience'),
+          _Header(tr('Expérience')),
           _Group(children: [
             _Tile(
               icon: Icons.palette_outlined,
-              title: 'Apparence',
-              subtitle: 'Sombre, bleu nuit, clair… et ta couleur',
+              title: tr('Apparence'),
+              subtitle: tr('Sombre, bleu nuit, clair… et ta couleur'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ThemeSelectionScreen())),
             ),
             _Tile(
               icon: Icons.music_note_outlined,
-              title: "Musique d'ambiance",
-              subtitle: 'Night drive, très discrète',
+              title: tr('Musique d\'ambiance'),
+              subtitle: tr('Night drive, très discrète'),
               trailing: Switch(value: audio.isMusicEnabled, onChanged: audio.toggleMusic),
             ),
             _Tile(
               icon: Icons.graphic_eq_rounded,
-              title: 'Effets sonores',
-              subtitle: 'Déclencheur, montée en régime, succès',
+              title: tr('Effets sonores'),
+              subtitle: tr('Déclencheur, montée en régime, succès'),
               trailing: Switch(value: audio.isSfxEnabled, onChanged: audio.toggleSfx),
             ),
             ListenableBuilder(
               listenable: notifications,
               builder: (context, _) => _Tile(
                 icon: Icons.notifications_none_rounded,
-                title: 'Notifications',
-                subtitle: 'Défi du jour, série en danger, bilan du dimanche',
+                title: tr('Notifications'),
+                subtitle: tr('Défi du jour, série en danger, bilan du dimanche'),
                 trailing: Switch(value: notifications.enabled, onChanged: notifications.setEnabled),
               ),
             ),
           ]),
-          const _Header('Aide'),
+          _Header(tr('Aide')),
           _Group(children: [
             _Tile(
               icon: Icons.support_agent_rounded,
-              title: 'Contacter le support',
-              subtitle: 'Une question, un bug, une idée',
+              title: tr('Contacter le support'),
+              subtitle: tr('Une question, un bug, une idée'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactSupportScreen())),
             ),
-            _Tile(icon: Icons.info_outline_rounded, title: "À propos de l'application", onTap: _openAbout),
-            _Tile(icon: Icons.gavel_rounded, title: "Conditions d'utilisation", onTap: _openTerms),
+            _Tile(icon: Icons.info_outline_rounded, title: tr('À propos de l\'application'), onTap: _openAbout),
+            _Tile(icon: Icons.gavel_rounded, title: tr('Conditions d\'utilisation'), onTap: _openTerms),
           ]),
           const SizedBox(height: 22),
           _Group(children: [
             _Tile(
               icon: Icons.logout_rounded,
-              title: _isSigningOut ? 'Déconnexion…' : 'Se déconnecter',
+              title: _isSigningOut ? tr('Déconnexion…') : tr('Se déconnecter'),
               onTap: _isSigningOut ? null : _signOut,
             ),
             _Tile(
               icon: Icons.delete_forever_outlined,
-              title: 'Supprimer mon compte',
+              title: tr('Supprimer mon compte'),
               danger: true,
               onTap: () => _showDeleteAccountDialog(context, currentUser),
             ),
@@ -244,14 +245,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
         return StatefulBuilder(
           builder: (context, setStateDialog) {
             return AlertDialog(
-              title: const Text('Réinitialiser le mot de passe'),
+              title: Text(tr('Réinitialiser le mot de passe')),
               content: Form(
                 key: formKey,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Un email sera envoyé à l'adresse suivante :"),
+                    Text(tr('Un email sera envoyé à l\'adresse suivante :')),
                     const SizedBox(height: 16),
                     
                     // Si on n'est pas en mode édition, on affiche l'email
@@ -273,18 +274,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Nouvelle adresse :", style: TextStyle(fontSize: 12, color: AppColors.inkMuted)),
+                              Text(tr('Nouvelle adresse :'), style: TextStyle(fontSize: 12, color: AppColors.inkMuted)),
                               TextFormField(
                                 controller: emailController,
                                 keyboardType: TextInputType.emailAddress,
                                 autofocus: true,
-                                decoration: const InputDecoration(
-                                  hintText: 'Entrez votre adresse mail...',
+                                decoration: InputDecoration(
+                                  hintText: tr('Entrez votre adresse mail...'),
                                   isDense: true,
                                 ),
                                 validator: (value) {
                                   if (value == null || !value.contains('@')) {
-                                    return 'Email invalide.';
+                                    return tr('Email invalide.');
                                   }
                                   return null;
                                 },
@@ -303,7 +304,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           visualDensity: VisualDensity.compact,
                           tapTargetSize: MaterialTapTargetSize.shrinkWrap
                         ),
-                        child: const Text('Problème avec cette adresse ?'),
+                        child: Text(tr('Problème avec cette adresse ?')),
                         onPressed: () {
                           AudioService.instance.playSfx(SoundEffect.clicLeger);
                           setStateDialog(() {
@@ -322,7 +323,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     AudioService.instance.playSfx(SoundEffect.clicLeger);
                     Navigator.of(context).pop();
                   },
-                  child: const Text('Annuler'),
+                  child: Text(tr('Annuler')),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -331,7 +332,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Navigator.of(context).pop(emailController.text.trim());
                     }
                   },
-                  child: const Text('Envoyer'),
+                  child: Text(tr('Envoyer')),
                 ),
               ],
             );
@@ -345,11 +346,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
       try {
         await FirebaseAuth.instance.sendPasswordResetEmail(email: emailToSend);
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Email envoyé à $emailToSend !'), backgroundColor: Colors.green),
+          SnackBar(content: Text(tr('Email envoyé à {0} !', [emailToSend])), backgroundColor: Colors.green),
         );
       } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Erreur: Impossible d\'envoyer l\'email.'), backgroundColor: Colors.red),
+          SnackBar(content: Text(tr('Erreur: Impossible d\'envoyer l\'email.')), backgroundColor: Colors.red),
         );
       }
     }
@@ -359,22 +360,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final bool isSocialSignIn = user.providerData.any((userInfo) => userInfo.providerId != 'password');
     if (isSocialSignIn) {
       showDialog(context: context, builder: (dialogContext) => AlertDialog(
-        title: const Text('Supprimer ce compte'),
-        content: const Text('Cette action est irréversible et supprimera toutes vos données. Êtes-vous sûr de vouloir continuer ?'),
+        title: Text(tr('Supprimer ce compte')),
+        content: Text(tr('Cette action est irréversible et supprimera toutes vos données. Êtes-vous sûr de vouloir continuer ?')),
         actions: [
           TextButton(
             onPressed: () {
               AudioService.instance.playSfx(SoundEffect.clicPrincipal);
               Navigator.pop(dialogContext);
             }, 
-            child: const Text('Annuler')
+            child: Text(tr('Annuler'))
           ),
           TextButton(
             onPressed: () {
               AudioService.instance.playSfx(SoundEffect.clicPrincipal);
               _deleteUserAccount(dialogContext, context, user);
             },
-            child: const Text('Supprimer', style: TextStyle(color: Colors.red)),
+            child: Text(tr('Supprimer'), style: TextStyle(color: Colors.red)),
           ),
         ],
       ));
@@ -382,16 +383,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
     final passwordController = TextEditingController();
     showDialog(context: context, builder: (dialogContext) => AlertDialog(
-      title: const Text('Supprimer ce compte'),
+      title: Text(tr('Supprimer ce compte')),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Text('Cette action est irréversible. Pour confirmer, veuillez entrer votre mot de passe.'),
+          Text(tr('Cette action est irréversible. Pour confirmer, veuillez entrer votre mot de passe.')),
           const SizedBox(height: 16),
           TextField(
             controller: passwordController,
             obscureText: true,
-            decoration: const InputDecoration(labelText: 'Mot de passe'),
+            decoration: InputDecoration(labelText: tr('Mot de passe')),
           ),
         ],
       ),
@@ -401,7 +402,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             AudioService.instance.playSfx(SoundEffect.clicPrincipal);
             Navigator.pop(dialogContext);
           }, 
-          child: const Text('Annuler')
+          child: Text(tr('Annuler'))
         ),
         TextButton(
           onPressed: () async {
@@ -412,15 +413,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
               await user.reauthenticateWithCredential(cred);
               _deleteUserAccount(dialogContext, context, user);
             } on FirebaseAuthException catch (e) {
-              String errorMessage = 'Mot de passe incorrect ou erreur.';
+              String errorMessage = tr('Mot de passe incorrect ou erreur.');
               if (e.code == 'wrong-password' || e.code == 'invalid-credential') {
-                errorMessage = 'Le mot de passe est incorrect.';
+                errorMessage = tr('Le mot de passe est incorrect.');
               }
               if (dialogContext.mounted) Navigator.of(dialogContext).pop();
               if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(errorMessage), backgroundColor: Colors.red));
             }
           },
-          child: const Text('Supprimer', style: TextStyle(color: Colors.red)),
+          child: Text(tr('Supprimer'), style: TextStyle(color: Colors.red)),
         ),
       ],
     ));
@@ -459,12 +460,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
           (route) => false,
         );
         scaffoldMessenger.showSnackBar(
-          const SnackBar(content: Text('Compte supprimé avec succès.'), backgroundColor: Colors.green)
+          SnackBar(content: Text(tr('Compte supprimé avec succès.')), backgroundColor: Colors.green)
         );
       }
     } catch (e) {
       if (dialogContext.mounted) Navigator.of(dialogContext).pop();
-      scaffoldMessenger.showSnackBar(SnackBar(content: Text('Une erreur est survenue lors de la suppression.'), backgroundColor: Colors.red));
+      scaffoldMessenger.showSnackBar(SnackBar(content: Text(tr('Une erreur est survenue lors de la suppression.')), backgroundColor: Colors.red));
     }
   }
 

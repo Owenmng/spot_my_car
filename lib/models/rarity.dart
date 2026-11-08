@@ -1,9 +1,10 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 
 enum Rarity { commune, peuCommune, rare, epique, legendaire }
 
 extension RarityInfo on Rarity {
-  String get label => const ['Commune', 'Sportive', 'Rare', 'Exotique', 'Mythique'][index];
+  String get label => tr(const ['Commune', 'Sportive', 'Rare', 'Exotique', 'Mythique'][index]);
 
   Color get color => const [
         Color(0xFF9DA3AD),

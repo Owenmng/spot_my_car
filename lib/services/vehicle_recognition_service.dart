@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
@@ -81,7 +82,7 @@ class VehicleRecognitionService {
     'properties': {
       'isIllustration': {
         'type': 'BOOLEAN',
-        'description': "true uniquement si l'image est un dessin, un rendu 3D, une capture de jeu vidéo ou un jouet/une miniature. Une photo pro, de presse ou de concession reste false.",
+        'description': 'true uniquement si l\'image est un dessin, un rendu 3D, une capture de jeu vidéo ou un jouet/une miniature. Une photo pro, de presse ou de concession reste false.',
       },
       'vehicleType': {
         'type': 'STRING',
@@ -89,7 +90,7 @@ class VehicleRecognitionService {
       },
       'candidates': {
         'type': 'ARRAY',
-        'description': "Jusqu'à 3 hypothèses, de la plus probable à la moins probable",
+        'description': 'Jusqu\'à 3 hypothèses, de la plus probable à la moins probable',
         'items': {
           'type': 'OBJECT',
           'properties': {
@@ -106,7 +107,7 @@ class VehicleRecognitionService {
         },
       },
       'color': {'type': 'STRING', 'enum': colorNames},
-      'plateText': {'type': 'STRING', 'description': "Plaque d'immatriculation lisible, sinon chaîne vide. Jamais un texte de cadre de plaque."},
+      'plateText': {'type': 'STRING', 'description': 'Plaque d\'immatriculation lisible, sinon chaîne vide. Jamais un texte de cadre de plaque.'},
       'plateCountry': {'type': 'STRING', 'description': 'Code pays ISO à 2 lettres de la plaque, sinon chaîne vide'},
       'bodyType': {'type': 'STRING'},
     },
@@ -164,23 +165,23 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
     final plateCountry = (parsed['plateCountry'] as String?)?.toUpperCase();
 
     if (!isReal) {
-      return const RecognitionResult(
+      return RecognitionResult(
         status: RecognitionStatus.notReal,
-        message: "On dirait une image qui n'est pas une vraie photo (dessin, jeu, écran…). Prends la voiture en vrai !",
+        message: tr('On dirait une image qui n\'est pas une vraie photo (dessin, jeu, écran…). Prends la voiture en vrai !'),
       );
     }
     if (type == 'none') {
-      return const RecognitionResult(
+      return RecognitionResult(
         status: RecognitionStatus.notACar,
-        message: "Je ne vois pas de voiture sur cette photo. Essaie de cadrer le véhicule en entier.",
+        message: tr('Je ne vois pas de voiture sur cette photo. Essaie de cadrer le véhicule en entier.'),
       );
     }
     if (type != 'car' && type != 'van') {
       return RecognitionResult(
         status: RecognitionStatus.notACar,
         message: type == 'motorcycle'
-            ? "C'est une moto ! SpotMyCar ne collectionne que les voitures pour l'instant."
-            : "Ce véhicule ne fait pas partie des voitures que l'on collectionne.",
+            ? tr('C\'est une moto ! SpotMyCar ne collectionne que les voitures pour l\'instant.')
+            : tr('Ce véhicule ne fait pas partie des voitures que l\'on collectionne.'),
       );
     }
 
@@ -199,7 +200,7 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
     if (candidates.isEmpty) {
       return RecognitionResult(
         status: RecognitionStatus.unclear,
-        message: "Je vois bien une voiture, mais pas assez nettement pour la reconnaître. Approche-toi ou prends-la de 3/4 avant.",
+        message: tr('Je vois bien une voiture, mais pas assez nettement pour la reconnaître. Approche-toi ou prends-la de 3/4 avant.'),
         colorName: colorNames.contains(color) ? color : null,
         plate: plate,
         plateCountry: plateCountry,
@@ -210,7 +211,7 @@ Analyse la photo et identifie le véhicule principal (le plus grand / le plus ne
     final sure = best.confidence >= 0.75;
     return RecognitionResult(
       status: RecognitionStatus.car,
-      message: sure ? 'Identifiée avec confiance' : 'Plusieurs pistes possibles, choisis la bonne',
+      message: sure ? tr('Identifiée avec confiance') : tr('Plusieurs pistes possibles, choisis la bonne'),
       candidates: candidates.take(3).toList(),
       plate: plate,
       plateCountry: plateCountry,
@@ -391,15 +392,15 @@ Réponds uniquement avec l'identifiant exact du modèle le plus proche, ou "none
   static String _friendlyError(Object? e) {
     final s = e.toString().toLowerCase();
     if (s.contains('socket') || s.contains('network') || s.contains('timeout') || s.contains('failed host lookup')) {
-      return "Pas de connexion pour analyser la photo. Réessaie dès que tu as du réseau, ou ajoute-la à la main.";
+      return tr('Pas de connexion pour analyser la photo. Réessaie dès que tu as du réseau, ou ajoute-la à la main.');
     }
     if (s.contains('quota') || s.contains('resource exhausted') || s.contains('429')) {
-      return "L'analyse est très demandée en ce moment. Réessaie dans une minute.";
+      return tr('L\'analyse est très demandée en ce moment. Réessaie dans une minute.');
     }
     if (s.contains('permission') || s.contains('api has not been used') || s.contains('not enabled') || s.contains('403')) {
-      return "L'analyse automatique n'est pas encore activée sur le serveur. Tu peux ajouter la voiture à la main.";
+      return tr('L\'analyse automatique n\'est pas encore activée sur le serveur. Tu peux ajouter la voiture à la main.');
     }
-    final code = e is GeminiException ? ' (code ${e.status})' : '';
-    return "L'analyse n'a pas abouti$code. Réessaie ou ajoute la voiture à la main.";
+    final code = e is GeminiException ? tr(' (code {0})', [e.status]) : '';
+    return tr('L\'analyse n\'a pas abouti{0}. Réessaie ou ajoute la voiture à la main.', [code]);
   }
 }

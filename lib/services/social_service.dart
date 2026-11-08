@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -13,7 +14,7 @@ class Player {
   String get name {
     final p = (data['pseudo'] as String?)?.trim();
     if (p != null && p.isNotEmpty) return p;
-    return (data['friendId'] as String?) ?? 'Joueur';
+    return (data['friendId'] as String?) ?? tr('Joueur');
   }
 
   String? get photoUrl => data['photoUrl'] as String?;
@@ -51,13 +52,13 @@ class SocialService {
   Future<String> sendRequest(String rawFriendId) async {
     final me = FirebaseAuth.instance.currentUser!;
     final friendId = rawFriendId.replaceAll(RegExp(r'\s'), '');
-    if (friendId.isEmpty) return "Entre l'identifiant de ton ami.";
+    if (friendId.isEmpty) return tr('Entre l\'identifiant de ton ami.');
     final found = await _db.collection('users').where('friendId', isEqualTo: friendId).limit(1).get();
-    if (found.docs.isEmpty) return 'Aucun joueur avec cet identifiant.';
+    if (found.docs.isEmpty) return tr('Aucun joueur avec cet identifiant.');
     final other = found.docs.first.id;
-    if (other == me.uid) return "C'est ton propre identifiant !";
+    if (other == me.uid) return tr('C\'est ton propre identifiant !');
     final already = await _db.collection('users').doc(me.uid).collection('friends').doc(other).get();
-    if (already.exists) return 'Vous êtes déjà amis.';
+    if (already.exists) return tr('Vous êtes déjà amis.');
     final sent = await _db
         .collection('friend_requests')
         .where('fromUserId', isEqualTo: me.uid)
@@ -65,7 +66,7 @@ class SocialService {
         .where('status', isEqualTo: 'pending')
         .limit(1)
         .get();
-    if (sent.docs.isNotEmpty) return 'Demande déjà envoyée, patience.';
+    if (sent.docs.isNotEmpty) return tr('Demande déjà envoyée, patience.');
     final received = await _db
         .collection('friend_requests')
         .where('fromUserId', isEqualTo: other)
@@ -75,7 +76,7 @@ class SocialService {
         .get();
     if (received.docs.isNotEmpty) {
       await accept(received.docs.first.id, other);
-      return 'Il t’avait déjà invité : vous êtes amis !';
+      return tr('Il t’avait déjà invité : vous êtes amis !');
     }
     await _db.collection('friend_requests').add({
       'fromUserId': me.uid,
@@ -83,7 +84,7 @@ class SocialService {
       'status': 'pending',
       'createdAt': FieldValue.serverTimestamp(),
     });
-    return 'Demande envoyée !';
+    return tr('Demande envoyée !');
   }
 
   Stream<QuerySnapshot<Map<String, dynamic>>> watchIncoming() {

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -23,19 +24,19 @@ import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/car_image.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
 
-final List<Map<String, String>> countryData = [
-  {'code': 'FR', 'name': 'France', 'flag': '🇫🇷', 'hint': 'AB-123-CD'},
-  {'code': 'DE', 'name': 'Allemagne', 'flag': '🇩🇪', 'hint': 'B SK 1234'},
-  {'code': 'IT', 'name': 'Italie', 'flag': '🇮🇹', 'hint': 'AB 123 CD'},
-  {'code': 'ES', 'name': 'Espagne', 'flag': '🇪🇸', 'hint': '1234 ABC'},
-  {'code': 'GB', 'name': 'Royaume-Uni', 'flag': '🇬🇧', 'hint': 'AB12 CDE'},
-  {'code': 'BE', 'name': 'Belgique', 'flag': '🇧🇪', 'hint': '1-ABC-234'},
-  {'code': 'CH', 'name': 'Suisse', 'flag': '🇨🇭', 'hint': 'VD 123456'},
-  {'code': 'LU', 'name': 'Luxembourg', 'flag': '🇱🇺', 'hint': 'AB 1234'},
-  {'code': 'AT', 'name': 'Autriche', 'flag': '🇦🇹', 'hint': 'W 123 AB'},
-  {'code': 'US', 'name': 'États-Unis', 'flag': '🇺🇸', 'hint': 'ABC 1234'},
-  {'code': 'CA', 'name': 'Canada', 'flag': '🇨🇦', 'hint': 'ABCD 123'},
-  {'code': 'XX', 'name': 'Autre', 'flag': '🌍', 'hint': 'Format libre'},
+List<Map<String, String>> get countryData => [
+  {'code': 'FR', 'name': tr('France'), 'flag': '🇫🇷', 'hint': 'AB-123-CD'},
+  {'code': 'DE', 'name': tr('Allemagne'), 'flag': '🇩🇪', 'hint': tr('B SK 1234')},
+  {'code': 'IT', 'name': tr('Italie'), 'flag': '🇮🇹', 'hint': tr('AB 123 CD')},
+  {'code': 'ES', 'name': tr('Espagne'), 'flag': '🇪🇸', 'hint': tr('1234 ABC')},
+  {'code': 'GB', 'name': tr('Royaume-Uni'), 'flag': '🇬🇧', 'hint': tr('AB12 CDE')},
+  {'code': 'BE', 'name': tr('Belgique'), 'flag': '🇧🇪', 'hint': '1-ABC-234'},
+  {'code': 'CH', 'name': tr('Suisse'), 'flag': '🇨🇭', 'hint': tr('VD 123456')},
+  {'code': 'LU', 'name': tr('Luxembourg'), 'flag': '🇱🇺', 'hint': tr('AB 1234')},
+  {'code': 'AT', 'name': tr('Autriche'), 'flag': '🇦🇹', 'hint': tr('W 123 AB')},
+  {'code': 'US', 'name': tr('États-Unis'), 'flag': '🇺🇸', 'hint': tr('ABC 1234')},
+  {'code': 'CA', 'name': tr('Canada'), 'flag': '🇨🇦', 'hint': tr('ABCD 123')},
+  {'code': 'XX', 'name': tr('Autre'), 'flag': '🌍', 'hint': tr('Format libre')},
 ];
 
 class AddCarScreen extends StatefulWidget {
@@ -110,8 +111,8 @@ class _AddCarScreenState extends State<AddCarScreen> {
     } on PlatformException catch (e) {
       if (!mounted) return;
       showAppSnack(context, e.code == 'camera_access_denied'
-          ? "Autorise l'accès à l'appareil photo dans les réglages du téléphone."
-          : "Impossible d'ouvrir la photo.", icon: Icons.no_photography_outlined);
+          ? tr('Autorise l\'accès à l\'appareil photo dans les réglages du téléphone.')
+          : tr('Impossible d\'ouvrir la photo.'), icon: Icons.no_photography_outlined);
     }
   }
 
@@ -152,11 +153,11 @@ class _AddCarScreenState extends State<AddCarScreen> {
       _picked = c;
       if (c.brand != null) {
         _draft.brand = c.brand;
-        _draft.model = modelOverride ?? c.model ?? {'id': 'other', 'name': 'Autre'};
+        _draft.model = modelOverride ?? c.model ?? {'id': 'other', 'name': tr('Autre')};
         if (_draft.model!['id'] == 'other') _modelCtrl.text = c.rawModel;
       } else {
-        _draft.brand = {'id': 'other', 'name': 'Autre'};
-        _draft.model = {'id': 'other', 'name': 'Autre'};
+        _draft.brand = {'id': 'other', 'name': tr('Autre')};
+        _draft.model = {'id': 'other', 'name': tr('Autre')};
         _brandCtrl.text = c.rawMake;
         _modelCtrl.text = c.rawModel;
       }
@@ -184,7 +185,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
     if (brand == null || !mounted) return;
     setState(() {
       _draft.brand = brand;
-      _draft.model = brand['id'] == 'other' ? {'id': 'other', 'name': 'Autre'} : null;
+      _draft.model = brand['id'] == 'other' ? {'id': 'other', 'name': tr('Autre')} : null;
     });
     if (brand['id'] != 'other') await _pickModel();
   }
@@ -207,7 +208,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
       final loc = await LocationService.current();
       if (!mounted) return;
       if (loc == null) {
-        showAppSnack(context, 'Localisation indisponible. Active-la ou tape la ville.', icon: Icons.location_off_outlined);
+        showAppSnack(context, tr('Localisation indisponible. Active-la ou tape la ville.'), icon: Icons.location_off_outlined);
       } else {
         setState(() {
           _draft.locationName = loc.name;
@@ -217,7 +218,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
         });
       }
     } catch (_) {
-      if (mounted) showAppSnack(context, "Je n'ai pas réussi à te localiser.", icon: Icons.location_off_outlined);
+      if (mounted) showAppSnack(context, tr('Je n\'ai pas réussi à te localiser.'), icon: Icons.location_off_outlined);
     } finally {
       if (mounted) setState(() => _locating = false);
     }
@@ -228,7 +229,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
   Future<void> _save() async {
     FocusScope.of(context).unfocus();
     if (!_hasVehicle) {
-      showAppSnack(context, 'Choisis la marque et le modèle.', icon: Icons.info_outline);
+      showAppSnack(context, tr('Choisis la marque et le modèle.'), icon: Icons.info_outline);
       return;
     }
     if (!(_formKey.currentState?.validate() ?? false)) {
@@ -275,7 +276,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
     } on DuplicatePlateException catch (e) {
       if (mounted) showAppSnack(context, e.toString(), icon: Icons.content_copy_rounded);
     } catch (e) {
-      if (mounted) showAppSnack(context, "L'enregistrement a échoué. Vérifie ta connexion et réessaie.", icon: Icons.error_outline);
+      if (mounted) showAppSnack(context, tr('L\'enregistrement a échoué. Vérifie ta connexion et réessaie.'), icon: Icons.error_outline);
     } finally {
       if (mounted) setState(() => _saving = false);
     }
@@ -290,11 +291,11 @@ class _AddCarScreenState extends State<AddCarScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(_manual ? 'Ajout manuel' : 'Nouveau spot'),
+        title: Text(_manual ? tr('Ajout manuel') : tr('Nouveau spot')),
         actions: [
           if (_draft.photo != null || _manual)
             IconButton(
-              tooltip: _manual ? 'Reconnaissance automatique' : 'Saisir à la main',
+              tooltip: _manual ? tr('Reconnaissance automatique') : tr('Saisir à la main'),
               onPressed: () => setState(() {
                 _manual = !_manual;
                 if (!_manual && _draft.photo != null && _result == null && !_analyzing) _analyze(_draft.photo!);
@@ -324,7 +325,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
                 child: TextButton.icon(
                   onPressed: () => setState(() => _manual = true),
                   icon: const Icon(Icons.edit_outlined, size: 18),
-                  label: const Text('Ajouter sans photo'),
+                  label: Text(tr('Ajouter sans photo')),
                 ),
               ),
               const SizedBox(height: 8),
@@ -344,9 +345,9 @@ class _AddCarScreenState extends State<AddCarScreen> {
             ],
             if (_manual) ...[
               const SizedBox(height: 22),
-              _sectionLabel('La voiture'),
+              _sectionLabel(tr('La voiture')),
               _PickerTile(
-                label: 'Marque',
+                label: tr('Marque'),
                 value: _draft.brand?['name'] as String?,
                 logoUrl: _draft.brand?['logoUrl'] as String?,
                 onTap: _pickBrand,
@@ -356,13 +357,13 @@ class _AddCarScreenState extends State<AddCarScreen> {
                 TextFormField(
                   controller: _brandCtrl,
                   textCapitalization: TextCapitalization.words,
-                  decoration: const InputDecoration(labelText: 'Nom de la marque'),
-                  validator: (v) => (v == null || v.trim().isEmpty) ? 'Indique la marque' : null,
+                  decoration: InputDecoration(labelText: tr('Nom de la marque')),
+                  validator: (v) => (v == null || v.trim().isEmpty) ? tr('Indique la marque') : null,
                 ),
               ] else ...[
                 const SizedBox(height: 12),
                 _PickerTile(
-                  label: 'Modèle',
+                  label: tr('Modèle'),
                   value: _draft.model?['name'] as String?,
                   enabled: _draft.brand != null,
                   onTap: _pickModel,
@@ -374,18 +375,18 @@ class _AddCarScreenState extends State<AddCarScreen> {
               TextFormField(
                 controller: _modelCtrl,
                 textCapitalization: TextCapitalization.words,
-                decoration: const InputDecoration(labelText: 'Nom du modèle'),
-                validator: (v) => (v == null || v.trim().isEmpty) ? 'Indique le modèle' : null,
+                decoration: InputDecoration(labelText: tr('Nom du modèle')),
+                validator: (v) => (v == null || v.trim().isEmpty) ? tr('Indique le modèle') : null,
               ),
               const SizedBox(height: 10),
               Text(
-                "Hors catalogue : la voiture rejoint ton garage, mais ne rapporte pas d'XP.",
+                tr('Hors catalogue : la voiture rejoint ton garage, mais ne rapporte pas d\'XP.'),
                 style: AppText.body(13, color: AppColors.inkSoft),
               ),
             ],
             if (_showDetails) ...[
               const SizedBox(height: 26),
-              _sectionLabel('La plaque'),
+              _sectionLabel(tr('La plaque')),
               AnimatedSize(
                 duration: const Duration(milliseconds: 220),
                 curve: Curves.easeOutCubic,
@@ -402,7 +403,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
                           children: [
                             Icon(Icons.visibility_off_outlined, color: AppColors.inkSoft, size: 20),
                             const SizedBox(width: 10),
-                            Expanded(child: Text('Spot enregistré sans plaque.', style: AppText.body(14, color: AppColors.inkSoft, weight: FontWeight.w600))),
+                            Expanded(child: Text(tr('Spot enregistré sans plaque.'), style: AppText.body(14, color: AppColors.inkSoft, weight: FontWeight.w600))),
                           ],
                         ),
                       )
@@ -414,7 +415,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
                 child: FilterChip(
                   avatar: Icon(_noPlate ? Icons.check_rounded : Icons.do_not_disturb_alt_rounded, size: 16),
                   showCheckmark: false,
-                  label: const Text("Je n'ai pas la plaque"),
+                  label: Text(tr('Je n\'ai pas la plaque')),
                   selected: _noPlate,
                   onSelected: (v) {
                     HapticFeedback.selectionClick();
@@ -423,24 +424,24 @@ class _AddCarScreenState extends State<AddCarScreen> {
                 ),
               ),
               const SizedBox(height: 26),
-              _sectionLabel('La couleur'),
+              _sectionLabel(tr('La couleur')),
               _ColorPicker(
                 selected: _draft.color,
                 onChanged: (c) => setState(() => _draft.color = c),
               ),
               const SizedBox(height: 26),
-              _sectionLabel('Où ça ?'),
+              _sectionLabel(tr('Où ça ?')),
               _locationField(accent),
               const SizedBox(height: 26),
-              _sectionLabel('Un mot sur ce spot'),
+              _sectionLabel(tr('Un mot sur ce spot')),
               TextFormField(
                 controller: _noteCtrl,
                 maxLength: 280,
                 maxLines: 3,
                 minLines: 2,
                 textCapitalization: TextCapitalization.sentences,
-                decoration: const InputDecoration(
-                  hintText: 'Garée devant la boulangerie, son V8 réveillait tout le quartier…',
+                decoration: InputDecoration(
+                  hintText: tr('Garée devant la boulangerie, son V8 réveillait tout le quartier…'),
                   counterText: '',
                 ),
               ),
@@ -523,10 +524,10 @@ class _AddCarScreenState extends State<AddCarScreen> {
             decoration: InputDecoration(hintText: country['hint']),
             validator: (value) {
               final v = (value ?? '').replaceAll(RegExp(r'[^A-Za-z0-9]'), '');
-              if (v.isEmpty) return 'La plaque est obligatoire';
-              if (mask == null) return v.length < 3 ? 'Au moins 3 caractères' : null;
+              if (v.isEmpty) return tr('La plaque est obligatoire');
+              if (mask == null) return v.length < 3 ? tr('Au moins 3 caractères') : null;
               final expected = mask.replaceAll(RegExp(r'[^A#]'), '').length;
-              return v.length < expected ? 'Plaque incomplète' : null;
+              return v.length < expected ? tr('Plaque incomplète') : null;
             },
           ),
         ),
@@ -545,12 +546,12 @@ class _AddCarScreenState extends State<AddCarScreen> {
             focusNode: focusNode,
             textCapitalization: TextCapitalization.words,
             decoration: InputDecoration(
-              hintText: 'Ville',
+              hintText: tr('Ville'),
               prefixIcon: const Icon(Icons.place_outlined),
               suffixIcon: _locating
                   ? const Padding(padding: EdgeInsets.all(14), child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2.2)))
                   : IconButton(
-                      tooltip: 'Ma position',
+                      tooltip: tr('Ma position'),
                       icon: Icon(Icons.my_location_rounded, color: accent),
                       onPressed: _useMyLocation,
                     ),
@@ -585,7 +586,7 @@ class _AddCarScreenState extends State<AddCarScreen> {
           },
           emptyBuilder: (context) => Padding(
             padding: const EdgeInsets.all(14),
-            child: Text('Ville introuvable — elle sera enregistrée telle quelle.', style: AppText.body(13, color: AppColors.inkSoft)),
+            child: Text(tr('Ville introuvable — elle sera enregistrée telle quelle.'), style: AppText.body(13, color: AppColors.inkSoft)),
           ),
           decorationBuilder: (context, child) => Material(
             elevation: 6,
@@ -630,10 +631,10 @@ class _PhotoStage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('NOUVEAU SPOT', style: AppText.display(30)),
+            Text(tr('NOUVEAU SPOT'), style: AppText.display(30)),
             const SizedBox(height: 8),
             Text(
-              'Photographie la voiture : marque, modèle, génération, couleur et plaque sont reconnus automatiquement.',
+              tr('Photographie la voiture : marque, modèle, génération, couleur et plaque sont reconnus automatiquement.'),
               style: AppText.body(15, color: AppColors.inkSoft),
             ),
             const SizedBox(height: 24),
@@ -651,7 +652,7 @@ class _PhotoStage extends StatelessWidget {
                         children: [
                           Icon(Icons.photo_camera_rounded, color: Theme.of(context).colorScheme.onPrimary),
                           const SizedBox(width: 10),
-                          Flexible(child: Text('Prendre une photo', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(16, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800))),
+                          Flexible(child: Text(tr('Prendre une photo'), maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(16, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800))),
                         ],
                       ),
                     ),
@@ -784,20 +785,20 @@ class _AnalysisProgress extends StatefulWidget {
 }
 
 class _AnalysisProgressState extends State<_AnalysisProgress> {
-  static const _labels = ['Silhouette et carrosserie', 'Logo et calandre', 'Modèle et génération', 'Couleur et plaque'];
-  static const _facts = [
-    'La Bugatti Veyron change ses pneus pour environ 30 000 € le train.',
-    'La Lamborghini Miura est souvent citée comme la première supercar moderne.',
-    "Le logo Alfa Romeo mêle la croix de Milan et la guivre des Visconti.",
-    'La Porsche 911 garde son moteur en porte-à-faux arrière depuis 1963.',
-    'La Renault 5 Turbo avait son moteur à la place des sièges arrière.',
-    'Le nom « Countach » vient d’une exclamation piémontaise de surprise.',
-    'La McLaren F1 a un siège conducteur central, flanqué de deux passagers.',
-    'La Citroën DS fut la première voiture de série à freins à disque à l’avant.',
-    'La Ford Model T a été produite à plus de 15 millions d’exemplaires.',
-    'Le cheval cabré de Ferrari venait de l’avion du pilote Francesco Baracca.',
-    'La Peugeot 205 GTI est l’une des sportives les plus collectionnées de France.',
-    'La Toyota Corolla est la voiture la plus vendue de l’histoire.',
+  static List<String> get _labels => [tr('Silhouette et carrosserie'), tr('Logo et calandre'), tr('Modèle et génération'), tr('Couleur et plaque')];
+  static List<String> get _facts => [
+    tr('La Bugatti Veyron change ses pneus pour environ 30 000 € le train.'),
+    tr('La Lamborghini Miura est souvent citée comme la première supercar moderne.'),
+    tr('Le logo Alfa Romeo mêle la croix de Milan et la guivre des Visconti.'),
+    tr('La Porsche 911 garde son moteur en porte-à-faux arrière depuis 1963.'),
+    tr('La Renault 5 Turbo avait son moteur à la place des sièges arrière.'),
+    tr('Le nom « Countach » vient d’une exclamation piémontaise de surprise.'),
+    tr('La McLaren F1 a un siège conducteur central, flanqué de deux passagers.'),
+    tr('La Citroën DS fut la première voiture de série à freins à disque à l’avant.'),
+    tr('La Ford Model T a été produite à plus de 15 millions d’exemplaires.'),
+    tr('Le cheval cabré de Ferrari venait de l’avion du pilote Francesco Baracca.'),
+    tr('La Peugeot 205 GTI est l’une des sportives les plus collectionnées de France.'),
+    tr('La Toyota Corolla est la voiture la plus vendue de l’histoire.'),
   ];
 
   int _done = 0;
@@ -841,7 +842,7 @@ class _AnalysisProgressState extends State<_AnalysisProgress> {
             children: [
               Row(
                 children: [
-                  Text(widget.deep ? 'ANALYSE POUSSÉE' : 'ANALYSE EN COURS', style: AppText.label(11.5, color: accent)),
+                  Text(widget.deep ? tr('ANALYSE POUSSÉE') : tr('ANALYSE EN COURS'), style: AppText.label(11.5, color: accent)),
                   const Spacer(),
                   SizedBox(width: 14, height: 14, child: CircularProgressIndicator(strokeWidth: 2, color: accent)),
                 ],
@@ -913,7 +914,7 @@ class _AnalysisProgressState extends State<_AnalysisProgress> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('LE SAVAIS-TU ?', style: AppText.label(10.5, color: accent)),
+                    Text(tr('LE SAVAIS-TU ?'), style: AppText.label(10.5, color: accent)),
                     const SizedBox(height: 4),
                     Text(_fact, style: AppText.body(14, color: AppColors.inkSoft)),
                   ],
@@ -1005,7 +1006,7 @@ class _ResultPanel extends StatelessWidget {
                 const SizedBox(width: 10),
                 Expanded(
                   child: Text(
-                    result.status == RecognitionStatus.unclear ? 'Pas assez net' : failed ? 'Analyse impossible' : 'Hmm…',
+                    result.status == RecognitionStatus.unclear ? tr('Pas assez net') : failed ? tr('Analyse impossible') : tr('Hmm…'),
                     style: AppText.display(19),
                   ),
                 ),
@@ -1017,9 +1018,9 @@ class _ResultPanel extends StatelessWidget {
             Row(
               children: [
                 if (failed || result.status == RecognitionStatus.unclear)
-                  Expanded(child: OutlinedButton(onPressed: deepDone ? onRetry : onDeep, child: Text(deepDone ? 'Réessayer' : 'Analyse poussée'))),
+                  Expanded(child: OutlinedButton(onPressed: deepDone ? onRetry : onDeep, child: Text(deepDone ? tr('Réessayer') : tr('Analyse poussée')))),
                 if (failed || result.status == RecognitionStatus.unclear) const SizedBox(width: 10),
-                Expanded(child: FilledButton(onPressed: onManual, child: const Text('Saisir à la main'))),
+                Expanded(child: FilledButton(onPressed: onManual, child: Text(tr('Saisir à la main')))),
               ],
             ),
           ],
@@ -1089,11 +1090,11 @@ class _ResultPanel extends StatelessWidget {
                   children: [
                     if (rarity != null) RarityBadge(rarity: rarity),
                     if (rarity != null)
-                      Text('+${rarity.xp} XP', style: AppText.body(13, color: rarity.color, weight: FontWeight.w800)),
+                      Text(tr('+{0} XP', [rarity.xp]), style: AppText.body(13, color: rarity.color, weight: FontWeight.w800)),
                     if (!current.inCatalog)
-                      Text('Pas encore dans le catalogue', style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600)),
+                      Text(tr('Pas encore dans le catalogue'), style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600)),
                     Text(
-                      percent >= 75 ? 'Sûr à $percent %' : 'Probable à $percent %',
+                      percent >= 75 ? tr('Sûr à {0} %', [percent]) : tr('Probable à {0} %', [percent]),
                       style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600),
                     ),
                   ],
@@ -1105,7 +1106,7 @@ class _ResultPanel extends StatelessWidget {
                   child: ElevatedButton.icon(
                     onPressed: () => onPick(best),
                     icon: const Icon(Icons.check_rounded),
-                    label: const Text("Oui, c'est elle"),
+                    label: Text(tr('Oui, c\'est elle')),
                   ),
                 ),
             ],
@@ -1113,7 +1114,7 @@ class _ResultPanel extends StatelessWidget {
         ),
         if (current.alternatives.isNotEmpty && current.brand != null) ...[
           const SizedBox(height: 16),
-          Text('Une autre version ?', style: AppText.label(11.5, color: AppColors.inkMuted)),
+          Text(tr('Une autre version ?'), style: AppText.label(11.5, color: AppColors.inkMuted)),
           const SizedBox(height: 8),
           Wrap(
             spacing: 8,
@@ -1129,7 +1130,7 @@ class _ResultPanel extends StatelessWidget {
         ],
         if (others.isNotEmpty) ...[
           const SizedBox(height: 16),
-          Text('Ou peut-être…', style: AppText.label(11.5, color: AppColors.inkMuted)),
+          Text(tr('Ou peut-être…'), style: AppText.label(11.5, color: AppColors.inkMuted)),
           const SizedBox(height: 8),
           for (final c in others)
             Padding(
@@ -1184,8 +1185,8 @@ class _ResultPanel extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Un doute ? Analyse poussée', style: AppText.body(14.5, weight: FontWeight.w800)),
-                        Text("Plus lente, l'IA examine chaque détail.", style: AppText.body(12.5, color: AppColors.inkSoft)),
+                        Text(tr('Un doute ? Analyse poussée'), style: AppText.body(14.5, weight: FontWeight.w800)),
+                        Text(tr('Plus lente, l\'IA examine chaque détail.'), style: AppText.body(12.5, color: AppColors.inkSoft)),
                       ],
                     ),
                   ),
@@ -1197,7 +1198,7 @@ class _ResultPanel extends StatelessWidget {
         ],
         const SizedBox(height: 4),
         Center(
-          child: TextButton(onPressed: onManual, child: const Text("Ce n'est pas ça, je choisis moi-même")),
+          child: TextButton(onPressed: onManual, child: Text(tr('Ce n\'est pas ça, je choisis moi-même'))),
         ),
       ],
     );
@@ -1265,7 +1266,7 @@ class _PickerTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(label, style: AppText.body(12, color: AppColors.inkSoft, weight: FontWeight.w600)),
-                    Text(value ?? 'Choisir', style: AppText.body(16, weight: FontWeight.w700, color: value == null ? AppColors.inkMuted : AppColors.ink)),
+                    Text(value ?? tr('Choisir'), style: AppText.body(16, weight: FontWeight.w700, color: value == null ? AppColors.inkMuted : AppColors.ink)),
                   ],
                 ),
               ),
@@ -1292,7 +1293,7 @@ class _ColorPicker extends StatelessWidget {
       children: [
         for (final e in kCarColorSwatches.entries)
           Tooltip(
-            message: e.key,
+            message: tr(e.key),
             child: Pressable(
               onTap: () => onChanged(selected == e.key ? null : e.key),
               child: AnimatedContainer(
@@ -1324,10 +1325,10 @@ class _Tips extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const tips = [
-      (Icons.crop_free_rounded, 'Cadre la voiture en entier, de 3/4 avant si possible.'),
-      (Icons.wb_sunny_outlined, 'Évite le contre-jour : les optiques et la calandre parlent beaucoup.'),
-      (Icons.pin_outlined, 'Si la plaque est lisible, je la remplis pour toi.'),
+    final tips = [
+      (Icons.crop_free_rounded, tr('Cadre la voiture en entier, de 3/4 avant si possible.')),
+      (Icons.wb_sunny_outlined, tr('Évite le contre-jour : les optiques et la calandre parlent beaucoup.')),
+      (Icons.pin_outlined, tr('Si la plaque est lisible, je la remplis pour toi.')),
     ];
     return Container(
       padding: const EdgeInsets.all(18),
@@ -1335,7 +1336,7 @@ class _Tips extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Pour une reconnaissance au top', style: AppText.body(15, weight: FontWeight.w800)),
+          Text(tr('Pour une reconnaissance au top'), style: AppText.body(15, weight: FontWeight.w800)),
           const SizedBox(height: 12),
           for (final t in tips)
             Padding(
@@ -1378,13 +1379,13 @@ class _SaveBar extends StatelessWidget {
             : Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('Ajouter au garage'),
+                  Text(tr('Ajouter au garage')),
                   if (xp > 0) ...[
                     const SizedBox(width: 10),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                       decoration: BoxDecoration(color: Theme.of(context).colorScheme.onPrimary.withValues(alpha: 0.18), borderRadius: BorderRadius.circular(99)),
-                      child: Text('+$xp XP', style: AppText.body(13, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800)),
+                      child: Text(tr('+{0} XP', [xp]), style: AppText.body(13, color: Theme.of(context).colorScheme.onPrimary, weight: FontWeight.w800)),
                     ),
                   ],
                 ],

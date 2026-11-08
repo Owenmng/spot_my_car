@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/signup_screen.dart (Version Finale avec Marque Préférée)
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -120,11 +121,11 @@ class _SignupScreenState extends State<SignupScreen> {
       }
 
     } on FirebaseAuthException catch (e) {
-      String errorMessage = "Une erreur est survenue.";
+      String errorMessage = tr('Une erreur est survenue.');
       if (e.code == 'weak-password') {
-        errorMessage = 'Le mot de passe est trop faible.';
+        errorMessage = tr('Le mot de passe est trop faible.');
       } else if (e.code == 'email-already-in-use') {
-        errorMessage = 'Un compte existe déjà pour cet email.';
+        errorMessage = tr('Un compte existe déjà pour cet email.');
       }
       
       if (mounted) {
@@ -135,7 +136,7 @@ class _SignupScreenState extends State<SignupScreen> {
       // Catcher les autres erreurs potentielles
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: const Text("L'inscription n'a pas abouti. Réessaie."),
+            content: Text(tr('L\'inscription n\'a pas abouti. Réessaie.')),
             backgroundColor: Colors.red));
       }
     } finally {
@@ -162,17 +163,17 @@ class _SignupScreenState extends State<SignupScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text('Créer ton compte', style: AppText.display(36)),
+              Text(tr('Créer ton compte'), style: AppText.display(36)),
               const SizedBox(height: 8),
-              Text('Ton garage virtuel t’attend. Trente secondes, promis.', style: AppText.body(15, color: AppColors.inkSoft)),
+              Text(tr('Ton garage virtuel t’attend. Trente secondes, promis.'), style: AppText.body(15, color: AppColors.inkSoft)),
               const SizedBox(height: 30),
               TextFormField(
                 controller: _emailController,
                 enabled: !_isLoading,
                 keyboardType: TextInputType.emailAddress,
                 autofillHints: const [AutofillHints.email],
-                decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.alternate_email_rounded)),
-                validator: (value) => value == null || !value.contains('@') ? 'Entre une adresse e-mail valide' : null,
+                decoration: InputDecoration(labelText: tr('E-mail'), prefixIcon: Icon(Icons.alternate_email_rounded)),
+                validator: (value) => value == null || !value.contains('@') ? tr('Entre une adresse e-mail valide') : null,
               ),
               const SizedBox(height: 12),
               TextFormField(
@@ -181,14 +182,14 @@ class _SignupScreenState extends State<SignupScreen> {
                 obscureText: _isPasswordObscured,
                 autofillHints: const [AutofillHints.newPassword],
                 decoration: InputDecoration(
-                  labelText: 'Mot de passe (8 caractères min.)',
+                  labelText: tr('Mot de passe (8 caractères min.)'),
                   prefixIcon: const Icon(Icons.lock_outline_rounded),
                   suffixIcon: IconButton(
                     icon: Icon(_isPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
                     onPressed: () => setState(() => _isPasswordObscured = !_isPasswordObscured),
                   ),
                 ),
-                validator: (value) => (value?.length ?? 0) < 8 ? 'Au moins 8 caractères' : null,
+                validator: (value) => (value?.length ?? 0) < 8 ? tr('Au moins 8 caractères') : null,
               ),
               const SizedBox(height: 12),
               TextFormField(
@@ -197,24 +198,24 @@ class _SignupScreenState extends State<SignupScreen> {
                 obscureText: _isConfirmPasswordObscured,
                 onFieldSubmitted: (_) => signUp(),
                 decoration: InputDecoration(
-                  labelText: 'Confirme le mot de passe',
+                  labelText: tr('Confirme le mot de passe'),
                   prefixIcon: const Icon(Icons.lock_outline_rounded),
                   suffixIcon: IconButton(
                     icon: Icon(_isConfirmPasswordObscured ? Icons.visibility_off_outlined : Icons.visibility_outlined),
                     onPressed: () => setState(() => _isConfirmPasswordObscured = !_isConfirmPasswordObscured),
                   ),
                 ),
-                validator: (value) => value != _passwordController.text ? 'Les mots de passe ne correspondent pas' : null,
+                validator: (value) => value != _passwordController.text ? tr('Les mots de passe ne correspondent pas') : null,
               ),
               const SizedBox(height: 28),
               ElevatedButton(
                 onPressed: _isLoading ? null : signUp,
                 child: _isLoading
                     ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4))
-                    : const Text('Créer mon compte'),
+                    : Text(tr('Créer mon compte')),
               ),
               const SizedBox(height: 14),
-              TextButton(onPressed: () => Navigator.pop(context), child: const Text('J’ai déjà un compte')),
+              TextButton(onPressed: () => Navigator.pop(context), child: Text(tr('J’ai déjà un compte'))),
             ],
           ),
         ),

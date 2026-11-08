@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -24,11 +25,11 @@ class NotificationService extends ChangeNotifier {
 
   bool get enabled => _enabled;
 
-  static const _details = NotificationDetails(
+  static final _details = NotificationDetails(
     android: AndroidNotificationDetails(
       _channelId,
-      'Rappels de spot',
-      channelDescription: 'Défi du jour, série en cours et bilan de la semaine',
+      tr('Rappels de spot'),
+      channelDescription: tr('Défi du jour, série en cours et bilan de la semaine'),
       importance: Importance.defaultImportance,
       priority: Priority.defaultPriority,
       icon: '@mipmap/ic_launcher',
@@ -98,19 +99,19 @@ class NotificationService extends ChangeNotifier {
         final day = DateTime(now.year, now.month, now.day + d, 12, 30);
         if (day.isBefore(now) || (d == 0 && spottedToday)) continue;
         final c = DailyChallenge.forDay(day);
-        await _schedule(100 + d, day, 'Défi du jour : ${c.title}', '${c.hint} · +${c.reward} XP');
+        await _schedule(100 + d, day, tr('Défi du jour : {0}', [c.title]), tr('{0} · +{1} XP', [c.hint, c.reward]));
       }
 
       // Série en danger, à 19 h, si rien n'a été spotté aujourd'hui.
       if (streak > 0 && !spottedToday) {
         final evening = DateTime(now.year, now.month, now.day, 19);
         if (evening.isAfter(now)) {
-          await _schedule(200, evening, 'Ta série de $streak jour${streak > 1 ? 's' : ''} est en jeu 🔥', "Un seul spot avant minuit et elle continue.");
+          await _schedule(200, evening, tr('Ta série de {0} jour{1} est en jeu 🔥', [streak, streak > 1 ? 's' : '']), tr('Un seul spot avant minuit et elle continue.'));
         }
       }
 
       // Rappel de retour si l'appli n'est pas rouverte pendant 3 jours.
-      await _schedule(300, DateTime(now.year, now.month, now.day + 3, 18), 'Les rues ne se spottent pas toutes seules', 'Une nouvelle carte t’attend peut-être au coin de la rue.');
+      await _schedule(300, DateTime(now.year, now.month, now.day + 3, 18), tr('Les rues ne se spottent pas toutes seules'), tr('Une nouvelle carte t’attend peut-être au coin de la rue.'));
 
       // Bilan du dimanche à 18 h.
       final sunday = DateTime(now.year, now.month, now.day + ((DateTime.sunday - now.weekday) % 7), 18);
@@ -122,8 +123,8 @@ class NotificationService extends ChangeNotifier {
         await _schedule(
           400,
           sunday,
-          'Ton bilan de la semaine',
-          weekCount == 0 ? 'Aucun spot cette semaine… dimanche, c’est le jour des belles sorties !' : '$weekCount spot${weekCount > 1 ? 's' : ''} cette semaine. Viens voir ta progression.',
+          tr('Ton bilan de la semaine'),
+          weekCount == 0 ? tr('Aucun spot cette semaine… dimanche, c’est le jour des belles sorties !') : tr('{0} spot{1} cette semaine. Viens voir ta progression.', [weekCount, weekCount > 1 ? 's' : '']),
         );
       }
     } catch (e) {

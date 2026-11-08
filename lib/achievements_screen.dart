@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class AchievementsScreen extends StatelessWidget {
           length: AchievementService.categories.length,
           child: Scaffold(
             appBar: AppBar(
-              title: const Text('Succès'),
+              title: Text(tr('Succès')),
               bottom: TabBar(
                 isScrollable: true,
                 tabAlignment: TabAlignment.start,
@@ -47,8 +48,8 @@ class AchievementsScreen extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Expanded(child: _Big(value: '$done / $total', label: 'paliers débloqués')),
-                      Expanded(child: _Big(value: '$xp', label: 'XP gagnés en succès')),
+                      Expanded(child: _Big(value: '$done / $total', label: tr('paliers débloqués'))),
+                      Expanded(child: _Big(value: '$xp', label: tr('XP gagnés en succès'))),
                     ],
                   ),
                 ),
@@ -129,11 +130,11 @@ class _AchievementCard extends StatelessWidget {
                   children: [
                     Text(done ? a.levels.last.title : current.title, style: AppText.body(16, weight: FontWeight.w800)),
                     const SizedBox(height: 2),
-                    Text(done ? 'Tous les paliers sont débloqués' : current.description, style: AppText.body(13, color: AppColors.inkSoft)),
+                    Text(done ? tr('Tous les paliers sont débloqués') : current.description, style: AppText.body(13, color: AppColors.inkSoft)),
                   ],
                 ),
               ),
-              if (!done) Text('+${current.xpReward} XP', style: AppText.mono(12, color: accent)),
+              if (!done) Text(tr('+{0} XP', [current.xpReward]), style: AppText.mono(12, color: accent)),
             ],
           ),
           const SizedBox(height: 14),

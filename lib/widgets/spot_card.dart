@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/data_manager.dart';
@@ -63,7 +64,7 @@ class SpotCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rarity = rarityOfSpot(car);
-    final brand = (car['brandName'] as String?) ?? 'Marque inconnue';
+    final brand = (car['brandName'] as String?) ?? tr('Marque inconnue');
     final model = cleanModelName(car['modelName'] as String?);
 
     return Container(

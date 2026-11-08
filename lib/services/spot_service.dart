@@ -1,4 +1,5 @@
 
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -65,7 +66,7 @@ class SpotSaveResult {
 
 class DuplicatePlateException implements Exception {
   @override
-  String toString() => 'Cette plaque est déjà dans ton garage.';
+  String toString() => tr('Cette plaque est déjà dans ton garage.');
 }
 
 class SpotService {

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +19,7 @@ class ThemeSelectionScreen extends StatelessWidget {
     final w = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Apparence')),
+      appBar: AppBar(title: Text(tr('Apparence'))),
       body: ListView(
         padding: EdgeInsets.fromLTRB(16, 4, 16, 32 + MediaQuery.paddingOf(context).bottom),
         children: [
@@ -47,7 +48,7 @@ class ThemeSelectionScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 26),
-          Text('COULEUR DOMINANTE', style: AppText.label(11.5, color: AppColors.inkMuted)),
+          Text(tr('COULEUR DOMINANTE'), style: AppText.label(11.5, color: AppColors.inkMuted)),
           const SizedBox(height: 12),
           Wrap(
             spacing: 6,
@@ -124,7 +125,7 @@ class _PaletteCard extends StatelessWidget {
               children: [
                 Icon(p.isDark ? Icons.dark_mode_rounded : Icons.light_mode_rounded, size: 16, color: p.inkSoft),
                 const SizedBox(width: 6),
-                Expanded(child: Text(p.name, style: AppText.body(14, weight: FontWeight.w800, color: p.ink))),
+                Expanded(child: Text(tr(p.name), style: AppText.body(14, weight: FontWeight.w800, color: p.ink))),
                 if (selected) Icon(Icons.check_circle_rounded, size: 18, color: accent),
               ],
             ),
@@ -167,7 +168,7 @@ class _Swatch extends StatelessWidget {
             ),
             const SizedBox(height: 6),
             Text(
-              choice.name,
+              tr(choice.name),
               maxLines: 2,
               textAlign: TextAlign.center,
               style: AppText.body(10.5, weight: selected ? FontWeight.w800 : FontWeight.w600, color: selected ? AppColors.ink : AppColors.inkSoft),
@@ -203,15 +204,15 @@ class _Preview extends StatelessWidget {
         children: [
           Row(
             children: [
-              Text('APERÇU', style: AppText.label(11, color: AppColors.inkMuted)),
+              Text(tr('APERÇU'), style: AppText.label(11, color: AppColors.inkMuted)),
               const Spacer(),
               const RarityBadge(rarity: Rarity.legendaire, compact: true),
             ],
           ),
           const SizedBox(height: 10),
-          Text('Porsche 911 GT3', style: AppText.display(26)),
+          Text(tr('Porsche 911 GT3'), style: AppText.display(26)),
           const SizedBox(height: 4),
-          Text('Génération 992 · 510 ch', style: AppText.body(13.5, color: AppColors.inkSoft)),
+          Text(tr('Génération 992 · 510 ch'), style: AppText.body(13.5, color: AppColors.inkSoft)),
           const SizedBox(height: 14),
           Row(
             children: [
@@ -221,7 +222,7 @@ class _Preview extends StatelessWidget {
                 duration: const Duration(milliseconds: 300),
                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
                 decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(AppRadius.md)),
-                child: Text('+250 XP', style: AppText.body(14, color: onAccent, weight: FontWeight.w800)),
+                child: Text(tr('+250 XP'), style: AppText.body(14, color: onAccent, weight: FontWeight.w800)),
               ),
             ],
           ),

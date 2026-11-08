@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:math';
 
 import 'package:geolocator/geolocator.dart';
@@ -45,7 +46,7 @@ class LocationService {
       }
     }
 
-    final name = nearest != null && best < 40 ? nearest['nom'] as String : 'Position actuelle';
+    final name = nearest != null && best < 40 ? nearest['nom'] as String : tr('Position actuelle');
     return SpotLocation(name, pos.latitude, pos.longitude);
   }
 

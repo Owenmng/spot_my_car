@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -77,11 +78,11 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
                 icon: const Icon(Icons.sort_rounded),
                 initialValue: _sort,
                 onSelected: (v) => setState(() => _sort = v),
-                itemBuilder: (_) => const [
-                  PopupMenuItem(value: SortOption.nameAsc, child: Text('Nom (A → Z)')),
-                  PopupMenuItem(value: SortOption.yearDesc, child: Text('Plus récents')),
-                  PopupMenuItem(value: SortOption.yearAsc, child: Text('Plus anciens')),
-                  PopupMenuItem(value: SortOption.rarity, child: Text('Plus rares')),
+                itemBuilder: (_) => [
+                  PopupMenuItem(value: SortOption.nameAsc, child: Text(tr('Nom (A → Z)'))),
+                  PopupMenuItem(value: SortOption.yearDesc, child: Text(tr('Plus récents'))),
+                  PopupMenuItem(value: SortOption.yearAsc, child: Text(tr('Plus anciens'))),
+                  PopupMenuItem(value: SortOption.rarity, child: Text(tr('Plus rares'))),
                 ],
               ),
             ],
@@ -104,7 +105,7 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('$got / $total', style: AppText.display(26)),
-                                Text('modèles dans ta collection', style: AppText.body(13, color: AppColors.inkSoft)),
+                                Text(tr('modèles dans ta collection'), style: AppText.body(13, color: AppColors.inkSoft)),
                               ],
                             ),
                           ),
@@ -123,11 +124,11 @@ class _BrandModelsScreenState extends State<BrandModelsScreen> {
                       const SizedBox(height: 14),
                       TextField(
                         onChanged: (v) => setState(() => _q = v.trim()),
-                        decoration: const InputDecoration(hintText: 'Chercher un modèle', prefixIcon: Icon(Icons.search_rounded)),
+                        decoration: InputDecoration(hintText: tr('Chercher un modèle'), prefixIcon: Icon(Icons.search_rounded)),
                       ),
                       const SizedBox(height: 10),
                       FilterChip(
-                        label: const Text('À trouver seulement'),
+                        label: Text(tr('À trouver seulement')),
                         selected: _onlyMissing,
                         onSelected: (v) => setState(() => _onlyMissing = v),
                       ),

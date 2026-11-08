@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -40,18 +41,18 @@ class DailyChallenge {
     return m == null ? 9999 : int.parse(m.group(0)!);
   }
 
-  static final List<DailyChallenge> _pool = [
-    DailyChallenge(id: 'red', title: 'Voir rouge', hint: 'Spotte une voiture rouge', icon: Icons.local_fire_department_rounded, target: 1, reward: 40, matches: (c) => c['color'] == 'Rouge'),
-    DailyChallenge(id: 'yellow', title: 'Rayon de soleil', hint: 'Spotte une voiture jaune ou orange', icon: Icons.wb_sunny_rounded, target: 1, reward: 60, matches: (c) => c['color'] == 'Jaune' || c['color'] == 'Orange'),
-    DailyChallenge(id: 'italy', title: 'Dolce vita', hint: 'Spotte une marque italienne', icon: Icons.local_pizza_outlined, target: 1, reward: 50, matches: (c) => _countryOf(c) == 'Italie'),
-    DailyChallenge(id: 'japan', title: 'JDM', hint: 'Spotte une marque japonaise', icon: Icons.ramen_dining_outlined, target: 1, reward: 40, matches: (c) => _countryOf(c) == 'Japon'),
-    DailyChallenge(id: 'germany', title: 'Das Auto', hint: 'Spotte 2 marques allemandes', icon: Icons.sports_score_rounded, target: 2, reward: 50, matches: (c) => _countryOf(c) == 'Allemagne'),
-    DailyChallenge(id: 'uk', title: 'God save the car', hint: 'Spotte une marque britannique', icon: Icons.coffee_outlined, target: 1, reward: 60, matches: (c) => _countryOf(c) == 'Royaume-Uni'),
-    DailyChallenge(id: 'rare', title: 'Chasseur de rareté', hint: 'Spotte une voiture Rare ou mieux', icon: Icons.diamond_outlined, target: 1, reward: 80, matches: (c) => rarityOfSpot(c).index >= Rarity.rare.index),
-    DailyChallenge(id: 'three', title: 'Tournée du quartier', hint: 'Spotte 3 voitures aujourd’hui', icon: Icons.directions_walk_rounded, target: 3, reward: 50, matches: (_) => true),
-    DailyChallenge(id: 'classic', title: 'Retour vers le passé', hint: 'Spotte un modèle lancé avant 1995', icon: Icons.history_rounded, target: 1, reward: 70, matches: (c) => _firstYear(c) < 1995),
-    DailyChallenge(id: 'photo', title: 'Œil de photographe', hint: 'Ajoute 2 spots avec photo', icon: Icons.photo_camera_outlined, target: 2, reward: 40, matches: (c) => c['userPhotoUrl'] != null || c['hasPhoto'] == true),
-    DailyChallenge(id: 'electric', title: 'Silence, ça roule', hint: 'Spotte une voiture électrique', icon: Icons.electric_bolt_rounded, target: 1, reward: 50, matches: (c) => '${c['type_carburant'] ?? ''}'.toLowerCase().contains('lectrique')),
+  static List<DailyChallenge> get _pool => [
+    DailyChallenge(id: 'red', title: tr('Voir rouge'), hint: tr('Spotte une voiture rouge'), icon: Icons.local_fire_department_rounded, target: 1, reward: 40, matches: (c) => c['color'] == 'Rouge'),
+    DailyChallenge(id: 'yellow', title: tr('Rayon de soleil'), hint: tr('Spotte une voiture jaune ou orange'), icon: Icons.wb_sunny_rounded, target: 1, reward: 60, matches: (c) => c['color'] == 'Jaune' || c['color'] == 'Orange'),
+    DailyChallenge(id: 'italy', title: tr('Dolce vita'), hint: tr('Spotte une marque italienne'), icon: Icons.local_pizza_outlined, target: 1, reward: 50, matches: (c) => _countryOf(c) == 'Italie'),
+    DailyChallenge(id: 'japan', title: 'JDM', hint: tr('Spotte une marque japonaise'), icon: Icons.ramen_dining_outlined, target: 1, reward: 40, matches: (c) => _countryOf(c) == 'Japon'),
+    DailyChallenge(id: 'germany', title: tr('Das Auto'), hint: tr('Spotte 2 marques allemandes'), icon: Icons.sports_score_rounded, target: 2, reward: 50, matches: (c) => _countryOf(c) == 'Allemagne'),
+    DailyChallenge(id: 'uk', title: tr('God save the car'), hint: tr('Spotte une marque britannique'), icon: Icons.coffee_outlined, target: 1, reward: 60, matches: (c) => _countryOf(c) == 'Royaume-Uni'),
+    DailyChallenge(id: 'rare', title: tr('Chasseur de rareté'), hint: tr('Spotte une voiture Rare ou mieux'), icon: Icons.diamond_outlined, target: 1, reward: 80, matches: (c) => rarityOfSpot(c).index >= Rarity.rare.index),
+    DailyChallenge(id: 'three', title: tr('Tournée du quartier'), hint: tr('Spotte 3 voitures aujourd’hui'), icon: Icons.directions_walk_rounded, target: 3, reward: 50, matches: (_) => true),
+    DailyChallenge(id: 'classic', title: tr('Retour vers le passé'), hint: tr('Spotte un modèle lancé avant 1995'), icon: Icons.history_rounded, target: 1, reward: 70, matches: (c) => _firstYear(c) < 1995),
+    DailyChallenge(id: 'photo', title: tr('Œil de photographe'), hint: tr('Ajoute 2 spots avec photo'), icon: Icons.photo_camera_outlined, target: 2, reward: 40, matches: (c) => c['userPhotoUrl'] != null || c['hasPhoto'] == true),
+    DailyChallenge(id: 'electric', title: tr('Silence, ça roule'), hint: tr('Spotte une voiture électrique'), icon: Icons.electric_bolt_rounded, target: 1, reward: 50, matches: (c) => '${c['type_carburant'] ?? ''}'.toLowerCase().contains('lectrique')),
   ];
 
   static DailyChallenge? byId(String id) {

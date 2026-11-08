@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 import 'dart:math';
 
@@ -68,7 +69,7 @@ class _LevelUpOverlayState extends State<LevelUpOverlay> with TickerProviderStat
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(_shifted ? 'RAPPORT SUPÉRIEUR' : 'MONTÉE EN RÉGIME…', style: AppText.label(13, color: _shifted ? accent : Colors.white54)),
+                Text(_shifted ? tr('RAPPORT SUPÉRIEUR') : tr('MONTÉE EN RÉGIME…'), style: AppText.label(13, color: _shifted ? accent : Colors.white54)),
                 const SizedBox(height: 26),
                 SizedBox(
                   width: w,
@@ -118,7 +119,7 @@ class _LevelUpOverlayState extends State<LevelUpOverlay> with TickerProviderStat
                       children: [
                         Text(widget.newLevel.title.toUpperCase(), textAlign: TextAlign.center, style: AppText.display(34, color: Colors.white)),
                         const SizedBox(height: 6),
-                        Text('${widget.newXp} XP au compteur', style: AppText.mono(14, color: Colors.white54)),
+                        Text(tr('{0} XP au compteur', [widget.newXp]), style: AppText.mono(14, color: Colors.white54)),
                         if (next != null) ...[
                           const SizedBox(height: 16),
                           Container(
@@ -135,7 +136,7 @@ class _LevelUpOverlayState extends State<LevelUpOverlay> with TickerProviderStat
                                 const SizedBox(width: 8),
                                 Flexible(
                                   child: Text(
-                                    'Prochain rapport : ${next.title} à ${next.xpRequired} XP',
+                                    tr('Prochain rapport : {0} à {1} XP', [next.title, next.xpRequired]),
                                     style: AppText.body(13, color: Colors.white70, weight: FontWeight.w600),
                                   ),
                                 ),
@@ -146,7 +147,7 @@ class _LevelUpOverlayState extends State<LevelUpOverlay> with TickerProviderStat
                         const SizedBox(height: 26),
                         SizedBox(
                           width: double.infinity,
-                          child: ElevatedButton(onPressed: _shifted ? widget.onDismissed : null, child: const Text('Passer la vitesse')),
+                          child: ElevatedButton(onPressed: _shifted ? widget.onDismissed : null, child: Text(tr('Passer la vitesse'))),
                         ),
                       ],
                     ),

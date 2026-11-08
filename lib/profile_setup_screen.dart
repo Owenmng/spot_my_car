@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/profile_setup_screen.dart (VERSION COMPLÈTE ET CORRIGÉE)
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -113,7 +114,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
       // On affiche un message de succès
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Profil mis à jour !"), backgroundColor: Colors.green),
+          SnackBar(content: Text(tr('Profil mis à jour !')), backgroundColor: Colors.green),
         );
         // Et on ferme la page
         Navigator.of(context).pop();
@@ -122,7 +123,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Une erreur est survenue."), backgroundColor: Colors.red),
+          SnackBar(content: Text(tr('Une erreur est survenue.')), backgroundColor: Colors.red),
         );
       }
     } finally {
@@ -148,7 +149,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(isEditing ? 'Modifier le profil' : ''),
+        title: Text(isEditing ? tr('Modifier le profil') : ''),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -159,16 +160,16 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               showDialog<bool>(
                 context: context,
                 builder: (context) => AlertDialog(
-                  title: const Text('Quitter la configuration ?'),
-                  content: const Text('Si vous quittez maintenant, votre compte sera créé mais votre profil ne sera pas finalisé. Vous devrez vous reconnecter pour le compléter.'),
+                  title: Text(tr('Quitter la configuration ?')),
+                  content: Text(tr('Si vous quittez maintenant, votre compte sera créé mais votre profil ne sera pas finalisé. Vous devrez vous reconnecter pour le compléter.')),
                   actions: [
-                    TextButton(onPressed: () => Navigator.of(context).pop(false), child: const Text('Rester')),
+                    TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(tr('Rester'))),
                     TextButton(
                       onPressed: () {
                         Navigator.of(context).pop(true);
                         FirebaseAuth.instance.signOut();
                       },
-                      child: const Text('Quitter', style: TextStyle(color: Colors.red)),
+                      child: Text(tr('Quitter'), style: TextStyle(color: Colors.red)),
                     ),
                   ],
                 ),
@@ -186,10 +187,10 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(isEditing ? 'Mon profil' : 'Dernière ligne droite', style: AppText.display(34)),
+                  Text(isEditing ? tr('Mon profil') : tr('Dernière ligne droite'), style: AppText.display(34)),
                   const SizedBox(height: 8),
                   Text(
-                    isEditing ? 'Mets à jour tes infos de spotter.' : 'Choisis ton pseudo : c’est lui qui apparaîtra au classement.',
+                    isEditing ? tr('Mets à jour tes infos de spotter.') : tr('Choisis ton pseudo : c’est lui qui apparaîtra au classement.'),
                     style: AppText.body(15, color: AppColors.inkSoft),
                   ),
                   const SizedBox(height: 28),
@@ -199,9 +200,9 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                       controller: _pseudoController,
                       maxLength: 20,
                       textCapitalization: TextCapitalization.sentences,
-                      decoration: const InputDecoration(labelText: 'Pseudo', prefixIcon: Icon(Icons.badge_outlined), counterText: ''),
+                      decoration: InputDecoration(labelText: tr('Pseudo'), prefixIcon: Icon(Icons.badge_outlined), counterText: ''),
                       validator: (value) => value == null || value.isEmpty
-                          ? 'Le pseudo est obligatoire'
+                          ? tr('Le pseudo est obligatoire')
                           : null),
                   const SizedBox(height: 16),
                   Row(
@@ -210,18 +211,18 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                           child: TextFormField(
                               controller: _firstNameController,
                               textCapitalization: TextCapitalization.words,
-                              decoration: const InputDecoration(labelText: 'Prénom'),
+                              decoration: InputDecoration(labelText: tr('Prénom')),
                               validator: (value) => value == null || value.isEmpty
-                                  ? 'Le prénom est obligatoire'
+                                  ? tr('Le prénom est obligatoire')
                                   : null)),
                       const SizedBox(width: 16),
                       Expanded(
                           child: TextFormField(
                               controller: _lastNameController,
                               textCapitalization: TextCapitalization.words,
-                              decoration: const InputDecoration(labelText: 'Nom'),
+                              decoration: InputDecoration(labelText: tr('Nom')),
                               validator: (value) => value == null || value.isEmpty
-                                  ? 'Le nom est obligatoire'
+                                  ? tr('Le nom est obligatoire')
                                   : null)),
                     ],
                   ),
@@ -236,8 +237,8 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                         DateInputFormatter(),
                       ],
                       decoration: InputDecoration(
-                          labelText: 'Date de naissance',
-                          hintText: 'JJ/MM/AAAA',
+                          labelText: tr('Date de naissance'),
+                          hintText: tr('JJ/MM/AAAA'),
                           suffixIcon: IconButton(
                               icon: const Icon(Icons.calendar_today_outlined),
                               onPressed: () {
@@ -246,7 +247,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                               })),
                       validator: (value) {
                         if (value != null && value.isNotEmpty && value.length < 10) {
-                          return 'Date incomplète';
+                          return tr('Date incomplète');
                         }
                         try {
                           if (value != null && value.isNotEmpty) {
@@ -255,11 +256,11 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                             final year = int.parse(parts[2]);
                             final now = DateTime.now();
                             if (year < now.year - 100 || year > now.year) {
-                              return 'Année invalide';
+                              return tr('Année invalide');
                             }
                           }
                         } catch (e) {
-                          return 'Date invalide';
+                          return tr('Date invalide');
                         }
                         return null; // Pas d'erreur
                       },
@@ -273,12 +274,12 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                         AudioService.instance.playSfx(SoundEffect.clicLeger);
                         _selectFavoriteBrand();
                       },
-                      decoration: const InputDecoration(
-                          labelText: 'Marque de voiture préférée',
-                          hintText: 'Appuie pour choisir',
+                      decoration: InputDecoration(
+                          labelText: tr('Marque de voiture préférée'),
+                          hintText: tr('Appuie pour choisir'),
                           suffixIcon: Icon(Icons.arrow_drop_down)),
                       validator: (value) => value == null || value.isEmpty
-                          ? 'Choisis une marque'
+                          ? tr('Choisis une marque')
                           : null),
                   const SizedBox(height: 40),
                   _isLoading
@@ -293,7 +294,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                                AudioService.instance.playSfx(SoundEffect.clicLeger); // Son d'erreur
                             }
                           },
-                          child: Text(isEditing ? 'Enregistrer' : 'C’est parti')),
+                          child: Text(isEditing ? tr('Enregistrer') : tr('C’est parti'))),
                 ],
               ),
             ),

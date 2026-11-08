@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/intl.dart';
@@ -74,10 +75,10 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
                               showAppSnack(
                                 context,
                                 !ok
-                                    ? 'Viseur plein : ${WishlistService.maxTargets} cibles maximum.'
+                                    ? tr('Viseur plein : {0} cibles maximum.', [WishlistService.maxTargets])
                                     : on
-                                        ? 'Retirée du viseur'
-                                        : 'Dans le viseur ! +${WishlistService.bonusXp} XP bonus quand tu la spotteras.',
+                                        ? tr('Retirée du viseur')
+                                        : tr('Dans le viseur ! +{0} XP bonus quand tu la spotteras.', [WishlistService.bonusXp]),
                                 icon: Icons.gps_fixed_rounded,
                               );
                             },
@@ -93,7 +94,7 @@ class _ModelDetailScreenState extends State<ModelDetailScreen> {
                           children: [
                             Icon(on ? Icons.gps_fixed_rounded : Icons.gps_not_fixed_rounded, size: 17, color: on ? Theme.of(context).colorScheme.onPrimary : Colors.white),
                             const SizedBox(width: 6),
-                            Text(on ? 'Dans le viseur' : 'Viser', style: AppText.body(13, weight: FontWeight.w800, color: on ? Theme.of(context).colorScheme.onPrimary : Colors.white)),
+                            Text(on ? tr('Dans le viseur') : tr('Viser'), style: AppText.body(13, weight: FontWeight.w800, color: on ? Theme.of(context).colorScheme.onPrimary : Colors.white)),
                           ],
                         ),
                       ),
@@ -198,19 +199,19 @@ class _ModelPage extends StatelessWidget {
                   crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
                     RarityBadge(rarity: rarity),
-                    Text('+${rarity.xp} XP au spot', style: AppText.mono(12.5, color: rarity.color)),
+                    Text(tr('+{0} XP au spot', [rarity.xp]), style: AppText.mono(12.5, color: rarity.color)),
                     if (model['production_years'] != null)
                       Text('${model['production_years']}'.replaceAll("Aujourd'hui", 'auj.'), style: AppText.mono(12.5, color: AppColors.inkSoft)),
                   ],
                 ),
                 const SizedBox(height: 26),
-                Text('FICHE TECHNIQUE', style: AppText.label(12, color: AppColors.inkSoft)),
+                Text(tr('FICHE TECHNIQUE'), style: AppText.label(12, color: AppColors.inkSoft)),
                 const SizedBox(height: 12),
                 SpecsGrid(model: model),
                 const SizedBox(height: 28),
                 _Dossier(model: model, brand: brand),
                 const SizedBox(height: 28),
-                Text('MES SPOTS', style: AppText.label(12, color: AppColors.inkSoft)),
+                Text(tr('MES SPOTS'), style: AppText.label(12, color: AppColors.inkSoft)),
                 const SizedBox(height: 12),
                 _MySpots(modelId: model['id'] as String?),
                 if (model['imageCredit'] != null) ...[
@@ -265,7 +266,7 @@ class _DossierState extends State<_Dossier> {
       );
       if (mounted) setState(() => _sheet = s);
     } catch (_) {
-      if (mounted) setState(() => _error = 'Impossible de charger la fiche pour le moment.');
+      if (mounted) setState(() => _error = tr('Impossible de charger la fiche pour le moment.'));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -290,12 +291,12 @@ class _DossierState extends State<_Dossier> {
             children: [
               Icon(Icons.menu_book_rounded, color: accent, size: 20),
               const SizedBox(width: 8),
-              Text('LE DOSSIER', style: AppText.label(12, color: accent)),
+              Text(tr('LE DOSSIER'), style: AppText.label(12, color: accent)),
             ],
           ),
           const SizedBox(height: 10),
           if (s == null) ...[
-            Text('Histoire, moteur, chiffres clés, anecdotes et détails pour la reconnaître dans la rue.', style: AppText.body(14, color: AppColors.inkSoft)),
+            Text(tr('Histoire, moteur, chiffres clés, anecdotes et détails pour la reconnaître dans la rue.'), style: AppText.body(14, color: AppColors.inkSoft)),
             const SizedBox(height: 14),
             if (_error != null) ...[
               Text(_error!, style: AppText.body(13, color: AppColors.danger)),
@@ -306,13 +307,13 @@ class _DossierState extends State<_Dossier> {
               icon: _loading
                   ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
                   : const Icon(Icons.auto_awesome_rounded, size: 18),
-              label: Text(_loading ? 'Rédaction en cours…' : 'Ouvrir le dossier'),
+              label: Text(_loading ? tr('Rédaction en cours…') : tr('Ouvrir le dossier')),
             ),
           ] else ...[
             Text(s.summary, style: AppText.body(15, color: AppColors.ink).copyWith(height: 1.5)),
-            _block('Moteur', s.engine),
-            _block('Chiffres clés', s.keyFigures),
-            _block('Production', s.production),
+            _block(tr('Moteur'), s.engine),
+            _block(tr('Chiffres clés'), s.keyFigures),
+            _block(tr('Production'), s.production),
             if (s.anecdotes.isNotEmpty) ...[
               const SizedBox(height: 16),
               Text('ANECDOTES', style: AppText.label(11, color: AppColors.inkMuted)),
@@ -330,9 +331,9 @@ class _DossierState extends State<_Dossier> {
                   ),
                 ),
             ],
-            _block('Comment la reconnaître', s.howToSpot),
+            _block(tr('Comment la reconnaître'), s.howToSpot),
             const SizedBox(height: 12),
-            Text('Rédigé par IA à partir de ses connaissances : vérifie les chiffres importants.', style: AppText.body(11.5, color: AppColors.inkMuted)),
+            Text(tr('Rédigé par IA à partir de ses connaissances : vérifie les chiffres importants.'), style: AppText.body(11.5, color: AppColors.inkMuted)),
           ],
         ],
       ),
@@ -377,7 +378,7 @@ class _MySpots extends StatelessWidget {
               children: [
                 Icon(Icons.visibility_outlined, color: AppColors.inkSoft),
                 const SizedBox(width: 12),
-                Expanded(child: Text('Pas encore spottée. Ouvre l’œil !', style: AppText.body(14, color: AppColors.inkSoft))),
+                Expanded(child: Text(tr('Pas encore spottée. Ouvre l’œil !'), style: AppText.body(14, color: AppColors.inkSoft))),
               ],
             ),
           );
@@ -407,7 +408,7 @@ class _MySpots extends StatelessWidget {
                             const SizedBox(height: 4),
                             Text(
                               [
-                                if (d.data()['spottedAt'] is Timestamp) DateFormat('d MMM yyyy', 'fr_FR').format((d.data()['spottedAt'] as Timestamp).toDate()),
+                                if (d.data()['spottedAt'] is Timestamp) DateFormat('d MMM yyyy', I18n.instance.dateLocale).format((d.data()['spottedAt'] as Timestamp).toDate()),
                                 if (d.data()['locationName'] != null) d.data()['locationName'],
                               ].join(' · '),
                               maxLines: 1,

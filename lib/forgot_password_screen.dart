@@ -1,5 +1,6 @@
 // Fichier: lib/forgot_password_screen.dart
 
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -16,19 +17,19 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
   Future<void> resetPassword() async {
     if (_emailController.text.trim().isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Veuillez entrer votre email."), backgroundColor: Colors.red));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('Veuillez entrer votre email.')), backgroundColor: Colors.red));
       return;
     }
     setState(() { _isLoading = true; });
 
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: _emailController.text.trim());
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Email de réinitialisation envoyé ! Vérifiez votre boîte de réception."), backgroundColor: Colors.green));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('Email de réinitialisation envoyé ! Vérifiez votre boîte de réception.')), backgroundColor: Colors.green));
       if (mounted) Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
-      String errorMessage = "Une erreur est survenue.";
+      String errorMessage = tr('Une erreur est survenue.');
       if (e.code == 'user-not-found') {
-        errorMessage = "Aucun utilisateur trouvé pour cet email.";
+        errorMessage = tr('Aucun utilisateur trouvé pour cet email.');
       }
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(errorMessage), backgroundColor: Colors.red));
     } finally {
@@ -39,15 +40,15 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Mot de passe oublié')),
+      appBar: AppBar(title: Text(tr('Mot de passe oublié'))),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Text(
-              'Entrez votre email pour recevoir un lien de réinitialisation.',
+            Text(
+              tr('Entrez votre email pour recevoir un lien de réinitialisation.'),
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
@@ -55,7 +56,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             TextField(
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(hintText: 'E-mail', prefixIcon: Icon(Icons.alternate_email_rounded)),
+              decoration: InputDecoration(hintText: tr('E-mail'), prefixIcon: Icon(Icons.alternate_email_rounded)),
               onSubmitted: (_) => resetPassword(),
             ),
             const SizedBox(height: 20),
@@ -63,7 +64,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 ? const Center(child: CircularProgressIndicator())
                 : ElevatedButton(
                     onPressed: resetPassword,
-                    child: const Text('Envoyer le lien'),
+                    child: Text(tr('Envoyer le lien')),
                   ),
           ],
         ),

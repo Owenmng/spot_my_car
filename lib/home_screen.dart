@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -41,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _spot() async {
     if (!context.read<ConnectivityService>().isOnline) {
-      showAppSnack(context, 'Il faut du réseau pour ajouter une voiture.', icon: Icons.cloud_off_rounded);
+      showAppSnack(context, tr('Il faut du réseau pour ajouter une voiture.'), icon: Icons.cloud_off_rounded);
       return;
     }
     AudioService.instance.playSfx(SoundEffect.clicPrincipal);
@@ -55,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final data = context.watch<DataManager>();
     if (!data.isDataLoaded) {
-      return const LoadingAnimationWidget(loadingMessage: 'On sort les voitures du garage…');
+      return LoadingAnimationWidget(loadingMessage: tr('On sort les voitures du garage…'));
     }
     if (!_musicStarted) {
       _musicStarted = true;
@@ -74,11 +75,11 @@ class _HomeScreenState extends State<HomeScreen> {
           context: context,
           builder: (ctx) => AlertDialog(
             icon: Icon(Icons.garage_rounded, color: Theme.of(ctx).colorScheme.primary, size: 32),
-            title: const Text('Quitter Spot My Car ?'),
-            content: const Text('Ta collection reste au garage, tu pourras reprendre où tu en étais.'),
+            title: Text(tr('Quitter Spot My Car ?')),
+            content: Text(tr('Ta collection reste au garage, tu pourras reprendre où tu en étais.')),
             actions: [
-              TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Quitter')),
-              ElevatedButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Rester')),
+              TextButton(onPressed: () => Navigator.pop(ctx, true), child: Text(tr('Quitter'))),
+              ElevatedButton(onPressed: () => Navigator.pop(ctx, false), child: Text(tr('Rester'))),
             ],
           ),
         );
@@ -159,8 +160,8 @@ class _NavBar extends StatelessWidget {
         ),
         child: Row(
           children: [
-            item(0, Icons.garage_outlined, Icons.garage_rounded, 'Garage'),
-            item(1, Icons.shield_outlined, Icons.shield_rounded, 'Collection'),
+            item(0, Icons.garage_outlined, Icons.garage_rounded, tr('Garage')),
+            item(1, Icons.shield_outlined, Icons.shield_rounded, tr('Collection')),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4),
               child: Pressable(
@@ -178,8 +179,8 @@ class _NavBar extends StatelessWidget {
                 ),
               ),
             ),
-            item(2, Icons.menu_book_outlined, Icons.menu_book_rounded, 'Catalogue'),
-            item(3, Icons.person_outline_rounded, Icons.person_rounded, 'Profil'),
+            item(2, Icons.menu_book_outlined, Icons.menu_book_rounded, tr('Catalogue')),
+            item(3, Icons.person_outline_rounded, Icons.person_rounded, tr('Profil')),
           ],
         ),
       ),

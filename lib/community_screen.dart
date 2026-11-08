@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:spot_my_car/community/duels_tab.dart';
 import 'package:spot_my_car/community/friends_tab.dart';
@@ -39,7 +40,7 @@ class _CommunityScreenState extends State<CommunityScreen> with SingleTickerProv
     final accent = Theme.of(context).colorScheme.primary;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Paddock'),
+        title: Text(tr('Paddock')),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(56),
           child: Padding(
@@ -62,12 +63,12 @@ class _CommunityScreenState extends State<CommunityScreen> with SingleTickerProv
                     labelStyle: AppText.body(14, weight: FontWeight.w800),
                     unselectedLabelStyle: AppText.body(14, weight: FontWeight.w600),
                     tabs: [
-                      const Tab(text: 'Amis'),
+                      Tab(text: tr('Amis')),
                       Tab(
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Text('Duels'),
+                            Text(tr('Duels')),
                             if (pending > 0) ...[
                               const SizedBox(width: 6),
                               Container(
@@ -79,7 +80,7 @@ class _CommunityScreenState extends State<CommunityScreen> with SingleTickerProv
                           ],
                         ),
                       ),
-                      const Tab(text: 'Mondial'),
+                      Tab(text: tr('Mondial')),
                     ],
                   );
                 },

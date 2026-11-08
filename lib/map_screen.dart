@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -60,7 +61,7 @@ class _MapScreenState extends State<MapScreen> {
     final loc = await LocationService.current().catchError((_) => null);
     if (!mounted) return;
     if (loc == null) {
-      showAppSnack(context, 'Position indisponible.', icon: Icons.location_off_outlined);
+      showAppSnack(context, tr('Position indisponible.'), icon: Icons.location_off_outlined);
       return;
     }
     setState(() => _me = LatLng(loc.latitude, loc.longitude));
@@ -83,7 +84,7 @@ class _MapScreenState extends State<MapScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Carte de chasse'),
+        title: Text(tr('Carte de chasse')),
         backgroundColor: AppColors.paper.withValues(alpha: 0.85),
       ),
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
@@ -163,7 +164,7 @@ class _MapScreenState extends State<MapScreen> {
                       },
                     ),
                   ),
-                  const SimpleAttributionWidget(source: Text('OpenStreetMap'), backgroundColor: Color(0xAA000000)),
+                  SimpleAttributionWidget(source: Text(tr('OpenStreetMap')), backgroundColor: Color(0xAA000000)),
                 ],
               ),
               // Filtres de rareté + compteur
@@ -183,7 +184,7 @@ class _MapScreenState extends State<MapScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 8),
                               child: ChoiceChip(
-                                label: Text(r == Rarity.commune ? 'Tous les spots' : '${r.label} +'),
+                                label: Text(r == Rarity.commune ? tr('Tous les spots') : '${r.label} +'),
                                 selected: _minRarity == r,
                                 avatar: r == Rarity.commune ? null : CircleAvatar(backgroundColor: r.color, radius: 5),
                                 onSelected: (_) => setState(() => _minRarity = r),
@@ -199,7 +200,7 @@ class _MapScreenState extends State<MapScreen> {
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                           decoration: BoxDecoration(color: Colors.black.withValues(alpha: 0.65), borderRadius: BorderRadius.circular(99)),
                           child: Text(
-                            '${points.length} spot${points.length > 1 ? 's' : ''} · $cities ville${cities > 1 ? 's' : ''}',
+                            tr('{0} spot{1} · {2} ville{3}', [points.length, points.length > 1 ? 's' : '', cities, cities > 1 ? 's' : '']),
                             style: AppText.body(12.5, color: Colors.white, weight: FontWeight.w700),
                           ),
                         ),
@@ -218,9 +219,9 @@ class _MapScreenState extends State<MapScreen> {
                       children: [
                         Icon(Icons.travel_explore_rounded, size: 40, color: accent),
                         const SizedBox(height: 10),
-                        Text('Ta carte est vierge', style: AppText.display(22)),
+                        Text(tr('Ta carte est vierge'), style: AppText.display(22)),
                         const SizedBox(height: 6),
-                        Text('Ajoute une ville ou ta position quand tu enregistres un spot : il apparaîtra ici.', textAlign: TextAlign.center, style: AppText.body(14, color: AppColors.inkSoft)),
+                        Text(tr('Ajoute une ville ou ta position quand tu enregistres un spot : il apparaîtra ici.'), textAlign: TextAlign.center, style: AppText.body(14, color: AppColors.inkSoft)),
                       ],
                     ),
                   ),
@@ -230,9 +231,9 @@ class _MapScreenState extends State<MapScreen> {
                 bottom: 24 + MediaQuery.paddingOf(context).bottom,
                 child: Column(
                   children: [
-                    _MapButton(icon: Icons.my_location_rounded, tooltip: 'Ma position', onTap: _locate),
+                    _MapButton(icon: Icons.my_location_rounded, tooltip: tr('Ma position'), onTap: _locate),
                     const SizedBox(height: 10),
-                    _MapButton(icon: Icons.fit_screen_rounded, tooltip: 'Tout voir', onTap: () => _fit(points)),
+                    _MapButton(icon: Icons.fit_screen_rounded, tooltip: tr('Tout voir'), onTap: () => _fit(points)),
                   ],
                 ),
               ),
@@ -360,7 +361,7 @@ class _SpotSheet extends StatelessWidget {
               children: [
                 PlateBadge(plate: '${car['plate'] ?? ''}', countryCode: car['plateCountryCode'] as String?, scale: 0.7),
                 const Spacer(),
-                if (car['xp'] is num && (car['xp'] as num) > 0) Text('+${car['xp']} XP', style: AppText.mono(13, color: spot.rarity.color)),
+                if (car['xp'] is num && (car['xp'] as num) > 0) Text(tr('+{0} XP', [car['xp']]), style: AppText.mono(13, color: spot.rarity.color)),
               ],
             ),
             const SizedBox(height: 12),
@@ -372,7 +373,7 @@ class _SpotSheet extends StatelessWidget {
                 if (t != null) ...[
                   Icon(Icons.event_outlined, size: 16, color: AppColors.inkSoft),
                   const SizedBox(width: 6),
-                  Text(DateFormat('d MMM yyyy', 'fr_FR').format(t), style: AppText.body(13.5, color: AppColors.inkSoft)),
+                  Text(DateFormat('d MMM yyyy', I18n.instance.dateLocale).format(t), style: AppText.body(13.5, color: AppColors.inkSoft)),
                 ],
               ],
             ),
@@ -382,7 +383,7 @@ class _SpotSheet extends StatelessWidget {
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (_) => SpottedCarDetailScreen(carId: spot.id, carData: car)));
               },
-              child: const Text('Voir la fiche'),
+              child: Text(tr('Voir la fiche')),
             ),
           ],
         ),

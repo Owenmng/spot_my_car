@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -75,7 +76,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  _rarity == null ? 'AJOUTÉE AU GARAGE' : 'NOUVELLE CARTE',
+                  _rarity == null ? tr('AJOUTÉE AU GARAGE') : tr('NOUVELLE CARTE'),
                   style: AppText.label(13, color: Colors.white60),
                 ).animate().fadeIn(delay: 200.ms),
                 const SizedBox(height: 18),
@@ -121,7 +122,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                     tween: IntTween(begin: 0, end: _revealed ? widget.result.xpGained : 0),
                     duration: const Duration(milliseconds: 1100),
                     curve: Curves.easeOutCubic,
-                    builder: (_, v, _) => Text('+$v XP', style: AppText.display(22, color: Colors.white)),
+                    builder: (_, v, _) => Text(tr('+{0} XP', [v]), style: AppText.display(22, color: Colors.white)),
                   ).animate().fadeIn(delay: 900.ms),
                 if (widget.result.targetHit) ...[
                   const SizedBox(height: 10),
@@ -130,7 +131,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                     children: [
                       Icon(Icons.gps_fixed_rounded, color: Theme.of(context).colorScheme.primary, size: 18),
                       const SizedBox(width: 6),
-                      Text('Cible atteinte ! Bonus inclus', style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
+                      Text(tr('Cible atteinte ! Bonus inclus'), style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
                     ],
                   ).animate().fadeIn(delay: 1000.ms).scale(begin: const Offset(0.8, 0.8)),
                 ],
@@ -171,7 +172,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 40),
                     child: Text(
-                      "La photo n'a pas pu être envoyée, le spot est enregistré sans.",
+                      tr('La photo n\'a pas pu être envoyée, le spot est enregistré sans.'),
                       textAlign: TextAlign.center,
                       style: AppText.body(13, color: Colors.white60),
                     ),
@@ -182,7 +183,7 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                   width: cardW,
                   child: ElevatedButton(
                     onPressed: () => Navigator.of(context).pop(),
-                    child: const Text('Continuer'),
+                    child: Text(tr('Continuer')),
                   ),
                 ).animate().fadeIn(delay: 1200.ms).slideY(begin: 0.3, end: 0),
               ],

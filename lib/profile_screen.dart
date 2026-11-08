@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:intl/intl.dart';
@@ -50,7 +51,7 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
               final level = levelForXp(xp);
               final next = nextLevel(level);
               final pseudo = (u['pseudo'] as String?)?.trim();
-              final name = (pseudo == null || pseudo.isEmpty) ? (user.displayName ?? 'Spotter') : pseudo;
+              final name = (pseudo == null || pseudo.isEmpty) ? (user.displayName ?? tr('Spotter')) : pseudo;
               final achievements = AchievementService(allBrands: data.brands, spottedCars: cars).checkAchievements();
               final unlockedLevels = achievements.fold<int>(0, (s, a) => s + a.unlockedLevel);
               final totalLevels = achievements.fold<int>(0, (s, a) => s + a.levels.length);
@@ -74,7 +75,7 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                 children: [
                   Row(
                     children: [
-                      Text('Profil', style: AppText.display(32)),
+                      Text(tr('Profil'), style: AppText.display(32)),
                       const Spacer(),
                       _IconPill(
                         icon: Icons.tune_rounded,
@@ -100,7 +101,7 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                           children: [
                             Text('NIV. ${level.level}', style: AppText.label(12, color: Theme.of(context).colorScheme.primary)),
                             const Spacer(),
-                            Text(next == null ? '$xp XP' : '$xp / ${next.xpRequired} XP', style: AppText.mono(13, color: AppColors.inkSoft)),
+                            Text(next == null ? '$xp XP' : tr('{0} / {1} XP', [xp, next.xpRequired]), style: AppText.mono(13, color: AppColors.inkSoft)),
                           ],
                         ),
                         const SizedBox(height: 4),
@@ -109,7 +110,7 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                         RevLights(value: levelProgress(xp)),
                         if (next != null) ...[
                           const SizedBox(height: 10),
-                          Text('Encore ${next.xpRequired - xp} XP avant « ${next.title} »', style: AppText.body(13, color: AppColors.inkSoft)),
+                          Text(tr('Encore {0} XP avant « {1} »', [next.xpRequired - xp, next.title]), style: AppText.body(13, color: AppColors.inkSoft)),
                         ],
                       ],
                     ),
@@ -125,8 +126,8 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                       final pending = s.data?.docs.length ?? 0;
                       return _NavTile(
                         icon: Icons.leaderboard_rounded,
-                        title: 'Paddock',
-                        subtitle: pending > 0 ? '$pending demande${pending > 1 ? 's' : ''} d’ami en attente' : 'Amis, duels, blind test et classement',
+                        title: tr('Paddock'),
+                        subtitle: pending > 0 ? tr('{0} demande{1} d’ami en attente', [pending, pending > 1 ? 's' : '']) : tr('Amis, duels, blind test et classement'),
                         badge: pending,
                         onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
                       );
@@ -141,21 +142,21 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                     crossAxisSpacing: 10,
                     childAspectRatio: 1.15,
                     children: [
-                      _Stat(value: '${cars.length}', label: 'Spots'),
-                      _Stat(value: '${cars.map((c) => c['modelId']).whereType<String>().toSet().length}', label: 'Modèles'),
-                      _Stat(value: '${brandCounts.length}', label: 'Marques'),
-                      _Stat(value: '${spotStreak(cars)} j', label: 'Série en cours'),
-                      _Stat(value: '${rarityCounts[3] + rarityCounts[4]}', label: 'Exotiques +'),
-                      _Stat(value: topBrand?.key ?? '—', label: 'Marque fétiche', small: true),
+                      _Stat(value: '${cars.length}', label: tr('Spots')),
+                      _Stat(value: '${cars.map((c) => c['modelId']).whereType<String>().toSet().length}', label: tr('Modèles')),
+                      _Stat(value: '${brandCounts.length}', label: tr('Marques')),
+                      _Stat(value: '${spotStreak(cars)} j', label: tr('Série en cours')),
+                      _Stat(value: '${rarityCounts[3] + rarityCounts[4]}', label: tr('Exotiques +')),
+                      _Stat(value: topBrand?.key ?? '—', label: tr('Marque fétiche'), small: true),
                     ],
                   ),
                   const SizedBox(height: 22),
-                  _SectionHeader(title: 'Répartition par rareté'),
+                  _SectionHeader(title: tr('Répartition par rareté')),
                   const SizedBox(height: 10),
                   _RarityBars(counts: rarityCounts),
                   const SizedBox(height: 26),
                   _SectionHeader(
-                    title: 'Succès',
+                    title: tr('Succès'),
                     trailing: '$unlockedLevels / $totalLevels',
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AchievementsScreen())),
                   ),
@@ -164,7 +165,7 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                   const SizedBox(height: 8),
                   OutlinedButton(
                     onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AchievementsScreen())),
-                    child: const Text('Voir tous les succès'),
+                    child: Text(tr('Voir tous les succès')),
                   ),
                 ].animate(interval: 30.ms).fadeIn(duration: 260.ms),
               );
@@ -230,13 +231,13 @@ class _Identity extends StatelessWidget {
             children: [
               Text(name, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.display(26)),
               if (since != null)
-                Text('Spotter depuis ${DateFormat('MMMM yyyy', 'fr_FR').format(since!)}', style: AppText.body(13, color: AppColors.inkSoft)),
+                Text(tr('Spotter depuis {0}', [DateFormat('MMMM yyyy', I18n.instance.dateLocale).format(since!)]), style: AppText.body(13, color: AppColors.inkSoft)),
               if (friendId != null) ...[
                 const SizedBox(height: 8),
                 Pressable(
                   onTap: () {
                     Clipboard.setData(ClipboardData(text: friendId!));
-                    showAppSnack(context, 'Code ami copié', icon: Icons.copy_rounded);
+                    showAppSnack(context, tr('Code ami copié'), icon: Icons.copy_rounded);
                   },
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
@@ -244,7 +245,7 @@ class _Identity extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text('CODE AMI  ', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                        Text(tr('CODE AMI  '), style: AppText.label(10.5, color: AppColors.inkMuted)),
                         Text(friendId!, style: AppText.mono(12.5)),
                         const SizedBox(width: 6),
                         Icon(Icons.copy_rounded, size: 14, color: AppColors.inkSoft),

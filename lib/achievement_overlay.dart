@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 import 'dart:math';
 
@@ -32,7 +33,7 @@ class AchievementOverlay extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('SUCCÈS DÉBLOQUÉ', style: AppText.label(13, color: _gold)).animate().fadeIn(duration: 300.ms),
+                  Text(tr('SUCCÈS DÉBLOQUÉ'), style: AppText.label(13, color: _gold)).animate().fadeIn(duration: 300.ms),
                   const SizedBox(height: 28),
                   SizedBox(
                     width: 190,
@@ -88,21 +89,21 @@ class AchievementOverlay extends StatelessWidget {
                         const SizedBox(height: 6),
                         Text('PALIER ${achievement.level}', style: AppText.label(10.5, color: Colors.white38)),
                         const SizedBox(height: 18),
-                        Text('+${achievement.xpReward} XP', style: AppText.display(26, color: _gold))
+                        Text(tr('+{0} XP', [achievement.xpReward]), style: AppText.display(26, color: _gold))
                             .animate()
                             .fadeIn(delay: 800.ms)
                             .scale(begin: const Offset(0.6, 0.6), curve: Curves.easeOutBack),
                         if (others > 0) ...[
                           const SizedBox(height: 8),
                           Text(
-                            others == 1 ? 'et 1 autre succès dans ton profil' : 'et $others autres succès dans ton profil',
+                            others == 1 ? tr('et 1 autre succès dans ton profil') : tr('et {0} autres succès dans ton profil', [others]),
                             style: AppText.body(13, color: Colors.white54),
                           ),
                         ],
                         const SizedBox(height: 28),
                         SizedBox(
                           width: double.infinity,
-                          child: ElevatedButton(onPressed: onDismissed, child: const Text('Excellent')),
+                          child: ElevatedButton(onPressed: onDismissed, child: Text(tr('Excellent'))),
                         ).animate().fadeIn(delay: 1000.ms).slideY(begin: 0.3, end: 0),
                       ],
                     ),

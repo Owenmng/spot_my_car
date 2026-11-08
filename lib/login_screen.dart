@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -39,11 +40,11 @@ class _LoginScreenState extends State<LoginScreen> {
           email: _emailController.text.trim(),
           password: _passwordController.text.trim());
     } on FirebaseAuthException catch (e) {
-      String errorMessage = "Une erreur est survenue.";
+      String errorMessage = tr('Une erreur est survenue.');
       if (e.code == 'user-not-found' ||
           e.code == 'wrong-password' ||
           e.code == 'invalid-credential') {
-        errorMessage = "Email ou mot de passe incorrect.";
+        errorMessage = tr('Email ou mot de passe incorrect.');
       }
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -182,7 +183,7 @@ class _LoginScreenState extends State<LoginScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text("La connexion avec Google n'a pas abouti (${e is PlatformException ? e.code : e.runtimeType}). Réessaie."),
+            content: Text(tr('La connexion avec Google n\'a pas abouti ({0}). Réessaie.', [e is PlatformException ? e.code : e.runtimeType])),
             backgroundColor: Colors.red));
       }
     } finally {
@@ -251,8 +252,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text('SPOT MY CAR', style: AppText.display(compact ? 22 : 25, color: Colors.white)),
-                                        Text('LE CARSPOTTING, EN COLLECTION', style: AppText.label(9.5, color: Colors.white54)),
+                                        Text(tr('SPOT MY CAR'), style: AppText.display(compact ? 22 : 25, color: Colors.white)),
+                                        Text(tr('LE CARSPOTTING, EN COLLECTION'), style: AppText.label(9.5, color: Colors.white54)),
                                       ],
                                     ).animate().fadeIn(delay: 100.ms, duration: 400.ms).slideX(begin: -0.08, end: 0),
                                   ],
@@ -263,10 +264,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Text('Chaque voiture\ncroisée devient\nune carte.', style: AppText.display(compact ? 30 : 36, color: Colors.white))
+                                      Text(tr('Chaque voiture\ncroisée devient\nune carte.'), style: AppText.display(compact ? 30 : 36, color: Colors.white))
                                           .animate().fadeIn(delay: 120.ms, duration: 450.ms).slideY(begin: 0.15, end: 0),
                                       const SizedBox(height: 8),
-                                      Text('Photographie, l’IA reconnaît, ta collection grandit.', style: AppText.body(compact ? 13.5 : 15, color: Colors.white70))
+                                      Text(tr('Photographie, l’IA reconnaît, ta collection grandit.'), style: AppText.body(compact ? 13.5 : 15, color: Colors.white70))
                                           .animate().fadeIn(delay: 260.ms),
                                     ],
                                   ),
@@ -291,7 +292,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           OutlinedButton.icon(
                             onPressed: _isLoading ? null : signInWithGoogle,
                             icon: Image.asset('assets/google_logo.png', height: 20),
-                            label: const Text('Continuer avec Google'),
+                            label: Text(tr('Continuer avec Google')),
                             style: OutlinedButton.styleFrom(backgroundColor: AppColors.card, minimumSize: Size(64, compact ? 50 : 54)),
                           ),
                           SizedBox(height: compact ? 10 : 14),
@@ -300,7 +301,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               const Expanded(child: Divider()),
                               Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 12),
-                                child: Text('ou avec ton e-mail', style: AppText.body(12.5, color: AppColors.inkMuted, weight: FontWeight.w600)),
+                                child: Text(tr('ou avec ton e-mail'), style: AppText.body(12.5, color: AppColors.inkMuted, weight: FontWeight.w600)),
                               ),
                               const Expanded(child: Divider()),
                             ],
@@ -313,7 +314,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             autofillHints: const [AutofillHints.email],
                             textInputAction: TextInputAction.next,
                             decoration: InputDecoration(
-                              labelText: 'E-mail',
+                              labelText: tr('E-mail'),
                               prefixIcon: const Icon(Icons.alternate_email_rounded),
                               isDense: compact,
                             ),
@@ -326,7 +327,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             autofillHints: const [AutofillHints.password],
                             onSubmitted: (_) => signInWithEmail(),
                             decoration: InputDecoration(
-                              labelText: 'Mot de passe',
+                              labelText: tr('Mot de passe'),
                               isDense: compact,
                               prefixIcon: const Icon(Icons.lock_outline_rounded),
                               suffixIcon: IconButton(
@@ -340,7 +341,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             child: TextButton(
                               style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
                               onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen())),
-                              child: const Text('Mot de passe oublié ?'),
+                              child: Text(tr('Mot de passe oublié ?')),
                             ),
                           ),
                           ElevatedButton(
@@ -348,17 +349,17 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: ElevatedButton.styleFrom(minimumSize: Size(64, compact ? 50 : 54)),
                             child: _isLoading
                                 ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4, color: Colors.white))
-                                : const Text('Se connecter'),
+                                : Text(tr('Se connecter')),
                           ),
                           const SizedBox(height: 4),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Nouveau ici ?', style: AppText.body(14, color: AppColors.inkSoft)),
+                              Text(tr('Nouveau ici ?'), style: AppText.body(14, color: AppColors.inkSoft)),
                               TextButton(
                                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen())),
                                 style: TextButton.styleFrom(foregroundColor: accent, visualDensity: VisualDensity.compact),
-                                child: const Text('Créer un compte'),
+                                child: Text(tr('Créer un compte')),
                               ),
                             ],
                           ),

@@ -1,4 +1,5 @@
 // Fichier: lib/services/app_data_loader.dart
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
 
@@ -13,13 +14,13 @@ class AppData {
 class AppDataLoader {
   Future<void> loadAllData({Function(String message)? onProgress}) async {
     if (AppData.isDataLoaded) {
-      onProgress?.call("Données déjà chargées !");
+      onProgress?.call(tr('Données déjà chargées !'));
       return;
     }
 
     try {
       // --- Étape 1: Charger les marques ---
-      onProgress?.call("Chargement des constructeurs...");
+      onProgress?.call(tr('Chargement des constructeurs...'));
       await Future.delayed(const Duration(milliseconds: 500)); // Petite pause pour l'effet
       final brandsResponse = await rootBundle.loadString('assets/data/brands.json');
       final brandsData = json.decode(brandsResponse);
@@ -32,7 +33,7 @@ class AppDataLoader {
         final brandId = brand['id'];
         
         // Affiche la progression
-        onProgress?.call("Synchronisation : ${brand['name']}...");
+        onProgress?.call(tr('Synchronisation : {0}...', [brand['name']]));
         
         try {
           final path = 'assets/data/models_by_brand/$brandId.json';
@@ -48,11 +49,11 @@ class AppDataLoader {
         await Future.delayed(const Duration(milliseconds: 20));
       }
 
-      onProgress?.call("Préparation du garage...");
+      onProgress?.call(tr('Préparation du garage...'));
       await Future.delayed(const Duration(milliseconds: 800));
       
       AppData.isDataLoaded = true;
-      onProgress?.call("Prêt !");
+      onProgress?.call(tr('Prêt !'));
 
     } catch (e) {
       print("Erreur critique lors du chargement des données : $e");

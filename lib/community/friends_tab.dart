@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -44,9 +45,9 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text('Ajouter un ami', style: AppText.display(24)),
+            Text(tr('Ajouter un ami'), style: AppText.display(24)),
             const SizedBox(height: 6),
-            Text("Demande-lui son identifiant : il est affiché en haut de son onglet Amis.", style: AppText.body(14, color: AppColors.inkSoft)),
+            Text(tr('Demande-lui son identifiant : il est affiché en haut de son onglet Amis.'), style: AppText.body(14, color: AppColors.inkSoft)),
             const SizedBox(height: 16),
             TextField(
               controller: ctrl,
@@ -58,10 +59,10 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
             const SizedBox(height: 14),
             ElevatedButton(
               onPressed: () async {
-                final r = await SocialService.instance.sendRequest(ctrl.text).catchError((_) => 'Erreur réseau, réessaie.');
+                final r = await SocialService.instance.sendRequest(ctrl.text).catchError((_) => tr('Erreur réseau, réessaie.'));
                 if (ctx.mounted) Navigator.pop(ctx, r);
               },
-              child: const Text('Envoyer la demande'),
+              child: Text(tr('Envoyer la demande')),
             ),
           ],
         ),
@@ -80,13 +81,13 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
             ListTile(
               leading: UserAvatar(photoUrl: p.photoUrl, name: p.name, size: 40),
               title: Text(p.name, style: AppText.body(16, weight: FontWeight.w800)),
-              subtitle: Text('Niveau ${levelForXp(p.xp).level} · ${p.spots} spots · ${p.duelsWon} duels gagnés'),
+              subtitle: Text(tr('Niveau {0} · {1} spots · {2} duels gagnés', [levelForXp(p.xp).level, p.spots, p.duelsWon])),
             ),
             const Divider(),
-            ListTile(leading: const Icon(Icons.sports_mma_rounded), title: const Text('Lancer un duel'), onTap: () => Navigator.pop(ctx, 'duel')),
+            ListTile(leading: const Icon(Icons.sports_mma_rounded), title: Text(tr('Lancer un duel')), onTap: () => Navigator.pop(ctx, 'duel')),
             ListTile(
               leading: const Icon(Icons.person_remove_outlined, color: AppColors.danger),
-              title: const Text('Retirer de mes amis', style: TextStyle(color: AppColors.danger)),
+              title: Text(tr('Retirer de mes amis'), style: TextStyle(color: AppColors.danger)),
               onTap: () => Navigator.pop(ctx, 'remove'),
             ),
           ],
@@ -101,17 +102,17 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
       final confirm = await showDialog<bool>(
         context: context,
         builder: (ctx) => AlertDialog(
-          title: const Text('Retirer cet ami ?'),
-          content: Text('${p.name} ne verra plus ta progression dans son classement.'),
+          title: Text(tr('Retirer cet ami ?')),
+          content: Text(tr('{0} ne verra plus ta progression dans son classement.', [p.name])),
           actions: [
-            TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Annuler')),
-            TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Retirer', style: TextStyle(color: AppColors.danger))),
+            TextButton(onPressed: () => Navigator.pop(ctx, false), child: Text(tr('Annuler'))),
+            TextButton(onPressed: () => Navigator.pop(ctx, true), child: Text(tr('Retirer'), style: TextStyle(color: AppColors.danger))),
           ],
         ),
       );
       if (confirm == true) {
         await SocialService.instance.remove(p.uid);
-        if (mounted) showAppSnack(context, '${p.name} a été retiré.');
+        if (mounted) showAppSnack(context, tr('{0} a été retiré.', [p.name]));
       }
     }
   }
@@ -136,11 +137,11 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
             const SizedBox(height: 22),
             Row(
               children: [
-                Expanded(child: Text(_weekly ? 'CETTE SEMAINE' : 'DEPUIS TOUJOURS', style: AppText.label(11.5, color: AppColors.inkMuted))),
+                Expanded(child: Text(_weekly ? tr('CETTE SEMAINE') : tr('DEPUIS TOUJOURS'), style: AppText.label(11.5, color: AppColors.inkMuted))),
                 SegmentedButton<bool>(
                   showSelectedIcon: false,
                   style: const ButtonStyle(visualDensity: VisualDensity.compact),
-                  segments: const [ButtonSegment(value: true, label: Text('Semaine')), ButtonSegment(value: false, label: Text('Total'))],
+                  segments: [ButtonSegment(value: true, label: Text(tr('Semaine'))), ButtonSegment(value: false, label: Text(tr('Total')))],
                   selected: {_weekly},
                   onSelectionChanged: (s) => setState(() => _weekly = s.first),
                 ),
@@ -152,9 +153,9 @@ class _FriendsTabState extends State<FriendsTab> with AutomaticKeepAliveClientMi
             else if (friendsCount <= 0)
               EmptyState(
                 icon: Icons.groups_2_outlined,
-                title: 'Le paddock est vide',
-                message: 'Ajoute des amis pour comparer vos garages chaque semaine et vous lancer des duels.',
-                action: ElevatedButton.icon(onPressed: _addFriend, icon: const Icon(Icons.person_add_alt_1_rounded), label: const Text('Ajouter un ami')),
+                title: tr('Le paddock est vide'),
+                message: tr('Ajoute des amis pour comparer vos garages chaque semaine et vous lancer des duels.'),
+                action: ElevatedButton.icon(onPressed: _addFriend, icon: const Icon(Icons.person_add_alt_1_rounded), label: Text(tr('Ajouter un ami'))),
               )
             else ...[
               RankSummary(ranked: ranked, score: score, me: _me, weekly: _weekly).animate().fadeIn(duration: 250.ms),
@@ -199,7 +200,7 @@ class _InviteCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('MON IDENTIFIANT', style: AppText.label(10.5, color: AppColors.inkMuted)),
+                Text(tr('MON IDENTIFIANT'), style: AppText.label(10.5, color: AppColors.inkMuted)),
                 const SizedBox(height: 4),
                 GestureDetector(
                   onTap: friendId == null
@@ -207,7 +208,7 @@ class _InviteCard extends StatelessWidget {
                       : () {
                           Clipboard.setData(ClipboardData(text: friendId!));
                           HapticFeedback.selectionClick();
-                          showAppSnack(context, 'Identifiant copié', icon: Icons.copy_rounded);
+                          showAppSnack(context, tr('Identifiant copié'), icon: Icons.copy_rounded);
                         },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -222,16 +223,16 @@ class _InviteCard extends StatelessWidget {
             ),
           ),
           IconButton.filledTonal(
-            tooltip: 'Inviter',
+            tooltip: tr('Inviter'),
             onPressed: friendId == null
                 ? null
                 : () => SharePlus.instance.share(ShareParams(
-                      text: 'On se défie sur Spot My Car ? Ajoute-moi avec mon identifiant : $friendId 🏎️',
+                      text: tr('On se défie sur Spot My Car ? Ajoute-moi avec mon identifiant : {0} 🏎️', [friendId]),
                     )),
             icon: const Icon(Icons.ios_share_rounded),
           ),
           const SizedBox(width: 6),
-          IconButton.filled(tooltip: 'Ajouter un ami', onPressed: onAdd, icon: const Icon(Icons.person_add_alt_1_rounded)),
+          IconButton.filled(tooltip: tr('Ajouter un ami'), onPressed: onAdd, icon: const Icon(Icons.person_add_alt_1_rounded)),
         ],
       ),
     );
@@ -253,7 +254,7 @@ class _Requests extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('DEMANDES REÇUES', style: AppText.label(11.5, color: AppColors.inkMuted)),
+              Text(tr('DEMANDES REÇUES'), style: AppText.label(11.5, color: AppColors.inkMuted)),
               const SizedBox(height: 8),
               for (final d in docs)
                 FutureBuilder<Player?>(
@@ -273,20 +274,20 @@ class _Requests extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(p?.name ?? '…', style: AppText.body(15, weight: FontWeight.w800)),
-                                if (p != null) Text('Niveau ${levelForXp(p.xp).level} · ${p.spots} spots', style: AppText.body(12.5, color: AppColors.inkSoft)),
+                                if (p != null) Text(tr('Niveau {0} · {1} spots', [levelForXp(p.xp).level, p.spots]), style: AppText.body(12.5, color: AppColors.inkSoft)),
                               ],
                             ),
                           ),
                           IconButton(
-                            tooltip: 'Refuser',
+                            tooltip: tr('Refuser'),
                             onPressed: () => SocialService.instance.decline(d.id),
                             icon: Icon(Icons.close_rounded, color: AppColors.inkMuted),
                           ),
                           IconButton.filled(
-                            tooltip: 'Accepter',
+                            tooltip: tr('Accepter'),
                             onPressed: () async {
                               await SocialService.instance.accept(d.id, d.data()['fromUserId'] as String);
-                              if (context.mounted) showAppSnack(context, 'Vous êtes amis !', icon: Icons.handshake_rounded);
+                              if (context.mounted) showAppSnack(context, tr('Vous êtes amis !'), icon: Icons.handshake_rounded);
                             },
                             icon: const Icon(Icons.check_rounded),
                           ),
@@ -346,7 +347,7 @@ class RankSummary extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(weekly ? 'XP CETTE SEMAINE' : 'XP TOTAL', style: AppText.label(10, color: AppColors.inkMuted)),
+                  Text(weekly ? tr('XP CETTE SEMAINE') : tr('XP TOTAL'), style: AppText.label(10, color: AppColors.inkMuted)),
                   Text('$mine', style: AppText.mono(24)),
                 ],
               ),
@@ -370,10 +371,10 @@ class RankSummary extends StatelessWidget {
               Expanded(
                 child: Text(
                   ahead == null
-                      ? (behind == null ? 'Seul en piste pour l’instant' : 'En tête · $lead XP d’avance sur ${behind.name}')
+                      ? (behind == null ? tr('Seul en piste pour l’instant') : tr('En tête · {0} XP d’avance sur {1}', [lead, behind.name]))
                       : gapAhead == 0
-                          ? 'À égalité avec ${ahead.name}'
-                          : '$gapAhead XP pour dépasser ${ahead.name}',
+                          ? tr('À égalité avec {0}', [ahead.name])
+                          : tr('{0} XP pour dépasser {1}', [gapAhead, ahead.name]),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: AppText.body(13, weight: FontWeight.w700, color: AppColors.inkSoft),
@@ -427,8 +428,8 @@ class RankTable extends StatelessWidget {
               children: [
                 SizedBox(width: 34, child: Text('POS', style: AppText.label(9.5, color: AppColors.inkMuted))),
                 Expanded(child: Text('SPOTTER', style: AppText.label(9.5, color: AppColors.inkMuted))),
-                SizedBox(width: 64, child: Text(weekly ? 'XP SEM.' : 'XP', textAlign: TextAlign.right, style: AppText.label(9.5, color: AppColors.inkMuted))),
-                SizedBox(width: 58, child: Text('ÉCART', textAlign: TextAlign.right, style: AppText.label(9.5, color: AppColors.inkMuted))),
+                SizedBox(width: 64, child: Text(weekly ? tr('XP SEM.') : 'XP', textAlign: TextAlign.right, style: AppText.label(9.5, color: AppColors.inkMuted))),
+                SizedBox(width: 58, child: Text(tr('ÉCART'), textAlign: TextAlign.right, style: AppText.label(9.5, color: AppColors.inkMuted))),
                 if (onDuel != null) const SizedBox(width: 36),
               ],
             ),
@@ -473,12 +474,12 @@ class RankTable extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              isMe ? '${p.name} · toi' : p.name,
+                              isMe ? tr('{0} · toi', [p.name]) : p.name,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: AppText.body(14, weight: FontWeight.w800),
                             ),
-                            Text('Niv. ${level.level} · ${level.title}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(11.5, color: AppColors.inkMuted)),
+                            Text(tr('Niv. {0} · {1}', [level.level, level.title]), maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(11.5, color: AppColors.inkMuted)),
                           ],
                         ),
                       ),
@@ -497,7 +498,7 @@ class RankTable extends StatelessWidget {
                           child: isMe
                               ? null
                               : IconButton(
-                                  tooltip: 'Défier',
+                                  tooltip: tr('Défier'),
                                   visualDensity: VisualDensity.compact,
                                   padding: EdgeInsets.zero,
                                   onPressed: () => onDuel!(p),
