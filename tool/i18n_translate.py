@@ -48,7 +48,12 @@ def call(model, prompt, thinking):
     return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
 
 
+QUOTA = {"hit": False}
+
+
 def translate(batch, lang):
+    if QUOTA["hit"]:
+        return None
     prompt = (f"{CONTEXT}\nTarget language: {LANGS[lang]}\n"
               f"Translate each French string of this JSON array. Return a JSON array of the same length and order.\n"
               + json.dumps(batch, ensure_ascii=False))
@@ -60,8 +65,12 @@ def translate(batch, lang):
                     return out
                 print(f"  longueur incorrecte ({len(out)}/{len(batch)}), nouvel essai")
             except Exception as e:
-                print(f"  {model}: {e}")
+                print(f"  {model}: {str(e)[:80]}")
+                if str(e).startswith("429"):
+                    if attempt >= 1:
+                        break  # ce modèle n'a plus de quota aujourd'hui
                 time.sleep(8 * (attempt + 1))
+    QUOTA["hit"] = True
     return None
 
 
@@ -91,3 +100,11 @@ for lang in LANGS:
     current = {k: current[k] for k in keys if k in current}
     json.dump(dict(sorted(current.items())), open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{lang}: {len(current)}/{len(keys)}")
+
+# Une langue n'est proposée dans l'appli que si elle est traduite à 100 %.
+ready = ["fr"] + [l for l in LANGS if os.path.exists(f"assets/i18n/{l}.json")
+                  and len(json.load(open(f"assets/i18n/{l}.json", encoding="utf-8"))) == len(keys)]
+src = open("lib/l10n/i18n.dart", encoding="utf-8").read()
+src = re.sub(r"static const ready = \{[^}]*\};", "static const ready = {" + ", ".join(f"'{l}'" for l in ready) + "};", src)
+open("lib/l10n/i18n.dart", "w", encoding="utf-8").write(src)
+print("langues prêtes :", ready)

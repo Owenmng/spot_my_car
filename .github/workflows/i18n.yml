@@ -27,5 +27,5 @@ jobs:
         run: |
           git config user.name "SpotMyCar bot"
           git config user.email "actions@github.com"
-          git add assets/i18n
+          git add assets/i18n lib/l10n/i18n.dart
           git diff --cached --quiet || (git commit -m "Traductions mises à jour" && git pull --rebase -X theirs origin refonte && git push)

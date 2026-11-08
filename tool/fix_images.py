@@ -38,8 +38,13 @@ BAD_CAT = re.compile(r"interior|dashboard|cockpit|steering wheel|engine|seats|ge
                      r"wheels of|rims|headlights|taillights|logos|emblems|details of|doors of|exhaust", re.I)
 
 
+# Plafond d'appels IA par exécution : on garde du quota gratuit pour les joueurs.
+VISION_MAX = int(os.environ.get("VISION_MAX", "0")) or 10**9
+_stop = {"quota": False}
+
+
 def out_of_time():
-    return time.time() - START > BUDGET_S
+    return _stop["quota"] or _vision_calls >= VISION_MAX or time.time() - START > BUDGET_S
 
 
 def base_title(url):
@@ -103,6 +108,8 @@ _vision_calls = 0
 def vision_ok(thumb_url, label):
     """True / False, ou None si l'IA est indisponible (on ne tranche pas)."""
     global _vision_calls
+    if out_of_time():
+        return None
     try:
         r = S.get(thumb_url, timeout=30)
         if not r.ok:
@@ -131,6 +138,10 @@ def vision_ok(thumb_url, label):
             resp = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/gemini-3.5-flash-lite:generateContent",
                                  json=body, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=60)
             if resp.status_code in (429, 500, 503):
+                if resp.status_code == 429 and attempt >= 2:
+                    _stop["quota"] = True  # quota du jour atteint : on reprendra demain
+                    log("quota Gemini atteint, arrêt")
+                    return None
                 time.sleep(10 * (attempt + 1))
                 continue
             time.sleep(1.5)  # on laisse de la marge au quota pour les vrais joueurs
