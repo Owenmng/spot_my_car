@@ -43,6 +43,18 @@ jobs:
       - name: Analyze
         run: flutter analyze --no-fatal-infos --no-fatal-warnings 2>&1 | tee analyze.txt
 
+      - name: Clé d'envoi Play Store
+        env:
+          UPLOAD_KEY_PASS: ${{ secrets.UPLOAD_KEY_PASS }}
+        run: |
+          if [ -n "$UPLOAD_KEY_PASS" ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in android/app/upload-key.p12.enc -out android/app/upload-key.p12 -pass env:UPLOAD_KEY_PASS
+            printf 'storePassword=%s\nkeyPassword=%s\nkeyAlias=upload\nstoreFile=app/upload-key.p12\n' "$UPLOAD_KEY_PASS" "$UPLOAD_KEY_PASS" > android/key.properties
+            echo "AAB signé avec la clé d'envoi"
+          else
+            echo "Pas de clé d'envoi : signature de test"
+          fi
+
       - name: Build APK
         run: |
           set -o pipefail
