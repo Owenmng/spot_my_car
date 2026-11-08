@@ -38,9 +38,10 @@ def call(model, prompt, thinking):
             "temperature": 0.2,
             "responseMimeType": "application/json",
             "responseSchema": {"type": "ARRAY", "items": {"type": "STRING"}},
-            "thinkingConfig": thinking,
         },
     }
+    if thinking:
+        body["generationConfig"]["thinkingConfig"] = thinking
     r = requests.post(URL.format(model), json=body, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=180)
     if not r.ok:
         raise RuntimeError(f"{r.status_code} {r.text[:200]}")
@@ -51,7 +52,7 @@ def translate(batch, lang):
     prompt = (f"{CONTEXT}\nTarget language: {LANGS[lang]}\n"
               f"Translate each French string of this JSON array. Return a JSON array of the same length and order.\n"
               + json.dumps(batch, ensure_ascii=False))
-    for model, thinking in (("gemini-3.8-flash", {"thinkingBudget": 0}), ("gemini-3.5-flash-lite", {"thinkingLevel": "MINIMAL"})):
+    for model, thinking in (("gemini-3.5-flash-lite", {"thinkingLevel": "LOW"}), ("gemini-3.5-flash-lite", None), ("gemini-3.8-flash", {"thinkingBudget": 0})):
         for attempt in range(4):
             try:
                 out = call(model, prompt, thinking)
@@ -84,7 +85,8 @@ for lang in LANGS:
         for k, v in zip(batch, out):
             if isinstance(v, str) and v.strip() and placeholders_ok(k, v):
                 current[k] = v
-        time.sleep(2)
+        json.dump(dict(sorted(current.items())), open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        time.sleep(1)
     # on retire les clés disparues
     current = {k: current[k] for k in keys if k in current}
     json.dump(dict(sorted(current.items())), open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
