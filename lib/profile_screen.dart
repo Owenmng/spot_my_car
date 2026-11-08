@@ -114,6 +114,24 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                       ],
                     ),
                   ),
+                  const SizedBox(height: 12),
+                  StreamBuilder<QuerySnapshot>(
+                    stream: FirebaseFirestore.instance
+                        .collection('friend_requests')
+                        .where('toUserId', isEqualTo: user.uid)
+                        .where('status', isEqualTo: 'pending')
+                        .snapshots(),
+                    builder: (context, s) {
+                      final pending = s.data?.docs.length ?? 0;
+                      return _NavTile(
+                        icon: Icons.leaderboard_rounded,
+                        title: 'Paddock',
+                        subtitle: pending > 0 ? '$pending demande${pending > 1 ? 's' : ''} d’ami en attente' : 'Amis, duels, blind test et classement',
+                        badge: pending,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
+                      );
+                    },
+                  ),
                   const SizedBox(height: 14),
                   GridView.count(
                     crossAxisCount: 3,
@@ -147,26 +165,6 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
                   OutlinedButton(
                     onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AchievementsScreen())),
                     child: const Text('Voir tous les succès'),
-                  ),
-                  const SizedBox(height: 26),
-                  _SectionHeader(title: 'Communauté'),
-                  const SizedBox(height: 10),
-                  StreamBuilder<QuerySnapshot>(
-                    stream: FirebaseFirestore.instance
-                        .collection('friend_requests')
-                        .where('toUserId', isEqualTo: user.uid)
-                        .where('status', isEqualTo: 'pending')
-                        .snapshots(),
-                    builder: (context, s) {
-                      final pending = s.data?.docs.length ?? 0;
-                      return _NavTile(
-                        icon: Icons.leaderboard_rounded,
-                        title: 'Paddock',
-                        subtitle: pending > 0 ? '$pending demande${pending > 1 ? 's' : ''} d’ami en attente' : 'Amis, duels et classement mondial',
-                        badge: pending,
-                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
-                      );
-                    },
                   ),
                 ].animate(interval: 30.ms).fadeIn(duration: 260.ms),
               );

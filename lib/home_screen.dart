@@ -4,8 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:spot_my_car/add_car_screen.dart';
 import 'package:spot_my_car/car_catalog_screen.dart';
 import 'package:spot_my_car/collection_screen.dart';
-import 'package:spot_my_car/community_screen.dart';
-import 'package:spot_my_car/services/duel_service.dart';
 import 'package:spot_my_car/garage_screen.dart';
 import 'package:spot_my_car/profile_screen.dart';
 import 'package:spot_my_car/services/audio_service.dart';
@@ -94,7 +92,6 @@ class _HomeScreenState extends State<HomeScreen> {
             GarageScreen(onAddSpot: _spot),
             const CollectionScreen(),
             const CarCatalogScreen(),
-            const CommunityScreen(),
             const ProfileScreen(),
           ],
         ),
@@ -150,7 +147,7 @@ class _NavBar extends StatelessWidget {
 
     return Container(
       color: AppColors.paper,
-      padding: EdgeInsets.fromLTRB(10, 6, 10, bottom + 8),
+      padding: EdgeInsets.fromLTRB(12, 6, 12, bottom + 8),
       child: Container(
         height: 68,
         padding: const EdgeInsets.symmetric(horizontal: 6),
@@ -170,8 +167,8 @@ class _NavBar extends StatelessWidget {
                 onTap: onSpot,
                 pressedScale: 0.9,
                 child: Container(
-                  width: 52,
-                  height: 48,
+                  width: 58,
+                  height: 50,
                   decoration: BoxDecoration(
                     color: accent,
                     borderRadius: BorderRadius.circular(18),
@@ -182,8 +179,7 @@ class _NavBar extends StatelessWidget {
               ),
             ),
             item(2, Icons.menu_book_outlined, Icons.menu_book_rounded, 'Catalogue'),
-            _PaddockItem(selected: index == 3, onTap: () => onSelect(3)),
-            item(4, Icons.person_outline_rounded, Icons.person_rounded, 'Profil'),
+            item(3, Icons.person_outline_rounded, Icons.person_rounded, 'Profil'),
           ],
         ),
       ),
@@ -191,57 +187,3 @@ class _NavBar extends StatelessWidget {
   }
 }
 
-/// Onglet Paddock avec pastille quand un défi attend une réponse.
-class _PaddockItem extends StatelessWidget {
-  final bool selected;
-  final VoidCallback onTap;
-  const _PaddockItem({required this.selected, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Pressable(
-        haptic: false,
-        onTap: onTap,
-        child: SizedBox(
-          height: 60,
-          child: StreamBuilder<List<Duel>>(
-            stream: DuelService.instance.watch(),
-            builder: (context, snap) {
-              final me = DuelService.instance.myUid;
-              final pending = (snap.data ?? const []).where((d) => (d.isPending && d.opponentId == me) || (d.winner == me && d.claimed[me] != true) || d.needsMyQuiz(me)).length;
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      Icon(selected ? Icons.emoji_events_rounded : Icons.emoji_events_outlined, color: selected ? AppColors.ink : AppColors.inkMuted, size: 24),
-                      if (pending > 0)
-                        Positioned(
-                          right: -6,
-                          top: -3,
-                          child: Container(
-                            constraints: const BoxConstraints(minWidth: 15, minHeight: 15),
-                            padding: const EdgeInsets.symmetric(horizontal: 3),
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(color: const Color(0xFFFFD447), borderRadius: BorderRadius.circular(99), border: Border.all(color: AppColors.panel, width: 1.5)),
-                            child: Text('$pending', style: AppText.mono(8.5, color: Colors.black)),
-                          ),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 4),
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text('Paddock', maxLines: 1, style: AppText.body(11, color: selected ? AppColors.ink : AppColors.inkMuted, weight: selected ? FontWeight.w800 : FontWeight.w600)),
-                  ),
-                ],
-              );
-            },
-          ),
-        ),
-      ),
-    );
-  }
-}

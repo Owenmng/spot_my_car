@@ -444,7 +444,20 @@ class _Header extends StatelessWidget {
                 cars: cars,
                 claimed: (data['dailyClaims'] as Map?)?[DailyChallenge.todayKey()] == true,
               ).animate().fadeIn(delay: 120.ms, duration: 350.ms),
-              const SizedBox(height: 12),
+              const SizedBox(height: 18),
+              Row(
+                children: [
+                  Text('PADDOCK', style: AppText.label(11.5, color: AppColors.inkMuted)),
+                  const Spacer(),
+                  TextButton.icon(
+                    style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: const EdgeInsets.symmetric(horizontal: 6)),
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CommunityScreen())),
+                    icon: const Icon(Icons.leaderboard_rounded, size: 16),
+                    label: const Text('Amis & classement'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
               const _PlayStrip().animate().fadeIn(delay: 200.ms, duration: 350.ms),
               const _TargetsStrip(),
             ],
