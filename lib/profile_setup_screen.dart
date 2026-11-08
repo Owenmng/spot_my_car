@@ -66,7 +66,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
       initialDate: DateTime.now().subtract(const Duration(days: 18 * 365)),
       firstDate: DateTime(1920),
       lastDate: DateTime.now(),
-      locale: const Locale('fr', 'FR'),
+      locale: I18n.instance.locale,
     );
     if (picked != null) {
       setState(() {

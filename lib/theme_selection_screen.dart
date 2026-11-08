@@ -25,7 +25,7 @@ class ThemeSelectionScreen extends StatelessWidget {
         children: [
           _Preview(accent: notifier.accent),
           const SizedBox(height: 26),
-          Text('AMBIANCE', style: AppText.label(11.5, color: AppColors.inkMuted)),
+          Text(tr('AMBIANCE'), style: AppText.label(11.5, color: AppColors.inkMuted)),
           const SizedBox(height: 10),
           Wrap(
             spacing: 10,

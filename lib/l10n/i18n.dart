@@ -22,7 +22,10 @@ class I18n extends ChangeNotifier {
   I18n._();
   static final I18n instance = I18n._();
 
-  static const languages = [
+  /// Langues dont la traduction est complète (les autres arrivent avec une mise à jour).
+  static const ready = {'fr', 'en'};
+
+  static const allLanguages = [
     AppLanguage('fr', 'Français', '🇫🇷', 'fr_FR'),
     AppLanguage('en', 'English', '🇬🇧', 'en_US'),
     AppLanguage('es', 'Español', '🇪🇸', 'es_ES'),
@@ -30,6 +33,8 @@ class I18n extends ChangeNotifier {
     AppLanguage('it', 'Italiano', '🇮🇹', 'it_IT'),
     AppLanguage('pt', 'Português', '🇧🇷', 'pt_BR'),
   ];
+
+  static final languages = [for (final l in allLanguages) if (ready.contains(l.code)) l];
 
   static const _prefKey = 'app_language';
 
@@ -49,7 +54,8 @@ class I18n extends ChangeNotifier {
       saved = (await SharedPreferences.getInstance()).getString(_prefKey);
     } catch (_) {}
     final device = ui.PlatformDispatcher.instance.locale.languageCode;
-    final code = saved ?? (languages.any((l) => l.code == device) ? device : 'fr');
+    final pick = saved ?? device;
+    final code = ready.contains(pick) ? pick : (device == 'fr' ? 'fr' : 'en');
     await _load(code);
   }
 

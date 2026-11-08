@@ -24,7 +24,7 @@ SKIP_REGIONS = [('lib/services/vehicle_recognition_service.dart', 'String _promp
 BAD_BEFORE = re.compile(
     r"(import|export|part|collection\(|\.doc\(|where\(|orderBy\(|getString\(|setString\(|getBool\(|setBool\(|getInt\(|setInt\("
     r"|getStringList\(|setStringList\(|remove\(|print\(|debugPrint\(|log\(|RegExp\(|Uri\.parse\(|Uri\(|Image\.asset\(|AssetImage\("
-    r"|loadString\(|DateFormat\(|startsWith\(|endsWith\(|split\(|replaceAll\(|replaceFirst\(|contains\(|indexOf\(|FieldPath|"
+    r"|this\.\w+\s*=|loadString\(|DateFormat\(|startsWith\(|endsWith\(|split\(|replaceAll\(|replaceFirst\(|contains\(|indexOf\(|FieldPath|"
     r"\bcase|==|!=|\btr\(|ValueKey\(|Key\(|fontFamily|jsonDecode|headers|Exception\(|Error\(|assert\(|parse\(|fromEnvironment|"
     r"mimeType|scheme|path:|host:|query:|contentType|'Content-Type'|'Accept'|SharePlus|XFile|name:\s*'spotmycar|Platform\.)\s*$")
 IDENT = re.compile(r"^[a-z0-9_.\-/:@#]*$")
