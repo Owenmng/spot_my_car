@@ -261,20 +261,26 @@ def main():
     pending = [(f, bname, m) for f, bname, m in entries
                if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked and id(m) not in done]
     log(f"validation IA restante: {len(pending)}")
-    for f, bname, m in pending:
+    from concurrent.futures import ThreadPoolExecutor
+    pool = ThreadPoolExecutor(max_workers=4)
+    for i in range(0, len(pending), 24):
         if out_of_time():
             break
-        t = base_title(m["imageUrl"])
-        v = vision_ok(m["imageUrl"], f"{bname} {m['name']}")
-        if v is None:
-            continue
-        if v:
-            checked[t] = True
-            stats["validées"] += 1
-        else:
-            stats["rejetées_ia"] += 1
-            apply(f, bname, m, find_replacement(bname, m), "refusée par l'IA")
-            checked[t] = False
+        batch = pending[i:i + 24]
+        verdicts = list(pool.map(lambda e: vision_ok(e[2]["imageUrl"], f"{e[1]} {e[2]['name']}"), batch))
+        for (f, bname, m), v in zip(batch, verdicts):
+            t = base_title(m["imageUrl"])
+            if v is None:
+                continue
+            if v:
+                checked[t] = True
+                stats["validées"] += 1
+            else:
+                stats["rejetées_ia"] += 1
+                apply(f, bname, m, find_replacement(bname, m), "refusée par l'IA")
+                checked[t] = False
+        if i % 480 == 0:
+            log(f"validation {i}/{len(pending)} {stats}")
 
     for f, doc in docs.items():
         json.dump(doc, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
