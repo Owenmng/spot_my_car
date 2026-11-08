@@ -346,7 +346,7 @@
   {
    "id": "audi_a4-allroad",
    "name": "A4 Allroad",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Audi_A4_B9_sedans_%28FL%29_1X7A2441.jpg/1280px-Audi_A4_B9_sedans_%28FL%29_1X7A2441.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Audi_A4_Allroad_Quattro_B9_at_IAA_2019_IMG_0297.jpg/1280px-Audi_A4_Allroad_Quattro_B9_at_IAA_2019_IMG_0297.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - Aujourd'hui",
    "puissance_ch": 245,
    "vitesse_max_kmh": 234,
@@ -370,9 +370,9 @@
     "premium car",
     "german car"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A4_B9_sedans_(FL)_1X7A2441.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A4_Allroad_Quattro_B9_at_IAA_2019_IMG_0297.jpg"
   },
   {
    "id": "audi_a5",
@@ -570,7 +570,7 @@
   {
    "id": "audi_a8",
    "name": "A8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Audi_A8L_D5_%282021%29_1X7A1787.jpg/1280px-Audi_A8L_D5_%282021%29_1X7A1787.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Audi_A8_L_D5_IMG_0066.jpg/1280px-Audi_A8_L_D5_IMG_0066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - Aujourd'hui",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -596,14 +596,14 @@
     "hybrid",
     "phev"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A8L_D5_(2021)_1X7A1787.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A8_L_D5_IMG_0066.jpg"
   },
   {
    "id": "audi_a8-horch",
    "name": "A8 Horch",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg/1280px-2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Audi_A8_L_Horch_IMG001.jpg/1280px-Audi_A8_L_Horch_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -628,9 +628,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "China Street Shots",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A8_L_Horch_IMG001.jpg"
   },
   {
    "id": "audi_activesphere",
@@ -1083,7 +1083,7 @@
   {
    "id": "audi_nanuk-quattro-concept",
    "name": "Nanuk Quattro",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/IAA_2013_Audi_Nanuk_Quattro_%289834450873%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/IAA_2013_Audi_Nanuk_Quattro_%289834450983%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2013 (Concept)",
    "puissance_ch": 544,
    "vitesse_max_kmh": 305,
@@ -1110,7 +1110,7 @@
    ],
    "imageCredit": "MotorBlog from Ca, USA",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:IAA_2013_Audi_Nanuk_Quattro_(9834450873).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:IAA_2013_Audi_Nanuk_Quattro_(9834450983).jpg"
   },
   {
    "id": "audi_nsu-ro-80",
@@ -1149,7 +1149,7 @@
   {
    "id": "audi_pb18",
    "name": "PB18 e-tron",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_Q6_e-tron_DSC_7829.jpg/1280px-Audi_Q6_e-tron_DSC_7829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Audi_PB18_e-tron_IAA_2019_JM_0825.jpg/1280px-Audi_PB18_e-tron_IAA_2019_JM_0825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 (Concept)",
    "puissance_ch": 680,
    "vitesse_max_kmh": 300,
@@ -1176,9 +1176,9 @@
     "car",
     "vehicle"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Johannes Maximilian",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q6_e-tron_DSC_7829.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_PB18_e-tron_IAA_2019_JM_0825.jpg"
   },
   {
    "id": "audi_q2",

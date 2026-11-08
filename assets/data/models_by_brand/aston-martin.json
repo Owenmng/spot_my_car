@@ -1206,22 +1206,14 @@
   {
    "id": "aston-martin_lagonda-16-80",
    "name": "Lagonda 16/80",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Lagonda_16-80_T2_Special_Tourer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Ed Callow",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lagonda_16-80_T2_Special_Tourer.jpg"
+   "tags": []
   },
   {
    "id": "aston-martin_lagonda-rapier",
    "name": "Lagonda Rapier",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/1935_Lagonda_Rapier.jpg/1280px-1935_Lagonda_Rapier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Steve Glover",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1935_Lagonda_Rapier.jpg"
+   "tags": []
   },
   {
    "id": "aston-martin_nimrod-nra-c2",
@@ -1297,12 +1289,8 @@
   {
    "id": "aston-martin_dbr3",
    "name": "DBR3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Aston_Martin_DBR2_from_1957.jpg/1280px-Aston_Martin_DBR2_from_1957.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DBR2_from_1957.jpg"
+   "tags": []
   },
   {
    "id": "aston-martin_rapide-s",
@@ -1556,12 +1544,12 @@
   {
    "id": "aston-martin_dbr2",
    "name": "DBR2",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Aston_Martin_DBR2_Monterey_04.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Aston_Martin_DBR2_%2849352615721%29.jpg/1280px-Aston_Martin_DBR2_%2849352615721%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "PeterDoubt",
-   "imageLicense": "CC BY 2.5",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DBR2_Monterey_04.png"
+   "imageCredit": "Neil",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DBR2_(49352615721).jpg"
   },
   {
    "id": "aston-martin_db-mark-iii",
@@ -1747,12 +1735,12 @@
   {
    "id": "aston-martin_v12-vantage-gt3",
    "name": "V12 Vantage GT3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Aston_Martin_V12_Vantage_GT3_%287914984772%29.jpg/1280px-Aston_Martin_V12_Vantage_GT3_%287914984772%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Aston_Martin_V12_Vantage_GT3_2012_%2815973159354%29.jpg/1280px-Aston_Martin_V12_Vantage_GT3_2012_%2815973159354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rick W. Dryve from Berlin, Germany",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_V12_Vantage_GT3_(7914984772).jpg"
+   "imageCredit": "order_242 from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_V12_Vantage_GT3_2012_(15973159354).jpg"
   },
   {
    "id": "aston-martin_victor",
@@ -1787,12 +1775,8 @@
   {
    "id": "aston-martin_valen",
    "name": "Valen",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/27_Aston_Martin_Valen_PBC26.jpg/1280px-27_Aston_Martin_Valen_PBC26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "HJUdall",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:27_Aston_Martin_Valen_PBC26.jpg"
+   "tags": []
   }
  ]
 }
