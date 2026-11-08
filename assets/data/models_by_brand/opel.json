@@ -130,7 +130,7 @@
   {
    "id": "opel_ampera-e",
    "name": "Ampera-e",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Opel_Kadett_1987.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Opel_Ampera-E_Mondial_de_l%27Automobile_de_Paris_2016_009_trimmed.jpg/1280px-Opel_Ampera-E_Mondial_de_l%27Automobile_de_Paris_2016_009_trimmed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2019",
    "puissance_ch": 204,
    "vitesse_max_kmh": 150,
@@ -155,9 +155,9 @@
     "plug-in electric vehicle",
     "zero-emissions vehicle"
    ],
-   "imageCredit": "Ellywa at Dutch Wikipedia",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Kadett_1987.png"
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Ampera-E_Mondial_de_l%27Automobile_de_Paris_2016_009_trimmed.jpg"
   },
   {
    "id": "opel_antara",
@@ -698,7 +698,7 @@
   {
    "id": "opel_corsa",
    "name": "Corsa",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Opel_Corsa_F_IMG_5815.jpg/1280px-Opel_Corsa_F_IMG_5815.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/%D0%90%D1%81%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%85%D0%BE%D1%80%D0%B8%2C_Opel_Corsa_D_%D0%BD%D0%B0_25_%D0%9C%D0%B0%D1%80%D1%82%D0%B0-%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%BE%D0%BC%D0%B0%D1%85%D0%BE%D0%BD%D0%B5.jpg/1280px-%D0%90%D1%81%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%85%D0%BE%D1%80%D0%B8%2C_Opel_Corsa_D_%D0%BD%D0%B0_25_%D0%9C%D0%B0%D1%80%D1%82%D0%B0-%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%BE%D0%BC%D0%B0%D1%85%D0%BE%D0%BD%D0%B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - Aujourd'hui",
    "puissance_ch": 100,
    "vitesse_max_kmh": 194,
@@ -721,9 +721,9 @@
     "compact car",
     "supermini"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Nikolai Bulykin",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Corsa_F_IMG_5815.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%90%D1%81%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%85%D0%BE%D1%80%D0%B8,_Opel_Corsa_D_%D0%BD%D0%B0_25_%D0%9C%D0%B0%D1%80%D1%82%D0%B0-%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%BE%D0%BC%D0%B0%D1%85%D0%BE%D0%BD%D0%B5.jpg"
   },
   {
    "id": "opel_corsa_a",
@@ -2334,12 +2334,12 @@
   {
    "id": "opel_vita-2",
    "name": "Vita",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Opel_Corsa_B_WorldCup_Facelift.JPG/1280px-Opel_Corsa_B_WorldCup_Facelift.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/OPEL_VITA_GLS_1.4_16V_%28GF-XG142%29_front.jpg/1280px-OPEL_VITA_GLS_1.4_16V_%28GF-XG142%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Thomas doerfer",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Corsa_B_WorldCup_Facelift.JPG"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:OPEL_VITA_GLS_1.4_16V_(GF-XG142)_front.jpg"
   },
   {
    "id": "opel_vectra-gts-v8",

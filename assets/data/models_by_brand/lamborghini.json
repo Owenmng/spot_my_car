@@ -681,7 +681,7 @@
   {
    "id": "lamborghini_huracan_performante",
    "name": "Huracán Performante",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/2017_Lamborghini_Huracan_LP610.jpg/1280px-2017_Lamborghini_Huracan_LP610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Lamborghini_Huracan_Performante%2C_IAA_2017%2C_Frankfurt_%281Y7A2827%29.jpg/1280px-Lamborghini_Huracan_Performante%2C_IAA_2017%2C_Frankfurt_%281Y7A2827%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2019",
    "puissance_ch": 640,
    "vitesse_max_kmh": 325,
@@ -707,9 +707,9 @@
     "high-performance",
     "mid-engine"
    ],
-   "imageCredit": "MrWalkr",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Lamborghini_Huracan_LP610.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_Performante,_IAA_2017,_Frankfurt_(1Y7A2827).jpg"
   },
   {
    "id": "lamborghini_huracan_sto",
@@ -1029,7 +1029,7 @@
   {
    "id": "lamborghini_miura_sv",
    "name": "Miura SV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/1971_Lamborghini_Miura_P400_SV.jpg/1280px-1971_Lamborghini_Miura_P400_SV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Lamborghini_Miura_SV_2.jpg/1280px-Lamborghini_Miura_SV_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1971 - 1973",
    "puissance_ch": 385,
    "vitesse_max_kmh": 290,
@@ -1056,9 +1056,9 @@
     "1970s car",
     "muscle car"
    ],
-   "imageCredit": "Chelsea Jay",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1971_Lamborghini_Miura_P400_SV.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Miura_SV_2.jpg"
   },
   {
    "id": "lamborghini_murcielago",
@@ -1095,7 +1095,7 @@
   {
    "id": "lamborghini_murcielago_sv",
    "name": "Murciélago SV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Lamborghini_Murci%C3%A9lago_LP-640_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2840%29.jpg/1280px-Lamborghini_Murci%C3%A9lago_LP-640_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2840%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Lamborghini_Murcielago_SV_2010.jpg/1280px-Lamborghini_Murcielago_SV_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2010",
    "puissance_ch": 670,
    "vitesse_max_kmh": 342,
@@ -1120,9 +1120,9 @@
     "lamborghini murcielago",
     "naturally aspirated"
    ],
-   "imageCredit": "Alexandre Prévot from Nancy, France",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Murci%C3%A9lago_LP-640_-_Flickr_-_Alexandre_Pr%C3%A9vot_(40).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Murcielago_SV_2010.jpg"
   },
   {
    "id": "lamborghini_reventon",
@@ -1353,7 +1353,7 @@
   {
    "id": "lamborghini_urus_performante",
    "name": "Urus Performante",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Lamborghini_Urus_SE_DSC_8524.jpg/1280px-Lamborghini_Urus_SE_DSC_8524.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Lamborghini_Urus_Performante_1X7A6805.jpg/1280px-Lamborghini_Urus_Performante_1X7A6805.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 666,
    "vitesse_max_kmh": 306,
@@ -1379,9 +1379,9 @@
     "italian car",
     "off-road capable"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Urus_SE_DSC_8524.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Urus_Performante_1X7A6805.jpg"
   },
   {
    "id": "lamborghini_urus",
@@ -1509,12 +1509,8 @@
   {
    "id": "lamborghini_400gt-monza",
    "name": "400GT Monza",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/1966_Lamborghini_400_GT_Monza.jpg/1280px-1966_Lamborghini_400_GT_Monza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Brian Snelson",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Lamborghini_400_GT_Monza.jpg"
+   "tags": []
   },
   {
    "id": "lamborghini_gallardo-lp550-2",
@@ -1722,15 +1718,15 @@
   {
    "id": "lamborghini_countach",
    "name": "Countach",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Lamborghini_Countach_25th_Anniversary_IMG_2994.jpg/1280px-Lamborghini_Countach_25th_Anniversary_IMG_2994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Lamborghini_Countach_LP_5000S_1983.jpg/1280px-Lamborghini_Countach_LP_5000S_1983.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4140 x 2000 x 1070",
    "poids_kg": 1450,
    "vitesse_max_kmh": 80,
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Palauenc05",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_25th_Anniversary_IMG_2994.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_5000S_1983.jpg"
   },
   {
    "id": "lamborghini_estoque",

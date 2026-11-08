@@ -99,7 +99,7 @@
   {
    "id": "bugatti_chiron-pur-sport",
    "name": "Chiron Pur Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Bugatti_Chiron_1.jpg/1280px-Bugatti_Chiron_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Bugatti_Chiron_Pur_Sport.jpg/1280px-Bugatti_Chiron_Pur_Sport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - 2022",
    "puissance_ch": 1500,
    "vitesse_max_kmh": 350,
@@ -124,14 +124,14 @@
     "quad-turbocharged",
     "mid-engine"
    ],
-   "imageCredit": "Calreyn88",
+   "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_1.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_Pur_Sport.jpg"
   },
   {
    "id": "bugatti_chiron-sport",
    "name": "Chiron Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Bugatti_Chiron_1.jpg/1280px-Bugatti_Chiron_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Bugatti_Chiron_Sport_gfos25_1.jpg/1280px-Bugatti_Chiron_Sport_gfos25_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - 2022",
    "puissance_ch": 1500,
    "vitesse_max_kmh": 420,
@@ -159,12 +159,12 @@
    ],
    "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_1.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_Sport_gfos25_1.jpg"
   },
   {
    "id": "bugatti_chiron-super-sport",
    "name": "Chiron Super Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Bugatti_Chiron_1.jpg/1280px-Bugatti_Chiron_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Bugatti_Chiron_Super_Sport.jpg/1280px-Bugatti_Chiron_Super_Sport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 1600,
    "vitesse_max_kmh": 440,
@@ -189,9 +189,9 @@
     "quad-turbocharged",
     "high-performance"
    ],
-   "imageCredit": "Calreyn88",
+   "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_1.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_Super_Sport.jpg"
   },
   {
    "id": "bugatti_divo",
@@ -228,7 +228,7 @@
   {
    "id": "bugatti_eb-110",
    "name": "EB 110",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/1995_Bugatti_EB110SS_in_Blu_Bugatti%2C_front_left_%28Greenwich%29.jpg/1280px-1995_Bugatti_EB110SS_in_Blu_Bugatti%2C_front_left_%28Greenwich%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Bugatti_EB_110_-_R%C3%A9tromobile_2020.jpg/1280px-Bugatti_EB_110_-_R%C3%A9tromobile_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1995",
    "puissance_ch": 560,
    "vitesse_max_kmh": 342,
@@ -254,9 +254,9 @@
     "vehicle",
     "supercar era"
    ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1995_Bugatti_EB110SS_in_Blu_Bugatti,_front_left_(Greenwich).jpg"
+   "imageCredit": "Yannick Leclercq©",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_EB_110_-_R%C3%A9tromobile_2020.jpg"
   },
   {
    "id": "bugatti_eb-110-ss",
@@ -359,7 +359,6 @@
   {
    "id": "bugatti_eb-218",
    "name": "EB 218",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bugatti_EB_118_1.jpg/1280px-Bugatti_EB_118_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 (Concept)",
    "puissance_ch": 420,
    "vitesse_max_kmh": 290,
@@ -380,10 +379,7 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ],
-   "imageCredit": "MPW57",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_EB_118_1.jpg"
+   ]
   },
   {
    "id": "bugatti_la-voiture-noire",
@@ -665,7 +661,7 @@
   {
    "id": "bugatti_type-35c",
    "name": "Type 35C",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Bugatti_35%2C_Bj_1924%2C_M_Nicolosi_-_1976.jpg/1280px-Bugatti_35%2C_Bj_1924%2C_M_Nicolosi_-_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1929_Bugatti_Type_35C_BS_O24.jpg/1280px-1929_Bugatti_Type_35C_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1926 - 1930",
    "puissance_ch": 128,
    "vitesse_max_kmh": 205,
@@ -690,9 +686,9 @@
     "vehicle",
     "car"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_35,_Bj_1924,_M_Nicolosi_-_1976.jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1929_Bugatti_Type_35C_BS_O24.jpg"
   },
   {
    "id": "bugatti_type-37",
@@ -729,7 +725,7 @@
   {
    "id": "bugatti_type-37a",
    "name": "Type 37A",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Bugatti_35%2C_Bj_1924%2C_M_Nicolosi_-_1976.jpg/1280px-Bugatti_35%2C_Bj_1924%2C_M_Nicolosi_-_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Bugatti_Type_37A_Sport.jpg/1280px-Bugatti_Type_37A_Sport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1926 - 1930",
    "puissance_ch": 90,
    "vitesse_max_kmh": 180,
@@ -753,9 +749,9 @@
     "race car",
     "competition car"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_35,_Bj_1924,_M_Nicolosi_-_1976.jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_37A_Sport.jpg"
   },
   {
    "id": "bugatti_type-40",
@@ -1012,7 +1008,7 @@
   {
    "id": "bugatti_type-57c",
    "name": "Type 57C",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Bugatti_Type_57_Atalante_1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Bugatti_Type_57C_%2738_%281%29.jpg/1280px-Bugatti_Type_57C_%2738_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1937 - 1940",
    "puissance_ch": 160,
    "vitesse_max_kmh": 180,
@@ -1038,14 +1034,14 @@
     "automobile",
     "1930s car"
    ],
-   "imageCredit": "Ramgeis",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_57_Atalante_1936.jpg"
+   "imageCredit": "Oq10pass",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_57C_%2738_(1).jpg"
   },
   {
    "id": "bugatti_type-57s",
    "name": "Type 57S",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Bugatti_Type_57_Atalante_1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/1937_Bugatti_Type_57S_Atalante.jpg/1280px-1937_Bugatti_Type_57S_Atalante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1934 - 1940",
    "puissance_ch": 175,
    "vitesse_max_kmh": 190,
@@ -1071,14 +1067,14 @@
     "car",
     "motor vehicle"
    ],
-   "imageCredit": "Ramgeis",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_57_Atalante_1936.jpg"
+   "imageCredit": "Brian Snelson",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1937_Bugatti_Type_57S_Atalante.jpg"
   },
   {
    "id": "bugatti_type-57sc",
    "name": "Type 57SC",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Bugatti_Type_57_Atalante_1936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/1937_Bugatti_Type_57SC_Atlantic.jpg/1280px-1937_Bugatti_Type_57SC_Atlantic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1936 - 1938",
    "puissance_ch": 200,
    "vitesse_max_kmh": 200,
@@ -1104,9 +1100,9 @@
     "1930s car",
     "supercharged"
    ],
-   "imageCredit": "Ramgeis",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_57_Atalante_1936.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1937_Bugatti_Type_57SC_Atlantic.jpg"
   },
   {
    "id": "bugatti_type-73",
@@ -1275,7 +1271,7 @@
   {
    "id": "bugatti_veyron-vitesse",
    "name": "Veyron Vitesse",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg/1280px-Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bugatti_Veyron_Grand_Sport_Vitesse_3.jpg/1280px-Bugatti_Veyron_Grand_Sport_Vitesse_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2015",
    "puissance_ch": 1200,
    "vitesse_max_kmh": 410,
@@ -1300,9 +1296,9 @@
     "vehicle",
     "grand tourer"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_(1),_5._April_2012,_D%C3%BCsseldorf.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_Grand_Sport_Vitesse_3.jpg"
   },
   {
    "id": "bugatti_type-15",
@@ -1656,12 +1652,12 @@
   {
    "id": "bugatti_type-41",
    "name": "Type 41",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/R%C3%A9tromobile_2015_-_Bugatti_Royale_Coup%C3%A9_Napol%C3%A9on_-_1929_-_002.jpg/1280px-R%C3%A9tromobile_2015_-_Bugatti_Royale_Coup%C3%A9_Napol%C3%A9on_-_1929_-_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Bugatti_Type_41_Royale_Packard_Prototype_1926.jpg/1280px-Bugatti_Type_41_Royale_Packard_Prototype_1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Thesupermat",
+   "imageCredit": "Palauenc05",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R%C3%A9tromobile_2015_-_Bugatti_Royale_Coup%C3%A9_Napol%C3%A9on_-_1929_-_002.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_41_Royale_Packard_Prototype_1926.jpg"
   },
   {
    "id": "bugatti_type-57",

@@ -1583,7 +1583,7 @@
   {
    "id": "mazda_eunos-cosmo",
    "name": "Eunos Cosmo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/1968_Mazda_Cosmo-Sport_01.jpg/1280px-1968_Mazda_Cosmo-Sport_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Mazda_Eunos_Cosmo_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1990 - 1996",
    "puissance_ch": 280,
    "vitesse_max_kmh": 255,
@@ -1609,9 +1609,9 @@
     "two-door",
     "japanese sports car"
    ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1968_Mazda_Cosmo-Sport_01.jpg"
+   "imageCredit": "Motokoka",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Eunos_Cosmo_1.jpg"
   },
   {
    "id": "mazda_eunos_press",
@@ -2367,7 +2367,7 @@
   {
    "id": "mazda_sentia_2nd_gen",
    "name": "Sentia (2nd gen)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/1995-1997_Mazda_Sentia.jpg/1280px-1995-1997_Mazda_Sentia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Mazda_SENTIA_Limited_%28E-HEEP%29.jpg/1280px-Mazda_SENTIA_Limited_%28E-HEEP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1995 - 1999",
    "puissance_ch": 200,
    "vitesse_max_kmh": 210,
@@ -2391,9 +2391,9 @@
     "japanese car",
     "mid-size car"
    ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1995-1997_Mazda_Sentia.jpg"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_SENTIA_Limited_(E-HEEP).jpg"
   },
   {
    "id": "mazda_spiano",
@@ -2625,12 +2625,12 @@
   {
    "id": "mazda_familia-2",
    "name": "Familia",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Mazda_Familia_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mazda_Familia_first_generation_1966_at_the_Mazda-Museum_Augsburg_-_Front_one_quarter_view.jpg/1280px-Mazda_Familia_first_generation_1966_at_the_Mazda-Museum_Augsburg_-_Front_one_quarter_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tennen-Gas",
+   "imageCredit": "Tobias ToMar Maier",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Familia_001.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Familia_first_generation_1966_at_the_Mazda-Museum_Augsburg_-_Front_one_quarter_view.jpg"
   },
   {
    "id": "mazda_r130",
@@ -2881,14 +2881,14 @@
   {
    "id": "mazda_autozam-az-1",
    "name": "Autozam AZ-1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/MAZDA_AZ-1.JPG/1280px-MAZDA_AZ-1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Autozam_AZ-1_at_the_Mazda-Museum_Augsburg_-_Front_view_with_open_doors.jpg/1280px-Autozam_AZ-1_at_the_Mazda-Museum_Augsburg_-_Front_view_with_open_doors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3295 x 1395 x 1150",
    "poids_kg": 720,
-   "imageCredit": "Taisyo",
+   "imageCredit": "Tobias ToMar Maier",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:MAZDA_AZ-1.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Autozam_AZ-1_at_the_Mazda-Museum_Augsburg_-_Front_view_with_open_doors.jpg"
   },
   {
    "id": "mazda_demio",
@@ -2954,22 +2954,22 @@
   {
    "id": "mazda_az-wagon-2",
    "name": "AZ-Wagon",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Autozam_AZ-Wagon_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Mazda_AZ_Wagon_1997.jpg/1280px-Mazda_AZ_Wagon_1997.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tennen-Gas",
+   "imageCredit": "Kuha455405",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Autozam_AZ-Wagon_001.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_AZ_Wagon_1997.jpg"
   },
   {
    "id": "mazda_spiano-2",
    "name": "Spiano",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/SPIANO.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Mazda_Spiano_SS_%28ABA-HF21S%29_front.jpg/1280px-Mazda_Spiano_SS_%28ABA-HF21S%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "User:Kuha455405 of the Japanese Wikipedia (uploader to the Japanese Wikipedia)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:SPIANO.JPG"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Spiano_SS_(ABA-HF21S)_front.jpg"
   },
   {
    "id": "mazda_autozam-scrum",
@@ -2994,23 +2994,23 @@
   {
    "id": "mazda_rx-7-2",
    "name": "RX-7",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Mazda-rx7-3rd-generation01_%28cropped%29.jpg/1280px-Mazda-rx7-3rd-generation01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mazda_RX-7_at_the_2026_Adelaide_Motorsport_Festival_%28DSCF2580%29.jpg/1280px-Mazda_RX-7_at_the_2026_Adelaide_Motorsport_Festival_%28DSCF2580%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Taisyo",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda-rx7-3rd-generation01_(cropped).jpg"
+   "imageCredit": "Yu Chu Chin",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_RX-7_at_the_2026_Adelaide_Motorsport_Festival_(DSCF2580).jpg"
   },
   {
    "id": "mazda_az-offroad-2",
    "name": "AZ-Offroad",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mazda_AZ-Offroad_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Mazda_AZ-Offroad_011.jpg/1280px-Mazda_AZ-Offroad_011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3395 x 1475 x 1715",
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_AZ-Offroad_001.JPG"
+   "imageCredit": "天然ガス",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_AZ-Offroad_011.jpg"
   },
   {
    "id": "mazda_787b",
@@ -3112,24 +3112,24 @@
   {
    "id": "mazda_millenia-2",
    "name": "Millenia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/1998-2000_Mazda_Millenia.jpg/1280px-1998-2000_Mazda_Millenia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/US-spec_Mazda_Millenia_%281996%29.jpg/1280px-US-spec_Mazda_Millenia_%281996%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4825 x 1770 x 1395",
-   "imageCredit": "TTTNIS",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1998-2000_Mazda_Millenia.jpg"
+   "imageCredit": "OnceInAMillenia",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:US-spec_Mazda_Millenia_(1996).jpg"
   },
   {
    "id": "mazda_carol-2",
    "name": "Carol",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Mazda_CAROL_GX_%28DBA-HB36S%29_front.jpg/1280px-Mazda_CAROL_GX_%28DBA-HB36S%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/7th_generation_Mazda_Carol_rear.jpg/1280px-7th_generation_Mazda_Carol_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1962",
    "tags": [],
    "dimensions_lwh_mm": "3395 x 1475 x 1500",
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_CAROL_GX_(DBA-HB36S)_front.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:7th_generation_Mazda_Carol_rear.jpg"
   },
   {
    "id": "mazda_rx-500",
@@ -3175,12 +3175,8 @@
   {
    "id": "mazda_chantez-ev",
    "name": "Chantez EV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Mazda_Chantez.jpg/1280px-Mazda_Chantez.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Chantez.jpg"
+   "tags": []
   },
   {
    "id": "mazda_mx-5-nb",
@@ -3306,12 +3302,12 @@
   {
    "id": "mazda_r100",
    "name": "R100",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2003_Mazda_323_%28BJ_II%29_Proteg%C3%A9_Shades_sedan_%282015-08-07%29_01.jpg/1280px-2003_Mazda_323_%28BJ_II%29_Proteg%C3%A9_Shades_sedan_%282015-08-07%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/1969_Mazda_R100_Coupe_%2823738902441%29.jpg/1280px-1969_Mazda_R100_Coupe_%2823738902441%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Mazda_323_(BJ_II)_Proteg%C3%A9_Shades_sedan_(2015-08-07)_01.jpg"
+   "imageCredit": "Sicnag",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1969_Mazda_R100_Coupe_(23738902441).jpg"
   },
   {
    "id": "mazda_mazda2",
@@ -3366,12 +3362,8 @@
   {
    "id": "mazda_rx-9",
    "name": "RX-9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Mazda_HC_Luce_001.jpg/1280px-Mazda_HC_Luce_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_HC_Luce_001.jpg"
+   "tags": []
   },
   {
    "id": "mazda_110-s-cosmo-sport",
@@ -3387,12 +3379,12 @@
   {
    "id": "mazda_capella-2",
    "name": "Capella",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Mazda_626_front_20071204.jpg/1280px-Mazda_626_front_20071204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Golden_Mazda_Capella.jpg/1280px-Golden_Mazda_Capella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_626_front_20071204.jpg"
+   "imageCredit": "MikaPr65",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Golden_Mazda_Capella.jpg"
   },
   {
    "id": "mazda_767",

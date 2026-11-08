@@ -1,0 +1,445 @@
+# Contrôle des photos
+
+{"remplacées": 400, "masquées": 41, "validées": 0, "rejetées_ia": 0} · appels IA: 838 · restant à valider: 6154
+
+- Abarth Punto (doublon) → File:2012 Abarth Punto Evo 1.jpg
+- Alfa Romeo 105 Series Giulia (doublon) → File:Alfa Romeo Giulia 1600 Sprint (105 series) (9010103514).jpg
+- Alfa Romeo Giulia GTA (1965) (doublon) → File:1965 Alfa Romeo Giulia Sprint GTA Red.jpg
+- Alfa Romeo Giulia Super (doublon) → File:Alfa Romeo Giulia Nuova Super 1300 (parkend 2016-06-05 Sp).JPG
+- Alfa Romeo 147 TI (doublon) → File:Alfa Romeo 147 Ti 2007.jpg
+- Alfa Romeo GTA Coupe (doublon) → masqué, aucune photo fiable
+- Alfa Romeo 159 Sportwagon (doublon) → File:Alfa Romeo 159 Sportwagon front 8C.jpg
+- Alfa Romeo 1900 Sprint (doublon) → File:Alfa Romeo 1900 C Super Sprint Touring (1954) Classic-Gala 2021 1X7A0157.jpg
+- Alfa Romeo 1900 Super Sprint (doublon) → File:1956 Alfa Romeo 1900 Super Sprint ARM.jpg
+- Alfa Romeo 8C Spider (doublon) → File:Alfa Romeo 8C Competizione Spider LCCS20.jpg
+- Alfa Romeo Spider Duetto (doublon) → File:Alfa-Romeo-1750-Spider-Duetto-AVG-byRundvald.jpg
+- Alfa Romeo Spider Graduate (doublon) → File:Alfa Romeo Spider Graduate Injection.jpg
+- Alfa Romeo Spider Quadrifoglio (doublon) → File:Alfa Romeo Spider Quadrifoglio injection Mk3 (8).jpg
+- Alfa Romeo Spider Veloce (doublon) → File:Alfa Romeo Spider 2000 Veloce Sachs Franken Classic 2018 P5201056.jpg
+- Alfa Romeo 33 Stradale (1967) (doublon) → File:Alfa Romeo 33 Stradale 1967 Museo Storico OCT 2015.jpg
+- Alfa Romeo 33 Permanent 4 (doublon) → File:1991 Alfa Romeo 33 S Permanent 4 hatchback (21525796242).jpg
+- Alfa Romeo 6C (doublon) → File:Alfa Romeo 6C 2500 by Touring Classic-Gala 2021 1X7A0163.jpg
+- Alfa Romeo Alfasud Ti (doublon) → File:1977 Alfa Romeo Alfasud Ti 1.jpg
+- Alfa Romeo GT 3.2 V6 (doublon) → masqué, aucune photo fiable
+- Alfa Romeo Alfetta GT (doublon) → File:Alfa Romeo Alfetta GT (3).jpg
+- Alfa Romeo Spider 2.0 TS (doublon) → masqué, aucune photo fiable
+- Alfa Romeo Alfetta GTV (doublon) → File:1978 Alfa Romeo Alfetta GTV (32323615092).jpg
+- Alfa Romeo GTV (doublon) → File:Alfa Romeo GTV Kulmbach 2018 6170083.jpg
+- Alfa Romeo GTV and Spider (doublon) → masqué, aucune photo fiable
+- Alfa Romeo Giulietta (1954) (doublon) → File:1954 Alfa Romeo Giulietta Sprint (11117680175).jpg
+- Alfa Romeo Giulietta 1.6 JTDm (doublon) → File:Alfa Romeo Giulietta 1.6 JTDm.JPG
+- Alfa Romeo Giulietta 1.4 TB (doublon) → File:2018 Alfa Romeo Giulietta Super TB 1.4 Front.jpg
+- Alfa Romeo Giulietta Sprint Veloce (doublon) → File:Alfa Romeo Giulietta Sprint Veloce at Tour dElegance.jpg
+- Alfa Romeo Giulietta Veloce (doublon) → File:1956 Alfa Romeo Giulietta Sprint Veloce Alleggerita.jpg
+- Alfa Romeo MiTo 1.6 JTDm (doublon) → File:2012 Alfa Romeo MiTo 1.6 JTDm.jpg
+- Alfa Romeo MiTo Quadrifoglio Verde (doublon) → File:Alfa Romeo MiTo Quadrifoglio Verde 2011.jpg
+- Alfa Romeo Stelvio 2.0 TBI (doublon) → masqué, aucune photo fiable
+- Alfa Romeo Stelvio Quadrifoglio (doublon) → File:Alfa Romeo Stelvio Quadrifoglio Washington DC Metro Area, USA.jpg
+- Alfa Romeo Tonale Plug-in Hybrid (doublon) → File:Alfa Romeo TONALE PLUG-IN HYBRID Q4 VELOCE (3LA-AV113 0001).jpg
+- Alfa Romeo 12C-37 (doublon) → File:Alfa Romeo 12C-37 Maastricht 2010.jpg
+- Fiat A.L.F.A. 40/60 GP (doublon) → masqué, aucune photo fiable
+- Fiat A.L.F.A 40/60 HP (doublon) → masqué, aucune photo fiable
+- Fiat A.L.F.A 24 HP (doublon) → masqué, aucune photo fiable
+- Alfa Romeo A.L.F.A 15 HP (doublon) → File:Arese Museo Storico Alfa Romeo 1911 A.L.F.A. 15 HP Corsa 2.jpg
+- Alpine A108 Berlinette (doublon) → File:Alpine-Renault A106 Cabriolet and A108 Berlinette c.1960 (16408168619).jpg
+- Alpine A110 1300S (doublon) → File:Alpine A110 1300S (1967).png
+- Alpine A110 1600S (doublon) → File:1970 Alpine A110 1600S, Tour Auto 2015, Toulouse.jpg
+- Alpine A110 1800 (doublon) → File:Alpine A110 1800 Groupe 4, Tour Auto 2015, Toulouse.jpg
+- Alpine A110 Berlinette (doublon) → File:Alpine-A110-Berlinette-arriere.jpg
+- Alpine A310 V6 (doublon) → File:Renault Alpine A310 V6 at Legendy 2019 in Prague.jpg
+- AMG AMG A 45 (177) (doublon) → File:2021 Mercedes-AMG A 45 W177.jpg
+- AMG AMG C 63 (205) (doublon) → File:Mercedes-AMG C 63 S T-Modell (S 205) – Frontansicht, 14. Februar 2016, Mettmann.jpg
+- AMG AMG C 63 Estate (205) (doublon) → File:Mercedes-AMG C 63 S Estate (51029550086).jpg
+- AMG AMG E 63 Estate (238) (doublon) → File:Mercedes-AMG E63 S Estate (S213) Greater Toronto Area, Canada.jpg
+- AMG AMG S 63 (222) (doublon) → File:2013-2017 Mercedes-Benz S 63 AMG (W 222) sedan (2018-10-19) 01.jpg
+- AMG AMG S 63 (223) (doublon) → File:Mercedes-AMG S 63 (W223) IMG 8215.jpg
+- AMG AMG SL 63 (R232) (doublon) → File:Mercedes-AMG SL 63 (R232) IMG 7374.jpg
+- AMG AMG CLA 35 (118) (doublon) → File:Mercedes-AMG CLA 35 4MATIC (C 118, Facelift) – h 16082025.jpg
+- AMG AMG CLA 35 Shooting Brake (118) (doublon) → File:Mercedes-AMG CLA 35 4MATIC Shooting Brake (X118).jpg
+- AMG AMG CLA 45 (118) (doublon) → File:Mercedes-AMG CLA 45 S 4MATIC+ Shooting Brake (X 118) – h 18042025.jpg
+- AMG AMG CLA 45 Shooting Brake (118) (doublon) → File:Mercedes-AMG CLA 45 S 4MATIC+ Shooting Brake (X 118) – f 18042025.jpg
+- AMG AMG E 53 (238) (doublon) → File:Mercedes-AMG W214 53 Hybrid IMG 1292.jpg
+- AMG AMG SL 73 (R129) (doublon) → File:2001 Mercedes-Benz SL 73 AMG LC26.jpg
+- AMG AMG GT S (C190) (doublon) → File:Mercedes-AMG GT S (C190) Washington DC Metro Area, USA.jpg
+- AMG AMG GT (C190 Facelift) (doublon) → File:Mercedes-AMG C190 FL GT Obsidian Black (2).jpg
+- AMG AMG GT (C190) (doublon) → File:Mercedes-AMG C190 GT R IMG 7306.jpg
+- AMG AMG GT (C192) (doublon) → File:Mercedes-AMG GT 43 (C192) IMG 2893.jpg
+- AMG AMG GT 4-Door Coupé (X290) (doublon) → File:Mercedes-AMG GT63 S 4-Door Coupé (X290) Washington DC Metro Area, USA.jpg
+- AMG AMG GT Black Series (C190) (doublon) → File:Mercedes-AMG GT Black Series C190 (55032994922).jpg
+- AMG AMG GT Concept (doublon) → File:Mercedes-AMG GT Concept E Performance IAA 2023 1X7A0458.jpg
+- AMG AMG GT Roadster (R190) (doublon) → File:Mercedes-AMG R190 GT R Roadster 1X7A6316.jpg
+- AMG AMG SL 43 (R232) (doublon) → File:Mercedes-AMG SL43 R232.jpg
+- AMG AMG SL 55 (R232) (doublon) → File:Mercedes-AMG SL55 (R232) Washington DC Metro Area, USA.jpg
+- AMG Vision AMG (doublon) → File:Mercedes-Benz AMG Vision Gran Turismo DSC 8420.jpg
+- AMG ONE (doublon) → File:Mercedes-AMG One, EMS 2024, Essen (P1032097).jpg
+- Mercedes-Benz C192 (doublon) → File:Mercedes-AMG GT 63 Pro (C192) IAA 2025 DSC 2092.jpg
+- Mercedes-Benz GT3 (doublon) → File:Mercedes-Benz SLS AMG GT3.JPG
+- AMG DTM AMG Mercedes C-Coupé (doublon) → File:AMG Mercedes C-Coupé DTM (C204).jpg
+- Mercedes-Benz GT 63 S E Performance (doublon) → File:Mercedes-AMG GT 63 S E Performance IMG 8220.jpg
+- Aston Martin 2-Litre Sports (doublon) → File:1949 Aston Martin 2 Litre DB1 Sports HCC25.jpg
+- Aston Martin DBS (Classic) (doublon) → File:1972 Aston Martin DBS V8 Classic-Gala 2025 DSC 0918.jpg
+- Aston Martin V8 Vantage (doublon) → File:Aston Martin V8 Vantage Roadster IMG 8846.jpg
+- Aston Martin Vanquish (Gen 1) (doublon) → masqué, aucune photo fiable
+- Aston Martin Vanquish (Gen 2) (doublon) → File:Aston Martin V12 Vanquish S 1X7A1935.jpg
+- Aston Martin Vanquish (doublon) → File:Aston Martin Vanquish (2024) DSC 7890.jpg
+- Audi 5000 (doublon) → File:Audi 5000 S 1986 (34300598380).jpg
+- Audi A1 GB (doublon) → File:Tuned Audi A1 Sportback (GB) front.jpg
+- Audi A6 Allroad (doublon) → File:Audi A6 Allroad Quattro C8 1X7A0302.jpg
+- Audi A8 D5 (doublon) → File:Audi A8 D5 (2021) 1X7A6342.jpg
+- Audi Q7 e-tron (doublon) → File:Audi Q7 e-tron Quattro 4M Night Black (1).jpg
+- Audi SQ6 e-tron (doublon) → File:Audi SQ6 e-tron Automesse Ludwigsburg 2024 IMG 1514.jpg
+- Audi SQ8 e-tron (doublon) → File:Audi SQ8 Sportback e-tron (ZAA-GEEAV) front.jpg
+- Audi Q6 (doublon) → File:Audi Q6 e-tron Sportback DSC 9276.jpg
+- Audi Q7 (doublon) → File:Audi q7 front white.jpg
+- Audi R15 Plus (doublon) → File:Audi R15 TDI Plus at 8 Heures du Castellet 2010 - side view.jpg
+- Audi S6 e-tron (doublon) → File:Audi S6 e-tron, Auto 2024, Zurich (PANA0897).jpg
+- Audi V8 (doublon) → File:Audi V8 front 20070511.jpg
+- Audi MP01 (doublon) → masqué, aucune photo fiable
+- Audi R18 E-Tron quattro RP5 (doublon) → masqué, aucune photo fiable
+- Bentley Bacalar (doublon) → File:2020 Bentley Bacalar Mulliner.jpg
+- Bentley Continental GT Speed Convertible (doublon) → File:2013 Bentley Continental GT Speed convertible (8404017732) (cropped).jpg
+- Bentley Continental GT3-R (doublon) → File:2015 Bentley Continental GT3-R SP21.jpg
+- Bentley Continental Supersports Convertible (doublon) → File:Bentley Continental Supersports Convertible, Techno-Classica 2018, Essen (IMG 9625).jpg
+- Bentley Continental S (doublon) → File:Streetcarl 1956 Bentley S1 Continental Fastback Coupe (6429980839).jpg
+- Bentley Flying Spur (doublon) → File:Bentley Flying Spur Mulliner (2024) DSC 6974.jpg
+- BMW 5 Series GT (doublon) → masqué, aucune photo fiable
+- BMW 5 Series Gran Turismo (doublon) → File:BMW 5 SERIES GRAN TURISMO (F07) China.jpg
+- BMW 3 Series GT (doublon) → masqué, aucune photo fiable
+- BMW 6 Series GT (doublon) → File:BMW 6-Series GT M-Sport, Front View.jpg
+- BMW New Six (doublon) → File:BMW New Six E3.jpg
+- BMW 3 Series Touring (doublon) → File:BMW 3 SERIES TOURING (F30) China.jpg
+- BMW 5 Series Touring (doublon) → File:BMW 5 SERIES TOURING (F10) China.jpg
+- BMW 8 Series Gran Coupé (doublon) → File:BMW 8 SERIES GRAN COUPE (G15) China.jpg
+- BMW i3 (2013) (doublon) → File:Dülmen, Kirchspiel, Visbeck, BMW i3 -- 2016 -- 1581-7.jpg
+- BMW X3 M40i (doublon) → File:2023 BMW G01 X3 M40i DSC 7394.jpg
+- BMW X4 M40i (doublon) → File:BMW X4 M40i (G02) Washington DC Metro Area, USA.jpg
+- BMW G05 (doublon) → File:BMW X5 M (G05) 1X7A7047.jpg
+- BMW Z Models (doublon) → masqué, aucune photo fiable
+- BMW i3 (2022) (doublon) → File:BMW i3 (2017) 1X7A0151.jpg
+- Bugatti Chiron Pur Sport (doublon) → File:Bugatti Chiron Pur Sport.jpg
+- Bugatti Chiron Sport (doublon) → File:Bugatti Chiron Sport gfos25 1.jpg
+- Bugatti Chiron Super Sport (doublon) → File:Bugatti Chiron Super Sport.jpg
+- Bugatti EB 110 (doublon) → File:Bugatti EB 110 - Rétromobile 2020.jpg
+- Bugatti EB 218 (doublon) → masqué, aucune photo fiable
+- Bugatti Type 35C (doublon) → File:1929 Bugatti Type 35C BS O24.jpg
+- Bugatti Type 37A (doublon) → File:Bugatti Type 37A Sport.jpg
+- Bugatti Type 41 (doublon) → File:Bugatti Type 41 Royale Packard Prototype 1926.jpg
+- Bugatti Type 57C (doublon) → File:Bugatti Type 57C '38 (1).jpg
+- Bugatti Type 57S (doublon) → File:1937 Bugatti Type 57S Atalante.jpg
+- Bugatti Type 57SC (doublon) → File:1937 Bugatti Type 57SC Atlantic.jpg
+- Bugatti Veyron Vitesse (doublon) → File:Bugatti Veyron Grand Sport Vitesse 3.jpg
+- Buick Estate (doublon) → File:1971-1974 Buick Estate Wagon.jpg
+- BYD F3 (doublon) → File:BYD F3 Sanming 02 2022-07-27.jpg
+- Cadillac CT4-V (doublon) → File:Cadillac CT4-V Blackwing WGI23 (Front) 02.jpg
+- Cadillac CT5-V (doublon) → File:2021 Cadillac CT5-V, Front Right 2, 11-21-2021.jpg
+- Cadillac Escalade-V (doublon) → File:25 Cadillac Escalade-V Base.jpg
+- Cadillac XLR-V (doublon) → File:Cadillac XLR-V at Mondial de l'Automobile Paris 2008.jpg
+- Cadillac Escalade (doublon) → File:Cadillac Escalade (GMTT1XX) IMG 0799.jpg
+- Cadillac Model L (doublon) → File:1907 Cadillac Model M Victoria Touring (32548965833).jpg
+- Chevrolet Aveo Sedan (doublon) → File:04-06 Chevrolet Aveo sedan 3.jpg
+- Chevrolet Bel Air 1957 (doublon) → File:1955-1957 Chevrolet Bel Air in the SunRice Festival parade in Pine Ave.jpg
+- Chevrolet Blazer K5 (doublon) → File:Chevrolet K5 Blazer Bahrain.jpg
+- Chevrolet K5 Blazer (doublon) → File:Chevrolet K5 Blazer, San Mateo.jpg
+- Chevrolet Blazer (doublon) → File:1988 Chevrolet Blazer C10 Hardtop.jpg
+- Chevrolet Blazer RS (doublon) → File:2023 Chevrolet Blazer RS Rear.jpg
+- Chevrolet Camaro ZL1 (doublon) → File:2018 Chevrolet Camaro ZL1 1LE SCD 24.jpg
+- Chevrolet Camaro B4C (doublon) → File:2002 Chevrolet Camaro B4C Special Service Package of Florida Highway Patrol (FHP) - 01.jpg
+- Chevrolet Caprice Wagon (doublon) → File:1995 Chevrolet Caprice Classic wagon, rear right, 06-15-2025.jpg
+- Chevrolet Cavalier Sedan (doublon) → File:2002 Chevrolet Cavalier LS Sedan.jpg
+- Chevrolet Cavalier Z24 (doublon) → File:1988 Chevrolet Cavalier Z24 Convertible, rear left, 05-05-2023.jpg
+- Chevrolet Cobalt (GMX 001) (doublon) → File:Chevrolet Cobalt Coupe.jpg
+- Chevrolet Cruze Eco (doublon) → masqué, aucune photo fiable
+- Chevrolet Cruze Hatch (doublon) → File:Chevrolet Cruze J300 hatch China 2014-04-16.jpg
+- Chevrolet Cruze Premier (doublon) → File:2020 Chevrolet Cruze 1.4T Premier AT (rear).jpg
+- Chevrolet Cruze Sedan (doublon) → File:Chevrolet Cruze Sedan (J400) Washington DC Metro Area, USA.jpg
+- Chevrolet Daewoo Tosca (doublon) → masqué, aucune photo fiable
+- Chevrolet HHR SS (doublon) → File:Chevrolet HHR SS Half Panel.png
+- Chevrolet Impala SS (doublon) → File:Chevrolet Impala SS 327 Coupé 1966.jpg
+- Chevrolet Malibu Maxx (doublon) → File:Chevrolet Malibu MAXX LS.jpg
+- Chevrolet Monza USA (doublon) → masqué, aucune photo fiable
+- Chevrolet S-10 Xtreme (doublon) → File:2002 Chevrolet S-10 Xtreme in Onyx Black, Front Right, 08-14-2022.jpg
+- Chevrolet Silverado 1500 (doublon) → File:Leimershof US-Car-Treffen 2011 Chevrolet Silverado 1500 Regular Cab-20220911-RM-161738.jpg
+- Chevrolet Silverado 1500 LD (doublon) → masqué, aucune photo fiable
+- Chevrolet Silverado 1500 LTZ (doublon) → File:2015 Chevrolet Silverado 1500 LTZ, front 2.29.20.jpg
+- Chevrolet Silverado 3500HD (doublon) → File:Chevrolet Silverado 3500HD GMTT1XX Garry’s.jpg
+- Chevrolet Spark (doublon) → File:Chevrolet Spark. Bukhara, Uzbekistan.jpg
+- Chevrolet National (doublon) → File:1928 Chevrolet National AB Roadster NKF538.jpg
+- Chevrolet S-10 (doublon) → File:Leimershof 7. US-Car-Treffen Chevrolet S-10 (pickup, 1st generation)-20230909-RM-161740.jpg
+- Chevrolet G20 (doublon) → File:Chevrolet G20 en Alva.jpg
+- Opel Ampera-e (doublon) → File:Opel Ampera-E Mondial de l'Automobile de Paris 2016 009 trimmed.jpg
+- Chevrolet Kadett (doublon) → File:Tuned Chevrolet Kadett in Uruguay - front.jpg
+- Citroën Ami (Classic) (doublon) → File:Citroen Ami 8 2014-09-07 13-55-47.jpg
+- Citroën AX GT (doublon) → File:1989 Citroen AX GT.jpg
+- Peugeot Partner (doublon) → File:Peugeot Partner PN des Pyrénées Barèges 2012.jpg
+- Citroën Grand C4 SpaceTourer (doublon) → File:Citroën GRAND C4 SPACETOURER SHINE BlueHDi (LDA-V787AH01) front.jpg
+- Citroën DS 23 (doublon) → File:1975 Citroën DS 23 Pallas.jpg
+- Citroën Jumper (second generation) (doublon) → File:Citroën Jumper skåp.jpg
+- Peugeot Boxer (second generation) (doublon) → File:Peugeot Boxer II 2,2 HDi (2018) (53464972459).jpg
+- Citroën Berlingo III (doublon) → File:Citroën Berlingo III IMG 9227.jpg
+- Toyota Proace City (doublon) → File:Toyota ProAce City Electric 1X7A0258.jpg
+- Dacia 1325 (doublon) → File:Dacia 1325 Liberta CN4.jpg
+- Renault City K-ZE (doublon) → File:Renault City K-ZE modified front quarter.jpg
+- Toyota Calya (doublon) → File:2017 Toyota Calya 1.2 G wagon (B401RA; 01-12-2019), South Tangerang.jpg
+- Toyota Pixis Epoch (doublon) → File:Toyota Pixis Epoch L 4WD.jpg
+- Toyota Passo Sette (doublon) → File:Toyota Passo Sette 01.JPG
+- Toyota Duet (doublon) → File:Toyota Duet 001.JPG
+- Toyota Roomy (doublon) → File:2016-2020 Toyota Roomy G rear.jpg
+- Daihatsu Rocky (A200/A250) (doublon) → File:Daihatsu Rocky 203 (cropped).jpg
+- Dodge Lancer (doublon) → File:1962 Dodge Lancer, Royal Street, Bywater, New Orleans, 20 March 2006 - 3.jpg
+- Dodge 1955 Dodge (doublon) → File:1955 Dodge Hemi (15083210009).jpg
+- Dodge 116 (doublon) → File:1923 Dodge Series 116 5 Seat Tourer.jpg
+- Dodge M1918 light repair truck (doublon) → masqué, aucune photo fiable
+- Dodge Charger 1981 (doublon) → masqué, aucune photo fiable
+- DS DS 3 (doublon) → File:DS 3 (2022) IMG 0352.jpg
+- DS DS World Premiere (doublon) → masqué, aucune photo fiable
+- DS DS 4 Crossback (doublon) → File:DS 3 Crossback EMP1 Ruby Red (4).jpg
+- DS 5 (doublon) → File:DS 5 China.jpg
+- DS N°7 (doublon) → masqué, aucune photo fiable
+- DS DS 9 (doublon) → File:DS 9 E-Tense IMG 1135.jpg
+- Ferrari 250 Testa Rossa (doublon) → File:Ferrari 250 Testa Rossa, Bj. 1958 (2009-08-07).jpg
+- Ferrari TR (doublon) → File:Ferrari 512 TR, Techno-Classica 2018, Essen (IMG 9219).jpg
+- Ferrari 328 (doublon) → File:1989 Ferrari 328 GTS 3.jpg
+- Ferrari 348 (doublon) → File:Ferrari 348 TS.jpg
+- Ferrari 750 Monza (doublon) → File:Ferrari 750 Monza.jpg
+- Ferrari Amalfi (doublon) → File:Ferrari Amalfi Spider Auto Zuerich 2026 IMG 8858.jpg
+- Ferrari Enzo (doublon) → File:2004 Enzo Ferrari rear.jpg
+- Ferrari FXX (doublon) → File:Ferrari Enzo FXX (Ank Kumar, Infosys Limited) 02.jpg
+- Ferrari F80 (doublon) → File:FerrariF80 (resized).jpg
+- Ferrari 340 America (doublon) → File:1953 Ferrari 340 America Ghia Coupe 0148A.jpg
+- Ferrari 340 (doublon) → File:1952-11-01 Ferrari 340 Mexico to Mexico.jpg
+- Ferrari 365 (doublon) → File:Ferrari 365 GTB Daytona jm.jpg
+- Fiat Auto Avio Costruzioni 815 (doublon) → masqué, aucune photo fiable
+- Ferrari 375 (doublon) → File:1951 Ferrari 375F1.jpg
+- Fiat 1800 (doublon) → File:FIAT 1800.jpg
+- Fiat 2300 S (doublon) → File:Fiat 2300 S coupé (1964) - I.jpg
+- Fiat 500 (Classic) (doublon) → File:NSU-Fiat 500 Spyder (1939) Classic-Gala 2022 1X7A0350.jpg
+- Fiat 500e (doublon) → File:Fiat 500e Black in Munich.jpg
+- Fiat 600 (doublon) → File:Fiat 600 (2023) Automesse Ludwigsburg 2024 IMG 1584.jpg
+- Fiat Bravo (2007) (doublon) → File:Fiat Bravo 2007.jpg
+- Fiat Doblò Mk2 (doublon) → File:Fiat Doblò Mk2 x 2.JPG
+- Fiat Panda (doublon) → File:Fiat Panda 4x40º in Böblingen (2).jpg
+- Fiat Panda 4x4 (doublon) → File:Fiat panda 4x4.jpg
+- Fiat Palio II (doublon) → masqué, aucune photo fiable
+- Fiat Weekend (doublon) → File:Fiat Palio Weekend in China.jpg
+- Fiat Punto Evo (doublon) → File:Fiat Punto Evo front 20100731.jpg
+- Fiat Topolino (1936) (doublon) → File:1936 Fiat 500 Topolino Saloon.jpg
+- Fiat Autobianchi Y10 (doublon) → masqué, aucune photo fiable
+- Fiat Spazio (doublon) → File:Fiat Spazio TR 1300.jpg
+- Ford F-250 Super Duty (doublon) → File:Ford F-250 Super Duty (P558) 1X7A7058.jpg
+- Ford F-350 Super Duty (doublon) → File:22 Ford F-350 Super Duty Lariat.jpg
+- Ford F-650 (doublon) → File:U-Haul 26” Supermover - Ford F-650.jpg
+- Ford Fairlane (doublon) → File:1959 Ford 65 A Fairlane 500.jpg
+- Ford Falcon (doublon) → File:Ford Falcon (AU) of Brad Jones at the 2025 Adelaide Grand Final.jpg
+- Kia Avella (doublon) → File:20111008 kia avella 001.jpg
+- Ford Ka+ (doublon) → File:FordKa-3rageneracion-MardeCobo.jpg
+- Ford Maverick (1970) (doublon) → File:1970 Ford Maverick, Herby's Ford, Alexandria.jpg
+- Ford Thunderbird (1955) (doublon) → File:1955 Ford Thunderbird rear.jpg
+- Ford Custom (doublon) → File:Ford Tourneo Custom Nugget (2023) AMA Marbach 2025 DSC 8634.jpg
+- Ford Model 91 (doublon) → masqué, aucune photo fiable
+- Ford Focus Mk III (Facelift) (doublon) → File:Ford Focus Mk III Kombi aus Saarbrücken.jpg
+- Ford B platform (doublon) → masqué, aucune photo fiable
+- Ford Mustang Boss 429 (doublon) → File:Leimershof 7. US-Car-Treffen Ford Mustang Boss 429-20230909-RM-170329.jpg
+- Ford Mustang Boss 302 (doublon) → File:1969 Ford Mustang Boss 302 Goodwood, 2009 (01).jpg
+- Ford Mercury Montego 3rd generation (doublon) → masqué, aucune photo fiable
+- Honda UR-V (doublon) → File:HONDA UR-V (19).jpg
+- Honda Fit Aria (City) (doublon) → File:Honda Fit Aria (42176800920).jpg
+- Honda Freed Spike (doublon) → File:2010-2011 Honda Freed Spike G.jpg
+- Honda Insight (1G) (doublon) → File:Honda Insight bsj25.jpg
+- Honda Integra SJ (doublon) → File:Honda Integra SJ rear.jpg
+- Honda Life Dunk (doublon) → File:Honda Life Dunk 001.JPG
+- Honda Mobilio Spike (doublon) → File:Honda Mobilio Spike 2002.jpg
+- Honda Vigor (1G) (doublon) → File:Honda Vigor Accord (48372949332).jpg
+- Hyundai Accent (Verna) (doublon) → File:HYUNDAI VERNA (HYUNDAI ACCENT) (RB,RC) China (9).jpg
+- Hyundai Initium (doublon) → File:Hyundai Initium Concept Brilliant Gold Matte (6).jpg
+- Hyundai IONIQ 6 (doublon) → File:Hyundai Ioniq 6 1X7A7258.jpg
+- Hyundai IONIQ Plug-in (doublon) → File:0 Hyundai Ioniq Plug-in 2.jpg
+- Hyundai Lavita (doublon) → File:00hyundai lavita 1.jpg
+- Hyundai Genesis Coupe (doublon) → File:Hyundai Genesis Coupe IMG 6750.jpg
+- Hyundai Sonata (NF) (doublon) → File:HYUNDAI SONATA (NF) China (2).jpg
+- Jaguar C-X16 (doublon) → File:The Jaguar C-X16 at the Frankfurt Motor Show 2011.jpg
+- Jaguar F-Pace (doublon) → File:Jaguar F-Pace IMG 8000.jpg
+- Jaguar I-Pace (doublon) → File:Waymo Jaguar I-Pace in San Francisco 2023 dllu.jpg
+- Jaguar F-Type SVR (doublon) → File:Jaguar F Type SVR Convertible.jpg
+- Jaguar S-Type R (doublon) → File:2003 Jaguar S-Type R Auto.jpg
+- Jaguar Project 8 (doublon) → File:Jaguar XE SV Project 8.jpg
+- Jaguar XE SVR (doublon) → masqué, aucune photo fiable
+- Jaguar XF (doublon) → File:Jaguar XF Sportbrake, IAA 2017, Frankfurt (1Y7A3098).jpg
+- Jaguar XF Sportbrake (doublon) → File:Jaguar XF (X260) Sportbrake Facelift IMG 8894.jpg
+- Jaguar XJ220 S (doublon) → File:1994 Jaguar XJ220 S TWR 3.5.jpg
+- Jaguar XK (doublon) → File:Jaguar XK 150 S BW 2017-07-16 13-43-20.jpg
+- Jeep CJ-7 (doublon) → File:2021 Arlington Independence Day Parade 086 (Jeep CJ-7).jpg
+- Jeep Grand Cherokee SRT (doublon) → File:Jeep Grand Cherokee SRT (WK2) Washington DC Metro Area, USA.jpg
+- Jeep Grand Cherokee Trackhawk (doublon) → File:Jeep Grand Cherokee Trackhawk (WK2) Washington DC Metro Area, USA.jpg
+- Jeep Liberty (KK) (doublon) → File:Second generation KK (Jeep Liberty).jpg
+- Jeep Liberty (doublon) → File:2008 Jeep Liberty.jpg
+- Jeep Wrangler 4xe (doublon) → File:Jeep Wrangler Rubicon (JL) 4xe 1X7A0287.jpg
+- Jeep Wrangler Rubicon (doublon) → File:Jeep Wrangler Rubicon 392 IMG 7673.jpg
+- Kia Cerato (doublon) → File:Moscow, Kia Cerato grey, Aug 2025 02.jpg
+- Kia Forte (doublon) → File:KIA FORTE R (KIA FORTE SEDAN (TD)) China.jpg
+- Kia Credos (doublon) → File:0 Kia Credos 1.jpg
+- Kia EV4 (doublon) → File:Kia EV4 GT-Line Automesse Ludwigsburg 2025 DSC 2535.jpg
+- Kia K4 (doublon) → File:Kia K4 Sportswagon IMG 7822.jpg
+- Kia K9 (doublon) → File:Kia K9, Astana (P1190736).jpg
+- Kia KX3 (doublon) → File:Kia KX3 II 011.jpg
+- Kia Magentis (doublon) → File:Kia Magentis 2.0 EX 2009 (51682734183).jpg
+- Kia morning (doublon) → File:20200729 Kia Morning Front Side.png
+- Kia Optima (doublon) → File:2018 Kia Optima S front.jpg
+- Kia ProCeed (doublon) → File:Kia ProCeed, IAA 2017, Frankfurt (1Y7A3316).jpg
+- Kia PV5 (doublon) → File:Kia PV5 Cargo IMG 7829.jpg
+- Kia Sportage (1re génération) (doublon) → masqué, aucune photo fiable
+- Kia Syros (doublon) → File:2025 Kia Syros 1.5 HTX+ (O) (India) front view 02.jpg
+- Kia Tasman (doublon) → File:Kia Tasman TK (02).jpg
+- Koenigsegg Jesko Absolut (doublon) → File:2024 Koenigsegg Jesko Absolut 2.jpg
+- Lamborghini 400GT Monza (doublon) → masqué, aucune photo fiable
+- Lamborghini Countach (doublon) → File:Lamborghini Countach LP 5000S 1983.jpg
+- Lamborghini Huracán Performante (doublon) → File:Lamborghini Huracan Performante, IAA 2017, Frankfurt (1Y7A2827).jpg
+- Lamborghini Miura SV (doublon) → File:Lamborghini Miura SV 2.jpg
+- Lamborghini Murciélago SV (doublon) → File:Lamborghini Murcielago SV 2010.jpg
+- Lamborghini Urus Performante (doublon) → File:Lamborghini Urus Performante 1X7A6805.jpg
+- Lancia Hyena (doublon) → File:Lancia Hyena CENTENARY.jpg
+- Lancia Thema (doublon) → File:Lancia Thema hcc25.jpg
+- Land Rover Defender (doublon) → File:Land Rover Defender 110 Station Wagon 2016 - rear.jpg
+- Land Rover Defender 130 (doublon) → File:Land Rover Defender 130 (L663) IMG 9445.jpg
+- Land Rover Range Rover Classic (doublon) → File:1986 Land Rover Range Rover Classic Automatic 3.5.jpg
+- Land Rover Discovery 4 (doublon) → File:Land Rover Discovery 4 HSE 2016 - rear.jpg
+- Land Rover Discovery (doublon) → File:Land Rover Discovery Sport HSE Luxury TD4 2016.jpg
+- Land Rover Freelander 2 (doublon) → File:LAND ROVER FREELANDER (L359) China (2).jpg
+- Land Rover Range Rover Evoque (doublon) → File:Land Rover Range Rover Evoque Convertible 2016 - side.jpg
+- Land Rover Range Rover P38 (doublon) → File:LAND ROVER RANGE ROVER (P38A) China.jpg
+- Lexus ES F Sport (doublon) → File:LEXUS ES F-SPORT (XZ10) China (5).jpg
+- Lexus ES 300h (doublon) → File:LEXUS ES 300h (XV60) China.jpg
+- Toyota Windom (doublon) → File:Toyota-windom-mcv21.jpg
+- Lexus LS F Sport (doublon) → File:LEXUS LS 500h F-SPORT (XF50) China.jpg
+- Lexus LS 500h (doublon) → File:LEXUS LS 500h (XF50) China (11).jpg
+- Toyota Celsior (doublon) → File:2003-2006 Toyota Celsior rear.jpg
+- Lexus RX 450h+ (doublon) → File:Lexus RX 450h+ (AALH16) 1X7A7074.jpg
+- Lexus UX 300e (doublon) → File:LEXUS UX 300e China.jpg
+- Lincoln 1960 Lincoln (doublon) → File:1960 Lincoln Continental Mark V Convertible, rear right (2022 Back to the 50's Weekend).jpg
+- Lotus Elan S2 (doublon) → File:Paris - Bonhams 2013 - Lotus Elan S2 coupé compétition - 1964 - 001.jpg
+- Lotus Elite Type 14 (doublon) → File:1962 Lotus Elite Type 14 LC24.jpg
+- Lotus Esprit S1 (doublon) → File:Lotus Esprit S1 1977 Fed.jpg
+- Lotus Esprit S3 (doublon) → File:1984 Lotus Esprit S3 (9066952098).jpg
+- Lotus Esprit S4 (doublon) → File:1998 Lotus Esprit S4, front right (15103733235).jpg
+- Lotus Esprit Sport 300 (doublon) → File:1993 Lotus Esprit 2.2 Sport 300.jpg
+- Lotus Europa TC (doublon) → File:Lotus Europa TC (1972) - 9000324658.jpg
+- Lotus Exige Sport 410 (doublon) → File:2019 Lotus Exige Sport 410 3.jpg
+- Lotus Exige S1 (doublon) → File:Lotus Exige S1 at Monza.jpg
+- Lotus Exige S2 (doublon) → File:Lotus Exige S2 (28296433644).jpg
+- Lotus Theory 1 (doublon) → File:Lotus Theory 1 002.jpg
+- Maserati Alfieri (doublon) → File:Maserati Alfieri - 2015 NAIAS (16087661039) (cropped).jpg
+- Maserati 420 (doublon) → File:1986 Maserati Biturbo 420 in Sweden, front left.jpg
+- Maserati Bora (doublon) → File:Maserati Bora 1.jpg
+- Maserati Quattroporte (doublon) → File:Maserati Quattroporte VI Trofeo 1X7A0312.jpg
+- Maserati Quattroporte Sport GT (doublon) → File:Maserati Quattroporte Sport GT rear.jpg
+- Mazda Autozam AZ-1 (doublon) → File:Autozam AZ-1 at the Mazda-Museum Augsburg - Front view with open doors.jpg
+- Mazda AZ-Offroad (doublon) → File:Mazda AZ-Offroad 011.jpg
+- Mazda AZ-Wagon (doublon) → File:Mazda AZ Wagon 1997.jpg
+- Mazda Capella (doublon) → File:Golden Mazda Capella.jpg
+- Mazda Carol (doublon) → File:7th generation Mazda Carol rear.jpg
+- Mazda Eunos Cosmo (doublon) → File:Mazda Eunos Cosmo 1.jpg
+- Mazda Familia (doublon) → File:Mazda Familia first generation 1966 at the Mazda-Museum Augsburg - Front one quarter view.jpg
+- Mazda RX-9 (doublon) → masqué, aucune photo fiable
+- Mazda Millenia (doublon) → File:US-spec Mazda Millenia (1996).jpg
+- Mazda RX-7 (doublon) → File:Mazda RX-7 at the 2026 Adelaide Motorsport Festival (DSCF2580).jpg
+- Mazda Sentia (2nd gen) (doublon) → File:Mazda SENTIA Limited (E-HEEP).jpg
+- Mazda Spiano (doublon) → File:Mazda Spiano SS (ABA-HF21S) front.jpg
+- Mazda R100 (doublon) → File:1969 Mazda R100 Coupe (23738902441).jpg
+- Mazda Chantez EV (doublon) → masqué, aucune photo fiable
+- McLaren F1 GT (doublon) → File:McLaren F1 GT, GIMS. 2015 (Ank Kumar, INFOSYS Limited) 09.jpg
+- McLaren W1 (doublon) → File:2024 McLaren W1 SP25.jpg
+- Mercedes-Benz 350 SL (R107) (doublon) → File:Mercedes-Benz 350 SL R107 (8600941431).jpg
+- Mercedes-Benz 380 SL (R107) (doublon) → File:Mercedes-Benz 380 SL (R107).jpg
+- Mercedes-Benz 300 (W186) (doublon) → File:Mercedes-Benz W186 300 C (23110313322).jpg
+- Mercedes-Benz 300 SL (W198) (doublon) → File:Mercedes-Benz W198 300 SL Gullwing Genf 2019 1Y7A4987.jpg
+- Mercedes-Benz 300 SL (doublon) → File:2007-07-22 Mercedes-Benz 300 SL Roadster (Foto Sp).jpg
+- Mercedes-Benz W188 (doublon) → File:Mercedes-Benz W188 300 S Cabriolet A - Mercedes Museum.jpg
+- Mercedes-Benz W112 (doublon) → File:Mercedes-Benz W112 300 SE MnW 01.jpg
+- Mercedes-Benz 300SEL 6.3 (doublon) → File:Mercedes Benz 300SEL 6.3 (W109) 3.jpg
+- Mercedes-Benz 540K (doublon) → File:Mercedes-Benz 540K Singlefinden Frank Seifert Collection Photo 000053.jpg
+- Mercedes-Benz 600 (doublon) → File:Mercedes-Benz W100 600 Classic-Gala 2021 1X7A0194.jpg
+- Mercedes-Benz CLA (doublon) → File:Mercedes-Benz CLA Shooting Break, GIMS 2019, Le Grand-Saconnex (GIMS0613).jpg
+- Mercedes-Benz Fintail (doublon) → File:Mercedes Benz W110 Fintail, Bangladesh (30062103285).jpg
+- Mercedes-Benz Ponton (doublon) → File:Mercedes-Benz 180c Ponton (W120) - Hüfingen.jpg
+- Mercedes-Benz W120 (doublon) → File:Mercedes-Benz W120 Kulmbach-20220626-RM-164332.jpg
+- Mercedes-Benz S-Class (W108/W109) (doublon) → masqué, aucune photo fiable
+- Mercedes-Benz W447 (doublon) → File:2019 Mercedes-Benz V-Class (W447) 1X7A1743.jpg
+- Mercedes-Benz Vision EQS (doublon) → File:Mercedes-Benz Vision EQS Concept (48819450588).jpg
+- Mini Coupé and Roadster (doublon) → masqué, aucune photo fiable
+- Mini Roadster (doublon) → File:Mini Concept Roadster.JPG
+- Mini Hatch (5-door) (doublon) → File:MINI F55 LCI 5-Door Hatch Cooper S Nanuq White (1).jpg
+- Mini Hatch (doublon) → File:Dülmen, Dernekamp, Mini Hatch Cooper -- 2018 -- 1545-51.jpg
+- Mitsubishi Attrage (doublon) → File:Mitsubishi Attrage Ho Chi Minh City front.jpg
+- Mitsubishi Lancer Cedia (doublon) → File:Mitsubishi Lancer Cedia in Thailand.jpg
+- Mitsubishi Lancer EX (doublon) → File:Mitsubishi Lancer EX facelift Xiamen 02 2019-10-30.jpg
+- Mitsubishi Lancer Ralliart (doublon) → File:2009 Mitsubishi Lancer Ralliart--DC.jpg
+- Mitsubishi Lancer Evolution VI (doublon) → File:Mitsubishi Lancer Evolution VI IMG 0346.jpg
+- Mitsubishi Lancer Evolution VII (doublon) → File:Mitsubishi Lancer Evolution VII CT9A GT-A Scotia White 02.jpg
+- Mitsubishi Lancer Evolution VIII (doublon) → File:2005 Mitsubishi Lancer Evolution VIII GSR.jpg
+- Mitsubishi Pajero Sport (doublon) → File:Mitsubishi Pajero Sport (3rd generation) 1X7A0410.jpg
+- Mitsubishi eK Wagon Sport (doublon) → masqué, aucune photo fiable
+- Mitsubishi Galant VR (doublon) → File:Mitsubishi Galant VR-4 2.0 DOHC Turbo 1991.jpg
+- Mitsubishi Mirage Dingo (doublon) → File:Mitsubishi Mirage Dingo TR4519 in New Territories.jpg
+- Mitsubishi Sigma Wagon (doublon) → File:1983 Mitsubishi Sigma (GJ) SE station wagon (2009-04-07).jpg
+- Mitsubishi Space Gear (doublon) → File:Mitsubishi Delica Space Gear Exceed 4WD Green Field.jpg
+- Mitsubishi Space Star (2012) (doublon) → File:2012 Mitsubishi Space Star.JPG
+- Mitsubishi Space Star (doublon) → File:Mitsubishi Space Star (2019) Auto Zuerich 2021 IMG 0244.jpg
+- Mitsubishi Triton GLX (doublon) → File:2007 Mitsubishi Triton (MN) GLX-R 4-door utility (2007-10-11).jpg
+- Mitsubishi Colt 1000 (doublon) → File:Mitsubishi Colt 1000F (16866660176).jpg
+- Ford Mustang GT350 (doublon) → File:1967 Ford Mustang Shelby GT350 coupe (7708117050).jpg
+- Ford Mustang I (doublon) → File:1966 Ford Mustang coupe white 002.jpg
+- Ford Mustang Shelby GT500 (doublon) → File:Ford Mustang Shelby GT500 (S550) Washington DC Metro Area, USA.jpg
+- Ford Mustang Shelby GT500 Super Snake (doublon) → File:Ford Mustang Shelby GT500 Super Snake blue.jpg
+- Ford Mustang (I Facelift 1970) (doublon) → File:1970 Ford Mustang Mach I Sportsroof (16176338521).jpg
+- Ford Mustang Eleanor (réplique) (doublon) → File:Ford S197 Mustang GT 500E ELEANOR (23052111281).jpg
+- Ford Mustang GT350R (doublon) → File:Ford Mustang Shelby GT350R Coupé (2015) (55218754067).jpg
+- Ford Mustang GT500 (doublon) → File:S550 Ford Shelby Mustang GT500.jpg
+- Ford Mustang GT500KR (doublon) → File:Ford Mustang GT500KR.JPG
+- Ford Mustang VI (S550) (doublon) → File:Maisto 1 18 2015 Ford Mustang VI GT (S550) black.jpg
+- Ford Mustang (V Facelift 2009) (doublon) → File:2007 Ford Mustang California Special (14410983146).jpg
+- Ford Mustang VI Facelift (S550) (doublon) → File:Ford Mustang Coupé Mach 1 (VI, Facelift) – h 12022023.jpg
+- Ford Mustang Bullitt (doublon) → File:2020 Ford Mustang Bullitt S550.jpg
+- Ford Mustang King Cobra (doublon) → File:1978 Ford Mustang II King Cobra 1.jpg
+- Ford Mustang Cobra Jet (doublon) → File:Ford Mustang Cobra Jet Cabriolet (1972) (53627615334).jpg
+- Ford Mustang SVT Cobra (doublon) → File:Ford Mustang SVT Cobra.jpg
+- Ford Mustang Convertible IV (SN-95) (doublon) → masqué, aucune photo fiable
+- Ford Mustang Convertible VII (S650) (doublon) → File:Ford Mustang VII Convertible Autofrühling Ulm IMG 9339.jpg
+- Ford Mustang IV (SN-95) (doublon) → File:1999-04 Ford Mustang IV 4.6L coupe.jpg
+- Ford Mustang Convertible (I Facelift 1970) (doublon) → File:Ford Mustang VI Convertible California Special 1X7A6977.jpg
+- Ford Mustang Convertible (V Facelift 2009) (doublon) → File:Ford Mustang Convertible (2005-2009) Kulmbach17RM0444.jpg
+- Ford Mustang Convertible V (S197) (doublon) → File:Ford Mustang V Convertible Boss 302 replica.jpg
+- Ford Mustang Convertible V Facelift (S197) (doublon) → masqué, aucune photo fiable
+- Ford Mustang Twister (doublon) → File:Ford Mustang 2.3L EcoBoost Premium S550 FL Twister Orange Metallic Tri-coat (2).jpg
+- Ford Mustang III (Fox-body) (doublon) → File:Ford Mustang III (Les chauds vendredis 2018).jpg
+- Ford Mustang SVO (doublon) → File:Ford Mustang SVO - 20101017.jpg
+- NIO Onvo L80 (doublon) → masqué, aucune photo fiable
+- Nissan 200SX (doublon) → File:Nissan 200SX, personaje Asuka Langley.jpg
+- Nissan 240SX (doublon) → File:Nissan 240SX 9-26-2017 2.jpg
+- Nissan S130 (doublon) → File:Nissan E-S130 Fairlady Z (23100110401).jpg
+- Nissan Murano (Z53) (doublon) → File:Nissan MURANO SV (NZ53) (2).jpg
+- Nissan Safari (doublon) → File:Nissan Patrol Y60 Safari 1996.jpg
+- Nissan Silvia (S12) (doublon) → File:Nissan silvia grand prix S12.jpg
+- Nissan Silvia (doublon) → File:Nissan Silvia (S14) at the 2025 Shannons Adelaide Rally (028A4395).jpg
+- Nissan Primastar (doublon) → File:2022 Nissan Primastar Automesse Ludwigsburg 2022 1X7A5926.jpg
+- Nissan R90C (doublon) → File:NISSAN R90C RETROMOBILE 2023 (52678362442).jpg
+- Opel Corsa (doublon) → File:Асвестохори, Opel Corsa D на 25 Марта-Македономахоне.jpg
+- Opel Vita (doublon) → File:OPEL VITA GLS 1.4 16V (GF-XG142) front.jpg
+- Pagani Huayra BC (doublon) → File:Pagani Huayra BC Roadster, BAS 24, Brussels (P1170496).jpg
+- Pagani Huayra Codalunga (doublon) → File:2022 Pagani Huayra Codalunga PT01.jpg
+- Pagani Huayra Imola (doublon) → File:2024 Pagani Huayra Imola Roadster.jpg
+- Pagani Huayra Roadster BC (doublon) → File:Pagani Huayra BC Roadster, BAS 24, Brussels (P1170493-RR).jpg
+- Pagani Huayra Tricolore (doublon) → masqué, aucune photo fiable
+- Pagani Zonda C12 S (doublon) → File:2003 Pagani Zonda C12 S 2.jpg
+- Pagani Zonda C12 (doublon) → File:2001 Pagani Zonda C12 2.jpg
+- Pagani Zonda F Clubsport (doublon) → File:2007 Pagani Zonda F Clubsport Rear.jpg
+- Pagani Zonda 760 (doublon) → File:2014 Pagani Zonda 760 Viola SP25.jpg
+- Pagani Zonda HP Barchetta (doublon) → File:Pagani Zonda HP Barchetta Bad.jpg
+- Pagani Zonda Revolucion (doublon) → File:Pagani Zonda Revolución, GIMS 2014 (Ank Kumar) 04.jpg
+- Peugeot 2008 (doublon) → File:Peugeot e-2008 Automesse Ludwigsburg 2022 1X7A5883.jpg
+- Peugeot 205 XS (doublon) → File:1990 Peugeot 205 XS.jpg
+- Peugeot 206 GTi (doublon) → File:Peugeot 206 GTi (16).jpg
+- Peugeot 206 RC (doublon) → File:Peugeot 206 RC.JPG
+- Peugeot 206 SW (doublon) → File:2005 Peugeot 206 SW S.jpg
+- Peugeot 307 CC (doublon) → File:UA army Peugeot 307 CC fighting vehicle.jpg
+- Peugeot 307 SW (doublon) → File:2006 Peugeot 307 SW SE HDi 110 1.6 Rear.jpg
+- Peugeot 308 GTi (doublon) → File:Peugeot 308 GTi - przód (MSP16).jpg
+- Peugeot 308 SW (doublon) → File:Peugeot 308 C SW Automesse Ludwigsburg 2023 1X7A0042.jpg

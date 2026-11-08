@@ -935,7 +935,7 @@
   {
    "id": "lancia_thema",
    "name": "Thema",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/1989_Lancia_Thema_i.e._Turbo_%288870393533%29_%28cropped%29.jpg/1280px-1989_Lancia_Thema_i.e._Turbo_%288870393533%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Lancia_Thema_hcc25.jpg/1280px-Lancia_Thema_hcc25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1984 - 2014",
    "puissance_ch": 286,
    "vitesse_max_kmh": 240,
@@ -960,9 +960,9 @@
     "family car",
     "comfortable car"
    ],
-   "imageCredit": "Niels de Wit from Lunteren, The Netherlands",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_Lancia_Thema_i.e._Turbo_(8870393533)_(cropped).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_Thema_hcc25.jpg"
   },
   {
    "id": "lancia_thema_8.32",
@@ -1476,12 +1476,12 @@
   {
    "id": "lancia_hyena-2",
    "name": "Hyena",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Lancia_Hyena_Zagato_%281993%29_1Y7A6141.jpg/1280px-Lancia_Hyena_Zagato_%281993%29_1Y7A6141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Lancia_Hyena_CENTENARY.jpg/1280px-Lancia_Hyena_CENTENARY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_Hyena_Zagato_(1993)_1Y7A6141.jpg"
+   "imageCredit": "Tony Harrison",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_Hyena_CENTENARY.jpg"
   },
   {
    "id": "lancia_delta-i",

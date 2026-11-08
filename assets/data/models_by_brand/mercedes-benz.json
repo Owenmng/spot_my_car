@@ -358,7 +358,7 @@
   {
    "id": "mercedes-benz_w186",
    "name": "300 (W186)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG/1280px-Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Mercedes-Benz_W186_300_C_%2823110313322%29.jpg/1280px-Mercedes-Benz_W186_300_C_%2823110313322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1951 - 1957",
    "puissance_ch": 115,
    "vitesse_max_kmh": 160,
@@ -382,9 +382,9 @@
     "executive car",
     "german car"
    ],
-   "imageCredit": "Bahnfrend",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fox_Classic_Car_Collection,_2008_(02).JPG"
+   "imageCredit": "先従隗始",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W186_300_C_(23110313322).jpg"
   },
   {
    "id": "mercedes-benz_w188",
@@ -520,7 +520,7 @@
   {
    "id": "mercedes-benz_300_sl",
    "name": "300 SL (W198)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG/1280px-Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg/1280px-Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1963",
    "puissance_ch": 215,
    "vitesse_max_kmh": 250,
@@ -547,9 +547,9 @@
     "vintage car",
     "collectible car"
    ],
-   "imageCredit": "Bahnfrend",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fox_Classic_Car_Collection,_2008_(02).JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg"
   },
   {
    "id": "mercedes-benz_300-slr",
@@ -587,7 +587,7 @@
   {
    "id": "mercedes-benz_350_sl",
    "name": "350 SL (R107)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Mercedes-AMG_SL_43_IMG_8050.jpg/1280px-Mercedes-AMG_SL_43_IMG_8050.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Mercedes-Benz_350_SL_R107_%288600941431%29.jpg/1280px-Mercedes-Benz_350_SL_R107_%288600941431%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1971 - 1980",
    "puissance_ch": 200,
    "vitesse_max_kmh": 210,
@@ -613,14 +613,14 @@
     "vintage car",
     "sl-class"
    ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_SL_43_IMG_8050.jpg"
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_350_SL_R107_(8600941431).jpg"
   },
   {
    "id": "mercedes-benz_380_sl",
    "name": "380 SL (R107)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Mercedes-AMG_SL_43_IMG_8050.jpg/1280px-Mercedes-AMG_SL_43_IMG_8050.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Mercedes-Benz_380_SL_%28R107%29.jpg/1280px-Mercedes-Benz_380_SL_%28R107%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - 1985",
    "puissance_ch": 218,
    "vitesse_max_kmh": 215,
@@ -645,9 +645,9 @@
     "1970s car",
     "german car"
    ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_SL_43_IMG_8050.jpg"
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_380_SL_(R107).jpg"
   },
   {
    "id": "mercedes-benz_400_se",
@@ -1044,7 +1044,7 @@
   {
    "id": "mercedes-benz_cla",
    "name": "CLA",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Mercedes-Benz_C118_IMG_2673.jpg/1280px-Mercedes-Benz_C118_IMG_2673.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Mercedes-Benz_CLA_Shooting_Break%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0613%29.jpg/1280px-Mercedes-Benz_CLA_Shooting_Break%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 163,
    "vitesse_max_kmh": 229,
@@ -1069,9 +1069,9 @@
     "premium car",
     "sports sedan"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C118_IMG_2673.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLA_Shooting_Break,_GIMS_2019,_Le_Grand-Saconnex_(GIMS0613).jpg"
   },
   {
    "id": "mercedes-benz_clc",
@@ -2118,7 +2118,6 @@
   {
    "id": "mercedes-benz_w108",
    "name": "S-Class (W108/W109)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mercedes-Maybach_Z223_680_1X7A5831.jpg/1280px-Mercedes-Maybach_Z223_680_1X7A5831.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965 - 1972",
    "puissance_ch": 170,
    "vitesse_max_kmh": 195,
@@ -2143,10 +2142,7 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Maybach_Z223_680_1X7A5831.jpg"
+   ]
   },
   {
    "id": "mercedes-benz_slc",
@@ -2798,14 +2794,14 @@
   {
    "id": "mercedes-benz_300sel-6-3",
    "name": "300SEL 6.3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Mercedes-Benz_W109_fl.jpg/1280px-Mercedes-Benz_W109_fl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Mercedes_Benz_300SEL_6.3_%28W109%29_3.jpg/1280px-Mercedes_Benz_300SEL_6.3_%28W109%29_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5000 x 1810 x 1410",
    "poids_kg": 1740,
-   "imageCredit": "Herranderssvensson",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W109_fl.jpg"
+   "imageCredit": "Mliu92",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_300SEL_6.3_(W109)_3.jpg"
   },
   {
    "id": "mercedes-benz_s",
@@ -2953,22 +2949,22 @@
   {
    "id": "mercedes-benz_ponton-2",
    "name": "Ponton",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Mercedes_180_2_v_sst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Mercedes-Benz_180c_Ponton_%28W120%29_-_H%C3%BCfingen.jpg/1280px-Mercedes-Benz_180c_Ponton_%28W120%29_-_H%C3%BCfingen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "GPL",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_180_2_v_sst.jpg"
+   "imageCredit": "H. Zell",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_180c_Ponton_(W120)_-_H%C3%BCfingen.jpg"
   },
   {
    "id": "mercedes-benz_540k",
    "name": "540K",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Mercedes_540K_side_20020707.jpg/1280px-Mercedes_540K_side_20020707.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Mercedes-Benz_540K_Singlefinden_Frank_Seifert_Collection_Photo_000053.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_540K_side_20020707.jpg"
+   "imageCredit": "SDASM Archives",
+   "imageLicense": "No restrictions",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_540K_Singlefinden_Frank_Seifert_Collection_Photo_000053.jpg"
   },
   {
    "id": "mercedes-benz_c11",
@@ -3162,12 +3158,12 @@
   {
    "id": "mercedes-benz_fintail-2",
    "name": "Fintail",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/300_SE_Heckansicht.jpg/1280px-300_SE_Heckansicht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Mercedes_Benz_W110_Fintail%2C_Bangladesh_%2830062103285%29.jpg/1280px-Mercedes_Benz_W110_Fintail%2C_Bangladesh_%2830062103285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "nordhorst",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:300_SE_Heckansicht.jpg"
+   "imageCredit": "Shadman Samee from Dhaka, Bangladesh",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_W110_Fintail,_Bangladesh_(30062103285).jpg"
   },
   {
    "id": "mercedes-benz_l-series-truck",
@@ -3434,12 +3430,12 @@
   {
    "id": "mercedes-benz_w188-2",
    "name": "W188",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Mercedes-Benz_300_Sc_%281956%29_Classic-Gala_2021_1X7A0075.jpg/1280px-Mercedes-Benz_300_Sc_%281956%29_Classic-Gala_2021_1X7A0075.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Mercedes-Benz_W188_300_S_Cabriolet_A_-_Mercedes_Museum.jpg/1280px-Mercedes-Benz_W188_300_S_Cabriolet_A_-_Mercedes_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "GerdeeX",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_Sc_(1956)_Classic-Gala_2021_1X7A0075.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W188_300_S_Cabriolet_A_-_Mercedes_Museum.jpg"
   },
   {
    "id": "mercedes-benz_w31",
@@ -3455,13 +3451,13 @@
   {
    "id": "mercedes-benz_w120",
    "name": "W120",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Mercedes_180_2_v_sst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Mercedes-Benz_W120_Kulmbach-20220626-RM-164332.jpg/1280px-Mercedes-Benz_W120_Kulmbach-20220626-RM-164332.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4485 x 1740 x 1560",
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "GPL",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_180_2_v_sst.jpg"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W120_Kulmbach-20220626-RM-164332.jpg"
   },
   {
    "id": "mercedes-benz_w168",
@@ -3594,13 +3590,13 @@
   {
    "id": "mercedes-benz_300-sl",
    "name": "300 SL",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG/1280px-Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2007-07-22_Mercedes-Benz_300_SL_Roadster_%28Foto_Sp%29.jpg/1280px-2007-07-22_Mercedes-Benz_300_SL_Roadster_%28Foto_Sp%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 1295,
-   "imageCredit": "Bahnfrend",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fox_Classic_Car_Collection,_2008_(02).JPG"
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2007-07-22_Mercedes-Benz_300_SL_Roadster_(Foto_Sp).jpg"
   },
   {
    "id": "mercedes-benz_type-124",
@@ -3899,12 +3895,12 @@
   {
    "id": "mercedes-benz_600",
    "name": "600",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/MB-600-SWB.JPG/1280px-MB-600-SWB.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Mercedes-Benz_W100_600_Classic-Gala_2021_1X7A0194.jpg/1280px-Mercedes-Benz_W100_600_Classic-Gala_2021_1X7A0194.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Benutzer:Vic Dorn",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:MB-600-SWB.JPG"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W100_600_Classic-Gala_2021_1X7A0194.jpg"
   },
   {
    "id": "mercedes-benz_w03",
@@ -3995,12 +3991,12 @@
   {
    "id": "mercedes-benz_w447",
    "name": "W447",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Mercedes-Benz_V_250_BlueTEC_Edition_1_Lang_%28V_447%29_%E2%80%93_Frontansicht%2C_18._Oktober_2015%2C_Ratingen.jpg/1280px-Mercedes-Benz_V_250_BlueTEC_Edition_1_Lang_%28V_447%29_%E2%80%93_Frontansicht%2C_18._Oktober_2015%2C_Ratingen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/2019_Mercedes-Benz_V-Class_%28W447%29_1X7A1743.jpg/1280px-2019_Mercedes-Benz_V-Class_%28W447%29_1X7A1743.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_V_250_BlueTEC_Edition_1_Lang_(V_447)_%E2%80%93_Frontansicht,_18._Oktober_2015,_Ratingen.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Mercedes-Benz_V-Class_(W447)_1X7A1743.jpg"
   },
   {
    "id": "mercedes-benz_c217",
@@ -4086,12 +4082,12 @@
   {
    "id": "mercedes-benz_w112-2",
    "name": "W112",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Mercedes-Benz_300_SE_%28W112%29_Classic-Gala_2021_1X7A0078.jpg/1280px-Mercedes-Benz_300_SE_%28W112%29_Classic-Gala_2021_1X7A0078.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Mercedes-Benz_W112_300_SE_MnW_01.jpg/1280px-Mercedes-Benz_W112_300_SE_MnW_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Zala",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_SE_(W112)_Classic-Gala_2021_1X7A0078.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W112_300_SE_MnW_01.jpg"
   },
   {
    "id": "mercedes-benz_benz-14-30-ps",
@@ -4575,12 +4571,12 @@
   {
    "id": "mercedes-benz_gt-63-s-e-performance",
    "name": "GT 63 S E Performance",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Mercedes-AMG_GT_63_S_E_Performance_IAA_2021_1X7A0201.jpg/1280px-Mercedes-AMG_GT_63_S_E_Performance_IAA_2021_1X7A0201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mercedes-AMG_GT_63_S_E_Performance_IMG_8220.jpg/1280px-Mercedes-AMG_GT_63_S_E_Performance_IMG_8220.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT_63_S_E_Performance_IAA_2021_1X7A0201.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT_63_S_E_Performance_IMG_8220.jpg"
   },
   {
    "id": "mercedes-benz_w906",
@@ -4748,12 +4744,12 @@
   {
    "id": "mercedes-benz_vision-eqs-2",
    "name": "Vision EQS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Mercedes-Benz_Vision_EQS_at_IAA_2019_IMG_0753.jpg/1280px-Mercedes-Benz_Vision_EQS_at_IAA_2019_IMG_0753.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Mercedes-Benz_Vision_EQS_Concept_%2848819450588%29.jpg/1280px-Mercedes-Benz_Vision_EQS_Concept_%2848819450588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Vision_EQS_at_IAA_2019_IMG_0753.jpg"
+   "imageCredit": "Rutger van der Maar from Leiden, The Netherlands",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Vision_EQS_Concept_(48819450588).jpg"
   },
   {
    "id": "mercedes-benz_type-223",
@@ -4911,14 +4907,14 @@
   {
    "id": "mercedes-benz_gt3",
    "name": "GT3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Mercedes-AMG_GT3_IMG_0766.jpg/1280px-Mercedes-AMG_GT3_IMG_0766.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Mercedes-Benz_SLS_AMG_GT3.JPG/1280px-Mercedes-Benz_SLS_AMG_GT3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4746 x 2049 x 1238",
    "poids_kg": 1285,
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT3_IMG_0766.jpg"
+   "imageCredit": "Redtomas",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG_GT3.JPG"
   },
   {
    "id": "mercedes-benz_la-911",
@@ -5057,12 +5053,12 @@
   {
    "id": "mercedes-benz_c192",
    "name": "C192",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Mercedes-AMG_C192_63_IAA_2023_1X7A0627.jpg/1280px-Mercedes-AMG_C192_63_IAA_2023_1X7A0627.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Mercedes-AMG_GT_63_Pro_%28C192%29_IAA_2025_DSC_2092.jpg/1280px-Mercedes-AMG_GT_63_Pro_%28C192%29_IAA_2025_DSC_2092.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_C192_63_IAA_2023_1X7A0627.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT_63_Pro_(C192)_IAA_2025_DSC_2092.jpg"
   },
   {
    "id": "mercedes-benz_unimog-2010",

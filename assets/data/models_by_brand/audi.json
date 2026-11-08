@@ -472,7 +472,7 @@
   {
    "id": "audi_a6-allroad",
    "name": "A6 Allroad",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Audi_A6_C9_IAA_2025_DSC_1920.jpg/1280px-Audi_A6_C9_IAA_2025_DSC_1920.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Audi_A6_Allroad_Quattro_C8_1X7A0302.jpg/1280px-Audi_A6_Allroad_Quattro_C8_1X7A0302.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - Aujourd'hui",
    "puissance_ch": 286,
    "vitesse_max_kmh": 250,
@@ -498,9 +498,9 @@
     "german car",
     "premium car"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A6_C9_IAA_2025_DSC_1920.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A6_Allroad_Quattro_C8_1X7A0302.jpg"
   },
   {
    "id": "audi_a6-e-tron",
@@ -1466,7 +1466,7 @@
   {
    "id": "audi_q7",
    "name": "Q7",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Audi_Q7_4M_FL2_3.0_V6_MHEV_quattro_Satellite_Silver_Metallic_01_%28cropped%29.jpg/1280px-Audi_Q7_4M_FL2_3.0_V6_MHEV_quattro_Satellite_Silver_Metallic_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Audi_q7_front_white.jpg/1280px-Audi_q7_front_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - Aujourd'hui",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -1491,14 +1491,14 @@
     "allroad",
     "quattro"
    ],
-   "imageCredit": "Ethan Llamas",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q7_4M_FL2_3.0_V6_MHEV_quattro_Satellite_Silver_Metallic_01_(cropped).jpg"
+   "imageCredit": "Alofok",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_q7_front_white.jpg"
   },
   {
    "id": "audi_q7-e-tron",
    "name": "Q7 e-tron",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_Q6_e-tron_DSC_7829.jpg/1280px-Audi_Q6_e-tron_DSC_7829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Audi_Q7_e-tron_Quattro_4M_Night_Black_%281%29.jpg/1280px-Audi_Q7_e-tron_Quattro_4M_Night_Black_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2019",
    "puissance_ch": 373,
    "vitesse_max_kmh": 225,
@@ -1524,9 +1524,9 @@
     "premium suv",
     "large suv"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Damian B Oh",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q6_e-tron_DSC_7829.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q7_e-tron_Quattro_4M_Night_Black_(1).jpg"
   },
   {
    "id": "audi_q8",
@@ -1661,7 +1661,7 @@
   {
    "id": "audi_r15-plus",
    "name": "R15 Plus",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/2009AudiR15TDI.jpg/1280px-2009AudiR15TDI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Audi_R15_TDI_Plus_at_8_Heures_du_Castellet_2010_-_side_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2010 (Concept)",
    "puissance_ch": 650,
    "vitesse_max_kmh": 330,
@@ -1686,9 +1686,9 @@
     "petrol bike",
     "fuel-efficient"
    ],
-   "imageCredit": "Brian Snelson",
+   "imageCredit": "Nicolas Garcia",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2009AudiR15TDI.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_R15_TDI_Plus_at_8_Heures_du_Castellet_2010_-_side_view.jpg"
   },
   {
    "id": "audi_r18",
@@ -2478,7 +2478,7 @@
   {
    "id": "audi_s6-e-tron",
    "name": "S6 e-tron",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Audi_A2_e-tron_Auto_Zuerich_2026_IMG_8601.jpg/1280px-Audi_A2_e-tron_Auto_Zuerich_2026_IMG_8601.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Audi_S6_e-tron%2C_Auto_2024%2C_Zurich_%28PANA0897%29.jpg/1280px-Audi_S6_e-tron%2C_Auto_2024%2C_Zurich_%28PANA0897%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "puissance_ch": 517,
    "vitesse_max_kmh": 250,
@@ -2504,9 +2504,9 @@
     "vehicle",
     "luxury electric vehicle"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A2_e-tron_Auto_Zuerich_2026_IMG_8601.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S6_e-tron,_Auto_2024,_Zurich_(PANA0897).jpg"
   },
   {
    "id": "audi_s7",
@@ -2701,7 +2701,7 @@
   {
    "id": "audi_sq6-e-tron",
    "name": "SQ6 e-tron",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_Q6_e-tron_DSC_7829.jpg/1280px-Audi_Q6_e-tron_DSC_7829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Audi_SQ6_e-tron_Automesse_Ludwigsburg_2024_IMG_1514.jpg/1280px-Audi_SQ6_e-tron_Automesse_Ludwigsburg_2024_IMG_1514.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "puissance_ch": 517,
    "vitesse_max_kmh": 230,
@@ -2727,9 +2727,9 @@
     "ev",
     "high-performance suv"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q6_e-tron_DSC_7829.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_SQ6_e-tron_Automesse_Ludwigsburg_2024_IMG_1514.jpg"
   },
   {
    "id": "audi_sq7",
@@ -2800,7 +2800,7 @@
   {
    "id": "audi_sq8-e-tron",
    "name": "SQ8 e-tron",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_Q6_e-tron_DSC_7829.jpg/1280px-Audi_Q6_e-tron_DSC_7829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Audi_SQ8_Sportback_e-tron_%28ZAA-GEEAV%29_front.jpg/1280px-Audi_SQ8_Sportback_e-tron_%28ZAA-GEEAV%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 503,
    "vitesse_max_kmh": 210,
@@ -2826,9 +2826,9 @@
     "luxury car",
     "audi sq8 e-tron"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Tokumeigakarinoaoshima",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q6_e-tron_DSC_7829.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_SQ8_Sportback_e-tron_(ZAA-GEEAV)_front.jpg"
   },
   {
    "id": "audi_tt",
@@ -3025,7 +3025,7 @@
   {
    "id": "audi_v8",
    "name": "V8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Audi_V8Quattro.jpg/1280px-Audi_V8Quattro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Audi_V8_front_20070511.jpg/1280px-Audi_V8_front_20070511.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1988 - 1994",
    "puissance_ch": 280,
    "vitesse_max_kmh": 249,
@@ -3051,9 +3051,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Jagvar",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_V8Quattro.jpg"
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_V8_front_20070511.jpg"
   },
   {
    "id": "audi_v8-l",
@@ -3437,12 +3437,12 @@
   {
    "id": "audi_5000-2",
    "name": "5000",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Audi_5000_S_at_Legendy_2018_in_Prague.jpg/1280px-Audi_5000_S_at_Legendy_2018_in_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Audi_5000_S_1986_%2834300598380%29.jpg/1280px-Audi_5000_S_1986_%2834300598380%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Jiří Sedláček",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_5000_S_at_Legendy_2018_in_Prague.jpg"
+   "imageCredit": "RL GNZLZ from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_5000_S_1986_(34300598380).jpg"
   },
   {
    "id": "audi_80-b3",
@@ -3540,12 +3540,8 @@
   {
    "id": "audi_mp01",
    "name": "MP01",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Audi_100_Coupe_BW_1.JPG/1280px-Audi_100_Coupe_BW_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Berthold Werner",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_100_Coupe_BW_1.JPG"
+   "tags": []
   },
   {
    "id": "audi_type-p",
@@ -3972,12 +3968,12 @@
   {
    "id": "audi_a8-d5",
    "name": "A8 D5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg/1280px-2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Audi_A8_D5_%282021%29_1X7A6342.jpg/1280px-Audi_A8_D5_%282021%29_1X7A6342.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Audi_A8_50_TDi_Quattro_Automatic_3.0.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A8_D5_(2021)_1X7A6342.jpg"
   },
   {
    "id": "audi_rs-q-e-tron",
@@ -3994,13 +3990,13 @@
   {
    "id": "audi_q6-2",
    "name": "Q6",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Audi_Q6_001_%28cropped%29.jpg/1280px-Audi_Q6_001_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Audi_Q6_e-tron_Sportback_DSC_9276.jpg/1280px-Audi_Q6_e-tron_Sportback_DSC_9276.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5099 x 2013 x 2980",
-   "imageCredit": "JustAnotherCarDesigner",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q6_001_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Q6_e-tron_Sportback_DSC_9276.jpg"
   },
   {
    "id": "audi_q6-e-tron-sportback",
@@ -4068,14 +4064,10 @@
   {
    "id": "audi_r18-e-tron-quattro-rp5",
    "name": "R18 E-Tron quattro RP5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Audi_R18_e-tron_quattro_-_Porsche_919_Hybrid_%2818839889726%29.jpg/1280px-Audi_R18_e-tron_quattro_-_Porsche_919_Hybrid_%2818839889726%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4650 x 1900 x 1050",
-   "poids_kg": 870,
-   "imageCredit": "Kevin Decherf from Nantes, France",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_R18_e-tron_quattro_-_Porsche_919_Hybrid_(18839889726).jpg"
+   "poids_kg": 870
   },
   {
    "id": "audi_a4-b9",
@@ -4100,13 +4092,13 @@
   {
    "id": "audi_a1-gb",
    "name": "A1 GB",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2018_Audi_A1_S_Line_30_TFSi_S-A_1.0.jpg/1280px-2018_Audi_A1_S_Line_30_TFSi_S-A_1.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Tuned_Audi_A1_Sportback_%28GB%29_front.jpg/1280px-Tuned_Audi_A1_Sportback_%28GB%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4029 x 1740 x 1409",
-   "imageCredit": "Vauxford",
+   "imageCredit": "Tokumeigakarinoaoshima",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Audi_A1_S_Line_30_TFSi_S-A_1.0.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Tuned_Audi_A1_Sportback_(GB)_front.jpg"
   },
   {
    "id": "audi_q3-f3",

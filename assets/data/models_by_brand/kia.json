@@ -3,7 +3,7 @@
   {
    "id": "kia_avella",
    "name": "Avella",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/1992_Ford_Festiva_%28WA%29_5-door_hatchback_%2826631967204%29.jpg/1280px-1992_Ford_Festiva_%28WA%29_5-door_hatchback_%2826631967204%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20111008_kia_avella_001.jpg/1280px-20111008_kia_avella_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2000",
    "puissance_ch": 73,
    "vitesse_max_kmh": 160,
@@ -27,9 +27,9 @@
     "small car",
     "economy car"
    ],
-   "imageCredit": "Jeremy from Sydney, Australia",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1992_Ford_Festiva_(WA)_5-door_hatchback_(26631967204).jpg"
+   "imageCredit": "Chu",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20111008_kia_avella_001.jpg"
   },
   {
    "id": "kia_besta",
@@ -377,7 +377,7 @@
   {
    "id": "kia_credos",
    "name": "Credos",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/1996_Kia_Clarus_01.jpg/1280px-1996_Kia_Clarus_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/0_Kia_Credos_1.jpg/1280px-0_Kia_Credos_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - 2001",
    "puissance_ch": 148,
    "vitesse_max_kmh": 195,
@@ -401,9 +401,9 @@
     "reliable car",
     "affordable car"
    ],
-   "imageCredit": "No machine-readable author provided. Ilya p assumed (based on copyright claims).",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Kia_Clarus_01.jpg"
+   "imageCredit": "Benespit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:0_Kia_Credos_1.jpg"
   },
   {
    "id": "kia_enterprise",
@@ -1220,7 +1220,7 @@
   {
    "id": "kia_optima",
    "name": "Optima",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/KIA_K5_OPTIMA_China.jpg/1280px-KIA_K5_OPTIMA_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/2018_Kia_Optima_S_front.jpg/1280px-2018_Kia_Optima_S_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2020",
    "puissance_ch": 180,
    "vitesse_max_kmh": 210,
@@ -1245,9 +1245,9 @@
     "sedan car",
     "fuel efficient car"
    ],
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:KIA_K5_OPTIMA_China.jpg"
+   "imageCredit": "Throwawayacc222",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Kia_Optima_S_front.jpg"
   },
   {
    "id": "kia_pegas",
@@ -1379,7 +1379,7 @@
   {
    "id": "kia_proceed",
    "name": "ProCeed",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2019_Kia_Proceed_GT_ISG_S-A_1.6_Front.jpg/1280px-2019_Kia_Proceed_GT_ISG_S-A_1.6_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Kia_ProCeed%2C_IAA_2017%2C_Frankfurt_%281Y7A3316%29.jpg/1280px-Kia_ProCeed%2C_IAA_2017%2C_Frankfurt_%281Y7A3316%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - Aujourd'hui",
    "puissance_ch": 160,
    "vitesse_max_kmh": 210,
@@ -1403,9 +1403,9 @@
     "family car",
     "estate car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Kia_Proceed_GT_ISG_S-A_1.6_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_ProCeed,_IAA_2017,_Frankfurt_(1Y7A3316).jpg"
   },
   {
    "id": "kia_pv5",
@@ -1913,7 +1913,6 @@
   {
    "id": "kia_sportage_1st_gen",
    "name": "Sportage (1re génération)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2025_Kia_Sportage_%28NQ5%29_Automesse_Ludwigsburg_2025_DSC_2532.jpg/1280px-2025_Kia_Sportage_%28NQ5%29_Automesse_Ludwigsburg_2025_DSC_2532.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 2002",
    "puissance_ch": 95,
    "vitesse_max_kmh": 160,
@@ -1936,10 +1935,7 @@
     "off-road vehicle",
     "gasoline car",
     "internal combustion engine"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Kia_Sportage_(NQ5)_Automesse_Ludwigsburg_2025_DSC_2532.jpg"
+   ]
   },
   {
    "id": "kia_stinger",
@@ -2272,13 +2268,13 @@
   {
    "id": "kia_k9-2",
    "name": "K9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Kia_K9_KH_facelift_01_China_2016-04-15.jpg/1280px-Kia_K9_KH_facelift_01_China_2016-04-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Kia_K9%2C_Astana_%28P1190736%29.jpg/1280px-Kia_K9%2C_Astana_%28P1190736%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5095 x 1900 x 1490",
-   "imageCredit": "Navigator84",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_K9_KH_facelift_01_China_2016-04-15.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_K9,_Astana_(P1190736).jpg"
   },
   {
    "id": "kia_k5-optima",
@@ -2293,13 +2289,13 @@
   {
    "id": "kia_kx3-2",
    "name": "KX3",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kia_KX3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Kia_KX3_II_011.jpg/1280px-Kia_KX3_II_011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4260 x 1780 x 1630",
-   "imageCredit": "Rutger van der Maar",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_KX3.jpg"
+   "imageCredit": "Jengtingchen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_KX3_II_011.jpg"
   },
   {
    "id": "kia_ray-ev",
@@ -2326,13 +2322,13 @@
   {
    "id": "kia_syros-2",
    "name": "Syros",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2025_Kia_Syros_1.5_HTX%2B_%28O%29_%28India%29_front_view_01.jpg/1280px-2025_Kia_Syros_1.5_HTX%2B_%28O%29_%28India%29_front_view_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2025_Kia_Syros_1.5_HTX%2B_%28O%29_%28India%29_front_view_02.jpg/1280px-2025_Kia_Syros_1.5_HTX%2B_%28O%29_%28India%29_front_view_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3995 x 1800 x 1665",
    "imageCredit": "The Drivers Hub",
    "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Kia_Syros_1.5_HTX%2B_(O)_(India)_front_view_01.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Kia_Syros_1.5_HTX%2B_(O)_(India)_front_view_02.jpg"
   },
   {
    "id": "kia_carnival-kv-ii",
@@ -2397,12 +2393,12 @@
   {
    "id": "kia_ev4-2",
    "name": "EV4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2026_Kia_EV4%2C_front_NYIAS_2025.jpg/1280px-2026_Kia_EV4%2C_front_NYIAS_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Kia_EV4_GT-Line_Automesse_Ludwigsburg_2025_DSC_2535.jpg/1280px-Kia_EV4_GT-Line_Automesse_Ludwigsburg_2025_DSC_2535.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Kevauto",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Kia_EV4,_front_NYIAS_2025.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_EV4_GT-Line_Automesse_Ludwigsburg_2025_DSC_2535.jpg"
   },
   {
    "id": "kia_k4-2024",
@@ -2417,23 +2413,23 @@
   {
    "id": "kia_tasman-2",
    "name": "Tasman",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/2025_Kia_Tasman_front.jpg/1280px-2025_Kia_Tasman_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kia_Tasman_TK_%2802%29.jpg/1280px-Kia_Tasman_TK_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "LuvsMG481",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Kia_Tasman_front.jpg"
+   "imageCredit": "Avante2025",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Tasman_TK_(02).jpg"
   },
   {
    "id": "kia_pv5-2",
    "name": "PV5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Kia_PV5_Cargo_Ditzingen_Mobil_2026_IMG_5554.jpg/1280px-Kia_PV5_Cargo_Ditzingen_Mobil_2026_IMG_5554.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Kia_PV5_Cargo_IMG_7829.jpg/1280px-Kia_PV5_Cargo_IMG_7829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4695 x 1895 x 1905",
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_Ditzingen_Mobil_2026_IMG_5554.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7829.jpg"
   },
   {
    "id": "kia_heart",
@@ -2448,12 +2444,12 @@
   {
    "id": "kia_magentis-2",
    "name": "Magentis",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Kia_Magentis_front.jpg/1280px-Kia_Magentis_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Kia_Magentis_2.0_EX_2009_%2851682734183%29.jpg/1280px-Kia_Magentis_2.0_EX_2009_%2851682734183%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Magentis_front.jpg"
+   "imageCredit": "RL GNZLZ from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Magentis_2.0_EX_2009_(51682734183).jpg"
   },
   {
    "id": "kia_carnival",
@@ -2468,22 +2464,22 @@
   {
    "id": "kia_forte",
    "name": "Forte",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Kia_Cerato_1.6_EX_2023_%2853135607211%29.jpg/1280px-Kia_Cerato_1.6_EX_2023_%2853135607211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/KIA_FORTE_R_%28KIA_FORTE_SEDAN_%28TD%29%29_China.jpg/1280px-KIA_FORTE_R_%28KIA_FORTE_SEDAN_%28TD%29%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "RL GNZLZ from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Cerato_1.6_EX_2023_(53135607211).jpg"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:KIA_FORTE_R_(KIA_FORTE_SEDAN_(TD))_China.jpg"
   },
   {
    "id": "kia_cerato-2",
    "name": "Cerato",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Kia_Cerato_1.6_EX_2023_%2853135607211%29.jpg/1280px-Kia_Cerato_1.6_EX_2023_%2853135607211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Moscow%2C_Kia_Cerato_grey%2C_Aug_2025_02.jpg/1280px-Moscow%2C_Kia_Cerato_grey%2C_Aug_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "RL GNZLZ from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_Cerato_1.6_EX_2023_(53135607211).jpg"
+   "imageCredit": "Retired electrician",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow,_Kia_Cerato_grey,_Aug_2025_02.jpg"
   },
   {
    "id": "kia_k7-cadenza",
@@ -2509,12 +2505,12 @@
   {
    "id": "kia_morning-2",
    "name": "morning",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2024_Kia_Picanto_%28JA%29_IAA_2025_DSC_1271.jpg/1280px-2024_Kia_Picanto_%28JA%29_IAA_2025_DSC_1271.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/20200729_Kia_Morning_Front_Side.png/1280px-20200729_Kia_Morning_Front_Side.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003",
    "tags": [],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Ki hoon",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Kia_Picanto_(JA)_IAA_2025_DSC_1271.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20200729_Kia_Morning_Front_Side.png"
   },
   {
    "id": "kia_brisa",
@@ -2570,13 +2566,13 @@
   {
    "id": "kia_k4-2",
    "name": "K4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/2018_Kia_K4_Cachet_front_8.16.18.jpg/1280px-2018_Kia_K4_Cachet_front_8.16.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Kia_K4_Sportswagon_IMG_7822.jpg/1280px-Kia_K4_Sportswagon_IMG_7822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4720 x 1815 x 1465",
-   "imageCredit": "Kevauto",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Kia_K4_Cachet_front_8.16.18.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Kia_K4_Sportswagon_IMG_7822.jpg"
   },
   {
    "id": "kia_picanto-ja",

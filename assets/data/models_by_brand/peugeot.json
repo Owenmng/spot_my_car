@@ -287,7 +287,7 @@
   {
    "id": "peugeot_2008",
    "name": "2008",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Peugeot_e-2008_Facelift_Autofr%C3%BChling_Ulm_IMG_9302.jpg/1280px-Peugeot_e-2008_Facelift_Autofr%C3%BChling_Ulm_IMG_9302.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Peugeot_e-2008_Automesse_Ludwigsburg_2022_1X7A5883.jpg/1280px-Peugeot_e-2008_Automesse_Ludwigsburg_2022_1X7A5883.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 100,
    "vitesse_max_kmh": 183,
@@ -311,9 +311,9 @@
     "automobile",
     "mini suv"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_e-2008_Facelift_Autofr%C3%BChling_Ulm_IMG_9302.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_e-2008_Automesse_Ludwigsburg_2022_1X7A5883.jpg"
   },
   {
    "id": "peugeot_204",
@@ -415,7 +415,7 @@
   {
    "id": "peugeot_205_xs",
    "name": "205 XS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Peugeot_205_front_20080121.jpg/1280px-Peugeot_205_front_20080121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/1990_Peugeot_205_XS.jpg/1280px-1990_Peugeot_205_XS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1994",
    "puissance_ch": 85,
    "vitesse_max_kmh": 175,
@@ -441,9 +441,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_205_front_20080121.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1990_Peugeot_205_XS.jpg"
   },
   {
    "id": "peugeot_206",
@@ -511,7 +511,7 @@
   {
    "id": "peugeot_206_gti",
    "name": "206 GTi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/2002_Peugeot_206_LX_1.4_Front.jpg/1280px-2002_Peugeot_206_LX_1.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Peugeot_206_GTi_%2816%29.jpg/1280px-Peugeot_206_GTi_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2006",
    "puissance_ch": 137,
    "vitesse_max_kmh": 210,
@@ -536,14 +536,14 @@
     "petrol car",
     "2000s car"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_206_LX_1.4_Front.jpg"
+   "imageCredit": "FotoSleuth",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_206_GTi_(16).jpg"
   },
   {
    "id": "peugeot_206_rc",
    "name": "206 RC",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/2002_Peugeot_206_LX_1.4_Front.jpg/1280px-2002_Peugeot_206_LX_1.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Peugeot_206_RC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2003 - 2006",
    "puissance_ch": 177,
    "vitesse_max_kmh": 220,
@@ -569,14 +569,14 @@
     "rc",
     "small car"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_206_LX_1.4_Front.jpg"
+   "imageCredit": "Pcharnay",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_206_RC.JPG"
   },
   {
    "id": "peugeot_206_sw",
    "name": "206 SW",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/2002_Peugeot_206_LX_1.4_Front.jpg/1280px-2002_Peugeot_206_LX_1.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/2005_Peugeot_206_SW_S.jpg/1280px-2005_Peugeot_206_SW_S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2012",
    "puissance_ch": 110,
    "vitesse_max_kmh": 190,
@@ -600,9 +600,9 @@
     "peugeot",
     "french car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_206_LX_1.4_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005_Peugeot_206_SW_S.jpg"
   },
   {
    "id": "peugeot_207",
@@ -1084,7 +1084,7 @@
   {
    "id": "peugeot_307_cc",
    "name": "307 CC",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2002_Peugeot_307_Rapier_16V_1.6_Front.jpg/1280px-2002_Peugeot_307_Rapier_16V_1.6_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/UA_army_Peugeot_307_CC_fighting_vehicle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2003 - 2008",
    "puissance_ch": 140,
    "vitesse_max_kmh": 205,
@@ -1108,14 +1108,14 @@
     "roadster",
     "2000s car"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_307_Rapier_16V_1.6_Front.jpg"
+   "imageCredit": "Ministry of Defence of Ukraine",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:UA_army_Peugeot_307_CC_fighting_vehicle.jpg"
   },
   {
    "id": "peugeot_307_sw",
    "name": "307 SW",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2002_Peugeot_307_Rapier_16V_1.6_Front.jpg/1280px-2002_Peugeot_307_Rapier_16V_1.6_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2006_Peugeot_307_SW_SE_HDi_110_1.6_Rear.jpg/1280px-2006_Peugeot_307_SW_SE_HDi_110_1.6_Rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2009",
    "puissance_ch": 140,
    "vitesse_max_kmh": 205,
@@ -1139,9 +1139,9 @@
     "french car",
     "mid-size car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "VauxhallMania1999",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_307_Rapier_16V_1.6_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Peugeot_307_SW_SE_HDi_110_1.6_Rear.jpg"
   },
   {
    "id": "peugeot_308",
@@ -1209,7 +1209,7 @@
   {
    "id": "peugeot_308_gti",
    "name": "308 GTi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2022_-_Peugeot_308_III_%28C%29_-_121.jpg/1280px-2022_-_Peugeot_308_III_%28C%29_-_121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Peugeot_308_GTi_-_prz%C3%B3d_%28MSP16%29.jpg/1280px-Peugeot_308_GTi_-_prz%C3%B3d_%28MSP16%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2021",
    "puissance_ch": 270,
    "vitesse_max_kmh": 250,
@@ -1234,14 +1234,14 @@
     "gasoline car",
     "internal combustion engine"
    ],
-   "imageCredit": "A.BourgeoisP",
+   "imageCredit": "Jakub \"Flyz1\" Maciejewski",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_-_Peugeot_308_III_(C)_-_121.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_308_GTi_-_prz%C3%B3d_(MSP16).jpg"
   },
   {
    "id": "peugeot_308_sw",
    "name": "308 SW",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2022_-_Peugeot_308_III_%28C%29_-_121.jpg/1280px-2022_-_Peugeot_308_III_%28C%29_-_121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Peugeot_308_C_SW_Automesse_Ludwigsburg_2023_1X7A0042.jpg/1280px-Peugeot_308_C_SW_Automesse_Ludwigsburg_2023_1X7A0042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - Aujourd'hui",
    "puissance_ch": 130,
    "vitesse_max_kmh": 210,
@@ -1264,9 +1264,9 @@
     "station wagon",
     "mid-size car"
    ],
-   "imageCredit": "A.BourgeoisP",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_-_Peugeot_308_III_(C)_-_121.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_308_C_SW_Automesse_Ludwigsburg_2023_1X7A0042.jpg"
   },
   {
    "id": "peugeot_309",
@@ -2288,7 +2288,7 @@
   {
    "id": "peugeot_partner",
    "name": "Partner",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Citro%C3%ABn_Berlingo_XL_BlueHDi_130_EAT8_Shine_XTR_%28III%29_%E2%80%93_f_02012021.jpg/1280px-Citro%C3%ABn_Berlingo_XL_BlueHDi_130_EAT8_Shine_XTR_%28III%29_%E2%80%93_f_02012021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Peugeot_Partner_PN_des_Pyr%C3%A9n%C3%A9es_Bar%C3%A8ges_2012.jpg/1280px-Peugeot_Partner_PN_des_Pyr%C3%A9n%C3%A9es_Bar%C3%A8ges_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - Aujourd'hui",
    "puissance_ch": 100,
    "vitesse_max_kmh": 174,
@@ -2313,9 +2313,9 @@
     "van",
     "transportation"
    ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_Berlingo_XL_BlueHDi_130_EAT8_Shine_XTR_(III)_%E2%80%93_f_02012021.jpg"
+   "imageCredit": "JLPC",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Partner_PN_des_Pyr%C3%A9n%C3%A9es_Bar%C3%A8ges_2012.jpg"
   },
   {
    "id": "peugeot_pick-up",
@@ -2695,12 +2695,12 @@
   {
    "id": "peugeot_boxer-second-generation",
    "name": "Boxer (second generation)",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Fiat_Ducato_front_20080409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Peugeot_Boxer_II_2%2C2_HDi_%282018%29_%2853464972459%29.jpg/1280px-Peugeot_Boxer_II_2%2C2_HDi_%282018%29_%2853464972459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Ducato_front_20080409.jpg"
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Boxer_II_2,2_HDi_(2018)_(53464972459).jpg"
   },
   {
    "id": "peugeot_partner-iii",

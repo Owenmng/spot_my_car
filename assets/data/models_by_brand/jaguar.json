@@ -3,7 +3,7 @@
   {
    "id": "jaguar_c-x16",
    "name": "C-X16",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Silver_jaguar_c-x75.jpg/1280px-Silver_jaguar_c-x75.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/The_Jaguar_C-X16_at_the_Frankfurt_Motor_Show_2011.jpg/1280px-The_Jaguar_C-X16_at_the_Frankfurt_Motor_Show_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 (Concept)",
    "puissance_ch": 476,
    "vitesse_max_kmh": 300,
@@ -26,9 +26,9 @@
     "citroen",
     "french car"
    ],
-   "imageCredit": "SbastienRondet (Flickr User)",
+   "imageCredit": "Autoviva",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Silver_jaguar_c-x75.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_Jaguar_C-X16_at_the_Frankfurt_Motor_Show_2011.jpg"
   },
   {
    "id": "jaguar_c-x75",
@@ -165,7 +165,7 @@
   {
    "id": "jaguar_f-pace",
    "name": "F-Pace",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/2018_Jaguar_I-Pace_EV400_AWD_Front.jpg/1280px-2018_Jaguar_I-Pace_EV400_AWD_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Jaguar_F-Pace_IMG_8000.jpg/1280px-Jaguar_F-Pace_IMG_8000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 250,
    "vitesse_max_kmh": 217,
@@ -190,9 +190,9 @@
     "all-wheel drive",
     "awd"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Jaguar_I-Pace_EV400_AWD_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_F-Pace_IMG_8000.jpg"
   },
   {
    "id": "jaguar_f-type",
@@ -229,7 +229,7 @@
   {
    "id": "jaguar_f-type_svr",
    "name": "F-Type SVR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/2017_Jaguar_F-Type_V6_R-Dynamic_Automatic_3.0_Front.jpg/1280px-2017_Jaguar_F-Type_V6_R-Dynamic_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Jaguar_F_Type_SVR_Convertible.jpg/1280px-Jaguar_F_Type_SVR_Convertible.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2024",
    "puissance_ch": 575,
    "vitesse_max_kmh": 322,
@@ -254,14 +254,14 @@
     "vehicle",
     "grand tourer"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Jaguar_F-Type_V6_R-Dynamic_Automatic_3.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_F_Type_SVR_Convertible.jpg"
   },
   {
    "id": "jaguar_i-pace",
    "name": "I-Pace",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/2018_Jaguar_I-Pace_EV400_AWD_Front.jpg/1280px-2018_Jaguar_I-Pace_EV400_AWD_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Waymo_Jaguar_I-Pace_in_San_Francisco_2023_dllu.jpg/1280px-Waymo_Jaguar_I-Pace_in_San_Francisco_2023_dllu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 400,
    "vitesse_max_kmh": 200,
@@ -286,9 +286,9 @@
     "performance suv",
     "crossover"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Jaguar_I-Pace_EV400_AWD_Front.jpg"
+   "imageCredit": "Dllu",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Waymo_Jaguar_I-Pace_in_San_Francisco_2023_dllu.jpg"
   },
   {
    "id": "jaguar_mark_1",
@@ -418,7 +418,7 @@
   {
    "id": "jaguar_project_8",
    "name": "Project 8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Jaguar_XE_SV_Project_8_at_IAA_2019_IMG_0539.jpg/1280px-Jaguar_XE_SV_Project_8_at_IAA_2019_IMG_0539.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Jaguar_XE_SV_Project_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2017 - 2019",
    "puissance_ch": 600,
    "vitesse_max_kmh": 322,
@@ -443,9 +443,9 @@
     "super sedan",
     "british car"
    ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XE_SV_Project_8_at_IAA_2019_IMG_0539.jpg"
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XE_SV_Project_8.jpg"
   },
   {
    "id": "jaguar_s-type",
@@ -482,7 +482,7 @@
   {
    "id": "jaguar_s-type_r",
    "name": "S-Type R",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/2017_Jaguar_F-Type_V6_R-Dynamic_Automatic_3.0_Front.jpg/1280px-2017_Jaguar_F-Type_V6_R-Dynamic_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/2003_Jaguar_S-Type_R_Auto.jpg/1280px-2003_Jaguar_S-Type_R_Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2007",
    "puissance_ch": 400,
    "vitesse_max_kmh": 250,
@@ -508,9 +508,9 @@
     "jaguar s-type r",
     "sports sedan"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Jaguar_F-Type_V6_R-Dynamic_Automatic_3.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Jaguar_S-Type_R_Auto.jpg"
   },
   {
    "id": "jaguar_x-type",
@@ -578,7 +578,6 @@
   {
    "id": "jaguar_xe_svr",
    "name": "XE SVR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/2019_Jaguar_XE_S_Automatic_2.0.jpg/1280px-2019_Jaguar_XE_S_Automatic_2.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2024",
    "puissance_ch": 450,
    "vitesse_max_kmh": 283,
@@ -602,15 +601,12 @@
     "jaguar",
     "british car",
     "supercharged engine"
-   ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Jaguar_XE_S_Automatic_2.0.jpg"
+   ]
   },
   {
    "id": "jaguar_xf",
    "name": "XF",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg/1280px-2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Jaguar_XF_Sportbrake%2C_IAA_2017%2C_Frankfurt_%281Y7A3098%29.jpg/1280px-Jaguar_XF_Sportbrake%2C_IAA_2017%2C_Frankfurt_%281Y7A3098%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2024",
    "puissance_ch": 250,
    "vitesse_max_kmh": 244,
@@ -635,9 +631,9 @@
     "jaguar",
     "british car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XF_Sportbrake,_IAA_2017,_Frankfurt_(1Y7A3098).jpg"
   },
   {
    "id": "jaguar_xf_r",
@@ -674,7 +670,7 @@
   {
    "id": "jaguar_xf_sportbrake",
    "name": "XF Sportbrake",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg/1280px-2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Jaguar_XF_%28X260%29_Sportbrake_Facelift_IMG_8894.jpg/1280px-Jaguar_XF_%28X260%29_Sportbrake_Facelift_IMG_8894.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2024",
    "puissance_ch": 300,
    "vitesse_max_kmh": 250,
@@ -700,9 +696,9 @@
     "diesel",
     "petrol"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XF_(X260)_Sportbrake_Facelift_IMG_8894.jpg"
   },
   {
    "id": "jaguar_xj",
@@ -772,7 +768,7 @@
   {
    "id": "jaguar_xj220_s",
    "name": "XJ220 S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/JaguarXJ220.jpg/1280px-JaguarXJ220.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/1994_Jaguar_XJ220_S_TWR_3.5.jpg/1280px-1994_Jaguar_XJ220_S_TWR_3.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - 1994",
    "puissance_ch": 680,
    "vitesse_max_kmh": 349,
@@ -798,9 +794,9 @@
     "twin-turbo",
     "mid-engine"
    ],
-   "imageCredit": "Brian Snelson",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:JaguarXJ220.jpg"
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Jaguar_XJ220_S_TWR_3.5.jpg"
   },
   {
    "id": "jaguar_xjr",
@@ -1128,12 +1124,12 @@
   {
    "id": "jaguar_xk-2",
    "name": "XK",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Jaguar_X150_front_20080223.jpg/1280px-Jaguar_X150_front_20080223.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Jaguar_XK_150_S_BW_2017-07-16_13-43-20.jpg/1280px-Jaguar_XK_150_S_BW_2017-07-16_13-43-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_X150_front_20080223.jpg"
+   "imageCredit": "Berthold Werner",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XK_150_S_BW_2017-07-16_13-43-20.jpg"
   },
   {
    "id": "jaguar_mark-viii",

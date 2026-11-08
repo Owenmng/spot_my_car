@@ -2865,7 +2865,7 @@
   {
    "id": "nissan_silvia_s12",
    "name": "Silvia (S12)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Nissan_Silvia_S15_Spec_S_%281%29.jpg/1280px-Nissan_Silvia_S15_Spec_S_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Nissan_silvia_grand_prix_S12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1983-1988",
    "puissance_ch": 135,
    "vitesse_max_kmh": 200,
@@ -2892,9 +2892,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Ethan Llamas",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Silvia_S15_Spec_S_(1).jpg"
+   "imageCredit": "Club-S12.org",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_silvia_grand_prix_S12.jpg"
   },
   {
    "id": "nissan_silvia",
@@ -3650,12 +3650,12 @@
   {
    "id": "nissan_primastar",
    "name": "Primastar",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Renault_Trafic_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2022_Nissan_Primastar_Automesse_Ludwigsburg_2022_1X7A5926.jpg/1280px-2022_Nissan_Primastar_Automesse_Ludwigsburg_2022_1X7A5926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Trafic_001.JPG"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Nissan_Primastar_Automesse_Ludwigsburg_2022_1X7A5926.jpg"
   },
   {
    "id": "nissan_r90ck",
@@ -3856,12 +3856,12 @@
   {
    "id": "nissan_200sx",
    "name": "200SX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Nissan_Lucino-Hach_1500BB_FN15.JPG/1280px-Nissan_Lucino-Hach_1500BB_FN15.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Nissan_200SX%2C_personaje_Asuka_Langley.jpg/1280px-Nissan_200SX%2C_personaje_Asuka_Langley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "DY5W-sport",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Lucino-Hach_1500BB_FN15.JPG"
+   "imageCredit": "Rjcastillo",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_200SX,_personaje_Asuka_Langley.jpg"
   },
   {
    "id": "nissan_march-86g",
@@ -4123,12 +4123,12 @@
   {
    "id": "nissan_safari-2",
    "name": "Safari",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Nissan_Safari_101.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Nissan_Patrol_Y60_Safari_1996.jpg/1280px-Nissan_Patrol_Y60_Safari_1996.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Safari_101.JPG"
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Patrol_Y60_Safari_1996.jpg"
   },
   {
    "id": "nissan_model-70",
@@ -4450,13 +4450,13 @@
   {
    "id": "nissan_murano-z53",
    "name": "Murano (Z53)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/2025_Nissan_Murano_%28Front%29_NYC_Auto_Show.png/1280px-2025_Nissan_Murano_%28Front%29_NYC_Auto_Show.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Nissan_MURANO_SV_%28NZ53%29_%282%29.jpg/1280px-Nissan_MURANO_SV_%28NZ53%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4900 x 1981 x 1724",
-   "imageCredit": "Raszbeary",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Nissan_Murano_(Front)_NYC_Auto_Show.png"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_MURANO_SV_(NZ53)_(2).jpg"
   },
   {
    "id": "nissan_yuanye-z9",
@@ -4533,12 +4533,12 @@
   {
    "id": "nissan_240sx-2",
    "name": "240SX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/1989-1990_Nissan_240SX.jpg/1280px-1989-1990_Nissan_240SX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Nissan_240SX_9-26-2017_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1989-1990_Nissan_240SX.jpg"
+   "imageCredit": "SsmIntrigue",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_240SX_9-26-2017_2.jpg"
   },
   {
    "id": "nissan_datsun-bluebird-910",
@@ -4643,12 +4643,12 @@
   {
    "id": "nissan_silvia-2",
    "name": "Silvia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Nissan_Silvia_S15_Spec_S_%281%29.jpg/1280px-Nissan_Silvia_S15_Spec_S_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Nissan_Silvia_%28S14%29_at_the_2025_Shannons_Adelaide_Rally_%28028A4395%29.jpg/1280px-Nissan_Silvia_%28S14%29_at_the_2025_Shannons_Adelaide_Rally_%28028A4395%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Ethan Llamas",
+   "imageCredit": "Yu Chu Chin",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Silvia_S15_Spec_S_(1).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Silvia_(S14)_at_the_2025_Shannons_Adelaide_Rally_(028A4395).jpg"
   },
   {
    "id": "nissan_r391",
@@ -4695,12 +4695,12 @@
   {
    "id": "nissan_s130",
    "name": "S130",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Mondial_de_l%27Automobile_2010%2C_Paris_-_France_%285058943600%29.jpg/1280px-Mondial_de_l%27Automobile_2010%2C_Paris_-_France_%285058943600%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Nissan_E-S130_Fairlady_Z_%2823100110401%29.jpg/1280px-Nissan_E-S130_Fairlady_Z_%2823100110401%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Mic from Reading - Berkshire, United Kingdom",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mondial_de_l%27Automobile_2010,_Paris_-_France_(5058943600).jpg"
+   "imageCredit": "先従隗始",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_E-S130_Fairlady_Z_(23100110401).jpg"
   },
   {
    "id": "nissan_caravan",
@@ -4715,12 +4715,12 @@
   {
    "id": "nissan_r90c",
    "name": "R90C",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/NissanR90CK.JPG/1280px-NissanR90CK.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/NISSAN_R90C_RETROMOBILE_2023_%2852678362442%29.jpg/1280px-NISSAN_R90C_RETROMOBILE_2023_%2852678362442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "V12-Power",
-   "imageLicense": "CC BY 2.5",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:NissanR90CK.JPG"
+   "imageCredit": "ERIC SALARD from Paris, FRANCE",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NISSAN_R90C_RETROMOBILE_2023_(52678362442).jpg"
   },
   {
    "id": "nissan_datsun-200b",

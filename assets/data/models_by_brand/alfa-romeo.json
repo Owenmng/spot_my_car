@@ -3,7 +3,7 @@
   {
    "id": "alfa-romeo_105-series-giulia",
    "name": "105 Series Giulia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Alfa_952_26.06.19_JM_%281%29_%28cropped%29.jpg/1280px-Alfa_952_26.06.19_JM_%281%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Alfa_Romeo_Giulia_1600_Sprint_%28105_series%29_%289010103514%29.jpg/1280px-Alfa_Romeo_Giulia_1600_Sprint_%28105_series%29_%289010103514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1962 - 1978",
    "puissance_ch": 92,
    "vitesse_max_kmh": 165,
@@ -28,9 +28,9 @@
     "motor vehicle",
     "rear-wheel drive"
    ],
-   "imageCredit": "Johannes Maximilian",
-   "imageLicense": "GFDL 1.2",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_952_26.06.19_JM_(1)_(cropped).jpg"
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_1600_Sprint_(105_series)_(9010103514).jpg"
   },
   {
    "id": "alfa-romeo_1300-gt-junior",
@@ -195,7 +195,7 @@
   {
    "id": "alfa-romeo_147-ti",
    "name": "147 TI",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2002_Alfa_Romeo_147_%28MY02%29_Selespeed_Twin_Spark_5-door_hatchback_%282010-11-28%29.jpg/1280px-2002_Alfa_Romeo_147_%28MY02%29_Selespeed_Twin_Spark_5-door_hatchback_%282010-11-28%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Alfa_Romeo_147_Ti_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2004 - 2010",
    "puissance_ch": 170,
    "vitesse_max_kmh": 218,
@@ -219,9 +219,9 @@
     "vehicle",
     "2000s car"
    ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Alfa_Romeo_147_(MY02)_Selespeed_Twin_Spark_5-door_hatchback_(2010-11-28).jpg"
+   "imageCredit": "papurojugarpool",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_Ti_2007.jpg"
   },
   {
    "id": "alfa-romeo_155",
@@ -386,7 +386,7 @@
   {
    "id": "alfa-romeo_159-sportwagon",
    "name": "159 Sportwagon",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Alfa_159_grey.jpg/1280px-Alfa_159_grey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Alfa_Romeo_159_Sportwagon_front_8C.jpg/1280px-Alfa_Romeo_159_Sportwagon_front_8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2011",
    "puissance_ch": 185,
    "vitesse_max_kmh": 222,
@@ -411,9 +411,9 @@
     "alfa 159",
     "wagon"
    ],
-   "imageCredit": "David Villarreal Fernández",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_159_grey.jpg"
+   "imageCredit": "Atarian~commonswiki",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_Sportwagon_front_8C.jpg"
   },
   {
    "id": "alfa-romeo_1600-gt-junior",
@@ -638,7 +638,7 @@
   {
    "id": "alfa-romeo_1900-sprint",
    "name": "1900 Sprint",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg/1280px-Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Alfa_Romeo_1900_C_Super_Sprint_Touring_%281954%29_Classic-Gala_2021_1X7A0157.jpg/1280px-Alfa_Romeo_1900_C_Super_Sprint_Touring_%281954%29_Classic-Gala_2021_1X7A0157.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1951 - 1958",
    "puissance_ch": 100,
    "vitesse_max_kmh": 170,
@@ -663,14 +663,14 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Cloverleaf II",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_1900_C_Super_Sprint_Touring_(1954)_Classic-Gala_2021_1X7A0157.jpg"
   },
   {
    "id": "alfa-romeo_1900-super-sprint",
    "name": "1900 Super Sprint",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg/1280px-Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/1956_Alfa_Romeo_1900_Super_Sprint_ARM.jpg/1280px-1956_Alfa_Romeo_1900_Super_Sprint_ARM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1958",
    "puissance_ch": 115,
    "vitesse_max_kmh": 185,
@@ -695,9 +695,9 @@
     "motor vehicle",
     "two-seater"
    ],
-   "imageCredit": "Cloverleaf II",
+   "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Alfa_Romeo_1900_Super_Sprint_ARM.jpg"
   },
   {
    "id": "alfa-romeo_2000-berlina",
@@ -958,7 +958,7 @@
   {
    "id": "alfa-romeo_33-permanent-4",
    "name": "33 Permanent 4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Alfa_Romeo_33_Stradale_%28cropped%29.jpg/1280px-Alfa_Romeo_33_Stradale_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/1991_Alfa_Romeo_33_S_Permanent_4_hatchback_%2821525796242%29.jpg/1280px-1991_Alfa_Romeo_33_S_Permanent_4_hatchback_%2821525796242%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1994",
    "puissance_ch": 95,
    "vitesse_max_kmh": 180,
@@ -983,9 +983,9 @@
     "four-wheel drive",
     "4wd"
    ],
-   "imageCredit": "Original: Alexandre Prevot from Nancy, France / Derivative work: Danyele",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_33_Stradale_(cropped).jpg"
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1991_Alfa_Romeo_33_S_Permanent_4_hatchback_(21525796242).jpg"
   },
   {
    "id": "alfa-romeo_33-stradale",
@@ -1023,7 +1023,7 @@
   {
    "id": "alfa-romeo_33-stradale-1967",
    "name": "33 Stradale (1967)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Alfa_Romeo_33_Stradale_%28cropped%29.jpg/1280px-Alfa_Romeo_33_Stradale_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Alfa_Romeo_33_Stradale_1967_Museo_Storico_OCT_2015.jpg/1280px-Alfa_Romeo_33_Stradale_1967_Museo_Storico_OCT_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1969",
    "puissance_ch": 230,
    "vitesse_max_kmh": 260,
@@ -1048,9 +1048,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Original: Alexandre Prevot from Nancy, France / Derivative work: Danyele",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_33_Stradale_(cropped).jpg"
+   "imageCredit": "azrhey",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_33_Stradale_1967_Museo_Storico_OCT_2015.jpg"
   },
   {
    "id": "alfa-romeo_4c",
@@ -1309,7 +1309,7 @@
   {
    "id": "alfa-romeo_8c-spider",
    "name": "8C Spider",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg/1280px-Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Alfa_Romeo_8C_Competizione_Spider_LCCS20.jpg/1280px-Alfa_Romeo_8C_Competizione_Spider_LCCS20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2010",
    "puissance_ch": 450,
    "vitesse_max_kmh": 290,
@@ -1334,9 +1334,9 @@
     "roadster",
     "two-seater"
    ],
-   "imageCredit": "Marco 56",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_(24928094612)_(cropped).jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Competizione_Spider_LCCS20.jpg"
   },
   {
    "id": "alfa-romeo_90",
@@ -1438,7 +1438,7 @@
   {
    "id": "alfa-romeo_alfasud-ti",
    "name": "Alfasud Ti",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/1977_Alfa_Romeo_Alfasud_5M.jpg/1280px-1977_Alfa_Romeo_Alfasud_5M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/1977_Alfa_Romeo_Alfasud_Ti_1.jpg/1280px-1977_Alfa_Romeo_Alfasud_Ti_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1973 - 1989",
    "puissance_ch": 86,
    "vitesse_max_kmh": 165,
@@ -1465,8 +1465,8 @@
     "rear-wheel drive"
    ],
    "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1977_Alfa_Romeo_Alfasud_5M.jpg"
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1977_Alfa_Romeo_Alfasud_Ti_1.jpg"
   },
   {
    "id": "alfa-romeo_alfetta",
@@ -1537,7 +1537,7 @@
   {
    "id": "alfa-romeo_alfetta-gt",
    "name": "Alfetta GT",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Alfa_GT_20090801_front.JPG/1280px-Alfa_GT_20090801_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Alfa_Romeo_Alfetta_GT_%283%29.jpg/1280px-Alfa_Romeo_Alfetta_GT_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1974 - 1987",
    "puissance_ch": 122,
    "vitesse_max_kmh": 185,
@@ -1564,14 +1564,14 @@
     "classic coupe",
     "two-door"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_GT_20090801_front.JPG"
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Alfetta_GT_(3).jpg"
   },
   {
    "id": "alfa-romeo_alfetta-gtv",
    "name": "Alfetta GTV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Alfa_Romeo_GTV_20TB-Cropped.jpg/1280px-Alfa_Romeo_GTV_20TB-Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/1978_Alfa_Romeo_Alfetta_GTV_%2832323615092%29.jpg/1280px-1978_Alfa_Romeo_Alfetta_GTV_%2832323615092%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1987",
    "puissance_ch": 128,
    "vitesse_max_kmh": 190,
@@ -1596,9 +1596,9 @@
     "alfasud",
     "alfa romeo"
    ],
-   "imageCredit": "Matthias v.d. Elbe",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_20TB-Cropped.jpg"
+   "imageCredit": "Riley from Christchurch, New Zealand",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1978_Alfa_Romeo_Alfetta_GTV_(32323615092).jpg"
   },
   {
    "id": "alfa-romeo_arna",
@@ -1762,7 +1762,7 @@
   {
    "id": "alfa-romeo_giulia-gta-1965",
    "name": "Giulia GTA (1965)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Alfa_952_26.06.19_JM_%281%29_%28cropped%29.jpg/1280px-Alfa_952_26.06.19_JM_%281%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/1965_Alfa_Romeo_Giulia_Sprint_GTA_Red.jpg/1280px-1965_Alfa_Romeo_Giulia_Sprint_GTA_Red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965 - 1969",
    "puissance_ch": 115,
    "vitesse_max_kmh": 185,
@@ -1787,9 +1787,9 @@
     "muscle car",
     "grand tourer"
    ],
-   "imageCredit": "Johannes Maximilian",
-   "imageLicense": "GFDL 1.2",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_952_26.06.19_JM_(1)_(cropped).jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1965_Alfa_Romeo_Giulia_Sprint_GTA_Red.jpg"
   },
   {
    "id": "alfa-romeo_giulia-quadrifoglio",
@@ -1827,7 +1827,7 @@
   {
    "id": "alfa-romeo_giulia-super",
    "name": "Giulia Super",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Alfa_952_26.06.19_JM_%281%29_%28cropped%29.jpg/1280px-Alfa_952_26.06.19_JM_%281%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Alfa_Romeo_Giulia_Nuova_Super_1300_%28parkend_2016-06-05_Sp%29.JPG/1280px-Alfa_Romeo_Giulia_Nuova_Super_1300_%28parkend_2016-06-05_Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1962 - 1972",
    "puissance_ch": 98,
    "vitesse_max_kmh": 170,
@@ -1852,9 +1852,9 @@
     "giulia",
     "super"
    ],
-   "imageCredit": "Johannes Maximilian",
-   "imageLicense": "GFDL 1.2",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_952_26.06.19_JM_(1)_(cropped).jpg"
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_Nuova_Super_1300_(parkend_2016-06-05_Sp).JPG"
   },
   {
    "id": "alfa-romeo_giulia-super-1.8",
@@ -1923,7 +1923,7 @@
   {
    "id": "alfa-romeo_giulietta-1954",
    "name": "Giulietta (1954)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Alfa-Romeo_Giulietta-1%2C8_Front-view_%28cropped%29.JPG/1280px-Alfa-Romeo_Giulietta-1%2C8_Front-view_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/1954_Alfa_Romeo_Giulietta_Sprint_%2811117680175%29.jpg/1280px-1954_Alfa_Romeo_Giulietta_Sprint_%2811117680175%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1965",
    "puissance_ch": 53,
    "vitesse_max_kmh": 140,
@@ -1948,14 +1948,14 @@
     "sports car",
     "two-door"
    ],
-   "imageCredit": "Luc106",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_Giulietta-1,8_Front-view_(cropped).JPG"
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1954_Alfa_Romeo_Giulietta_Sprint_(11117680175).jpg"
   },
   {
    "id": "alfa-romeo_giulietta-1.4-tb",
    "name": "Giulietta 1.4 TB",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg/1280px-2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/2018_Alfa_Romeo_Giulietta_Super_TB_1.4_Front.jpg/1280px-2018_Alfa_Romeo_Giulietta_Super_TB_1.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2010 - 2020",
    "puissance_ch": 120,
    "vitesse_max_kmh": 195,
@@ -1982,12 +1982,12 @@
    ],
    "imageCredit": "Vauxford",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Alfa_Romeo_Giulietta_Super_TB_1.4_Front.jpg"
   },
   {
    "id": "alfa-romeo_giulietta-1.6-jtdm",
    "name": "Giulietta 1.6 JTDm",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg/1280px-2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Alfa_Romeo_Giulietta_1.6_JTDm.JPG/1280px-Alfa_Romeo_Giulietta_1.6_JTDm.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2010 - 2020",
    "puissance_ch": 105,
    "vitesse_max_kmh": 185,
@@ -2012,9 +2012,9 @@
     "used car",
     "alfa romeo giulietta"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg"
+   "imageCredit": "Corvettec6r",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_1.6_JTDm.JPG"
   },
   {
    "id": "alfa-romeo_giulietta-2.0-jtdm",
@@ -2144,7 +2144,7 @@
   {
    "id": "alfa-romeo_giulietta-sprint-veloce",
    "name": "Giulietta Sprint Veloce",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg/1280px-2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Alfa_Romeo_Giulietta_Sprint_Veloce_at_Tour_dElegance.jpg/1280px-Alfa_Romeo_Giulietta_Sprint_Veloce_at_Tour_dElegance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1956 - 1963",
    "puissance_ch": 90,
    "vitesse_max_kmh": 175,
@@ -2168,14 +2168,14 @@
     "petrol car",
     "internal combustion engine"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Prova MO",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_Sprint_Veloce_at_Tour_dElegance.jpg"
   },
   {
    "id": "alfa-romeo_giulietta-veloce",
    "name": "Giulietta Veloce",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg/1280px-2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/1956_Alfa_Romeo_Giulietta_Sprint_Veloce_Alleggerita.jpg/1280px-1956_Alfa_Romeo_Giulietta_Sprint_Veloce_Alleggerita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2020",
    "puissance_ch": 280,
    "vitesse_max_kmh": 250,
@@ -2199,9 +2199,9 @@
     "turbocharged",
     "gasoline car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Alfa_Romeo_Giulietta_Sprint_Veloce_Alleggerita.jpg"
   },
   {
    "id": "alfa-romeo_gt",
@@ -2270,7 +2270,6 @@
   {
    "id": "alfa-romeo_gt-3.2-v6",
    "name": "GT 3.2 V6",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Alfa_GT_20090801_front.JPG/1280px-Alfa_GT_20090801_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2010",
    "puissance_ch": 240,
    "vitesse_max_kmh": 243,
@@ -2293,15 +2292,11 @@
     "v6 engine",
     "gasoline engine",
     "internal combustion engine"
-   ],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_GT_20090801_front.JPG"
+   ]
   },
   {
    "id": "alfa-romeo_gta-coupe",
    "name": "GTA Coupe",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Arese_Museo_Storico_Alfa_Romeo_1965_Giulia_Sprint_GTA_1.jpg/1280px-Arese_Museo_Storico_Alfa_Romeo_1965_Giulia_Sprint_GTA_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965 - 1975",
    "puissance_ch": 115,
    "vitesse_max_kmh": 185,
@@ -2323,15 +2318,12 @@
     "two-door",
     "mid-size car",
     "luxury car"
-   ],
-   "imageCredit": "Zairon",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1965_Giulia_Sprint_GTA_1.jpg"
+   ]
   },
   {
    "id": "alfa-romeo_gtv",
    "name": "GTV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Alfa_Romeo_GTV_20TB-Cropped.jpg/1280px-Alfa_Romeo_GTV_20TB-Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Alfa_Romeo_GTV_Kulmbach_2018_6170083.jpg/1280px-Alfa_Romeo_GTV_Kulmbach_2018_6170083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1995 - 2004",
    "puissance_ch": 220,
    "vitesse_max_kmh": 240,
@@ -2356,9 +2348,9 @@
     "1990s car",
     "sports coupe"
    ],
-   "imageCredit": "Matthias v.d. Elbe",
+   "imageCredit": "Ermell",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_20TB-Cropped.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_Kulmbach_2018_6170083.jpg"
   },
   {
    "id": "alfa-romeo_gtv-2.0-ts",
@@ -2521,7 +2513,7 @@
   {
    "id": "alfa-romeo_mito-1.6-jtdm",
    "name": "MiTo 1.6 JTDm",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Alfa-Romeo_MiTO_%28Schaffhausen%2C_2021%29_%28cropped%29.jpg/1280px-Alfa-Romeo_MiTO_%28Schaffhausen%2C_2021%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/2012_Alfa_Romeo_MiTo_1.6_JTDm.jpg/1280px-2012_Alfa_Romeo_MiTo_1.6_JTDm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2018",
    "puissance_ch": 120,
    "vitesse_max_kmh": 190,
@@ -2546,14 +2538,14 @@
     "alfa romeo",
     "jtdm engine"
    ],
-   "imageCredit": "JoachimKohler-HB",
+   "imageCredit": "Corvettec6r",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_MiTO_(Schaffhausen,_2021)_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Alfa_Romeo_MiTo_1.6_JTDm.jpg"
   },
   {
    "id": "alfa-romeo_mito-quadrifoglio-verde",
    "name": "MiTo Quadrifoglio Verde",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Alfa-Romeo_MiTO_%28Schaffhausen%2C_2021%29_%28cropped%29.jpg/1280px-Alfa-Romeo_MiTO_%28Schaffhausen%2C_2021%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Alfa_Romeo_MiTo_Quadrifoglio_Verde_2011.jpg/1280px-Alfa_Romeo_MiTo_Quadrifoglio_Verde_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2018",
    "puissance_ch": 170,
    "vitesse_max_kmh": 219,
@@ -2578,9 +2570,9 @@
     "turbocharged",
     "gasoline engine"
    ],
-   "imageCredit": "JoachimKohler-HB",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_MiTO_(Schaffhausen,_2021)_(cropped).jpg"
+   "imageCredit": "Qwerty242",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_Quadrifoglio_Verde_2011.jpg"
   },
   {
    "id": "alfa-romeo_montreal",
@@ -2680,7 +2672,6 @@
   {
    "id": "alfa-romeo_spider-2.0-ts",
    "name": "Spider 2.0 TS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Alfa_Romeo_GTV_20TB-Cropped.jpg/1280px-Alfa_Romeo_GTV_20TB-Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1995 - 2006",
    "puissance_ch": 150,
    "vitesse_max_kmh": 210,
@@ -2704,15 +2695,12 @@
     "compact car",
     "two-seater",
     "open-top"
-   ],
-   "imageCredit": "Matthias v.d. Elbe",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_20TB-Cropped.jpg"
+   ]
   },
   {
    "id": "alfa-romeo_spider-duetto",
    "name": "Spider Duetto",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg/1280px-Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Alfa-Romeo-1750-Spider-Duetto-AVG-byRundvald.jpg/1280px-Alfa-Romeo-1750-Spider-Duetto-AVG-byRundvald.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1966 - 1993",
    "puissance_ch": 109,
    "vitesse_max_kmh": 175,
@@ -2738,14 +2726,14 @@
     "vehicle",
     "vintage car"
    ],
-   "imageCredit": "Marco 56",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_(24928094612)_(cropped).jpg"
+   "imageCredit": "Rundvald",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo-1750-Spider-Duetto-AVG-byRundvald.jpg"
   },
   {
    "id": "alfa-romeo_spider-graduate",
    "name": "Spider Graduate",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg/1280px-Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Alfa_Romeo_Spider_Graduate_Injection.jpg/1280px-Alfa_Romeo_Spider_Graduate_Injection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1993",
    "puissance_ch": 115,
    "vitesse_max_kmh": 180,
@@ -2769,14 +2757,14 @@
     "vintage car",
     "italian car"
    ],
-   "imageCredit": "Marco 56",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_(24928094612)_(cropped).jpg"
+   "imageCredit": "LukaCali",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_Graduate_Injection.jpg"
   },
   {
    "id": "alfa-romeo_spider-quadrifoglio",
    "name": "Spider Quadrifoglio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg/1280px-Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Alfa_Romeo_Spider_Quadrifoglio_injection_Mk3_%288%29.jpg/1280px-Alfa_Romeo_Spider_Quadrifoglio_injection_Mk3_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1986 - 1993",
    "puissance_ch": 128,
    "vitesse_max_kmh": 190,
@@ -2801,14 +2789,14 @@
     "two-seater",
     "mid-size car"
    ],
-   "imageCredit": "Marco 56",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_(24928094612)_(cropped).jpg"
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_Quadrifoglio_injection_Mk3_(8).jpg"
   },
   {
    "id": "alfa-romeo_spider-veloce",
    "name": "Spider Veloce",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg/1280px-Alfa_Romeo_Spider_%2824928094612%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Alfa_Romeo_Spider_2000_Veloce_Sachs_Franken_Classic_2018_P5201056.jpg/1280px-Alfa_Romeo_Spider_2000_Veloce_Sachs_Franken_Classic_2018_P5201056.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1971 - 1993",
    "puissance_ch": 132,
    "vitesse_max_kmh": 190,
@@ -2832,9 +2820,9 @@
     "motor vehicle",
     "two-seater"
    ],
-   "imageCredit": "Marco 56",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_(24928094612)_(cropped).jpg"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2000_Veloce_Sachs_Franken_Classic_2018_P5201056.jpg"
   },
   {
    "id": "alfa-romeo_sprint",
@@ -2901,7 +2889,6 @@
   {
    "id": "alfa-romeo_stelvio-2.0-tbi",
    "name": "Stelvio 2.0 TBI",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Alfa_Romeo_Stelvio_Suv_Free_Car_Picture_-_Give_Credit_Via_Link.%28cropped%29.jpg/1280px-Alfa_Romeo_Stelvio_Suv_Free_Car_Picture_-_Give_Credit_Via_Link.%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 200,
    "vitesse_max_kmh": 230,
@@ -2925,10 +2912,7 @@
     "italian car",
     "alfa romeo",
     "stelvio 2.0 tbi"
-   ],
-   "imageCredit": "Motor Verso",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Stelvio_Suv_Free_Car_Picture_-_Give_Credit_Via_Link.(cropped).jpg"
+   ]
   },
   {
    "id": "alfa-romeo_stelvio-2.2-d",
@@ -2965,7 +2949,7 @@
   {
    "id": "alfa-romeo_stelvio-quadrifoglio",
    "name": "Stelvio Quadrifoglio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Alfa_Romeo_Stelvio_Suv_Free_Car_Picture_-_Give_Credit_Via_Link.%28cropped%29.jpg/1280px-Alfa_Romeo_Stelvio_Suv_Free_Car_Picture_-_Give_Credit_Via_Link.%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Alfa_Romeo_Stelvio_Quadrifoglio_Washington_DC_Metro_Area%2C_USA.jpg/1280px-Alfa_Romeo_Stelvio_Quadrifoglio_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 510,
    "vitesse_max_kmh": 283,
@@ -2991,9 +2975,9 @@
     "twin-turbo",
     "v6"
    ],
-   "imageCredit": "Motor Verso",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Stelvio_Suv_Free_Car_Picture_-_Give_Credit_Via_Link.(cropped).jpg"
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Stelvio_Quadrifoglio_Washington_DC_Metro_Area,_USA.jpg"
   },
   {
    "id": "alfa-romeo_sz",
@@ -3093,7 +3077,7 @@
   {
    "id": "alfa-romeo_tonale-plug-in-hybrid",
    "name": "Tonale Plug-in Hybrid",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2023-AR-Tonale-01_%28bearb_Sp_2%29.jpg/1280px-2023-AR-Tonale-01_%28bearb_Sp_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Alfa_Romeo_TONALE_PLUG-IN_HYBRID_Q4_VELOCE_%283LA-AV113_0001%29.jpg/1280px-Alfa_Romeo_TONALE_PLUG-IN_HYBRID_Q4_VELOCE_%283LA-AV113_0001%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 275,
    "vitesse_max_kmh": 220,
@@ -3119,9 +3103,9 @@
     "automotive",
     "phev suv"
    ],
-   "imageCredit": "Matthias v.d. Elbe",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2023-AR-Tonale-01_(bearb_Sp_2).jpg"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_TONALE_PLUG-IN_HYBRID_Q4_VELOCE_(3LA-AV113_0001).jpg"
   },
   {
    "id": "alfa-romeo_16c-twin-engine",
@@ -3281,12 +3265,8 @@
   {
    "id": "alfa-romeo_gtv-and-spider",
    "name": "GTV and Spider",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Alfa_Romeo_GTV_20TB-Cropped.jpg/1280px-Alfa_Romeo_GTV_20TB-Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Matthias v.d. Elbe",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_20TB-Cropped.jpg"
+   "tags": []
   },
   {
    "id": "alfa-romeo_dauphine",
@@ -3607,14 +3587,14 @@
   {
    "id": "alfa-romeo_6c",
    "name": "6C",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Alfa_Romeo_6C_Freccia_d%27Oro_1949.jpg/1280px-Alfa_Romeo_6C_Freccia_d%27Oro_1949.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Alfa_Romeo_6C_2500_by_Touring_Classic-Gala_2021_1X7A0163.jpg/1280px-Alfa_Romeo_6C_2500_by_Touring_Classic-Gala_2021_1X7A0163.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4000 x 1631 x 1349",
    "poids_kg": 1250,
-   "imageCredit": "Palauenc05",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_6C_Freccia_d%27Oro_1949.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_6C_2500_by_Touring_Classic-Gala_2021_1X7A0163.jpg"
   },
   {
    "id": "alfa-romeo_bat",
@@ -3703,12 +3683,12 @@
   {
    "id": "alfa-romeo_12c-37",
    "name": "12C-37",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Alfa_Romeo_159_Goodwood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Alfa_Romeo_12C-37_Maastricht_2010.jpg/1280px-Alfa_Romeo_12C-37_Maastricht_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "richard",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_Goodwood.jpg"
+   "imageCredit": "Norbert Schnitzler",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_12C-37_Maastricht_2010.jpg"
   },
   {
    "id": "alfa-romeo_new-york-taxi",
@@ -3807,13 +3787,13 @@
   {
    "id": "alfa-romeo_a-l-f-a-15-hp",
    "name": "A.L.F.A 15 HP",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Alfa_15_HP.jpg/1280px-Alfa_15_HP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Arese_Museo_Storico_Alfa_Romeo_1911_A.L.F.A._15_HP_Corsa_2.jpg/1280px-Arese_Museo_Storico_Alfa_Romeo_1911_A.L.F.A._15_HP_Corsa_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 920,
-   "imageCredit": "traumautoarchiv.de",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_15_HP.jpg"
+   "imageCredit": "Zairon",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1911_A.L.F.A._15_HP_Corsa_2.jpg"
   },
   {
    "id": "alfa-romeo_diva",

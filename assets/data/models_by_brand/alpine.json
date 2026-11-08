@@ -124,7 +124,7 @@
   {
    "id": "alpine_a108_berlinette",
    "name": "A108 Berlinette",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Alpine_108_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Alpine-Renault_A106_Cabriolet_and_A108_Berlinette_c.1960_%2816408168619%29.jpg/1280px-Alpine-Renault_A106_Cabriolet_and_A108_Berlinette_c.1960_%2816408168619%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1959 - 1963",
    "puissance_ch": 65,
    "vitesse_max_kmh": 175,
@@ -149,9 +149,9 @@
     "1960s car",
     "rear-engine car"
    ],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_108_02.jpg"
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine-Renault_A106_Cabriolet_and_A108_Berlinette_c.1960_(16408168619).jpg"
   },
   {
    "id": "alpine_a110",
@@ -188,7 +188,7 @@
   {
    "id": "alpine_a110_1300s",
    "name": "A110 1300S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Renault_Alpine_A_110_%28Sp%29.JPG/1280px-Renault_Alpine_A_110_%28Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Alpine_A110_1300S_%281967%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1968 - 1970",
    "puissance_ch": 105,
    "vitesse_max_kmh": 200,
@@ -213,14 +213,14 @@
     "vintage car",
     "rear-wheel drive"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A_110_(Sp).JPG"
+   "imageCredit": "Delta3051",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_A110_1300S_(1967).png"
   },
   {
    "id": "alpine_a110_1600s",
    "name": "A110 1600S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Renault_Alpine_A_110_%28Sp%29.JPG/1280px-Renault_Alpine_A_110_%28Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/1970_Alpine_A110_1600S%2C_Tour_Auto_2015%2C_Toulouse.jpg/1280px-1970_Alpine_A110_1600S%2C_Tour_Auto_2015%2C_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1973",
    "puissance_ch": 125,
    "vitesse_max_kmh": 210,
@@ -245,14 +245,14 @@
     "vintage car",
     "rear-wheel drive"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A_110_(Sp).JPG"
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Alpine_A110_1600S,_Tour_Auto_2015,_Toulouse.jpg"
   },
   {
    "id": "alpine_a110_1800",
    "name": "A110 1800",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Renault_Alpine_A_110_%28Sp%29.JPG/1280px-Renault_Alpine_A_110_%28Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Alpine_A110_1800_Groupe_4%2C_Tour_Auto_2015%2C_Toulouse.jpg/1280px-Alpine_A110_1800_Groupe_4%2C_Tour_Auto_2015%2C_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1973 - 1977",
    "puissance_ch": 140,
    "vitesse_max_kmh": 220,
@@ -277,14 +277,14 @@
     "two-seater",
     "french car"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A_110_(Sp).JPG"
+   "imageCredit": "Handelsgeselschaft",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_A110_1800_Groupe_4,_Tour_Auto_2015,_Toulouse.jpg"
   },
   {
    "id": "alpine_a110_berlinette",
    "name": "A110 Berlinette",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Renault_Alpine_A_110_%28Sp%29.JPG/1280px-Renault_Alpine_A_110_%28Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Alpine-A110-Berlinette-arriere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1963 - 1977",
    "puissance_ch": 95,
    "vitesse_max_kmh": 190,
@@ -310,9 +310,9 @@
     "compact car",
     "mid-engine"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A_110_(Sp).JPG"
+   "imageCredit": "Rundvald",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine-A110-Berlinette-arriere.jpg"
   },
   {
    "id": "alpine_a110_s",
@@ -529,7 +529,7 @@
   {
    "id": "alpine_a310_v6",
    "name": "A310 V6",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Renault_Alpine_A310.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Renault_Alpine_A310_V6_at_Legendy_2019_in_Prague.jpg/1280px-Renault_Alpine_A310_V6_at_Legendy_2019_in_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1984",
    "puissance_ch": 150,
    "vitesse_max_kmh": 225,
@@ -554,9 +554,9 @@
     "vehicle",
     "mid-size car"
    ],
-   "imageCredit": "Alex Collard, my brother. Uploaded with his permission under the GFDL.",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A310.jpg"
+   "imageCredit": "Jiří Sedláček",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A310_V6_at_Legendy_2019_in_Prague.jpg"
   },
   {
    "id": "alpine_a390",

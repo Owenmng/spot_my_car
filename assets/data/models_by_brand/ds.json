@@ -3,7 +3,7 @@
   {
    "id": "ds_3",
    "name": "DS 3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/DS_3_Crossback_PureTech_155_EAT8_So_Chic_%E2%80%93_f_25072020.jpg/1280px-DS_3_Crossback_PureTech_155_EAT8_So_Chic_%E2%80%93_f_25072020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/DS_3_%282022%29_IMG_0352.jpg/1280px-DS_3_%282022%29_IMG_0352.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 130,
    "vitesse_max_kmh": 200,
@@ -28,9 +28,9 @@
     "petrol car",
     "diesel car"
    ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_3_Crossback_PureTech_155_EAT8_So_Chic_%E2%80%93_f_25072020.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_3_(2022)_IMG_0352.jpg"
   },
   {
    "id": "ds_3-crossback",
@@ -97,7 +97,7 @@
   {
    "id": "ds_4-crossback",
    "name": "DS 4 Crossback",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Citro%C3%ABn_DS4_SoChic_%E2%80%93_Frontansicht%2C_16._M%C3%A4rz_2014%2C_D%C3%BCsseldorf.jpg/1280px-Citro%C3%ABn_DS4_SoChic_%E2%80%93_Frontansicht%2C_16._M%C3%A4rz_2014%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/DS_3_Crossback_EMP1_Ruby_Red_%284%29.jpg/1280px-DS_3_Crossback_EMP1_Ruby_Red_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 180,
    "vitesse_max_kmh": 220,
@@ -122,9 +122,9 @@
     "phev",
     "ds automobiles"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_DS4_SoChic_%E2%80%93_Frontansicht,_16._M%C3%A4rz_2014,_D%C3%BCsseldorf.jpg"
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_3_Crossback_EMP1_Ruby_Red_(4).jpg"
   },
   {
    "id": "ds_5",
@@ -320,7 +320,7 @@
   {
    "id": "ds_9",
    "name": "DS 9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/2022_DS_9_Rivoli_Plus_E-Tense_PHEV_-_1598cc_1.6_%28225PS%29_Petrol_Hybrid_-_Black_-_05-2023%2C_Front.jpg/1280px-2022_DS_9_Rivoli_Plus_E-Tense_PHEV_-_1598cc_1.6_%28225PS%29_Petrol_Hybrid_-_Black_-_05-2023%2C_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/DS_9_E-Tense_IMG_1135.jpg/1280px-DS_9_E-Tense_IMG_1135.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 250,
    "vitesse_max_kmh": 240,
@@ -345,9 +345,9 @@
     "ds automobiles",
     "grand tourer"
    ],
-   "imageCredit": "Harvey Bold",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_DS_9_Rivoli_Plus_E-Tense_PHEV_-_1598cc_1.6_(225PS)_Petrol_Hybrid_-_Black_-_05-2023,_Front.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_9_E-Tense_IMG_1135.jpg"
   },
   {
    "id": "ds_e-tense",
@@ -385,7 +385,6 @@
   {
    "id": "ds_world-premiere",
    "name": "DS World Premiere",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/DS_3_Crossback_PureTech_155_EAT8_So_Chic_%E2%80%93_f_25072020.jpg/1280px-DS_3_Crossback_PureTech_155_EAT8_So_Chic_%E2%80%93_f_25072020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 (Concept)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -409,10 +408,7 @@
     "premium car",
     "new car",
     "concept car"
-   ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_3_Crossback_PureTech_155_EAT8_So_Chic_%E2%80%93_f_25072020.jpg"
+   ]
   },
   {
    "id": "ds_3-2",
@@ -458,13 +454,9 @@
   {
    "id": "ds_n7",
    "name": "N°7",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/DS_N%C2%B07.jpg/1280px-DS_N%C2%B07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4660 x 1900 x 1630",
-   "imageCredit": "DS Automobiles SK",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_N%C2%B07.jpg"
+   "dimensions_lwh_mm": "4660 x 1900 x 1630"
   },
   {
    "id": "ds_3-crossback-2",
@@ -480,13 +472,13 @@
   {
    "id": "ds_5-2",
    "name": "5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Citro%C3%ABn_DS5_HDi_165_SoChic_%E2%80%93_Frontansicht%2C_3._M%C3%A4rz_2012%2C_D%C3%BCsseldorf.jpg/1280px-Citro%C3%ABn_DS5_HDi_165_SoChic_%E2%80%93_Frontansicht%2C_3._M%C3%A4rz_2012%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/DS_5_China.jpg/1280px-DS_5_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 1420,
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_DS5_HDi_165_SoChic_%E2%80%93_Frontansicht,_3._M%C3%A4rz_2012,_D%C3%BCsseldorf.jpg"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DS_5_China.jpg"
   },
   {
    "id": "ds_5ls-2",

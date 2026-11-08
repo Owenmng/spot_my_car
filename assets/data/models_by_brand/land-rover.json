@@ -3,7 +3,7 @@
   {
    "id": "land-rover_defender",
    "name": "Defender",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg/1280px-2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Land_Rover_Defender_110_Station_Wagon_2016_-_rear.jpg/1280px-Land_Rover_Defender_110_Station_Wagon_2016_-_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - Aujourd'hui",
    "puissance_ch": 249,
    "vitesse_max_kmh": 188,
@@ -27,14 +27,14 @@
     "off-roader",
     "adventure vehicle"
    ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Land_Rover_Defender_(L316_MY15)_90_3-door_wagon_(2015-10-24)_01.jpg"
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_110_Station_Wagon_2016_-_rear.jpg"
   },
   {
    "id": "land-rover_defender_130",
    "name": "Defender 130",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg/1280px-2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Land_Rover_Defender_130_%28L663%29_IMG_9445.jpg/1280px-Land_Rover_Defender_130_%28L663%29_IMG_9445.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - Aujourd'hui",
    "puissance_ch": 249,
    "vitesse_max_kmh": 188,
@@ -59,9 +59,9 @@
     "motor vehicle",
     "large suv"
    ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Land_Rover_Defender_(L316_MY15)_90_3-door_wagon_(2015-10-24)_01.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_130_(L663)_IMG_9445.jpg"
   },
   {
    "id": "land-rover_defender_90",
@@ -98,7 +98,7 @@
   {
    "id": "land-rover_discovery",
    "name": "Discovery",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Land_Rover_Discovery_4_HSE_2016.jpg/1280px-Land_Rover_Discovery_4_HSE_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Land_Rover_Discovery_Sport_HSE_Luxury_TD4_2016.jpg/1280px-Land_Rover_Discovery_Sport_HSE_Luxury_TD4_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - Aujourd'hui",
    "puissance_ch": 300,
    "vitesse_max_kmh": 209,
@@ -125,7 +125,7 @@
    ],
    "imageCredit": "DeFacto",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_Sport_HSE_Luxury_TD4_2016.jpg"
   },
   {
    "id": "land-rover_discovery_1",
@@ -196,7 +196,7 @@
   {
    "id": "land-rover_discovery_4",
    "name": "Discovery 4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Land_Rover_Discovery_4_HSE_2016.jpg/1280px-Land_Rover_Discovery_4_HSE_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Land_Rover_Discovery_4_HSE_2016_-_rear.jpg/1280px-Land_Rover_Discovery_4_HSE_2016_-_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2016",
    "puissance_ch": 245,
    "vitesse_max_kmh": 195,
@@ -223,7 +223,7 @@
    ],
    "imageCredit": "DeFacto",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Discovery_4_HSE_2016_-_rear.jpg"
   },
   {
    "id": "land-rover_discovery-sport",
@@ -292,7 +292,7 @@
   {
    "id": "land-rover_freelander",
    "name": "Freelander 2",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2013_Land_Rover_Freelander_Dynamic_SD4_Automatic_2.2_Front.jpg/1280px-2013_Land_Rover_Freelander_Dynamic_SD4_Automatic_2.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/LAND_ROVER_FREELANDER_%28L359%29_China_%282%29.jpg/1280px-LAND_ROVER_FREELANDER_%28L359%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - 2014",
    "puissance_ch": 150,
    "vitesse_max_kmh": 181,
@@ -318,9 +318,9 @@
     "diesel",
     "petrol"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Land_Rover_Freelander_Dynamic_SD4_Automatic_2.2_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LAND_ROVER_FREELANDER_(L359)_China_(2).jpg"
   },
   {
    "id": "land-rover_range-rover",
@@ -357,7 +357,7 @@
   {
    "id": "land-rover_range-rover_classic",
    "name": "Range Rover Classic",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg/1280px-2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/1986_Land_Rover_Range_Rover_Classic_Automatic_3.5.jpg/1280px-1986_Land_Rover_Range_Rover_Classic_Automatic_3.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1996",
    "puissance_ch": 155,
    "vitesse_max_kmh": 160,
@@ -382,14 +382,14 @@
     "motor vehicle",
     "vintage car"
    ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Land_Rover_Defender_(L316_MY15)_90_3-door_wagon_(2015-10-24)_01.jpg"
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1986_Land_Rover_Range_Rover_Classic_Automatic_3.5.jpg"
   },
   {
    "id": "land-rover_range-rover-evoque",
    "name": "Range Rover Evoque",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2013_Land_Rover_Freelander_Dynamic_SD4_Automatic_2.2_Front.jpg/1280px-2013_Land_Rover_Freelander_Dynamic_SD4_Automatic_2.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Land_Rover_Range_Rover_Evoque_Convertible_2016_-_side.jpg/1280px-Land_Rover_Range_Rover_Evoque_Convertible_2016_-_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 200,
    "vitesse_max_kmh": 216,
@@ -414,9 +414,9 @@
     "hybrid",
     "phev"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "DeFacto",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Land_Rover_Freelander_Dynamic_SD4_Automatic_2.2_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Range_Rover_Evoque_Convertible_2016_-_side.jpg"
   },
   {
    "id": "land-rover_range-rover_evoque_svr",
@@ -482,7 +482,7 @@
   {
    "id": "land-rover_range-rover_p38",
    "name": "Range Rover P38",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/1995-1998_Land_Rover_Range_Rover_%28P38A%29_4.0_SE_wagon_05.jpg/1280px-1995-1998_Land_Rover_Range_Rover_%28P38A%29_4.0_SE_wagon_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/LAND_ROVER_RANGE_ROVER_%28P38A%29_China.jpg/1280px-LAND_ROVER_RANGE_ROVER_%28P38A%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2002",
    "puissance_ch": 193,
    "vitesse_max_kmh": 180,
@@ -508,9 +508,9 @@
     "used range rover",
     "classic range rover"
    ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1995-1998_Land_Rover_Range_Rover_(P38A)_4.0_SE_wagon_05.jpg"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LAND_ROVER_RANGE_ROVER_(P38A)_China.jpg"
   },
   {
    "id": "land-rover_range-rover-sport",

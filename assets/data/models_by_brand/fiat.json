@@ -419,7 +419,7 @@
   {
    "id": "fiat_1800",
    "name": "1800",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/1959Fiat2100DeLuxe.jpg/1280px-1959Fiat2100DeLuxe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/FIAT_1800.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1959 - 1968",
    "puissance_ch": 75,
    "vitesse_max_kmh": 140,
@@ -445,9 +445,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Liftarn",
+   "imageCredit": "EarlyBirdP2",
    "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959Fiat2100DeLuxe.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:FIAT_1800.jpg"
   },
   {
    "id": "fiat_1900",
@@ -513,7 +513,7 @@
   {
    "id": "fiat_2300s",
    "name": "2300 S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Fiat_2300.JPG/1280px-Fiat_2300.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Fiat_2300_S_coup%C3%A9_%281964%29_-_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1963 - 1968",
    "puissance_ch": 136,
    "vitesse_max_kmh": 175,
@@ -538,9 +538,9 @@
     "land vehicle",
     "mid-size car"
    ],
-   "imageCredit": "Dirk (Dk67 on de.wikipedia)",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_2300.JPG"
+   "imageCredit": "Cyberuly",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_2300_S_coup%C3%A9_(1964)_-_I.jpg"
   },
   {
    "id": "fiat_238",
@@ -606,7 +606,7 @@
   {
    "id": "fiat_500-1957",
    "name": "500 (Classic)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/1970_Fiat_500_L_--_2011_DC_1.jpg/1280px-1970_Fiat_500_L_--_2011_DC_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/NSU-Fiat_500_Spyder_%281939%29_Classic-Gala_2022_1X7A0350.jpg/1280px-NSU-Fiat_500_Spyder_%281939%29_Classic-Gala_2022_1X7A0350.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1957 - 1975",
    "puissance_ch": 18,
    "vitesse_max_kmh": 95,
@@ -631,14 +631,14 @@
     "microcar",
     "small car"
    ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Fiat_500_L_--_2011_DC_1.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NSU-Fiat_500_Spyder_(1939)_Classic-Gala_2022_1X7A0350.jpg"
   },
   {
    "id": "fiat_500e",
    "name": "500e",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Fiat-500-vorne2.jpg/1280px-Fiat-500-vorne2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Fiat_500e_Black_in_Munich.jpg/1280px-Fiat_500e_Black_in_Munich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 118,
    "vitesse_max_kmh": 150,
@@ -664,9 +664,9 @@
     "italian car",
     "compact car"
    ],
-   "imageCredit": "Daniel Przygoda",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat-500-vorne2.jpg"
+   "imageCredit": "AuHaidhausen",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_500e_Black_in_Munich.jpg"
   },
   {
    "id": "fiat_500l",
@@ -1115,7 +1115,7 @@
   {
    "id": "fiat_bravo_2007",
    "name": "Bravo (2007)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Fiat_Bravo_II_front_20100501.jpg/1280px-Fiat_Bravo_II_front_20100501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Fiat_Bravo_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2007 - 2014",
    "puissance_ch": 150,
    "vitesse_max_kmh": 200,
@@ -1138,9 +1138,9 @@
     "small car",
     "family car"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Bravo_II_front_20100501.jpg"
+   "imageCredit": "Thomas doerfer",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Bravo_2007.jpg"
   },
   {
    "id": "fiat_campagnola",
@@ -1841,7 +1841,7 @@
   {
    "id": "fiat_panda",
    "name": "Panda",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/2018_Fiat_Panda_Easy_1.2.jpg/1280px-2018_Fiat_Panda_Easy_1.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Fiat_Panda_4x40%C2%BA_in_B%C3%B6blingen_%282%29.jpg/1280px-Fiat_Panda_4x40%C2%BA_in_B%C3%B6blingen_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1980 - Aujourd'hui",
    "puissance_ch": 70,
    "vitesse_max_kmh": 154,
@@ -1864,14 +1864,14 @@
     "land vehicle",
     "economy car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Fiat_Panda_Easy_1.2.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Panda_4x40%C2%BA_in_B%C3%B6blingen_(2).jpg"
   },
   {
    "id": "fiat_panda_4x4",
    "name": "Panda 4x4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/2018_Fiat_Panda_Easy_1.2.jpg/1280px-2018_Fiat_Panda_Easy_1.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Fiat_panda_4x4.jpg/1280px-Fiat_panda_4x4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 2003",
    "puissance_ch": 50,
    "vitesse_max_kmh": 130,
@@ -1896,9 +1896,9 @@
     "fiat panda",
     "italian car"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Gravitatas",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Fiat_Panda_Easy_1.2.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_panda_4x4.jpg"
   },
   {
    "id": "fiat_panorama",
@@ -1998,7 +1998,7 @@
   {
    "id": "fiat_punto_evo",
    "name": "Punto Evo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Fiat_Punto_2012_5door_front.JPG/1280px-Fiat_Punto_2012_5door_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Fiat_Punto_Evo_front_20100731.jpg/1280px-Fiat_Punto_Evo_front_20100731.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - 2012",
    "puissance_ch": 135,
    "vitesse_max_kmh": 195,
@@ -2021,9 +2021,9 @@
     "euro car",
     "small car"
    ],
-   "imageCredit": "Corvettec6r",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Punto_2012_5door_front.JPG"
+   "imageCredit": "M 93",
+   "imageLicense": "Attribution",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Punto_Evo_front_20100731.jpg"
   },
   {
    "id": "fiat_qubo",
@@ -2505,7 +2505,7 @@
   {
    "id": "fiat_topolino_1936",
    "name": "Topolino (1936)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Fiat_Topolino_%282023%29_IMG_0749.jpg/1280px-Fiat_Topolino_%282023%29_IMG_0749.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1936_Fiat_500_Topolino_Saloon.jpg/1280px-1936_Fiat_500_Topolino_Saloon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1936 - 1955",
    "puissance_ch": 13,
    "vitesse_max_kmh": 85,
@@ -2531,9 +2531,9 @@
     "car",
     "vehicle"
    ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Topolino_(2023)_IMG_0749.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1936_Fiat_500_Topolino_Saloon.jpg"
   },
   {
    "id": "fiat_toro",
@@ -2813,12 +2813,8 @@
   {
    "id": "fiat_a-l-f-a-40-60-hp",
    "name": "A.L.F.A 40/60 HP",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Alfa_40-60_HP_Aerodinamica.jpg/1280px-Alfa_40-60_HP_Aerodinamica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "traumautoarchiv.de",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_40-60_HP_Aerodinamica.jpg"
+   "tags": []
   },
   {
    "id": "fiat_124-coupe",
@@ -2855,14 +2851,10 @@
   {
    "id": "fiat_autobianchi-y10",
    "name": "Autobianchi Y10",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Lancia_Y10_LX.jpg/1280px-Lancia_Y10_LX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3390 x 1510 x 1420",
-   "poids_kg": 780,
-   "imageCredit": "https://www.flickr.com/photos/tonysphotos/",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_Y10_LX.jpg"
+   "poids_kg": 780
   },
   {
    "id": "fiat_1100-tv-trasformabile",
@@ -3010,13 +3002,9 @@
   {
    "id": "fiat_a-l-f-a-24-hp",
    "name": "A.L.F.A 24 HP",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/ALFA-24-HP.jpg/1280px-ALFA-24-HP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4250 x 1550 x 1700",
-   "imageCredit": "traumautoarchiv.de",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:ALFA-24-HP.jpg"
+   "dimensions_lwh_mm": "4250 x 1550 x 1700"
   },
   {
    "id": "fiat_elba",
@@ -3041,12 +3029,8 @@
   {
    "id": "fiat_palio-ii",
    "name": "Palio II",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Fiat_Palio_1.4_Attractive_2014_%2812280182114%29.jpg/1280px-Fiat_Palio_1.4_Attractive_2014_%2812280182114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2017",
-   "tags": [],
-   "imageCredit": "order_242 from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Palio_1.4_Attractive_2014_(12280182114).jpg"
+   "tags": []
   },
   {
    "id": "fiat_1100-103",
@@ -3236,24 +3220,20 @@
   {
    "id": "fiat_auto-avio-costruzioni-815",
    "name": "Auto Avio Costruzioni 815",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Car_Mus%C3%A9e_Enzo_Ferrari_0063.JPG/1280px-Car_Mus%C3%A9e_Enzo_Ferrari_0063.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "poids_kg": 625,
-   "imageCredit": "Arnaud 25",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Car_Mus%C3%A9e_Enzo_Ferrari_0063.JPG"
+   "poids_kg": 625
   },
   {
    "id": "fiat_600-2",
    "name": "600",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Paris_-_RM_Auctions_-_5_f%C3%A9vrier_2014_-_Fiat_600_-_1956_-_003.jpg/1280px-Paris_-_RM_Auctions_-_5_f%C3%A9vrier_2014_-_Fiat_600_-_1956_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Fiat_600_%282023%29_Automesse_Ludwigsburg_2024_IMG_1584.jpg/1280px-Fiat_600_%282023%29_Automesse_Ludwigsburg_2024_IMG_1584.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 580,
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_RM_Auctions_-_5_f%C3%A9vrier_2014_-_Fiat_600_-_1956_-_003.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_600_(2023)_Automesse_Ludwigsburg_2024_IMG_1584.jpg"
   },
   {
    "id": "fiat_ducato-third-generation",
@@ -3535,12 +3515,12 @@
   {
    "id": "fiat_weekend",
    "name": "Weekend",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Fiat_Palio_1.4_Attractive_2014_%2812280182114%29.jpg/1280px-Fiat_Palio_1.4_Attractive_2014_%2812280182114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Fiat_Palio_Weekend_in_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "order_242 from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Palio_1.4_Attractive_2014_(12280182114).jpg"
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Palio_Weekend_in_China.jpg"
   },
   {
    "id": "fiat_abarth-850tc-berlina",
@@ -3717,12 +3697,8 @@
   {
    "id": "fiat_a-l-f-a-40-60-gp",
    "name": "A.L.F.A. 40/60 GP",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/1921%2C_an_ALFA_GP_40-60_HP_Merosi%2BBaragiana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Unknown photographer",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1921,_an_ALFA_GP_40-60_HP_Merosi%2BBaragiana.jpg"
+   "tags": []
   },
   {
    "id": "fiat_127-sport",
@@ -3964,12 +3940,12 @@
   {
    "id": "fiat_doblo-mk2",
    "name": "Doblò Mk2",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Fiat_Dobl%C3%B2_II_front_20100402.jpg/1280px-Fiat_Dobl%C3%B2_II_front_20100402.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Fiat_Dobl%C3%B2_Mk2_x_2.JPG/1280px-Fiat_Dobl%C3%B2_Mk2_x_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Dobl%C3%B2_II_front_20100402.jpg"
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Dobl%C3%B2_Mk2_x_2.JPG"
   },
   {
    "id": "fiat_multipla-i",
@@ -4027,12 +4003,12 @@
   {
    "id": "fiat_spazio",
    "name": "Spazio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Fiat_147_late.jpg/1280px-Fiat_147_late.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Fiat_Spazio_TR_1300.jpg/1280px-Fiat_Spazio_TR_1300.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Marcelo Bezerra Cavalcanti;levels adjusted by uploader Mr.choppers",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_147_late.jpg"
+   "imageCredit": "RL GNZLZ fom Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Spazio_TR_1300.jpg"
   },
   {
    "id": "fiat_500c",

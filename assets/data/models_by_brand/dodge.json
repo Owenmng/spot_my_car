@@ -566,7 +566,7 @@
   {
    "id": "dodge_lancer",
    "name": "Lancer",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/1956_Dodge_Custom_Royal_Lancer.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/1962_Dodge_Lancer%2C_Royal_Street%2C_Bywater%2C_New_Orleans%2C_20_March_2006_-_3.jpg/1280px-1962_Dodge_Lancer%2C_Royal_Street%2C_Bywater%2C_New_Orleans%2C_20_March_2006_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1989",
    "puissance_ch": 97,
    "vitesse_max_kmh": 175,
@@ -593,9 +593,9 @@
     "all-wheel drive",
     "four-wheel drive"
    ],
-   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Dodge_Custom_Royal_Lancer.JPG"
+   "imageCredit": "Infrogmation",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1962_Dodge_Lancer,_Royal_Street,_Bywater,_New_Orleans,_20_March_2006_-_3.jpg"
   },
   {
    "id": "dodge_magnum",
@@ -1386,12 +1386,12 @@
   {
    "id": "dodge_116",
    "name": "116",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Dodge_Series_116_Touring_1924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/1923_Dodge_Series_116_5_Seat_Tourer.jpg/1280px-1923_Dodge_Series_116_5_Seat_Tourer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_Series_116_Touring_1924.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1923_Dodge_Series_116_5_Seat_Tourer.jpg"
   },
   {
    "id": "dodge_model-30",
@@ -1510,12 +1510,12 @@
   {
    "id": "dodge_1955-dodge",
    "name": "1955 Dodge",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/1956_Dodge_Custom_Royal_Lancer.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/1955_Dodge_Hemi_%2815083210009%29.jpg/1280px-1955_Dodge_Hemi_%2815083210009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Dodge_Custom_Royal_Lancer.JPG"
+   "imageCredit": "JOHN LLOYD from Concrete, Washington, United States",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1955_Dodge_Hemi_(15083210009).jpg"
   },
   {
    "id": "dodge_wayfarer",
@@ -1570,12 +1570,8 @@
   {
    "id": "dodge_charger-1981",
    "name": "Charger 1981",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Plymouth_Duster_EEK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1981 - 1987",
-   "tags": [],
-   "imageCredit": "No machine-readable author provided. Sfoskett~commonswiki assumed (based on copyright claims).",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Duster_EEK.jpg"
+   "tags": []
   },
   {
    "id": "dodge_regent",
@@ -1856,12 +1852,8 @@
   {
    "id": "dodge_m1918-light-repair-truck",
    "name": "M1918 light repair truck",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Dodge_Model_30_Touring_1919.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_Model_30_Touring_1919.jpg"
+   "tags": []
   },
   {
    "id": "dodge_charger-srt-hellcat",

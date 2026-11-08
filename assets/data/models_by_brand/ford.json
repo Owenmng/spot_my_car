@@ -1059,7 +1059,7 @@
   {
    "id": "ford_f-250-super-duty",
    "name": "F-250 Super Duty",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg/1280px-2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Ford_F-250_Super_Duty_%28P558%29_1X7A7058.jpg/1280px-Ford_F-250_Super_Duty_%28P558%29_1X7A7058.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2022",
    "puissance_ch": 385,
    "vitesse_max_kmh": 160,
@@ -1084,14 +1084,14 @@
     "work truck",
     "towing capacity"
    ],
-   "imageCredit": "Kevauto",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Ford_F-150_XLT_Crew_Cab,_front_11.10.19.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_F-250_Super_Duty_(P558)_1X7A7058.jpg"
   },
   {
    "id": "ford_f-350-super-duty",
    "name": "F-350 Super Duty",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg/1280px-2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/22_Ford_F-350_Super_Duty_Lariat.jpg/1280px-22_Ford_F-350_Super_Duty_Lariat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - 2022",
    "puissance_ch": 385,
    "vitesse_max_kmh": 160,
@@ -1116,9 +1116,9 @@
     "heavy-duty",
     "large pickup"
    ],
-   "imageCredit": "Kevauto",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Ford_F-150_XLT_Crew_Cab,_front_11.10.19.jpg"
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:22_Ford_F-350_Super_Duty_Lariat.jpg"
   },
   {
    "id": "ford_f-450-super-duty",
@@ -1155,7 +1155,7 @@
   {
    "id": "ford_f-650",
    "name": "F-650",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg/1280px-2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/U-Haul_26%E2%80%9D_Supermover_-_Ford_F-650.jpg/1280px-U-Haul_26%E2%80%9D_Supermover_-_Ford_F-650.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - Aujourd'hui",
    "puissance_ch": 300,
    "vitesse_max_kmh": 140,
@@ -1181,9 +1181,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Kevauto",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Ford_F-150_XLT_Crew_Cab,_front_11.10.19.jpg"
+   "imageCredit": "Winnebaggo",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:U-Haul_26%E2%80%9D_Supermover_-_Ford_F-650.jpg"
   },
   {
    "id": "ford_f-series-f-250",
@@ -1851,7 +1851,7 @@
   {
    "id": "ford_ka-plus",
    "name": "Ka+",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Ford_Figo_Second_Generation_%282016%29.jpg/1280px-Ford_Figo_Second_Generation_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/FordKa-3rageneracion-MardeCobo.jpg/1280px-FordKa-3rageneracion-MardeCobo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2020",
    "puissance_ch": 85,
    "vitesse_max_kmh": 170,
@@ -1875,9 +1875,9 @@
     "economical car",
     "budget car"
    ],
-   "imageCredit": "Keith Sebastian",
+   "imageCredit": "Ezarate",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Figo_Second_Generation_(2016).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:FordKa-3rageneracion-MardeCobo.jpg"
   },
   {
    "id": "ford_kuga",
@@ -2009,7 +2009,7 @@
   {
    "id": "ford_maverick-1970",
    "name": "Maverick (1970)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/1972_Ford_Maverick_Sprint_%28616806978%29.jpg/1280px-1972_Ford_Maverick_Sprint_%28616806978%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/1970_Ford_Maverick%2C_Herby%27s_Ford%2C_Alexandria.jpg/1280px-1970_Ford_Maverick%2C_Herby%27s_Ford%2C_Alexandria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1977",
    "puissance_ch": 105,
    "vitesse_max_kmh": 160,
@@ -2034,9 +2034,9 @@
     "1970s car",
     "ford"
    ],
-   "imageCredit": "dave_7 from Lethbridge, Canada",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Ford_Maverick_Sprint_(616806978).jpg"
+   "imageCredit": "Marion S. Trikosko",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1970_Ford_Maverick,_Herby%27s_Ford,_Alexandria.jpg"
   },
   {
    "id": "ford_model-a",
@@ -2834,7 +2834,7 @@
   {
    "id": "ford_thunderbird-1955",
    "name": "Thunderbird (1955)",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/2004_Retro_Bird_-_in_Thunderbird_Blue_Metallic_-_minus_top_-_fvl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1955_Ford_Thunderbird_rear.jpg/1280px-1955_Ford_Thunderbird_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1955 - 2005",
    "puissance_ch": 200,
    "vitesse_max_kmh": 180,
@@ -2859,9 +2859,9 @@
     "land vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Pat Durkin",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2004_Retro_Bird_-_in_Thunderbird_Blue_Metallic_-_minus_top_-_fvl.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1955_Ford_Thunderbird_rear.jpg"
   },
   {
    "id": "ford_tourneo-connect",
@@ -3863,12 +3863,12 @@
   {
    "id": "ford_falcon-2",
    "name": "Falcon",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/1963_Ford_Falcon_Sprint_Hardtop.JPG/1280px-1963_Ford_Falcon_Sprint_Hardtop.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ford_Falcon_%28AU%29_of_Brad_Jones_at_the_2025_Adelaide_Grand_Final.jpg/1280px-Ford_Falcon_%28AU%29_of_Brad_Jones_at_the_2025_Adelaide_Grand_Final.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1959 - 1970",
    "tags": [],
-   "imageCredit": "GTHO",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Ford_Falcon_Sprint_Hardtop.JPG"
+   "imageCredit": "Yu Chu Chin",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Falcon_(AU)_of_Brad_Jones_at_the_2025_Adelaide_Grand_Final.jpg"
   },
   {
    "id": "ford_fiesta-r2",
@@ -3913,12 +3913,12 @@
   {
    "id": "ford_custom",
    "name": "Custom",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/1949_Ford_custom_300_pic3.JPG/1280px-1949_Ford_custom_300_pic3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Ford_Tourneo_Custom_Nugget_%282023%29_AMA_Marbach_2025_DSC_8634.jpg/1280px-Ford_Tourneo_Custom_Nugget_%282023%29_AMA_Marbach_2025_DSC_8634.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "AlfvanBeem",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1949_Ford_custom_300_pic3.JPG"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Tourneo_Custom_Nugget_(2023)_AMA_Marbach_2025_DSC_8634.jpg"
   },
   {
    "id": "ford_galaxie",
@@ -4094,12 +4094,8 @@
   {
    "id": "ford_b-platform",
    "name": "B platform",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Ford_Fiesta_MK3_front_20070926.jpg/1280px-Ford_Fiesta_MK3_front_20070926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Fiesta_MK3_front_20070926.jpg"
+   "tags": []
   },
   {
    "id": "ford_cdw27-platform",
@@ -4184,13 +4180,9 @@
   {
    "id": "ford_model-91",
    "name": "Model 91",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Ford-Vairogs-V8-front.jpg/1280px-Ford-Vairogs-V8-front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "poids_kg": 1320,
-   "imageCredit": "Liftarn",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford-Vairogs-V8-front.jpg"
+   "poids_kg": 1320
   },
   {
    "id": "ford_ranger-t6",
@@ -4285,12 +4277,12 @@
   {
    "id": "ford_fairlane-2",
    "name": "Fairlane",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ford_Fairlane_sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/1959_Ford_65_A_Fairlane_500.jpg/1280px-1959_Ford_65_A_Fairlane_500.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1955 - 1970",
    "tags": [],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Fairlane_sedan.jpg"
+   "imageCredit": "ArildV",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Ford_65_A_Fairlane_500.jpg"
   },
   {
    "id": "ford_bronco-2020",
@@ -4846,12 +4838,8 @@
   {
    "id": "ford_mercury-montego-3rd-generation",
    "name": "Mercury Montego 3rd generation",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/05-07_Mercury_Montego.jpg/1280px-05-07_Mercury_Montego.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - 2007",
-   "tags": [],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:05-07_Mercury_Montego.jpg"
+   "tags": []
   },
   {
    "id": "ford_anglia-105e",
@@ -4888,12 +4876,12 @@
   {
    "id": "ford_focus-mk-iii-facelift",
    "name": "Focus Mk III (Facelift)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/2017_Ford_Focus_Zetec_Edition_1.0_Front.jpg/1280px-2017_Ford_Focus_Zetec_Edition_1.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Ford_Focus_Mk_III_Kombi_aus_Saarbr%C3%BCcken.jpg/1280px-Ford_Focus_Mk_III_Kombi_aus_Saarbr%C3%BCcken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Charles01",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Ford_Focus_Zetec_Edition_1.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Focus_Mk_III_Kombi_aus_Saarbr%C3%BCcken.jpg"
   },
   {
    "id": "ford_s-max-2nd-generation",

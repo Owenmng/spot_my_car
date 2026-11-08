@@ -826,7 +826,6 @@
   {
    "id": "mitsubishi_ek-wagon-sport",
    "name": "eK Wagon Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Mitsubishi_Pajero_Sport_%283rd_generation%29_1X7A0409.jpg/1280px-Mitsubishi_Pajero_Sport_%283rd_generation%29_1X7A0409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2013",
    "puissance_ch": 64,
    "vitesse_max_kmh": 140,
@@ -850,10 +849,7 @@
     "motor vehicle",
     "small car",
     "compact car"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Pajero_Sport_(3rd_generation)_1X7A0409.jpg"
+   ]
   },
   {
    "id": "mitsubishi_ek-x",
@@ -1049,7 +1045,7 @@
   {
    "id": "mitsubishi_galant-vr",
    "name": "Galant VR",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/6thGalantVR-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Mitsubishi_Galant_VR-4_2.0_DOHC_Turbo_1991.jpg/1280px-Mitsubishi_Galant_VR-4_2.0_DOHC_Turbo_1991.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 1996",
    "puissance_ch": 240,
    "vitesse_max_kmh": 230,
@@ -1074,9 +1070,9 @@
     "land vehicle",
     "naturally aspirated"
    ],
-   "imageCredit": "Ypy31",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:6thGalantVR-4.jpg"
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Galant_VR-4_2.0_DOHC_Turbo_1991.jpg"
   },
   {
    "id": "mitsubishi_grandis",
@@ -1272,7 +1268,7 @@
   {
    "id": "mitsubishi_lancer-cedia",
    "name": "Lancer Cedia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg/1280px-2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Mitsubishi_Lancer_Cedia_in_Thailand.jpg/1280px-Mitsubishi_Lancer_Cedia_in_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2007",
    "puissance_ch": 140,
    "vitesse_max_kmh": 200,
@@ -1295,9 +1291,9 @@
     "compact sedan",
     "family car"
    ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg"
+   "imageCredit": "M.rJirapat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_Cedia_in_Thailand.jpg"
   },
   {
    "id": "mitsubishi_evolution-ix",
@@ -1334,7 +1330,7 @@
   {
    "id": "mitsubishi_evolution-vi",
    "name": "Lancer Evolution VI",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg/1280px-2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Mitsubishi_Lancer_Evolution_VI_IMG_0346.jpg/1280px-Mitsubishi_Lancer_Evolution_VI_IMG_0346.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2001",
    "puissance_ch": 280,
    "vitesse_max_kmh": 240,
@@ -1360,14 +1356,14 @@
     "vehicle",
     "mid-size car"
    ],
-   "imageCredit": "Klaus Nahr",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_(2).jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_Evolution_VI_IMG_0346.jpg"
   },
   {
    "id": "mitsubishi_evolution-vii",
    "name": "Lancer Evolution VII",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg/1280px-2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mitsubishi_Lancer_Evolution_VII_CT9A_GT-A_Scotia_White_02.jpg/1280px-Mitsubishi_Lancer_Evolution_VII_CT9A_GT-A_Scotia_White_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2003",
    "puissance_ch": 280,
    "vitesse_max_kmh": 242,
@@ -1393,14 +1389,14 @@
     "vehicle",
     "mid-size car"
    ],
-   "imageCredit": "Klaus Nahr",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_(2).jpg"
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_Evolution_VII_CT9A_GT-A_Scotia_White_02.jpg"
   },
   {
    "id": "mitsubishi_evolution-viii",
    "name": "Lancer Evolution VIII",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg/1280px-2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2005_Mitsubishi_Lancer_Evolution_VIII_GSR.jpg/1280px-2005_Mitsubishi_Lancer_Evolution_VIII_GSR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2005",
    "puissance_ch": 280,
    "vitesse_max_kmh": 242,
@@ -1425,9 +1421,9 @@
     "vehicle",
     "mid-size car"
    ],
-   "imageCredit": "Klaus Nahr",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_(2).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2005_Mitsubishi_Lancer_Evolution_VIII_GSR.jpg"
   },
   {
    "id": "mitsubishi_lancer-evolution",
@@ -1465,7 +1461,7 @@
   {
    "id": "mitsubishi_lancer-ex",
    "name": "Lancer EX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg/1280px-2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Mitsubishi_Lancer_EX_facelift_Xiamen_02_2019-10-30.jpg/1280px-Mitsubishi_Lancer_EX_facelift_Xiamen_02_2019-10-30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2017",
    "puissance_ch": 150,
    "vitesse_max_kmh": 200,
@@ -1490,14 +1486,14 @@
     "compact sedan",
     "mitsubishi"
    ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg"
+   "imageCredit": "JamesYoung8167",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_EX_facelift_Xiamen_02_2019-10-30.jpg"
   },
   {
    "id": "mitsubishi_lancer-ralliart",
    "name": "Lancer Ralliart",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg/1280px-2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/2009_Mitsubishi_Lancer_Ralliart--DC.jpg/1280px-2009_Mitsubishi_Lancer_Ralliart--DC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2015",
    "puissance_ch": 240,
    "vitesse_max_kmh": 230,
@@ -1524,7 +1520,7 @@
    ],
    "imageCredit": "IFCAR",
    "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2009_Mitsubishi_Lancer_Ralliart--DC.jpg"
   },
   {
    "id": "mitsubishi_libero",
@@ -1680,7 +1676,7 @@
   {
    "id": "mitsubishi_dingo",
    "name": "Mirage Dingo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2021_Mitsubishi_Mirage_Carbonite_Edition_in_White_Diamond%2C_front_right.jpg/1280px-2021_Mitsubishi_Mirage_Carbonite_Edition_in_White_Diamond%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mitsubishi_Mirage_Dingo_TR4519_in_New_Territories.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1998 - 2002",
    "puissance_ch": 105,
    "vitesse_max_kmh": 170,
@@ -1703,9 +1699,9 @@
     "small car",
     "japanese car"
    ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Mitsubishi_Mirage_Carbonite_Edition_in_White_Diamond,_front_right.jpg"
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Mirage_Dingo_TR4519_in_New_Territories.jpg"
   },
   {
    "id": "mitsubishi_montero-sport",
@@ -2112,7 +2108,7 @@
   {
    "id": "mitsubishi_sigma-wagon",
    "name": "Sigma Wagon",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/1991-1996_Mitsubishi_Sigma_sedan_01.jpg/1280px-1991-1996_Mitsubishi_Sigma_sedan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/1983_Mitsubishi_Sigma_%28GJ%29_SE_station_wagon_%282009-04-07%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1990 - 1996",
    "puissance_ch": 205,
    "vitesse_max_kmh": 220,
@@ -2135,9 +2131,9 @@
     "sigma wagon",
     "automobile"
    ],
-   "imageCredit": "The original uploader was Automodeller at German Wikipedia.",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1991-1996_Mitsubishi_Sigma_sedan_01.jpg"
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1983_Mitsubishi_Sigma_(GJ)_SE_station_wagon_(2009-04-07).jpg"
   },
   {
    "id": "mitsubishi_space-gear",
@@ -2236,7 +2232,7 @@
   {
    "id": "mitsubishi_space-star-2012",
    "name": "Space Star (2012)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg/1280px-Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/2012_Mitsubishi_Space_Star.JPG/1280px-2012_Mitsubishi_Space_Star.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2019",
    "puissance_ch": 80,
    "vitesse_max_kmh": 170,
@@ -2259,9 +2255,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg"
+   "imageCredit": "Corvettec6r",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Mitsubishi_Space_Star.JPG"
   },
   {
    "id": "mitsubishi_space-wagon",
@@ -2512,7 +2508,7 @@
   {
    "id": "mitsubishi_triton-glx",
    "name": "Triton GLX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Mitsubishi_Triton_LC_2.4_GLS_2WD_Blade_Silver_Metallic_%28cropped%29.jpg/1280px-Mitsubishi_Triton_LC_2.4_GLS_2WD_Blade_Silver_Metallic_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2007_Mitsubishi_Triton_%28MN%29_GLX-R_4-door_utility_%282007-10-11%29.jpg/1280px-2007_Mitsubishi_Triton_%28MN%29_GLX-R_4-door_utility_%282007-10-11%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - 2014",
    "puissance_ch": 131,
    "vitesse_max_kmh": 170,
@@ -2536,9 +2532,9 @@
     "work truck",
     "off-road vehicle"
    ],
-   "imageCredit": "Ethan Llamas",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Triton_LC_2.4_GLS_2WD_Blade_Silver_Metallic_(cropped).jpg"
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2007_Mitsubishi_Triton_(MN)_GLX-R_4-door_utility_(2007-10-11).jpg"
   },
   {
    "id": "mitsubishi_xforce",
@@ -2616,12 +2612,12 @@
   {
    "id": "mitsubishi_space-star-2",
    "name": "Space Star",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg/1280px-Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Mitsubishi_Space_Star_%282019%29_Auto_Zuerich_2021_IMG_0244.jpg/1280px-Mitsubishi_Space_Star_%282019%29_Auto_Zuerich_2021_IMG_0244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Thesupermat",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Space_Star_(2019)_Auto_Zuerich_2021_IMG_0244.jpg"
   },
   {
    "id": "mitsubishi_lancer-evolution-2",
@@ -2700,12 +2696,12 @@
   {
    "id": "mitsubishi_pajero-sport",
    "name": "Pajero Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Mitsubishi_Pajero_Sport_%283rd_generation%29_1X7A0409.jpg/1280px-Mitsubishi_Pajero_Sport_%283rd_generation%29_1X7A0409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Mitsubishi_Pajero_Sport_%283rd_generation%29_1X7A0410.jpg/1280px-Mitsubishi_Pajero_Sport_%283rd_generation%29_1X7A0410.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Pajero_Sport_(3rd_generation)_1X7A0409.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Pajero_Sport_(3rd_generation)_1X7A0410.jpg"
   },
   {
    "id": "mitsubishi_minicab-miev",
@@ -2952,12 +2948,12 @@
   {
    "id": "mitsubishi_colt-1000",
    "name": "Colt 1000",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Mitsubishi_Colt_600.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Mitsubishi_Colt_1000F_%2816866660176%29.jpg/1280px-Mitsubishi_Colt_1000F_%2816866660176%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Yones",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Colt_600.JPG"
+   "imageCredit": "Jeremy from Sydney, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Colt_1000F_(16866660176).jpg"
   },
   {
    "id": "mitsubishi_colt-800",
@@ -3063,12 +3059,12 @@
   {
    "id": "mitsubishi_space-gear-2",
    "name": "Space Gear",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Mitsubishi_Delica_Space_Gear_Chamonix_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Mitsubishi_Delica_Space_Gear_Exceed_4WD_Green_Field.jpg/1280px-Mitsubishi_Delica_Space_Gear_Exceed_4WD_Green_Field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Delica_Space_Gear_Chamonix_001.jpg"
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Delica_Space_Gear_Exceed_4WD_Green_Field.jpg"
   },
   {
    "id": "mitsubishi_galant-vr-4",
@@ -3165,13 +3161,13 @@
   {
    "id": "mitsubishi_attrage-2",
    "name": "Attrage",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2015_Mitsubishi_Mirage_%28LA_MY15%29_sedan_%282018-07-19%29_01.jpg/1280px-2015_Mitsubishi_Mirage_%28LA_MY15%29_sedan_%282018-07-19%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Mitsubishi_Attrage_Ho_Chi_Minh_City_front.jpg/1280px-Mitsubishi_Attrage_Ho_Chi_Minh_City_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4245 x 1670 x 1506",
    "imageCredit": "EurovisionNim",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Mitsubishi_Mirage_(LA_MY15)_sedan_(2018-07-19)_01.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Attrage_Ho_Chi_Minh_City_front.jpg"
   },
   {
    "id": "mitsubishi_gaus",

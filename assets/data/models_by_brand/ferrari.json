@@ -197,7 +197,7 @@
   {
    "id": "ferrari_250-testarossa",
    "name": "250 Testa Rossa",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/1961_Ferrari_250_TR_61_Spyder_Fantuzzi_34_left_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Ferrari_250_Testa_Rossa%2C_Bj._1958_%282009-08-07%29.jpg/1280px-Ferrari_250_Testa_Rossa%2C_Bj._1958_%282009-08-07%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1957 - 1961",
    "puissance_ch": 300,
    "vitesse_max_kmh": 280,
@@ -224,9 +224,9 @@
     "car",
     "vehicle"
    ],
-   "imageCredit": "User:Sfoskett~commonswiki",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1961_Ferrari_250_TR_61_Spyder_Fantuzzi_34_left_2.jpg"
+   "imageCredit": "Spurzem - Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_250_Testa_Rossa,_Bj._1958_(2009-08-07).jpg"
   },
   {
    "id": "ferrari_275",
@@ -1135,7 +1135,7 @@
   {
    "id": "ferrari_750-monza",
    "name": "750 Monza",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Festival_automobile_international_2019_-_Ferrari_Monza_SP1_-_005_%28cropped%29.jpg/1280px-Festival_automobile_international_2019_-_Ferrari_Monza_SP1_-_005_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Ferrari_750_Monza.jpg/1280px-Ferrari_750_Monza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1955",
    "puissance_ch": 250,
    "vitesse_max_kmh": 250,
@@ -1161,9 +1161,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Thesupermat",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2019_-_Ferrari_Monza_SP1_-_005_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_750_Monza.jpg"
   },
   {
    "id": "ferrari_812-comp",
@@ -1843,7 +1843,7 @@
   {
    "id": "ferrari_fxx",
    "name": "FXX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Orange_Enzo_Ferrari_%287191948164%29.jpg/1280px-Orange_Enzo_Ferrari_%287191948164%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Ferrari_Enzo_FXX_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-Ferrari_Enzo_FXX_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - 2007",
    "puissance_ch": 800,
    "vitesse_max_kmh": 345,
@@ -1868,9 +1868,9 @@
     "motor vehicle",
     "racing car"
    ],
-   "imageCredit": "Axion23",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Orange_Enzo_Ferrari_(7191948164).jpg"
+   "imageCredit": "Ank kumar",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Enzo_FXX_(Ank_Kumar,_Infosys_Limited)_02.jpg"
   },
   {
    "id": "ferrari_fxx-k",
@@ -2321,12 +2321,12 @@
   {
    "id": "ferrari_340-america",
    "name": "340 America",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Ferrari_340_MM_%281953%29_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/1953_Ferrari_340_America_Ghia_Coupe_0148A.jpg/1280px-1953_Ferrari_340_America_Ghia_Coupe_0148A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Klaus Nahr",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_340_MM_(1953)_crop.jpg"
+   "imageCredit": "Prova MO",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1953_Ferrari_340_America_Ghia_Coupe_0148A.jpg"
   },
   {
    "id": "ferrari_166-sc",
@@ -2708,13 +2708,13 @@
   {
    "id": "ferrari_348-2",
    "name": "348",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/1992_Ferrari_348.jpg/1280px-1992_Ferrari_348.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Ferrari_348_TS.jpg/1280px-Ferrari_348_TS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4230 x 1894 x 1170",
-   "imageCredit": "Calreyn88",
+   "imageCredit": "Handelsgeselschaft",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1992_Ferrari_348.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_348_TS.jpg"
   },
   {
    "id": "ferrari_f310",
@@ -2741,14 +2741,14 @@
   {
    "id": "ferrari_enzo-2",
    "name": "Enzo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Orange_Enzo_Ferrari_%287191948164%29.jpg/1280px-Orange_Enzo_Ferrari_%287191948164%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/2004_Enzo_Ferrari_rear.jpg/1280px-2004_Enzo_Ferrari_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4702 x 2035 x 1147",
    "poids_kg": 1365,
-   "imageCredit": "Axion23",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Orange_Enzo_Ferrari_(7191948164).jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2004_Enzo_Ferrari_rear.jpg"
   },
   {
    "id": "ferrari_458-2",
@@ -2968,13 +2968,13 @@
   {
    "id": "ferrari_340",
    "name": "340",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Ferrari_340_MM_%281953%29_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/1952-11-01_Ferrari_340_Mexico_to_Mexico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
    "vitesse_max_kmh": 77,
-   "imageCredit": "Klaus Nahr",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_340_MM_(1953)_crop.jpg"
+   "imageCredit": "Unknown photographer",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1952-11-01_Ferrari_340_Mexico_to_Mexico.jpg"
   },
   {
    "id": "ferrari_d50",
@@ -2989,12 +2989,12 @@
   {
    "id": "ferrari_365-2",
    "name": "365",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Ferrari_365_GTB_Daytona_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ferrari_365_GTB_Daytona_jm.jpg/1280px-Ferrari_365_GTB_Daytona_jm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Matteo \"TT\" Stucchi (webmaster@swisscarsightings.com) Original uploader was PeterHoch at de.wikipedia",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_365_GTB_Daytona_front.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_365_GTB_Daytona_jm.jpg"
   },
   {
    "id": "ferrari_f355-2",
@@ -3124,12 +3124,12 @@
   {
    "id": "ferrari_tr",
    "name": "TR",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/1961_Ferrari_250_TR_61_Spyder_Fantuzzi_34_left_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ferrari_512_TR%2C_Techno-Classica_2018%2C_Essen_%28IMG_9219%29.jpg/1280px-Ferrari_512_TR%2C_Techno-Classica_2018%2C_Essen_%28IMG_9219%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "User:Sfoskett~commonswiki",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1961_Ferrari_250_TR_61_Spyder_Fantuzzi_34_left_2.jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_512_TR,_Techno-Classica_2018,_Essen_(IMG_9219).jpg"
   },
   {
    "id": "ferrari_290-mm",
@@ -3155,13 +3155,13 @@
   {
    "id": "ferrari_328-2",
    "name": "328",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Ferrari_328_GTS_-_Flickr_-_Alexandre_Pr%C3%A9vot_%284%29_%28cropped%29.jpg/1280px-Ferrari_328_GTS_-_Flickr_-_Alexandre_Pr%C3%A9vot_%284%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/1989_Ferrari_328_GTS_3.jpg/1280px-1989_Ferrari_328_GTS_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4255 x 1720 x 1120",
-   "imageCredit": "Alexandre Prévot from Nancy, France",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_328_GTS_-_Flickr_-_Alexandre_Pr%C3%A9vot_(4)_(cropped).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_Ferrari_328_GTS_3.jpg"
   },
   {
    "id": "ferrari_335s",
@@ -3198,12 +3198,12 @@
   {
    "id": "ferrari_375-2",
    "name": "375",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/1954_Ferrari_375_Plus_34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/1951_Ferrari_375F1.jpg/1280px-1951_Ferrari_375F1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1954_Ferrari_375_Plus_34.jpg"
+   "imageCredit": "Pedro Simões",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1951_Ferrari_375F1.jpg"
   },
   {
    "id": "ferrari_375-plus",
@@ -3353,14 +3353,14 @@
   {
    "id": "ferrari_f80-2",
    "name": "F80",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/FerrariF80_%28resized%29_%282%29.jpg/1280px-FerrariF80_%28resized%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/FerrariF80_%28resized%29.jpg/1280px-FerrariF80_%28resized%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 1525,
    "vitesse_max_kmh": 97,
    "imageCredit": "Pauls.127",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:FerrariF80_(resized)_(2).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:FerrariF80_(resized).jpg"
   },
   {
    "id": "ferrari_849-testarossa",
@@ -3387,12 +3387,12 @@
   {
    "id": "ferrari_amalfi-2",
    "name": "Amalfi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Ferrari_Amalfi_%28retouched%29.jpg/1280px-Ferrari_Amalfi_%28retouched%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ferrari_Amalfi_Spider_Auto_Zuerich_2026_IMG_8858.jpg/1280px-Ferrari_Amalfi_Spider_Auto_Zuerich_2026_IMG_8858.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexandre Prevot (retouched by NearEMPTiness)",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Amalfi_(retouched).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Amalfi_Spider_Auto_Zuerich_2026_IMG_8858.jpg"
   },
   {
    "id": "ferrari_sf70h",

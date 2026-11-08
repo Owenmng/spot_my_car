@@ -548,7 +548,7 @@
   {
    "id": "aston-martin_dbs-classic",
    "name": "DBS (Classic)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/AstonMartinDB-S-1969-avant.jpg/1280px-AstonMartinDB-S-1969-avant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/1972_Aston_Martin_DBS_V8_Classic-Gala_2025_DSC_0918.jpg/1280px-1972_Aston_Martin_DBS_V8_Classic-Gala_2025_DSC_0918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1972",
    "puissance_ch": 284,
    "vitesse_max_kmh": 225,
@@ -573,9 +573,9 @@
     "performance car",
     "two-seater"
    ],
-   "imageCredit": "Rundvald",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:AstonMartinDB-S-1969-avant.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Aston_Martin_DBS_V8_Classic-Gala_2025_DSC_0918.jpg"
   },
   {
    "id": "aston-martin_dbx",
@@ -1032,7 +1032,6 @@
   {
    "id": "aston-martin_vanquish",
    "name": "Vanquish (Gen 1)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Aston_Martin_Vanquish_%282024%29_DSC_7892.jpg/1280px-Aston_Martin_Vanquish_%282024%29_DSC_7892.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2007",
    "puissance_ch": 460,
    "vitesse_max_kmh": 306,
@@ -1056,15 +1055,12 @@
     "performance car",
     "british car",
     "muscle car"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Vanquish_(2024)_DSC_7892.jpg"
+   ]
   },
   {
    "id": "aston-martin_vanquish-gen2",
    "name": "Vanquish (Gen 2)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Aston_Martin_Vanquish_%282024%29_DSC_7892.jpg/1280px-Aston_Martin_Vanquish_%282024%29_DSC_7892.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Aston_Martin_V12_Vanquish_S_1X7A1935.jpg/1280px-Aston_Martin_V12_Vanquish_S_1X7A1935.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2018",
    "puissance_ch": 576,
    "vitesse_max_kmh": 323,
@@ -1089,9 +1085,9 @@
     "british car",
     "supercar"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Vanquish_(2024)_DSC_7892.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_V12_Vanquish_S_1X7A1935.jpg"
   },
   {
    "id": "aston-martin_vanquish-zagato",
@@ -1386,14 +1382,14 @@
   {
    "id": "aston-martin_2-litre-sports",
    "name": "2-Litre Sports",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Aston_Martin_DB1_49104357091.jpg/1280px-Aston_Martin_DB1_49104357091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/1949_Aston_Martin_2_Litre_DB1_Sports_HCC25.jpg/1280px-1949_Aston_Martin_2_Litre_DB1_Sports_HCC25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4470 x 1715 x 1410",
    "poids_kg": 1143,
-   "imageCredit": "Andrew Bone",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB1_49104357091.jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1949_Aston_Martin_2_Litre_DB1_Sports_HCC25.jpg"
   },
   {
    "id": "aston-martin_db3",
@@ -1540,12 +1536,12 @@
   {
    "id": "aston-martin_v8-vantage-2",
    "name": "V8 Vantage",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/V8_Vantage.JPG/1280px-V8_Vantage.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Aston_Martin_V8_Vantage_Roadster_IMG_8846.jpg/1280px-Aston_Martin_V8_Vantage_Roadster_IMG_8846.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Jagvar at English Wikipedia",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:V8_Vantage.JPG"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_V8_Vantage_Roadster_IMG_8846.jpg"
   },
   {
    "id": "aston-martin_amr1",
@@ -1710,12 +1706,12 @@
   {
    "id": "aston-martin_vanquish-2",
    "name": "Vanquish",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Aston_Martin_Vanquish_%282024%29_DSC_7892.jpg/1280px-Aston_Martin_Vanquish_%282024%29_DSC_7892.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Aston_Martin_Vanquish_%282024%29_DSC_7890.jpg/1280px-Aston_Martin_Vanquish_%282024%29_DSC_7890.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Vanquish_(2024)_DSC_7892.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Vanquish_(2024)_DSC_7890.jpg"
   },
   {
    "id": "aston-martin_vanquish-ii",
