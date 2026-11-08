@@ -17,6 +17,7 @@ import 'package:spot_my_car/theme_selection_screen.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:provider/provider.dart';
 import 'package:spot_my_car/services/notification_service.dart';
+import 'package:spot_my_car/widgets/language_picker.dart';
 
 
 class SettingsScreen extends StatefulWidget {
@@ -180,6 +181,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
               title: tr('Apparence'),
               subtitle: tr('Sombre, bleu nuit, clair… et ta couleur'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ThemeSelectionScreen())),
+            ),
+            ListenableBuilder(
+              listenable: I18n.instance,
+              builder: (context, _) => _Tile(
+                icon: Icons.translate_rounded,
+                title: tr('Langue'),
+                subtitle: '${I18n.instance.language.flag}  ${I18n.instance.language.name}',
+                onTap: () => showLanguageSheet(context),
+              ),
             ),
             _Tile(
               icon: Icons.music_note_outlined,

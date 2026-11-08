@@ -1,5 +1,6 @@
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
+import 'package:spot_my_car/widgets/language_picker.dart';
 // Fichier: lib/profile_setup_screen.dart (VERSION COMPLÈTE ET CORRIGÉE)
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -193,9 +194,14 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                     isEditing ? tr('Mets à jour tes infos de spotter.') : tr('Choisis ton pseudo : c’est lui qui apparaîtra au classement.'),
                     style: AppText.body(15, color: AppColors.inkSoft),
                   ),
-                  const SizedBox(height: 28),
+                  const SizedBox(height: 22),
+                  if (!isEditing) ...[
+                    Text(tr('LANGUE DE L’APPLI'), style: AppText.label(11.5, color: AppColors.inkMuted)),
+                    const SizedBox(height: 10),
+                    const LanguageGrid(),
+                    const SizedBox(height: 26),
+                  ],
 
-                  // === LE RESTE DU FORMULAIRE EST RESTAURÉ ICI ===
                   TextFormField(
                       controller: _pseudoController,
                       maxLength: 20,

@@ -22,7 +22,7 @@ class Achievement {
   int currentProgress = 0;
   int unlockedLevel = 0;
 
-  Achievement({required this.id, required this.icon, required this.levels, this.category = tr('Collection')});
+  Achievement({required this.id, required this.icon, required this.levels, this.category = 'Collection'});
 
   AchievementLevel get displayLevel => unlockedLevel >= levels.length ? levels.last : levels[unlockedLevel];
   bool get isFullyCompleted => unlockedLevel >= levels.length;

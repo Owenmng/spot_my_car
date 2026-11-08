@@ -11,6 +11,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/signup_screen.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
+import 'package:spot_my_car/widgets/language_picker.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -256,6 +257,22 @@ class _LoginScreenState extends State<LoginScreen> {
                                         Text(tr('LE CARSPOTTING, EN COLLECTION'), style: AppText.label(9.5, color: Colors.white54)),
                                       ],
                                     ).animate().fadeIn(delay: 100.ms, duration: 400.ms).slideX(begin: -0.08, end: 0),
+                                    const Spacer(),
+                                    Material(
+                                      color: Colors.white.withValues(alpha: 0.12),
+                                      shape: const StadiumBorder(),
+                                      child: InkWell(
+                                        customBorder: const StadiumBorder(),
+                                        onTap: () => showLanguageSheet(context),
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+                                          child: ListenableBuilder(
+                                            listenable: I18n.instance,
+                                            builder: (_, _) => Text('${I18n.instance.language.flag} ${I18n.instance.code.toUpperCase()}', style: AppText.body(13, color: Colors.white, weight: FontWeight.w800)),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 if (!keyboard) ...[

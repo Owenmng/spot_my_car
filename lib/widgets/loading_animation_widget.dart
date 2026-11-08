@@ -6,9 +6,9 @@ import 'package:spot_my_car/widgets/ui_kit.dart';
 
 /// Écran de démarrage : le logo respire pendant que le garage se charge.
 class LoadingAnimationWidget extends StatelessWidget {
-  final String loadingMessage;
+  final String? loadingMessage;
 
-  LoadingAnimationWidget({super.key, this.loadingMessage = tr('Chargement…')});
+  const LoadingAnimationWidget({super.key, this.loadingMessage});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class LoadingAnimationWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 18),
-            Text(loadingMessage, style: AppText.body(15, color: AppColors.inkSoft, weight: FontWeight.w600)),
+            Text(loadingMessage ?? tr('Chargement…'), style: AppText.body(15, color: AppColors.inkSoft, weight: FontWeight.w600)),
           ],
         ),
       ),

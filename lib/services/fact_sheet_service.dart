@@ -1,3 +1,4 @@
+import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -26,7 +27,7 @@ class FactSheet {
 /// Fiche « passionné » d'un modèle, rédigée par Gemini puis gardée sur le téléphone.
 class FactSheetService {
   FactSheetService._();
-  static const _prefix = 'factsheet_v1_';
+  static String get _prefix => 'factsheet_v1_${I18n.instance.code}_';
 
   static const Map<String, dynamic> _schema = {
     'type': 'OBJECT',
@@ -56,7 +57,7 @@ class FactSheetService {
     if (hit != null) return hit;
     final prompt = '''
 Tu es journaliste automobile spécialisé, très rigoureux.
-Rédige en français la fiche de la $brand $model${years == null ? '' : ' (production : $years)'} pour des passionnés.
+Rédige en ${I18n.instance.language.name} (toute la fiche dans cette langue) la fiche de la $brand $model${years == null ? '' : ' (production : $years)'} pour des passionnés.
 Ton ton est direct, précis, sans superlatifs creux. N'invente jamais un chiffre : si tu n'es pas sûr, écris « non communiqué ».
 ''';
     final text = await GeminiClient.generate(parts: [GeminiClient.textPart(prompt)], schema: _schema, temperature: 0.3);

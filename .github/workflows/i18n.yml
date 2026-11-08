@@ -1,0 +1,30 @@
+name: Translations
+
+on:
+  push:
+    branches: [refonte]
+    paths: ['assets/i18n/fr.json', 'tool/i18n_translate.py', '.github/workflows/i18n.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: i18n
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests >/dev/null && python3 -u tool/i18n_translate.py
+      - name: Commit
+        run: |
+          git config user.name "SpotMyCar bot"
+          git config user.email "actions@github.com"
+          git add assets/i18n
+          git diff --cached --quiet || (git commit -m "Traductions mises à jour" && git pull --rebase -X theirs origin refonte && git push)
