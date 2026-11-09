@@ -1,0 +1,53 @@
+name: Daily AI jobs
+
+# Chaque matin (quota Gemini gratuit remis à zéro vers 9 h, heure de Paris) :
+# traductions manquantes, puis vérification des photos du catalogue par petits lots.
+# Chaque script s'arrête dès que le quota est atteint et reprend le lendemain là où il s'était arrêté.
+on:
+  schedule:
+    - cron: '20 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: daily-ai
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refonte
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow requests >/dev/null
+      - name: Traductions
+        continue-on-error: true
+        timeout-minutes: 90
+        run: python3 -u tool/i18n_translate.py
+      - name: Photos du catalogue
+        continue-on-error: true
+        env:
+          BUDGET_MIN: '180'
+          VISION_MAX: '700'
+        run: python3 -u tool/fix_images.py
+      - name: Commit et nouvelle version
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "SpotMyCar bot"
+          git config user.email "actions@github.com"
+          git add assets/i18n assets/data tool/reports lib/l10n/i18n.dart 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Rien de nouveau"; exit 0; fi
+          git commit -m "Travaux IA du jour : traductions et photos [skip ci]"
+          git pull --rebase -X theirs origin refonte
+          git push origin HEAD:refonte
+          gh workflow run build.yml --ref refonte
