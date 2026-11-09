@@ -2,7 +2,7 @@ name: spot_my_car
 description: "SpotMyCar - repère, collectionne et partage les voitures croisées dans la rue."
 publish_to: 'none'
 
-version: 1.0.0+22
+version: 1.0.0+23
 
 environment:
   sdk: '>=3.8.0 <4.0.0'
