@@ -23,7 +23,7 @@ class I18n extends ChangeNotifier {
   static final I18n instance = I18n._();
 
   /// Langues dont la traduction est complète (les autres arrivent avec une mise à jour).
-  static const ready = {'fr', 'en'};
+  static const ready = {'fr', 'en', 'es', 'pt'};
 
   static const allLanguages = [
     AppLanguage('fr', 'Français', '🇫🇷', 'fr_FR'),

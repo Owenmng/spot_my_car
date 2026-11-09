@@ -1726,7 +1726,7 @@
   {
    "id": "audi_r8",
    "name": "R8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Audi_Forum_R8.jpg/1280px-Audi_Forum_R8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/White_Audi_R8_fl.jpg/1280px-White_Audi_R8_fl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2024",
    "puissance_ch": 570,
    "vitesse_max_kmh": 329,
@@ -1753,9 +1753,9 @@
     "vehicle",
     "automobile"
    ],
-   "imageCredit": "Randy Stern from Minneapolis, MN, USA",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Forum_R8.jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:White_Audi_R8_fl.jpg"
   },
   {
    "id": "audi_r8-gt",
@@ -1890,7 +1890,7 @@
   {
    "id": "audi_rsq8",
    "name": "RS Q8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2021_Audi_RS6_Avant_in_Nardo_Gray%2C_front_right.jpg/1280px-2021_Audi_RS6_Avant_in_Nardo_Gray%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/2020_Audi_RS_Q8_Front.jpg/1280px-2020_Audi_RS_Q8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 600,
    "vitesse_max_kmh": 250,
@@ -1916,9 +1916,9 @@
     "twin-turbo",
     "v8"
    ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Audi_RS6_Avant_in_Nardo_Gray,_front_right.jpg"
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Audi_RS_Q8_Front.jpg"
   },
   {
    "id": "audi_rs2",
@@ -2218,7 +2218,7 @@
   {
    "id": "audi_s3",
    "name": "S3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2024_Audi_S3_8Y_Sedan_DSC_7356.jpg/1280px-2024_Audi_S3_8Y_Sedan_DSC_7356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Audi_S3_8Y_Sedan_IMG_4957.jpg/1280px-Audi_S3_8Y_Sedan_IMG_4957.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - Aujourd'hui",
    "puissance_ch": 310,
    "vitesse_max_kmh": 250,
@@ -2246,7 +2246,7 @@
    ],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Audi_S3_8Y_Sedan_DSC_7356.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S3_8Y_Sedan_IMG_4957.jpg"
   },
   {
    "id": "audi_s3-sportback",
@@ -2316,7 +2316,7 @@
   {
    "id": "audi_s4-avant",
    "name": "S4 Avant",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/2018_Audi_S4_3.0T_Premium_Plus_in_Daytona_Gray_Pearl%2C_front_right.jpg/1280px-2018_Audi_S4_3.0T_Premium_Plus_in_Daytona_Gray_Pearl%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Audi_S4_Avant_B9_FL_1X7A0394.jpg/1280px-Audi_S4_Avant_B9_FL_1X7A0394.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - Aujourd'hui",
    "puissance_ch": 354,
    "vitesse_max_kmh": 250,
@@ -2341,9 +2341,9 @@
     "allroad",
     "german car"
    ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Audi_S4_3.0T_Premium_Plus_in_Daytona_Gray_Pearl,_front_right.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S4_Avant_B9_FL_1X7A0394.jpg"
   },
   {
    "id": "audi_s5",
@@ -2574,7 +2574,7 @@
   {
    "id": "audi_s8-plus",
    "name": "S8 Plus",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_S8_plus_%28D4%29_rear.jpg/1280px-Audi_S8_plus_%28D4%29_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Audi_S8_plus_%28D4%29_front.jpg/1280px-Audi_S8_plus_%28D4%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2017",
    "puissance_ch": 605,
    "vitesse_max_kmh": 250,
@@ -2601,7 +2601,7 @@
    ],
    "imageCredit": "Tokumeigakarinoaoshima",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S8_plus_(D4)_rear.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S8_plus_(D4)_front.jpg"
   },
   {
    "id": "audi_skysphere",
@@ -2927,7 +2927,7 @@
   {
    "id": "audi_tt-rs",
    "name": "TT RS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Audi_RS4_Avant_grey_Free_Car_Picture_-_Give_Credit_Via_Link_%28cropped%29.jpg/1280px-Audi_RS4_Avant_grey_Free_Car_Picture_-_Give_Credit_Via_Link_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Audi_TT_RS_Main_Street_downtown_Montpelier_VT_November_2017.jpg/1280px-Audi_TT_RS_Main_Street_downtown_Montpelier_VT_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2009 - Aujourd'hui",
    "puissance_ch": 400,
    "vitesse_max_kmh": 280,
@@ -2953,9 +2953,9 @@
     "german car",
     "high-performance"
    ],
-   "imageCredit": "Motor Verso",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_RS4_Avant_grey_Free_Car_Picture_-_Give_Credit_Via_Link_(cropped).jpg"
+   "imageCredit": "Artaxerxes",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_TT_RS_Main_Street_downtown_Montpelier_VT_November_2017.jpg"
   },
   {
    "id": "audi_tt-s",
