@@ -3146,14 +3146,10 @@
   {
    "id": "audi_type-r",
    "name": "Type R",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Audi_Typ_R.jpg/1280px-Audi_Typ_R.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5200 x 1800 x 1900",
-   "poids_kg": 2300,
-   "imageCredit": "Motorstar",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Typ_R.jpg"
+   "poids_kg": 2300
   },
   {
    "id": "audi_a3-8y",
