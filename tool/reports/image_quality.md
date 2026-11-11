@@ -1,5 +1,4 @@
 # Contrôle des photos
 
-{"remplacées": 0, "masquées": 1, "validées": 14, "rejetées_ia": 1} · appels IA: 24 · restant à valider: 5574
+{"remplacées": 0, "masquées": 0, "validées": 19, "rejetées_ia": 0} · appels IA: 31 · restant à valider: 5555
 
-- Audi Type R (refusée par l'IA) → masqué, aucune photo fiable
