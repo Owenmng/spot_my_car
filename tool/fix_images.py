@@ -138,13 +138,16 @@ def vision_ok(thumb_url, label):
             resp = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/gemini-3.5-flash-lite:generateContent",
                                  json=body, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=60)
             if resp.status_code in (429, 500, 503):
-                if resp.status_code == 429 and attempt >= 2:
+                txt = resp.text.lower()
+                daily = resp.status_code == 429 and ("per day" in txt or "perday" in txt or "daily" in txt)
+                if daily or (resp.status_code == 429 and attempt >= 5):
                     _stop["quota"] = True  # quota du jour atteint : on reprendra demain
-                    log("quota Gemini atteint, arrêt")
+                    log("quota Gemini du jour atteint, arrêt : " + resp.text[:160].replace("\n", " "))
                     return None
-                time.sleep(10 * (attempt + 1))
+                # limite par minute : on attend que la minute passe
+                time.sleep(65 if resp.status_code == 429 else 10 * (attempt + 1))
                 continue
-            time.sleep(1.5)  # on laisse de la marge au quota pour les vrais joueurs
+            time.sleep(4)  # on laisse de la marge au quota pour les vrais joueurs
             if not resp.ok:
                 log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
                 return None
@@ -273,7 +276,7 @@ def main():
                if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked and id(m) not in done]
     log(f"validation IA restante: {len(pending)}")
     from concurrent.futures import ThreadPoolExecutor
-    pool = ThreadPoolExecutor(max_workers=4)
+    pool = ThreadPoolExecutor(max_workers=2)
     for i in range(0, len(pending), 24):
         if out_of_time():
             break
