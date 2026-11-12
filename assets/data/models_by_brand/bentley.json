@@ -736,7 +736,7 @@
   {
    "id": "bentley_continental-t",
    "name": "Continental T",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/1956_Bentley_Continental_coup%C3%A9_by_Park_Ward.jpg/1280px-1956_Bentley_Continental_coup%C3%A9_by_Park_Ward.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/2002_Bentley_Continental_T_Mulliner_CH01553.jpg/1280px-2002_Bentley_Continental_T_Mulliner_CH01553.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2003",
    "puissance_ch": 426,
    "vitesse_max_kmh": 274,
@@ -761,9 +761,9 @@
     "two-seater",
     "sports car"
    ],
-   "imageCredit": "kitmasterbloke",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Bentley_Continental_coup%C3%A9_by_Park_Ward.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_Bentley_Continental_T_Mulliner_CH01553.jpg"
   },
   {
    "id": "bentley_corniche",
@@ -1021,7 +1021,7 @@
   {
    "id": "bentley_mulsanne-speed",
    "name": "Mulsanne Speed",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/1986_Bentley_Mulsanne.jpg/1280px-1986_Bentley_Mulsanne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bentley_Mulsanne_Speed_%282009%29_1X7A7441.jpg/1280px-Bentley_Mulsanne_Speed_%282009%29_1X7A7441.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - 2020",
    "puissance_ch": 537,
    "vitesse_max_kmh": 305,
@@ -1047,9 +1047,9 @@
     "high-performance",
     "luxury sedan"
    ],
-   "imageCredit": "Calreyn88",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1986_Bentley_Mulsanne.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Mulsanne_Speed_(2009)_1X7A7441.jpg"
   },
   {
    "id": "bentley_s1",
@@ -1120,7 +1120,7 @@
   {
    "id": "bentley_s3",
    "name": "S3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/BentleyS3.jpg/1280px-BentleyS3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Bentley_S3_%282023%29.jpg/1280px-Bentley_S3_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1962 - 1965",
    "puissance_ch": 220,
    "vitesse_max_kmh": 185,
@@ -1146,9 +1146,9 @@
     "vehicle",
     "audi"
    ],
-   "imageCredit": "MickStephenson",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BentleyS3.jpg"
+   "imageCredit": "JoachimKohler-HB",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_S3_(2023).jpg"
   },
   {
    "id": "bentley_t-series",
@@ -1460,12 +1460,8 @@
   {
    "id": "bentley_blizzard",
    "name": "Blizzard",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/1950_Bentley_Blizzard_HCC24.jpg/1280px-1950_Bentley_Blizzard_HCC24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "MrWalkr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1950_Bentley_Blizzard_HCC24.jpg"
+   "tags": []
   }
  ]
 }

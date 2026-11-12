@@ -3688,12 +3688,12 @@
   {
    "id": "audi_q9",
    "name": "Q9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2026_Audi_Q9_right_front_-_Autowizja_%28cropped%29.jpg/1280px-2026_Audi_Q9_right_front_-_Autowizja_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/2026_Audi_Q9_rear_-_Autowizja.jpg/1280px-2026_Audi_Q9_rear_-_Autowizja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2025 - Aujourd'hui",
    "tags": [],
    "imageCredit": "Autowizja",
    "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Audi_Q9_right_front_-_Autowizja_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Audi_Q9_rear_-_Autowizja.jpg"
   },
   {
    "id": "audi_a6-c9",
@@ -3708,12 +3708,12 @@
   {
    "id": "audi_nuvolari",
    "name": "Nuvolari",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/27_Audi_Nuvolari.jpg/1280px-27_Audi_Nuvolari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/AUDI_Nuvolari_Quattro_%28859317621%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "HJUdall",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:27_Audi_Nuvolari.jpg"
+   "imageCredit": "Esteban De SOUSA SEIBANE from Segovia, España",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:AUDI_Nuvolari_Quattro_(859317621).jpg"
   },
   {
    "id": "audi_f103",

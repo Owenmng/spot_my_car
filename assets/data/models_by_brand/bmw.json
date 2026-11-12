@@ -99,7 +99,7 @@
   {
    "id": "bmw_116",
    "name": "116",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/BMW_1600_%283568123910%29_%28cropped%29.jpg/1280px-BMW_1600_%283568123910%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/BMW_1-Series_%28F20%29_116d_%282015%29_%2852067046257%29.jpg/1280px-BMW_1-Series_%28F20%29_116d_%282015%29_%2852067046257%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2019",
    "puissance_ch": 116,
    "vitesse_max_kmh": 200,
@@ -125,9 +125,9 @@
     "second hand car",
     "used car"
    ],
-   "imageCredit": "nakhon100",
+   "imageCredit": "Charles from Port Chester, New York",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_1600_(3568123910)_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_1-Series_(F20)_116d_(2015)_(52067046257).jpg"
   },
   {
    "id": "bmw_118",
@@ -195,7 +195,6 @@
   {
    "id": "bmw_125",
    "name": "125",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/BMW_C1_125_%2816262701158%29.jpg/1280px-BMW_C1_125_%2816262701158%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - Aujourd'hui",
    "puissance_ch": 218,
    "vitesse_max_kmh": 240,
@@ -218,10 +217,7 @@
     "personal transport",
     "lightweight vehicle",
     "commuter vehicle"
-   ],
-   "imageCredit": "Dennis Elzinga",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_C1_125_(16262701158).jpg"
+   ]
   },
   {
    "id": "bmw_130",
@@ -609,7 +605,7 @@
   {
    "id": "bmw_2-series-gran-tourer",
    "name": "2 Series Gran Tourer",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/BMW_550i_%28F10%29_%E2%80%93_Frontansicht_%282%29%2C_17._Juli_2011%2C_Mettmann.jpg/1280px-BMW_550i_%28F10%29_%E2%80%93_Frontansicht_%282%29%2C_17._Juli_2011%2C_Mettmann.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/BMW_2_SERIES_GRAN_TOURER_%28F46%29_China.jpg/1280px-BMW_2_SERIES_GRAN_TOURER_%28F46%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 136,
    "vitesse_max_kmh": 200,
@@ -635,9 +631,9 @@
     "petrol",
     "diesel"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_550i_(F10)_%E2%80%93_Frontansicht_(2),_17._Juli_2011,_Mettmann.jpg"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2_SERIES_GRAN_TOURER_(F46)_China.jpg"
   },
   {
    "id": "bmw_2000",
@@ -793,7 +789,6 @@
   {
    "id": "bmw_2200",
    "name": "2200",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Vladivostok._The_historian-mechanic_museum_Automotoantiquity_%28%C2%ABAutomotostarina%C2%BB%29._BMW_R_35_DSC01252_2200.jpg/1280px-Vladivostok._The_historian-mechanic_museum_Automotoantiquity_%28%C2%ABAutomotostarina%C2%BB%29._BMW_R_35_DSC01252_2200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1972",
    "puissance_ch": 125,
    "vitesse_max_kmh": 190,
@@ -815,10 +810,7 @@
     "city car",
     "hatchback",
     "economy car"
-   ],
-   "imageCredit": "Alexxx1979",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Vladivostok._The_historian-mechanic_museum_Automotoantiquity_(%C2%ABAutomotostarina%C2%BB)._BMW_R_35_DSC01252_2200.jpg"
+   ]
   },
   {
    "id": "bmw_2500",
@@ -1006,7 +998,7 @@
   {
    "id": "bmw_3.0-csl",
    "name": "3.0 CSL",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/BMW_E46_front_20080328.jpg/1280px-BMW_E46_front_20080328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Amon%2C_Chris_-_BMW_3%2C5_CSL_%281973-07-08_Sp%29.jpg/1280px-Amon%2C_Chris_-_BMW_3%2C5_CSL_%281973-07-08_Sp%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - 2023",
    "puissance_ch": 560,
    "vitesse_max_kmh": 306,
@@ -1033,9 +1025,9 @@
     "car",
     "motor vehicle"
    ],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_E46_front_20080328.jpg"
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Amon,_Chris_-_BMW_3,5_CSL_(1973-07-08_Sp).jpg"
   },
   {
    "id": "bmw_3.3li",
@@ -1165,7 +1157,7 @@
   {
    "id": "bmw_4-series-gran-coupe",
    "name": "4 Series Gran Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/BMW_G20_%282022%29_IMG_7316_%282%29.jpg/1280px-BMW_G20_%282022%29_IMG_7316_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2024_BMW_4_Series_Gran_Coup%C3%A9_%28G26%29_IMG_2400.jpg/1280px-2024_BMW_4_Series_Gran_Coup%C3%A9_%28G26%29_IMG_2400.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 184,
    "vitesse_max_kmh": 235,
@@ -1191,7 +1183,7 @@
    ],
    "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_G20_(2022)_IMG_7316_(2).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_BMW_4_Series_Gran_Coup%C3%A9_(G26)_IMG_2400.jpg"
   },
   {
    "id": "bmw_5-series",
@@ -1321,7 +1313,7 @@
   {
    "id": "bmw_502",
    "name": "502",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/BMW_502%2C_Typenschild.JPG/1280px-BMW_502%2C_Typenschild.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/BMW_502_Limousine_ADAC_Deutschland_Klassik_2018_6290523.jpg/1280px-BMW_502_Limousine_ADAC_Deutschland_Klassik_2018_6290523.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1963",
    "puissance_ch": 100,
    "vitesse_max_kmh": 170,
@@ -1346,9 +1338,9 @@
     "pre-war car",
     "1930s car"
    ],
-   "imageCredit": "Lothar Spurzem",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_502,_Typenschild.JPG"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_502_Limousine_ADAC_Deutschland_Klassik_2018_6290523.jpg"
   },
   {
    "id": "bmw_503",
@@ -1452,7 +1444,7 @@
   {
    "id": "bmw_6-series-gran-coupe",
    "name": "6 Series Gran Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/2018_BMW_420i_M_Sport_Automatic_2.0_Front_%281%29.jpg/1280px-2018_BMW_420i_M_Sport_Automatic_2.0_Front_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/BMW_6-Series_F06_Gran_Coup%C3%A9_02_Auto_Chongqing_2012-06-07.jpg/1280px-BMW_6-Series_F06_Gran_Coup%C3%A9_02_Auto_Chongqing_2012-06-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2019",
    "puissance_ch": 320,
    "vitesse_max_kmh": 250,
@@ -1475,9 +1467,9 @@
     "grand tourer",
     "four-door coupe"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_BMW_420i_M_Sport_Automatic_2.0_Front_(1).jpg"
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_6-Series_F06_Gran_Coup%C3%A9_02_Auto_Chongqing_2012-06-07.jpg"
   },
   {
    "id": "bmw_6-series-gt",
@@ -1994,7 +1986,7 @@
   {
    "id": "alpina_c2",
    "name": "Alpina C2",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/BMW_Nazca_C2_%286957208570%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/1985_BMW_Alpina_C2_2.5.jpg/1280px-1985_BMW_Alpina_C2_2.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1988",
    "puissance_ch": 185,
    "vitesse_max_kmh": 220,
@@ -2019,9 +2011,9 @@
     "classic car",
     "collectible car"
    ],
-   "imageCredit": "Hitman from United Kingdom",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Nazca_C2_(6957208570)_(cropped).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1985_BMW_Alpina_C2_2.5.jpg"
   },
   {
    "id": "alpina_d10",
@@ -2961,7 +2953,7 @@
   {
    "id": "bmw_m3-touring",
    "name": "M3 Touring",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/BMW_M3_Competition_%28G80%29_IMG_4041.jpg/1280px-BMW_M3_Competition_%28G80%29_IMG_4041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/BMW_M3_%28E46%29_Touring_Retro_Classics_2025_DSC_7690.jpg/1280px-BMW_M3_%28E46%29_Touring_Retro_Classics_2025_DSC_7690.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 510,
    "vitesse_max_kmh": 250,
@@ -2988,7 +2980,7 @@
    ],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M3_Competition_(G80)_IMG_4041.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M3_(E46)_Touring_Retro_Classics_2025_DSC_7690.jpg"
   },
   {
    "id": "bmw_m340i",
@@ -3187,7 +3179,7 @@
   {
    "id": "bmw_m6-gran-coupe",
    "name": "M6 Gran Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2017-03-07_Geneva_Motor_Show_0996.JPG/1280px-2017-03-07_Geneva_Motor_Show_0996.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/BMW_M6_Gran_Coup%C3%A9_%28F06%29_Washington_DC_Metro_Area%2C_USA.jpg/1280px-BMW_M6_Gran_Coup%C3%A9_%28F06%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - 2018",
    "puissance_ch": 560,
    "vitesse_max_kmh": 250,
@@ -3212,14 +3204,13 @@
     "mid-size car",
     "executive car"
    ],
-   "imageCredit": "Norbert Aepli, Switzerland (User:Noebu)",
+   "imageCredit": "OWS Photography",
    "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017-03-07_Geneva_Motor_Show_0996.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M6_Gran_Coup%C3%A9_(F06)_Washington_DC_Metro_Area,_USA.jpg"
   },
   {
    "id": "bmw_m760i",
    "name": "M760i",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_%2839516099000%29.jpg/1280px-BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_%2839516099000%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2023",
    "puissance_ch": 585,
    "vitesse_max_kmh": 250,
@@ -3244,10 +3235,7 @@
     "vehicle",
     "motor vehicle",
     "grand tourer"
-   ],
-   "imageCredit": "Nan Palmero from San Antonio, TX, USA",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_(39516099000).jpg"
+   ]
   },
   {
    "id": "bmw_m8",
@@ -3509,7 +3497,7 @@
   {
    "id": "bmw_x3-m",
    "name": "X3 M",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/BMW_G45_20_IMG_3794.jpg/1280px-BMW_G45_20_IMG_3794.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/BMW_X3_M_%28G01%29_1X7A6436.jpg/1280px-BMW_X3_M_%28G01%29_1X7A6436.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 510,
    "vitesse_max_kmh": 250,
@@ -3535,9 +3523,9 @@
     "m series",
     "german car"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_G45_20_IMG_3794.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X3_M_(G01)_1X7A6436.jpg"
   },
   {
    "id": "bmw_x3-m40i",
@@ -3605,7 +3593,7 @@
   {
    "id": "bmw_x4-m",
    "name": "X4 M",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/2018_BMW_X4_xDrive20d_M_Sport_Automatic_2.0.jpg/1280px-2018_BMW_X4_xDrive20d_M_Sport_Automatic_2.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/BMW_X4_M_Competition_%28G02%29_FL_IMG_6824.jpg/1280px-BMW_X4_M_Competition_%28G02%29_FL_IMG_6824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 510,
    "vitesse_max_kmh": 250,
@@ -3630,9 +3618,9 @@
     "german car",
     "twinpower turbo"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_BMW_X4_xDrive20d_M_Sport_Automatic_2.0.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M_Competition_(G02)_FL_IMG_6824.jpg"
   },
   {
    "id": "bmw_x4-m40i",
@@ -3700,7 +3688,7 @@
   {
    "id": "bmw_x5-m",
    "name": "X5 M",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_BMW_X5_M50d_Automatic_3.0.jpg/1280px-2019_BMW_X5_M50d_Automatic_3.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/BMW_X5_M_%2873885%29.jpg/1280px-BMW_X5_M_%2873885%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2010 - Aujourd'hui",
    "puissance_ch": 625,
    "vitesse_max_kmh": 250,
@@ -3725,9 +3713,9 @@
     "motor vehicle",
     "powerful suv"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_BMW_X5_M50d_Automatic_3.0.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X5_M_(73885).jpg"
   },
   {
    "id": "bmw_x5-m50i",
@@ -4055,7 +4043,7 @@
   {
    "id": "bmw_z4-m",
    "name": "Z4 M",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2011_BMW_Z4_sDrive23i_M_Sport_Highline_2.5.jpg/1280px-2011_BMW_Z4_sDrive23i_M_Sport_Highline_2.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2006_BMW_Z4_M_1.jpg/1280px-2006_BMW_Z4_M_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2008",
    "puissance_ch": 343,
    "vitesse_max_kmh": 250,
@@ -4081,9 +4069,9 @@
     "bmw z4 m coupe",
     "m series"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_BMW_Z4_sDrive23i_M_Sport_Highline_2.5.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_BMW_Z4_M_1.jpg"
   },
   {
    "id": "bmw_z8",
@@ -4190,12 +4178,12 @@
   {
    "id": "bmw_z4-gte",
    "name": "Z4 GTE",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/GTE_2013_BMW_Z4_2015_Marc_VDS_Racing_Team_ELMS_Imola.jpg/1280px-GTE_2013_BMW_Z4_2015_Marc_VDS_Racing_Team_ELMS_Imola.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/BMW_Z4_GTE_%288734698866%29.jpg/1280px-BMW_Z4_GTE_%288734698866%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "MC12GT1",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:GTE_2013_BMW_Z4_2015_Marc_VDS_Racing_Team_ELMS_Imola.jpg"
+   "imageCredit": "jason goulding from Muswellbrook, Australia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Z4_GTE_(8734698866).jpg"
   },
   {
    "id": "bmw_750",
@@ -4369,14 +4357,14 @@
   {
    "id": "bmw_new-class-coupe",
    "name": "New Class coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/BMW_2000_Automatic_1X7A6555.jpg/1280px-BMW_2000_Automatic_1X7A6555.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/BMW_New_Class_Coupe%2C_Berlin_%2820150511-DSC05114%29.jpg/1280px-BMW_New_Class_Coupe%2C_Berlin_%2820150511-DSC05114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4500 x 1710 x 1450",
    "poids_kg": 1130,
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2000_Automatic_1X7A6555.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_New_Class_Coupe,_Berlin_(20150511-DSC05114).jpg"
   },
   {
    "id": "bmw_lovos",
@@ -4533,12 +4521,12 @@
   {
    "id": "bmw_f78",
    "name": "F78",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/BMW_M235L_%28F78%29_China.jpg/1280px-BMW_M235L_%28F78%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/BMW_M235L_%28F78%29_China_%282%29.jpg/1280px-BMW_M235L_%28F78%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M235L_(F78)_China.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M235L_(F78)_China_(2).jpg"
   },
   {
    "id": "bmw_m5-e60",
