@@ -36,7 +36,7 @@ jobs:
         continue-on-error: true
         env:
           BUDGET_MIN: '180'
-          VISION_MAX: '700'
+          VISION_MAX: '150'
         run: python3 -u tool/fix_images.py
       - name: Commit et nouvelle version
         if: always()
