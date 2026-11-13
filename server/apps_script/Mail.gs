@@ -201,7 +201,7 @@ function renderMail_(kind, t, k, v) {
   return '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light only"><title>' + title + '</title></head>' +
     '<body style="margin:0;padding:0;background:' + C.bg + ';-webkit-text-size-adjust:100%;">' +
-    '<div style="display:none;max-height:0;overflow:hidden;opacity:0;">' + pre + '&#8199;&#65279;&#847;'.repeat(30) + '</div>' +
+    '<div style="display:none;max-height:0;overflow:hidden;opacity:0;">' + pre + '</div>' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:' + C.bg + ';"><tr><td align="center" style="padding:28px 12px;">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;">' +
     // en-tête

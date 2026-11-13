@@ -23,7 +23,7 @@ function previewMails() {
 }
 
 function deployRules() {
-  const content = HtmlService.createHtmlOutputFromFile('firestore_rules').getContent();
+  const content = b64text_(FIRESTORE_RULES_B64);
   const rs = gapi_('post', 'https://firebaserules.googleapis.com/v1/projects/' + PROJECT + '/rulesets', {
     source: { files: [{ name: 'firestore.rules', content: content }] },
   });
@@ -33,6 +33,10 @@ function deployRules() {
   return rs.name;
 }
 
+function b64text_(b64) {
+  return Utilities.newBlob(Utilities.base64Decode(b64)).getDataAsString('UTF-8');
+}
+
 function hex_(bytes) {
   return bytes.map((b) => ('0' + (b & 0xff).toString(16)).slice(-2)).join('');
 }
@@ -40,11 +44,8 @@ function hex_(bytes) {
 function deployHosting() {
   const site = PROJECT;
   const H = 'https://firebasehosting.googleapis.com/v1beta1';
-  const files = {
-    '/index.html': HtmlService.createHtmlOutputFromFile('site_index').getContent(),
-    '/admin/index.html': HtmlService.createHtmlOutputFromFile('site_admin').getContent().replace('__SERVER_URL__', serverUrl_()),
-    '/confidentialite/index.html': HtmlService.createHtmlOutputFromFile('site_privacy').getContent(),
-  };
+  const files = {};
+  Object.keys(SITE_FILES).forEach((k) => (files[k] = b64text_(SITE_FILES[k]).replace('__SERVER_URL__', serverUrl_())));
   const blobs = {};
   const hashes = {};
   Object.keys(files).forEach((path) => {
