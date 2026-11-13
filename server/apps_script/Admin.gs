@@ -1,5 +1,23 @@
 /** API de la console d'administration (réservée aux adresses de ADMIN_EMAILS). */
 
+/** Cache serveur court (60 s) : la console reste instantanée même avec beaucoup de clics. */
+function cached_(key, ttl, fn) {
+  const cache = CacheService.getScriptCache();
+  try {
+    const hit = cache.get(key);
+    if (hit) return JSON.parse(hit);
+  } catch (e) {}
+  const v = fn();
+  try {
+    const txt = JSON.stringify(v);
+    if (txt.length < 95000) cache.put(key, txt, ttl);
+  } catch (e) {}
+  return v;
+}
+function bust_() {
+  CacheService.getScriptCache().removeAll(['adm:users', 'adm:overview']);
+}
+
 function tsMs_(v) {
   if (!v) return 0;
   if (typeof v === 'number') return v;
@@ -10,6 +28,11 @@ function tsMs_(v) {
 }
 
 function adminUsers_(r) {
+  if (r && r.fresh) bust_();
+  return cached_('adm:users', 60, () => adminUsersRaw_());
+}
+
+function adminUsersRaw_() {
   const auth = authAll_();
   const profiles = {};
   listDocs_('users', 5000).forEach((d) => (profiles[d.id] = d.data));
@@ -69,6 +92,7 @@ function adminUser_(r) {
 }
 
 function adminSetDisabled_(r) {
+  bust_();
   const uid = safeId_(r.uid);
   authUpdate_({ localId: uid, disableUser: !!r.disabled });
   logEvent_(r.disabled ? 'admin.disable' : 'admin.enable', { uid: uid });
@@ -76,6 +100,7 @@ function adminSetDisabled_(r) {
 }
 
 function adminDeleteUser_(r) {
+  bust_();
   const uid = safeId_(r.uid);
   const a = authLookupUid_(uid);
   deleteUserEverywhere_(uid);
@@ -84,6 +109,7 @@ function adminDeleteUser_(r) {
 }
 
 function adminMarkVerified_(r) {
+  bust_();
   const uid = safeId_(r.uid);
   fsPatch_('users/' + uid, { emailCodeVerified: true, emailCodeVerifiedAt: new Date() });
   try { authUpdate_({ localId: uid, emailVerified: true }); } catch (e) { console.warn(e); }
@@ -134,6 +160,11 @@ function adminSupportUpdate_(r) {
 }
 
 function adminOverview_(r) {
+  if (r && r.fresh) bust_();
+  return cached_('adm:overview', 60, () => adminOverviewRaw_());
+}
+
+function adminOverviewRaw_() {
   const now = Date.now();
   const day = 86400000;
   const auth = authAll_();

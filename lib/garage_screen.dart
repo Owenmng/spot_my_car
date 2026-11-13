@@ -13,7 +13,6 @@ import 'package:spot_my_car/quiz_screen.dart';
 import 'package:spot_my_car/widgets/car_image.dart';
 import 'package:spot_my_car/model_detail_screen.dart';
 import 'package:spot_my_car/services/wishlist_service.dart';
-import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/daily_challenge.dart';
 import 'package:spot_my_car/services/data_manager.dart';
@@ -25,6 +24,7 @@ import 'package:spot_my_car/spotted_car_detail_screen.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
+import 'package:spot_my_car/widgets/garage_hero.dart';
 
 enum _Filter { all, rare, week, photo }
 
@@ -326,7 +326,6 @@ class _Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = Theme.of(context).colorScheme.primary;
     final top = MediaQuery.paddingOf(context).top;
 
     return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
@@ -335,12 +334,7 @@ class _Header extends StatelessWidget {
         final data = snap.data?.data() ?? {};
         final pseudo = (data['pseudo'] as String?)?.trim();
         final xp = (data['totalXp'] as num?)?.toInt() ?? 0;
-        final level = levelForXp(xp);
-        final next = nextLevel(level);
-        final progress = levelProgress(xp);
         final streak = spotStreak(cars);
-        final rare = cars.where((c) => rarityOfSpot(c).index >= Rarity.rare.index).length;
-        final brands = cars.map((c) => c['brandName']).whereType<String>().toSet().length;
 
         return Padding(
           padding: EdgeInsets.fromLTRB(16, top + 12, 16, 0),
@@ -379,69 +373,7 @@ class _Header extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 18),
-              Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: AppColors.panel,
-                  border: Border.all(color: AppColors.line),
-                  borderRadius: BorderRadius.circular(AppRadius.xl),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 44,
-                          height: 44,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(14)),
-                          child: Text('${level.level}', style: AppText.display(20, color: Theme.of(context).colorScheme.onPrimary)),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(level.title, style: AppText.display(18)),
-                              const SizedBox(height: 2),
-                              Text(
-                                next == null ? tr('{0} XP · niveau max', [xp]) : tr('{0} / {1} XP', [xp, next.xpRequired]),
-                                style: AppText.body(13, color: AppColors.inkSoft, weight: FontWeight.w600),
-                              ),
-                            ],
-                          ),
-                        ),
-                        if (streak > 0)
-                          Tooltip(
-                            message: tr('Jours de spot d’affilée'),
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                              decoration: BoxDecoration(color: AppColors.panelHi, borderRadius: BorderRadius.circular(99)),
-                              child: Row(
-                                children: [
-                                  const Icon(Icons.local_fire_department_rounded, size: 16, color: Color(0xFFFF8A3D)),
-                                  const SizedBox(width: 4),
-                                  Text('$streak j', style: AppText.body(14, weight: FontWeight.w800)),
-                                ],
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    RevLights(value: progress),
-                    const SizedBox(height: 18),
-                    Row(
-                      children: [
-                        Expanded(child: StatPill(value: '${cars.length}', label: 'spots')),
-                        Expanded(child: StatPill(value: '$brands', label: 'marques')),
-                        Expanded(child: StatPill(value: '$rare', label: tr('rares et +'))),
-                      ],
-                    ),
-                  ],
-                ),
-              ).animate().fadeIn(duration: 350.ms).slideY(begin: 0.05, end: 0),
+              GarageHero(xp: xp, cars: cars, streak: streak, rarityOf: rarityOfSpot),
               const SizedBox(height: 12),
               _ChallengeCard(
                 cars: cars,

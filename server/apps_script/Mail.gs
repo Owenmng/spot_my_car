@@ -107,7 +107,8 @@ const T = {
 };
 
 const C = {
-  red: '#E5202E', ink: '#121216', soft: '#5A5A66', muted: '#8D8D98', line: '#E6E6EC', bg: '#F1F1F5', dark: '#0A0A0D', green: '#1FA463', amber: '#B26A00',
+  red: '#E5202E', orange: '#FF7A1A', gold: '#FFC94D', green: '#34C77B', amber: '#F2A93B',
+  bg: '#07070A', card: '#111116', card2: '#18181F', line: '#26262F', ink: '#F4F4F6', soft: '#B4B4BE', muted: '#7C7C88',
 };
 
 function esc_(s) {
@@ -122,11 +123,10 @@ function sendMail_(to, kind, lang, vars) {
   const k = t[kind] || {};
   vars = vars || {};
   const subject = kind === 'custom' ? vars.subject : fill_(k.subject, { code: vars.code, subject: vars.subject, ticket: vars.ticket });
-  const html = renderMail_(kind, t, k, vars);
   MailApp.sendEmail({
     to: to,
     subject: subject,
-    htmlBody: html,
+    htmlBody: renderMail_(kind, t, k, vars),
     body: plain_(kind, t, k, vars),
     name: APP_NAME,
     replyTo: 'noreply.spotmycar@gmail.com',
@@ -147,82 +147,93 @@ function plain_(kind, t, k, v) {
   return lines.join('\n');
 }
 
+const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+const DISPLAY = "'Barlow Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif";
+
 function codeBlock_(code) {
-  const digits = String(code).split('').map((d) =>
-    '<td style="padding:0 3px;"><div style="width:46px;height:58px;line-height:58px;border-radius:12px;background:#F4F4F7;border:1px solid ' + C.line +
-    ';font-family:\'SF Mono\',Menlo,Consolas,\'Courier New\',monospace;font-size:30px;font-weight:800;color:' + C.ink + ';text-align:center;">' + d + '</div></td>'
-  ).join('');
-  return '<table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:26px auto 10px;"><tr>' + digits + '</tr></table>';
+  const cell = (d) => '<td style="padding:0 4px;"><div style="width:44px;height:60px;line-height:60px;border-radius:12px;background:' + C.card2 +
+    ';border:1px solid ' + C.line + ';border-bottom:3px solid ' + C.red + ';font-family:\'SF Mono\',Menlo,Consolas,\'Courier New\',monospace;font-size:30px;font-weight:800;color:#FFFFFF;text-align:center;">' + d + '</div></td>';
+  const d = String(code).split('');
+  return '<table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:28px auto 12px;"><tr>' +
+    d.slice(0, 3).map(cell).join('') + '<td style="width:14px;"></td>' + d.slice(3).map(cell).join('') + '</tr></table>';
 }
 
+const ICONS = { verify: '✉️', reset: '🔑', resetDone: '🔒', delete: '⚠️', deleted: '👋', welcome: '🏁', supportAck: '💬', custom: '📣' };
+const KICK = {
+  fr: { verify: 'VÉRIFICATION', reset: 'SÉCURITÉ', resetDone: 'SÉCURITÉ', delete: 'COMPTE', deleted: 'COMPTE', welcome: 'BIENVENUE', supportAck: 'SUPPORT', custom: 'MESSAGE' },
+  en: { verify: 'VERIFICATION', reset: 'SECURITY', resetDone: 'SECURITY', delete: 'ACCOUNT', deleted: 'ACCOUNT', welcome: 'WELCOME', supportAck: 'SUPPORT', custom: 'MESSAGE' },
+};
+
 function renderMail_(kind, t, k, v) {
-  const greet = esc_(fill_(t.hello, { name: t.hi(v.name ? esc_(v.name) : '') }));
+  const lang = Object.keys(T).find((l) => T[l] === t) || 'en';
+  const kick = (KICK[lang] || KICK.en)[kind] || '';
+  const greet = esc_(fill_(t.hello, { name: t.hi(v.name ? v.name : '') }));
   let title = esc_(k.title || '');
   let body = '';
-  let accent = C.red;
-  let icon = '';
+  const p = (x, extra) => '<p style="margin:0 0 14px;font-family:' + FONT + ';font-size:16px;line-height:1.6;color:' + C.soft + ';' + (extra || '') + '">' + x + '</p>';
   if (kind === 'custom') {
     title = esc_(v.subject);
-    body = '<p style="margin:0 0 14px;">' + greet + '</p>' + esc_(v.message).replace(/\n{2,}/g, '</p><p style="margin:0 0 14px;">').replace(/\n/g, '<br>');
-    body = '<p style="margin:0 0 14px;">' + body + '</p><p style="margin:22px 0 0;color:' + C.soft + ';">— ' + esc_(t.team) + '</p>';
+    body = p(greet, 'color:' + C.ink + ';font-weight:600;') + esc_(v.message).split(/\n{2,}/).map((para) => p(para.replace(/\n/g, '<br>'))).join('');
   } else {
-    body = '<p style="margin:0 0 14px;">' + greet + '</p><p style="margin:0;">' + esc_(fill_(k.body, { subject: v.subject, ticket: v.ticket })) + '</p>';
+    body = p(greet, 'color:' + C.ink + ';font-weight:600;') + p(esc_(fill_(k.body, { subject: v.subject, ticket: v.ticket })));
   }
-  if (kind === 'delete' || kind === 'deleted') accent = C.dark;
-  if (kind === 'resetDone') icon = '🔒';
-  if (kind === 'verify') icon = '✉️';
-  if (kind === 'reset') icon = '🔑';
-  if (kind === 'delete') icon = '⚠️';
-  if (kind === 'deleted') icon = '👋';
-  if (kind === 'welcome') icon = '🏁';
-  if (kind === 'supportAck') icon = '💬';
 
   let extra = '';
   if (v.code) {
     extra += codeBlock_(v.code);
-    extra += '<p style="margin:0;text-align:center;font-size:13px;color:' + C.muted + ';">' + esc_(t.codeValid) + '</p>';
+    extra += '<p style="margin:0;text-align:center;font-family:' + FONT + ';font-size:13px;color:' + C.muted + ';">⏱ ' + esc_(t.codeValid) + '</p>';
   }
   if (kind === 'welcome' && k.steps) {
-    extra += '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:22px 0 6px;">' +
-      k.steps.map((s) => '<tr><td style="padding:10px 14px;border-radius:12px;background:#F6F6F9;font-size:15px;line-height:1.45;color:' + C.ink + ';">' + esc_(s) + '</td></tr><tr><td style="height:8px;"></td></tr>').join('') +
-      '</table><p style="margin:14px 0 0;font-weight:700;">' + esc_(k.end) + '</p>';
+    extra += '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 4px;">' +
+      k.steps.map((st) => {
+        const ic = st.slice(0, 2), txt = st.slice(2).trim();
+        return '<tr><td style="padding:0 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:' + C.card2 + ';border:1px solid ' + C.line + ';border-radius:14px;"><tr>' +
+          '<td width="52" align="center" style="padding:14px 0 14px 12px;font-size:24px;">' + ic + '</td>' +
+          '<td style="padding:14px 16px 14px 8px;font-family:' + FONT + ';font-size:15px;line-height:1.45;color:' + C.ink + ';">' + esc_(txt) + '</td></tr></table></td></tr>';
+      }).join('') + '</table>' +
+      '<p style="margin:16px 0 0;font-family:' + DISPLAY + ';font-size:24px;font-weight:800;letter-spacing:1px;color:#FFFFFF;text-transform:uppercase;">' + esc_(k.end) + '</p>';
   }
-  if (kind === 'deleted' && k.cta) extra += '<p style="margin:18px 0 0;color:' + C.soft + ';">' + esc_(k.cta) + '</p>';
+  if (kind === 'deleted' && k.cta) extra += p(esc_(k.cta), 'margin-top:18px;');
   if (kind === 'resetDone' && k.warn) {
-    extra += '<div style="margin:22px 0 0;padding:14px 16px;border-radius:12px;background:#FFF6E5;border:1px solid #F5D9A3;color:' + C.amber + ';font-size:14px;">' + esc_(k.warn) + '</div>';
+    extra += '<div style="margin:22px 0 0;padding:14px 16px;border-radius:14px;background:#2A1E0B;border:1px solid #5A4318;color:' + C.amber + ';font-family:' + FONT + ';font-size:14px;line-height:1.5;">⚠️ ' + esc_(k.warn) + '</div>';
   }
-  let security = '';
-  if (v.code) {
-    security = '<tr><td style="padding:0 36px 30px;"><div style="padding:14px 16px;border-radius:12px;background:#F6F6F9;font-size:13px;line-height:1.5;color:' + C.soft + ';">' +
-      '🛡️ ' + esc_(t.neverAsk) + '<br>' + esc_(t.notYou) + '</div></td></tr>';
-  }
+  const security = v.code
+    ? '<tr><td style="padding:0 34px 28px;"><div style="padding:14px 16px;border-radius:14px;background:' + C.card2 + ';border:1px solid ' + C.line + ';font-family:' + FONT + ';font-size:13px;line-height:1.55;color:' + C.muted + ';">🛡️ ' +
+      esc_(t.neverAsk) + '<br>' + esc_(t.notYou) + '</div></td></tr>'
+    : '';
   const pre = esc_(kind === 'custom' ? k.pre : fill_(k.pre || '', { ticket: v.ticket }));
+  const accent = kind === 'delete' || kind === 'deleted' ? '#8C8C96' : kind === 'resetDone' ? C.amber : kind === 'welcome' ? C.gold : C.red;
 
   return '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light only"><title>' + title + '</title></head>' +
-    '<body style="margin:0;padding:0;background:' + C.bg + ';-webkit-text-size-adjust:100%;">' +
+    '<meta name="color-scheme" content="dark"><meta name="supported-color-schemes" content="dark"><title>' + title + '</title>' +
+    '<style>:root{color-scheme:dark}html,body{margin:0;padding:0;background:' + C.bg + ';}@media (max-width:520px){.px{padding-left:22px!important;padding-right:22px!important}.h1{font-size:30px!important}}</style></head>' +
+    '<body style="margin:0;padding:0;background:' + C.bg + ';">' +
     '<div style="display:none;max-height:0;overflow:hidden;opacity:0;">' + pre + '</div>' +
-    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:' + C.bg + ';"><tr><td align="center" style="padding:28px 12px;">' +
-    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,Helvetica,Arial,sans-serif;">' +
-    // en-tête
-    '<tr><td style="background:' + C.dark + ';border-radius:22px 22px 0 0;padding:26px 30px;">' +
-    '<table role="presentation" cellpadding="0" cellspacing="0"><tr>' +
-    '<td style="vertical-align:middle;"><img src="cid:logo" width="44" height="44" alt="Spot My Car" style="display:block;border-radius:11px;"></td>' +
-    '<td style="vertical-align:middle;padding-left:12px;"><div style="font-family:\'Barlow Condensed\',\'Arial Narrow\',Arial,sans-serif;font-size:22px;font-weight:800;letter-spacing:1.5px;color:#FFFFFF;">SPOT <span style="color:' + C.red + ';">MY</span> CAR</div>' +
-    '<div style="font-size:10px;letter-spacing:2.5px;color:#9A9AA6;font-weight:700;margin-top:2px;">LE CARSPOTTING, EN COLLECTION</div></td>' +
-    '</tr></table></td></tr>' +
-    '<tr><td style="height:4px;background:' + accent + ';background-image:linear-gradient(90deg,' + C.red + ',#FF7A1A);line-height:4px;font-size:0;">&nbsp;</td></tr>' +
-    // contenu
-    '<tr><td style="background:#FFFFFF;padding:34px 36px 26px;font-size:16px;line-height:1.55;color:' + C.ink + ';">' +
-    (icon ? '<div style="font-size:30px;line-height:1;margin-bottom:12px;">' + icon + '</div>' : '') +
-    '<h1 style="margin:0 0 18px;font-size:25px;line-height:1.2;font-weight:800;color:' + C.ink + ';">' + title + '</h1>' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' + C.bg + '" style="background:' + C.bg + ';background-image:radial-gradient(ellipse at top,#3A0B12 0%,' + C.bg + ' 60%);"><tr><td align="center" style="padding:30px 12px 34px;">' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">' +
+    // logo
+    '<tr><td align="center" style="padding:0 0 22px;"><table role="presentation" cellpadding="0" cellspacing="0"><tr>' +
+    '<td style="vertical-align:middle;"><img src="cid:logo" width="46" height="46" alt="" style="display:block;border-radius:12px;"></td>' +
+    '<td style="vertical-align:middle;padding-left:12px;"><div style="font-family:' + DISPLAY + ';font-size:24px;font-weight:800;letter-spacing:2px;color:#FFFFFF;">SPOT <span style="color:' + C.red + ';">MY</span> CAR</div>' +
+    '<div style="font-family:' + FONT + ';font-size:9.5px;letter-spacing:3px;color:' + C.muted + ';font-weight:700;">LE CARSPOTTING, EN COLLECTION</div></td></tr></table></td></tr>' +
+    // carte
+    '<tr><td bgcolor="' + C.card + '" style="background:' + C.card + ';border:1px solid ' + C.line + ';border-radius:24px;overflow:hidden;">' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' +
+    '<tr><td style="height:5px;line-height:5px;font-size:0;background:' + accent + ';background-image:linear-gradient(90deg,' + C.red + ',' + C.orange + ',' + C.gold + ');border-radius:24px 24px 0 0;">&nbsp;</td></tr>' +
+    '<tr><td class="px" style="padding:30px 34px 8px;">' +
+    '<table role="presentation" cellpadding="0" cellspacing="0"><tr><td style="width:52px;height:52px;border-radius:16px;background:' + C.card2 + ';border:1px solid ' + C.line + ';text-align:center;font-size:26px;line-height:52px;">' + (ICONS[kind] || '') + '</td>' +
+    '<td style="padding-left:14px;font-family:' + FONT + ';font-size:11px;letter-spacing:3px;font-weight:800;color:' + accent + ';">' + kick + '</td></tr></table>' +
+    '<h1 class="h1" style="margin:20px 0 18px;font-family:' + DISPLAY + ';font-size:36px;line-height:1.05;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#FFFFFF;">' + title + '</h1>' +
     body + extra +
     '</td></tr>' +
-    (security ? security.replace('<tr><td style="padding:0 36px 30px;">', '<tr><td style="background:#FFFFFF;padding:0 36px 30px;">') : '') +
-    '<tr><td style="background:#FFFFFF;border-radius:0 0 22px 22px;padding:0 36px 30px;"><div style="border-top:1px solid ' + C.line + ';padding-top:18px;font-size:13px;color:' + C.soft + ';">' + esc_(t.team) + '</div></td></tr>' +
+    security +
+    '<tr><td class="px" style="padding:6px 34px 28px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid ' + C.line + ';padding-top:16px;font-family:' + FONT + ';font-size:13px;color:' + C.soft + ';">' +
+    '<span style="font-family:' + DISPLAY + ';font-weight:800;letter-spacing:1px;color:#FFFFFF;font-size:15px;">' + esc_(t.team).toUpperCase() + '</span></td>' +
+    '<td align="right" style="border-top:1px solid ' + C.line + ';padding-top:16px;font-size:18px;">🏎️</td></tr></table></td></tr>' +
+    '</table></td></tr>' +
     // pied
-    '<tr><td style="padding:22px 26px 6px;text-align:center;font-size:12px;line-height:1.6;color:' + C.muted + ';">' + esc_(t.support) + '<br>' + esc_(t.footer) +
-    '<br><span style="color:#B4B4BE;">© ' + new Date().getFullYear() + ' Spot My Car</span></td></tr>' +
+    '<tr><td style="padding:22px 26px 0;text-align:center;font-family:' + FONT + ';font-size:12px;line-height:1.7;color:' + C.muted + ';">' + esc_(t.support) + '<br>' + esc_(t.footer) +
+    '<br><span style="color:#4E4E58;">© ' + new Date().getFullYear() + ' Spot My Car</span></td></tr>' +
     '</table></td></tr></table></body></html>';
 }
 
