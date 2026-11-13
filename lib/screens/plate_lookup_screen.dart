@@ -219,7 +219,7 @@ class _PlateField extends StatelessWidget {
     final letter = {'FR': 'F', 'DE': 'D', 'IT': 'I', 'ES': 'E', 'BE': 'B', 'PT': 'P', 'NL': 'NL', 'LU': 'L', 'AT': 'A', 'IE': 'IRL'}[country] ?? '';
     final band = eu.contains(country);
     return Container(
-      height: 86,
+      height: 80,
       decoration: BoxDecoration(
         color: country == 'GB' ? AppColors.plateYellow : Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -251,7 +251,7 @@ class _PlateField extends StatelessWidget {
               textCapitalization: TextCapitalization.characters,
               inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[A-Za-z0-9\- ]')), LengthLimitingTextInputFormatter(12)],
               onSubmitted: (_) => onSubmit(),
-              style: AppText.mono(36, color: AppColors.plateInk).copyWith(letterSpacing: 3),
+              style: AppText.mono(28, color: AppColors.plateInk).copyWith(letterSpacing: 1.5),
               cursorColor: AppColors.plateInk,
               decoration: InputDecoration(
                 border: InputBorder.none,
@@ -259,7 +259,7 @@ class _PlateField extends StatelessWidget {
                 focusedBorder: InputBorder.none,
                 filled: false,
                 hintText: 'AB-123-CD',
-                hintStyle: AppText.mono(36, color: Colors.black26).copyWith(letterSpacing: 3),
+                hintStyle: AppText.mono(28, color: Colors.black26).copyWith(letterSpacing: 1.5),
               ),
             ),
           ),

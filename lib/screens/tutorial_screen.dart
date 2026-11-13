@@ -438,7 +438,7 @@ class _SpotArtState extends State<_SpotArt> with SingleTickerProviderStateMixin 
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Text('Porsche 911 Turbo S', style: AppText.body(14, weight: FontWeight.w800, color: Colors.white)),
+                                      Text('Porsche 911 Turbo S', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.body(13, weight: FontWeight.w800, color: Colors.white)),
                                       Text(tr('Reconnue à {0} %', [98]), style: AppText.body(12, color: Colors.white60)),
                                     ],
                                   ),
