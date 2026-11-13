@@ -79,5 +79,5 @@ function deployHosting() {
 /** URL publique du serveur (déploiement « Application Web »). */
 function serverUrl_() {
   const fixed = PropertiesService.getScriptProperties().getProperty('SERVER_URL');
-  return fixed || ScriptApp.getService().getUrl();
+  return fixed || 'https://script.google.com/macros/s/AKfycbyhZgprpk3RiE6TYZw-VYop71P22PWWUxMOBeh4sl9KUPY6rESIYSZ51vc88wBqnbQguw/exec';
 }

@@ -1,3 +1,11 @@
+import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:spot_my_car/screens/system_screens.dart';
+import 'package:spot_my_car/screens/tutorial_screen.dart';
+import 'package:spot_my_car/services/rate_service.dart';
+import 'package:spot_my_car/services/remote_config_service.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -30,7 +38,34 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<DataManager>().loadAllData();
+      _arrival();
     });
+  }
+
+  /// Arrivée sur l'accueil : présence, tutoriel la première fois, sinon demande de note.
+  Future<void> _arrival() async {
+    unawaited(RemoteConfig.instance.touchPresence());
+    final rc = RemoteConfig.instance;
+    if (rc.feature('tutorial') && !await TutorialScreen.isDone()) {
+      String? pseudo;
+      try {
+        final uid = FirebaseAuth.instance.currentUser?.uid;
+        if (uid != null) {
+          final d = await FirebaseFirestore.instance.collection('users').doc(uid).get();
+          pseudo = d.data()?['pseudo'] as String?;
+        }
+      } catch (_) {}
+      await Future.delayed(const Duration(milliseconds: 600));
+      if (!mounted) return;
+      await Navigator.push(context, PageRouteBuilder(
+        opaque: true,
+        transitionDuration: const Duration(milliseconds: 500),
+        pageBuilder: (_, _, _) => TutorialScreen(pseudo: pseudo),
+        transitionsBuilder: (_, a, _, child) => FadeTransition(opacity: a, child: child),
+      ));
+      return;
+    }
+    if (mounted) await RateService.maybeAsk(context);
   }
 
   void _select(int i) {
@@ -87,13 +122,18 @@ class _HomeScreenState extends State<HomeScreen> {
       },
       child: Scaffold(
         extendBody: false,
-        body: IndexedStack(
-          index: _index,
+        body: Stack(
           children: [
-            GarageScreen(onAddSpot: _spot),
-            const CollectionScreen(),
-            const CarCatalogScreen(),
-            const ProfileScreen(),
+            IndexedStack(
+              index: _index,
+              children: [
+                GarageScreen(onAddSpot: _spot),
+                const CollectionScreen(),
+                const CarCatalogScreen(),
+                const ProfileScreen(),
+              ],
+            ),
+            const Positioned(top: 0, left: 0, right: 0, child: AnnouncementBanner()),
           ],
         ),
         bottomNavigationBar: _NavBar(index: _index, onSelect: _select, onSpot: _spot),

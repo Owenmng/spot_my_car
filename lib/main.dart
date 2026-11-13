@@ -16,6 +16,7 @@ import 'package:spot_my_car/services/connectivity_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/services/theme_notifier.dart';
+import 'package:spot_my_car/services/remote_config_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 
 Future<void> main() async {
@@ -46,6 +47,7 @@ Future<void> main() async {
 
   final themeNotifier = await ThemeNotifier.create();
   unawaited(DataManager.instance.loadAllData());
+  unawaited(RemoteConfig.instance.start());
 
   runApp(
     MultiProvider(

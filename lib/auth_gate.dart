@@ -9,6 +9,9 @@ import 'package:spot_my_car/services/notification_service.dart';
 import 'package:spot_my_car/profile_setup_screen.dart';
 import 'package:spot_my_car/home_screen.dart';
 import 'package:spot_my_car/widgets/loading_animation_widget.dart';
+import 'package:spot_my_car/services/remote_config_service.dart';
+import 'package:spot_my_car/screens/system_screens.dart';
+import 'package:spot_my_car/screens/verify_email_screen.dart';
 
 class AuthGate extends StatefulWidget {
   const AuthGate({super.key});
@@ -33,6 +36,18 @@ class _AuthGateState extends State<AuthGate> {
 
   @override
   Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: RemoteConfig.instance,
+      builder: (context, _) {
+        final rc = RemoteConfig.instance;
+        if (rc.maintenance) return const MaintenanceScreen();
+        if (rc.mustUpdate) return const UpdateRequiredScreen();
+        return _gate();
+      },
+    );
+  }
+
+  Widget _gate() {
     return StreamBuilder<User?>(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, authSnapshot) {
@@ -55,6 +70,15 @@ class _AuthGateState extends State<AuthGate> {
             // Si on a une erreur -> OK, on ne touche pas
             if (userDocSnapshot.hasError) {
               return LoadingAnimationWidget(loadingMessage: tr('Reconnexion en cours…'));
+            }
+
+            // Nouveau compte : l'adresse e-mail doit d'abord être confirmée par un code.
+            final data = userDocSnapshot.data?.data() as Map<String, dynamic>?;
+            if (data != null &&
+                data['emailCodeRequired'] == true &&
+                data['emailCodeVerified'] != true &&
+                RemoteConfig.instance.feature('emailVerification')) {
+              return const VerifyEmailScreen();
             }
 
             // Si le document n'existe pas ou si le profil n'est pas complet -> OK, on ne touche pas

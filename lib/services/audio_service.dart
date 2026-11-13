@@ -9,6 +9,14 @@ import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+class MusicTrack {
+  final String id;
+  final String name;
+  final String asset;
+  final String mood;
+  const MusicTrack(this.id, this.name, this.asset, this.mood);
+}
+
 enum SoundEffect {
   clicPrincipal,
   clicLeger,
@@ -45,7 +53,39 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
   bool get isMusicPlaying => _musicPlayer.state == PlayerState.playing;
   
   // === CONFIGURATION AUDIO OPTIMISÉE ===
-  static const String _musicAsset = 'audio/musique_calme.mp3';
+  /// Ambiances proposées dans les réglages (compositions originales, libres de droits).
+  static const tracks = <MusicTrack>[
+    MusicTrack('night', 'Night drive', 'audio/musique_calme.mp3', 'Calme, la nuit en ville'),
+    MusicTrack('synthwave', 'Retro drive', 'audio/musique_synthwave.mp3', 'Synthwave années 80'),
+    MusicTrack('lofi', 'Garage lo-fi', 'audio/musique_lofi.mp3', 'Lo-fi jazzy, pour se détendre'),
+    MusicTrack('phonk', 'Drift phonk', 'audio/musique_phonk.mp3', 'Cloches et basses de drift'),
+    MusicTrack('circuit', 'Circuit', 'audio/musique_circuit.mp3', 'House minimale, rythme de course'),
+  ];
+  String _trackId = 'night';
+  String get trackId => _trackId;
+  MusicTrack get track => tracks.firstWhere((t) => t.id == _trackId, orElse: () => tracks.first);
+  String get _musicAsset => track.asset;
+
+  /// Change d'ambiance (et la lance si la musique est activée).
+  Future<void> setTrack(String id) async {
+    if (!tracks.any((t) => t.id == id)) return;
+    _trackId = id;
+    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString('music_track', id);
+    } catch (_) {}
+    if (_isMusicEnabled) await startMusic(force: true);
+  }
+
+  /// Écoute d'un extrait sans changer le réglage (aperçu dans la liste).
+  Future<void> preview(String id) async {
+    final t = tracks.firstWhere((x) => x.id == id, orElse: () => tracks.first);
+    final previous = _trackId;
+    _trackId = t.id;
+    await startMusic(force: true);
+    _trackId = previous;
+  }
   static const double _musicVolume = 0.42;
 
   AudioService._() {
@@ -143,6 +183,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
       final prefs = await SharedPreferences.getInstance();
       _isMusicEnabled = prefs.getBool('music_enabled') ?? true;
       _isSfxEnabled = prefs.getBool('sfx_enabled') ?? true;
+      _trackId = prefs.getString('music_track') ?? 'night';
       notifyListeners();
     } catch (e) {
     }
@@ -217,7 +258,7 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
   Future<Source> _prepareMobileAudioSource() async {
     try {
       final dir = await getTemporaryDirectory();
-      final musicFile = File('${dir.path}/night_drive_v2.mp3');
+      final musicFile = File('${dir.path}/music_${_trackId}_v3.mp3');
       
       // Copier le fichier si nécessaire
       if (!await musicFile.exists()) {

@@ -160,6 +160,7 @@ class _LoginScreenState extends State<LoginScreen> {
           'email': user.email,
           'uid': user.uid,
           'createdAt': FieldValue.serverTimestamp(),
+        'emailCodeRequired': true,
           'photoUrl': user.photoURL,
           'profileCompleted': false,
           'firstName': firstName,

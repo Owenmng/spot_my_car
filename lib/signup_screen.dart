@@ -93,6 +93,7 @@ class _SignupScreenState extends State<SignupScreen> {
         'email': user.email,
         'uid': user.uid,
         'createdAt': FieldValue.serverTimestamp(),
+        'emailCodeRequired': true,
         
         // Champs pour le profil à compléter
         'photoUrl': null, // L'utilisateur le choisira plus tard

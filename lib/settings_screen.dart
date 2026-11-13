@@ -11,13 +11,17 @@ import 'package:spot_my_car/contact_support_screen.dart';
 import 'package:spot_my_car/info_page_screen.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:spot_my_car/auth_gate.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:spot_my_car/services/auth_service.dart';
 import 'package:spot_my_car/theme_selection_screen.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:provider/provider.dart';
 import 'package:spot_my_car/services/notification_service.dart';
 import 'package:spot_my_car/widgets/language_picker.dart';
+import 'package:spot_my_car/screens/delete_account_screen.dart';
+import 'package:spot_my_car/forgot_password_screen.dart';
+import 'package:spot_my_car/screens/music_screen.dart';
+import 'package:spot_my_car/screens/tutorial_screen.dart';
+import 'package:spot_my_car/screens/plate_lookup_screen.dart';
 
 
 class SettingsScreen extends StatefulWidget {
@@ -171,7 +175,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               _Tile(
                 icon: Icons.lock_outline_rounded,
                 title: tr('Changer le mot de passe'),
-                onTap: () => _sendPasswordResetEmail(context, currentUser.email!),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ForgotPasswordScreen(initialEmail: currentUser.email))),
               ),
           ]),
           _Header(tr('Expérience')),
@@ -194,8 +198,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
             _Tile(
               icon: Icons.music_note_outlined,
               title: tr('Musique d\'ambiance'),
-              subtitle: tr('Night drive, très discrète'),
-              trailing: Switch(value: audio.isMusicEnabled, onChanged: audio.toggleMusic),
+              subtitle: audio.isMusicEnabled ? audio.track.name : tr('Désactivée'),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const MusicScreen())),
             ),
             _Tile(
               icon: Icons.graphic_eq_rounded,
@@ -221,6 +225,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
               subtitle: tr('Une question, un bug, une idée'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactSupportScreen())),
             ),
+            _Tile(
+              icon: Icons.school_outlined,
+              title: tr('Revoir le tutoriel'),
+              subtitle: tr('Les bases de Spot My Car en 30 secondes'),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const TutorialScreen())),
+            ),
+            _Tile(
+              icon: Icons.pin_outlined,
+              title: tr('Assistant plaque'),
+              subtitle: tr('Retrouver une voiture à partir de sa plaque'),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const PlateLookupScreen())),
+            ),
             _Tile(icon: Icons.info_outline_rounded, title: tr('À propos de l\'application'), onTap: _openAbout),
             _Tile(icon: Icons.gavel_rounded, title: tr('Conditions d\'utilisation'), onTap: _openTerms),
           ]),
@@ -235,255 +251,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
               icon: Icons.delete_forever_outlined,
               title: tr('Supprimer mon compte'),
               danger: true,
-              onTap: () => _showDeleteAccountDialog(context, currentUser),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const DeleteAccountScreen())),
             ),
           ]),
         ],
       ),
     );
   }
-// ----- VERSION FINALE AVEC LIEN TEXTE -----
-
-  Future<void> _sendPasswordResetEmail(BuildContext context, String email) async {
-    final TextEditingController emailController = TextEditingController(text: email);
-    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-    bool isEditingEmail = false;
-
-    final String? emailToSend = await showDialog<String>(
-      context: context,
-      builder: (context) {
-        return StatefulBuilder(
-          builder: (context, setStateDialog) {
-            return AlertDialog(
-              title: Text(tr('Réinitialiser le mot de passe')),
-              content: Form(
-                key: formKey,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(tr('Un email sera envoyé à l\'adresse suivante :')),
-                    const SizedBox(height: 16),
-                    
-                    // Si on n'est pas en mode édition, on affiche l'email
-                    if (!isEditingEmail)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8.0),
-                        child: Text(
-                          emailController.text,
-                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                        ),
-                      ),
-                    
-                    // AnimatedSize permet une transition douce quand le champ de texte apparaît/disparaît
-                    AnimatedSize(
-                      duration: const Duration(milliseconds: 300),
-                      curve: Curves.easeInOut,
-                      child: isEditingEmail
-                        // --- VUE "SAISIE" ---
-                        ? Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(tr('Nouvelle adresse :'), style: TextStyle(fontSize: 12, color: AppColors.inkMuted)),
-                              TextFormField(
-                                controller: emailController,
-                                keyboardType: TextInputType.emailAddress,
-                                autofocus: true,
-                                decoration: InputDecoration(
-                                  hintText: tr('Entrez votre adresse mail...'),
-                                  isDense: true,
-                                ),
-                                validator: (value) {
-                                  if (value == null || !value.contains('@')) {
-                                    return tr('Email invalide.');
-                                  }
-                                  return null;
-                                },
-                              ),
-                            ],
-                          )
-                        // --- VUE "CACHÉE" (juste un espace vide) ---
-                        : const SizedBox.shrink(),
-                    ),
-                    
-                    // Affiche le lien pour changer SEULEMENT si on n'est pas déjà en train d'éditer
-                    if (!isEditingEmail)
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 4.0),
-                          visualDensity: VisualDensity.compact,
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap
-                        ),
-                        child: Text(tr('Problème avec cette adresse ?')),
-                        onPressed: () {
-                          AudioService.instance.playSfx(SoundEffect.clicLeger);
-                          setStateDialog(() {
-                            // On passe en mode édition et on sélectionne le texte
-                            isEditingEmail = true;
-                            emailController.selection = TextSelection(baseOffset: 0, extentOffset: emailController.text.length);
-                          });
-                        },
-                      ),
-                  ],
-                ),
-              ),
-              actions: [
-                TextButton(
-                  onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger);
-                    Navigator.of(context).pop();
-                  },
-                  child: Text(tr('Annuler')),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    AudioService.instance.playSfx(SoundEffect.clicLeger);
-                    if (formKey.currentState!.validate()) {
-                      Navigator.of(context).pop(emailController.text.trim());
-                    }
-                  },
-                  child: Text(tr('Envoyer')),
-                ),
-              ],
-            );
-          },
-        );
-      },
-    );
-
-    // On n'envoie l'email que si l'utilisateur a confirmé (emailToSend n'est pas null)
-    if (emailToSend != null && emailToSend.isNotEmpty && mounted) {
-      try {
-        await FirebaseAuth.instance.sendPasswordResetEmail(email: emailToSend);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(tr('Email envoyé à {0} !', [emailToSend])), backgroundColor: Colors.green),
-        );
-      } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(tr('Erreur: Impossible d\'envoyer l\'email.')), backgroundColor: Colors.red),
-        );
-      }
-    }
-  }
-
-  void _showDeleteAccountDialog(BuildContext context, User user) {
-    final bool isSocialSignIn = user.providerData.any((userInfo) => userInfo.providerId != 'password');
-    if (isSocialSignIn) {
-      showDialog(context: context, builder: (dialogContext) => AlertDialog(
-        title: Text(tr('Supprimer ce compte')),
-        content: Text(tr('Cette action est irréversible et supprimera toutes vos données. Êtes-vous sûr de vouloir continuer ?')),
-        actions: [
-          TextButton(
-            onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal);
-              Navigator.pop(dialogContext);
-            }, 
-            child: Text(tr('Annuler'))
-          ),
-          TextButton(
-            onPressed: () {
-              AudioService.instance.playSfx(SoundEffect.clicPrincipal);
-              _deleteUserAccount(dialogContext, context, user);
-            },
-            child: Text(tr('Supprimer'), style: TextStyle(color: Colors.red)),
-          ),
-        ],
-      ));
-      return;
-    }
-    final passwordController = TextEditingController();
-    showDialog(context: context, builder: (dialogContext) => AlertDialog(
-      title: Text(tr('Supprimer ce compte')),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(tr('Cette action est irréversible. Pour confirmer, veuillez entrer votre mot de passe.')),
-          const SizedBox(height: 16),
-          TextField(
-            controller: passwordController,
-            obscureText: true,
-            decoration: InputDecoration(labelText: tr('Mot de passe')),
-          ),
-        ],
-      ),
-      actions: [
-        TextButton(
-          onPressed: () {
-            AudioService.instance.playSfx(SoundEffect.clicPrincipal);
-            Navigator.pop(dialogContext);
-          }, 
-          child: Text(tr('Annuler'))
-        ),
-        TextButton(
-          onPressed: () async {
-            AudioService.instance.playSfx(SoundEffect.clicPrincipal);
-            if (passwordController.text.isEmpty) return;
-            try {
-              final cred = EmailAuthProvider.credential(email: user.email!, password: passwordController.text);
-              await user.reauthenticateWithCredential(cred);
-              _deleteUserAccount(dialogContext, context, user);
-            } on FirebaseAuthException catch (e) {
-              String errorMessage = tr('Mot de passe incorrect ou erreur.');
-              if (e.code == 'wrong-password' || e.code == 'invalid-credential') {
-                errorMessage = tr('Le mot de passe est incorrect.');
-              }
-              if (dialogContext.mounted) Navigator.of(dialogContext).pop();
-              if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(errorMessage), backgroundColor: Colors.red));
-            }
-          },
-          child: Text(tr('Supprimer'), style: TextStyle(color: Colors.red)),
-        ),
-      ],
-    ));
-  }
-  
-  Future<void> _deleteUserAccount(BuildContext dialogContext, BuildContext mainPageContext, User user) async {
-    final scaffoldMessenger = ScaffoldMessenger.of(mainPageContext);
-    try {
-      final uid = user.uid;
-      final firestore = FirebaseFirestore.instance;
-      final storage = FirebaseStorage.instance;
-      final batch = firestore.batch();
-      final userDocRef = firestore.collection("users").doc(uid);
-      batch.delete(userDocRef);
-      final spotsQuery = firestore.collection("spotted_cars").where("userId", isEqualTo: uid);
-      final spotDocs = await spotsQuery.get();
-      for (var doc in spotDocs.docs) {
-        batch.delete(doc.reference);
-        batch.delete(firestore.collection('spot_photos').doc(doc.id));
-      }
-      await batch.commit();
-      try {
-        await storage.ref('profile_pictures/$uid').delete();
-      } catch (e) { /* ignore */ }
-      try {
-        final spotPhotos = await storage.ref('user_spots/$uid').listAll();
-        for (var photoRef in spotPhotos.items) {
-          await photoRef.delete();
-        }
-      } catch (e) { /* ignore */ }
-      await user.delete();
-      if (dialogContext.mounted) Navigator.of(dialogContext).pop();
-      if (mainPageContext.mounted) {
-        Navigator.of(mainPageContext).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (context) => const AuthGate()), 
-          (route) => false,
-        );
-        scaffoldMessenger.showSnackBar(
-          SnackBar(content: Text(tr('Compte supprimé avec succès.')), backgroundColor: Colors.green)
-        );
-      }
-    } catch (e) {
-      if (dialogContext.mounted) Navigator.of(dialogContext).pop();
-      scaffoldMessenger.showSnackBar(SnackBar(content: Text(tr('Une erreur est survenue lors de la suppression.')), backgroundColor: Colors.red));
-    }
-  }
-
-
-  
-
-
-
 }
 
 class _Header extends StatelessWidget {

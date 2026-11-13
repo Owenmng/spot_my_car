@@ -1,3 +1,5 @@
+import 'package:spot_my_car/services/remote_config_service.dart';
+import 'package:spot_my_car/screens/plate_lookup_screen.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -567,9 +569,18 @@ class _PlayStrip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final me = FirebaseAuth.instance.currentUser?.uid;
-    return Row(
+    return ListenableBuilder(
+      listenable: RemoteConfig.instance,
+      builder: (context, _) {
+        final rc = RemoteConfig.instance;
+        final duels = rc.feature('duels');
+        final quiz = rc.feature('blindTest');
+        return Column(
+          children: [
+            if (duels || quiz)
+              Row(
       children: [
-        Expanded(
+        if (duels) Expanded(
           child: StreamBuilder<List<Duel>>(
             stream: DuelService.instance.watch(),
             builder: (context, snap) {
@@ -599,8 +610,8 @@ class _PlayStrip extends StatelessWidget {
             },
           ),
         ),
-        const SizedBox(width: 10),
-        Expanded(
+        if (duels && quiz) const SizedBox(width: 10),
+        if (quiz) Expanded(
           child: StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
             stream: me == null ? null : FirebaseFirestore.instance.collection('users').doc(me).snapshots(),
             builder: (context, snap) {
@@ -617,6 +628,19 @@ class _PlayStrip extends StatelessWidget {
           ),
         ),
       ],
+    ),
+            if (rc.feature('plateLookup')) ...[
+              if (duels || quiz) const SizedBox(height: 10),
+              _PlayTile(
+                icon: Icons.pin_rounded,
+                title: tr('Assistant plaque'),
+                subtitle: tr('Une plaque, mais quel modèle ? On t\'aide'),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const PlateLookupScreen())),
+              ),
+            ],
+          ],
+        );
+      },
     );
   }
 }

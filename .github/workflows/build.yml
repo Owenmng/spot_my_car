@@ -2,7 +2,7 @@ name: Build APK
 
 on:
   push:
-    branches: [refonte, main]
+    branches: [refonte, main, 'wip/v1-1']
   workflow_dispatch:
 
 concurrency:
@@ -80,6 +80,17 @@ jobs:
           gh release create test-latest SpotMyCar-test.apk SpotMyCar-PlayStore.aab --prerelease --target ${{ github.sha }} \
             --title "Version de test (${GITHUB_SHA::7})" \
             --notes "APK de test compilé automatiquement depuis la branche refonte."
+
+      - name: Publish preview release (v1.1)
+        if: success() && github.ref == 'refs/heads/wip/v1-1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk SpotMyCar-1.1-apercu.apk
+          gh release delete apercu-1.1 --yes --cleanup-tag || true
+          gh release create apercu-1.1 SpotMyCar-1.1-apercu.apk --prerelease --target ${{ github.sha }} \
+            --title "Aperçu 1.1 (${GITHUB_SHA::7})" \
+            --notes "Version 1.1 en préparation (branche wip/v1-1). Non publiée sur le Play Store."
 
       - name: Upload logs
         if: always()

@@ -43,7 +43,11 @@ class AddCarScreen extends StatefulWidget {
   /// Ouvre directement l'appareil photo à l'arrivée sur l'écran.
   final bool openCamera;
 
-  const AddCarScreen({super.key, this.openCamera = false});
+  /// Plaque déjà connue (ex. depuis l'assistant plaque).
+  final String? initialPlate;
+  final String? initialCountry;
+
+  const AddCarScreen({super.key, this.openCamera = false, this.initialPlate, this.initialCountry});
 
   @override
   State<AddCarScreen> createState() => _AddCarScreenState();
@@ -70,6 +74,10 @@ class _AddCarScreenState extends State<AddCarScreen> {
   @override
   void initState() {
     super.initState();
+    if (widget.initialPlate != null && widget.initialPlate!.trim().isNotEmpty) {
+      _plateCtrl.text = widget.initialPlate!.trim().toUpperCase();
+      if (widget.initialCountry != null) _draft.countryCode = widget.initialCountry!;
+    }
     DataManager.instance.loadAllData();
     AppData.loadWorldCities();
     if (widget.openCamera) {

@@ -8,6 +8,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:http/http.dart' as http;
+import 'package:spot_my_car/services/backend_service.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/shared/app_constants.dart';
@@ -72,7 +73,17 @@ class _ContactSupportScreenState extends State<ContactSupportScreen> {
     final subject = tr('[Spot My Car · {0}] {1}', [topic, _subject.text.trim()]);
 
     var ok = false;
+    // D'abord notre serveur (ticket visible dans la console + accusé de réception au joueur).
     try {
+      await BackendService.instance.sendSupport(
+        topic: topic,
+        subject: _subject.text.trim(),
+        message: _message.text.trim(),
+        context: ctx,
+      );
+      ok = true;
+    } catch (_) {}
+    if (!ok) try {
       final res = await http
           .post(
             Uri.parse(AppConstants.supportRelay),
