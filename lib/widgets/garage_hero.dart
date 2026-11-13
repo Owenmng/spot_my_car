@@ -15,8 +15,9 @@ class GarageHero extends StatelessWidget {
   final List<Map<String, dynamic>> cars;
   final int streak;
   final Rarity Function(Map<String, dynamic>) rarityOf;
+  final VoidCallback? onShare;
 
-  const GarageHero({super.key, required this.xp, required this.cars, required this.streak, required this.rarityOf});
+  const GarageHero({super.key, required this.xp, required this.cars, required this.streak, required this.rarityOf, this.onShare});
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +78,21 @@ class GarageHero extends StatelessWidget {
               ),
             // Lignes de piste
             Positioned.fill(child: IgnorePointer(child: CustomPaint(painter: _Speedlines(accent)))),
+            if (onShare != null)
+              Positioned(
+                top: 8,
+                right: 8,
+                child: Material(
+                  color: Colors.black.withValues(alpha: 0.35),
+                  shape: const CircleBorder(),
+                  child: IconButton(
+                    visualDensity: VisualDensity.compact,
+                    tooltip: tr('Partager mon garage'),
+                    onPressed: onShare,
+                    icon: const Icon(Icons.ios_share_rounded, size: 18, color: Colors.white),
+                  ),
+                ),
+              ),
             Padding(
               padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
               child: Column(
@@ -106,6 +122,7 @@ class GarageHero extends StatelessWidget {
                           ],
                         ),
                       ),
+                      if (onShare != null) const SizedBox(width: 30),
                     ],
                   ),
                   const SizedBox(height: 16),

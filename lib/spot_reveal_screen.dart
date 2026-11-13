@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/wanted_service.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:math';
 
@@ -134,6 +135,17 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                       Text(tr('Cible atteinte ! Bonus inclus'), style: AppText.body(14, color: Colors.white, weight: FontWeight.w800)),
                     ],
                   ).animate().fadeIn(delay: 1000.ms).scale(begin: const Offset(0.8, 0.8)),
+                ],
+                if (widget.result.wantedHit) ...[
+                  const SizedBox(height: 10),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.gps_fixed_rounded, color: Color(0xFFFFC94D), size: 18),
+                      const SizedBox(width: 6),
+                      Text(tr('Avis de recherche : prime de {0} XP !', [Wanted.bounty]), style: AppText.body(14, color: const Color(0xFFFFC94D), weight: FontWeight.w800)),
+                    ],
+                  ).animate().fadeIn(delay: 1100.ms).scale(begin: const Offset(0.8, 0.8)),
                 ],
                 if (widget.result.newAchievements.isNotEmpty) ...[
                   const SizedBox(height: 14),

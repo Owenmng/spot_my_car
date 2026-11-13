@@ -20,7 +20,8 @@ service cloud.firestore {
       allow read: if signedIn();
 
       allow create: if isMe(userId)
-        && !request.resource.data.keys().hasAny(['isAdmin', 'rank', 'emailCodeVerified', 'emailCodeVerifiedAt'])
+        && !request.resource.data.keys().hasAny(['isAdmin', 'rank', 'emailCodeVerified', 'emailCodeVerifiedAt',
+                                                  'referredBy', 'referredAt', 'referralCount', 'lastReferralAt', 'plus'])
         && request.resource.data.get('uid', userId) == userId
         && request.resource.data.get('totalXp', 0) == 0
         && shortString(request.resource.data.get('pseudo', null), 24);
@@ -28,7 +29,8 @@ service cloud.firestore {
       allow update: if isMe(userId)
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['isAdmin', 'rank', 'uid', 'friendId', 'friendId_lowercase', 'createdAt',
-                       'emailCodeRequired', 'emailCodeVerified', 'emailCodeVerifiedAt'])
+                       'emailCodeRequired', 'emailCodeVerified', 'emailCodeVerifiedAt',
+                       'referredBy', 'referredAt', 'referralCount', 'lastReferralAt', 'plus'])
         && request.resource.data.get('totalXp', 0) >= resource.data.get('totalXp', 0)
         && request.resource.data.get('totalXp', 0) - resource.data.get('totalXp', 0) <= 3000
         && shortString(request.resource.data.get('pseudo', null), 24);

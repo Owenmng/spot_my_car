@@ -23,6 +23,12 @@ class RemoteConfig extends ChangeNotifier {
     'ratePrompt': true,
     'tutorial': true,
     'emailVerification': true,
+    'dailyChest': true,
+    'wanted': true,
+    'referral': true,
+    'shareStats': true,
+    'premium': false,
+    'rewardedAds': false,
   };
 
   Map<String, dynamic> _data = const {};

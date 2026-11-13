@@ -8,6 +8,8 @@ import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/achievement_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/services/photo_store.dart';
+import 'package:spot_my_car/services/remote_config_service.dart';
+import 'package:spot_my_car/services/wanted_service.dart';
 import 'package:spot_my_car/services/wishlist_service.dart';
 import 'package:spot_my_car/services/duel_service.dart';
 
@@ -49,9 +51,11 @@ class SpotSaveResult {
   final List<Achievement> achievementsAfter;
   final bool photoFailed;
   final bool targetHit;
+  final bool wantedHit;
 
   const SpotSaveResult({
     this.targetHit = false,
+    this.wantedHit = false,
     required this.carId,
     required this.xpGained,
     required this.oldXp,
@@ -171,7 +175,8 @@ class SpotService {
     final wishlist = ((userData['wishlist'] as List?) ?? const []).whereType<String>().toList();
     final targetId = d.model?['id'] as String?;
     final targetHit = targetId != null && wishlist.contains(targetId);
-    final gained = d.xp + achievementXp + (targetHit ? WishlistService.bonusXp : 0);
+    final wantedHit = RemoteConfig.instance.feature('wanted') && !d.isCustomBrand && d.brand!['id'] == Wanted.brandIdFor() && !Wanted.claimed(userData);
+    final gained = d.xp + achievementXp + (targetHit ? WishlistService.bonusXp : 0) + (wantedHit ? Wanted.bounty : 0);
     final batch = _db.batch();
     batch.set(carRef, car);
     if (photo != null) {
@@ -194,6 +199,7 @@ class SpotService {
         'claimedAchievements': claims,
         'lastSpotAt': FieldValue.serverTimestamp(),
         if (targetHit) 'wishlist': FieldValue.arrayRemove([targetId]),
+        if (wantedHit) 'wantedClaims': {weekKey(): true},
       },
       SetOptions(merge: true),
     );
@@ -213,6 +219,7 @@ class SpotService {
       achievementsAfter: achievementsAfter,
       photoFailed: photoFailed,
       targetHit: targetHit,
+      wantedHit: wantedHit,
     );
   }
 

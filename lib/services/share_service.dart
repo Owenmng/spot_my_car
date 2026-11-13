@@ -6,6 +6,7 @@ import 'package:flutter/rendering.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/spot_card.dart';
+import 'package:spot_my_car/widgets/ui_kit.dart';
 
 class ShareService {
   ShareService._();
@@ -91,5 +92,81 @@ class ShareService {
       files: [XFile.fromData(bytes.buffer.asUint8List(), mimeType: 'image/png', name: 'spotmycar.png')],
       text: tr('Regarde ce que je viens de spotter : {0} 👀', [name]),
     ));
+  }
+
+  /// Carte « mon garage » (niveau, chiffres clés) à partager en story.
+  static Future<void> shareStats(BuildContext context, Widget card) {
+    final key = GlobalKey();
+    return showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (sheetContext) {
+        var busy = false;
+        return StatefulBuilder(
+          builder: (context, setState) => SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  RepaintBoundary(
+                    key: key,
+                    child: Container(
+                      padding: const EdgeInsets.fromLTRB(14, 16, 14, 12),
+                      decoration: BoxDecoration(color: const Color(0xFF07070A), borderRadius: BorderRadius.circular(AppRadius.xl)),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Row(
+                            children: [
+                              const AppLogo(size: 26),
+                              const SizedBox(width: 8),
+                              Text('SPOT MY CAR', style: AppText.display(16, color: Colors.white).copyWith(letterSpacing: 2)),
+                              const Spacer(),
+                              Text(tr('MON GARAGE'), style: AppText.label(10.5, color: Colors.white54).copyWith(letterSpacing: 2)),
+                            ],
+                          ),
+                          const SizedBox(height: 12),
+                          IgnorePointer(child: card),
+                          const SizedBox(height: 10),
+                          Text(tr('Tu fais mieux ? Rejoins-moi sur Spot My Car'), style: AppText.body(12, color: Colors.white54, weight: FontWeight.w700)),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 18),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      onPressed: busy
+                          ? null
+                          : () async {
+                              setState(() => busy = true);
+                              try {
+                                await Future.delayed(const Duration(milliseconds: 60));
+                                final boundary = key.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+                                if (boundary == null) return;
+                                final image = await boundary.toImage(pixelRatio: 3);
+                                final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
+                                if (bytes == null) return;
+                                await SharePlus.instance.share(ShareParams(
+                                  files: [XFile.fromData(bytes.buffer.asUint8List(), mimeType: 'image/png', name: 'spotmycar_garage.png')],
+                                  text: tr('Mon garage sur Spot My Car 🏎️ Tu fais mieux ?'),
+                                ));
+                              } finally {
+                                if (sheetContext.mounted) Navigator.pop(sheetContext);
+                              }
+                            },
+                      icon: const Icon(Icons.ios_share_rounded),
+                      label: Text(busy ? tr('Préparation…') : tr('Partager')),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
   }
 }

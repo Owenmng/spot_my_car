@@ -1,3 +1,5 @@
+import 'package:spot_my_car/screens/plus_screen.dart';
+import 'package:spot_my_car/services/plus_service.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -17,6 +19,10 @@ class ThemeSelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final notifier = context.watch<ThemeNotifier>();
     final w = MediaQuery.sizeOf(context).width;
+    final plus = PlusService.instance;
+    // Les thèmes Plus ne s'affichent que si l'offre est ouverte (ou déjà membre).
+    final showPlus = plus.enabled || plus.isPlus;
+    bool locked(bool isPlusItem) => isPlusItem && !plus.isPlus;
 
     return Scaffold(
       appBar: AppBar(title: Text(tr('Apparence'))),
@@ -31,14 +37,19 @@ class ThemeSelectionScreen extends StatelessWidget {
             spacing: 10,
             runSpacing: 10,
             children: [
-              for (final p in palettes)
+              for (final p in palettes.where((p) => !p.plus || showPlus))
                 SizedBox(
                   width: (w - 32 - 10) / 2,
                   child: _PaletteCard(
                     palette: p,
                     accent: notifier.accent,
                     selected: p.id == notifier.palette.id,
+                    locked: locked(p.plus),
                     onTap: () {
+                      if (locked(p.plus)) {
+                        PlusScreen.open(context);
+                        return;
+                      }
                       HapticFeedback.selectionClick();
                       AudioService.instance.playSfx(SoundEffect.clicLeger);
                       notifier.setPalette(p);
@@ -54,12 +65,17 @@ class ThemeSelectionScreen extends StatelessWidget {
             spacing: 6,
             runSpacing: 14,
             children: [
-              for (final a in accentChoices)
+              for (final a in accentChoices.where((a) => !a.plus || showPlus))
                 _Swatch(
                   choice: a,
                   width: (w - 32 - 6 * 4) / 5,
                   selected: a.name == notifier.accentChoice.name,
+                  locked: locked(a.plus),
                   onTap: () {
+                    if (locked(a.plus)) {
+                      PlusScreen.open(context);
+                      return;
+                    }
                     HapticFeedback.selectionClick();
                     AudioService.instance.playSfx(SoundEffect.clicLeger);
                     notifier.setAccent(a);
@@ -78,7 +94,8 @@ class _PaletteCard extends StatelessWidget {
   final Color accent;
   final bool selected;
   final VoidCallback onTap;
-  const _PaletteCard({required this.palette, required this.accent, required this.selected, required this.onTap});
+  final bool locked;
+  const _PaletteCard({required this.palette, required this.accent, required this.selected, required this.onTap, this.locked = false});
 
   @override
   Widget build(BuildContext context) {
@@ -127,6 +144,7 @@ class _PaletteCard extends StatelessWidget {
                 const SizedBox(width: 6),
                 Expanded(child: Text(tr(p.name), style: AppText.body(14, weight: FontWeight.w800, color: p.ink))),
                 if (selected) Icon(Icons.check_circle_rounded, size: 18, color: accent),
+                if (palette.plus) const _PlusTag(),
               ],
             ),
           ],
@@ -142,7 +160,8 @@ class _Swatch extends StatelessWidget {
   final bool selected;
   final VoidCallback onTap;
 
-  const _Swatch({required this.choice, required this.width, required this.selected, required this.onTap});
+  final bool locked;
+  const _Swatch({required this.choice, required this.width, required this.selected, required this.onTap, this.locked = false});
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +183,11 @@ class _Swatch extends StatelessWidget {
                 border: Border.all(color: selected ? AppColors.ink : Colors.transparent, width: 2.5),
                 boxShadow: [BoxShadow(color: choice.color.withValues(alpha: selected ? 0.5 : 0.2), blurRadius: selected ? 16 : 6)],
               ),
-              child: selected ? Icon(Icons.check_rounded, color: onC, size: 22) : null,
+              child: selected
+                  ? Icon(Icons.check_rounded, color: onC, size: 22)
+                  : locked
+                      ? Icon(Icons.lock_rounded, color: onC.withValues(alpha: 0.75), size: 16)
+                      : null,
             ),
             const SizedBox(height: 6),
             Text(
@@ -235,4 +258,16 @@ class _Preview extends StatelessWidget {
       ),
     );
   }
+}
+
+class _PlusTag extends StatelessWidget {
+  const _PlusTag();
+
+  @override
+  Widget build(BuildContext context) => Container(
+        margin: const EdgeInsets.only(left: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+        decoration: BoxDecoration(color: PlusScreen.gold, borderRadius: BorderRadius.circular(5)),
+        child: Text('PLUS', style: AppText.label(8.5, color: Colors.black)),
+      );
 }

@@ -1,3 +1,6 @@
+import 'package:spot_my_car/screens/plus_screen.dart';
+import 'package:spot_my_car/services/plus_service.dart';
+import 'package:spot_my_car/screens/referral_screen.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 // Fichier: lib/settings_screen.dart (Version Finale, Corrigée et Cohérente)
@@ -161,6 +164,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
         children: [
           _Header(tr('Compte')),
           _Group(children: [
+            if (PlusService.instance.enabled || PlusService.instance.isPlus)
+              _Tile(
+                icon: Icons.workspace_premium_rounded,
+                title: 'Spot My Car+',
+                subtitle: PlusService.instance.isPlus ? tr('Membre actif · gérer mon abonnement') : tr('Coffre doublé, thèmes exclusifs, zéro pub'),
+                onTap: () => PlusScreen.open(context),
+              ),
             _Tile(
               icon: Icons.person_outline_rounded,
               title: tr('Modifier le profil'),
@@ -178,6 +188,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 icon: Icons.lock_outline_rounded,
                 title: tr('Changer le mot de passe'),
                 onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ForgotPasswordScreen(initialEmail: currentUser.email))),
+              ),
+            if (RemoteConfig.instance.feature('referral'))
+              _Tile(
+                icon: Icons.card_giftcard_rounded,
+                title: tr('Parrainage'),
+                subtitle: tr('Ton code ami : +{0} XP pour toi et pour eux', [ReferralScreen.reward]),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ReferralScreen())),
               ),
           ]),
           _Header(tr('Expérience')),

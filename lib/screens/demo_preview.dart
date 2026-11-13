@@ -9,6 +9,13 @@ import 'package:spot_my_car/screens/system_screens.dart';
 import 'package:spot_my_car/screens/tutorial_screen.dart';
 import 'package:spot_my_car/screens/verify_email_screen.dart';
 import 'package:spot_my_car/services/rate_service.dart';
+import 'package:spot_my_car/screens/plus_screen.dart';
+import 'package:spot_my_car/screens/referral_screen.dart';
+import 'package:spot_my_car/services/data_manager.dart';
+import 'package:spot_my_car/widgets/daily_chest.dart';
+import 'package:spot_my_car/widgets/garage_hero.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
+import 'package:spot_my_car/widgets/wanted_card.dart';
 
 /// Version web uniquement : affiche un écran isolé (?demo=...) pour les captures de contrôle.
 Widget demoScreen(String name, ThemeData theme) {
@@ -39,6 +46,42 @@ Widget demoScreen(String name, ThemeData theme) {
       body = Builder(builder: (context) {
         WidgetsBinding.instance.addPostFrameCallback((_) => RateService.debugShow(context));
         return const Scaffold();
+      });
+      break;
+    case 'chest':
+      body = const DailyChestScreen(streak: 4, demo: true);
+      break;
+    case 'referral':
+      body = const ReferralScreen(demoData: {'friendId': '48213957', 'referralCount': 3});
+      break;
+    case 'plus':
+      body = const PlusScreen(demo: true);
+      break;
+    case 'hero':
+      body = Builder(builder: (context) {
+        final models = <Map<String, dynamic>>[];
+        for (final b in ['porsche', 'bmw', 'peugeot', 'ferrari', 'renault']) {
+          final list = DataManager.instance.modelsByBrand[b] ?? const [];
+          if (list.isNotEmpty && list.first is Map) {
+            models.add({...Map<String, dynamic>.from(list.first as Map), 'brandId': b, 'isCatalogued': true});
+          }
+        }
+        final cars = [
+          for (final m in models)
+            {...m, 'brandName': '${m['brandId']}'.toUpperCase(), 'modelName': m['name'], 'modelImageUrl': m['imageUrl'], 'rarity': m['brandId'] == 'ferrari' ? 'legendaire' : (m['brandId'] == 'porsche' ? 'epique' : 'commune')},
+        ];
+        return Scaffold(
+          body: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 40, 16, 20),
+            children: [
+              GarageHero(xp: 2140, cars: cars, streak: 6, rarityOf: rarityOfSpot, onShare: () {}),
+              const SizedBox(height: 12),
+              const WantedCard(claimed: false),
+              const SizedBox(height: 12),
+              const WantedCard(claimed: true),
+            ],
+          ),
+        );
       });
       break;
     default:

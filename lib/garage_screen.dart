@@ -25,6 +25,10 @@ import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:spot_my_car/widgets/garage_hero.dart';
+import 'package:spot_my_car/widgets/wanted_card.dart';
+import 'package:spot_my_car/screens/referral_screen.dart';
+import 'package:spot_my_car/services/plus_service.dart';
+import 'package:spot_my_car/services/wanted_service.dart';
 
 enum _Filter { all, rare, week, photo }
 
@@ -348,7 +352,25 @@ class _Header extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(_greeting(), style: AppText.body(15, color: AppColors.inkSoft, weight: FontWeight.w600)),
-                        Text(pseudo == null || pseudo.isEmpty ? tr('Mon garage') : pseudo, style: AppText.display(30)),
+                        Row(
+                          children: [
+                            Flexible(child: Text(pseudo == null || pseudo.isEmpty ? tr('Mon garage') : pseudo, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppText.display(30))),
+                            ListenableBuilder(
+                              listenable: PlusService.instance,
+                              builder: (context, _) => PlusService.instance.isPlus
+                                  ? Container(
+                                      margin: const EdgeInsets.only(left: 8),
+                                      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        gradient: const LinearGradient(colors: [Color(0xFFFFE08A), Color(0xFFFFC94D), Color(0xFFE59A1A)]),
+                                        borderRadius: BorderRadius.circular(7),
+                                      ),
+                                      child: Text('PLUS', style: AppText.label(10, color: Colors.black)),
+                                    )
+                                  : const SizedBox.shrink(),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -373,12 +395,29 @@ class _Header extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 18),
-              GarageHero(xp: xp, cars: cars, streak: streak, rarityOf: rarityOfSpot),
+              GarageHero(
+                xp: xp,
+                cars: cars,
+                streak: streak,
+                rarityOf: rarityOfSpot,
+                onShare: RemoteConfig.instance.feature('shareStats')
+                    ? () => ShareService.shareStats(context, GarageHero(xp: xp, cars: cars, streak: streak, rarityOf: rarityOfSpot))
+                    : null,
+              ),
               const SizedBox(height: 12),
               _ChallengeCard(
                 cars: cars,
                 claimed: (data['dailyClaims'] as Map?)?[DailyChallenge.todayKey()] == true,
               ).animate().fadeIn(delay: 120.ms, duration: 350.ms),
+              ListenableBuilder(
+                listenable: RemoteConfig.instance,
+                builder: (context, _) => RemoteConfig.instance.feature('wanted')
+                    ? Padding(
+                        padding: const EdgeInsets.only(top: 12),
+                        child: WantedCard(claimed: Wanted.claimed(data)).animate().fadeIn(delay: 160.ms, duration: 350.ms),
+                      )
+                    : const SizedBox.shrink(),
+              ),
               const SizedBox(height: 18),
               Row(
                 children: [
@@ -561,8 +600,17 @@ class _PlayStrip extends StatelessWidget {
         ),
       ],
     ),
-            if (rc.feature('plateLookup')) ...[
+            if (rc.feature('referral')) ...[
               if (duels || quiz) const SizedBox(height: 10),
+              _PlayTile(
+                icon: Icons.card_giftcard_rounded,
+                title: tr('Invite tes potes'),
+                subtitle: tr('+{0} XP pour toi et pour eux', [ReferralScreen.reward]),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ReferralScreen())),
+              ),
+            ],
+            if (rc.feature('plateLookup')) ...[
+              if (duels || quiz || rc.feature('referral')) const SizedBox(height: 10),
               _PlayTile(
                 icon: Icons.pin_rounded,
                 title: tr('Assistant plaque'),

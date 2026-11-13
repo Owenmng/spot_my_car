@@ -1,3 +1,4 @@
+import 'package:spot_my_car/widgets/daily_chest.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -65,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ));
       return;
     }
+    if (mounted) await DailyChest.maybeShow(context);
     if (mounted) await RateService.maybeAsk(context);
   }
 

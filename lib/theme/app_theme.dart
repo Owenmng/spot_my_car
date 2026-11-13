@@ -9,8 +9,11 @@ class AppPalette {
   final String name;
   final Brightness brightness;
   final Color paper, paperDeep, card, panel, panelHi, ink, inkSoft, inkMuted, line;
+  /// Réservée aux membres Spot My Car+.
+  final bool plus;
 
   const AppPalette({
+    this.plus = false,
     required this.id,
     required this.name,
     required this.brightness,
@@ -85,6 +88,36 @@ const List<AppPalette> palettes = [
     inkMuted: Color(0xFF8D8D98),
     line: Color(0xFFE0E0E7),
   ),
+  AppPalette(
+    id: 'nuit_doree',
+    name: 'Nuit dorée',
+    plus: true,
+    brightness: Brightness.dark,
+    paper: Color(0xFF0C0A07),
+    paperDeep: Color(0xFF2A2318),
+    card: Color(0xFF16130D),
+    panel: Color(0xFF1B1710),
+    panelHi: Color(0xFF262016),
+    ink: Color(0xFFFBF6EC),
+    inkSoft: Color(0xFFC2B59C),
+    inkMuted: Color(0xFF857A64),
+    line: Color(0xFF2E271B),
+  ),
+  AppPalette(
+    id: 'abysse',
+    name: 'Abysse',
+    plus: true,
+    brightness: Brightness.dark,
+    paper: Color(0xFF041012),
+    paperDeep: Color(0xFF13292C),
+    card: Color(0xFF0A1A1D),
+    panel: Color(0xFF0E2024),
+    panelHi: Color(0xFF162C30),
+    ink: Color(0xFFEFFAFA),
+    inkSoft: Color(0xFF9CBDBF),
+    inkMuted: Color(0xFF5F8285),
+    line: Color(0xFF1B3337),
+  ),
 ];
 
 /// Couleurs de l'appli : elles suivent l'ambiance choisie dans « Apparence ».
@@ -122,7 +155,8 @@ class AppColors {
 class AccentChoice {
   final String name;
   final Color color;
-  const AccentChoice(this.name, this.color);
+  final bool plus;
+  const AccentChoice(this.name, this.color, {this.plus = false});
 }
 
 const List<AccentChoice> accentChoices = [
@@ -136,6 +170,11 @@ const List<AccentChoice> accentChoices = [
   AccentChoice('Vert Lime', Color(0xFFB4F000)),
   AccentChoice('Jaune Giallo', Color(0xFFFFC72C)),
   AccentChoice('Violet Viper', Color(0xFF9B6BFF)),
+  AccentChoice('Or 24 carats', Color(0xFFE8B84A), plus: true),
+  AccentChoice('Chrome liquide', Color(0xFFDDE6F0), plus: true),
+  AccentChoice('Bleu Électrique', Color(0xFF00D1FF), plus: true),
+  AccentChoice('Magenta Néon', Color(0xFFFF2BD6), plus: true),
+  AccentChoice('Vert Émeraude', Color(0xFF00C27A), plus: true),
 ];
 
 class AppText {

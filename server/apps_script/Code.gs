@@ -68,6 +68,8 @@ const ROUTES = {
   'delete.apply': deleteApply_,
   'support.send': supportSend_,
   'event': clientEvent_,
+  'referral.claim': referralClaim_,
+  'plus.verify': plusVerify_,
   // Console d'administration
   'admin.overview': (r) => { requireAdmin_(r); return adminOverview_(r); },
   'admin.users': (r) => { requireAdmin_(r); return adminUsers_(r); },
@@ -529,6 +531,12 @@ const DEFAULT_CONFIG = {
     ratePrompt: true,
     tutorial: true,
     emailVerification: true,
+    dailyChest: true,
+    wanted: true,
+    referral: true,
+    shareStats: true,
+    premium: false,
+    rewardedAds: false,
   },
   minVersion: 0,
   latestVersion: 0,
@@ -568,4 +576,90 @@ function logEvent_(type, data) {
   } catch (e) {
     console.warn('log', e);
   }
+}
+
+
+// ───────────────────────────── Parrainage ─────────────────────────────
+// Le filleul saisit le code ami (friendId) de son parrain dans les 30 jours
+// qui suivent son inscription : +REFERRAL_XP pour chacun, une seule fois.
+
+const REFERRAL_XP = 300;
+const REFERRAL_WINDOW_DAYS = 30;
+const REFERRAL_MAX = 200; // plafond par parrain (anti-abus)
+
+function referralClaim_(r) {
+  const u = userFromToken_(r.idToken);
+  const code = String(r.code || '').replace(/\s+/g, '').toLowerCase();
+  if (!/^[0-9a-z]{4,24}$/.test(code)) fail_('ref_not_found');
+  const me = fsGet_('users/' + u.uid) || {};
+  if (me.referredBy) fail_('ref_already');
+  const acc = authLookupUid_(u.uid);
+  if (acc && Date.now() - Number(acc.createdAt || 0) > REFERRAL_WINDOW_DAYS * 86400000) fail_('ref_too_old');
+  let found = runQuery_('users', [['friendId_lowercase', 'EQUAL', code]], 1);
+  if (!found.length) found = runQuery_('users', [['friendId', 'EQUAL', code]], 1);
+  if (!found.length) fail_('ref_not_found');
+  const sponsor = found[0];
+  if (sponsor.id === u.uid) fail_('ref_self');
+  if (Number(sponsor.data.referralCount || 0) >= REFERRAL_MAX) fail_('ref_full');
+  const week = isoWeek_(new Date());
+  fsCommitInc_('users/' + u.uid, { referredBy: sponsor.id, referredAt: new Date() }, { totalXp: REFERRAL_XP, ['xpByWeek.`' + week + '`']: REFERRAL_XP });
+  fsCommitInc_('users/' + sponsor.id, { lastReferralAt: new Date() }, { totalXp: REFERRAL_XP, referralCount: 1, ['xpByWeek.`' + week + '`']: REFERRAL_XP });
+  logEvent_('referral', { uid: u.uid, sponsor: sponsor.id });
+  return { xp: REFERRAL_XP, sponsor: sponsor.data.pseudo || '' };
+}
+
+/** Semaine ISO « 2026W46 », identique à weekKey() côté appli. */
+function isoWeek_(d) {
+  const day = d.getDay() || 7;
+  const thursday = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 4 - day);
+  const first = new Date(thursday.getFullYear(), 0, 1);
+  const week = 1 + Math.floor(Math.round((thursday - first) / 86400000) / 7);
+  return thursday.getFullYear() + 'W' + (week < 10 ? '0' : '') + week;
+}
+
+/** Mise à jour atomique : champs posés + incréments (FieldValue.increment). */
+function fsCommitInc_(path, set, inc) {
+  const name = 'projects/' + PROJECT + '/databases/(default)/documents/' + path;
+  const fields = {};
+  Object.keys(set).forEach((k) => (fields[k] = toFs_(set[k])));
+  return gapi_('post', FS + ':commit', {
+    writes: [{
+      update: { name: name, fields: fields },
+      updateMask: { fieldPaths: Object.keys(set) },
+      updateTransforms: Object.keys(inc).map((k) => ({ fieldPath: k, increment: toFs_(inc[k]) })),
+      currentDocument: { exists: true },
+    }],
+  });
+}
+
+// ───────────────────────────── Spot My Car+ ─────────────────────────────
+// Vérifie un abonnement Google Play et écrit plus.until dans le profil.
+// Prérequis (une fois) : API « Google Play Android Developer » activée sur le projet,
+// le compte du serveur invité dans la Play Console (droits « commandes et abonnements »),
+// et le scope androidpublisher dans appsscript.json.
+
+const PACKAGE_NAME = 'com.owenmengual.spotmycar';
+const PLUS_IDS = ['spotmycar_plus_mensuel', 'spotmycar_plus_annuel'];
+const PLUS_OK = ['SUBSCRIPTION_STATE_ACTIVE', 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD', 'SUBSCRIPTION_STATE_CANCELED'];
+
+function plusVerify_(r) {
+  const u = userFromToken_(r.idToken);
+  const productId = String(r.productId || '');
+  const token = String(r.purchaseToken || '');
+  if (PLUS_IDS.indexOf(productId) < 0 || !token || token.length > 2000) fail_('bad_request');
+  const s = gapi_('get', 'https://androidpublisher.googleapis.com/androidpublisher/v3/applications/' + PACKAGE_NAME +
+    '/purchases/subscriptionsv2/tokens/' + encodeURIComponent(token));
+  let until = 0;
+  (s.lineItems || []).forEach((li) => { const t = Date.parse(li.expiryTime); if (t > until) until = t; });
+  const active = PLUS_OK.indexOf(s.subscriptionState) >= 0 && until > Date.now();
+  // Un achat = un compte : on refuse qu'un même jeton active plusieurs profils.
+  const h = hex_(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, token, Utilities.Charset.UTF_8));
+  const prev = fsGet_('plus_tokens/' + h);
+  if (prev && prev.uid && prev.uid !== u.uid) fail_('plus_owned');
+  fsSet_('plus_tokens/' + h, { uid: u.uid, productId: productId, state: s.subscriptionState || '', until: new Date(until || Date.now()), updatedAt: new Date() });
+  if (active) {
+    fsPatch_('users/' + u.uid, { plus: { until: new Date(until), productId: productId, state: s.subscriptionState, verifiedAt: new Date() } });
+  }
+  logEvent_('plus.verify', { uid: u.uid, productId: productId, state: s.subscriptionState, active: active });
+  return { active: active, until: until ? new Date(until).toISOString() : null };
 }

@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/plus_service.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -60,6 +61,7 @@ Future<void> main() async {
     return;
   }
   unawaited(RemoteConfig.instance.start());
+  PlusService.instance.start();
 
   runApp(
     MultiProvider(

@@ -41,6 +41,16 @@ class BackendException implements Exception {
         return tr('Ta session a expiré. Reconnecte-toi.');
       case 'auth_disabled':
         return tr('Ce compte a été désactivé.');
+      case 'ref_not_found':
+        return tr('Ce code ami n\'existe pas. Vérifie les chiffres.');
+      case 'ref_self':
+        return tr('Bien essayé, mais tu ne peux pas te parrainer toi-même 😄');
+      case 'ref_already':
+        return tr('Tu as déjà utilisé un code de parrainage.');
+      case 'ref_too_old':
+        return tr('Le parrainage est réservé aux comptes de moins de 30 jours.');
+      case 'ref_full':
+        return tr('Ce parrain a atteint le maximum de filleuls.');
       case 'network':
         return tr('Pas de connexion au serveur. Vérifie ton réseau.');
       default:
@@ -113,6 +123,9 @@ class BackendService {
       call('reset.apply', {'email': email, 'code': code, 'password': password}, false);
 
   // Suppression du compte
+  /// Parrainage : +300 XP pour le filleul et le parrain. Renvoie le pseudo du parrain.
+  Future<String> claimReferral(String code) async => '${(await call('referral.claim', {'code': code}))['sponsor'] ?? ''}';
+
   Future<CodeSent> sendDeleteCode() async => _sent(await call('delete.send'));
   Future<void> applyDelete(String code) => call('delete.apply', {'code': code});
 
