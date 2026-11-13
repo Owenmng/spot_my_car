@@ -25,7 +25,14 @@ Google garde 15 % des abonnements. AdMob reverse environ 5 à 20 € pour 1 000 
 5. Console Google Cloud (projet `car-spotter-app-779f2`) : activer l'API **Google Play Android Developer API**.
 6. Claude ajoute le scope `androidpublisher` au serveur et le republie. Une fenêtre d'autorisation Google s'ouvre : cliquer « Autoriser ».
 
-### 2. AdMob (Owen)
+### 2. AdMob ✅ fait le 13/11/2026
+- Compte AdMob créé sur owen.mengual@gmail.com (rattaché à l'éditeur AdSense pub-1863774498742699).
+- Appli « Spot My Car » (Android) : `ca-app-pub-1863774498742699~4951288709`
+- Bloc avec récompense « Coffre x2 » : `ca-app-pub-1863774498742699/8377342481`
+- Les comptes admin et les builds de debug utilisent le bloc de test Google (pas de clics sur ses propres pubs).
+- Reste : relier l'appli à sa fiche Play une fois publiée (AdMob › Applications › Paramètres de l'appli) pour lancer l'examen.
+
+Étapes d'origine :
 1. admob.google.com : créer le compte avec le compte Google de la Play Console.
 2. Ajouter l'appli (Android, publiée sur Play), puis créer un bloc d'annonces **Avec récompense**.
 3. **Confidentialité et messages** : activer le message RGPD (obligatoire en Europe ; l'appli l'affiche toute seule).

@@ -13,7 +13,9 @@ class AppConstants {
   static const String playStoreUrl = 'https://play.google.com/store/apps/details?id=$packageName';
   static const String playStoreMarket = 'market://details?id=$packageName';
 
-  /// Bloc de pub récompensée AdMob. Identifiant de TEST Google tant que le compte
-  /// AdMob n'est pas créé : à remplacer (avec l'APPLICATION_ID du manifeste) avant d'allumer les pubs.
-  static const String rewardedAdUnitId = 'ca-app-pub-3940256099942544/5224354917';
+  /// Bloc de pub récompensée AdMob « Coffre x2 » (compte AdMob d'Owen).
+  static const String rewardedAdUnitId = 'ca-app-pub-1863774498742699/8377342481';
+
+  /// Bloc de TEST Google : utilisé pour les comptes admin, pour ne jamais cliquer sur ses propres pubs.
+  static const String rewardedAdUnitTestId = 'ca-app-pub-3940256099942544/5224354917';
 }

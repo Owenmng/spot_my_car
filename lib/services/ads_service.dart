@@ -49,7 +49,7 @@ class AdsService {
       if (!await _init()) return;
       final done = Completer<void>();
       RewardedAd.load(
-        adUnitId: AppConstants.rewardedAdUnitId,
+        adUnitId: (kDebugMode || RemoteConfig.instance.isAdmin) ? AppConstants.rewardedAdUnitTestId : AppConstants.rewardedAdUnitId,
         request: const AdRequest(),
         rewardedAdLoadCallback: RewardedAdLoadCallback(
           onAdLoaded: (ad) {
