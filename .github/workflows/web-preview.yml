@@ -9,6 +9,9 @@ concurrency:
   group: web-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   web:
     runs-on: ubuntu-latest
@@ -27,3 +30,18 @@ jobs:
           name: web
           path: build/web
           retention-days: 3
+      - name: Captures
+        run: |
+          npm i --no-save playwright@1.49.1 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+          (cd build/web && python3 -m http.server 8088 >/dev/null 2>&1 &)
+          sleep 2
+          mkdir -p shots
+          node tool/shots_v11.js http://localhost:8088 shots
+      - name: Publier les captures
+        run: |
+          cd shots
+          git init -q -b captures-v11
+          git config user.name "ci" && git config user.email "ci@users.noreply.github.com"
+          git add . && git commit -qm "captures ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" captures-v11
