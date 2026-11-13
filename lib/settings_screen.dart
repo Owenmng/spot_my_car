@@ -22,6 +22,8 @@ import 'package:spot_my_car/forgot_password_screen.dart';
 import 'package:spot_my_car/screens/music_screen.dart';
 import 'package:spot_my_car/screens/tutorial_screen.dart';
 import 'package:spot_my_car/screens/plate_lookup_screen.dart';
+import 'package:spot_my_car/services/remote_config_service.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class SettingsScreen extends StatefulWidget {
@@ -237,6 +239,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
               subtitle: tr('Retrouver une voiture à partir de sa plaque'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const PlateLookupScreen())),
             ),
+            if (RemoteConfig.instance.isAdmin)
+              _Tile(
+                icon: Icons.admin_panel_settings_outlined,
+                title: tr('Console d\'administration'),
+                subtitle: 'car-spotter-app-779f2.web.app/admin',
+                onTap: () => launchUrl(Uri.parse('https://car-spotter-app-779f2.web.app/admin/'), mode: LaunchMode.externalApplication),
+              ),
             _Tile(icon: Icons.info_outline_rounded, title: tr('À propos de l\'application'), onTap: _openAbout),
             _Tile(icon: Icons.gavel_rounded, title: tr('Conditions d\'utilisation'), onTap: _openTerms),
           ]),
