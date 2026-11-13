@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Spot My Car · Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#09090c;--panel:#121217;--panel2:#181820;--line:#25252e;--ink:#f3f3f6;--soft:#a3a3ae;--muted:#6c6c78;--red:#e5202e;--orange:#ff7a1a;--green:#2fbf71;--amber:#f2a93b;--blue:#4c8dff;--violet:#9b6bff;--gold:#f5b301;--r:16px}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Inter,system-ui,sans-serif}
+a{color:inherit}button,input,select,textarea{font:inherit;color:inherit}
+.disp{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:.4px}
+#login{min-height:100vh;display:grid;place-items:center;background:radial-gradient(80% 60% at 70% 20%,rgba(229,32,46,.25),transparent 60%),var(--bg)}
+.login-card{width:min(420px,92vw);background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:34px;text-align:center;box-shadow:0 40px 90px rgba(0,0,0,.5)}
+.logo{display:flex;align-items:center;gap:12px}.logo b{font:800 24px 'Barlow Condensed';letter-spacing:1.4px}.logo b i{font-style:normal;color:var(--red)}
+.logo .mark{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--red),var(--orange));display:grid;place-items:center;font-weight:900}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:var(--panel2);padding:10px 16px;border-radius:12px;cursor:pointer;font-weight:600;transition:.15s}
+.btn:hover{border-color:#3a3a46;background:#1e1e27}.btn.primary{background:var(--red);border-color:var(--red);color:#fff}.btn.primary:hover{filter:brightness(1.1)}
+.btn.danger{color:#ff6b6b;border-color:#4a2026}.btn.small{padding:6px 10px;font-size:12.5px;border-radius:10px}.btn:disabled{opacity:.5;cursor:default}
+#app{display:none;min-height:100vh}
+aside{position:fixed;inset:0 auto 0 0;width:240px;background:var(--panel);border-right:1px solid var(--line);padding:22px 14px;display:flex;flex-direction:column;gap:6px;z-index:5}
+aside .logo{padding:0 8px 18px}
+nav button{width:100%;display:flex;align-items:center;gap:12px;background:none;border:0;padding:11px 12px;border-radius:12px;cursor:pointer;color:var(--soft);font-weight:600;text-align:left}
+nav button:hover{background:var(--panel2);color:var(--ink)}nav button.on{background:linear-gradient(90deg,rgba(229,32,46,.18),rgba(229,32,46,.04));color:#fff;box-shadow:inset 3px 0 0 var(--red)}
+nav .ico{width:20px;text-align:center}.badge{margin-left:auto;background:var(--red);color:#fff;font-size:11px;border-radius:99px;padding:1px 7px}
+aside .me{margin-top:auto;padding:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--soft)}
+main{margin-left:240px;padding:28px 34px 60px;max-width:1500px}
+header.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;gap:16px;flex-wrap:wrap}
+header.top h1{margin:0;font:800 34px 'Barlow Condensed';letter-spacing:.6px;text-transform:uppercase}
+header.top .sub{color:var(--muted);font-size:13px}
+.grid{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.card h3{margin:0 0 12px;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--soft)}
+.kpi .v{font:800 40px/1 'Barlow Condensed';margin-top:6px}.kpi .l{color:var(--soft);font-size:12.5px;font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+.kpi .d{color:var(--muted);font-size:12px;margin-top:6px}.kpi.accent{background:linear-gradient(135deg,rgba(229,32,46,.22),rgba(255,122,26,.06));border-color:#3d1a1f}
+.chartbox{height:240px;position:relative}
+table{width:100%;border-collapse:collapse}th{text-align:left;font-size:11.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);font-weight:700;padding:10px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel)}
+td{padding:10px;border-bottom:1px solid #1d1d25;vertical-align:middle}tr.click{cursor:pointer}tr.click:hover td{background:#16161d}
+.av{width:34px;height:34px;border-radius:50%;background:#26262f center/cover;display:inline-grid;place-items:center;font-weight:800;color:#fff;font-size:13px;flex:none}
+.u{display:flex;align-items:center;gap:10px}.u small{display:block;color:var(--muted);font-size:12px}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11.5px;font-weight:700;background:#22222b;color:var(--soft)}
+.pill.g{background:rgba(47,191,113,.14);color:#53d891}.pill.r{background:rgba(229,32,46,.15);color:#ff6b74}.pill.a{background:rgba(242,169,59,.15);color:#f2b75e}.pill.b{background:rgba(76,141,255,.15);color:#7aa9ff}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.input{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;outline:none;min-width:0}.input:focus{border-color:#4a4a58}
+textarea.input{width:100%;min-height:110px;resize:vertical}
+.scroll{max-height:68vh;overflow:auto;border-radius:12px}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(620px,100vw);background:var(--panel);border-left:1px solid var(--line);transform:translateX(105%);transition:.28s cubic-bezier(.2,.8,.2,1);z-index:20;overflow:auto;box-shadow:-30px 0 80px rgba(0,0,0,.5)}
+.drawer.open{transform:none}.drawer .hd{position:sticky;top:0;background:var(--panel);padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;z-index:2}
+.drawer .bd{padding:20px 22px}.kv{display:grid;grid-template-columns:150px 1fr;gap:8px 14px;font-size:13px}.kv div:nth-child(odd){color:var(--muted)}
+.spot{display:flex;gap:12px;align-items:center;padding:10px;border-radius:12px;background:var(--panel2);margin-bottom:8px}.spot img{width:74px;height:46px;object-fit:cover;border-radius:8px;background:#222}
+.toggle{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:14px;background:var(--panel2);border:1px solid var(--line);gap:14px}
+.toggle b{display:block}.toggle small{color:var(--muted)}
+.sw{position:relative;width:46px;height:26px;flex:none}.sw input{opacity:0;width:0;height:0}.sw span{position:absolute;inset:0;background:#33333e;border-radius:99px;transition:.2s;cursor:pointer}
+.sw span:before{content:"";position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s}.sw input:checked+span{background:var(--green)}.sw input:checked+span:before{transform:translateX(20px)}
+.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.col{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px;min-height:300px}
+.col h4{margin:4px 6px 12px;font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:var(--soft);display:flex;justify-content:space-between}
+.idea{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;cursor:pointer}.idea:hover{border-color:#3d3d4a}
+.idea b{display:block;margin-bottom:4px}.idea p{margin:0;color:var(--soft);font-size:12.5px;white-space:pre-wrap;max-height:60px;overflow:hidden}
+.prio-haute{box-shadow:inset 3px 0 0 var(--red)}.prio-basse{opacity:.8}
+.feed .ev{display:flex;gap:12px;padding:10px 4px;border-bottom:1px solid #1d1d25;font-size:13px}.feed .ev .t{color:var(--muted);width:110px;flex:none}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(120px);background:#1f1f27;border:1px solid var(--line);padding:12px 18px;border-radius:14px;transition:.25s;z-index:50;font-weight:600}
+.toast.show{transform:translateX(-50%)}
+.empty{color:var(--muted);text-align:center;padding:40px}
+.loader{width:22px;height:22px;border:3px solid #333;border-top-color:var(--red);border-radius:50%;animation:sp 0.8s linear infinite;display:inline-block}@keyframes sp{to{transform:rotate(360deg)}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:40}.modal.open{display:grid}.modal .box{width:min(560px,94vw);background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}
+.row{display:flex;gap:10px}.row>*{flex:1}label.f{display:block;font-size:12px;color:var(--soft);font-weight:600;margin:12px 0 6px}
+.bars .b{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px}.bars .b span{width:110px;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bars .b i{height:10px;border-radius:99px;background:linear-gradient(90deg,var(--red),var(--orange));display:block}
+.bars .b em{font-style:normal;color:var(--muted);font-size:12px}
+.mobile-top{display:none}
+@media(max-width:1100px){.g4{grid-template-columns:repeat(2,1fr)}.g3,.g2{grid-template-columns:1fr}.kanban{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){aside{transform:translateX(-100%);transition:.25s}aside.open{transform:none}main{margin:0;padding:18px 14px 60px}.mobile-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.g4{grid-template-columns:1fr 1fr}.kanban{grid-template-columns:1fr}.kv{grid-template-columns:110px 1fr}.hide-m{display:none}}
+</style>
+</head>
+<body>
+<section id="login">
+  <div class="login-card">
+    <div class="logo" style="justify-content:center;margin-bottom:18px"><div class="mark">S</div><b>SPOT <i>MY</i> CAR</b></div>
+    <h2 class="disp" style="font-size:30px;margin:6px 0 4px;text-transform:uppercase">Console d'administration</h2>
+    <p style="color:var(--soft);margin:0 0 24px">Accès réservé. Connecte-toi avec ton compte Google administrateur.</p>
+    <button class="btn primary" id="btnLogin" style="width:100%;padding:13px">Se connecter avec Google</button>
+    <p id="loginErr" style="color:#ff6b74;margin:14px 0 0;min-height:20px"></p>
+  </div>
+</section>
+
+<section id="app">
+  <aside id="side">
+    <div class="logo"><div class="mark">S</div><b>SPOT <i>MY</i> CAR</b></div>
+    <nav id="nav">
+      <button data-v="dash" class="on"><span class="ico">📊</span>Tableau de bord</button>
+      <button data-v="users"><span class="ico">👥</span>Utilisateurs</button>
+      <button data-v="support"><span class="ico">💬</span>Support <span class="badge" id="bTickets" style="display:none"></span></button>
+      <button data-v="ideas"><span class="ico">💡</span>Idées & ajouts</button>
+      <button data-v="config"><span class="ico">🎛️</span>Pilotage de l'appli</button>
+      <button data-v="mail"><span class="ico">✉️</span>Envoyer un e-mail</button>
+      <button data-v="feedback"><span class="ico">🧠</span>Retours IA</button>
+      <button data-v="events"><span class="ico">🧾</span>Journal</button>
+    </nav>
+    <div class="me"><div id="meMail"></div><button class="btn small" id="btnOut" style="margin-top:10px">Se déconnecter</button></div>
+  </aside>
+  <main>
+    <div class="mobile-top"><button class="btn small" onclick="document.getElementById('side').classList.toggle('open')">☰</button><div class="logo"><b>SPOT <i>MY</i> CAR</b></div></div>
+
+    <!-- Tableau de bord -->
+    <div class="view" id="v-dash">
+      <header class="top"><div><h1>Tableau de bord</h1><div class="sub" id="dashSub">Chargement…</div></div><button class="btn" onclick="loadDash(true)">↻ Actualiser</button></header>
+      <div class="grid g4" id="kpis"></div>
+      <div class="grid g2" style="margin-top:16px">
+        <div class="card"><h3>Inscriptions · 30 jours</h3><div class="chartbox"><canvas id="chSign"></canvas></div></div>
+        <div class="card"><h3>Spots · 30 jours</h3><div class="chartbox"><canvas id="chSpots"></canvas></div></div>
+      </div>
+      <div class="grid g3" style="margin-top:16px">
+        <div class="card"><h3>Marques les plus spottées</h3><div class="bars" id="topBrands"></div></div>
+        <div class="card"><h3>Raretés</h3><div class="chartbox" style="height:220px"><canvas id="chRar"></canvas></div></div>
+        <div class="card"><h3>Langues · Versions · Connexion</h3><div class="bars" id="mix"></div></div>
+      </div>
+      <div class="card" style="margin-top:16px"><h3>Derniers spots</h3><div id="lastSpots" class="grid g3"></div></div>
+    </div>
+
+    <!-- Utilisateurs -->
+    <div class="view" id="v-users" style="display:none">
+      <header class="top"><div><h1>Utilisateurs</h1><div class="sub" id="usersSub"></div></div>
+        <div class="toolbar" style="margin:0"><input class="input" id="q" placeholder="Rechercher (pseudo, e-mail, ID ami…)" style="width:280px">
+        <select class="input" id="fUsers"><option value="">Tous</option><option value="active">Actifs (7 j)</option><option value="new">Nouveaux (7 j)</option><option value="unverified">Code non validé</option><option value="disabled">Désactivés</option><option value="noprofile">Profil incomplet</option></select>
+        <button class="btn" onclick="exportCsv()">⬇ CSV</button><button class="btn" onclick="loadUsers(true)">↻</button></div></header>
+      <div class="card" style="padding:0"><div class="scroll"><table><thead><tr><th>Joueur</th><th class="hide-m">Inscrit</th><th class="hide-m">Vu</th><th>XP</th><th>Spots</th><th class="hide-m">Connexion</th><th>État</th></tr></thead><tbody id="usersBody"></tbody></table></div></div>
+    </div>
+
+    <!-- Support -->
+    <div class="view" id="v-support" style="display:none">
+      <header class="top"><div><h1>Support</h1><div class="sub">Messages envoyés depuis l'appli. Réponds directement depuis ta boîte mail.</div></div><button class="btn" onclick="loadSupport()">↻ Actualiser</button></header>
+      <div id="tickets"></div>
+    </div>
+
+    <!-- Idées -->
+    <div class="view" id="v-ideas" style="display:none">
+      <header class="top"><div><h1>Idées & ajouts</h1><div class="sub">Ta feuille de route : note tes idées, fais-les avancer jusqu'à « Fait ».</div></div><button class="btn primary" onclick="editIdea()">＋ Nouvelle idée</button></header>
+      <div class="kanban" id="kanban"></div>
+    </div>
+
+    <!-- Pilotage -->
+    <div class="view" id="v-config" style="display:none">
+      <header class="top"><div><h1>Pilotage de l'appli</h1><div class="sub">Les changements s'appliquent dans l'appli au prochain lancement (ou en direct pour la maintenance et les annonces).</div></div><button class="btn primary" id="btnSaveCfg" onclick="saveConfig()">Enregistrer</button></header>
+      <div class="grid g2">
+        <div class="card"><h3>Fonctionnalités</h3><div class="grid" id="features" style="gap:10px"></div></div>
+        <div class="grid" style="gap:16px;align-content:start">
+          <div class="card"><h3>Annonce dans l'appli</h3>
+            <textarea class="input" id="cAnn" placeholder="Ex. : Nouveau ! Le blind test débarque ce week-end 🏁"></textarea>
+            <div class="row" style="margin-top:10px"><select class="input" id="cAnnLvl"><option value="info">Info</option><option value="success">Bonne nouvelle</option><option value="warning">Attention</option></select><button class="btn" onclick="$('#cAnn').value=''">Effacer l'annonce</button></div>
+          </div>
+          <div class="card"><h3>Maintenance</h3>
+            <div class="toggle"><div><b>Mode maintenance</b><small>Bloque l'appli avec un message (sauf pour toi).</small></div><label class="sw"><input type="checkbox" id="cMaint"><span></span></label></div>
+            <textarea class="input" id="cMaintMsg" style="margin-top:10px;min-height:70px" placeholder="Message affiché pendant la maintenance"></textarea>
+          </div>
+          <div class="card"><h3>Mises à jour</h3>
+            <div class="row"><div><label class="f">Version minimale (build)</label><input class="input" id="cMin" type="number" style="width:100%"></div><div><label class="f">Dernière version (build)</label><input class="input" id="cLatest" type="number" style="width:100%"></div></div>
+            <label class="f">Message de mise à jour</label><input class="input" id="cUpd" style="width:100%" placeholder="Une nouvelle version est disponible !">
+            <small style="color:var(--muted);display:block;margin-top:8px">Si la version de l'appli est sous la minimale, l'utilisateur doit mettre à jour. Sous la dernière : simple suggestion.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E-mail -->
+    <div class="view" id="v-mail" style="display:none">
+      <header class="top"><div><h1>Envoyer un e-mail</h1><div class="sub">Envoyé depuis noreply.spotmycar@gmail.com avec la mise en page de l'appli.</div></div><div class="sub" id="quota"></div></header>
+      <div class="card" style="max-width:720px">
+        <label class="f">Destinataire (e-mail)</label><input class="input" id="mTo" style="width:100%" placeholder="joueur@exemple.com">
+        <div class="row"><div><label class="f">Objet</label><input class="input" id="mSubj" style="width:100%"></div><div style="flex:.35"><label class="f">Langue des mentions</label><select class="input" id="mLang" style="width:100%"><option>fr</option><option>en</option><option>es</option><option>de</option><option>it</option><option>pt</option></select></div></div>
+        <label class="f">Message</label><textarea class="input" id="mBody" style="min-height:200px"></textarea>
+        <div style="margin-top:14px;display:flex;justify-content:flex-end"><button class="btn primary" onclick="sendMail()">Envoyer</button></div>
+      </div>
+    </div>
+
+    <div class="view" id="v-feedback" style="display:none">
+      <header class="top"><div><h1>Retours sur l'IA</h1><div class="sub">Quand un joueur signale une mauvaise reconnaissance.</div></div><button class="btn" onclick="loadFeedback()">↻</button></header>
+      <div class="card" style="padding:0"><div class="scroll"><table><thead><tr><th>Date</th><th>L'IA a dit</th><th>Correction</th><th>Joueur</th></tr></thead><tbody id="fbBody"></tbody></table></div></div>
+    </div>
+
+    <div class="view" id="v-events" style="display:none">
+      <header class="top"><div><h1>Journal</h1><div class="sub">Tout ce qui se passe côté serveur : inscriptions validées, mots de passe, suppressions, notes…</div></div><button class="btn" onclick="loadEvents()">↻</button></header>
+      <div class="card feed" id="feed"></div>
+    </div>
+  </main>
+</section>
+
+<div class="drawer" id="drawer"><div class="hd"><button class="btn small" onclick="closeDrawer()">✕</button><div id="dTitle" style="font-weight:800;font-size:16px"></div></div><div class="bd" id="dBody"></div></div>
+<div class="modal" id="modal"><div class="box" id="mBox"></div></div>
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+
+const SERVER = '__SERVER_URL__';
+const fb = initializeApp({ apiKey: 'AIzaSyCt1kTAo-NkFWpTTEt7tlQek_98ruDkwEA', authDomain: 'car-spotter-app-779f2.firebaseapp.com', projectId: 'car-spotter-app-779f2', appId: '1:619341587877:web:87e669aecc11698aa5744c' });
+const auth = getAuth(fb);
+const $ = (s) => document.querySelector(s);
+window.$ = $;
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fmtD = (ms) => ms ? new Date(ms).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short', year: '2-digit' }) : '—';
+const ago = (ms) => { if (!ms) return '—'; const s = (Date.now() - ms) / 1000; if (s < 60) return 'à l’instant'; if (s < 3600) return Math.floor(s / 60) + ' min'; if (s < 86400) return Math.floor(s / 3600) + ' h'; if (s < 86400 * 30) return Math.floor(s / 86400) + ' j'; return fmtD(ms); };
+const toMs = (v) => typeof v === 'number' ? v : (v ? Date.parse(v) : 0);
+const toast = (m) => { const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('show'), 2600); };
+
+async function api(action, body = {}) {
+  const idToken = await auth.currentUser.getIdToken();
+  const res = await fetch(SERVER, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action, idToken, ...body }) });
+  const j = await res.json();
+  if (!j.ok) throw new Error(j.error + (j.message ? ' (' + j.message + ')' : ''));
+  return j;
+}
+
+$('#btnLogin').onclick = async () => {
+  $('#loginErr').textContent = '';
+  try { await signInWithPopup(auth, new GoogleAuthProvider()); } catch (e) { $('#loginErr').textContent = 'Connexion impossible : ' + e.code; }
+};
+$('#btnOut').onclick = () => signOut(auth);
+
+onAuthStateChanged(auth, async (u) => {
+  if (!u) { $('#login').style.display = 'grid'; $('#app').style.display = 'none'; return; }
+  try {
+    await api('admin.quota');
+  } catch (e) {
+    $('#loginErr').textContent = e.message.startsWith('forbidden') ? 'Ce compte n’a pas accès à la console.' : 'Serveur injoignable : ' + e.message;
+    await signOut(auth); return;
+  }
+  $('#login').style.display = 'none'; $('#app').style.display = 'block';
+  $('#meMail').textContent = u.email;
+  show('dash');
+});
+
+document.querySelectorAll('#nav button').forEach((b) => b.onclick = () => { show(b.dataset.v); $('#side').classList.remove('open'); });
+const loaded = {};
+function show(v) {
+  document.querySelectorAll('#nav button').forEach((b) => b.classList.toggle('on', b.dataset.v === v));
+  document.querySelectorAll('.view').forEach((x) => x.style.display = x.id === 'v-' + v ? '' : 'none');
+  if (v === 'dash') loadDash(); if (v === 'users') loadUsers(); if (v === 'support') loadSupport(); if (v === 'ideas') loadIdeas();
+  if (v === 'config') loadConfig(); if (v === 'events') loadEvents(); if (v === 'feedback') loadFeedback();
+  if (v === 'mail') api('admin.quota').then((r) => $('#quota').textContent = 'Quota restant aujourd’hui : ' + r.mailQuota + ' e-mails');
+}
+
+// ───── Tableau de bord
+let charts = {};
+Chart.defaults.color = '#8d8d98'; Chart.defaults.borderColor = '#22222b'; Chart.defaults.font.family = 'Inter';
+function chart(id, cfg) { if (charts[id]) charts[id].destroy(); charts[id] = new Chart($('#' + id), cfg); }
+window.loadDash = async function (force) {
+  if (loaded.dash && !force) return; loaded.dash = true;
+  $('#dashSub').innerHTML = '<span class="loader"></span>';
+  let d; try { d = await api('admin.overview'); } catch (e) { $('#dashSub').textContent = 'Erreur : ' + e.message; loaded.dash = false; return; }
+  const t = d.totals;
+  $('#dashSub').textContent = 'Mis à jour ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) + ' · statistiques de spots sur les ' + d.sampleSize + ' derniers';
+  const k = (l, v, sub, acc) => `<div class="card kpi ${acc ? 'accent' : ''}"><div class="l">${l}</div><div class="v">${v}</div><div class="d">${sub || ''}</div></div>`;
+  $('#kpis').innerHTML = k('Utilisateurs', t.users, '+' + t.newUsers7 + ' cette semaine', true) + k('Actifs aujourd’hui', t.dau, t.wau + ' sur 7 j · ' + t.mau + ' sur 30 j') + k('Spots', t.spots, '+' + t.spots7 + ' cette semaine') + k('Support à traiter', t.openTickets, 'Quota e-mail : ' + t.mailQuota + '/jour');
+  if (t.openTickets) { $('#bTickets').style.display = ''; $('#bTickets').textContent = t.openTickets; }
+  const line = (rows, color) => ({ type: 'bar', data: { labels: rows.map((r) => r.day), datasets: [{ data: rows.map((r) => r.n), backgroundColor: color, borderRadius: 6, maxBarThickness: 18 }] }, options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { precision: 0 } }, x: { grid: { display: false } } } } });
+  chart('chSign', line(d.signups, '#e5202e')); chart('chSpots', line(d.spotsByDay, '#ff7a1a'));
+  const rc = { mythique: '#f5b301', exotique: '#ff7a1a', rare: '#9b6bff', sportive: '#4c8dff', commune: '#8b8f98' };
+  const rk = Object.keys(d.rarities || {});
+  chart('chRar', { type: 'doughnut', data: { labels: rk, datasets: [{ data: rk.map((x) => d.rarities[x]), backgroundColor: rk.map((x) => rc[x.toLowerCase()] || '#555'), borderWidth: 0 }] }, options: { maintainAspectRatio: false, cutout: '62%', plugins: { legend: { position: 'right' } } } });
+  const bars = (arr) => { const m = Math.max(1, ...arr.map((x) => x.n)); return arr.map((x) => `<div class="b"><span title="${esc(x.k)}">${esc(x.k)}</span><i style="width:${Math.max(4, x.n / m * 100)}%"></i><em>${x.n}</em></div>`).join('') || '<div class="empty">Rien encore</div>'; };
+  $('#topBrands').innerHTML = bars(d.topBrands);
+  const obj = (o) => Object.keys(o || {}).map((k) => ({ k, n: o[k] })).sort((a, b) => b.n - a.n);
+  const prov = { 'google.com': 'Google', password: 'E-mail' };
+  $('#mix').innerHTML = '<div style="color:var(--muted);font-size:12px;margin:2px 0">LANGUES</div>' + bars(obj(d.languages).slice(0, 6)) + '<div style="color:var(--muted);font-size:12px;margin:12px 0 2px">VERSIONS</div>' + bars(obj(d.versions).slice(0, 5)) + '<div style="color:var(--muted);font-size:12px;margin:12px 0 2px">CONNEXION</div>' + bars(obj(d.providers).map((x) => ({ k: prov[x.k] || x.k, n: x.n })));
+  $('#lastSpots').innerHTML = (d.lastSpots || []).map((s) => `<div class="spot"><img src="${esc(s.image)}" onerror="this.style.visibility='hidden'"><div><b>${esc(s.brand)} ${esc(s.model)}</b><div style="color:var(--muted);font-size:12px">${esc(s.pseudo || '—')} · ${ago(toMs(s.at))}${s.place ? ' · ' + esc(s.place) : ''}</div></div></div>`).join('') || '<div class="empty">Aucun spot</div>';
+};
+
+// ───── Utilisateurs
+let USERS = [];
+window.loadUsers = async function (force) {
+  if (loaded.users && !force) return renderUsers(); loaded.users = true;
+  $('#usersBody').innerHTML = '<tr><td colspan="7" class="empty"><span class="loader"></span></td></tr>';
+  try { USERS = (await api('admin.users')).users; } catch (e) { $('#usersBody').innerHTML = `<tr><td colspan="7" class="empty">Erreur : ${esc(e.message)}</td></tr>`; loaded.users = false; return; }
+  renderUsers();
+};
+$('#q').oninput = () => renderUsers(); $('#fUsers').onchange = () => renderUsers();
+function filtered() {
+  const q = $('#q').value.trim().toLowerCase(); const f = $('#fUsers').value; const wk = Date.now() - 7 * 864e5;
+  return USERS.filter((u) => (!q || [u.pseudo, u.email, u.friendId, u.displayName, u.firstName, u.lastName, u.uid].join(' ').toLowerCase().includes(q))
+    && (!f || (f === 'active' && u.lastSeenAt > wk) || (f === 'new' && u.createdAt > wk) || (f === 'unverified' && u.emailCodeRequired && !u.emailCodeVerified) || (f === 'disabled' && u.disabled) || (f === 'noprofile' && !u.profileCompleted)));
+}
+function avatar(u) { const n = (u.pseudo || u.displayName || u.email || '?')[0].toUpperCase(); const img = u.photoUrl && u.photoUrl.startsWith('http') ? `background-image:url('${esc(u.photoUrl)}')` : `background:hsl(${(u.uid.charCodeAt(0) * 37) % 360} 55% 38%)`; return `<span class="av" style="${img}">${u.photoUrl && u.photoUrl.startsWith('http') ? '' : esc(n)}</span>`; }
+function renderUsers() {
+  const list = filtered();
+  $('#usersSub').textContent = list.length + ' sur ' + USERS.length + ' comptes';
+  $('#usersBody').innerHTML = list.map((u) => `<tr class="click" onclick="openUser('${u.uid}')"><td><div class="u">${avatar(u)}<div><b>${esc(u.pseudo || u.displayName || '(sans pseudo)')}</b><small>${esc(u.email)}</small></div></div></td>
+    <td class="hide-m">${fmtD(u.createdAt)}</td><td class="hide-m">${ago(u.lastSeenAt)}</td><td>${u.totalXp.toLocaleString('fr-FR')}</td><td>${u.totalSpots}</td>
+    <td class="hide-m">${u.providers.map((p) => p === 'google.com' ? '<span class="pill b">Google</span>' : '<span class="pill">E-mail</span>').join(' ')}</td>
+    <td>${u.disabled ? '<span class="pill r">Désactivé</span>' : u.emailCodeRequired && !u.emailCodeVerified ? '<span class="pill a">Code en attente</span>' : !u.profileCompleted ? '<span class="pill">Profil incomplet</span>' : '<span class="pill g">Actif</span>'}</td></tr>`).join('') || '<tr><td colspan="7" class="empty">Personne ici</td></tr>';
+}
+window.exportCsv = () => {
+  const cols = ['uid', 'pseudo', 'email', 'firstName', 'lastName', 'createdAt', 'lastSeenAt', 'totalXp', 'totalSpots', 'uniqueBrands', 'language', 'appVersion', 'disabled'];
+  const csv = [cols.join(';')].concat(filtered().map((u) => cols.map((c) => { let v = u[c]; if (c.endsWith('At')) v = v ? new Date(v).toISOString() : ''; return '"' + String(v ?? '').replace(/"/g, '""') + '"'; }).join(';'))).join('\n');
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿' + csv], { type: 'text/csv' })); a.download = 'spotmycar-utilisateurs.csv'; a.click();
+};
+window.closeDrawer = () => $('#drawer').classList.remove('open');
+window.openUser = async (uid) => {
+  const u = USERS.find((x) => x.uid === uid) || { uid };
+  $('#dTitle').innerHTML = `<div class="u">${avatar(u)}<div>${esc(u.pseudo || u.displayName || u.email)}<small style="color:var(--muted);font-weight:500">${esc(u.email)}</small></div></div>`;
+  $('#dBody').innerHTML = '<span class="loader"></span>'; $('#drawer').classList.add('open');
+  let d; try { d = await api('admin.user', { uid }); } catch (e) { $('#dBody').textContent = 'Erreur : ' + e.message; return; }
+  const p = d.profile || {}; const a = d.auth || {};
+  const kv = (k, v) => `<div>${k}</div><div>${v}</div>`;
+  $('#dBody').innerHTML = `
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px">
+      <button class="btn small" onclick="mailTo('${esc(a.email || u.email)}')">✉️ Écrire</button>
+      ${u.emailCodeRequired && !u.emailCodeVerified ? `<button class="btn small" onclick="markVerified('${uid}')">✓ Valider l'e-mail</button>` : ''}
+      <button class="btn small" onclick="setDisabled('${uid}', ${!a.disabled})">${a.disabled ? '🔓 Réactiver' : '⛔ Désactiver'}</button>
+      <button class="btn small danger" onclick="delUser('${uid}')">🗑 Supprimer</button></div>
+    <div class="grid g3" style="margin-bottom:18px">
+      <div class="card kpi"><div class="l">XP</div><div class="v">${(p.totalXp || 0).toLocaleString('fr-FR')}</div></div>
+      <div class="card kpi"><div class="l">Spots</div><div class="v">${d.spots.length}</div></div>
+      <div class="card kpi"><div class="l">Marques</div><div class="v">${(p.stats || {}).uniqueBrands || 0}</div></div></div>
+    <div class="kv">${kv('Pseudo', esc(p.pseudo || '—'))}${kv('Nom', esc([p.firstName, p.lastName].filter(Boolean).join(' ') || '—'))}${kv('E-mail', esc(a.email || '—') + (a.emailVerified ? ' <span class="pill g">vérifié</span>' : ''))}
+      ${kv('Inscription', a.createdAt ? new Date(+a.createdAt).toLocaleString('fr-FR') : '—')}${kv('Dernière connexion', a.lastLoginAt ? new Date(+a.lastLoginAt).toLocaleString('fr-FR') : '—')}
+      ${kv('Vu dans l’appli', p.lastSeenAt ? new Date(p.lastSeenAt).toLocaleString('fr-FR') : '—')}${kv('ID ami', esc(p.friendId || '—'))}${kv('Marque préférée', esc((p.stats || {}).favoriteBrandName || '—'))}
+      ${kv('Date de naissance', esc(p.dateOfBirth || '—'))}${kv('Langue · version', esc((p.language || '—') + ' · ' + (p.appVersion || '—')))}${kv('UID', `<code style="font-size:11.5px">${esc(uid)}</code>`)}</div>
+    <h3 style="margin:24px 0 10px;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--soft)">Garage (${d.spots.length})</h3>
+    ${d.spots.map((s) => `<div class="spot"><img src="${esc(s.image)}" onerror="this.style.visibility='hidden'"><div style="flex:1"><b>${esc(s.brand)} ${esc(s.model)}</b><div style="color:var(--muted);font-size:12px">${esc(s.plate)} · ${ago(toMs(s.at))}${s.place ? ' · ' + esc(s.place) : ''}</div></div>${s.rarity ? `<span class="pill">${esc(s.rarity)}</span>` : ''}</div>`).join('') || '<div class="empty">Aucun spot</div>'}
+    <h3 style="margin:24px 0 10px;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--soft)">Activité serveur</h3>
+    <div class="feed">${(d.events || []).map(evRow).join('') || '<div class="empty">Rien</div>'}</div>`;
+};
+window.setDisabled = async (uid, dis) => { if (!confirm(dis ? 'Désactiver ce compte ? Le joueur ne pourra plus se connecter.' : 'Réactiver ce compte ?')) return; try { await api('admin.setDisabled', { uid, disabled: dis }); toast(dis ? 'Compte désactivé' : 'Compte réactivé'); const u = USERS.find((x) => x.uid === uid); if (u) u.disabled = dis; renderUsers(); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); } };
+window.markVerified = async (uid) => { try { await api('admin.markVerified', { uid }); toast('E-mail validé'); const u = USERS.find((x) => x.uid === uid); if (u) u.emailCodeVerified = true; renderUsers(); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); } };
+window.delUser = async (uid) => { const u = USERS.find((x) => x.uid === uid) || {}; const ok = prompt('Suppression DÉFINITIVE du compte, du garage et des photos.\nTape SUPPRIMER pour confirmer.'); if (ok !== 'SUPPRIMER') return; try { await api('admin.deleteUser', { uid }); toast('Compte supprimé'); USERS = USERS.filter((x) => x.uid !== uid); renderUsers(); closeDrawer(); } catch (e) { toast('Erreur : ' + e.message); } };
+window.mailTo = (email) => { closeDrawer(); show('mail'); $('#mTo').value = email; $('#mSubj').focus(); };
+
+// ───── Support
+window.loadSupport = async () => {
+  $('#tickets').innerHTML = '<span class="loader"></span>';
+  let t; try { t = (await api('admin.support')).tickets; } catch (e) { $('#tickets').textContent = 'Erreur : ' + e.message; return; }
+  t.sort((a, b) => toMs(b.at) - toMs(a.at));
+  const st = { nouveau: '<span class="pill r">Nouveau</span>', en_cours: '<span class="pill a">En cours</span>', resolu: '<span class="pill g">Résolu</span>' };
+  $('#tickets').innerHTML = t.map((x) => `<div class="card" style="margin-bottom:12px"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><span class="pill">${esc(x.topic)}</span> ${st[x.status] || ''} <b style="margin-left:6px">${esc(x.subject)}</b><div style="color:var(--muted);font-size:12px;margin-top:4px">${esc(x.email || 'anonyme')} · ${new Date(toMs(x.at)).toLocaleString('fr-FR')} · ticket ${esc(x._id.slice(0, 6).toUpperCase())}</div></div>
+    <div style="display:flex;gap:6px"><a class="btn small" href="mailto:${esc(x.email)}?subject=${encodeURIComponent('Re: ' + x.subject)}">Répondre</a><button class="btn small" onclick="setTicket('${x._id}','en_cours')">En cours</button><button class="btn small" onclick="setTicket('${x._id}','resolu')">Résolu</button></div></div>
+    <div style="white-space:pre-wrap;margin-top:12px;background:var(--panel2);padding:12px 14px;border-radius:12px">${esc(x.message)}</div></div>`).join('') || '<div class="card empty">Aucun message 🎉</div>';
+  const open = t.filter((x) => x.status === 'nouveau').length; $('#bTickets').style.display = open ? '' : 'none'; $('#bTickets').textContent = open;
+};
+window.setTicket = async (id, status) => { try { await api('admin.support.update', { id, status }); toast('Ticket mis à jour'); loadSupport(); } catch (e) { toast('Erreur : ' + e.message); } };
+
+// ───── Idées
+let IDEAS = [];
+const COLS = [['idee', '💡 Idées'], ['a_faire', '📋 À faire'], ['en_cours', '🔧 En cours'], ['fait', '✅ Fait']];
+window.loadIdeas = async () => {
+  $('#kanban').innerHTML = '<span class="loader"></span>';
+  try { IDEAS = (await api('admin.ideas')).ideas; } catch (e) { $('#kanban').textContent = 'Erreur : ' + e.message; return; }
+  IDEAS.sort((a, b) => ({ haute: 0, normale: 1, basse: 2 }[a.priority] - { haute: 0, normale: 1, basse: 2 }[b.priority]) || toMs(b.updatedAt) - toMs(a.updatedAt));
+  $('#kanban').innerHTML = COLS.map(([k, l]) => { const items = IDEAS.filter((i) => i.status === k); return `<div class="col"><h4>${l}<span>${items.length}</span></h4>${items.map((i) => `<div class="idea prio-${i.priority}" onclick="editIdea('${i._id}')"><b>${esc(i.title)}</b>${i.tag ? `<span class="pill" style="margin-bottom:6px">${esc(i.tag)}</span>` : ''}<p>${esc(i.notes)}</p></div>`).join('')}</div>`; }).join('');
+};
+window.editIdea = (id) => {
+  const i = IDEAS.find((x) => x._id === id) || { status: 'idee', priority: 'normale' };
+  $('#mBox').innerHTML = `<h2 class="disp" style="margin:0 0 6px;text-transform:uppercase">${id ? 'Modifier' : 'Nouvelle idée'}</h2>
+    <label class="f">Titre</label><input class="input" id="iT" style="width:100%" value="${esc(i.title || '')}">
+    <label class="f">Notes</label><textarea class="input" id="iN">${esc(i.notes || '')}</textarea>
+    <div class="row"><div><label class="f">Colonne</label><select class="input" id="iS" style="width:100%">${COLS.map(([k, l]) => `<option value="${k}" ${i.status === k ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+    <div><label class="f">Priorité</label><select class="input" id="iP" style="width:100%">${['haute', 'normale', 'basse'].map((p) => `<option ${i.priority === p ? 'selected' : ''}>${p}</option>`).join('')}</select></div>
+    <div><label class="f">Étiquette</label><input class="input" id="iG" style="width:100%" value="${esc(i.tag || '')}" placeholder="UI, bug…"></div></div>
+    <div style="display:flex;gap:8px;justify-content:space-between;margin-top:18px">${id ? `<button class="btn danger" onclick="delIdea('${id}')">Supprimer</button>` : '<span></span>'}<div style="display:flex;gap:8px"><button class="btn" onclick="$('#modal').classList.remove('open')">Annuler</button><button class="btn primary" onclick="saveIdea('${id || ''}')">Enregistrer</button></div></div>`;
+  $('#modal').classList.add('open'); setTimeout(() => $('#iT').focus(), 50);
+};
+window.saveIdea = async (id) => { const idea = { id: id || undefined, title: $('#iT').value, notes: $('#iN').value, status: $('#iS').value, priority: $('#iP').value, tag: $('#iG').value }; if (!idea.title.trim()) return toast('Donne un titre'); try { await api('admin.ideas.save', { idea }); $('#modal').classList.remove('open'); toast('Enregistré'); loadIdeas(); } catch (e) { toast('Erreur : ' + e.message); } };
+window.delIdea = async (id) => { if (!confirm('Supprimer cette idée ?')) return; try { await api('admin.ideas.delete', { id }); $('#modal').classList.remove('open'); loadIdeas(); } catch (e) { toast('Erreur : ' + e.message); } };
+$('#modal').onclick = (e) => { if (e.target.id === 'modal') $('#modal').classList.remove('open'); };
+
+// ───── Pilotage
+const FEAT = { blindTest: ['Blind test', 'Le quiz « quelle voiture ? »'], duels: ['Duels', 'Défis entre amis'], community: ['Communauté', 'Amis et classements'], map: ['Carte des spots', 'La carte du monde'], plateLookup: ['Recherche par plaque', 'Assistant d’identification par plaque'], aiRecognition: ['Reconnaissance IA', 'Analyse des photos par l’IA'], ratePrompt: ['Demande de note', 'Proposer de noter l’appli sur Google Play'], tutorial: ['Tutoriel', 'Tutoriel au premier lancement'], emailVerification: ['Code à l’inscription', 'Vérifier l’e-mail des nouveaux comptes par code'] };
+let CFG = null;
+window.loadConfig = async () => {
+  try { CFG = (await api('admin.config.get')).config; } catch (e) { toast('Erreur : ' + e.message); return; }
+  $('#features').innerHTML = Object.keys(FEAT).map((k) => `<div class="toggle"><div><b>${FEAT[k][0]}</b><small>${FEAT[k][1]}</small></div><label class="sw"><input type="checkbox" data-f="${k}" ${CFG.features[k] ? 'checked' : ''}><span></span></label></div>`).join('');
+  $('#cAnn').value = CFG.announcement || ''; $('#cAnnLvl').value = CFG.announcementLevel || 'info'; $('#cMaint').checked = !!CFG.maintenance; $('#cMaintMsg').value = CFG.maintenanceMessage || '';
+  $('#cMin').value = CFG.minVersion || 0; $('#cLatest').value = CFG.latestVersion || 0; $('#cUpd').value = CFG.updateMessage || '';
+};
+window.saveConfig = async () => {
+  const features = {}; document.querySelectorAll('[data-f]').forEach((i) => features[i.dataset.f] = i.checked);
+  const config = { features, announcement: $('#cAnn').value.trim(), announcementLevel: $('#cAnnLvl').value, maintenance: $('#cMaint').checked, maintenanceMessage: $('#cMaintMsg').value.trim(), minVersion: +$('#cMin').value, latestVersion: +$('#cLatest').value, updateMessage: $('#cUpd').value.trim() };
+  if (config.maintenance && !confirm('Activer la maintenance bloque l’appli pour tous les joueurs. Continuer ?')) return;
+  $('#btnSaveCfg').disabled = true;
+  try { CFG = (await api('admin.config.set', { config })).config; toast('Réglages enregistrés ✓'); } catch (e) { toast('Erreur : ' + e.message); }
+  $('#btnSaveCfg').disabled = false;
+};
+
+// ───── E-mail
+window.sendMail = async () => {
+  const email = $('#mTo').value.trim(), subject = $('#mSubj').value.trim(), message = $('#mBody').value.trim();
+  if (!email || !subject || !message) return toast('Remplis tous les champs');
+  if (!confirm('Envoyer cet e-mail à ' + email + ' ?')) return;
+  try { await api('admin.mail', { email, subject, message, lang: $('#mLang').value }); toast('E-mail envoyé ✓'); $('#mBody').value = ''; $('#mSubj').value = ''; } catch (e) { toast('Erreur : ' + e.message); }
+};
+
+// ───── Retours IA / Journal
+window.loadFeedback = async () => {
+  let f; try { f = (await api('admin.feedback')).feedback; } catch (e) { toast('Erreur : ' + e.message); return; }
+  f.sort((a, b) => toMs(b.createdAt || b.at) - toMs(a.createdAt || a.at));
+  $('#fbBody').innerHTML = f.map((x) => `<tr><td>${fmtD(toMs(x.createdAt || x.at || x.timestamp))}</td><td>${esc(x.aiGuess || x.predicted || x.guess || '—')}</td><td>${esc(x.correction || x.actual || x.userChoice || x.comment || '—')}</td><td><code style="font-size:11px">${esc((x.userId || '').slice(0, 8))}</code></td></tr>`).join('') || '<tr><td colspan="4" class="empty">Aucun retour</td></tr>';
+};
+const EV = { 'verify.send': '✉️ Code d’inscription envoyé', 'verify.ok': '✅ E-mail confirmé', 'reset.send': '🔑 Code mot de passe envoyé', 'reset.ok': '🔒 Mot de passe changé', 'delete.send': '⚠️ Code de suppression envoyé', 'delete.ok': '🗑 Compte supprimé par le joueur', support: '💬 Message au support', 'rate.prompt': '⭐ Demande de note affichée', 'rate.accept': '⭐ A accepté de noter', 'rate.later': '⭐ Plus tard', 'tutorial.done': '🎓 Tutoriel terminé', 'tutorial.skip': '🎓 Tutoriel passé', 'plate.lookup': '🔎 Recherche de plaque', 'admin.config': '🎛️ Réglages modifiés', 'admin.disable': '⛔ Compte désactivé', 'admin.enable': '🔓 Compte réactivé', 'admin.delete': '🗑 Compte supprimé (admin)', 'admin.mail': '✉️ E-mail envoyé (admin)', 'admin.verify': '✓ E-mail validé (admin)' };
+function evRow(e) { return `<div class="ev"><div class="t">${ago(toMs(e.at))}</div><div>${EV[e.type] || esc(e.type)} ${e.email ? '<span style="color:var(--muted)">· ' + esc(e.email) + '</span>' : ''}${e.subject ? ' · ' + esc(e.subject) : ''}${e.detail ? ' <span style="color:var(--muted)">' + esc(e.detail) + '</span>' : ''}</div></div>`; }
+window.loadEvents = async () => {
+  $('#feed').innerHTML = '<span class="loader"></span>';
+  try { const ev = (await api('admin.events')).events; $('#feed').innerHTML = ev.map(evRow).join('') || '<div class="empty">Rien pour l’instant</div>'; } catch (e) { $('#feed').textContent = 'Erreur : ' + e.message; }
+};
+</script>
+</body>
+</html>
