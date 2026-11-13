@@ -53,12 +53,8 @@
   {
    "id": "buick_series-d-four",
    "name": "Serie D-Four",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1922_Buick_roadster.JPG/1280px-1922_Buick_roadster.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1922_Buick_roadster.JPG"
+   "tags": []
   },
   {
    "id": "buick_series-d-six",
