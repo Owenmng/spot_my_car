@@ -46,7 +46,10 @@ class _TutorialScreenState extends State<TutorialScreen> {
   void _next() {
     HapticFeedback.selectionClick();
     AudioService.instance.playSfx(SoundEffect.clicLeger);
-    if (_page == _count - 1) return _finish(false);
+    if (_page == _count - 1) {
+      _finish(false);
+      return;
+    }
     _pc.nextPage(duration: const Duration(milliseconds: 520), curve: Curves.easeOutCubic);
   }
 
