@@ -128,6 +128,8 @@ T = [
      "Der Kauf ist fehlgeschlagen. Versuch es gleich nochmal.", "L'acquisto non è andato a buon fine. Riprova tra poco.", "A compra não foi concluída. Tenta novamente."),
     ("L'abonnement n'est pas encore disponible. Reviens très vite !", "The subscription isn't available yet. Check back soon!", "La suscripción aún no está disponible. ¡Vuelve pronto!",
      "Das Abo ist noch nicht verfügbar. Schau bald wieder vorbei!", "L'abbonamento non è ancora disponibile. Torna presto!", "A subscrição ainda não está disponível. Volta em breve!"),
+    ("Confidentialité des pubs", "Ad privacy", "Privacidad de anuncios", "Werbe-Datenschutz", "Privacy degli annunci", "Privacidade dos anúncios"),
+    ("Modifier ton consentement publicitaire", "Change your ad consent", "Cambia tu consentimiento publicitario", "Werbe-Einwilligung ändern", "Modifica il consenso pubblicitario", "Alterar o consentimento de anúncios"),
     ("Nuit dorée", "Golden Night", "Noche dorada", "Goldene Nacht", "Notte dorata", "Noite dourada"),
     ("Abysse", "Abyss", "Abismo", "Abyss", "Abisso", "Abismo"),
     ("Or 24 carats", "24-carat Gold", "Oro de 24 quilates", "24-Karat-Gold", "Oro 24 carati", "Ouro 24 quilates"),

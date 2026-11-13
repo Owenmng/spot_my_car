@@ -90,4 +90,11 @@ class AdsService {
     unawaited(preload());
     return earned;
   }
+
+  /// Lien de révocation RGPD : rouvre le formulaire de choix de confidentialité.
+  Future<void> openPrivacyOptions() async {
+    if (kIsWeb) return;
+    await _init();
+    ConsentForm.showPrivacyOptionsForm((_) {});
+  }
 }

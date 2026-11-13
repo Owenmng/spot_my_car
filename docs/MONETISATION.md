@@ -15,7 +15,11 @@ Google garde 15 % des abonnements. AdMob reverse environ 5 à 20 € pour 1 000 
 
 ## À faire une seule fois (c'est gratuit)
 
-### 1. Abonnements Google Play (Owen)
+### 1. Abonnements Google Play
+✅ 13/11/2026 : profil de paiement marchand activé (profil existant « Owen Mengual », nom public « Spot My Car », contact owen.mengual@gmail.com, relevé « SPOT MY CAR »).
+⏳ Owen : ajouter le compte bancaire (Play Console › Gérer le compte › Profil de paiement › Ajouter un mode de paiement). Ce compte sert aussi pour AdMob.
+
+Étapes :
 1. Play Console › **Paramètres › Profil de paiement** : créer le profil marchand (nom, adresse, IBAN).
 2. Envoyer un build 1.1 sur la piste **Test interne**. Le test fermé n'est pas touché. Play n'autorise la création des abonnements qu'une fois qu'un build contenant la facturation a été envoyé.
 3. Play Console › **Monétiser › Produits › Abonnements** : créer

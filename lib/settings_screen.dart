@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+import 'package:spot_my_car/services/ads_service.dart';
 import 'package:spot_my_car/screens/plus_screen.dart';
 import 'package:spot_my_car/services/plus_service.dart';
 import 'package:spot_my_car/screens/referral_screen.dart';
@@ -262,6 +264,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 title: tr('Console d\'administration'),
                 subtitle: 'car-spotter-app-779f2.web.app/admin',
                 onTap: () => launchUrl(Uri.parse('https://car-spotter-app-779f2.web.app/admin/'), mode: LaunchMode.externalApplication),
+              ),
+            if (RemoteConfig.instance.feature('rewardedAds') && defaultTargetPlatform == TargetPlatform.android)
+              _Tile(
+                icon: Icons.privacy_tip_outlined,
+                title: tr('Confidentialité des pubs'),
+                subtitle: tr('Modifier ton consentement publicitaire'),
+                onTap: () => AdsService.instance.openPrivacyOptions(),
               ),
             _Tile(icon: Icons.info_outline_rounded, title: tr('À propos de l\'application'), onTap: _openAbout),
             _Tile(icon: Icons.gavel_rounded, title: tr('Conditions d\'utilisation'), onTap: _openTerms),
