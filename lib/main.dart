@@ -17,6 +17,7 @@ import 'package:spot_my_car/services/data_manager.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/services/theme_notifier.dart';
 import 'package:spot_my_car/services/remote_config_service.dart';
+import 'package:spot_my_car/screens/demo_preview.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 
 Future<void> main() async {
@@ -47,6 +48,17 @@ Future<void> main() async {
 
   final themeNotifier = await ThemeNotifier.create();
   unawaited(DataManager.instance.loadAllData());
+
+  // Captures de contrôle (version web seulement) : ?demo=tuto2, verify, plate…
+  final demo = kIsWeb ? Uri.base.queryParameters['demo'] : null;
+  if (demo != null) {
+    await DataManager.instance.loadAllData();
+    runApp(MultiProvider(
+      providers: [ChangeNotifierProvider.value(value: AudioService.instance), ChangeNotifierProvider.value(value: I18n.instance)],
+      child: demoScreen(demo, themeNotifier.currentThemeData),
+    ));
+    return;
+  }
   unawaited(RemoteConfig.instance.start());
 
   runApp(

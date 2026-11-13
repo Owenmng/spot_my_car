@@ -16,7 +16,10 @@ import 'package:spot_my_car/widgets/ui_kit.dart';
 /// Tutoriel de première arrivée (passable). Revoyable depuis les réglages.
 class TutorialScreen extends StatefulWidget {
   final String? pseudo;
-  const TutorialScreen({super.key, this.pseudo});
+
+  /// Page de départ (captures de contrôle uniquement).
+  final int debugPage;
+  const TutorialScreen({super.key, this.pseudo, this.debugPage = 0});
 
   static String _key() => 'tutorial_done_${FirebaseAuth.instance.currentUser?.uid ?? 'anon'}';
 
@@ -39,8 +42,8 @@ class TutorialScreen extends StatefulWidget {
 }
 
 class _TutorialScreenState extends State<TutorialScreen> {
-  final _pc = PageController();
-  int _page = 0;
+  late final _pc = PageController(initialPage: widget.debugPage);
+  late int _page = widget.debugPage;
   static const _count = 6;
 
   void _next() {

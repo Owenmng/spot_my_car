@@ -39,6 +39,14 @@ class RateService {
     } catch (_) {}
   }
 
+  /// Affiche la fenêtre (captures de contrôle uniquement).
+  static Future<void> debugShow(BuildContext context) => showModalBottomSheet<String>(
+        context: context,
+        backgroundColor: Colors.transparent,
+        isScrollControlled: true,
+        builder: (ctx) => const _RateSheet(),
+      );
+
   static Future<void> _ask(BuildContext context, SharedPreferences p, int opens) async {
     BackendService.instance.event('rate.prompt', 'ouvertures $opens');
     final res = await showModalBottomSheet<String>(
