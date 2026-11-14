@@ -89,8 +89,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp build/app/outputs/flutter-apk/app-release.apk SpotMyCar-1.1-apercu.apk
+          cp build/app/outputs/bundle/release/app-release.aab SpotMyCar-1.1-PlayStore.aab
           gh release delete apercu-1.1 --yes --cleanup-tag || true
-          gh release create apercu-1.1 SpotMyCar-1.1-apercu.apk --prerelease --target ${{ github.sha }} \
+          gh release create apercu-1.1 SpotMyCar-1.1-apercu.apk SpotMyCar-1.1-PlayStore.aab --prerelease --target ${{ github.sha }} \
             --title "Aperçu 1.1 (${GITHUB_SHA::7})" \
             --notes "Version 1.1 en préparation (branche wip/v1-1). Non publiée sur le Play Store."
 

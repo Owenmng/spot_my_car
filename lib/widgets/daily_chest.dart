@@ -196,7 +196,7 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
-    final gauge = min(size.width - 60, 320.0);
+    final gauge = min(min(size.width - 90, 270.0), size.height * 0.34);
     return Scaffold(
       backgroundColor: const Color(0xFF060608),
       body: Stack(
@@ -240,7 +240,7 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
                   const Spacer(),
                   SizedBox(
                     width: gauge,
-                    height: gauge * 0.78,
+                    height: gauge,
                     child: AnimatedBuilder(
                       animation: Listenable.merge([_rev, _idle]),
                       builder: (context, _) {
@@ -248,7 +248,7 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
                         return CustomPaint(
                           painter: _RevGaugePainter(value: v, started: _started),
                           child: Align(
-                            alignment: const Alignment(0, 0.35),
+                            alignment: const Alignment(0, 0.47),
                             child: AnimatedSwitcher(
                               duration: const Duration(milliseconds: 300),
                               child: _started
@@ -260,7 +260,7 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
                                       builder: (_, n, _) => Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
-                                          Text('+$n', style: AppText.display(54, color: Colors.white).copyWith(height: 1, shadows: [Shadow(color: _red.withValues(alpha: 0.8), blurRadius: 24)])),
+                                          Text('+$n', style: AppText.display(46, color: Colors.white).copyWith(height: 1, shadows: [Shadow(color: _red.withValues(alpha: 0.8), blurRadius: 24)])),
                                           Text('XP', style: AppText.label(13, color: Colors.white60).copyWith(letterSpacing: 3)),
                                         ],
                                       ),
