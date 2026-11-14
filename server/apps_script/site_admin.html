@@ -365,12 +365,12 @@ function drawUser(uid, u, d) {
       <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
         <div><b style="font-size:15px">Spot My Car+ ${proOn ? '<span class="pill a">PRO actif</span>' : '<span class="pill">Gratuit</span>'}</b>
         <div style="color:var(--muted);font-size:12.5px;margin-top:3px">${proOn ? (plus.productId === 'admin' ? 'Offert par toi' : 'Abonnement Google Play') + (proUntil > Date.UTC(2090, 0) ? ' · à vie' : ' · jusqu’au ' + new Date(proUntil).toLocaleDateString('fr-FR')) : 'Ce joueur paie s’il veut le Pro.'}</div></div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap">
+        ${!d.profile ? '<div style="color:var(--muted);font-size:12.5px">Profil pas encore créé dans l’appli</div>' : `<div style="display:flex;gap:6px;flex-wrap:wrap">
           <button class="btn small" onclick="setPro('${uid}', 30)">+1 mois</button>
           <button class="btn small" onclick="setPro('${uid}', 365)">+1 an</button>
           <button class="btn small primary" onclick="setPro('${uid}', -1)">À vie</button>
           ${proOn ? `<button class="btn small danger" onclick="setPro('${uid}', 0)">Retirer</button>` : ''}
-        </div></div></div>
+        </div>`}</div></div>
     <div class="grid g3" style="margin-bottom:18px">
       <div class="card kpi"><div class="l">XP</div><div class="v">${(p.totalXp || 0).toLocaleString('fr-FR')}</div></div>
       <div class="card kpi"><div class="l">Spots</div><div class="v">${d.spots.length}</div></div>
@@ -392,7 +392,7 @@ window.setPro = async (uid, days) => {
   const who = u.pseudo || u.email || 'ce joueur';
   const label = days === 0 ? 'Retirer le Pro à ' + who + ' ?' : days < 0 ? 'Offrir le Pro à vie à ' + who + ' ?' : 'Offrir ' + (days >= 365 ? '1 an' : '1 mois') + ' de Pro à ' + who + ' ?';
   if (!(await ask(label, days === 0 ? 'Il repassera en gratuit tout de suite. Un abonnement Google Play payé reste géré par Google.' : 'Activé tout de suite dans son appli, sans paiement.', { ok: days === 0 ? 'Retirer' : 'Offrir', danger: days === 0 }))) return;
-  try { const r = await api('admin.plus.set', { uid, days }); u.plusUntil = r.until ? Date.parse(r.until) : 0; store.set('users', { users: USERS }); renderUsers(); toast(days === 0 ? 'Pro retiré' : 'Pro activé ✓'); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); }
+  try { const r = await api('admin.plus.set', { uid, days }); u.plusUntil = r.until ? Date.parse(r.until) : 0; store.set('users', { users: USERS }); renderUsers(); toast(days === 0 ? 'Pro retiré' : 'Pro activé ✓'); openUser(uid); } catch (e) { toast(/not_found/.test(e.message) ? 'Ce joueur n’a pas encore créé son profil.' : 'Erreur : ' + e.message); }
 };
 window.mailTo = (email) => { closeDrawer(); show('mail'); $('#mTo').value = email; $('#mSubj').focus(); };
 
