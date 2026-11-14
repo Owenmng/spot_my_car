@@ -5,9 +5,10 @@
 - ✅ Pro offert : bouton « Devenir membre » sur un compte admin = Pro à vie gratuit (« Gratuit pour toi, patron »).
 - ✅ Console › Utilisateurs › fiche joueur : +1 mois / +1 an / À vie / Retirer.
 - ✅ API Google Play Android Developer activée sur le projet Cloud ; noreply.spotmycar@gmail.com invité dans la Play Console (données financières + commandes/abonnements).
-- ⏳ Owen : activer la validation en 2 étapes sur noreply.spotmycar@gmail.com (sinon il ne peut pas accepter l'invitation Play Console).
-- ⏳ Ensuite : ajouter le scope `https://www.googleapis.com/auth/androidpublisher` dans appsscript.json, ré-autoriser (clic « Autoriser »), redéployer. D'ici là, un achat est activé 7 jours à titre provisoire (état UNVERIFIED).
-- ⏳ Owen : ajouter l'IBAN dans le profil de paiement.
+- ✅ noreply a rejoint la Play Console (2 étapes activées), scope androidpublisher ajouté et autorisé, serveur version 7.
+- ⏳ Google met jusqu'à 24-36 h à propager les droits Play du compte noreply (l'API répond 401 en attendant) : pendant ce temps un achat est activé 7 jours à titre provisoire (UNVERIFIED).
+- ✅ IBAN ajouté (en attente de validation par Google).
+- ⏳ Signer le build 1.1 avec spotmycar-release-key.jks (mot de passe à fournir par Owen), l'envoyer en test interne, puis créer les abonnements.
 
 
 Tout est déjà codé dans la 1.1 et **éteint par défaut** : deux interrupteurs dans la console admin
