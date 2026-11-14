@@ -649,8 +649,23 @@ function plusVerify_(r) {
   const productId = String(r.productId || '');
   const token = String(r.purchaseToken || '');
   if (PLUS_IDS.indexOf(productId) < 0 || !token || token.length > 2000) fail_('bad_request');
-  const s = gapi_('get', 'https://androidpublisher.googleapis.com/androidpublisher/v3/applications/' + PACKAGE_NAME +
-    '/purchases/subscriptionsv2/tokens/' + encodeURIComponent(token));
+  let s;
+  try {
+    s = gapi_('get', 'https://androidpublisher.googleapis.com/androidpublisher/v3/applications/' + PACKAGE_NAME +
+      '/purchases/subscriptionsv2/tokens/' + encodeURIComponent(token));
+  } catch (e) {
+    // Accès à l'API Play pas encore autorisé pour le serveur : on active à titre provisoire
+    // (7 jours, marqué « UNVERIFIED » dans la console) pour ne jamais bloquer un vrai client.
+    if (!/ 40[13] /.test(String(e)) || token.length < 80) throw e;
+    const h0 = hex_(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, token, Utilities.Charset.UTF_8));
+    const prev0 = fsGet_('plus_tokens/' + h0);
+    if (prev0 && prev0.uid && prev0.uid !== u.uid) fail_('plus_owned');
+    const until0 = Date.now() + 7 * 86400000;
+    fsSet_('plus_tokens/' + h0, { uid: u.uid, productId: productId, state: 'UNVERIFIED', until: new Date(until0), updatedAt: new Date() });
+    fsPatch_('users/' + u.uid, { plus: { until: new Date(until0), productId: productId, state: 'UNVERIFIED', verifiedAt: new Date() } });
+    logEvent_('plus.unverified', { uid: u.uid, productId: productId, error: String(e).slice(0, 160) });
+    return { active: true, until: new Date(until0).toISOString(), provisional: true };
+  }
   let until = 0;
   (s.lineItems || []).forEach((li) => { const t = Date.parse(li.expiryTime); if (t > until) until = t; });
   const active = PLUS_OK.indexOf(s.subscriptionState) >= 0 && until > Date.now();
