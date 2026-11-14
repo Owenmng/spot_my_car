@@ -129,7 +129,7 @@
   {
    "id": "cadillac_bls-wagon",
    "name": "BLS Wagon",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Cadillac_BLS_front.JPG/1280px-Cadillac_BLS_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Cadillac_BLS-Wagon_Rear-view.JPG/1280px-Cadillac_BLS-Wagon_Rear-view.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2010",
    "puissance_ch": 210,
    "vitesse_max_kmh": 225,
@@ -153,9 +153,9 @@
     "estate car",
     "second hand car"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_BLS_front.JPG"
+   "imageCredit": "Luc106",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_BLS-Wagon_Rear-view.JPG"
   },
   {
    "id": "cadillac_brougham",
@@ -868,7 +868,7 @@
   {
    "id": "cadillac_eldorado-biarritz",
    "name": "Eldorado Biarritz",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Eldorado-biarritz-guggenheim-333.jpg/1280px-Eldorado-biarritz-guggenheim-333.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/1956_Cadillac_Eldorado_Biarritz%2C_Techno-Classica_2025%2C_Essen_%28P1046143%29.jpg/1280px-1956_Cadillac_Eldorado_Biarritz%2C_Techno-Classica_2025%2C_Essen_%28P1046143%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 2002",
    "puissance_ch": 305,
    "vitesse_max_kmh": 241,
@@ -893,9 +893,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Luistxo",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Eldorado-biarritz-guggenheim-333.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Cadillac_Eldorado_Biarritz,_Techno-Classica_2025,_Essen_(P1046143).jpg"
   },
   {
    "id": "cadillac_eldorado-seville",
@@ -1250,7 +1250,7 @@
   {
    "id": "cadillac_model-a",
    "name": "Model A",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cadillac_Model_30_Touring_1908_%286031928677%29.jpg/1280px-Cadillac_Model_30_Touring_1908_%286031928677%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/1903_Cadillac_Model_A_%26_1904_Ford_Model_A-C_%286038126608%29.jpg/1280px-1903_Cadillac_Model_A_%26_1904_Ford_Model_A-C_%286038126608%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1903 - 1904",
    "puissance_ch": 10,
    "vitesse_max_kmh": 60,
@@ -1274,7 +1274,7 @@
    ],
    "imageCredit": "Greg Gjerdingen from Willmar, USA",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Model_30_Touring_1908_(6031928677).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1903_Cadillac_Model_A_%26_1904_Ford_Model_A-C_(6038126608).jpg"
   },
   {
    "id": "cadillac_model-b",
