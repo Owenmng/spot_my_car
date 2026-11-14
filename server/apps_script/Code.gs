@@ -70,6 +70,7 @@ const ROUTES = {
   'event': clientEvent_,
   'referral.claim': referralClaim_,
   'plus.verify': plusVerify_,
+  'push.notify': pushNotify_,
   // Console d'administration
   'admin.overview': (r) => { requireAdmin_(r); return adminOverview_(r); },
   'admin.users': (r) => { requireAdmin_(r); return adminUsers_(r); },
@@ -77,6 +78,7 @@ const ROUTES = {
   'admin.setDisabled': (r) => { requireAdmin_(r); return adminSetDisabled_(r); },
   'admin.deleteUser': (r) => { requireAdmin_(r); return adminDeleteUser_(r); },
   'admin.markVerified': (r) => { requireAdmin_(r); return adminMarkVerified_(r); },
+  'admin.plus.set': (r) => { requireAdmin_(r); return adminPlusSet_(r); },
   'admin.mail': (r) => { requireAdmin_(r); return adminMail_(r); },
   'admin.config.get': (r) => { requireAdmin_(r); return { config: getConfig_() }; },
   'admin.config.set': (r) => { requireAdmin_(r); return adminConfigSet_(r); },
@@ -535,8 +537,8 @@ const DEFAULT_CONFIG = {
     wanted: true,
     referral: true,
     shareStats: true,
-    premium: false,
-    rewardedAds: false,
+    premium: true,
+    rewardedAds: true,
   },
   minVersion: 0,
   latestVersion: 0,
@@ -662,4 +664,66 @@ function plusVerify_(r) {
   }
   logEvent_('plus.verify', { uid: u.uid, productId: productId, state: s.subscriptionState, active: active });
   return { active: active, until: until ? new Date(until).toISOString() : null };
+}
+
+// ───────────────────────────── Notifications push ─────────────────────────────
+// L'appli signale un événement social ; le serveur vérifie qu'il existe vraiment
+// (et que c'est bien l'auteur qui le signale) puis prévient l'autre joueur via FCM.
+
+const PUSH_TEXT = {
+  friend_request: { fr: ['Nouvelle demande d’ami', '{0} veut t’ajouter en ami. Accepte pour comparer vos garages !'], en: ['New friend request', '{0} wants to add you as a friend.'], es: ['Nueva solicitud de amistad', '{0} quiere añadirte como amigo.'], de: ['Neue Freundschaftsanfrage', '{0} möchte dich als Freund hinzufügen.'], it: ['Nuova richiesta di amicizia', '{0} vuole aggiungerti come amico.'], pt: ['Novo pedido de amizade', '{0} quer adicionar-te como amigo.'] },
+  friend_accept: { fr: ['Demande acceptée 🤝', '{0} est maintenant ton ami. Défie-le en duel !'], en: ['Request accepted 🤝', '{0} is now your friend. Challenge them to a duel!'], es: ['Solicitud aceptada 🤝', '{0} ya es tu amigo. ¡Rétalo a un duelo!'], de: ['Anfrage angenommen 🤝', '{0} ist jetzt dein Freund. Fordere ihn zum Duell!'], it: ['Richiesta accettata 🤝', '{0} ora è tuo amico. Sfidalo a duello!'], pt: ['Pedido aceite 🤝', '{0} é agora teu amigo. Desafia-o para um duelo!'] },
+  duel: { fr: ['⚔️ Défi en duel', '{0} te lance un duel. Tu relèves le défi ?'], en: ['⚔️ Duel challenge', '{0} challenged you to a duel. Game on?'], es: ['⚔️ Reto a duelo', '{0} te reta a un duelo. ¿Aceptas?'], de: ['⚔️ Duell-Herausforderung', '{0} fordert dich zum Duell heraus. Nimmst du an?'], it: ['⚔️ Sfida a duello', '{0} ti sfida a duello. Accetti?'], pt: ['⚔️ Desafio de duelo', '{0} desafiou-te para um duelo. Aceitas?'] },
+  duel_accept: { fr: ['⚔️ Duel accepté', '{0} a accepté ton duel. Que le meilleur spotteur gagne !'], en: ['⚔️ Duel accepted', '{0} accepted your duel. May the best spotter win!'], es: ['⚔️ Duelo aceptado', '{0} aceptó tu duelo. ¡Que gane el mejor!'], de: ['⚔️ Duell angenommen', '{0} hat dein Duell angenommen. Möge der Beste gewinnen!'], it: ['⚔️ Duello accettato', '{0} ha accettato il tuo duello. Vinca il migliore!'], pt: ['⚔️ Duelo aceite', '{0} aceitou o teu duelo. Que ganhe o melhor!'] },
+};
+
+function pushNotify_(r) {
+  const u = userFromToken_(r.idToken);
+  const kind = String(r.kind || '');
+  const ref = safeId_(r.ref);
+  if (!PUSH_TEXT[kind]) fail_('bad_request');
+  const cache = CacheService.getScriptCache();
+  const key = 'push:' + kind + ':' + ref;
+  if (cache.get(key)) return { sent: 0, dup: true };
+  let target = null;
+  if (kind === 'friend_request' || kind === 'friend_accept') {
+    const d = fsGet_('friend_requests/' + ref);
+    if (!d) fail_('not_found');
+    if (kind === 'friend_request' && d.fromUserId === u.uid) target = d.toUserId;
+    if (kind === 'friend_accept' && d.toUserId === u.uid && d.status === 'accepted') target = d.fromUserId;
+  } else {
+    const d = fsGet_('duels/' + ref);
+    if (!d) fail_('not_found');
+    if (kind === 'duel' && d.challengerId === u.uid) target = d.opponentId;
+    if (kind === 'duel_accept' && d.opponentId === u.uid && d.status === 'active') target = d.challengerId;
+  }
+  if (!target) fail_('forbidden');
+  cache.put(key, '1', 21600);
+  const me = fsGet_('users/' + u.uid) || {};
+  const to = fsGet_('users/' + safeId_(target)) || {};
+  const tokens = (to.fcmTokens || []).filter(Boolean).slice(-5);
+  if (!tokens.length) return { sent: 0 };
+  const lang = lang_(to.language || to.appLanguage || 'fr');
+  const t = PUSH_TEXT[kind][lang] || PUSH_TEXT[kind].fr;
+  const name = me.pseudo || me.firstName || 'Un spotteur';
+  let sent = 0;
+  const dead = [];
+  tokens.forEach((token) => {
+    try {
+      gapi_('post', 'https://fcm.googleapis.com/v1/projects/' + PROJECT + '/messages:send', {
+        message: {
+          token: token,
+          notification: { title: t[0], body: t[1].replace('{0}', name) },
+          data: { kind: kind, ref: ref },
+          android: { priority: 'HIGH', notification: { channel_id: 'spotmycar_social', color: '#E5202E', sound: 'default' } },
+        },
+      });
+      sent++;
+    } catch (e) {
+      if (/UNREGISTERED|NOT_FOUND|INVALID_ARGUMENT/.test(String(e))) dead.push(token);
+    }
+  });
+  if (dead.length) fsPatch_('users/' + safeId_(target), { fcmTokens: tokens.filter((x) => dead.indexOf(x) < 0) });
+  logEvent_('push', { uid: u.uid, to: target, kind: kind, sent: sent });
+  return { sent: sent };
 }

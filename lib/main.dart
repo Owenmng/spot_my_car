@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/push_service.dart';
 import 'package:spot_my_car/services/plus_service.dart';
 import 'dart:async';
 
@@ -62,6 +63,7 @@ Future<void> main() async {
   }
   unawaited(RemoteConfig.instance.start());
   PlusService.instance.start();
+  unawaited(PushService.start());
 
   runApp(
     MultiProvider(

@@ -170,7 +170,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               _Tile(
                 icon: Icons.workspace_premium_rounded,
                 title: 'Spot My Car+',
-                subtitle: PlusService.instance.isPlus ? tr('Membre actif · gérer mon abonnement') : tr('Coffre doublé, thèmes exclusifs, zéro pub'),
+                subtitle: PlusService.instance.isPlus ? tr('Membre actif · gérer mon abonnement') : tr('XP doublée, thèmes exclusifs, zéro pub'),
                 onTap: () => PlusScreen.open(context),
               ),
             _Tile(

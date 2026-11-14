@@ -16,6 +16,8 @@ import 'package:spot_my_car/widgets/daily_chest.dart';
 import 'package:spot_my_car/widgets/garage_hero.dart';
 import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:spot_my_car/widgets/wanted_card.dart';
+import 'package:spot_my_car/widgets/weekly_quests_card.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Version web uniquement : affiche un écran isolé (?demo=...) pour les captures de contrôle.
 Widget demoScreen(String name, ThemeData theme) {
@@ -68,7 +70,7 @@ Widget demoScreen(String name, ThemeData theme) {
         }
         final cars = [
           for (final m in models)
-            {...m, 'brandName': '${m['brandId']}'.toUpperCase(), 'modelName': m['name'], 'modelImageUrl': m['imageUrl'], 'rarity': m['brandId'] == 'ferrari' ? 'legendaire' : (m['brandId'] == 'porsche' ? 'epique' : 'commune')},
+            {...m, 'brandName': '${m['brandId']}'.toUpperCase(), 'modelName': m['name'], 'modelImageUrl': m['imageUrl'], 'rarity': m['brandId'] == 'ferrari' ? 'legendaire' : (m['brandId'] == 'porsche' ? 'epique' : 'commune'), 'spottedAt': Timestamp.now(), 'locationName': m['brandId'] == 'bmw' ? 'Rennes' : 'Paris'},
         ];
         return Scaffold(
           body: ListView(
@@ -78,7 +80,9 @@ Widget demoScreen(String name, ThemeData theme) {
               const SizedBox(height: 12),
               const WantedCard(claimed: false),
               const SizedBox(height: 12),
-              const WantedCard(claimed: true),
+              WeeklyQuestsCard(cars: cars, user: const {}),
+              const SizedBox(height: 12),
+              const PlusBanner(),
             ],
           ),
         );

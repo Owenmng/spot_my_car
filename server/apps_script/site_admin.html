@@ -68,6 +68,7 @@ textarea.input{width:100%;min-height:110px;resize:vertical}
 .toast.show{transform:translateX(-50%)}
 .empty{color:var(--muted);text-align:center;padding:40px}
 .loader{width:22px;height:22px;border:3px solid #333;border-top-color:var(--red);border-radius:50%;animation:sp 0.8s linear infinite;display:inline-block}@keyframes sp{to{transform:rotate(360deg)}}
+.ask p{margin:0 0 14px;color:var(--soft);line-height:1.5;white-space:pre-line}.ask h3{margin:0 0 8px;font-size:18px}.ask .row{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}.ask input{width:100%}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:40}.modal.open{display:grid}.modal .box{width:min(560px,94vw);background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}
 .row{display:flex;gap:10px}.row>*{flex:1}label.f{display:block;font-size:12px;color:var(--soft);font-weight:600;margin:12px 0 6px}
 .bars .b{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px}.bars .b span{width:110px;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bars .b i{height:10px;border-radius:99px;background:linear-gradient(90deg,var(--red),var(--orange));display:block}
@@ -193,6 +194,7 @@ textarea.input{width:100%;min-height:110px;resize:vertical}
 
 <div class="drawer" id="drawer"><div class="hd"><button class="btn small" onclick="closeDrawer()">✕</button><div id="dTitle" style="font-weight:800;font-size:16px"></div></div><div class="bd" id="dBody"></div></div>
 <div class="modal" id="modal"><div class="box" id="mBox"></div></div>
+<div class="modal" id="askM"><div class="box ask" id="askBox"></div></div>
 <div class="toast" id="toast"></div>
 
 <script type="module">
@@ -209,6 +211,23 @@ const fmtD = (ms) => ms ? new Date(ms).toLocaleDateString('fr-FR', { day: '2-dig
 const ago = (ms) => { if (!ms) return '—'; const s = (Date.now() - ms) / 1000; if (s < 60) return 'à l’instant'; if (s < 3600) return Math.floor(s / 60) + ' min'; if (s < 86400) return Math.floor(s / 3600) + ' h'; if (s < 86400 * 30) return Math.floor(s / 86400) + ' j'; return fmtD(ms); };
 const toMs = (v) => typeof v === 'number' ? v : (v ? Date.parse(v) : 0);
 const toast = (m) => { const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('show'), 2600); };
+
+// Boîte de confirmation maison (remplace les pop-ups du navigateur).
+function ask(title, text, { ok = 'Confirmer', danger = false, word = '' } = {}) {
+  return new Promise((resolve) => {
+    const m = $('#askM');
+    $('#askBox').innerHTML = `<h3>${esc(title)}</h3><p>${esc(text)}</p>${word ? `<input id="askIn" placeholder="Tape ${esc(word)}" autocomplete="off">` : ''}<div class="row"><button class="btn" id="askNo">Annuler</button><button class="btn ${danger ? 'danger' : 'primary'}" id="askYes">${esc(ok)}</button></div>`;
+    m.classList.add('open');
+    const done = (v) => { m.classList.remove('open'); document.removeEventListener('keydown', key); resolve(v); };
+    const key = (e) => { if (e.key === 'Escape') done(false); if (e.key === 'Enter') $('#askYes').click(); };
+    document.addEventListener('keydown', key);
+    $('#askNo').onclick = () => done(false);
+    m.onclick = (e) => { if (e.target === m) done(false); };
+    $('#askYes').onclick = () => { if (word && ($('#askIn').value || '').trim().toUpperCase() !== word) { $('#askIn').focus(); $('#askIn').style.borderColor = 'var(--red)'; return; } done(true); };
+    setTimeout(() => (word ? $('#askIn') : $('#askYes')).focus(), 30);
+  });
+}
+window.ask = ask;
 
 let pending = 0;
 function bar(d) { pending += d; const b = $('#bar'); if (pending > 0) { b.style.opacity = 1; b.style.width = '70%'; } else { b.style.width = '100%'; setTimeout(() => { if (!pending) { b.style.opacity = 0; b.style.width = '0'; } }, 300); } }
@@ -237,7 +256,11 @@ async function swr(key, action, body, render) {
 
 $('#btnLogin').onclick = async () => {
   $('#loginErr').textContent = '';
-  try { await signInWithPopup(auth, new GoogleAuthProvider()); } catch (e) { $('#loginErr').textContent = 'Connexion impossible : ' + e.code; }
+  const prov = new GoogleAuthProvider(); prov.setCustomParameters({ prompt: 'select_account' });
+  try { await signInWithPopup(auth, prov); } catch (e) {
+    const msg = { 'auth/popup-closed-by-user': 'Fenêtre fermée avant la fin. Réessaie.', 'auth/cancelled-popup-request': '', 'auth/popup-blocked': 'Ton navigateur a bloqué la fenêtre Google : autorise les pop-ups pour ce site puis réessaie.', 'auth/network-request-failed': 'Pas de connexion internet.' }[e.code];
+    $('#loginErr').textContent = msg ?? 'Connexion impossible, réessaie dans un instant.';
+  }
 };
 $('#btnOut').onclick = () => signOut(auth);
 
@@ -311,7 +334,7 @@ function avatar(u) { const n = (u.pseudo || u.displayName || u.email || '?')[0].
 function renderUsers() {
   const list = filtered();
   $('#usersSub').textContent = list.length + ' sur ' + USERS.length + ' comptes';
-  $('#usersBody').innerHTML = list.map((u) => `<tr class="click" onclick="openUser('${u.uid}')"><td><div class="u">${avatar(u)}<div><b>${esc(u.pseudo || u.displayName || '(sans pseudo)')}</b><small>${esc(u.email)}</small></div></div></td>
+  $('#usersBody').innerHTML = list.map((u) => `<tr class="click" onclick="openUser('${u.uid}')"><td><div class="u">${avatar(u)}<div><b>${esc(u.pseudo || u.displayName || '(sans pseudo)')}${u.plusUntil > Date.now() ? ' <span class="pill a" style="font-size:10px">PRO</span>' : ''}</b><small>${esc(u.email)}</small></div></div></td>
     <td class="hide-m">${fmtD(u.createdAt)}</td><td class="hide-m">${ago(u.lastSeenAt)}</td><td>${u.totalXp.toLocaleString('fr-FR')}</td><td>${u.totalSpots}</td>
     <td class="hide-m">${u.providers.map((p) => p === 'google.com' ? '<span class="pill b">Google</span>' : '<span class="pill">E-mail</span>').join(' ')}</td>
     <td>${u.disabled ? '<span class="pill r">Désactivé</span>' : u.emailCodeRequired && !u.emailCodeVerified ? '<span class="pill a">Code en attente</span>' : !u.profileCompleted ? '<span class="pill">Profil incomplet</span>' : '<span class="pill g">Actif</span>'}</td></tr>`).join('') || '<tr><td colspan="7" class="empty">Personne ici</td></tr>';
@@ -330,6 +353,7 @@ window.openUser = async (uid) => {
 };
 function drawUser(uid, u, d) {
   const p = d.profile || {}; const a = d.auth || {};
+  const plus = p.plus || {}; const proUntil = toMs(plus.until); const proOn = proUntil > Date.now();
   const kv = (k, v) => `<div>${k}</div><div>${v}</div>`;
   $('#dBody').innerHTML = `
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px">
@@ -337,6 +361,16 @@ function drawUser(uid, u, d) {
       ${u.emailCodeRequired && !u.emailCodeVerified ? `<button class="btn small" onclick="markVerified('${uid}')">✓ Valider l'e-mail</button>` : ''}
       <button class="btn small" onclick="setDisabled('${uid}', ${!a.disabled})">${a.disabled ? '🔓 Réactiver' : '⛔ Désactiver'}</button>
       <button class="btn small danger" onclick="delUser('${uid}')">🗑 Supprimer</button></div>
+    <div class="card" style="margin-bottom:18px;border-color:${proOn ? '#ffc94d' : 'var(--line)'}">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div><b style="font-size:15px">Spot My Car+ ${proOn ? '<span class="pill a">PRO actif</span>' : '<span class="pill">Gratuit</span>'}</b>
+        <div style="color:var(--muted);font-size:12.5px;margin-top:3px">${proOn ? (plus.productId === 'admin' ? 'Offert par toi' : 'Abonnement Google Play') + (proUntil > Date.UTC(2090, 0) ? ' · à vie' : ' · jusqu’au ' + new Date(proUntil).toLocaleDateString('fr-FR')) : 'Ce joueur paie s’il veut le Pro.'}</div></div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <button class="btn small" onclick="setPro('${uid}', 30)">+1 mois</button>
+          <button class="btn small" onclick="setPro('${uid}', 365)">+1 an</button>
+          <button class="btn small primary" onclick="setPro('${uid}', -1)">À vie</button>
+          ${proOn ? `<button class="btn small danger" onclick="setPro('${uid}', 0)">Retirer</button>` : ''}
+        </div></div></div>
     <div class="grid g3" style="margin-bottom:18px">
       <div class="card kpi"><div class="l">XP</div><div class="v">${(p.totalXp || 0).toLocaleString('fr-FR')}</div></div>
       <div class="card kpi"><div class="l">Spots</div><div class="v">${d.spots.length}</div></div>
@@ -350,9 +384,16 @@ function drawUser(uid, u, d) {
     <h3 style="margin:24px 0 10px;font-size:13px;letter-spacing:.8px;text-transform:uppercase;color:var(--soft)">Activité serveur</h3>
     <div class="feed">${(d.events || []).map(evRow).join('') || '<div class="empty">Rien</div>'}</div>`;
 }
-window.setDisabled = async (uid, dis) => { if (!confirm(dis ? 'Désactiver ce compte ? Le joueur ne pourra plus se connecter.' : 'Réactiver ce compte ?')) return; try { await api('admin.setDisabled', { uid, disabled: dis }); toast(dis ? 'Compte désactivé' : 'Compte réactivé'); const u = USERS.find((x) => x.uid === uid); if (u) u.disabled = dis; renderUsers(); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); } };
+window.setDisabled = async (uid, dis) => { if (!(await ask(dis ? 'Désactiver ce compte ?' : 'Réactiver ce compte ?', dis ? 'Le joueur ne pourra plus se connecter tant que tu ne le réactives pas.' : 'Le joueur pourra de nouveau se connecter.', { ok: dis ? 'Désactiver' : 'Réactiver', danger: dis }))) return; try { await api('admin.setDisabled', { uid, disabled: dis }); toast(dis ? 'Compte désactivé' : 'Compte réactivé'); const u = USERS.find((x) => x.uid === uid); if (u) u.disabled = dis; renderUsers(); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); } };
 window.markVerified = async (uid) => { try { await api('admin.markVerified', { uid }); toast('E-mail validé'); const u = USERS.find((x) => x.uid === uid); if (u) u.emailCodeVerified = true; renderUsers(); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); } };
-window.delUser = async (uid) => { const u = USERS.find((x) => x.uid === uid) || {}; const ok = prompt('Suppression DÉFINITIVE du compte, du garage et des photos.\nTape SUPPRIMER pour confirmer.'); if (ok !== 'SUPPRIMER') return; try { await api('admin.deleteUser', { uid }); toast('Compte supprimé'); USERS = USERS.filter((x) => x.uid !== uid); renderUsers(); closeDrawer(); } catch (e) { toast('Erreur : ' + e.message); } };
+window.delUser = async (uid) => { const u = USERS.find((x) => x.uid === uid) || {}; if (!(await ask('Supprimer définitivement ?', 'Le compte, le garage et les photos de ' + (u.pseudo || u.email || 'ce joueur') + ' seront effacés. Impossible de revenir en arrière.', { ok: 'Supprimer', danger: true, word: 'SUPPRIMER' }))) return; try { await api('admin.deleteUser', { uid }); toast('Compte supprimé'); USERS = USERS.filter((x) => x.uid !== uid); renderUsers(); closeDrawer(); } catch (e) { toast('Erreur : ' + e.message); } };
+window.setPro = async (uid, days) => {
+  const u = USERS.find((x) => x.uid === uid) || {};
+  const who = u.pseudo || u.email || 'ce joueur';
+  const label = days === 0 ? 'Retirer le Pro à ' + who + ' ?' : days < 0 ? 'Offrir le Pro à vie à ' + who + ' ?' : 'Offrir ' + (days >= 365 ? '1 an' : '1 mois') + ' de Pro à ' + who + ' ?';
+  if (!(await ask(label, days === 0 ? 'Il repassera en gratuit tout de suite. Un abonnement Google Play payé reste géré par Google.' : 'Activé tout de suite dans son appli, sans paiement.', { ok: days === 0 ? 'Retirer' : 'Offrir', danger: days === 0 }))) return;
+  try { const r = await api('admin.plus.set', { uid, days }); u.plusUntil = r.until ? Date.parse(r.until) : 0; store.set('users', { users: USERS }); renderUsers(); toast(days === 0 ? 'Pro retiré' : 'Pro activé ✓'); openUser(uid); } catch (e) { toast('Erreur : ' + e.message); }
+};
 window.mailTo = (email) => { closeDrawer(); show('mail'); $('#mTo').value = email; $('#mSubj').focus(); };
 
 // ───── Support
@@ -405,12 +446,12 @@ window.editIdea = (id) => {
 window.saveIdea = async (id) => { const idea = { id: id || undefined, title: $('#iT').value, notes: $('#iN').value, status: $('#iS').value, priority: $('#iP').value, tag: $('#iG').value }; if (!idea.title.trim()) return toast('Donne un titre'); $('#modal').classList.remove('open');
   if (id) { Object.assign(IDEAS.find((x) => x._id === id) || {}, idea); } else { IDEAS.unshift({ ...idea, _id: 'tmp' + Date.now() }); } renderIdeas();
   try { const r = await api('admin.ideas.save', { idea }); if (!id) { const t = IDEAS.find((x) => x._id.startsWith('tmp')); if (t) t._id = r.id; } store.set('ideas', { ideas: IDEAS }); toast('Enregistré ✓'); } catch (e) { toast('Erreur : ' + e.message); } };
-window.delIdea = async (id) => { if (!confirm('Supprimer cette idée ?')) return; $('#modal').classList.remove('open'); IDEAS = IDEAS.filter((x) => x._id !== id); renderIdeas(); store.set('ideas', { ideas: IDEAS });
+window.delIdea = async (id) => { if (!(await ask('Supprimer cette idée ?', 'Elle disparaîtra du tableau.', { ok: 'Supprimer', danger: true }))) return; $('#modal').classList.remove('open'); IDEAS = IDEAS.filter((x) => x._id !== id); renderIdeas(); store.set('ideas', { ideas: IDEAS });
   try { await api('admin.ideas.delete', { id }); } catch (e) { toast('Erreur : ' + e.message); } };
 $('#modal').onclick = (e) => { if (e.target.id === 'modal') $('#modal').classList.remove('open'); };
 
 // ───── Pilotage
-const FEAT = { blindTest: ['Blind test', 'Le quiz « quelle voiture ? »'], duels: ['Duels', 'Défis entre amis'], community: ['Communauté', 'Amis et classements'], map: ['Carte des spots', 'La carte du monde'], plateLookup: ['Recherche par plaque', 'Assistant d’identification par plaque'], aiRecognition: ['Reconnaissance IA', 'Analyse des photos par l’IA'], ratePrompt: ['Demande de note', 'Proposer de noter l’appli sur Google Play'], tutorial: ['Tutoriel', 'Tutoriel au premier lancement'], emailVerification: ['Code à l’inscription', 'Vérifier l’e-mail des nouveaux comptes par code'], dailyChest: ['Coffre du jour', 'Récompense quotidienne à l’ouverture'], wanted: ['Avis de recherche', 'Marque recherchée de la semaine (+150 XP)'], referral: ['Parrainage', 'Code ami : +300 XP pour chacun'], shareStats: ['Partage du garage', 'Carte de stats à partager en story'], premium: ['Spot My Car+ (abonnement)', 'Affiche l’offre payante (à allumer après création des abonnements Play)'], rewardedAds: ['Pubs récompensées', 'Vidéo facultative pour doubler le coffre (AdMob)'] };
+const FEAT = { blindTest: ['Blind test', 'Le quiz « quelle voiture ? »'], duels: ['Duels', 'Défis entre amis'], community: ['Communauté', 'Amis et classements'], map: ['Carte des spots', 'La carte du monde'], plateLookup: ['Recherche par plaque', 'Assistant d’identification par plaque'], aiRecognition: ['Reconnaissance IA', 'Analyse des photos par l’IA'], ratePrompt: ['Demande de note', 'Proposer de noter l’appli sur Google Play'], tutorial: ['Tutoriel', 'Tutoriel au premier lancement'], emailVerification: ['Code à l’inscription', 'Vérifier l’e-mail des nouveaux comptes par code'], dailyChest: ['Contact du jour', 'Démarrage moteur quotidien qui rapporte de l’XP'], wanted: ['Avis de recherche', 'Marque recherchée de la semaine (+150 XP)'], referral: ['Parrainage', 'Code ami : +300 XP pour chacun'], shareStats: ['Partage du garage', 'Carte de stats à partager en story'], premium: ['Spot My Car+ (abonnement)', 'Affiche l’offre payante (à allumer après création des abonnements Play)'], rewardedAds: ['Pubs récompensées', 'Vidéo facultative pour doubler l’XP (AdMob)'] };
 let CFG = null;
 window.loadConfig = async () => {
   try { await swr('config', 'admin.config.get', {}, (d) => { if (document.activeElement && document.activeElement.closest && document.activeElement.closest('#v-config') && CFG) return; CFG = d.config; renderConfig(); }); } catch (e) { toast('Erreur : ' + e.message); }
@@ -423,7 +464,7 @@ function renderConfig() {
 window.saveConfig = async () => {
   const features = {}; document.querySelectorAll('[data-f]').forEach((i) => features[i.dataset.f] = i.checked);
   const config = { features, announcement: $('#cAnn').value.trim(), announcementLevel: $('#cAnnLvl').value, maintenance: $('#cMaint').checked, maintenanceMessage: $('#cMaintMsg').value.trim(), minVersion: +$('#cMin').value, latestVersion: +$('#cLatest').value, updateMessage: $('#cUpd').value.trim() };
-  if (config.maintenance && !confirm('Activer la maintenance bloque l’appli pour tous les joueurs. Continuer ?')) return;
+  if (config.maintenance && !CFG.maintenance && !(await ask('Activer la maintenance ?', 'L’appli sera bloquée pour tous les joueurs jusqu’à ce que tu la désactives.', { ok: 'Activer', danger: true }))) return;
   $('#btnSaveCfg').disabled = true;
   try { CFG = (await api('admin.config.set', { config })).config; store.set('config', { config: CFG }); toast('Réglages enregistrés ✓ (appliqués en direct)'); } catch (e) { toast('Erreur : ' + e.message); }
   $('#btnSaveCfg').disabled = false;
@@ -433,7 +474,7 @@ window.saveConfig = async () => {
 window.sendMail = async () => {
   const email = $('#mTo').value.trim(), subject = $('#mSubj').value.trim(), message = $('#mBody').value.trim();
   if (!email || !subject || !message) return toast('Remplis tous les champs');
-  if (!confirm('Envoyer cet e-mail à ' + email + ' ?')) return;
+  if (!(await ask('Envoyer cet e-mail ?', 'Destinataire : ' + email + '\nObjet : ' + subject, { ok: 'Envoyer' }))) return;
   try { await api('admin.mail', { email, subject, message, lang: $('#mLang').value }); toast('E-mail envoyé ✓'); $('#mBody').value = ''; $('#mSubj').value = ''; } catch (e) { toast('Erreur : ' + e.message); }
 };
 

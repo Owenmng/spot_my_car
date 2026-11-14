@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -6,12 +8,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';
 import 'package:latlong2/latlong.dart' hide Path;
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/audio_service.dart';
 import 'package:spot_my_car/services/data_manager.dart';
-import 'package:spot_my_car/services/location_service.dart';
 import 'package:spot_my_car/spotted_car_detail_screen.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/car_image.dart';
@@ -35,17 +37,39 @@ class MapScreen extends StatefulWidget {
   State<MapScreen> createState() => _MapScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> {
+class _MapScreenState extends State<MapScreen> with WidgetsBindingObserver {
   final _map = MapController();
   static const _france = LatLng(46.603354, 1.888334);
   Rarity _minRarity = Rarity.commune;
   bool _fitted = false;
+  bool _hideEmpty = false;
   LatLng? _me;
+  double _accuracy = 0;
+  bool _locating = false;
+  bool _retryOnResume = false;
+  StreamSubscription<Position>? _follow;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _follow?.cancel();
     _map.dispose();
     super.dispose();
+  }
+
+  // Retour des réglages Android : on relance la localisation tout seul.
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && _retryOnResume) {
+      _retryOnResume = false;
+      _locate();
+    }
   }
 
   void _fit(List<SpotPoint> points) {
@@ -58,14 +82,107 @@ class _MapScreenState extends State<MapScreen> {
   }
 
   Future<void> _locate() async {
-    final loc = await LocationService.current().catchError((_) => null);
-    if (!mounted) return;
-    if (loc == null) {
-      showAppSnack(context, tr('Position indisponible.'), icon: Icons.location_off_outlined);
+    if (_locating) return;
+    HapticFeedback.selectionClick();
+    // Déjà localisé : on recentre simplement.
+    if (_me != null && _follow != null) {
+      _map.move(_me!, _map.camera.zoom < 15 ? 15 : _map.camera.zoom);
       return;
     }
-    setState(() => _me = LatLng(loc.latitude, loc.longitude));
-    _map.move(_me!, 13);
+    setState(() => _locating = true);
+    try {
+      if (!await Geolocator.isLocationServiceEnabled()) {
+        if (mounted) await _askToEnable(serviceOff: true);
+        return;
+      }
+      var perm = await Geolocator.checkPermission();
+      if (perm == LocationPermission.denied) perm = await Geolocator.requestPermission();
+      if (perm == LocationPermission.deniedForever) {
+        if (mounted) await _askToEnable(serviceOff: false);
+        return;
+      }
+      if (perm == LocationPermission.denied) {
+        if (mounted) showAppSnack(context, tr('Sans autorisation, impossible de te placer sur la carte.'), icon: Icons.location_off_outlined);
+        return;
+      }
+      // Position rapide d'abord (dernière connue), puis précise.
+      final last = await Geolocator.getLastKnownPosition().catchError((_) => null);
+      if (last != null) _setMe(last, move: true);
+      final pos = await Geolocator.getCurrentPosition(
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high, timeLimit: Duration(seconds: 15)),
+      );
+      _setMe(pos, move: last == null);
+      if (last != null) _map.move(_me!, 15);
+      _follow ??= Geolocator.getPositionStream(
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high, distanceFilter: 8),
+      ).listen((p) => _setMe(p), onError: (_) {});
+    } on TimeoutException {
+      if (mounted && _me == null) showAppSnack(context, tr('Signal GPS trop faible. Réessaie à l\'extérieur.'), icon: Icons.gps_off_rounded);
+    } catch (_) {
+      if (mounted && _me == null) showAppSnack(context, tr('Position indisponible.'), icon: Icons.location_off_outlined);
+    } finally {
+      if (mounted) setState(() => _locating = false);
+    }
+  }
+
+  void _setMe(Position p, {bool move = false}) {
+    if (!mounted) return;
+    setState(() {
+      _me = LatLng(p.latitude, p.longitude);
+      _accuracy = p.accuracy;
+      _hideEmpty = true;
+    });
+    if (move) _map.move(_me!, 15);
+  }
+
+  Future<void> _askToEnable({required bool serviceOff}) async {
+    final go = await showModalBottomSheet<bool>(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(22, 6, 22, 18),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 64,
+                height: 64,
+                decoration: BoxDecoration(color: const Color(0xFF4DA3FF).withValues(alpha: 0.15), shape: BoxShape.circle),
+                child: const Icon(Icons.location_searching_rounded, color: Color(0xFF4DA3FF), size: 32),
+              ),
+              const SizedBox(height: 14),
+              Text(serviceOff ? tr('Active la localisation') : tr('Autorise la localisation'), style: AppText.display(22), textAlign: TextAlign.center),
+              const SizedBox(height: 8),
+              Text(
+                serviceOff
+                    ? tr('La localisation de ton téléphone est coupée. Active-la pour te voir sur la carte de chasse.')
+                    : tr('Tu as refusé l\'accès à ta position. Autorise-le dans les réglages de l\'appli pour te voir sur la carte.'),
+                textAlign: TextAlign.center,
+                style: AppText.body(14, color: AppColors.inkSoft),
+              ),
+              const SizedBox(height: 18),
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: FilledButton.icon(
+                  onPressed: () => Navigator.pop(ctx, true),
+                  icon: const Icon(Icons.settings_rounded),
+                  label: Text(serviceOff ? tr('Activer la localisation') : tr('Ouvrir les réglages')),
+                ),
+              ),
+              TextButton(onPressed: () => Navigator.pop(ctx, false), child: Text(tr('Plus tard'))),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (go != true) return;
+    _retryOnResume = true;
+    if (serviceOff) {
+      await Geolocator.openLocationSettings();
+    } else {
+      await Geolocator.openAppSettings();
+    }
   }
 
   void _open(SpotPoint s) {
@@ -106,11 +223,14 @@ class _MapScreenState extends State<MapScreen> {
             children: [
               FlutterMap(
                 mapController: _map,
-                options: const MapOptions(
+                options: MapOptions(
                   initialCenter: _france,
                   initialZoom: 5.2,
                   maxZoom: 18,
-                  interactionOptions: InteractionOptions(flags: InteractiveFlag.all & ~InteractiveFlag.rotate),
+                  interactionOptions: const InteractionOptions(flags: InteractiveFlag.all & ~InteractiveFlag.rotate),
+                  onTap: (_, _) {
+                    if (!_hideEmpty) setState(() => _hideEmpty = true);
+                  },
                 ),
                 children: [
                   TileLayer(
@@ -118,21 +238,20 @@ class _MapScreenState extends State<MapScreen> {
                     userAgentPackageName: 'com.owenmengual.spotmycar',
                     tileBuilder: darkModeTileBuilder,
                   ),
+                  if (_me != null && _accuracy > 0)
+                    CircleLayer(circles: [
+                      CircleMarker(
+                        point: _me!,
+                        radius: _accuracy.clamp(8, 400).toDouble(),
+                        useRadiusInMeter: true,
+                        color: const Color(0x334DA3FF),
+                        borderColor: const Color(0x884DA3FF),
+                        borderStrokeWidth: 1,
+                      ),
+                    ]),
                   if (_me != null)
                     MarkerLayer(markers: [
-                      Marker(
-                        point: _me!,
-                        width: 22,
-                        height: 22,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF4DA3FF),
-                            shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white, width: 3),
-                            boxShadow: const [BoxShadow(color: Color(0x884DA3FF), blurRadius: 12, spreadRadius: 4)],
-                          ),
-                        ),
-                      ),
+                      Marker(point: _me!, width: 64, height: 64, child: const _MeDot()),
                     ]),
                   MarkerClusterLayerWidget(
                     options: MarkerClusterLayerOptions(
@@ -171,7 +290,7 @@ class _MapScreenState extends State<MapScreen> {
               Positioned(
                 left: 0,
                 right: 0,
-                top: MediaQuery.paddingOf(context).top + kToolbarHeight + 8,
+                top: MediaQuery.paddingOf(context).top + 6,
                 child: Column(
                   children: [
                     SizedBox(
@@ -208,8 +327,10 @@ class _MapScreenState extends State<MapScreen> {
                   ],
                 ),
               ),
-              if (snap.hasData && all.isEmpty)
+              if (snap.hasData && all.isEmpty && !_hideEmpty)
                 Center(
+                  child: GestureDetector(
+                  onTap: () => setState(() => _hideEmpty = true),
                   child: Container(
                     margin: const EdgeInsets.all(32),
                     padding: const EdgeInsets.all(20),
@@ -222,16 +343,25 @@ class _MapScreenState extends State<MapScreen> {
                         Text(tr('Ta carte est vierge'), style: AppText.display(22)),
                         const SizedBox(height: 6),
                         Text(tr('Ajoute une ville ou ta position quand tu enregistres un spot : il apparaîtra ici.'), textAlign: TextAlign.center, style: AppText.body(14, color: AppColors.inkSoft)),
+                        const SizedBox(height: 12),
+                        Text(tr('Touche pour fermer'), style: AppText.label(11, color: AppColors.inkMuted)),
                       ],
                     ),
                   ),
+                  ).animate().fadeIn(duration: 250.ms).scale(begin: const Offset(0.96, 0.96)),
                 ),
               Positioned(
                 right: 16,
                 bottom: 24 + MediaQuery.paddingOf(context).bottom,
                 child: Column(
                   children: [
-                    _MapButton(icon: Icons.my_location_rounded, tooltip: tr('Ma position'), onTap: _locate),
+                    _MapButton(
+                      icon: _me != null ? Icons.my_location_rounded : Icons.location_searching_rounded,
+                      tooltip: tr('Ma position'),
+                      onTap: _locate,
+                      busy: _locating,
+                      active: _me != null,
+                    ),
                     const SizedBox(height: 10),
                     _MapButton(icon: Icons.fit_screen_rounded, tooltip: tr('Tout voir'), onTap: () => _fit(points)),
                   ],
@@ -249,7 +379,9 @@ class _MapButton extends StatelessWidget {
   final IconData icon;
   final String tooltip;
   final VoidCallback onTap;
-  const _MapButton({required this.icon, required this.tooltip, required this.onTap});
+  final bool busy;
+  final bool active;
+  const _MapButton({required this.icon, required this.tooltip, required this.onTap, this.busy = false, this.active = false});
 
   @override
   Widget build(BuildContext context) {
@@ -266,9 +398,40 @@ class _MapButton extends StatelessWidget {
             border: Border.all(color: AppColors.line),
             boxShadow: const [BoxShadow(color: Colors.black54, blurRadius: 10)],
           ),
-          child: Icon(icon, color: AppColors.ink),
+          child: busy
+              ? const Padding(padding: EdgeInsets.all(14), child: CircularProgressIndicator(strokeWidth: 2.4, color: Color(0xFF4DA3FF)))
+              : Icon(icon, color: active ? const Color(0xFF4DA3FF) : AppColors.ink),
         ),
       ),
+    );
+  }
+}
+
+/// Point bleu « vous êtes ici » avec une onde qui pulse.
+class _MeDot extends StatelessWidget {
+  const _MeDot();
+
+  @override
+  Widget build(BuildContext context) {
+    const blue = Color(0xFF4DA3FF);
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Container(width: 64, height: 64, decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0x554DA3FF)))
+            .animate(onPlay: (c) => c.repeat())
+            .scale(begin: const Offset(0.3, 0.3), end: const Offset(1, 1), duration: 1800.ms, curve: Curves.easeOut)
+            .fadeOut(duration: 1800.ms, curve: Curves.easeIn),
+        Container(
+          width: 20,
+          height: 20,
+          decoration: BoxDecoration(
+            color: blue,
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white, width: 3),
+            boxShadow: const [BoxShadow(color: Color(0x884DA3FF), blurRadius: 10, spreadRadius: 2)],
+          ),
+        ),
+      ],
     );
   }
 }

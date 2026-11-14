@@ -27,6 +27,7 @@ enum SoundEffect {
   achievement,
   flip,
   shutter,
+  moteur,
 }
 
 class AudioService with ChangeNotifier, WidgetsBindingObserver {
@@ -366,6 +367,8 @@ class AudioService with ChangeNotifier, WidgetsBindingObserver {
         return (path: 'audio/flip.mp3', volume: 0.6);
       case SoundEffect.shutter:
         return (path: 'audio/shutter.mp3', volume: 0.6);
+      case SoundEffect.moteur:
+        return (path: 'audio/moteur.mp3', volume: 0.9);
     }
   }
   

@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:spot_my_car/models/level_model.dart';
@@ -39,7 +40,7 @@ class GarageHero extends StatelessWidget {
       }
     }
     final starImg = star?['modelImageUrl'] as String?;
-    final starName = star == null ? null : '${star['brandName'] ?? ''} ${star['modelName'] ?? ''}'.trim();
+    final starName = star == null ? null : fullCarName(star['brandName'] as String?, star['modelName'] as String?);
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadius.xl),

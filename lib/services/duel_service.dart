@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/push_service.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
@@ -163,7 +164,7 @@ class DuelService {
     final uid = _uid;
     if (uid == null) return;
     final isQuiz = mode == DuelMode.quiz;
-    await _col.add({
+    final ref = await _col.add({
       'challengerId': uid,
       'opponentId': opponentUid,
       'participants': [uid, opponentUid],
@@ -175,13 +176,17 @@ class DuelService {
       'claimed': <String, bool>{},
       'createdAt': FieldValue.serverTimestamp(),
     });
+    PushService.notify('duel', ref.id);
   }
 
-  Future<void> accept(Duel d) => _col.doc(d.id).update({
-        'status': 'active',
-        'startAt': Timestamp.now(),
-        'endAt': Timestamp.fromDate(DateTime.now().add(Duration(hours: d.hours))),
-      });
+  Future<void> accept(Duel d) async {
+    await _col.doc(d.id).update({
+      'status': 'active',
+      'startAt': Timestamp.now(),
+      'endAt': Timestamp.fromDate(DateTime.now().add(Duration(hours: d.hours))),
+    });
+    PushService.notify('duel_accept', d.id);
+  }
 
   Future<void> decline(Duel d) => _col.doc(d.id).update({'status': 'declined'});
   Future<void> cancel(Duel d) => _col.doc(d.id).update({'status': 'cancelled'});

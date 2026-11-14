@@ -27,8 +27,8 @@ class RemoteConfig extends ChangeNotifier {
     'wanted': true,
     'referral': true,
     'shareStats': true,
-    'premium': false,
-    'rewardedAds': false,
+    'premium': true,
+    'rewardedAds': true,
   };
 
   Map<String, dynamic> _data = const {};

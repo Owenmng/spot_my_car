@@ -67,6 +67,7 @@ function adminUsersRaw_() {
       emailCodeVerified: !!p.emailCodeVerified,
       streak: Number(p.streak || (p.dailyStreak && p.dailyStreak.count) || 0),
       hasProfile: !!profiles[a.localId],
+      plusUntil: tsMs_(p.plus && p.plus.until),
     };
   });
   users.sort((a, b) => b.createdAt - a.createdAt);
@@ -115,6 +116,24 @@ function adminMarkVerified_(r) {
   try { authUpdate_({ localId: uid, emailVerified: true }); } catch (e) { console.warn(e); }
   logEvent_('admin.verify', { uid: uid });
   return { verified: true };
+}
+
+/** Offre ou retire Spot My Car+ : days > 0 ajoute des jours, -1 = à vie, 0 = retire. */
+function adminPlusSet_(r) {
+  bust_();
+  const uid = safeId_(r.uid);
+  const days = Number(r.days);
+  const p = fsGet_('users/' + uid);
+  if (!p) fail_('not_found');
+  const cur = tsMs_(p.plus && p.plus.until);
+  let until = 0;
+  if (days < 0) until = Date.UTC(2099, 11, 31);
+  else if (days > 0) until = Math.max(cur, Date.now()) + days * 86400000;
+  fsPatch_('users/' + uid, { plus: until
+    ? { until: new Date(until), productId: 'admin', state: 'GRANTED', verifiedAt: new Date() }
+    : { until: new Date(0), productId: '', state: 'REVOKED', verifiedAt: new Date() } });
+  logEvent_('admin.plus', { uid: uid, days: days });
+  return { until: until ? new Date(until).toISOString() : null };
 }
 
 function adminMail_(r) {

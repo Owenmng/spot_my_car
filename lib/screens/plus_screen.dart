@@ -5,7 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:spot_my_car/services/audio_service.dart';
+import 'package:spot_my_car/services/backend_service.dart';
 import 'package:spot_my_car/services/plus_service.dart';
+import 'package:spot_my_car/services/remote_config_service.dart';
 import 'package:spot_my_car/shared/app_constants.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
@@ -27,6 +31,7 @@ class PlusScreen extends StatefulWidget {
 
 class _PlusScreenState extends State<PlusScreen> {
   String _selected = PlusService.yearlyId;
+  bool _gifting = false;
   final plus = PlusService.instance;
 
   @override
@@ -53,7 +58,7 @@ class _PlusScreenState extends State<PlusScreen> {
     const gold = PlusScreen.gold;
     final member = plus.isPlus;
     final perks = [
-      (Icons.inventory_2_rounded, tr('Coffre du jour doublé'), tr('Deux fois plus d\'XP chaque jour, sans pub')),
+      (Icons.key_rounded, tr('Contact du jour doublé'), tr('Deux fois plus d\'XP à chaque démarrage, sans pub')),
       (Icons.gps_fixed_rounded, tr('Primes doublées'), tr('+300 XP sur chaque avis de recherche')),
       (Icons.palette_rounded, tr('Thèmes exclusifs'), tr('Nuit dorée, Abysse et 5 couleurs réservées')),
       (Icons.workspace_premium_rounded, tr('Badge PLUS doré'), tr('Bien visible à côté de ton pseudo')),
@@ -174,12 +179,12 @@ class _PlusScreenState extends State<PlusScreen> {
                           ),
                           child: TextButton(
                             style: TextButton.styleFrom(foregroundColor: Colors.black, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18))),
-                            onPressed: plus.busy
+                            onPressed: plus.busy || _gifting
                                 ? null
                                 : member
                                     ? () => launchUrl(Uri.parse('https://play.google.com/store/account/subscriptions?package=${AppConstants.packageName}'), mode: LaunchMode.externalApplication)
                                     : _buy,
-                            child: plus.busy
+                            child: plus.busy || _gifting
                                 ? const SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.4, color: Colors.black))
                                 : Text(member ? tr('GÉRER MON ABONNEMENT') : tr('DEVENIR MEMBRE'), style: AppText.label(15, color: Colors.black).copyWith(letterSpacing: 1.8)),
                           ),
@@ -209,7 +214,10 @@ class _PlusScreenState extends State<PlusScreen> {
 
   Future<void> _buy() async {
     HapticFeedback.mediumImpact();
-    if (widget.demo || kIsWeb) return;
+    if (widget.demo) return;
+    // Le patron ne paie pas : on lui offre le Pro directement.
+    if (RemoteConfig.instance.isAdmin) return _bossGift();
+    if (kIsWeb) return;
     if (plus.products.isEmpty) await plus.loadProducts();
     if (!mounted) return;
     if (!plus.products.containsKey(_selected)) {
@@ -217,6 +225,57 @@ class _PlusScreenState extends State<PlusScreen> {
       return;
     }
     await plus.buy(_selected);
+  }
+
+  Future<void> _bossGift() async {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
+    setState(() => _gifting = true);
+    try {
+      await BackendService.instance.call('admin.plus.set', {'uid': uid, 'days': -1});
+    } catch (_) {
+      if (mounted) {
+        setState(() => _gifting = false);
+        showAppSnack(context, tr('Une erreur est survenue. Réessaie dans un instant.'), icon: Icons.error_outline_rounded);
+      }
+      return;
+    }
+    if (!mounted) return;
+    setState(() => _gifting = false);
+    HapticFeedback.heavyImpact();
+    AudioService.instance.playSfx(SoundEffect.levelUp);
+    await showDialog(
+      context: context,
+      barrierColor: Colors.black87,
+      builder: (ctx) => Dialog(
+        backgroundColor: const Color(0xFF111116),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(26), side: const BorderSide(color: PlusScreen.gold, width: 1.5)),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(24, 28, 24, 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('👑', style: TextStyle(fontSize: 54)).animate().scale(begin: const Offset(0.3, 0.3), curve: Curves.elasticOut, duration: 900.ms),
+              const SizedBox(height: 10),
+              Text(tr('Gratuit pour toi, patron'), textAlign: TextAlign.center, style: AppText.display(26, color: Colors.white)),
+              const SizedBox(height: 8),
+              Text(tr('Spot My Car+ est activé à vie sur ton compte. Profite de toutes les fonctionnalités Pro.'),
+                  textAlign: TextAlign.center, style: AppText.body(14, color: Colors.white70, weight: FontWeight.w600)),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: FilledButton(
+                  style: FilledButton.styleFrom(backgroundColor: PlusScreen.gold, foregroundColor: Colors.black),
+                  onPressed: () => Navigator.pop(ctx),
+                  child: Text(tr('DÉCOUVRIR'), style: AppText.label(14, color: Colors.black).copyWith(letterSpacing: 1.6)),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 

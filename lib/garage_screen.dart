@@ -26,6 +26,7 @@ import 'package:spot_my_car/widgets/spot_card.dart';
 import 'package:spot_my_car/widgets/ui_kit.dart';
 import 'package:spot_my_car/widgets/garage_hero.dart';
 import 'package:spot_my_car/widgets/wanted_card.dart';
+import 'package:spot_my_car/widgets/weekly_quests_card.dart';
 import 'package:spot_my_car/screens/referral_screen.dart';
 import 'package:spot_my_car/services/plus_service.dart';
 import 'package:spot_my_car/services/wanted_service.dart';
@@ -417,6 +418,14 @@ class _Header extends StatelessWidget {
                         child: WantedCard(claimed: Wanted.claimed(data)).animate().fadeIn(delay: 160.ms, duration: 350.ms),
                       )
                     : const SizedBox.shrink(),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 12),
+                child: WeeklyQuestsCard(cars: cars, user: data).animate().fadeIn(delay: 190.ms, duration: 350.ms),
+              ),
+              ListenableBuilder(
+                listenable: Listenable.merge([RemoteConfig.instance, PlusService.instance]),
+                builder: (context, _) => showPlusBanner() ? const Padding(padding: EdgeInsets.only(top: 12), child: PlusBanner()) : const SizedBox.shrink(),
               ),
               const SizedBox(height: 18),
               Row(

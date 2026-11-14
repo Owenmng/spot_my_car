@@ -1,3 +1,4 @@
+import 'package:spot_my_car/services/push_service.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:async';
 
@@ -78,12 +79,13 @@ class SocialService {
       await accept(received.docs.first.id, other);
       return tr('Il t’avait déjà invité : vous êtes amis !');
     }
-    await _db.collection('friend_requests').add({
+    final ref = await _db.collection('friend_requests').add({
       'fromUserId': me.uid,
       'toUserId': other,
       'status': 'pending',
       'createdAt': FieldValue.serverTimestamp(),
     });
+    PushService.notify('friend_request', ref.id);
     return tr('Demande envoyée !');
   }
 
@@ -99,6 +101,7 @@ class SocialService {
     batch.set(_db.collection('users').doc(me).collection('friends').doc(fromUid), {'friendSince': FieldValue.serverTimestamp()});
     batch.set(_db.collection('users').doc(fromUid).collection('friends').doc(me), {'friendSince': FieldValue.serverTimestamp()});
     await batch.commit();
+    PushService.notify('friend_accept', requestId);
   }
 
   Future<void> decline(String requestId) => _db.collection('friend_requests').doc(requestId).delete();

@@ -1,3 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:spot_my_car/services/ads_service.dart';
+import 'package:spot_my_car/services/duel_service.dart';
 import 'package:spot_my_car/services/wanted_service.dart';
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'dart:math';
@@ -36,6 +40,45 @@ class SpotRevealScreen extends StatefulWidget {
 class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerProviderStateMixin {
   late final AnimationController _flip = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
   bool _revealed = false;
+  bool _doubled = false;
+  bool _adBusy = false;
+
+  int get _bonus => min(widget.result.xpGained, 500);
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    AdsService.instance.preload();
+  }
+
+  /// Vidéo récompensée : l'XP de ce spot est doublée (une seule fois par spot).
+  Future<void> _doubleXp() async {
+    setState(() => _adBusy = true);
+    final ok = await AdsService.instance.showRewarded();
+    if (ok) {
+      final uid = FirebaseAuth.instance.currentUser?.uid;
+      final carId = widget.result.carId;
+      if (uid != null) {
+        final ref = FirebaseFirestore.instance.collection('users').doc(uid);
+        final done = await FirebaseFirestore.instance.runTransaction((tx) async {
+          final d = (await tx.get(ref)).data() ?? {};
+          if ((d['adDoubles'] as Map?)?[carId] == true) return false;
+          tx.set(ref, {
+            'totalXp': FieldValue.increment(_bonus),
+            'xpByWeek': {weekKey(): FieldValue.increment(_bonus)},
+            'adDoubles': {carId: true},
+          }, SetOptions(merge: true));
+          return true;
+        }).catchError((_) => false);
+        if (done && mounted) {
+          HapticFeedback.heavyImpact();
+          AudioService.instance.playSfx(SoundEffect.levelUp);
+          setState(() => _doubled = true);
+        }
+      }
+    }
+    if (mounted) setState(() => _adBusy = false);
+  }
 
   Rarity? get _rarity => widget.draft.isCatalogued ? widget.draft.rarity : null;
 
@@ -66,7 +109,8 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
   Widget build(BuildContext context) {
     final rarity = _rarity ?? Rarity.commune;
     final size = MediaQuery.sizeOf(context);
-    final cardW = min(min(size.width - 72, 330.0), (size.height - 400) / 1.38);
+    final extra = AdsService.instance.available ? 64 : 0;
+    final cardW = min(min(size.width - 72, 330.0), (size.height - 400 - extra) / 1.38);
 
     return Scaffold(
       backgroundColor: Colors.transparent,
@@ -191,6 +235,24 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                   ),
                 ],
                 const SizedBox(height: 30),
+                if (AdsService.instance.available && widget.result.xpGained > 0 && !_doubled) ...[
+                  SizedBox(
+                    width: cardW,
+                    height: 50,
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(foregroundColor: const Color(0xFFFFC94D), side: const BorderSide(color: Color(0xFFFFC94D), width: 1.4)),
+                      onPressed: _adBusy ? null : _doubleXp,
+                      icon: const Icon(Icons.play_circle_fill_rounded),
+                      label: Text(tr('×2 XP avec une courte vidéo (+{0})', [_bonus])),
+                    ),
+                  ).animate().fadeIn(delay: 1100.ms),
+                  const SizedBox(height: 10),
+                ],
+                if (_doubled)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: Text(tr('+{0} XP bonus encaissés !', [_bonus]), style: AppText.body(14, color: const Color(0xFFFFC94D), weight: FontWeight.w800)),
+                  ).animate().fadeIn().scale(begin: const Offset(0.8, 0.8)),
                 SizedBox(
                   width: cardW,
                   child: ElevatedButton(

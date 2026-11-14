@@ -15,8 +15,8 @@ import 'package:spot_my_car/services/plus_service.dart';
 import 'package:spot_my_car/services/remote_config_service.dart';
 import 'package:spot_my_car/theme/app_theme.dart';
 
-/// Coffre du jour : une récompense à la première ouverture de la journée,
-/// qui grossit avec la série de jours consécutifs (cycle de 7 jours).
+/// Contact du jour : à la première ouverture de la journée, le joueur démarre le moteur
+/// et gagne de l'XP. La récompense grossit avec la série de jours consécutifs (cycle de 7).
 class DailyChest {
   DailyChest._();
 
@@ -115,21 +115,71 @@ class DailyChestScreen extends StatefulWidget {
   State<DailyChestScreen> createState() => _DailyChestScreenState();
 }
 
+/// Démarrage moteur : on maintient START/STOP, l'aiguille grimpe jusqu'à la zone rouge.
 class _DailyChestScreenState extends State<DailyChestScreen> with TickerProviderStateMixin {
   static const _gold = Color(0xFFFFC94D);
-  late final AnimationController _shake = AnimationController(vsync: this, duration: const Duration(milliseconds: 650));
-  late final AnimationController _open = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
-  bool _opened = false;
+  static const _red = Color(0xFFE5202E);
+  // Aiguille : 0 → 1 pendant l'appui, retombe si on lâche trop tôt.
+  late final AnimationController _rev = AnimationController(vsync: this, duration: const Duration(milliseconds: 1300));
+  // Après le démarrage : petite oscillation du ralenti.
+  late final AnimationController _idle = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
+  bool _started = false;
   bool _busy = false;
   bool _doubled = false;
+  int _lastTick = 0;
   late final int _baseReward = DailyChest.rewardFor(widget.streak);
 
   int get _reward => _baseReward + (_doubled ? DailyChest.baseFor(widget.streak) : 0);
+  int get _cycleDay => (widget.streak - 1) % 7; // 0..6
 
   @override
   void initState() {
     super.initState();
     if (!widget.demo) AdsService.instance.preload();
+    _rev.addListener(_onRev);
+  }
+
+  @override
+  void dispose() {
+    _rev.dispose();
+    _idle.dispose();
+    super.dispose();
+  }
+
+  void _onRev() {
+    final tick = (_rev.value * 8).floor();
+    if (tick != _lastTick && !_started) {
+      _lastTick = tick;
+      if (tick > 0) HapticFeedback.selectionClick();
+    }
+    if (_rev.value >= 1 && !_started) _ignite();
+  }
+
+  void _press() {
+    if (_started) return;
+    HapticFeedback.lightImpact();
+    AudioService.instance.playSfx(SoundEffect.moteur);
+    _rev.animateTo(1, curve: Curves.easeIn);
+  }
+
+  void _release() {
+    if (_started || _rev.value >= 1) return;
+    _rev.animateBack(0, duration: const Duration(milliseconds: 500), curve: Curves.easeOut);
+  }
+
+  Future<void> _ignite() async {
+    setState(() {
+      _started = true;
+      _busy = true;
+    });
+    HapticFeedback.heavyImpact();
+    final claim = widget.demo ? Future.value(true) : DailyChest.claim(widget.streak).catchError((_) => false);
+    // Coup de gaz puis retour au ralenti
+    await _rev.animateTo(0.32, duration: const Duration(milliseconds: 700), curve: Curves.elasticOut);
+    _idle.repeat(reverse: true);
+    AudioService.instance.playSfx(SoundEffect.succesPrincipal);
+    await claim;
+    if (mounted) setState(() => _busy = false);
   }
 
   Future<void> _watchToDouble() async {
@@ -144,176 +194,278 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
   }
 
   @override
-  void dispose() {
-    _shake.dispose();
-    _open.dispose();
-    super.dispose();
+  Widget build(BuildContext context) {
+    final size = MediaQuery.sizeOf(context);
+    final gauge = min(size.width - 60, 320.0);
+    return Scaffold(
+      backgroundColor: const Color(0xFF060608),
+      body: Stack(
+        children: [
+          Positioned.fill(child: IgnorePointer(child: CustomPaint(painter: _CarbonPainter()))),
+          // Lueur rouge sous le compteur
+          Positioned(
+            left: -80,
+            right: -80,
+            bottom: -size.height * 0.15,
+            height: size.height * 0.55,
+            child: IgnorePointer(
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(colors: [_red.withValues(alpha: _started ? 0.30 : 0.16), Colors.transparent]),
+                ),
+              ),
+            ),
+          ),
+          SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: IconButton(
+                      onPressed: _busy && _started ? null : () => Navigator.maybePop(context),
+                      icon: const Icon(Icons.close_rounded, color: Colors.white38),
+                    ),
+                  ),
+                  Text(tr('CONTACT DU JOUR'), style: AppText.label(12, color: _red).copyWith(letterSpacing: 3.5)).animate().fadeIn(),
+                  const SizedBox(height: 6),
+                  Text(
+                    widget.streak > 1 ? tr('{0} jours d\'affilée', [widget.streak]) : tr('Démarre ta série'),
+                    textAlign: TextAlign.center,
+                    style: AppText.display(30, color: Colors.white),
+                  ).animate().fadeIn(delay: 80.ms).slideY(begin: 0.25),
+                  const SizedBox(height: 18),
+                  _ShiftLights(cycleDay: _cycleDay, lit: _started, flash: _started).animate().fadeIn(delay: 160.ms),
+                  const Spacer(),
+                  SizedBox(
+                    width: gauge,
+                    height: gauge * 0.78,
+                    child: AnimatedBuilder(
+                      animation: Listenable.merge([_rev, _idle]),
+                      builder: (context, _) {
+                        final v = (_rev.value + (_started ? (_idle.value - 0.5) * 0.025 : 0)).clamp(0.0, 1.05);
+                        return CustomPaint(
+                          painter: _RevGaugePainter(value: v, started: _started),
+                          child: Align(
+                            alignment: const Alignment(0, 0.35),
+                            child: AnimatedSwitcher(
+                              duration: const Duration(milliseconds: 300),
+                              child: _started
+                                  ? TweenAnimationBuilder<int>(
+                                      key: ValueKey(_reward),
+                                      tween: IntTween(begin: _doubled ? _baseReward : 0, end: _reward),
+                                      duration: const Duration(milliseconds: 900),
+                                      curve: Curves.easeOutCubic,
+                                      builder: (_, n, _) => Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Text('+$n', style: AppText.display(54, color: Colors.white).copyWith(height: 1, shadows: [Shadow(color: _red.withValues(alpha: 0.8), blurRadius: 24)])),
+                                          Text('XP', style: AppText.label(13, color: Colors.white60).copyWith(letterSpacing: 3)),
+                                        ],
+                                      ),
+                                    )
+                                  : Text('× 1000 tr/min', key: const ValueKey('rpm'), style: AppText.mono(11, color: Colors.white38)),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 350),
+                    transitionBuilder: (c, a) => FadeTransition(opacity: a, child: ScaleTransition(scale: Tween(begin: 0.92, end: 1.0).animate(a), child: c)),
+                    child: _started ? _after(context) : _startButton(),
+                  ),
+                  const Spacer(),
+                  const SizedBox(height: 10),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
-  Future<void> _tapChest() async {
-    if (_opened || _busy) return;
-    setState(() => _busy = true);
-    HapticFeedback.mediumImpact();
-    AudioService.instance.playSfx(SoundEffect.flip);
-    final claim = widget.demo ? Future.value(true) : DailyChest.claim(widget.streak).catchError((_) => false);
-    await _shake.forward(from: 0);
-    HapticFeedback.heavyImpact();
-    AudioService.instance.playSfx(SoundEffect.succesPrincipal);
-    setState(() => _opened = true);
-    await _open.forward(from: 0);
-    await claim;
-    if (mounted) setState(() => _busy = false);
+  Widget _startButton() {
+    return Column(
+      key: const ValueKey('start'),
+      children: [
+        GestureDetector(
+          onTapDown: (_) => _press(),
+          onTapUp: (_) => _release(),
+          onTapCancel: _release,
+          child: AnimatedBuilder(
+            animation: _rev,
+            builder: (context, _) => _StartStopButton(pressure: _rev.value),
+          ),
+        ),
+        const SizedBox(height: 14),
+        Text(tr('Maintiens START pour démarrer'), style: AppText.body(14.5, color: Colors.white70, weight: FontWeight.w700))
+            .animate(onPlay: (c) => c.repeat(reverse: true))
+            .fade(begin: 0.45, end: 1, duration: 900.ms),
+      ],
+    );
   }
+
+  Widget _after(BuildContext context) {
+    final next = DailyChest.rewards[(_cycleDay + 1) % 7] * (PlusService.instance.isPlus ? 2 : 1);
+    return Column(
+      key: const ValueKey('after'),
+      children: [
+        Text(
+          _cycleDay == 6 ? tr('Plein régime ! Une nouvelle série commence demain.') : tr('Reviens demain : +{0} XP au prochain démarrage', [next]),
+          textAlign: TextAlign.center,
+          style: AppText.body(14, color: Colors.white70, weight: FontWeight.w600),
+        ),
+        if (PlusService.instance.isPlus) ...[
+          const SizedBox(height: 8),
+          Text(tr('Bonus Spot My Car+ : récompense doublée'), style: AppText.body(13, color: _gold, weight: FontWeight.w800)),
+        ] else if (!widget.demo && AdsService.instance.available && !_doubled) ...[
+          const SizedBox(height: 14),
+          SizedBox(
+            width: double.infinity,
+            height: 50,
+            child: OutlinedButton.icon(
+              style: OutlinedButton.styleFrom(foregroundColor: _gold, side: const BorderSide(color: _gold, width: 1.4)),
+              onPressed: _busy ? null : _watchToDouble,
+              icon: const Icon(Icons.play_circle_fill_rounded),
+              label: Text(tr('Doubler avec une courte vidéo (+{0} XP)', [DailyChest.baseFor(widget.streak)])),
+            ),
+          ),
+        ],
+        if (!PlusService.instance.isPlus && PlusService.instance.enabled && !widget.demo)
+          TextButton.icon(
+            onPressed: () => PlusScreen.open(context),
+            icon: const Icon(Icons.workspace_premium_rounded, color: _gold, size: 18),
+            label: Text(tr('Avec Spot My Car+, chaque démarrage rapporte le double'), style: AppText.body(12.5, color: _gold, weight: FontWeight.w700)),
+          ),
+        const SizedBox(height: 10),
+        SizedBox(
+          width: double.infinity,
+          height: 54,
+          child: FilledButton(
+            style: FilledButton.styleFrom(backgroundColor: _red),
+            onPressed: _busy ? null : () => Navigator.pop(context),
+            child: Text(tr('EN ROUTE'), style: AppText.label(15, color: Colors.white).copyWith(letterSpacing: 2.5)),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Barre de shift-lights : une LED par jour du cycle, du vert au rouge.
+class _ShiftLights extends StatelessWidget {
+  final int cycleDay;
+  final bool lit;
+  final bool flash;
+  const _ShiftLights({required this.cycleDay, required this.lit, required this.flash});
+
+  static const _colors = [Color(0xFF2BD96B), Color(0xFF2BD96B), Color(0xFF9BE22E), Color(0xFFFFC94D), Color(0xFFFF8A1A), Color(0xFFE5202E), Color(0xFF4DA3FF)];
 
   @override
   Widget build(BuildContext context) {
-    final accent = Theme.of(context).colorScheme.primary;
-    final cycleDay = (widget.streak - 1) % 7; // 0..6
-    return Scaffold(
-      backgroundColor: Colors.black.withValues(alpha: 0.86),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 22),
-          child: Column(
-            children: [
-              const SizedBox(height: 28),
-              Text(tr('COFFRE DU JOUR'), style: AppText.label(12, color: _gold).copyWith(letterSpacing: 3)).animate().fadeIn(),
-              const SizedBox(height: 6),
-              Text(
-                widget.streak > 1 ? tr('{0} jours d\'affilée 🔥', [widget.streak]) : tr('Reviens chaque jour, il grossit !'),
-                textAlign: TextAlign.center,
-                style: AppText.display(26, color: Colors.white),
-              ).animate().fadeIn(delay: 100.ms).slideY(begin: 0.3),
-              const SizedBox(height: 22),
-              // Les 7 jours du cycle
-              Row(
+    return Container(
+      padding: const EdgeInsets.fromLTRB(12, 12, 12, 10),
+      decoration: BoxDecoration(
+        color: const Color(0xFF0E0E12),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: Colors.white10),
+        boxShadow: const [BoxShadow(color: Colors.black, blurRadius: 18, offset: Offset(0, 8))],
+      ),
+      child: Row(
+        children: [
+          for (var i = 0; i < 7; i++)
+            Expanded(
+              child: Column(
                 children: [
-                  for (var i = 0; i < 7; i++)
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 3),
-                        child: _DayPip(
-                          day: i + 1,
-                          xp: DailyChest.rewards[i],
-                          state: i < cycleDay ? 1 : (i == cycleDay ? (_opened ? 1 : 2) : 0),
-                          big: i == 6,
-                          accent: accent,
-                        ).animate().fadeIn(delay: (150 + i * 50).ms).slideY(begin: 0.4),
-                      ),
-                    ),
+                  _Led(color: _colors[i], on: i < cycleDay || (i == cycleDay && lit), today: i == cycleDay && !lit, delay: i * 70, flash: flash && i <= cycleDay),
+                  const SizedBox(height: 7),
+                  Text(i == 6 ? tr('MAX') : tr('J{0}', [i + 1]), style: AppText.label(9.5, color: i == cycleDay ? Colors.white : Colors.white38)),
+                  const SizedBox(height: 2),
+                  FittedBox(child: Text('+${DailyChest.rewards[i]}', style: AppText.mono(10, color: i == cycleDay ? _colors[i] : Colors.white30))),
                 ],
               ),
-              const Spacer(),
-              GestureDetector(
-                onTap: _tapChest,
-                child: SizedBox(
-                  width: 260,
-                  height: 260,
-                  child: AnimatedBuilder(
-                    animation: Listenable.merge([_shake, _open]),
-                    builder: (context, _) {
-                      final t = _shake.value;
-                      final wobble = sin(t * pi * 10) * (1 - t) * 0.09;
-                      final o = Curves.easeOutBack.transform(_open.value.clamp(0.0, 1.0));
-                      return Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          // Halo
-                          Opacity(
-                            opacity: _opened ? _open.value : 0.35,
-                            child: Transform.scale(
-                              scale: 0.6 + (_opened ? _open.value * 0.8 : 0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  gradient: RadialGradient(colors: [_gold.withValues(alpha: 0.55), accent.withValues(alpha: 0.18), Colors.transparent]),
-                                ),
-                              ),
-                            ),
-                          ),
-                          if (_opened) Positioned.fill(child: CustomPaint(painter: _Rays(_open.value, _gold))),
-                          Transform.rotate(
-                            angle: wobble,
-                            child: SizedBox(
-                              width: 170,
-                              height: 150,
-                              child: CustomPaint(painter: _ChestPainter(open: o, accent: accent, gold: _gold)),
-                            ),
-                          ),
-                          if (_opened)
-                            Positioned(
-                              top: 6,
-                              child: Opacity(
-                                opacity: _open.value.clamp(0.0, 1.0),
-                                child: Transform.translate(
-                                  offset: Offset(0, 30 * (1 - _open.value)),
-                                  child: TweenAnimationBuilder<int>(
-                                    tween: IntTween(begin: _doubled ? _baseReward : 0, end: _reward),
-                                    duration: const Duration(milliseconds: 900),
-                                    curve: Curves.easeOutCubic,
-                                    builder: (_, v, _) => Text('+$v XP', style: AppText.display(40, color: Colors.white).copyWith(shadows: [Shadow(color: _gold.withValues(alpha: 0.8), blurRadius: 24)])),
-                                  ),
-                                ),
-                              ),
-                            ),
-                        ],
-                      );
-                    },
-                  ),
-                ),
-              ).animate(onPlay: (c) => c.repeat(reverse: true)).moveY(begin: 0, end: -6, duration: 1100.ms, curve: Curves.easeInOut),
-              const Spacer(),
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 300),
-                child: _opened
-                    ? Column(
-                        key: const ValueKey('open'),
-                        children: [
-                          Text(
-                            cycleDay == 6 ? tr('Jackpot de la semaine ! Le cycle recommence demain.') : tr('Demain : +{0} XP si tu reviens', [DailyChest.rewards[(cycleDay + 1) % 7]]),
-                            textAlign: TextAlign.center,
-                            style: AppText.body(14, color: Colors.white70, weight: FontWeight.w600),
-                          ),
-                          if (PlusService.instance.isPlus) ...[
-                            const SizedBox(height: 8),
-                            Text(tr('Bonus Spot My Car+ : récompense doublée'), style: AppText.body(13, color: _gold, weight: FontWeight.w800)),
-                          ] else if (!widget.demo && AdsService.instance.available && !_doubled) ...[
-                            const SizedBox(height: 14),
-                            SizedBox(
-                              width: double.infinity,
-                              height: 50,
-                              child: OutlinedButton.icon(
-                                style: OutlinedButton.styleFrom(foregroundColor: _gold, side: const BorderSide(color: _gold, width: 1.4)),
-                                onPressed: _busy ? null : _watchToDouble,
-                                icon: const Icon(Icons.play_circle_fill_rounded),
-                                label: Text(tr('Doubler avec une courte vidéo (+{0} XP)', [DailyChest.baseFor(widget.streak)])),
-                              ),
-                            ),
-                          ],
-                          if (!PlusService.instance.isPlus && PlusService.instance.enabled && !widget.demo)
-                            TextButton.icon(
-                              onPressed: () => PlusScreen.open(context),
-                              icon: const Icon(Icons.workspace_premium_rounded, color: _gold, size: 18),
-                              label: Text(tr('Avec Spot My Car+, ce coffre est doublé chaque jour'), style: AppText.body(12.5, color: _gold, weight: FontWeight.w700)),
-                            ),
-                          const SizedBox(height: 14),
-                          SizedBox(
-                            width: double.infinity,
-                            height: 54,
-                            child: FilledButton(
-                              onPressed: _busy ? null : () => Navigator.pop(context),
-                              child: Text(tr('ENCAISSER'), style: AppText.label(15, color: Colors.white).copyWith(letterSpacing: 2)),
-                            ),
-                          ),
-                        ],
-                      )
-                    : Text(
-                        tr('Touche le coffre pour l\'ouvrir'),
-                        key: const ValueKey('closed'),
-                        style: AppText.body(15, color: Colors.white70, weight: FontWeight.w700),
-                      ).animate(onPlay: (c) => c.repeat(reverse: true)).fade(begin: 0.5, end: 1, duration: 900.ms),
-              ),
-              const SizedBox(height: 26),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Led extends StatelessWidget {
+  final Color color;
+  final bool on;
+  final bool today;
+  final bool flash;
+  final int delay;
+  const _Led({required this.color, required this.on, required this.today, required this.flash, required this.delay});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget led = Container(
+      width: 22,
+      height: 22,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: RadialGradient(
+          colors: on || today ? [Color.lerp(color, Colors.white, 0.45)!, color] : [const Color(0xFF26262C), const Color(0xFF16161A)],
+        ),
+        border: Border.all(color: on ? color.withValues(alpha: 0.9) : Colors.white12, width: 1.2),
+        boxShadow: on || today ? [BoxShadow(color: color.withValues(alpha: 0.75), blurRadius: 14, spreadRadius: 1)] : null,
+      ),
+    );
+    if (today) {
+      led = led.animate(onPlay: (c) => c.repeat(reverse: true)).fade(begin: 0.25, end: 1, duration: 520.ms);
+    } else if (flash) {
+      led = led.animate(delay: delay.ms).scale(begin: const Offset(0.6, 0.6), end: const Offset(1, 1), duration: 380.ms, curve: Curves.elasticOut);
+    }
+    return led;
+  }
+}
+
+/// Bouton ENGINE START/STOP : bague métal, cœur rouge qui s'allume avec la pression.
+class _StartStopButton extends StatelessWidget {
+  final double pressure;
+  const _StartStopButton({required this.pressure});
+
+  @override
+  Widget build(BuildContext context) {
+    const red = Color(0xFFE5202E);
+    return Transform.scale(
+      scale: 1 - pressure * 0.05,
+      child: Container(
+        width: 132,
+        height: 132,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: const SweepGradient(colors: [Color(0xFF8A8A92), Color(0xFF2A2A30), Color(0xFFD7D7DE), Color(0xFF3A3A42), Color(0xFF8A8A92)]),
+          boxShadow: [
+            BoxShadow(color: red.withValues(alpha: 0.25 + pressure * 0.5), blurRadius: 30 + pressure * 30, spreadRadius: pressure * 6),
+            const BoxShadow(color: Colors.black, blurRadius: 16, offset: Offset(0, 8)),
+          ],
+        ),
+        padding: const EdgeInsets.all(7),
+        child: Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: RadialGradient(
+              center: const Alignment(-0.3, -0.4),
+              colors: [Color.lerp(const Color(0xFF2B2B32), red, 0.25 + pressure * 0.6)!, const Color(0xFF0B0B0E)],
+            ),
+            border: Border.all(color: Colors.black, width: 2),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('ENGINE', style: AppText.label(10, color: Colors.white70).copyWith(letterSpacing: 2.2)),
+              const SizedBox(height: 2),
+              Text('START', style: AppText.display(24, color: Color.lerp(Colors.white, red, pressure)!).copyWith(height: 1)),
+              Container(margin: const EdgeInsets.symmetric(vertical: 3), width: 44, height: 1.4, color: Colors.white24),
+              Text('STOP', style: AppText.label(11, color: Colors.white54).copyWith(letterSpacing: 2.2)),
             ],
           ),
         ),
@@ -322,134 +474,105 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
   }
 }
 
-class _DayPip extends StatelessWidget {
-  final int day;
-  final int xp;
-  final int state; // 0 à venir, 1 fait, 2 aujourd'hui
-  final bool big;
-  final Color accent;
-  const _DayPip({required this.day, required this.xp, required this.state, required this.big, required this.accent});
+/// Compte-tours 0 → 8 (×1000 tr/min) avec zone rouge.
+class _RevGaugePainter extends CustomPainter {
+  final double value;
+  final bool started;
+  _RevGaugePainter({required this.value, required this.started});
 
-  @override
-  Widget build(BuildContext context) {
-    const gold = Color(0xFFFFC94D);
-    final today = state == 2;
-    final done = state == 1;
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      decoration: BoxDecoration(
-        color: today ? gold.withValues(alpha: 0.16) : Colors.white.withValues(alpha: done ? 0.10 : 0.04),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: today ? gold : (big ? gold.withValues(alpha: 0.4) : Colors.white12), width: today ? 1.6 : 1),
-      ),
-      child: Column(
-        children: [
-          Text(tr('J{0}', [day]), style: AppText.label(9.5, color: today ? gold : Colors.white54)),
-          const SizedBox(height: 4),
-          Icon(
-            done ? Icons.check_circle_rounded : (big ? Icons.workspace_premium_rounded : Icons.inventory_2_rounded),
-            size: 18,
-            color: done ? AppColors.success : (today || big ? gold : Colors.white38),
-          ),
-          const SizedBox(height: 4),
-          FittedBox(child: Text('$xp', style: AppText.mono(10.5, color: today ? Colors.white : Colors.white60))),
-        ],
-      ),
-    );
-  }
-}
-
-/// Coffre dessiné à la main : caisse sombre cerclée d'or, couvercle qui bascule.
-class _ChestPainter extends CustomPainter {
-  final double open; // 0 fermé → 1 ouvert
-  final Color accent;
-  final Color gold;
-  _ChestPainter({required this.open, required this.accent, required this.gold});
+  static const _start = pi * 0.8;
+  static const _sweep = pi * 1.4;
 
   @override
   void paint(Canvas canvas, Size size) {
-    final w = size.width, h = size.height;
-    final bodyTop = h * 0.42;
-    final body = RRect.fromRectAndRadius(Rect.fromLTWH(0, bodyTop, w, h - bodyTop), const Radius.circular(14));
-    final bodyPaint = Paint()
-      ..shader = LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color.lerp(const Color(0xFF26262F), accent, 0.35)!, const Color(0xFF111116)])
-          .createShader(body.outerRect);
+    final c = Offset(size.width / 2, size.width / 2);
+    final r = size.width / 2 - 8;
+    final rect = Rect.fromCircle(center: c, radius: r);
 
-    // Lueur intérieure quand c'est ouvert
-    if (open > 0) {
-      final glow = Paint()
-        ..shader = RadialGradient(colors: [gold.withValues(alpha: 0.9 * open), Colors.transparent]).createShader(Rect.fromCircle(center: Offset(w / 2, bodyTop), radius: w * 0.6));
-      canvas.drawCircle(Offset(w / 2, bodyTop), w * 0.6, glow);
+    // Fond du cadran
+    canvas.drawCircle(c, r + 6, Paint()..color = const Color(0xFF0C0C10));
+    canvas.drawCircle(c, r + 6, Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.5
+      ..color = Colors.white10);
+
+    // Piste et zone rouge
+    final track = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 10
+      ..strokeCap = StrokeCap.round
+      ..color = Colors.white.withValues(alpha: 0.06);
+    canvas.drawArc(rect.deflate(14), _start, _sweep, false, track);
+    canvas.drawArc(rect.deflate(14), _start + _sweep * 0.78, _sweep * 0.22, false, track..color = const Color(0x66E5202E));
+    // Remplissage selon le régime
+    final fill = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 10
+      ..strokeCap = StrokeCap.round
+      ..shader = const SweepGradient(
+        startAngle: _start,
+        endAngle: _start + _sweep,
+        colors: [Color(0xFF2BD96B), Color(0xFFFFC94D), Color(0xFFFF8A1A), Color(0xFFE5202E)],
+        tileMode: TileMode.clamp,
+      ).createShader(rect);
+    canvas.drawArc(rect.deflate(14), _start, _sweep * value.clamp(0.0, 1.0), false, fill);
+
+    // Graduations et chiffres
+    for (var i = 0; i <= 40; i++) {
+      final a = _start + _sweep * i / 40;
+      final major = i % 5 == 0;
+      final p1 = c + Offset(cos(a), sin(a)) * (r - 28);
+      final p2 = c + Offset(cos(a), sin(a)) * (r - (major ? 44 : 36));
+      canvas.drawLine(p1, p2, Paint()
+        ..strokeWidth = major ? 2.4 : 1.2
+        ..color = i >= 32 ? const Color(0xFFE5202E) : Colors.white.withValues(alpha: major ? 0.8 : 0.3));
+      if (major) {
+        final tp = TextPainter(
+          text: TextSpan(text: '${i ~/ 5}', style: TextStyle(color: i >= 32 ? const Color(0xFFE5202E) : Colors.white70, fontSize: 15, fontWeight: FontWeight.w800)),
+          textDirection: TextDirection.ltr,
+        )..layout();
+        final lp = c + Offset(cos(a), sin(a)) * (r - 60) - Offset(tp.width / 2, tp.height / 2);
+        tp.paint(canvas, lp);
+      }
     }
 
-    canvas.drawRRect(body, bodyPaint);
-    final band = Paint()..color = gold;
-    canvas.drawRect(Rect.fromLTWH(w * 0.12, bodyTop, w * 0.07, h - bodyTop), band);
-    canvas.drawRect(Rect.fromLTWH(w * 0.81, bodyTop, w * 0.07, h - bodyTop), band);
-    canvas.drawRRect(body, Paint()
+    // Aiguille
+    final a = _start + _sweep * value.clamp(0.0, 1.03);
+    final tip = c + Offset(cos(a), sin(a)) * (r - 30);
+    final back = c - Offset(cos(a), sin(a)) * 18;
+    canvas.drawLine(back, tip, Paint()
+      ..strokeWidth = 4
+      ..strokeCap = StrokeCap.round
+      ..color = const Color(0xFFE5202E)
+      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6));
+    canvas.drawLine(back, tip, Paint()
+      ..strokeWidth = 3.2
+      ..strokeCap = StrokeCap.round
+      ..color = const Color(0xFFFF3B47));
+    canvas.drawCircle(c, 12, Paint()..color = const Color(0xFF1C1C22));
+    canvas.drawCircle(c, 12, Paint()
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 3
-      ..color = gold);
-
-    // Serrure
-    final lock = RRect.fromRectAndRadius(Rect.fromCenter(center: Offset(w / 2, bodyTop + 16), width: 26, height: 30), const Radius.circular(6));
-    canvas.drawRRect(lock, Paint()..color = gold);
-    canvas.drawCircle(Offset(w / 2, bodyTop + 13), 4, Paint()..color = const Color(0xFF111116));
-    canvas.drawRect(Rect.fromCenter(center: Offset(w / 2, bodyTop + 20), width: 3, height: 9), Paint()..color = const Color(0xFF111116));
-
-    // Couvercle : pivote autour de la charnière arrière
-    canvas.save();
-    canvas.translate(0, bodyTop);
-    final m = Matrix4.identity()
-      ..setEntry(3, 2, 0.004)
-      ..rotateX(-open * 1.2);
-    canvas.transform(m.storage);
-    final lidH = h * 0.36;
-    final lid = RRect.fromRectAndCorners(Rect.fromLTWH(-2, -lidH, w + 4, lidH), topLeft: const Radius.circular(40), topRight: const Radius.circular(40), bottomLeft: const Radius.circular(6), bottomRight: const Radius.circular(6));
-    canvas.drawRRect(lid, Paint()
-      ..shader = LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color.lerp(const Color(0xFF2E2E38), accent, 0.45)!, Color.lerp(const Color(0xFF1A1A20), accent, 0.2)!])
-          .createShader(lid.outerRect));
-    canvas.drawRect(Rect.fromLTWH(w * 0.12, -lidH + 6, w * 0.07, lidH - 6), band);
-    canvas.drawRect(Rect.fromLTWH(w * 0.81, -lidH + 6, w * 0.07, lidH - 6), band);
-    canvas.drawRRect(lid, Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 3
-      ..color = gold);
-    canvas.restore();
+      ..strokeWidth = 2
+      ..color = Colors.white24);
   }
 
   @override
-  bool shouldRepaint(covariant _ChestPainter old) => old.open != open || old.accent != accent;
+  bool shouldRepaint(covariant _RevGaugePainter old) => old.value != value || old.started != started;
 }
 
-class _Rays extends CustomPainter {
-  final double t;
-  final Color color;
-  _Rays(this.t, this.color);
-
+/// Trame fibre de carbone discrète.
+class _CarbonPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final c = Offset(size.width / 2, size.height * 0.48);
-    final p = Paint()..color = color.withValues(alpha: 0.18 * t);
-    for (var i = 0; i < 12; i++) {
-      final a = i * pi / 6 + t * 0.6;
-      final path = Path()
-        ..moveTo(c.dx, c.dy)
-        ..lineTo(c.dx + cos(a - 0.09) * size.width * 0.7 * t, c.dy + sin(a - 0.09) * size.width * 0.7 * t)
-        ..lineTo(c.dx + cos(a + 0.09) * size.width * 0.7 * t, c.dy + sin(a + 0.09) * size.width * 0.7 * t)
-        ..close();
-      canvas.drawPath(path, p);
-    }
-    // Étincelles
-    final rnd = Random(7);
-    final sp = Paint()..color = color.withValues(alpha: (1 - t * 0.6));
-    for (var i = 0; i < 18; i++) {
-      final a = rnd.nextDouble() * 2 * pi;
-      final r = (40 + rnd.nextDouble() * 90) * t;
-      canvas.drawCircle(c + Offset(cos(a) * r, sin(a) * r - 20 * t), 2 + rnd.nextDouble() * 2.5, sp);
+    final a = Paint()..color = Colors.white.withValues(alpha: 0.022);
+    const s = 8.0;
+    for (double y = 0; y < size.height; y += s) {
+      for (double x = ((y ~/ s) % 2) * s; x < size.width; x += s * 2) {
+        canvas.drawRect(Rect.fromLTWH(x, y, s, s / 2), a);
+      }
     }
   }
 
   @override
-  bool shouldRepaint(covariant _Rays old) => old.t != t;
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
