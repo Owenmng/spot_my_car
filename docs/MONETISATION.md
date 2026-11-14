@@ -8,7 +8,8 @@
 - ✅ noreply a rejoint la Play Console (2 étapes activées), scope androidpublisher ajouté et autorisé, serveur version 7.
 - ⏳ Google met jusqu'à 24-36 h à propager les droits Play du compte noreply (l'API répond 401 en attendant) : pendant ce temps un achat est activé 7 jours à titre provisoire (UNVERIFIED).
 - ✅ IBAN ajouté (en attente de validation par Google).
-- ⏳ Signer le build 1.1 avec spotmycar-release-key.jks (mot de passe à fournir par Owen), l'envoyer en test interne, puis créer les abonnements.
+- ✅ 14/11 : build 1.1.0 (26) signé avec la clé d'envoi (android/app/spotmycar-release-key.keystore, mot de passe dans android/key.properties sur le PC d'Owen) et publié en test interne : https://play.google.com/apps/internaltest/4700529544740792873
+- ✅ Abonnements actifs : spotmycar_plus_mensuel (forfait « mensuel », 2,99 €) et spotmycar_plus_annuel (forfait « annuel », 19,99 €), prix convertis dans 178 pays.
 
 
 Tout est déjà codé dans la 1.1 et **éteint par défaut** : deux interrupteurs dans la console admin
