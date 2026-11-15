@@ -2,7 +2,10 @@
 import 'package:spot_my_car/l10n/i18n.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'dart:math' as math;
+
 import 'package:flutter/foundation.dart';
+import 'package:image/image.dart' as img;
 import 'package:spot_my_car/models/level_model.dart';
 import 'package:spot_my_car/models/rarity.dart';
 import 'package:spot_my_car/services/achievement_service.dart';
@@ -53,7 +56,13 @@ class SpotSaveResult {
   final bool targetHit;
   final bool wantedHit;
 
+  /// XP de base retirée par l'anti-triche (même modèle répété, limite du jour), et pourquoi.
+  final int xpPenalty;
+  final String? penaltyReason;
+
   const SpotSaveResult({
+    this.xpPenalty = 0,
+    this.penaltyReason,
     this.targetHit = false,
     this.wantedHit = false,
     required this.carId,
@@ -73,13 +82,67 @@ class DuplicatePlateException implements Exception {
   String toString() => tr('Cette plaque est déjà dans ton garage.');
 }
 
+/// Même photo (ou quasi identique) qu'un spot déjà dans le garage.
+class DuplicatePhotoException implements Exception {
+  @override
+  String toString() => tr('Cette photo est déjà dans ton garage.');
+}
+
+/// Même modèle, même couleur, au même endroit il y a peu : sûrement la même voiture.
+/// L'appli demande confirmation avant d'enregistrer.
+class SimilarSpotException implements Exception {
+  final String carName;
+  final int minutesAgo;
+  SimilarSpotException(this.carName, this.minutesAgo);
+}
+
+/// Empreinte visuelle d'une photo (dHash 64 bits) : deux copies de la même photo,
+/// même recompressées, recadrées légèrement ou en capture d'écran, donnent presque la même empreinte.
+String? photoFingerprint(Uint8List bytes) {
+  final decoded = img.decodeImage(bytes);
+  if (decoded == null) return null;
+  final small = img.grayscale(img.copyResize(img.bakeOrientation(decoded), width: 9, height: 8, interpolation: img.Interpolation.average));
+  var bits = BigInt.zero;
+  for (var y = 0; y < 8; y++) {
+    for (var x = 0; x < 8; x++) {
+      final a = small.getPixel(x, y).r;
+      final b = small.getPixel(x + 1, y).r;
+      bits = (bits << 1) | (a > b ? BigInt.one : BigInt.zero);
+    }
+  }
+  return bits.toRadixString(16).padLeft(16, '0');
+}
+
+int _hamming(String a, String b) {
+  var x = BigInt.parse(a, radix: 16) ^ BigInt.parse(b, radix: 16);
+  var n = 0;
+  while (x > BigInt.zero) {
+    if (x & BigInt.one == BigInt.one) n++;
+    x = x >> 1;
+  }
+  return n;
+}
+
+String _plateKey(String? p) => (p ?? '').toUpperCase().replaceAll(RegExp(r'[^A-Z0-9]'), '');
+
+double _km(GeoPoint a, double lat, double lng) {
+  const r = 6371.0;
+  final dLat = (lat - a.latitude) * math.pi / 180;
+  final dLng = (lng - a.longitude) * math.pi / 180;
+  final h = math.pow(math.sin(dLat / 2), 2) + math.cos(a.latitude * math.pi / 180) * math.cos(lat * math.pi / 180) * math.pow(math.sin(dLng / 2), 2);
+  return 2 * r * math.asin(math.sqrt(h));
+}
+
 class SpotService {
   SpotService._();
   static final instance = SpotService._();
 
   final _db = FirebaseFirestore.instance;
 
-  Future<SpotSaveResult> save(SpotDraft d) async {
+  /// Limite de spots qui rapportent de l'XP de base par jour.
+  static const dailyXpSpots = 40;
+
+  Future<SpotSaveResult> save(SpotDraft d, {bool confirmedDifferent = false}) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) throw Exception('Tu dois être connecté.');
 
@@ -87,9 +150,69 @@ class SpotService {
     final userRef = _db.collection('users').doc(user.uid);
 
     final mySpots = await _db.collection('spotted_cars').where('userId', isEqualTo: user.uid).get();
-    if (plate.isNotEmpty && mySpots.docs.any((doc) => (doc.data()['plate'] as String?)?.toUpperCase() == plate)) {
+
+    // 1. Même plaque (espaces et tirets ignorés).
+    final pk = _plateKey(plate);
+    if (pk.isNotEmpty && mySpots.docs.any((doc) => _plateKey(doc.data()['plate']?.toString()) == pk)) {
       throw DuplicatePlateException();
     }
+
+    // 2. Même photo, même recompressée ou recadrée.
+    String? fingerprint;
+    if (d.photo != null) {
+      try {
+        fingerprint = await compute(photoFingerprint, d.photo!);
+      } catch (_) {}
+      if (fingerprint != null) {
+        for (final doc in mySpots.docs) {
+          final other = doc.data()['photoHash'];
+          if (other is String && other.length == 16 && _hamming(other, fingerprint) <= 5) throw DuplicatePhotoException();
+        }
+      }
+    }
+
+    // 3. Même modèle, même couleur, au même endroit depuis moins de 3 h : on demande confirmation.
+    final now = DateTime.now();
+    final key = '${d.brandName}|${d.modelName}'.toLowerCase();
+    bool sameModel(Map<String, dynamic> c) =>
+        (d.model?['id'] != null && c['modelId'] == d.model!['id']) ||
+        '${c['brandName']}|${c['modelName']}'.toLowerCase() == key;
+    DateTime? when(Map<String, dynamic> c) => c['spottedAt'] is Timestamp ? (c['spottedAt'] as Timestamp).toDate() : null;
+    if (!confirmedDifferent) {
+      for (final doc in mySpots.docs) {
+        final c = doc.data();
+        final t = when(c);
+        if (t == null || now.difference(t).inMinutes > 180 || !sameModel(c)) continue;
+        final colorOk = d.color == null || c['color'] == null || c['color'] == d.color;
+        final geo = c['locationCoords'];
+        final near = geo is! GeoPoint || d.latitude == null || d.longitude == null || _km(geo, d.latitude!, d.longitude!) <= 1.0;
+        if (colorOk && near) throw SimilarSpotException('${d.brandName} ${d.modelName}'.trim(), now.difference(t).inMinutes);
+      }
+    }
+
+    // 4. XP dégressive : même modèle en 24 h (50 %, puis 20 %), et limite de spots par jour.
+    final last24 = mySpots.docs.map((e) => e.data()).where((c) {
+      final t = when(c);
+      return t != null && now.difference(t).inHours < 24;
+    }).toList();
+    final repeats = last24.where(sameModel).length;
+    final today = last24.where((c) {
+      final t = when(c)!;
+      return t.year == now.year && t.month == now.month && t.day == now.day;
+    }).length;
+    var baseXp = d.xp;
+    String? penaltyReason;
+    if (today >= dailyXpSpots) {
+      baseXp = 0;
+      penaltyReason = tr('Limite de {0} spots par jour atteinte : pas d\'XP de base', [dailyXpSpots]);
+    } else if (repeats >= 2) {
+      baseXp = (d.xp * 0.2).round();
+      penaltyReason = tr('Déjà spottée plusieurs fois aujourd\'hui : XP réduite');
+    } else if (repeats == 1) {
+      baseXp = (d.xp * 0.5).round();
+      penaltyReason = tr('Même modèle déjà spotté aujourd\'hui : XP divisée par deux');
+    }
+    final xpPenalty = d.xp - baseXp;
 
     final userSnap = await userRef.get();
     final userData = userSnap.data() ?? {};
@@ -136,7 +259,8 @@ class SpotService {
       'locationName': d.locationName,
       'locationCoords': (d.latitude != null && d.longitude != null) ? GeoPoint(d.latitude!, d.longitude!) : null,
       'rarity': d.isCatalogued ? d.rarity.name : null,
-      'xp': d.xp,
+      'xp': baseXp,
+      if (fingerprint != null) 'photoHash': fingerprint,
       if (d.note.trim().isNotEmpty) 'note': d.note.trim(),
       if (d.aiGuess != null) 'aiGuess': d.aiGuess,
       if (d.aiConfidence != null) 'aiConfidence': double.parse(d.aiConfidence!.toStringAsFixed(2)),
@@ -176,7 +300,7 @@ class SpotService {
     final targetId = d.model?['id'] as String?;
     final targetHit = targetId != null && wishlist.contains(targetId);
     final wantedHit = RemoteConfig.instance.feature('wanted') && !d.isCustomBrand && d.brand!['id'] == Wanted.brandIdFor() && !Wanted.claimed(userData);
-    final gained = d.xp + achievementXp + (targetHit ? WishlistService.bonusXp : 0) + (wantedHit ? Wanted.bounty : 0);
+    final gained = baseXp + achievementXp + (targetHit ? WishlistService.bonusXp : 0) + (wantedHit ? Wanted.bounty : 0);
     final batch = _db.batch();
     batch.set(carRef, car);
     if (photo != null) {
@@ -220,6 +344,8 @@ class SpotService {
       photoFailed: photoFailed,
       targetHit: targetHit,
       wantedHit: wantedHit,
+      xpPenalty: xpPenalty,
+      penaltyReason: penaltyReason,
     );
   }
 

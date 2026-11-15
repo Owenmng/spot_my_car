@@ -194,6 +194,20 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
                     ],
                   ).animate().fadeIn(delay: 1100.ms).scale(begin: const Offset(0.8, 0.8)),
                 ],
+                if (widget.result.penaltyReason != null) ...[
+                  const SizedBox(height: 10),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.info_outline_rounded, color: Colors.white.withValues(alpha: 0.6), size: 16),
+                      const SizedBox(width: 6),
+                      Flexible(
+                        child: Text(widget.result.penaltyReason!,
+                            textAlign: TextAlign.center, style: AppText.body(12.5, color: Colors.white.withValues(alpha: 0.65), weight: FontWeight.w600)),
+                      ),
+                    ],
+                  ).animate().fadeIn(delay: 1100.ms),
+                ],
                 if (widget.result.newAchievements.isNotEmpty) ...[
                   const SizedBox(height: 14),
                   Padding(

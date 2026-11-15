@@ -260,7 +260,15 @@ class _AddCarScreenState extends State<AddCarScreen> {
       if (_draft.aiGuess != null) {
         unawaited(SpotService.instance.sendRecognitionFeedback(aiGuess: _draft.aiGuess, chosen: '${_draft.brandName} ${_draft.modelName}'));
       }
-      final result = await SpotService.instance.save(_draft);
+      SpotSaveResult result;
+      try {
+        result = await SpotService.instance.save(_draft);
+      } on SimilarSpotException catch (e) {
+        if (!mounted) return;
+        final other = await _confirmDifferent(e);
+        if (other != true || !mounted) return;
+        result = await SpotService.instance.save(_draft, confirmedDifferent: true);
+      }
       if (!mounted) return;
       AudioService.instance.playSfx(SoundEffect.succesPrincipal);
       HapticFeedback.heavyImpact();
@@ -283,11 +291,32 @@ class _AddCarScreenState extends State<AddCarScreen> {
       if (mounted) navigator.pop(true);
     } on DuplicatePlateException catch (e) {
       if (mounted) showAppSnack(context, e.toString(), icon: Icons.content_copy_rounded);
+    } on DuplicatePhotoException catch (e) {
+      HapticFeedback.heavyImpact();
+      if (mounted) showAppSnack(context, e.toString(), icon: Icons.content_copy_rounded);
     } catch (e) {
       if (mounted) showAppSnack(context, tr('L\'enregistrement a échoué. Vérifie ta connexion et réessaie.'), icon: Icons.error_outline);
     } finally {
       if (mounted) setState(() => _saving = false);
     }
+  }
+
+  /// Même modèle, même couleur, même coin il y a peu : on demande si c'est bien une autre voiture.
+  Future<bool?> _confirmDifferent(SimilarSpotException e) {
+    HapticFeedback.mediumImpact();
+    final ago = e.minutesAgo < 1 ? tr('à l\'instant') : tr('il y a {0} min', [e.minutesAgo]);
+    return showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        icon: const Icon(Icons.copy_all_rounded, size: 32),
+        title: Text(tr('Déjà dans ton garage ?')),
+        content: Text(tr('Tu as spotté une {0} de la même couleur, au même endroit, {1}. Si c\'est la même voiture, elle ne compte qu\'une fois.', [e.carName, ago])),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: Text(tr('C\'est la même'))),
+          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: Text(tr('C\'est une autre voiture'))),
+        ],
+      ),
+    );
   }
 
   // ---------------------------------------------------------------- UI
