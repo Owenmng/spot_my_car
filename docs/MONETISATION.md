@@ -9,6 +9,7 @@
 - ⏳ Google met jusqu'à 24-36 h à propager les droits Play du compte noreply (l'API répond 401 en attendant) : pendant ce temps un achat est activé 7 jours à titre provisoire (UNVERIFIED).
 - ✅ IBAN ajouté (en attente de validation par Google).
 - ✅ 14/11 : build 1.1.0 (26) signé avec la clé d'envoi (android/app/spotmycar-release-key.keystore, mot de passe dans android/key.properties sur le PC d'Owen) et publié en test interne : https://play.google.com/apps/internaltest/4700529544740792873
+- ✅ 15/11 : build 1.1.0 (28) publié en test interne (anti-doublons plaque/photo/même voiture, XP dégressive).
 - ✅ 15/11 : serveur version 8 (journal « 🐞 Erreur dans l'appli » dans la console). Build 1.1.0 (27) : plus d'écran gris, démarrage sombre avec logo, message « Pas de vidéo disponible » si AdMob ne renvoie rien, préchargement des vidéos 8 s après le lancement.
 - ✅ Abonnements actifs : spotmycar_plus_mensuel (forfait « mensuel », 2,99 €) et spotmycar_plus_annuel (forfait « annuel », 19,99 €), prix convertis dans 178 pays.
 
