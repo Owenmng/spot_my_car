@@ -39,8 +39,9 @@ class GarageHero extends StatelessWidget {
         starRarity = r;
       }
     }
-    final starImg = star?['modelImageUrl'] as String?;
-    final starName = star == null ? null : fullCarName(star['brandName'] as String?, star['modelName'] as String?);
+    final starImgRaw = star?['modelImageUrl'];
+    final starImg = starImgRaw is String && starImgRaw.isNotEmpty ? starImgRaw : null;
+    final starName = star == null ? null : fullCarName(star['brandName']?.toString(), star['modelName']?.toString());
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadius.xl),

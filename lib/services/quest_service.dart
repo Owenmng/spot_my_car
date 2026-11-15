@@ -26,16 +26,25 @@ class QuestService {
     return DateTime(d.year, d.month, d.day).subtract(Duration(days: d.weekday - 1));
   }
 
+  static DateTime? _date(Object? v) {
+    if (v is Timestamp) return v.toDate();
+    if (v is DateTime) return v;
+    if (v is int) return DateTime.fromMillisecondsSinceEpoch(v);
+    if (v is String) return DateTime.tryParse(v);
+    return null;
+  }
+
   static List<Quest> forWeek(List<Map<String, dynamic>> cars, Map<String, dynamic> user) {
     final start = weekStart();
     final week = cars.where((c) {
-      final t = (c['spottedAt'] as Timestamp?)?.toDate();
+      final t = _date(c['spottedAt']);
       return t != null && !t.isBefore(start);
     }).toList();
     final brands = week.map((c) => c['brandId'] ?? c['brandName']).whereType<Object>().toSet().length;
     final rare = week.where((c) => rarityOfSpot(c).index >= Rarity.rare.index).length;
     final cities = week.map((c) => c['locationName']).whereType<String>().where((s) => s.isNotEmpty).toSet().length;
-    final claims = (user['questClaims'] as Map?) ?? const {};
+    final rawClaims = user['questClaims'];
+    final claims = rawClaims is Map ? rawClaims : const {};
     final wk = weekKey();
     bool c(String id) => claims['${wk}_$id'] == true;
     // La 3e quête tourne d'une semaine à l'autre pour varier.

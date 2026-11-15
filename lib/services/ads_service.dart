@@ -16,6 +16,9 @@ class AdsService {
   RewardedAd? _ad;
   bool _loading = false;
 
+  /// Vrai si la dernière demande n'a trouvé aucune vidéo (pas de consentement, pas de pub, pas de réseau).
+  bool lastUnavailable = false;
+
   bool get available =>
       !kIsWeb && defaultTargetPlatform == TargetPlatform.android && RemoteConfig.instance.feature('rewardedAds') && !PlusService.instance.isPlus;
 
@@ -68,10 +71,14 @@ class AdsService {
 
   /// Affiche la vidéo ; renvoie true si le joueur l'a regardée jusqu'au bout.
   Future<bool> showRewarded() async {
+    lastUnavailable = false;
     if (!available) return false;
     if (_ad == null) await preload();
     final ad = _ad;
-    if (ad == null) return false;
+    if (ad == null) {
+      lastUnavailable = true;
+      return false;
+    }
     _ad = null;
     var earned = false;
     final closed = Completer<void>();
@@ -81,6 +88,7 @@ class AdsService {
         if (!closed.isCompleted) closed.complete();
       },
       onAdFailedToShowFullScreenContent: (a, _) {
+        lastUnavailable = true;
         a.dispose();
         if (!closed.isCompleted) closed.complete();
       },

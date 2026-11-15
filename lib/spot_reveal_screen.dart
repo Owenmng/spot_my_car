@@ -77,6 +77,9 @@ class _SpotRevealScreenState extends State<SpotRevealScreen> with SingleTickerPr
         }
       }
     }
+    if (!ok && AdsService.instance.lastUnavailable && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('Pas de vidéo disponible pour le moment, réessaie dans quelques minutes'))));
+    }
     if (mounted) setState(() => _adBusy = false);
   }
 

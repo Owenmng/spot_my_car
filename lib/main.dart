@@ -2,6 +2,10 @@ import 'package:spot_my_car/services/push_service.dart';
 import 'package:spot_my_car/services/plus_service.dart';
 import 'dart:async';
 
+import 'package:package_info_plus/package_info_plus.dart';
+import 'package:spot_my_car/services/error_reporter.dart';
+import 'package:spot_my_car/services/ads_service.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -32,6 +36,8 @@ Future<void> main() async {
     if (details.exception.toString().contains('permission-denied')) return;
     FlutterError.presentError(details);
   };
+  ErrorReporter.install();
+  unawaited(PackageInfo.fromPlatform().then((i) => ErrorReporter.version = '${i.version}+${i.buildNumber}').catchError((_) => ''));
 
   await initializeDateFormatting();
   await I18n.instance.init();
@@ -64,6 +70,8 @@ Future<void> main() async {
   unawaited(RemoteConfig.instance.start());
   PlusService.instance.start();
   unawaited(PushService.start());
+  // Prépare une vidéo facultative en arrière-plan, une fois l'appli bien lancée.
+  Future.delayed(const Duration(seconds: 8), AdsService.instance.preload);
 
   runApp(
     MultiProvider(

@@ -190,6 +190,9 @@ class _DailyChestScreenState extends State<DailyChestScreen> with TickerProvider
       AudioService.instance.playSfx(SoundEffect.levelUp);
       if (mounted) setState(() => _doubled = true);
     }
+    if (!ok && AdsService.instance.lastUnavailable && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('Pas de vidéo disponible pour le moment, réessaie dans quelques minutes'))));
+    }
     if (mounted) setState(() => _busy = false);
   }
 

@@ -266,10 +266,23 @@ function supportSend_(r) {
 
 /** Petits événements envoyés par l'appli (ex. note Play Store). */
 function clientEvent_(r) {
-  const allowed = ['rate.prompt', 'rate.accept', 'rate.later', 'tutorial.done', 'tutorial.skip', 'plate.lookup'];
+  const allowed = ['rate.prompt', 'rate.accept', 'rate.later', 'tutorial.done', 'tutorial.skip', 'plate.lookup', 'app.error'];
   if (allowed.indexOf(r.name) < 0) fail_('bad_request');
   let uid = null;
   try { uid = userFromToken_(r.idToken).uid; } catch (e) { uid = null; }
+  if (r.name === 'app.error') {
+    // Erreurs d'affichage remontées par l'appli : 20 max par heure et par joueur, sans doublons.
+    const detail = String(r.detail || '').slice(0, 400);
+    const cache = CacheService.getScriptCache();
+    const who = uid || 'anon';
+    const n = Number(cache.get('err_n_' + who) || 0);
+    const sig = 'err_' + Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.MD5, who + detail));
+    if (n >= 20 || cache.get(sig)) return {};
+    cache.put('err_n_' + who, String(n + 1), 3600);
+    cache.put(sig, '1', 21600);
+    logEvent_('app.error', { uid: uid, detail: detail });
+    return {};
+  }
   logEvent_(r.name, { uid: uid, detail: String(r.detail || '').slice(0, 120) });
   return {};
 }
