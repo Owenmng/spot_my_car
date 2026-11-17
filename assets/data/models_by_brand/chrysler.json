@@ -285,12 +285,12 @@
   {
    "id": "chrysler_imperial",
    "name": "Imperial",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Chrysler_Imperial_E80_Touring_1926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Chrysler_Imperial_Crown_1962_5311471.jpg/1280px-Chrysler_Imperial_Crown_1962_5311471.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993",
    "tags": [],
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Imperial_E80_Touring_1926.jpg"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Imperial_Crown_1962_5311471.jpg"
   },
   {
    "id": "chrysler_lhs",
@@ -325,13 +325,13 @@
   {
    "id": "chrysler_sunbeam",
    "name": "Sunbeam",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Talbot_sunbeam_lotus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Chrysler_Sunbeam_--%29_%281815630289%29.jpg/1280px-Chrysler_Sunbeam_--%29_%281815630289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3829 x 1603 x 1395",
-   "imageCredit": "User Kierant on en.wikipedia",
-   "imageLicense": "CC BY-SA 2.5",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Talbot_sunbeam_lotus.jpg"
+   "imageCredit": "allen watkin from London, UK",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chrysler_Sunbeam_--)_(1815630289).jpg"
   },
   {
    "id": "chrysler_tc-by-maserati",

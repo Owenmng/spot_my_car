@@ -1,9 +1,12 @@
 # Contrôle des photos
 
-{"remplacées": 4, "masquées": 1, "validées": 131, "rejetées_ia": 5} · appels IA: 151 · restant à valider: 4727
+{"remplacées": 8, "masquées": 0, "validées": 127, "rejetées_ia": 8} · appels IA: 151 · restant à valider: 4592
 
-- Chevrolet Sail S-RV (refusée par l'IA) → masqué, aucune photo fiable
-- Chevrolet Spark Activ (refusée par l'IA) → File:2025 Chevrolet Spark EUV Activ (Colombia) rear view.png
-- Chevrolet SS (refusée par l'IA) → File:2014 Chevrolet SS front.png
-- Chevrolet Corvette Z06-R GT3 (refusée par l'IA) → File:2024 6 Hours of Spa-Francorchamps TF Sport Chevrolet Corvette Z06 GT3.R No.81 (DSC02653).jpg
-- Chevrolet Beauville (refusée par l'IA) → File:Flickr - DVS1mn - 83 Chevrolet Beauville (4).jpg
+- Chevrolet Corvette C5-R (refusée par l'IA) → File:CHEVROLET CORVETTE C5-R RETROMOBILE 2023 (52683233300).jpg
+- Chrysler Imperial (refusée par l'IA) → File:Chrysler Imperial Crown 1962 5311471.jpg
+- Chrysler Sunbeam (refusée par l'IA) → File:Chrysler Sunbeam --) (1815630289).jpg
+- Citroën BX (refusée par l'IA) → File:1989 Citroën BX GTi 16v.jpg
+- Citroën C3 (refusée par l'IA) → File:2020 Citroën C3 (3rd generation) DSC 7374.jpg
+- Citroën Saxo VTS (refusée par l'IA) → File:2000 Citroën Saxo VTS Rally Car.jpg
+- Citroën SM (refusée par l'IA) → File:Citroën SM Oldtimertreffen Ebern 2019 6200026.jpg
+- Citroën ZX Volcane (refusée par l'IA) → File:1993 Citroen ZX Volcane TD (9758856532).jpg
