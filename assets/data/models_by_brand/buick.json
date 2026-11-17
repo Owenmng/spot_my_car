@@ -101,14 +101,10 @@
   {
    "id": "buick_enclave-c1yb",
    "name": "Enclave C1YB",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Buick_Enclave_%28C1XX%29_1X7A6179.jpg/1280px-Buick_Enclave_%28C1XX%29_1X7A6179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5189 x 2001 x 1775",
-   "poids_kg": 1977,
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Buick_Enclave_(C1XX)_1X7A6179.jpg"
+   "poids_kg": 1977
   },
   {
    "id": "buick_enclave-gmt967",
