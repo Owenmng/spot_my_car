@@ -2644,22 +2644,14 @@
   {
    "id": "citroen_jumpy-i",
    "name": "Jumpy I",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Fiat_Scudo_I.jpg/1280px-Fiat_Scudo_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Corvettec6r",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Scudo_I.jpg"
+   "tags": []
   },
   {
    "id": "citroen_jumpy-ii",
    "name": "Jumpy II",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Peugeot_Expert_%28II%29_%E2%80%93_Frontansicht%2C_22._Mai_2011%2C_Ratingen.jpg/1280px-Peugeot_Expert_%28II%29_%E2%80%93_Frontansicht%2C_22._Mai_2011%2C_Ratingen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Expert_(II)_%E2%80%93_Frontansicht,_22._Mai_2011,_Ratingen.jpg"
+   "tags": []
   },
   {
    "id": "citroen_berlingo-iii",
@@ -2737,12 +2729,8 @@
   {
    "id": "citroen_2cv-fourgonnette",
    "name": "2CV fourgonnette",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Citroen_2CV_1X7A7979.jpg/1280px-Citroen_2CV_1X7A7979.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_1X7A7979.jpg"
+   "tags": []
   },
   {
    "id": "citroen_ami-6",
@@ -2868,12 +2856,8 @@
   {
    "id": "citroen_ds-inside",
    "name": "DS Inside",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/2016-03-01_Geneva_Motor_Show_1079.JPG/1280px-2016-03-01_Geneva_Motor_Show_1079.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005",
-   "tags": [],
-   "imageCredit": "Norbert Aepli, Switzerland (User:Noebu)",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016-03-01_Geneva_Motor_Show_1079.JPG"
+   "tags": []
   },
   {
    "id": "citroen_kegresse",
@@ -2991,12 +2975,12 @@
   {
    "id": "citroen_synergie",
    "name": "Synergie",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/2006_Peugeot_807_SE_HDi_2.0_Front.jpg/1280px-2006_Peugeot_807_SE_HDi_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/1996_Citro%C3%ABn_Synergie_SX_2.0i.jpg/1280px-1996_Citro%C3%ABn_Synergie_SX_2.0i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Peugeot_807_SE_HDi_2.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Citro%C3%ABn_Synergie_SX_2.0i.jpg"
   },
   {
    "id": "citroen_elysee-wtcc",
@@ -3033,12 +3017,8 @@
   {
    "id": "citroen_tulip",
    "name": "Tulip",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Peugeot_Tulip_1996.JPG/1280px-Peugeot_Tulip_1996.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Buch-t",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Tulip_1996.JPG"
+   "tags": []
   },
   {
    "id": "citroen_c3-wrc",
