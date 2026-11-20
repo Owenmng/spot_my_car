@@ -1,85 +1,67 @@
 # Contrôle des photos
 
-{"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0, "retrouvées": 81} · appels IA: 300 · restant à valider: 6502 · sans photo: 321
+{"remplacées": 10, "masquées": 1, "validées": 56, "rejetées_ia": 11, "retrouvées": 52} · appels IA: 150 · restant à valider: 6456 · sans photo: 330
 
-- Aixam Mega Track (sans photo) → File:Mega Track (1) (cropped).jpg
-- Alfa Romeo 1750-2000 (sans photo) → File:Alfa Romeo 1750 berlina grey-front.JPG
-- Alfa Romeo 6 (sans photo) → File:Arese Museo Storico Alfa Romeo 01.jpg
-- Alfa Romeo 75 1.8 Turbodiesel (sans photo) → File:Alfa Romeo Giulietta 1984.jpg
-- Alfa Romeo GT 3.2 V6 (sans photo) → File:Alfa GT 32 avant.jpg
-- Alfa Romeo GTA Coupe (sans photo) → File:Alfa GTA noBG.jpg
-- Alfa Romeo Spider 2.0 TS (sans photo) → File:Alfa Romeo Spider 2002.JPG
-- Alfa Romeo 450 (sans photo) → File:Alfa Romeo 455 Autotransporter LKW 01 - AVD Oldtimer Grand Prix 2014.jpg
-- Alfa Romeo GTV and Spider (sans photo) → File:1998-2003 Alfa Romeo GTV Twin Spark coupe 01.jpg
-- Alfa Romeo SSZ Stradale (sans photo) → File:Paris - RM auctions - 20150204 - Alfa Romeo Giulietta Sprint Speciale - 1961 - 004.jpg
-- Alpine A211 (sans photo) → File:Alpine A220.jpg
-- AMG AMG E 63 (238) (sans photo) → File:Silver Mercedes-Benz E 63 AMG (S212) rl.jpg
-- Aston Martin Vanquish (Gen 1) (sans photo) → File:SC06 Aston Martin Vanquish green.jpg
-- Aston Martin Valen (sans photo) → File:Aston Martin Valen Auto Zuerich 2026 IMG 9259.jpg
-- Audi Fox (sans photo) → File:1976 Audi Fox four-door sedan, front left side.jpg
-- Audi S and RS models (sans photo) → File:1995 Audi RS2 Avant LC25.jpg
-- Audi R18 E-Tron quattro RP5 (sans photo) → File:Audi R18 - Mondial de l'Automobile de Paris 2016 - 002.jpg
-- Bentley Batur (sans photo) → File:Bentley Batur (02).jpg
-- BMW 125 (sans photo) → File:BMW 118i Urban Line (F20) – Frontansicht, 10. März 2012, Düsseldorf.jpg
-- BMW 2000 TI Lux (sans photo) → File:BMW1500FrontSeit.JPG
-- BMW 3 Series GT (sans photo) → File:2013-03-05 Geneva Motor Show 8182.JPG
-- BMW 5 Series GT (sans photo) → File:BMW Série 5 GT.jpg
-- BMW Alpina D10 (sans photo) → File:2000-2003 BMW 525i (E39) Executive sedan (2010-10-02) 01.jpg
-- BMW Alpina RLE Roadster (sans photo) → File:BMW Z1 1.jpg
-- BMW M135i (sans photo) → File:BMW M135i xDrive (F40) at BMW Welt - front right view (cropped).jpg
-- BMW M140i (sans photo) → File:BMW 1-Series (F20) M140i xDrive (2018) (52914702479).jpg
-- BMW M760i (sans photo) → File:2017 BMW 750i (G12) front 3.23.18.jpg
-- BMW Z Models (sans photo) → File:BMW Z3 1.9L 1998.jpg
-- BMW 331 (sans photo) → File:BMW 501 V8 Cabriolet vr.jpg
-- Bugatti EB 218 (sans photo) → File:Bugatti Veyron - panoramio (2) (cropped).jpg
-- Bugatti Type 47 (sans photo) → File:Bugatti Type 45 02.jpg
-- Chevrolet Beretta Z26 (sans photo) → File:1996ChevroletBeretta-front (cropped).jpg
-- Chevrolet Cruze Eco (sans photo) → File:Chevrolet Cruze.JPG
-- Chevrolet Geo Storm (sans photo) → File:Geo Storm -- -07-09-2009.jpg
-- Chevrolet LUV D-Max (sans photo) → File:Chevrolet Luv D-Max 3.0L TDi 2006 (40249225374).jpg
-- Chevrolet Metro (sans photo) → File:Chevrolet Metro hatchback front.jpg
-- Chevrolet Rezzo (sans photo) → File:Chevrolet Rezzo rear 20071109.jpg
-- Chevrolet Sail S-RV (sans photo) → File:CHEVROLET LOVA RV China.jpg
-- Chevrolet Silverado 1500 LD (sans photo) → File:'13 Chevrolet Silverado HD Crew Cab (MIAS '13).jpg
-- Chevrolet Monza USA (sans photo) → File:Monza.jpg
-- Chevrolet Daewoo Tosca (sans photo) → File:20101023 daewoo tosca 01.jpg
-- Citroën Jumpy I (sans photo) → File:Citroën Jumpy en Valencia.jpg
-- Citroën Jumpy II (sans photo) → File:La Poste Citroën Jumpy II front view A (8062153055).jpg
-- Citroën 2CV fourgonnette (sans photo) → File:Citroën 2CV Fourgonnette Concept.jpg
-- Citroën DS Inside (sans photo) → File:Citroën DS4 THP 200 SportChic – Frontansicht, 17. März 2012, Düsseldorf.jpg
-- Dodge D50 (sans photo) → File:Dodge D50 Truck (2734329152).jpg
-- Dodge New Value (sans photo) → File:Dodge New Value Series DU Six Touring Sedan 1935.jpg
-- Dodge Charger 1981 (sans photo) → File:1987 Dodge Charger, front left, 08-27-2023.jpg
-- Dodge M1918 light repair truck (sans photo) → File:Dodge WC-51 during the VII Aircraft Picnic in Kraków.jpg
-- DS N°7 (sans photo) → File:DS No 7 Auto Zuerich 2026 IMG 8715.jpg
-- Ferrari FF America (sans photo) → File:Ferrari F12 Berlinetta - Mondial de l'Automobile de Paris 2012 - 001.jpg
-- Ferrari 553 (sans photo) → File:Ferrari 625 F1 1954 front noBG.jpg
-- Fiat Autobianchi Y10 (sans photo) → File:Autobianchi Y10 Roma.jpg
-- Fiat Palio II (sans photo) → File:Fiat Palio white 5door.jpg
-- Fiat Auto Avio Costruzioni 815 (sans photo) → File:Car Musée Enzo Ferrari 0063 (cropped).JPG
-- Ford B platform (sans photo) → File:Ford B-MAX - Mondial de l'Automobile de Paris 2014 - 001.jpg
-- Ford Model 91 (sans photo) → File:1929 Ford Model A roadster AE-74-91.jpg
-- Ford Mercury Montego 3rd generation (sans photo) → File:1964 Mercury Comet Caliente Coupe (9321170381).jpg
-- Honda e:NS1 (sans photo) → File:2023 Dongfeng-Honda eNS1, front 8.18.23.jpg
-- Honda MDX (sans photo) → File:Honda MDX 001.JPG
-- Hyundai Centennial (Equus) (sans photo) → File:2011 Hyundai Equus -- 02-24-2011.jpg
-- Jeep Meridian (sans photo) → File:2023 Jeep Commander Overland T270 (Colombia) front view.jpg
-- Kia Roadster (Elan) (sans photo) → File:20110528 kia elan 1.jpg
-- Koenigsegg Trevita (sans photo) → File:Koenigsegg CCX - Flickr - Alexandre Prévot (11).jpg
-- Lamborghini 350 GT Zagato (sans photo) → File:1965 Lamborghini 350 GT HCC24.jpg
-- Lamborghini LM001 (Prototype) (sans photo) → File:Lamborghini LM002 Gen1 Type129 1986-1993 1988 frontleft 2013-03-17 U (cropped).JPG
-- Lamborghini 400GT Monza (sans photo) → File:1966 Lamborghini 400 GT Red.jpg
-- Lancia Stratos HF Gr.4 (sans photo) → File:Paris - Bonhams 2016 - Lancia Stratos HF Stradale coupé - 1975 - 001 (cropped).jpg
-- Lancia Trevi Volumex (sans photo) → File:DVG478Y 1982 Lancia Trevi.jpg
-- Land Rover Range Rover Evoque SVR (sans photo) → File:Range Rover Velar.jpg
-- Land Rover Range Rover Velar SVR (sans photo) → File:Range Rover Velar P250 SE IMG 8835.jpg
-- Lexus LF-Z Electrified (sans photo) → File:Lexus LF-Z at Taipei, front 2.jpg
-- Maserati Chubasco (Concept) (sans photo) → File:Collection Panini Maserati 0088.JPG
-- Maserati MC20 Ciel (sans photo) → File:Maserati MC20 Auto Zuerich 2021 IMG 0419.jpg
-- Mazda Clef (sans photo) → File:Autozam Clef (Japan).jpg
-- Mazda Eunos 100 (sans photo) → File:1992 Mazda MX-3 ABS 1.8 Front.jpg
-- Mazda Eunos 300 (sans photo) → File:EUNOS COSMO 3rotor.jpg
-- Mazda Eunos 500 (Xedos 6) (sans photo) → File:1998 Mazda Eunos 500 (CA) sedan (2016-01-04) 02.jpg
-- Mazda Eunos Presso (sans photo) → File:Mazda MX-3 front 20080212.jpg
-- Mazda Protegé (sans photo) → File:Mazda 323 Protegé LX sedan (2003), Toronto, Canada - 20110929.jpg
-- Mazda RX-9 (sans photo) → File:Mazda RX-8 01 China 2016-04-09.jpg
+- Alfa Romeo 6 (sans photo) → File:Alfa Romeo 6 first series.jpg
+- BMW 3 Series GT (sans photo) → File:Moscow, BMW F34 (3 series GT) black Oct 2026 01.jpg
+- Hyundai Centennial (Equus) (sans photo) → File:Hyundai Centennial front 20080302.jpg
+- Nissan 180 SX (sans photo) → File:Nissan 180 SX (1992) (53776754943).jpg
+- Nissan 400Z (sans photo) → File:Nissan 400Z 3.0 Premium V6 2025 (1).jpg
+- Nissan Expert (sans photo) → File:NISSAN EXPERT (cropped).jpg
+- Nissan March (Micra) (sans photo) → File:Nissan March GX 3171-FJ front 20200127.jpg
+- Nissan Primera (sans photo) → File:Nissan Primera front 20080102.jpg
+- SEAT 133 (sans photo) → File:Seat 133 Oviedo.jpg
+- SEAT 1500 (sans photo) → File:1970 Seat 1500 'bifaro' (6523147173).jpg
+- SEAT Alhambra (sans photo) → File:Seat Alhambra Style (II, Facelift) – f 20052021.jpg
+- SEAT Altea (sans photo) → File:2007 SEAT Altea Reference TDi 1.9 Front.jpg
+- SEAT Arona (sans photo) → File:2018 SEAT Arona SE Technology TSi 1.0 Front (1).jpg
+- SEAT Arosa (sans photo) → File:2002 SEAT Arosa 1.0 Front.jpg
+- SEAT Cordoba (sans photo) → File:2003 SEAT Cordoba S 1.4 Front (1).jpg
+- SEAT el-Born (Concept) (sans photo) → File:Seat el-Born Concept (48771252463).jpg
+- SEAT Exeo (sans photo) → File:2011 SEAT Exeo Sport Tech CR TDi 168 2.0 Front.jpg
+- SEAT Fura (sans photo) → File:Seat Fura CL five-door.jpg
+- SEAT Ibiza (sans photo) → File:2018 SEAT Ibiza SE Technology MPi 1.0 Front.jpg
+- SEAT Inca (sans photo) → File:2002 SEAT Inca SDi 1.9 Front.jpg
+- SEAT Leon (sans photo) → File:2020 SEAT Leon FR TSi Evo 1.5 Front.jpg
+- SEAT Marbella (sans photo) → File:Seat Marbella front 20071012.jpg
+- SEAT Málaga (sans photo) → File:SEAT Malaga GLX Must.jpg
+- SEAT Ronda (sans photo) → File:Seat Ronda Front.jpg
+- SEAT Tarraco (sans photo) → File:2019 SEAT Tarraco SE Tech TDi 4Drive SA 2.0 Front.jpg
+- SEAT Terra (sans photo) → File:Seat Terra Diesel closed 1983-1995 frontleft 2008-04-11 U.jpg
+- SEAT Toledo (sans photo) → File:2014 Seat Toledo 1.6 TDI front view.jpg
+- SEAT Trans (sans photo) → File:SEAT Trans quimica.jpg
+- Subaru Dias Wagon (sans photo) → File:Subaru DIAS WAGON LS (S321) front.JPG
+- Subaru Traviq (sans photo) → File:Subaru TRAVIQ S Package (XM220) front.JPG
+- Suzuki Reno (Rebadged Daewoo Lacetti) (sans photo) → File:Suzuki-Reno-front.jpg
+- Suzuki XL6 (sans photo) → File:Maruti Suzuki XL6 (front).jpg
+- Toyota 1000 (sans photo) → File:Toyota 1000 (Publica) NL.jpg
+- Toyota 2000GT (sans photo) → File:TOYOTA 2000GT.jpg
+- Toyota 4Runner (sans photo) → File:2025 Toyota 4Runner TRD Sport in Wind Chill Pearl, front right, 2025-05-18.jpg
+- Toyota Allex (sans photo) → File:2004-2006 Toyota Allex.jpg
+- Toyota Allion (sans photo) → File:2021 FAW-Toyota Allion (front).jpg
+- Toyota Alphard (sans photo) → File:2018-2023 Toyota Alphard X.jpg
+- Toyota Altezza (Lexus IS JDM) (sans photo) → File:Toyota Altezza 001.jpg
+- Toyota Aqua (Prius C) (sans photo) → File:2017-2021 Toyota Aqua.jpg
+- Toyota Aristo V (sans photo) → File:1991-1997 Toyota Aristo (JZS147) V sedan (24945209512).jpg
+- Toyota Aurion (sans photo) → File:2015 Toyota Aurion (GSV50R) AT-X sedan (2015-07-06) 01.jpg
+- Toyota Avalon (sans photo) → File:2019 Toyota Avalon XSE in Ruby Flare Pearl, Front Right, 09-05-2022.jpg
+- Toyota Avanza (sans photo) → File:2022 Toyota Avanza 1.5 G Toyota Safety Sense W101RE (20220403).jpg
+- Toyota Avensis (sans photo) → File:2011 Toyota Avensis in Aspen Grey, front left, 06-06-2025.jpg
+- Toyota Avensis Verso (Ipsum) (sans photo) → File:2003-2010 Toyota Avensis Verso (ACM21R) GLX wagon (2011-07-17).jpg
+- Toyota Aygo X (sans photo) → File:2022 Toyota Aygo X Edge 1.0 VVT-i (Front).jpg
+- Toyota bB (sans photo) → File:2008 Toyota bB 01.jpg
+- Toyota Belta (Yaris Sedan) (sans photo) → File:2005 Toyota Belta 01.jpg
+- Toyota Blade (sans photo) → File:Toyota-blade 20061221.jpg
+- Toyota Blizzard (sans photo) → File:1985 Toyota Blizzard soft-top (LD20).JPG
+- Toyota Brevis (sans photo) → File:Toyota Brevis 02.jpg
+- Dodge Viper SRT10 (2008–2010) (refusée par l'IA) → File:Dodge Viper SRT10 (2008–2010) Retro Classics 2024 IMG 9168.jpg
+- DS DS 4 (refusée par l'IA) → File:DS 4 E-Tense IMG 7454.jpg
+- DS DS 7 (refusée par l'IA) → File:DS 7 (2022) DSC 2683 (cropped).jpg
+- DS DS 8 (refusée par l'IA) → File:DS No 8 Classic-Gala 2025 DSC 0771 (retouched).jpg
+- DS DS E-TENSE (refusée par l'IA) → File:DS X E-Tense, Paris Motor Show 2018, Paris (1Y7A1456).jpg
+- DS 9 (refusée par l'IA) → File:DS 9 002.jpg
+- DS No. 8 (refusée par l'IA) → File:DS No 8 Classic-Gala 2025 DSC 0773.jpg
+- Ferrari 375 America (refusée par l'IA) → File:1954 Ferrari 375 America Vignale Cabriolet.jpg
+- Ferrari 400 GT (refusée par l'IA) → masqué, aucune photo fiable
+- Ferrari 412 (refusée par l'IA) → File:1995 Ferrari 412 T2 front.jpg
+- Ferrari Amalfi (Concept) (refusée par l'IA) → File:Ferrari Amalfi IMG 8179.jpg

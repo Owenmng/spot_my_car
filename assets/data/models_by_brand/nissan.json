@@ -35,7 +35,7 @@
   {
    "id": "nissan_180-sx",
    "name": "180 SX",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Nissan_180_SX_%281992%29_%2853776754943%29.jpg/1280px-Nissan_180_SX_%281992%29_%2853776754943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1989 - 1998",
    "puissance_ch": 175,
    "vitesse_max_kmh": 225,
@@ -60,7 +60,10 @@
     "car",
     "vehicle",
     "sports coupe"
-   ]
+   ],
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_180_SX_(1992)_(53776754943).jpg"
   },
   {
    "id": "nissan_200-sx",
@@ -328,7 +331,7 @@
   {
    "id": "nissan_400z",
    "name": "400Z",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Nissan_400Z_3.0_Premium_V6_2025_%281%29.jpg/1280px-Nissan_400Z_3.0_Premium_V6_2025_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021-Aujourd'hui",
    "puissance_ch": 405,
    "vitesse_max_kmh": 250,
@@ -352,7 +355,10 @@
     "z car",
     "muscle car",
     "rear-wheel drive"
-   ]
+   ],
+   "imageCredit": "Captainmorlypogi1959",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_400Z_3.0_Premium_V6_2025_(1).jpg"
   },
   {
    "id": "nissan_ad",
@@ -1012,7 +1018,7 @@
   {
    "id": "nissan_expert",
    "name": "Expert",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/NISSAN_EXPERT_%28cropped%29.jpg/1280px-NISSAN_EXPERT_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2006",
    "puissance_ch": 125,
    "vitesse_max_kmh": 170,
@@ -1036,7 +1042,10 @@
     "motor vehicle",
     "commercial",
     "business"
-   ]
+   ],
+   "imageCredit": "TTTNIS",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:NISSAN_EXPERT_(cropped).jpg"
   },
   {
    "id": "nissan_fairlady",
@@ -1768,7 +1777,7 @@
   {
    "id": "nissan_march",
    "name": "March (Micra)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Nissan_March_GX_3171-FJ_front_20200127.jpg/1280px-Nissan_March_GX_3171-FJ_front_20200127.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - Aujourd'hui",
    "puissance_ch": 79,
    "vitesse_max_kmh": 160,
@@ -1792,7 +1801,10 @@
     "k12",
     "k13",
     "k14"
-   ]
+   ],
+   "imageCredit": "User3204",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_March_GX_3171-FJ_front_20200127.jpg"
   },
   {
    "id": "nissan_maxima",
@@ -2394,7 +2406,7 @@
   {
    "id": "nissan_primera",
    "name": "Primera",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Nissan_Primera_front_20080102.jpg/1280px-Nissan_Primera_front_20080102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 2007",
    "puissance_ch": 140,
    "vitesse_max_kmh": 205,
@@ -2418,7 +2430,10 @@
     "2000s car",
     "japanese car",
     "reliable car"
-   ]
+   ],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_Primera_front_20080102.jpg"
   },
   {
    "id": "nissan_pulsar",
