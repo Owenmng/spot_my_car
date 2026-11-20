@@ -1076,7 +1076,7 @@
   {
    "id": "suzuki_reno",
    "name": "Reno (Rebadged Daewoo Lacetti)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Suzuki-Reno-front.jpg/1280px-Suzuki-Reno-front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - 2008",
    "puissance_ch": 126,
    "vitesse_max_kmh": 190,
@@ -1100,7 +1100,10 @@
     "economical car",
     "used car",
     "compact sedan"
-   ]
+   ],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki-Reno-front.jpg"
   },
   {
    "id": "suzuki_s-presso",
@@ -1571,7 +1574,7 @@
   {
    "id": "suzuki_xl6",
    "name": "XL6",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Maruti_Suzuki_XL6_%28front%29.jpg/1280px-Maruti_Suzuki_XL6_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 105,
    "vitesse_max_kmh": 170,
@@ -1595,7 +1598,10 @@
     "spacious car",
     "fuel efficient car",
     "affordable mpv"
-   ]
+   ],
+   "imageCredit": "Agratsa",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_XL6_(front).jpg"
   },
   {
    "id": "suzuki_xl7",

@@ -577,7 +577,6 @@
   {
    "id": "alfa-romeo_1750-2000",
    "name": "1750-2000",
-   "imageUrl": null,
    "production_years": "1968 - 1977",
    "puissance_ch": 132,
    "vitesse_max_kmh": 190,
@@ -1141,7 +1140,11 @@
     "economical car",
     "fuel-efficient car",
     "small car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Alfa_Romeo_6_first_series.jpg/1280px-Alfa_Romeo_6_first_series.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Charles01",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_6_first_series.jpg"
   },
   {
    "id": "alfa-romeo_75",
@@ -1177,7 +1180,6 @@
   {
    "id": "alfa-romeo_75-1.8-turbodiesel",
    "name": "75 1.8 Turbodiesel",
-   "imageUrl": null,
    "production_years": "1985 - 1992",
    "puissance_ch": 92,
    "vitesse_max_kmh": 175,

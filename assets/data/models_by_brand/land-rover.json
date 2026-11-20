@@ -421,7 +421,6 @@
   {
    "id": "land-rover_range-rover_evoque_svr",
    "name": "Range Rover Evoque SVR",
-   "imageUrl": null,
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 300,
    "vitesse_max_kmh": 250,
@@ -612,7 +611,6 @@
   {
    "id": "land-rover_range-rover_velar_svr",
    "name": "Range Rover Velar SVR",
-   "imageUrl": null,
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 550,
    "vitesse_max_kmh": 283,

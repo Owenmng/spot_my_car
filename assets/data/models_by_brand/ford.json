@@ -4182,7 +4182,11 @@
    "name": "Model 91",
    "production_years": null,
    "tags": [],
-   "poids_kg": 1320
+   "poids_kg": 1320,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/1929_Ford_Model_A_roadster_AE-74-91.jpg/1280px-1929_Ford_Model_A_roadster_AE-74-91.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Alfvanbeem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1929_Ford_Model_A_roadster_AE-74-91.jpg"
   },
   {
    "id": "ford_ranger-t6",

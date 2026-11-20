@@ -354,7 +354,6 @@
   {
    "id": "maserati_chubasco",
    "name": "Chubasco (Concept)",
-   "imageUrl": null,
    "production_years": "1990",
    "puissance_ch": 430,
    "vitesse_max_kmh": "non renseigné",
@@ -959,7 +958,6 @@
   {
    "id": "maserati_mc20_ciel",
    "name": "MC20 Ciel",
-   "imageUrl": null,
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 630,
    "vitesse_max_kmh": 320,

@@ -2850,7 +2850,11 @@
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3390 x 1510 x 1420",
-   "poids_kg": 780
+   "poids_kg": 780,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Autobianchi_Y10_Roma.jpg/1280px-Autobianchi_Y10_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Autobianchi_Y10_Roma.jpg"
   },
   {
    "id": "fiat_1100-tv-trasformabile",

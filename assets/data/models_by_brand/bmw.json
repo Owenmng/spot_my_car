@@ -666,7 +666,6 @@
   {
    "id": "bmw_2000tilux",
    "name": "2000 TI Lux",
-   "imageUrl": null,
    "production_years": "1966 - 1968",
    "puissance_ch": 120,
    "vitesse_max_kmh": 185,
@@ -962,7 +961,11 @@
     "executive car",
     "bmw 3 series gt",
     "5-door hatchback"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Moscow%2C_BMW_F34_%283_series_GT%29_black_Oct_2026_01.jpg/1280px-Moscow%2C_BMW_F34_%283_series_GT%29_black_Oct_2026_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Retired electrician",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow,_BMW_F34_(3_series_GT)_black_Oct_2026_01.jpg"
   },
   {
    "id": "bmw_3-series-touring",
@@ -1242,7 +1245,11 @@
     "german car",
     "used 5 series gt",
     "f07"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/BMW_S%C3%A9rie_5_GT.jpg/1280px-BMW_S%C3%A9rie_5_GT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Oberau-Online",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_S%C3%A9rie_5_GT.jpg"
   },
   {
    "id": "bmw_5-series-touring",
@@ -2018,7 +2025,6 @@
   {
    "id": "alpina_d10",
    "name": "Alpina D10",
-   "imageUrl": null,
    "production_years": "1999 - 2003",
    "puissance_ch": 245,
    "vitesse_max_kmh": 254,
@@ -2146,7 +2152,6 @@
   {
    "id": "alpina_rle-roadster",
    "name": "Alpina RLE Roadster",
-   "imageUrl": null,
    "production_years": "1990 - 1991",
    "puissance_ch": 200,
    "vitesse_max_kmh": 231,
@@ -2765,7 +2770,7 @@
   {
    "id": "bmw_m135i",
    "name": "M135i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/BMW_M135i_xDrive_%28F40%29_at_BMW_Welt_-_front_right_view_%28cropped%29.jpg/1280px-BMW_M135i_xDrive_%28F40%29_at_BMW_Welt_-_front_right_view_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 306,
    "vitesse_max_kmh": 250,
@@ -2789,12 +2794,15 @@
     "hot hatch",
     "turbocharged",
     "rear-wheel drive"
-   ]
+   ],
+   "imageCredit": "NaBUru38",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M135i_xDrive_(F40)_at_BMW_Welt_-_front_right_view_(cropped).jpg"
   },
   {
    "id": "bmw_m140i",
    "name": "M140i",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/BMW_1-Series_%28F20%29_M140i_xDrive_%282018%29_%2852914702479%29.jpg/1280px-BMW_1-Series_%28F20%29_M140i_xDrive_%282018%29_%2852914702479%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2016 - 2019",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -2818,7 +2826,10 @@
     "vehicle",
     "turbocharged",
     "rear-wheel drive"
-   ]
+   ],
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_1-Series_(F20)_M140i_xDrive_(2018)_(52914702479).jpg"
   },
   {
    "id": "bmw_m2",

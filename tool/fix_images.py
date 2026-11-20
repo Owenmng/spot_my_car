@@ -20,6 +20,9 @@ except ImportError:
 BUDGET_S = float(os.environ.get("BUDGET_MIN", "300")) * 60
 START = time.time()
 CHECKED_PATH = "tool/reports/vision_checked.json"
+RETRY_PATH = "tool/reports/photo_retry.json"  # modèles sans photo : date du dernier essai
+MISSING_MAX = int(os.environ.get("MISSING_MAX", "80"))  # modèles sans photo retentés par exécution
+RETRY_DAYS = 7
 
 opts = open("lib/firebase_options.dart").read()
 android = opts[opts.index("android"):]
@@ -53,6 +56,43 @@ def base_title(url):
     name = urllib.parse.unquote(url.split("?")[0].rsplit("/", 1)[-1])
     name = re.sub(r"^\d+px-", "", name)
     return "File:" + name.replace("_", " ")
+
+
+def title_ok(title, bname, model_name):
+    """Le nom du fichier doit citer le modèle : tous ses mots (chiffres compris, en mots entiers),
+    et le code de génération s'il contient des chiffres. Évite « BMW 125 » illustrée par une 118i."""
+    tn = f" {norm(title.replace('File:', ''))} "
+    base = re.sub(r"\(.*?\)", "", model_name).strip()
+    brand_words = set(norm(bname).split())
+    want = [w for w in norm(base).split() if w not in brand_words or any(c.isdigit() for c in w)]
+    if not want or not all(f" {w} " in tn for w in want):
+        return False
+    gen = " ".join(re.findall(r"\((.*?)\)", model_name))
+    gen_digits = [w for w in norm(gen).split() if any(c.isdigit() for c in w)]
+    return all(f" {w} " in tn for w in gen_digits)
+
+
+def wiki_lead_images(q):
+    """Image principale des articles Wikipédia (en, fr, de, it) qui parlent de ce modèle."""
+    out = []
+    for lang in ("en", "fr", "de", "it"):
+        try:
+            d = http_json(f"https://{lang}.wikipedia.org/w/api.php", {
+                "action": "query", "format": "json", "generator": "search", "gsrsearch": q, "gsrlimit": 3,
+                "prop": "pageimages", "piprop": "name"})
+        except Exception:
+            continue
+        if not d:
+            continue
+        pages = sorted((d.get("query") or {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+        for pg in pages:
+            name = pg.get("pageimage")
+            if name and not name.lower().endswith((".svg", ".gif")):
+                t = "File:" + name.replace("_", " ")
+                if t not in out:
+                    out.append(t)
+        time.sleep(0.2)
+    return out
 
 
 def commons_search(q, limit=12):
@@ -99,8 +139,15 @@ SCHEMA = {"type": "OBJECT", "properties": {
     "sameModel": {"type": "BOOLEAN"},
     "seenMake": {"type": "STRING"},
     "seenModel": {"type": "STRING"},
+    "view": {"type": "STRING", "enum": ["front", "frontThreeQuarter", "side", "rearThreeQuarter", "rear", "top", "other"]},
+    "obstructed": {"type": "BOOLEAN"},
     "quality": {"type": "INTEGER"}},
-    "required": ["exterior", "wholeCar", "sameModel", "quality"]}
+    "required": ["exterior", "wholeCar", "sameModel", "view", "obstructed", "quality"]}
+
+# Version du contrôle : "v2" = critères stricts (vue avant/trois-quarts/profil, voiture dégagée, qualité >= 6).
+# Les photos validées avec l'ancien contrôle (True) sont revérifiées une fois les nouvelles terminées.
+CHECK_V = "v3"
+GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 
 _vision_calls = 0
 
@@ -126,8 +173,11 @@ def vision_ok(thumb_url, label):
     prompt = (f"Cette photo doit illustrer la fiche catalogue de la voiture « {label} ». "
               "exterior : la photo montre la voiture vue de l'extérieur (pas l'habitacle, pas le moteur, pas un détail). "
               "wholeCar : la voiture est entière ou presque dans le cadre et c'est le sujet principal. "
-              "sameModel : c'est bien ce modèle (et cette génération si elle est précisée), ou une version très proche. "
-              "quality : 1 à 10, netteté et lisibilité de la voiture.")
+              "sameModel : c'est EXACTEMENT ce modèle, et cette génération si elle est précisée. Un modèle voisin de la même marque "
+              "(autre numéro, autre génération, version de course ou concept au lieu de la série) = false. En cas de doute = false. "
+              "view : angle de vue principal de la voiture. "
+              "obstructed : la voiture est en partie cachée (autre véhicule, personnes, barrière, grosse bâche, texte incrusté). "
+              "quality : 1 à 10, netteté, lumière et lisibilité de la voiture (10 = photo de catalogue).")
     body = {"contents": [{"role": "user", "parts": [{"text": prompt},
                                                       {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(img).decode()}}]}],
             "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "responseSchema": SCHEMA,
@@ -152,7 +202,8 @@ def vision_ok(thumb_url, label):
                 log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
                 return None
             j = json.loads(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
-            return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and (j.get("quality") or 0) >= 5)
+            return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and not j.get("obstructed")
+                        and j.get("view") in GOOD_VIEWS and (j.get("quality") or 0) >= 6)
         except Exception as e:
             log(f"vision err {e}")
             time.sleep(5)
@@ -211,17 +262,26 @@ def main():
     stats = {"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0}
     report = []
 
-    def find_replacement(bname, m):
+    def find_replacement(bname, m, wide=False):
         base = re.sub(r"\(.*?\)", "", m["name"]).strip()
         gen = re.findall(r"\((.*?)\)", m["name"])
         want = [w for w in norm(base).split() if w]
         brand_tok = norm(bname).split()[0]
         queries = [f"{bname} {base} {gen[0]}" if gen else None, f"{bname} {base}", f"{bname} {base} front", f"{bname} {base} side"]
         cands = []
+        if wide:
+            # Modèle sans photo : on regarde aussi l'image principale des articles Wikipédia
+            # (souvent la seule bonne photo d'un modèle rare). L'IA vérifie ensuite que c'est le bon.
+            for t in wiki_lead_images(f"{bname} {base}"):
+                if t not in in_use and t not in cands and title_ok(t, bname, m["name"]):
+                    cands.append(t)
+            queries += [f"{bname} {base} car", f"{base} {bname}"]
         for q in [q for q in queries if q]:
             for t in commons_search(q):
                 tn = norm(t)
                 if t in in_use or t in cands or brand_tok not in tn or not all(w in tn for w in want):
+                    continue
+                if not title_ok(t, bname, m["name"]):
                     continue
                 cands.append(t)
             time.sleep(0.2)
@@ -234,10 +294,13 @@ def main():
         ccats = categories(cands[:10])
         for t in cands[:10]:
             info = infos.get(t)
-            if not photo_ok(info) or looks_interior(t, ccats.get(t)):
+            if checked.get(t) is False or checked.get(f"{t}::{m['name']}") is False or not photo_ok(info) or looks_interior(t, ccats.get(t)):
                 continue
+            if checked.get(t) == CHECK_V:
+                return info  # déjà validée avec les critères stricts : pas besoin de redemander à l'IA
             v = vision_ok(info["thumb"], f"{bname} {m['name']}")
             if v is False:
+                checked[f"{t}::{m['name']}"] = False  # refusée pour CE modèle (elle peut convenir à un autre)
                 continue
             return info
         return None
@@ -251,7 +314,7 @@ def main():
             m["imagePage"] = info["page"]
             nt = base_title(info["thumb"]) or info["title"]
             in_use.add(nt)
-            checked[nt] = True
+            checked[nt] = CHECK_V
             stats["remplacées"] += 1
             report.append(f"- {bname} {m['name']} ({reason}) → {info['title']}")
         else:
@@ -263,6 +326,31 @@ def main():
             in_use.discard(old)
 
     done = set()
+
+    # 0. Modèles sans photo : nouvelle recherche, plus large, tous les 7 jours au plus.
+    try:
+        retry = json.load(open(RETRY_PATH))
+    except Exception:
+        retry = {}
+    today = time.strftime("%Y-%m-%d")
+    def due(m):
+        last = retry.get(m.get("id") or m["name"])
+        return not last or (time.mktime(time.strptime(today, "%Y-%m-%d")) - time.mktime(time.strptime(last, "%Y-%m-%d"))) >= RETRY_DAYS * 86400
+    missing = [(f, bname, m) for f, bname, m in entries if not m.get("imageUrl") and due(m)]
+    log(f"sans photo à retenter: {len(missing)}")
+    found = 0
+    for f, bname, m in missing[:MISSING_MAX]:
+        if out_of_time():
+            break
+        retry[m.get("id") or m["name"]] = today
+        info = find_replacement(bname, m, wide=True)
+        if info:
+            found += 1
+            apply(f, bname, m, info, "sans photo")
+            stats["remplacées"] -= 1
+            stats["retrouvées"] = stats.get("retrouvées", 0) + 1
+        done.add(id(m))
+
     for f, bname, m, reason in to_fix:
         if out_of_time():
             break
@@ -273,7 +361,9 @@ def main():
 
     # 3. Validation IA de toutes les autres photos, au fil des exécutions.
     pending = [(f, bname, m) for f, bname, m in entries
-               if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked and id(m) not in done]
+               if m.get("imageUrl") and checked.get(base_title(m["imageUrl"])) != CHECK_V and id(m) not in done]
+    # D'abord les photos jamais vérifiées, puis celles validées avec l'ancien contrôle, moins strict.
+    pending.sort(key=lambda e: 0 if base_title(e[2]["imageUrl"]) not in checked else 1)
     log(f"validation IA restante: {len(pending)}")
     from concurrent.futures import ThreadPoolExecutor
     pool = ThreadPoolExecutor(max_workers=2)
@@ -287,7 +377,7 @@ def main():
             if v is None:
                 continue
             if v:
-                checked[t] = True
+                checked[t] = CHECK_V
                 stats["validées"] += 1
             else:
                 stats["rejetées_ia"] += 1
@@ -300,11 +390,13 @@ def main():
         json.dump(doc, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     os.makedirs("tool/reports", exist_ok=True)
     json.dump(checked, open(CHECKED_PATH, "w"), ensure_ascii=False)
-    remaining = sum(1 for _, _, m in entries if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked)
+    json.dump(retry, open(RETRY_PATH, "w"), ensure_ascii=False, indent=0)
+    remaining = sum(1 for _, _, m in entries if m.get("imageUrl") and checked.get(base_title(m["imageUrl"])) != CHECK_V)
+    no_photo = sum(1 for _, _, m in entries if not m.get("imageUrl"))
     with open("tool/reports/image_quality.md", "w", encoding="utf-8") as fh:
-        fh.write(f"# Contrôle des photos\n\n{json.dumps(stats, ensure_ascii=False)} · appels IA: {_vision_calls} · restant à valider: {remaining}\n\n")
+        fh.write(f"# Contrôle des photos\n\n{json.dumps(stats, ensure_ascii=False)} · appels IA: {_vision_calls} · restant à valider: {remaining} · sans photo: {no_photo}\n\n")
         fh.write("\n".join(report[-1500:]))
-    log(f"FIN {stats} appels_ia={_vision_calls} restant={remaining}")
+    log(f"FIN {stats} appels_ia={_vision_calls} restant={remaining} sans_photo={no_photo}")
 
 
 if __name__ == "__main__":

@@ -992,7 +992,7 @@
   {
    "id": "audi_fox",
    "name": "Fox",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/1976_Audi_Fox_four-door_sedan%2C_front_left_side.jpg/1280px-1976_Audi_Fox_four-door_sedan%2C_front_left_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1973 - 1979",
    "puissance_ch": 55,
    "vitesse_max_kmh": 148,
@@ -1014,7 +1014,10 @@
     "volkswagen fox",
     "fox",
     "small car"
-   ]
+   ],
+   "imageCredit": "Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1976_Audi_Fox_four-door_sedan,_front_left_side.jpg"
   },
   {
    "id": "audi_front",

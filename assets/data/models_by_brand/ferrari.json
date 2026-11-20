@@ -526,7 +526,7 @@
   {
    "id": "ferrari_375",
    "name": "375 America",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ferrari_375_America_Suzanneandsimon_00015089.jpg/1280px-Ferrari_375_America_Suzanneandsimon_00015089.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/1954_Ferrari_375_America_Vignale_Cabriolet.jpg/1280px-1954_Ferrari_375_America_Vignale_Cabriolet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1953 - 1954",
    "puissance_ch": 300,
    "vitesse_max_kmh": 240,
@@ -552,14 +552,13 @@
     "ferrari",
     "two-seater"
    ],
-   "imageCredit": "suzanneandsimon",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_375_America_Suzanneandsimon_00015089.jpg"
+   "imageCredit": "Prova MO",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1954_Ferrari_375_America_Vignale_Cabriolet.jpg"
   },
   {
    "id": "ferrari_400-gt",
    "name": "400 GT",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/1979_Ferrari_400_GT_%2814788406226%29.jpg/1280px-1979_Ferrari_400_GT_%2814788406226%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1979",
    "puissance_ch": 340,
    "vitesse_max_kmh": 240,
@@ -583,10 +582,7 @@
     "maserati",
     "automobile",
     "motor vehicle"
-   ],
-   "imageCredit": "Niels de Wit from Lunteren, The Netherlands",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1979_Ferrari_400_GT_(14788406226).jpg"
+   ]
   },
   {
    "id": "ferrari_400",
@@ -620,7 +616,7 @@
   {
    "id": "ferrari_412",
    "name": "412",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Ferrari_412T2_2008_Goodwood.jpg/1280px-Ferrari_412T2_2008_Goodwood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/1995_Ferrari_412_T2_front.jpg/1280px-1995_Ferrari_412_T2_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1989",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -645,9 +641,9 @@
     "1970s car",
     "family car"
    ],
-   "imageCredit": "Brian Snelson from Hockley, Essex, England",
+   "imageCredit": "pelican-actor",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_412T2_2008_Goodwood.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1995_Ferrari_412_T2_front.jpg"
   },
   {
    "id": "ferrari_430-scuderia",
@@ -1232,7 +1228,7 @@
   {
    "id": "ferrari_amalfi",
    "name": "Amalfi (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Ferrari_Amalfi_%28retouched%29.jpg/1280px-Ferrari_Amalfi_%28retouched%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ferrari_Amalfi_IMG_8179.jpg/1280px-Ferrari_Amalfi_IMG_8179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "Concept",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -1258,9 +1254,9 @@
     "design",
     "prototype"
    ],
-   "imageCredit": "Alexandre Prevot (retouched by NearEMPTiness)",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Amalfi_(retouched).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Amalfi_IMG_8179.jpg"
   },
   {
    "id": "ferrari_br20",
@@ -1814,7 +1810,6 @@
   {
    "id": "ferrari_ff-america",
    "name": "FF America",
-   "imageUrl": null,
    "production_years": "2011 - 2016",
    "puissance_ch": 660,
    "vitesse_max_kmh": 335,

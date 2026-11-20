@@ -34,7 +34,6 @@
   {
    "id": "lamborghini_350-gt-zagato",
    "name": "350 GT Zagato",
-   "imageUrl": null,
    "production_years": "1965 - 1966",
    "puissance_ch": 320,
    "vitesse_max_kmh": 254,
@@ -879,7 +878,6 @@
   {
    "id": "lamborghini_lm001",
    "name": "LM001 (Prototype)",
-   "imageUrl": null,
    "production_years": "1981",
    "puissance_ch": 180,
    "vitesse_max_kmh": 160,
