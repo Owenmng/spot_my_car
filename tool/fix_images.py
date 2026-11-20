@@ -58,6 +58,20 @@ def base_title(url):
     return "File:" + name.replace("_", " ")
 
 
+def title_ok(title, bname, model_name):
+    """Le nom du fichier doit citer le modèle : tous ses mots (chiffres compris, en mots entiers),
+    et le code de génération s'il contient des chiffres. Évite « BMW 125 » illustrée par une 118i."""
+    tn = f" {norm(title.replace('File:', ''))} "
+    base = re.sub(r"\(.*?\)", "", model_name).strip()
+    brand_words = set(norm(bname).split())
+    want = [w for w in norm(base).split() if w not in brand_words or any(c.isdigit() for c in w)]
+    if not want or not all(f" {w} " in tn for w in want):
+        return False
+    gen = " ".join(re.findall(r"\((.*?)\)", model_name))
+    gen_digits = [w for w in norm(gen).split() if any(c.isdigit() for c in w)]
+    return all(f" {w} " in tn for w in gen_digits)
+
+
 def wiki_lead_images(q):
     """Image principale des articles Wikipédia (en, fr, de, it) qui parlent de ce modèle."""
     out = []
@@ -132,7 +146,7 @@ SCHEMA = {"type": "OBJECT", "properties": {
 
 # Version du contrôle : "v2" = critères stricts (vue avant/trois-quarts/profil, voiture dégagée, qualité >= 6).
 # Les photos validées avec l'ancien contrôle (True) sont revérifiées une fois les nouvelles terminées.
-CHECK_V = "v2"
+CHECK_V = "v3"
 GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 
 _vision_calls = 0
@@ -159,7 +173,8 @@ def vision_ok(thumb_url, label):
     prompt = (f"Cette photo doit illustrer la fiche catalogue de la voiture « {label} ». "
               "exterior : la photo montre la voiture vue de l'extérieur (pas l'habitacle, pas le moteur, pas un détail). "
               "wholeCar : la voiture est entière ou presque dans le cadre et c'est le sujet principal. "
-              "sameModel : c'est bien ce modèle (et cette génération si elle est précisée), ou une version très proche. "
+              "sameModel : c'est EXACTEMENT ce modèle, et cette génération si elle est précisée. Un modèle voisin de la même marque "
+              "(autre numéro, autre génération, version de course ou concept au lieu de la série) = false. En cas de doute = false. "
               "view : angle de vue principal de la voiture. "
               "obstructed : la voiture est en partie cachée (autre véhicule, personnes, barrière, grosse bâche, texte incrusté). "
               "quality : 1 à 10, netteté, lumière et lisibilité de la voiture (10 = photo de catalogue).")
@@ -258,13 +273,15 @@ def main():
             # Modèle sans photo : on regarde aussi l'image principale des articles Wikipédia
             # (souvent la seule bonne photo d'un modèle rare). L'IA vérifie ensuite que c'est le bon.
             for t in wiki_lead_images(f"{bname} {base}"):
-                if t not in in_use and t not in cands:
+                if t not in in_use and t not in cands and title_ok(t, bname, m["name"]):
                     cands.append(t)
             queries += [f"{bname} {base} car", f"{base} {bname}"]
         for q in [q for q in queries if q]:
             for t in commons_search(q):
                 tn = norm(t)
                 if t in in_use or t in cands or brand_tok not in tn or not all(w in tn for w in want):
+                    continue
+                if not title_ok(t, bname, m["name"]):
                     continue
                 cands.append(t)
             time.sleep(0.2)

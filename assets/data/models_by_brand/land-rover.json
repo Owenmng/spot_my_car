@@ -421,7 +421,6 @@
   {
    "id": "land-rover_range-rover_evoque_svr",
    "name": "Range Rover Evoque SVR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Range_Rover_Velar.jpg/1280px-Range_Rover_Velar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 300,
    "vitesse_max_kmh": 250,
@@ -444,10 +443,7 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "NauyopTaiwan",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Range_Rover_Velar.jpg"
+   ]
   },
   {
    "id": "land-rover_range-rover_l322",
@@ -615,7 +611,6 @@
   {
    "id": "land-rover_range-rover_velar_svr",
    "name": "Range Rover Velar SVR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Range_Rover_Velar_P250_SE_IMG_8835.jpg/1280px-Range_Rover_Velar_P250_SE_IMG_8835.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 550,
    "vitesse_max_kmh": 283,
@@ -638,10 +633,7 @@
     "car",
     "motor vehicle",
     "full-size suv"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Range_Rover_Velar_P250_SE_IMG_8835.jpg"
+   ]
   },
   {
    "id": "land-rover_series-i",

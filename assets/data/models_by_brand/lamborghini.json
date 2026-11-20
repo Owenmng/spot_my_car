@@ -34,7 +34,6 @@
   {
    "id": "lamborghini_350-gt-zagato",
    "name": "350 GT Zagato",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/1965_Lamborghini_350_GT_HCC24.jpg/1280px-1965_Lamborghini_350_GT_HCC24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1965 - 1966",
    "puissance_ch": 320,
    "vitesse_max_kmh": 254,
@@ -59,10 +58,7 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "MrWalkr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1965_Lamborghini_350_GT_HCC24.jpg"
+   ]
   },
   {
    "id": "lamborghini_400-gt",
@@ -882,7 +878,6 @@
   {
    "id": "lamborghini_lm001",
    "name": "LM001 (Prototype)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U_%28cropped%29.JPG/1280px-Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981",
    "puissance_ch": 180,
    "vitesse_max_kmh": 160,
@@ -906,10 +901,7 @@
     "high-performance",
     "technology",
     "automotive"
-   ],
-   "imageCredit": "Detectandpreserve",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U_(cropped).JPG"
+   ]
   },
   {
    "id": "lamborghini_lm002",
@@ -1516,11 +1508,7 @@
    "id": "lamborghini_400gt-monza",
    "name": "400GT Monza",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/1966_Lamborghini_400_GT_Red.jpg/1280px-1966_Lamborghini_400_GT_Red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "MrWalkr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Lamborghini_400_GT_Red.jpg"
+   "tags": []
   },
   {
    "id": "lamborghini_gallardo-lp550-2",

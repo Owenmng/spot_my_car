@@ -379,11 +379,7 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bugatti_Veyron_-_panoramio_%282%29_%28cropped%29.jpg/1280px-Bugatti_Veyron_-_panoramio_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Besenbinder",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_-_panoramio_(2)_(cropped).jpg"
+   ]
   },
   {
    "id": "bugatti_la-voiture-noire",
@@ -1748,11 +1744,7 @@
    "id": "bugatti_type-47",
    "name": "Type 47",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Bugatti_Type_45_02.jpg/1280px-Bugatti_Type_45_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Arnaud 25",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_45_02.jpg"
+   "tags": []
   }
  ]
 }

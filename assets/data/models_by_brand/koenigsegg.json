@@ -419,7 +419,6 @@
   {
    "id": "koenigsegg_trevita",
    "name": "Trevita",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Koenigsegg_CCX_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2811%29.jpg/1280px-Koenigsegg_CCX_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2811%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2010",
    "puissance_ch": 1018,
    "vitesse_max_kmh": 410,
@@ -442,10 +441,7 @@
     "limited edition",
     "bespoke",
     "handcrafted"
-   ],
-   "imageCredit": "Alexandre Prévot from Nancy, France",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CCX_-_Flickr_-_Alexandre_Pr%C3%A9vot_(11).jpg"
+   ]
   }
  ]
 }

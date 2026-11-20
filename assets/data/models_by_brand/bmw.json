@@ -217,11 +217,7 @@
     "personal transport",
     "lightweight vehicle",
     "commuter vehicle"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/BMW_118i_Urban_Line_%28F20%29_%E2%80%93_Frontansicht%2C_10._M%C3%A4rz_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_118i_Urban_Line_%28F20%29_%E2%80%93_Frontansicht%2C_10._M%C3%A4rz_2012%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_118i_Urban_Line_(F20)_%E2%80%93_Frontansicht,_10._M%C3%A4rz_2012,_D%C3%BCsseldorf.jpg"
+   ]
   },
   {
    "id": "bmw_130",
@@ -670,7 +666,6 @@
   {
    "id": "bmw_2000tilux",
    "name": "2000 TI Lux",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/BMW1500FrontSeit.JPG/1280px-BMW1500FrontSeit.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1966 - 1968",
    "puissance_ch": 120,
    "vitesse_max_kmh": 185,
@@ -693,10 +688,7 @@
     "german car",
     "bmw",
     "executive car"
-   ],
-   "imageCredit": "Michael H.",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW1500FrontSeit.JPG"
+   ]
   },
   {
    "id": "bmw_2000tii",
@@ -969,11 +961,7 @@
     "executive car",
     "bmw 3 series gt",
     "5-door hatchback"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2013-03-05_Geneva_Motor_Show_8182.JPG/1280px-2013-03-05_Geneva_Motor_Show_8182.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Norbert Aepli, Switzerland (User:Noebu)",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2013-03-05_Geneva_Motor_Show_8182.JPG"
+   ]
   },
   {
    "id": "bmw_3-series-touring",
@@ -2033,7 +2021,6 @@
   {
    "id": "alpina_d10",
    "name": "Alpina D10",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/2000-2003_BMW_525i_%28E39%29_Executive_sedan_%282010-10-02%29_01.jpg/1280px-2000-2003_BMW_525i_%28E39%29_Executive_sedan_%282010-10-02%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2003",
    "puissance_ch": 245,
    "vitesse_max_kmh": 254,
@@ -2058,10 +2045,7 @@
     "vehicle",
     "diesel",
     "powerful sedan"
-   ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2000-2003_BMW_525i_(E39)_Executive_sedan_(2010-10-02)_01.jpg"
+   ]
   },
   {
    "id": "alpina_d3",
@@ -2164,7 +2148,6 @@
   {
    "id": "alpina_rle-roadster",
    "name": "Alpina RLE Roadster",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/BMW_Z1_1.jpg/1280px-BMW_Z1_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 1991",
    "puissance_ch": 200,
    "vitesse_max_kmh": 231,
@@ -2188,10 +2171,7 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Z1_1.jpg"
+   ]
   },
   {
    "id": "alpina_roadster-s",
@@ -3262,11 +3242,7 @@
     "vehicle",
     "motor vehicle",
     "grand tourer"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/2017_BMW_750i_%28G12%29_front_3.23.18.jpg/1280px-2017_BMW_750i_%28G12%29_front_3.23.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Kevauto",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_BMW_750i_(G12)_front_3.23.18.jpg"
+   ]
   },
   {
    "id": "bmw_m8",
@@ -4690,11 +4666,7 @@
    "id": "bmw_z-models",
    "name": "Z Models",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/BMW_Z3_1.9L_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imageCredit": "Hiroshi Tanita",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Z3_1.9L_1998.jpg"
+   "tags": []
   },
   {
    "id": "bmw_3-series-f30",
@@ -4989,11 +4961,7 @@
    "id": "bmw_331",
    "name": "331",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/BMW_501_V8_Cabriolet_vr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imageCredit": "Stahlkocher",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_501_V8_Cabriolet_vr.jpg"
+   "tags": []
   },
   {
    "id": "bmw_328",

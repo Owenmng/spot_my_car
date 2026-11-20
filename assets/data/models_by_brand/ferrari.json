@@ -1814,7 +1814,6 @@
   {
    "id": "ferrari_ff-america",
    "name": "FF America",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Ferrari_F12_Berlinetta_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg/1280px-Ferrari_F12_Berlinetta_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - 2016",
    "puissance_ch": 660,
    "vitesse_max_kmh": 335,
@@ -1838,10 +1837,7 @@
     "collectible car",
     "high-performance car",
     "automotive"
-   ],
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_F12_Berlinetta_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg"
+   ]
   },
   {
    "id": "ferrari_fxx",
@@ -2244,11 +2240,7 @@
    "id": "ferrari_553",
    "name": "553",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Ferrari_625_F1_1954_front_noBG.jpg/1280px-Ferrari_625_F1_1954_front_noBG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Quelle: Prova MO / Freisteller, Bildbearbeitung & Retusche von Auge=mit",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_625_F1_1954_front_noBG.jpg"
+   "tags": []
   },
   {
    "id": "ferrari_212-export",

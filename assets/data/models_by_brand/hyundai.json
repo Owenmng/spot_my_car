@@ -286,7 +286,6 @@
   {
    "id": "hyundai_centennial",
    "name": "Centennial (Equus)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2011_Hyundai_Equus_--_02-24-2011.jpg/1280px-2011_Hyundai_Equus_--_02-24-2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2009",
    "puissance_ch": 270,
    "vitesse_max_kmh": 230,
@@ -310,10 +309,7 @@
     "south korean car",
     "large sedan",
     "flagship sedan"
-   ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Hyundai_Equus_--_02-24-2011.jpg"
+   ]
   },
   {
    "id": "hyundai_coupe",

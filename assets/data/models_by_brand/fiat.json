@@ -3030,11 +3030,7 @@
    "id": "fiat_palio-ii",
    "name": "Palio II",
    "production_years": "2011 - 2017",
-   "tags": [],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Fiat_Palio_white_5door.jpg/1280px-Fiat_Palio_white_5door.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "https://www.flickr.com/photos/allanpatrick/",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Palio_white_5door.jpg"
+   "tags": []
   },
   {
    "id": "fiat_1100-103",
@@ -3226,11 +3222,7 @@
    "name": "Auto Avio Costruzioni 815",
    "production_years": null,
    "tags": [],
-   "poids_kg": 625,
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Car_Mus%C3%A9e_Enzo_Ferrari_0063_%28cropped%29.JPG/1280px-Car_Mus%C3%A9e_Enzo_Ferrari_0063_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Arnaud 25",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Car_Mus%C3%A9e_Enzo_Ferrari_0063_(cropped).JPG"
+   "poids_kg": 625
   },
   {
    "id": "fiat_600-2",

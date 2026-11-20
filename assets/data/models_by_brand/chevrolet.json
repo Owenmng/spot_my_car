@@ -382,7 +382,6 @@
   {
    "id": "chevrolet_beretta_z26",
    "name": "Beretta Z26",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1996ChevroletBeretta-front_%28cropped%29.jpg/1280px-1996ChevroletBeretta-front_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 1996",
    "puissance_ch": 150,
    "vitesse_max_kmh": 210,
@@ -405,10 +404,7 @@
     "classic car",
     "vintage car",
     "collectible car"
-   ],
-   "imageCredit": "Rich Niewiroski Jr.",
-   "imageLicense": "CC BY 2.5",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1996ChevroletBeretta-front_(cropped).jpg"
+   ]
   },
   {
    "id": "chevrolet_blazer",
@@ -1614,11 +1610,7 @@
     "economy car",
     "hybrid",
     "gasoline car"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Chevrolet_Cruze.JPG/1280px-Chevrolet_Cruze.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Thomas doerfer",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Cruze.JPG"
+   ]
   },
   {
    "id": "chevrolet_cruze_hatch",
@@ -3005,11 +2997,7 @@
     "subcompact suv",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/CHEVROLET_LOVA_RV_China.jpg/1280px-CHEVROLET_LOVA_RV_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:CHEVROLET_LOVA_RV_China.jpg"
+   ]
   },
   {
    "id": "chevrolet_seeker",
@@ -3098,11 +3086,7 @@
     "motor vehicle",
     "truck",
     "work truck"
-   ],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/%2713_Chevrolet_Silverado_HD_Crew_Cab_%28MIAS_%2713%29.jpg/1280px-%2713_Chevrolet_Silverado_HD_Crew_Cab_%28MIAS_%2713%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Bull-Doser",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%2713_Chevrolet_Silverado_HD_Crew_Cab_(MIAS_%2713).jpg"
+   ]
   },
   {
    "id": "chevrolet_silverado_1500_ltz",
@@ -4143,11 +4127,7 @@
    "id": "chevrolet_monza-usa",
    "name": "Monza USA",
    "production_years": "1975 - 1980",
-   "tags": [],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Monza.jpg/1280px-Monza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Monza at English Wikipedia",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Monza.jpg"
+   "tags": []
   },
   {
    "id": "chevrolet_corvette-c7-r",
