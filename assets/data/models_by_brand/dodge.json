@@ -314,7 +314,7 @@
   {
    "id": "dodge_dart_swinger",
    "name": "Dart Swinger",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/1966_Dodge_Dart_GT_%2835578852214%29_%28cropped%29.jpg/1280px-1966_Dodge_Dart_GT_%2835578852214%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/1972_Dodge_Dart_Swinger_%284809956253%29.jpg/1280px-1972_Dodge_Dart_Swinger_%284809956253%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1976",
    "puissance_ch": 150,
    "vitesse_max_kmh": 180,
@@ -340,9 +340,9 @@
     "collectible car",
     "classic muscle car"
    ],
-   "imageCredit": "Greg Gjerdingen from Willmar, USA",
+   "imageCredit": "dave_7 from Lethbridge, Canada",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Dodge_Dart_GT_(35578852214)_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Dodge_Dart_Swinger_(4809956253).jpg"
   },
   {
    "id": "dodge_daytona",
@@ -632,7 +632,7 @@
   {
    "id": "dodge_monaco",
    "name": "Monaco",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Wiki_cars_181.jpg/1280px-Wiki_cars_181.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/1973_Dodge_Monaco_2-Door_Hardtop%2C_front_left_%282022_Ellwood_City_Fall_Fest_%26_Car_Cruise%29.jpg/1280px-1973_Dodge_Monaco_2-Door_Hardtop%2C_front_left_%282022_Ellwood_City_Fall_Fest_%26_Car_Cruise%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 1992",
    "puissance_ch": 152,
    "vitesse_max_kmh": 200,
@@ -657,9 +657,9 @@
     "two-seater",
     "classic car"
    ],
-   "imageCredit": "Karrmann",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Wiki_cars_181.jpg"
+   "imageCredit": "MercurySable99",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1973_Dodge_Monaco_2-Door_Hardtop,_front_left_(2022_Ellwood_City_Fall_Fest_%26_Car_Cruise).jpg"
   },
   {
    "id": "dodge_neon",
@@ -1292,12 +1292,12 @@
   {
    "id": "dodge_matador",
    "name": "Matador",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Dodge_Matador.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/1960_Dodge_Matador_4_door_Hardtop_%2833190695531%29.jpg/1280px-1960_Dodge_Matador_4_door_Hardtop_%2833190695531%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1959",
    "tags": [],
-   "imageCredit": "FaceMePLS",
+   "imageCredit": "Sicnag",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_Matador.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1960_Dodge_Matador_4_door_Hardtop_(33190695531).jpg"
   },
   {
    "id": "dodge_omni-024",
@@ -1448,12 +1448,8 @@
   {
    "id": "dodge_new-value",
    "name": "New Value",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Dodge_DU-2_117A_4-Door_Touring_Sedan_1935.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_DU-2_117A_4-Door_Touring_Sedan_1935.jpg"
+   "tags": []
   },
   {
    "id": "dodge_ram-50",

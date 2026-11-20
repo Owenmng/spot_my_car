@@ -323,7 +323,7 @@
   {
    "id": "citroen_bx",
    "name": "BX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Citroen_BX_Midi.jpg/1280px-Citroen_BX_Midi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/1989_Citro%C3%ABn_BX_GTi_16v.jpg/1280px-1989_Citro%C3%ABn_BX_GTi_16v.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - 1994",
    "puissance_ch": 92,
    "vitesse_max_kmh": 176,
@@ -347,9 +347,9 @@
     "family car",
     "economy car"
    ],
-   "imageCredit": "Charles01",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_BX_Midi.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_Citro%C3%ABn_BX_GTi_16v.jpg"
   },
   {
    "id": "citroen_bx_gti",
@@ -608,7 +608,7 @@
   {
    "id": "citroen_c3",
    "name": "C3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2020_Citro%C3%ABn_C3_AIRCROSS_front_view_in_Brunei.jpg/1280px-2020_Citro%C3%ABn_C3_AIRCROSS_front_view_in_Brunei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7374.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7374.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - Aujourd'hui",
    "puissance_ch": 100,
    "vitesse_max_kmh": 183,
@@ -632,9 +632,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "AIMHO'S REBELLION 8490s",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Citro%C3%ABn_C3_AIRCROSS_front_view_in_Brunei.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Citro%C3%ABn_C3_(3rd_generation)_DSC_7374.jpg"
   },
   {
    "id": "citroen_c3-aircross",
@@ -2010,7 +2010,7 @@
   {
    "id": "citroen_saxo_vts",
    "name": "Saxo VTS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Citroen_Saxo_front_20071002.jpg/1280px-Citroen_Saxo_front_20071002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/2000_Citro%C3%ABn_Saxo_VTS_Rally_Car.jpg/1280px-2000_Citro%C3%ABn_Saxo_VTS_Rally_Car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2003",
    "puissance_ch": 120,
    "vitesse_max_kmh": 200,
@@ -2036,14 +2036,14 @@
     "vehicle",
     "hot hatch"
    ],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_Saxo_front_20071002.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Citro%C3%ABn_Saxo_VTS_Rally_Car.jpg"
   },
   {
    "id": "citroen_sm",
    "name": "SM",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Citroen-SM-bleu-platine-av-byRundvald.jpg/1280px-Citroen-SM-bleu-platine-av-byRundvald.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Citro%C3%ABn_SM_Oldtimertreffen_Ebern_2019_6200026.jpg/1280px-Citro%C3%ABn_SM_Oldtimertreffen_Ebern_2019_6200026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1975",
    "puissance_ch": 170,
    "vitesse_max_kmh": 220,
@@ -2068,9 +2068,9 @@
     "ms",
     "wedge car"
    ],
-   "imageCredit": "Rundvald",
+   "imageCredit": "Ermell",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen-SM-bleu-platine-av-byRundvald.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_SM_Oldtimertreffen_Ebern_2019_6200026.jpg"
   },
   {
    "id": "citroen_spacetourer",
@@ -2426,7 +2426,7 @@
   {
    "id": "citroen_zx_volcane",
    "name": "ZX Volcane",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Citroen_ZX_front_20080118.jpg/1280px-Citroen_ZX_front_20080118.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/1993_Citroen_ZX_Volcane_TD_%289758856532%29.jpg/1280px-1993_Citroen_ZX_Volcane_TD_%289758856532%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1998",
    "puissance_ch": 130,
    "vitesse_max_kmh": 205,
@@ -2450,9 +2450,9 @@
     "renault",
     "sports hatchback"
    ],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_ZX_front_20080118.jpg"
+   "imageCredit": "Charlie from United Kingdom",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1993_Citroen_ZX_Volcane_TD_(9758856532).jpg"
   },
   {
    "id": "citroen_e-c4",
@@ -2644,22 +2644,14 @@
   {
    "id": "citroen_jumpy-i",
    "name": "Jumpy I",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Fiat_Scudo_I.jpg/1280px-Fiat_Scudo_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Corvettec6r",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Scudo_I.jpg"
+   "tags": []
   },
   {
    "id": "citroen_jumpy-ii",
    "name": "Jumpy II",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Peugeot_Expert_%28II%29_%E2%80%93_Frontansicht%2C_22._Mai_2011%2C_Ratingen.jpg/1280px-Peugeot_Expert_%28II%29_%E2%80%93_Frontansicht%2C_22._Mai_2011%2C_Ratingen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Expert_(II)_%E2%80%93_Frontansicht,_22._Mai_2011,_Ratingen.jpg"
+   "tags": []
   },
   {
    "id": "citroen_berlingo-iii",
@@ -2737,12 +2729,8 @@
   {
    "id": "citroen_2cv-fourgonnette",
    "name": "2CV fourgonnette",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Citroen_2CV_1X7A7979.jpg/1280px-Citroen_2CV_1X7A7979.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_1X7A7979.jpg"
+   "tags": []
   },
   {
    "id": "citroen_ami-6",
@@ -2868,12 +2856,8 @@
   {
    "id": "citroen_ds-inside",
    "name": "DS Inside",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/2016-03-01_Geneva_Motor_Show_1079.JPG/1280px-2016-03-01_Geneva_Motor_Show_1079.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005",
-   "tags": [],
-   "imageCredit": "Norbert Aepli, Switzerland (User:Noebu)",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016-03-01_Geneva_Motor_Show_1079.JPG"
+   "tags": []
   },
   {
    "id": "citroen_kegresse",
@@ -2991,12 +2975,12 @@
   {
    "id": "citroen_synergie",
    "name": "Synergie",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/2006_Peugeot_807_SE_HDi_2.0_Front.jpg/1280px-2006_Peugeot_807_SE_HDi_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/1996_Citro%C3%ABn_Synergie_SX_2.0i.jpg/1280px-1996_Citro%C3%ABn_Synergie_SX_2.0i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Peugeot_807_SE_HDi_2.0_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Citro%C3%ABn_Synergie_SX_2.0i.jpg"
   },
   {
    "id": "citroen_elysee-wtcc",
@@ -3033,12 +3017,8 @@
   {
    "id": "citroen_tulip",
    "name": "Tulip",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Peugeot_Tulip_1996.JPG/1280px-Peugeot_Tulip_1996.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Buch-t",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Tulip_1996.JPG"
+   "tags": []
   },
   {
    "id": "citroen_c3-wrc",
