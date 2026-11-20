@@ -125,8 +125,15 @@ SCHEMA = {"type": "OBJECT", "properties": {
     "sameModel": {"type": "BOOLEAN"},
     "seenMake": {"type": "STRING"},
     "seenModel": {"type": "STRING"},
+    "view": {"type": "STRING", "enum": ["front", "frontThreeQuarter", "side", "rearThreeQuarter", "rear", "top", "other"]},
+    "obstructed": {"type": "BOOLEAN"},
     "quality": {"type": "INTEGER"}},
-    "required": ["exterior", "wholeCar", "sameModel", "quality"]}
+    "required": ["exterior", "wholeCar", "sameModel", "view", "obstructed", "quality"]}
+
+# Version du contrôle : "v2" = critères stricts (vue avant/trois-quarts/profil, voiture dégagée, qualité >= 6).
+# Les photos validées avec l'ancien contrôle (True) sont revérifiées une fois les nouvelles terminées.
+CHECK_V = "v2"
+GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 
 _vision_calls = 0
 
@@ -153,7 +160,9 @@ def vision_ok(thumb_url, label):
               "exterior : la photo montre la voiture vue de l'extérieur (pas l'habitacle, pas le moteur, pas un détail). "
               "wholeCar : la voiture est entière ou presque dans le cadre et c'est le sujet principal. "
               "sameModel : c'est bien ce modèle (et cette génération si elle est précisée), ou une version très proche. "
-              "quality : 1 à 10, netteté et lisibilité de la voiture.")
+              "view : angle de vue principal de la voiture. "
+              "obstructed : la voiture est en partie cachée (autre véhicule, personnes, barrière, grosse bâche, texte incrusté). "
+              "quality : 1 à 10, netteté, lumière et lisibilité de la voiture (10 = photo de catalogue).")
     body = {"contents": [{"role": "user", "parts": [{"text": prompt},
                                                       {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(img).decode()}}]}],
             "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "responseSchema": SCHEMA,
@@ -178,7 +187,8 @@ def vision_ok(thumb_url, label):
                 log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
                 return None
             j = json.loads(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
-            return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and (j.get("quality") or 0) >= 5)
+            return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and not j.get("obstructed")
+                        and j.get("view") in GOOD_VIEWS and (j.get("quality") or 0) >= 6)
         except Exception as e:
             log(f"vision err {e}")
             time.sleep(5)
@@ -267,10 +277,13 @@ def main():
         ccats = categories(cands[:10])
         for t in cands[:10]:
             info = infos.get(t)
-            if not photo_ok(info) or looks_interior(t, ccats.get(t)):
+            if checked.get(t) is False or checked.get(f"{t}::{m['name']}") is False or not photo_ok(info) or looks_interior(t, ccats.get(t)):
                 continue
+            if checked.get(t) == CHECK_V:
+                return info  # déjà validée avec les critères stricts : pas besoin de redemander à l'IA
             v = vision_ok(info["thumb"], f"{bname} {m['name']}")
             if v is False:
+                checked[f"{t}::{m['name']}"] = False  # refusée pour CE modèle (elle peut convenir à un autre)
                 continue
             return info
         return None
@@ -284,7 +297,7 @@ def main():
             m["imagePage"] = info["page"]
             nt = base_title(info["thumb"]) or info["title"]
             in_use.add(nt)
-            checked[nt] = True
+            checked[nt] = CHECK_V
             stats["remplacées"] += 1
             report.append(f"- {bname} {m['name']} ({reason}) → {info['title']}")
         else:
@@ -331,7 +344,9 @@ def main():
 
     # 3. Validation IA de toutes les autres photos, au fil des exécutions.
     pending = [(f, bname, m) for f, bname, m in entries
-               if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked and id(m) not in done]
+               if m.get("imageUrl") and checked.get(base_title(m["imageUrl"])) != CHECK_V and id(m) not in done]
+    # D'abord les photos jamais vérifiées, puis celles validées avec l'ancien contrôle, moins strict.
+    pending.sort(key=lambda e: 0 if base_title(e[2]["imageUrl"]) not in checked else 1)
     log(f"validation IA restante: {len(pending)}")
     from concurrent.futures import ThreadPoolExecutor
     pool = ThreadPoolExecutor(max_workers=2)
@@ -345,7 +360,7 @@ def main():
             if v is None:
                 continue
             if v:
-                checked[t] = True
+                checked[t] = CHECK_V
                 stats["validées"] += 1
             else:
                 stats["rejetées_ia"] += 1
@@ -359,7 +374,7 @@ def main():
     os.makedirs("tool/reports", exist_ok=True)
     json.dump(checked, open(CHECKED_PATH, "w"), ensure_ascii=False)
     json.dump(retry, open(RETRY_PATH, "w"), ensure_ascii=False, indent=0)
-    remaining = sum(1 for _, _, m in entries if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked)
+    remaining = sum(1 for _, _, m in entries if m.get("imageUrl") and checked.get(base_title(m["imageUrl"])) != CHECK_V)
     no_photo = sum(1 for _, _, m in entries if not m.get("imageUrl"))
     with open("tool/reports/image_quality.md", "w", encoding="utf-8") as fh:
         fh.write(f"# Contrôle des photos\n\n{json.dumps(stats, ensure_ascii=False)} · appels IA: {_vision_calls} · restant à valider: {remaining} · sans photo: {no_photo}\n\n")
