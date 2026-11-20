@@ -395,7 +395,11 @@
     "executive car",
     "luxury car",
     "mid-size car"
-   ]
+   ],
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Alpine_A220.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageCredit": "Nicolas Garcia",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_A220.jpg"
   },
   {
    "id": "alpine_a220",

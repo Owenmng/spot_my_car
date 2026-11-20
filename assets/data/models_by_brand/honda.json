@@ -789,7 +789,7 @@
   {
    "id": "honda_s7",
    "name": "e:NS1",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2023_Dongfeng-Honda_eNS1%2C_front_8.18.23.jpg/1280px-2023_Dongfeng-Honda_eNS1%2C_front_8.18.23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 204,
    "vitesse_max_kmh": 150,
@@ -813,7 +813,10 @@
     "car",
     "motor vehicle",
     "subcompact car"
-   ]
+   ],
+   "imageCredit": "Kevauto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Dongfeng-Honda_eNS1,_front_8.18.23.jpg"
   },
   {
    "id": "honda_p7",
@@ -1737,7 +1740,7 @@
   {
    "id": "honda_mdx",
    "name": "MDX",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Honda_MDX_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2003 - 2006",
    "puissance_ch": 260,
    "vitesse_max_kmh": 200,
@@ -1761,7 +1764,10 @@
     "all-wheel drive",
     "hybrid",
     "gas powered"
-   ]
+   ],
+   "imageCredit": "Tennen-Gas",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_MDX_001.JPG"
   },
   {
    "id": "honda_mobilio",

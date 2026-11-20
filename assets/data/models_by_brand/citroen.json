@@ -2645,13 +2645,21 @@
    "id": "citroen_jumpy-i",
    "name": "Jumpy I",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Citro%C3%ABn_Jumpy_en_Valencia.jpg/1280px-Citro%C3%ABn_Jumpy_en_Valencia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Dorieo",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_Jumpy_en_Valencia.jpg"
   },
   {
    "id": "citroen_jumpy-ii",
    "name": "Jumpy II",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/La_Poste_Citro%C3%ABn_Jumpy_II_front_view_A_%288062153055%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageCredit": "Peter Broster",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:La_Poste_Citro%C3%ABn_Jumpy_II_front_view_A_(8062153055).jpg"
   },
   {
    "id": "citroen_berlingo-iii",
@@ -2730,7 +2738,11 @@
    "id": "citroen_2cv-fourgonnette",
    "name": "2CV fourgonnette",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Citro%C3%ABn_2CV_Fourgonnette_Concept.jpg/1280px-Citro%C3%ABn_2CV_Fourgonnette_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "2cv2026",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_2CV_Fourgonnette_Concept.jpg"
   },
   {
    "id": "citroen_ami-6",
@@ -2857,7 +2869,11 @@
    "id": "citroen_ds-inside",
    "name": "DS Inside",
    "production_years": "2005",
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Citro%C3%ABn_DS4_THP_200_SportChic_%E2%80%93_Frontansicht%2C_17._M%C3%A4rz_2012%2C_D%C3%BCsseldorf.jpg/1280px-Citro%C3%ABn_DS4_THP_200_SportChic_%E2%80%93_Frontansicht%2C_17._M%C3%A4rz_2012%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "M 93",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_DS4_THP_200_SportChic_%E2%80%93_Frontansicht,_17._M%C3%A4rz_2012,_D%C3%BCsseldorf.jpg"
   },
   {
    "id": "citroen_kegresse",

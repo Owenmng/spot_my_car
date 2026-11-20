@@ -392,7 +392,7 @@
   {
    "id": "lexus_lf-z",
    "name": "LF-Z Electrified",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Lexus_LF-Z_at_Taipei%2C_front_2.jpg/1280px-Lexus_LF-Z_at_Taipei%2C_front_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 (Concept)",
    "puissance_ch": 544,
    "vitesse_max_kmh": 200,
@@ -417,7 +417,10 @@
     "future car",
     "automobile",
     "vehicle"
-   ]
+   ],
+   "imageCredit": "Ganbaruby",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lexus_LF-Z_at_Taipei,_front_2.jpg"
   },
   {
    "id": "lexus_lfa",

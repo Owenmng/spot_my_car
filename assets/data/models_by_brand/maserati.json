@@ -354,7 +354,7 @@
   {
    "id": "maserati_chubasco",
    "name": "Chubasco (Concept)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Collection_Panini_Maserati_0088.JPG/1280px-Collection_Panini_Maserati_0088.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990",
    "puissance_ch": 430,
    "vitesse_max_kmh": "non renseigné",
@@ -377,7 +377,10 @@
     "compact car",
     "hybrid",
     "electric car"
-   ]
+   ],
+   "imageCredit": "Arnaud 25",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Collection_Panini_Maserati_0088.JPG"
   },
   {
    "id": "maserati_ghibli",
@@ -959,7 +962,7 @@
   {
    "id": "maserati_mc20_ciel",
    "name": "MC20 Ciel",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Maserati_MC20_Auto_Zuerich_2021_IMG_0419.jpg/1280px-Maserati_MC20_Auto_Zuerich_2021_IMG_0419.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 630,
    "vitesse_max_kmh": 320,
@@ -984,7 +987,10 @@
     "mid-engine",
     "twin-turbo",
     "v6"
-   ]
+   ],
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Maserati_MC20_Auto_Zuerich_2021_IMG_0419.jpg"
   },
   {
    "id": "maserati_merak",

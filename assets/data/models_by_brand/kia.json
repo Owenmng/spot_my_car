@@ -1537,7 +1537,7 @@
   {
    "id": "kia_roadster",
    "name": "Roadster (Elan)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/20110528_kia_elan_1.jpg/1280px-20110528_kia_elan_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 1999",
    "puissance_ch": 151,
    "vitesse_max_kmh": 220,
@@ -1562,7 +1562,10 @@
     "classic car",
     "roadster car",
     "sports roadster"
-   ]
+   ],
+   "imageCredit": "Chu",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20110528_kia_elan_1.jpg"
   },
   {
    "id": "kia_rocsta",

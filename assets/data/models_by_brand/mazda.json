@@ -941,7 +941,7 @@
   {
    "id": "mazda_clef",
    "name": "Clef",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Autozam_Clef_%28Japan%29.jpg/1280px-Autozam_Clef_%28Japan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 1994",
    "puissance_ch": 200,
    "vitesse_max_kmh": 220,
@@ -963,7 +963,10 @@
     "kei car",
     "microcar",
     "small car"
-   ]
+   ],
+   "imageCredit": "NZ Car Freak",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Autozam_Clef_(Japan).jpg"
   },
   {
    "id": "mazda_cosmo",
@@ -1463,7 +1466,7 @@
   {
    "id": "mazda_eunos_100",
    "name": "Eunos 100",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/1992_Mazda_MX-3_ABS_1.8_Front.jpg/1280px-1992_Mazda_MX-3_ABS_1.8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 1994",
    "puissance_ch": 140,
    "vitesse_max_kmh": 200,
@@ -1487,12 +1490,15 @@
     "two-seater",
     "lightweight",
     "rear-wheel drive"
-   ]
+   ],
+   "imageCredit": "Vauxford",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1992_Mazda_MX-3_ABS_1.8_Front.jpg"
   },
   {
    "id": "mazda_eunos_300",
    "name": "Eunos 300",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/EUNOS_COSMO_3rotor.jpg/1280px-EUNOS_COSMO_3rotor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1993",
    "puissance_ch": 165,
    "vitesse_max_kmh": 210,
@@ -1516,12 +1522,15 @@
     "vehicle",
     "two-seater",
     "lightweight car"
-   ]
+   ],
+   "imageCredit": "名古屋太郎",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:EUNOS_COSMO_3rotor.jpg"
   },
   {
    "id": "mazda_eunos-500",
    "name": "Eunos 500 (Xedos 6)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/1998_Mazda_Eunos_500_%28CA%29_sedan_%282016-01-04%29_02.jpg/1280px-1998_Mazda_Eunos_500_%28CA%29_sedan_%282016-01-04%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 1999",
    "puissance_ch": 144,
    "vitesse_max_kmh": 214,
@@ -1545,7 +1554,10 @@
     "vehicle",
     "petrol car",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1998_Mazda_Eunos_500_(CA)_sedan_(2016-01-04)_02.jpg"
   },
   {
    "id": "mazda_eunos-800",
@@ -1616,7 +1628,7 @@
   {
    "id": "mazda_eunos_press",
    "name": "Eunos Presso",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Mazda_MX-3_front_20080212.jpg/1280px-Mazda_MX-3_front_20080212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1998",
    "puissance_ch": 135,
    "vitesse_max_kmh": 200,
@@ -1640,7 +1652,10 @@
     "vehicle",
     "small car",
     "compact car"
-   ]
+   ],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_MX-3_front_20080212.jpg"
   },
   {
    "id": "mazda_ez-6",
@@ -2117,7 +2132,7 @@
   {
    "id": "mazda_protege",
    "name": "Protegé",
-   "imageUrl": null,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Mazda_323_Proteg%C3%A9_LX_sedan_%282003%29%2C_Toronto%2C_Canada_-_20110929.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1990 - 2003",
    "puissance_ch": 130,
    "vitesse_max_kmh": 190,
@@ -2139,7 +2154,10 @@
     "japanese car",
     "family car",
     "mid-size car"
-   ]
+   ],
+   "imageCredit": "Katarighe.",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_323_Proteg%C3%A9_LX_sedan_(2003),_Toronto,_Canada_-_20110929.jpg"
   },
   {
    "id": "mazda_roadster",
@@ -3363,7 +3381,11 @@
    "id": "mazda_rx-9",
    "name": "RX-9",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Mazda_RX-8_01_China_2016-04-09.jpg/1280px-Mazda_RX-8_01_China_2016-04-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_RX-8_01_China_2016-04-09.jpg"
   },
   {
    "id": "mazda_110-s-cosmo-sport",

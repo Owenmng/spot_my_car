@@ -577,7 +577,7 @@
   {
    "id": "alfa-romeo_1750-2000",
    "name": "1750-2000",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Alfa_Romeo_1750_berlina_grey-front.JPG/1280px-Alfa_Romeo_1750_berlina_grey-front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1977",
    "puissance_ch": 132,
    "vitesse_max_kmh": 190,
@@ -602,7 +602,10 @@
     "coupe",
     "hatchback",
     "wagon"
-   ]
+   ],
+   "imageCredit": "Luc106",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_1750_berlina_grey-front.JPG"
   },
   {
    "id": "alfa-romeo_1900",
@@ -1141,7 +1144,11 @@
     "economical car",
     "fuel-efficient car",
     "small car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Arese_Museo_Storico_Alfa_Romeo_01.jpg/1280px-Arese_Museo_Storico_Alfa_Romeo_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Zairon",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_01.jpg"
   },
   {
    "id": "alfa-romeo_75",
@@ -1177,7 +1184,7 @@
   {
    "id": "alfa-romeo_75-1.8-turbodiesel",
    "name": "75 1.8 Turbodiesel",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Alfa_Romeo_Giulietta_1984.jpg/1280px-Alfa_Romeo_Giulietta_1984.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1992",
    "puissance_ch": 92,
    "vitesse_max_kmh": 175,
@@ -1203,7 +1210,10 @@
     "classic car",
     "vintage car",
     "european car"
-   ]
+   ],
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_1984.jpg"
   },
   {
    "id": "alfa-romeo_75-2.0-twin-spark",
@@ -2288,7 +2298,11 @@
     "v6 engine",
     "gasoline engine",
     "internal combustion engine"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Alfa_GT_32_avant.jpg/1280px-Alfa_GT_32_avant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Alex6cylV",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_GT_32_avant.jpg"
   },
   {
    "id": "alfa-romeo_gta-coupe",
@@ -2314,7 +2328,11 @@
     "two-door",
     "mid-size car",
     "luxury car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Alfa_GTA_noBG.jpg/1280px-Alfa_GTA_noBG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "https://de.wikipedia.org/wiki/Benutzer:Christof46 / Freisteller von Auge=mit",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_GTA_noBG.jpg"
   },
   {
    "id": "alfa-romeo_gtv",
@@ -2691,7 +2709,11 @@
     "compact car",
     "two-seater",
     "open-top"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Alfa_Romeo_Spider_2002.JPG/1280px-Alfa_Romeo_Spider_2002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Gold333 at English Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2002.JPG"
   },
   {
    "id": "alfa-romeo_spider-duetto",
@@ -3157,7 +3179,11 @@
    "name": "450",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "5955 x 2130 x 2580"
+   "dimensions_lwh_mm": "5955 x 2130 x 2580",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Alfa_Romeo_455_Autotransporter_LKW_01_-_AVD_Oldtimer_Grand_Prix_2014.jpg/1280px-Alfa_Romeo_455_Autotransporter_LKW_01_-_AVD_Oldtimer_Grand_Prix_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Bassaar",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_455_Autotransporter_LKW_01_-_AVD_Oldtimer_Grand_Prix_2014.jpg"
   },
   {
    "id": "alfa-romeo_158",
@@ -3254,7 +3280,11 @@
    "id": "alfa-romeo_gtv-and-spider",
    "name": "GTV and Spider",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/1998-2003_Alfa_Romeo_GTV_Twin_Spark_coupe_01.jpg/1280px-1998-2003_Alfa_Romeo_GTV_Twin_Spark_coupe_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1998-2003_Alfa_Romeo_GTV_Twin_Spark_coupe_01.jpg"
   },
   {
    "id": "alfa-romeo_dauphine",
@@ -3511,7 +3541,11 @@
    "id": "alfa-romeo_ssz-stradale",
    "name": "SSZ Stradale",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Paris_-_RM_auctions_-_20150204_-_Alfa_Romeo_Giulietta_Sprint_Speciale_-_1961_-_004.jpg/1280px-Paris_-_RM_auctions_-_20150204_-_Alfa_Romeo_Giulietta_Sprint_Speciale_-_1961_-_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_RM_auctions_-_20150204_-_Alfa_Romeo_Giulietta_Sprint_Speciale_-_1961_-_004.jpg"
   },
   {
    "id": "alfa-romeo_spider-mk2",

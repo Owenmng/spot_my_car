@@ -226,7 +226,7 @@
   {
    "id": "bentley_batur",
    "name": "Batur",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Bentley_Batur_%2802%29.jpg/1280px-Bentley_Batur_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - 2024",
    "puissance_ch": 740,
    "vitesse_max_kmh": 336,
@@ -251,7 +251,10 @@
     "limited edition",
     "v12",
     "internal combustion engine"
-   ]
+   ],
+   "imageCredit": "Y.Leclercq©",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Batur_(02).jpg"
   },
   {
    "id": "bentley_bentayga",

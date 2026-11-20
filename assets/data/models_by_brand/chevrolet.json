@@ -382,7 +382,7 @@
   {
    "id": "chevrolet_beretta_z26",
    "name": "Beretta Z26",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1996ChevroletBeretta-front_%28cropped%29.jpg/1280px-1996ChevroletBeretta-front_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 1996",
    "puissance_ch": 150,
    "vitesse_max_kmh": 210,
@@ -405,7 +405,10 @@
     "classic car",
     "vintage car",
     "collectible car"
-   ]
+   ],
+   "imageCredit": "Rich Niewiroski Jr.",
+   "imageLicense": "CC BY 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1996ChevroletBeretta-front_(cropped).jpg"
   },
   {
    "id": "chevrolet_blazer",
@@ -1611,7 +1614,11 @@
     "economy car",
     "hybrid",
     "gasoline car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Chevrolet_Cruze.JPG/1280px-Chevrolet_Cruze.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Thomas doerfer",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Cruze.JPG"
   },
   {
    "id": "chevrolet_cruze_hatch",
@@ -1868,7 +1875,7 @@
   {
    "id": "chevrolet_geo_storm",
    "name": "Geo Storm",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Geo_Storm_--_-07-09-2009.jpg/1280px-Geo_Storm_--_-07-09-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1990 - 1993",
    "puissance_ch": 95,
    "vitesse_max_kmh": 180,
@@ -1891,7 +1898,10 @@
     "isuzu",
     "japanese car",
     "front-wheel drive"
-   ]
+   ],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Geo_Storm_--_-07-09-2009.jpg"
   },
   {
    "id": "chevrolet_groove",
@@ -2281,7 +2291,7 @@
   {
    "id": "chevrolet_luv_d_max",
    "name": "LUV D-Max",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Chevrolet_Luv_D-Max_3.0L_TDi_2006_%2840249225374%29.jpg/1280px-Chevrolet_Luv_D-Max_3.0L_TDi_2006_%2840249225374%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - 2014",
    "puissance_ch": 146,
    "vitesse_max_kmh": 175,
@@ -2306,7 +2316,10 @@
     "off-road",
     "diesel",
     "gasoline"
-   ]
+   ],
+   "imageCredit": "RL GNZLZ from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Luv_D-Max_3.0L_TDi_2006_(40249225374).jpg"
   },
   {
    "id": "chevrolet_malibu",
@@ -2438,7 +2451,7 @@
   {
    "id": "chevrolet_metro",
    "name": "Metro",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Chevrolet_Metro_hatchback_front.jpg/1280px-Chevrolet_Metro_hatchback_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - 2001",
    "puissance_ch": 55,
    "vitesse_max_kmh": 145,
@@ -2460,7 +2473,10 @@
     "economy car",
     "urban car",
     "microcar"
-   ]
+   ],
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Metro_hatchback_front.jpg"
   },
   {
    "id": "chevrolet_montana",
@@ -2844,7 +2860,7 @@
   {
    "id": "chevrolet_rezzo",
    "name": "Rezzo",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chevrolet_Rezzo_rear_20071109.jpg/1280px-Chevrolet_Rezzo_rear_20071109.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2008",
    "puissance_ch": 121,
    "vitesse_max_kmh": 180,
@@ -2866,7 +2882,10 @@
     "small car",
     "fuel-efficient car",
     "affordable car"
-   ]
+   ],
+   "imageCredit": "Rudolf Stricker",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Rezzo_rear_20071109.jpg"
   },
   {
    "id": "chevrolet_s10_pickup",
@@ -2986,7 +3005,11 @@
     "subcompact suv",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/CHEVROLET_LOVA_RV_China.jpg/1280px-CHEVROLET_LOVA_RV_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:CHEVROLET_LOVA_RV_China.jpg"
   },
   {
    "id": "chevrolet_seeker",
@@ -3075,7 +3098,11 @@
     "motor vehicle",
     "truck",
     "work truck"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/%2713_Chevrolet_Silverado_HD_Crew_Cab_%28MIAS_%2713%29.jpg/1280px-%2713_Chevrolet_Silverado_HD_Crew_Cab_%28MIAS_%2713%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2713_Chevrolet_Silverado_HD_Crew_Cab_(MIAS_%2713).jpg"
   },
   {
    "id": "chevrolet_silverado_1500_ltz",
@@ -4116,7 +4143,11 @@
    "id": "chevrolet_monza-usa",
    "name": "Monza USA",
    "production_years": "1975 - 1980",
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Monza.jpg/1280px-Monza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Monza at English Wikipedia",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Monza.jpg"
   },
   {
    "id": "chevrolet_corvette-c7-r",
@@ -4593,7 +4624,11 @@
    "name": "Daewoo Tosca",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4805 x 1810 x 1450"
+   "dimensions_lwh_mm": "4805 x 1810 x 1450",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/20101023_daewoo_tosca_01.jpg/1280px-20101023_daewoo_tosca_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Chu",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20101023_daewoo_tosca_01.jpg"
   },
   {
    "id": "chevrolet_biscayne",

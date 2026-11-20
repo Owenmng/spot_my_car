@@ -1,8 +1,85 @@
 # Contrôle des photos
 
-{"remplacées": 3, "masquées": 1, "validées": 142, "rejetées_ia": 4} · appels IA: 150 · restant à valider: 4322
+{"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0, "retrouvées": 81} · appels IA: 300 · restant à valider: 6502 · sans photo: 321
 
-- Dodge Dart Swinger (refusée par l'IA) → File:1972 Dodge Dart Swinger (4809956253).jpg
-- Dodge Monaco (refusée par l'IA) → File:1973 Dodge Monaco 2-Door Hardtop, front left (2022 Ellwood City Fall Fest & Car Cruise).jpg
-- Dodge Matador (refusée par l'IA) → File:1960 Dodge Matador 4 door Hardtop (33190695531).jpg
-- Dodge New Value (refusée par l'IA) → masqué, aucune photo fiable
+- Aixam Mega Track (sans photo) → File:Mega Track (1) (cropped).jpg
+- Alfa Romeo 1750-2000 (sans photo) → File:Alfa Romeo 1750 berlina grey-front.JPG
+- Alfa Romeo 6 (sans photo) → File:Arese Museo Storico Alfa Romeo 01.jpg
+- Alfa Romeo 75 1.8 Turbodiesel (sans photo) → File:Alfa Romeo Giulietta 1984.jpg
+- Alfa Romeo GT 3.2 V6 (sans photo) → File:Alfa GT 32 avant.jpg
+- Alfa Romeo GTA Coupe (sans photo) → File:Alfa GTA noBG.jpg
+- Alfa Romeo Spider 2.0 TS (sans photo) → File:Alfa Romeo Spider 2002.JPG
+- Alfa Romeo 450 (sans photo) → File:Alfa Romeo 455 Autotransporter LKW 01 - AVD Oldtimer Grand Prix 2014.jpg
+- Alfa Romeo GTV and Spider (sans photo) → File:1998-2003 Alfa Romeo GTV Twin Spark coupe 01.jpg
+- Alfa Romeo SSZ Stradale (sans photo) → File:Paris - RM auctions - 20150204 - Alfa Romeo Giulietta Sprint Speciale - 1961 - 004.jpg
+- Alpine A211 (sans photo) → File:Alpine A220.jpg
+- AMG AMG E 63 (238) (sans photo) → File:Silver Mercedes-Benz E 63 AMG (S212) rl.jpg
+- Aston Martin Vanquish (Gen 1) (sans photo) → File:SC06 Aston Martin Vanquish green.jpg
+- Aston Martin Valen (sans photo) → File:Aston Martin Valen Auto Zuerich 2026 IMG 9259.jpg
+- Audi Fox (sans photo) → File:1976 Audi Fox four-door sedan, front left side.jpg
+- Audi S and RS models (sans photo) → File:1995 Audi RS2 Avant LC25.jpg
+- Audi R18 E-Tron quattro RP5 (sans photo) → File:Audi R18 - Mondial de l'Automobile de Paris 2016 - 002.jpg
+- Bentley Batur (sans photo) → File:Bentley Batur (02).jpg
+- BMW 125 (sans photo) → File:BMW 118i Urban Line (F20) – Frontansicht, 10. März 2012, Düsseldorf.jpg
+- BMW 2000 TI Lux (sans photo) → File:BMW1500FrontSeit.JPG
+- BMW 3 Series GT (sans photo) → File:2013-03-05 Geneva Motor Show 8182.JPG
+- BMW 5 Series GT (sans photo) → File:BMW Série 5 GT.jpg
+- BMW Alpina D10 (sans photo) → File:2000-2003 BMW 525i (E39) Executive sedan (2010-10-02) 01.jpg
+- BMW Alpina RLE Roadster (sans photo) → File:BMW Z1 1.jpg
+- BMW M135i (sans photo) → File:BMW M135i xDrive (F40) at BMW Welt - front right view (cropped).jpg
+- BMW M140i (sans photo) → File:BMW 1-Series (F20) M140i xDrive (2018) (52914702479).jpg
+- BMW M760i (sans photo) → File:2017 BMW 750i (G12) front 3.23.18.jpg
+- BMW Z Models (sans photo) → File:BMW Z3 1.9L 1998.jpg
+- BMW 331 (sans photo) → File:BMW 501 V8 Cabriolet vr.jpg
+- Bugatti EB 218 (sans photo) → File:Bugatti Veyron - panoramio (2) (cropped).jpg
+- Bugatti Type 47 (sans photo) → File:Bugatti Type 45 02.jpg
+- Chevrolet Beretta Z26 (sans photo) → File:1996ChevroletBeretta-front (cropped).jpg
+- Chevrolet Cruze Eco (sans photo) → File:Chevrolet Cruze.JPG
+- Chevrolet Geo Storm (sans photo) → File:Geo Storm -- -07-09-2009.jpg
+- Chevrolet LUV D-Max (sans photo) → File:Chevrolet Luv D-Max 3.0L TDi 2006 (40249225374).jpg
+- Chevrolet Metro (sans photo) → File:Chevrolet Metro hatchback front.jpg
+- Chevrolet Rezzo (sans photo) → File:Chevrolet Rezzo rear 20071109.jpg
+- Chevrolet Sail S-RV (sans photo) → File:CHEVROLET LOVA RV China.jpg
+- Chevrolet Silverado 1500 LD (sans photo) → File:'13 Chevrolet Silverado HD Crew Cab (MIAS '13).jpg
+- Chevrolet Monza USA (sans photo) → File:Monza.jpg
+- Chevrolet Daewoo Tosca (sans photo) → File:20101023 daewoo tosca 01.jpg
+- Citroën Jumpy I (sans photo) → File:Citroën Jumpy en Valencia.jpg
+- Citroën Jumpy II (sans photo) → File:La Poste Citroën Jumpy II front view A (8062153055).jpg
+- Citroën 2CV fourgonnette (sans photo) → File:Citroën 2CV Fourgonnette Concept.jpg
+- Citroën DS Inside (sans photo) → File:Citroën DS4 THP 200 SportChic – Frontansicht, 17. März 2012, Düsseldorf.jpg
+- Dodge D50 (sans photo) → File:Dodge D50 Truck (2734329152).jpg
+- Dodge New Value (sans photo) → File:Dodge New Value Series DU Six Touring Sedan 1935.jpg
+- Dodge Charger 1981 (sans photo) → File:1987 Dodge Charger, front left, 08-27-2023.jpg
+- Dodge M1918 light repair truck (sans photo) → File:Dodge WC-51 during the VII Aircraft Picnic in Kraków.jpg
+- DS N°7 (sans photo) → File:DS No 7 Auto Zuerich 2026 IMG 8715.jpg
+- Ferrari FF America (sans photo) → File:Ferrari F12 Berlinetta - Mondial de l'Automobile de Paris 2012 - 001.jpg
+- Ferrari 553 (sans photo) → File:Ferrari 625 F1 1954 front noBG.jpg
+- Fiat Autobianchi Y10 (sans photo) → File:Autobianchi Y10 Roma.jpg
+- Fiat Palio II (sans photo) → File:Fiat Palio white 5door.jpg
+- Fiat Auto Avio Costruzioni 815 (sans photo) → File:Car Musée Enzo Ferrari 0063 (cropped).JPG
+- Ford B platform (sans photo) → File:Ford B-MAX - Mondial de l'Automobile de Paris 2014 - 001.jpg
+- Ford Model 91 (sans photo) → File:1929 Ford Model A roadster AE-74-91.jpg
+- Ford Mercury Montego 3rd generation (sans photo) → File:1964 Mercury Comet Caliente Coupe (9321170381).jpg
+- Honda e:NS1 (sans photo) → File:2023 Dongfeng-Honda eNS1, front 8.18.23.jpg
+- Honda MDX (sans photo) → File:Honda MDX 001.JPG
+- Hyundai Centennial (Equus) (sans photo) → File:2011 Hyundai Equus -- 02-24-2011.jpg
+- Jeep Meridian (sans photo) → File:2023 Jeep Commander Overland T270 (Colombia) front view.jpg
+- Kia Roadster (Elan) (sans photo) → File:20110528 kia elan 1.jpg
+- Koenigsegg Trevita (sans photo) → File:Koenigsegg CCX - Flickr - Alexandre Prévot (11).jpg
+- Lamborghini 350 GT Zagato (sans photo) → File:1965 Lamborghini 350 GT HCC24.jpg
+- Lamborghini LM001 (Prototype) (sans photo) → File:Lamborghini LM002 Gen1 Type129 1986-1993 1988 frontleft 2013-03-17 U (cropped).JPG
+- Lamborghini 400GT Monza (sans photo) → File:1966 Lamborghini 400 GT Red.jpg
+- Lancia Stratos HF Gr.4 (sans photo) → File:Paris - Bonhams 2016 - Lancia Stratos HF Stradale coupé - 1975 - 001 (cropped).jpg
+- Lancia Trevi Volumex (sans photo) → File:DVG478Y 1982 Lancia Trevi.jpg
+- Land Rover Range Rover Evoque SVR (sans photo) → File:Range Rover Velar.jpg
+- Land Rover Range Rover Velar SVR (sans photo) → File:Range Rover Velar P250 SE IMG 8835.jpg
+- Lexus LF-Z Electrified (sans photo) → File:Lexus LF-Z at Taipei, front 2.jpg
+- Maserati Chubasco (Concept) (sans photo) → File:Collection Panini Maserati 0088.JPG
+- Maserati MC20 Ciel (sans photo) → File:Maserati MC20 Auto Zuerich 2021 IMG 0419.jpg
+- Mazda Clef (sans photo) → File:Autozam Clef (Japan).jpg
+- Mazda Eunos 100 (sans photo) → File:1992 Mazda MX-3 ABS 1.8 Front.jpg
+- Mazda Eunos 300 (sans photo) → File:EUNOS COSMO 3rotor.jpg
+- Mazda Eunos 500 (Xedos 6) (sans photo) → File:1998 Mazda Eunos 500 (CA) sedan (2016-01-04) 02.jpg
+- Mazda Eunos Presso (sans photo) → File:Mazda MX-3 front 20080212.jpg
+- Mazda Protegé (sans photo) → File:Mazda 323 Protegé LX sedan (2003), Toronto, Canada - 20110929.jpg
+- Mazda RX-9 (sans photo) → File:Mazda RX-8 01 China 2016-04-09.jpg

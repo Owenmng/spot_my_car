@@ -904,7 +904,7 @@
   {
    "id": "lancia_stratos_hf_gr4",
    "name": "Stratos HF Gr.4",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Paris_-_Bonhams_2016_-_Lancia_Stratos_HF_Stradale_coup%C3%A9_-_1975_-_001_%28cropped%29.jpg/1280px-Paris_-_Bonhams_2016_-_Lancia_Stratos_HF_Stradale_coup%C3%A9_-_1975_-_001_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1974 - 1978",
    "puissance_ch": 280,
    "vitesse_max_kmh": 240,
@@ -930,7 +930,10 @@
     "rally legend",
     "lancia",
     "car"
-   ]
+   ],
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2016_-_Lancia_Stratos_HF_Stradale_coup%C3%A9_-_1975_-_001_(cropped).jpg"
   },
   {
    "id": "lancia_thema",
@@ -1048,7 +1051,11 @@
     "city car",
     "hatchback",
     "subcompact car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/DVG478Y_1982_Lancia_Trevi.jpg/1280px-DVG478Y_1982_Lancia_Trevi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "kitmasterbloke",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DVG478Y_1982_Lancia_Trevi.jpg"
   },
   {
    "id": "lancia_voyager",

@@ -644,7 +644,7 @@
   {
    "id": "jeep_meridian",
    "name": "Meridian",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/2023_Jeep_Commander_Overland_T270_%28Colombia%29_front_view.jpg/1280px-2023_Jeep_Commander_Overland_T270_%28Colombia%29_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 170,
    "vitesse_max_kmh": 198,
@@ -668,7 +668,10 @@
     "electric suv",
     "performance suv",
     "technology"
-   ]
+   ],
+   "imageCredit": "Autosdeprimera",
+   "imageLicense": "CC BY 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Jeep_Commander_Overland_T270_(Colombia)_front_view.jpg"
   },
   {
    "id": "jeep_patriot",
