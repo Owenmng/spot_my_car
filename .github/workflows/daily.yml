@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: '47 22 * * *'
   workflow_dispatch:
+    inputs:
+      vision_max:
+        description: "Nombre max de vérifications IA pour ce lancement"
+        default: '1800'
 
 permissions:
   contents: write
@@ -36,9 +40,9 @@ jobs:
       - name: Photos du catalogue
         continue-on-error: true
         env:
-          BUDGET_MIN: '240'
-          VISION_MAX: '1000'
-          MISSING_MAX: '80'
+          BUDGET_MIN: '190'
+          VISION_MAX: ${{ inputs.vision_max || '1800' }}
+          MISSING_MAX: '150'
         run: python3 -u tool/fix_images.py
       - name: Commit et nouvelle version
         if: always()
