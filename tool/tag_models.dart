@@ -10,7 +10,7 @@ import 'package:path/path.dart' as path;
 // =======================================================================
 
 // IMPORTANT : Remplace "..." par ta propre clé API de Google AI Studio.
-const String googleApiKey = "AIzaSyA-k28qG_uwxnYaK7bhFLVlugOT8KQgcEo";
+const String googleApiKey = "YOUR_GOOGLE_API_KEY"; // ancienne clé supprimée (20/11/2026)
 
 // On définit le chemin ABSOLU vers le dossier des modèles.
 const String modelsDirectoryPath = r'C:\Users\owenm\Documents\spot_my_car\assets\data\models_by_brand';
