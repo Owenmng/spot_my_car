@@ -20,6 +20,9 @@ except ImportError:
 BUDGET_S = float(os.environ.get("BUDGET_MIN", "300")) * 60
 START = time.time()
 CHECKED_PATH = "tool/reports/vision_checked.json"
+RETRY_PATH = "tool/reports/photo_retry.json"  # modèles sans photo : date du dernier essai
+MISSING_MAX = int(os.environ.get("MISSING_MAX", "80"))  # modèles sans photo retentés par exécution
+RETRY_DAYS = 7
 
 opts = open("lib/firebase_options.dart").read()
 android = opts[opts.index("android"):]
@@ -53,6 +56,29 @@ def base_title(url):
     name = urllib.parse.unquote(url.split("?")[0].rsplit("/", 1)[-1])
     name = re.sub(r"^\d+px-", "", name)
     return "File:" + name.replace("_", " ")
+
+
+def wiki_lead_images(q):
+    """Image principale des articles Wikipédia (en, fr, de, it) qui parlent de ce modèle."""
+    out = []
+    for lang in ("en", "fr", "de", "it"):
+        try:
+            d = http_json(f"https://{lang}.wikipedia.org/w/api.php", {
+                "action": "query", "format": "json", "generator": "search", "gsrsearch": q, "gsrlimit": 3,
+                "prop": "pageimages", "piprop": "name"})
+        except Exception:
+            continue
+        if not d:
+            continue
+        pages = sorted((d.get("query") or {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+        for pg in pages:
+            name = pg.get("pageimage")
+            if name and not name.lower().endswith((".svg", ".gif")):
+                t = "File:" + name.replace("_", " ")
+                if t not in out:
+                    out.append(t)
+        time.sleep(0.2)
+    return out
 
 
 def commons_search(q, limit=12):
@@ -211,13 +237,20 @@ def main():
     stats = {"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0}
     report = []
 
-    def find_replacement(bname, m):
+    def find_replacement(bname, m, wide=False):
         base = re.sub(r"\(.*?\)", "", m["name"]).strip()
         gen = re.findall(r"\((.*?)\)", m["name"])
         want = [w for w in norm(base).split() if w]
         brand_tok = norm(bname).split()[0]
         queries = [f"{bname} {base} {gen[0]}" if gen else None, f"{bname} {base}", f"{bname} {base} front", f"{bname} {base} side"]
         cands = []
+        if wide:
+            # Modèle sans photo : on regarde aussi l'image principale des articles Wikipédia
+            # (souvent la seule bonne photo d'un modèle rare). L'IA vérifie ensuite que c'est le bon.
+            for t in wiki_lead_images(f"{bname} {base}"):
+                if t not in in_use and t not in cands:
+                    cands.append(t)
+            queries += [f"{bname} {base} car", f"{base} {bname}"]
         for q in [q for q in queries if q]:
             for t in commons_search(q):
                 tn = norm(t)
@@ -263,6 +296,31 @@ def main():
             in_use.discard(old)
 
     done = set()
+
+    # 0. Modèles sans photo : nouvelle recherche, plus large, tous les 7 jours au plus.
+    try:
+        retry = json.load(open(RETRY_PATH))
+    except Exception:
+        retry = {}
+    today = time.strftime("%Y-%m-%d")
+    def due(m):
+        last = retry.get(m.get("id") or m["name"])
+        return not last or (time.mktime(time.strptime(today, "%Y-%m-%d")) - time.mktime(time.strptime(last, "%Y-%m-%d"))) >= RETRY_DAYS * 86400
+    missing = [(f, bname, m) for f, bname, m in entries if not m.get("imageUrl") and due(m)]
+    log(f"sans photo à retenter: {len(missing)}")
+    found = 0
+    for f, bname, m in missing[:MISSING_MAX]:
+        if out_of_time():
+            break
+        retry[m.get("id") or m["name"]] = today
+        info = find_replacement(bname, m, wide=True)
+        if info:
+            found += 1
+            apply(f, bname, m, info, "sans photo")
+            stats["remplacées"] -= 1
+            stats["retrouvées"] = stats.get("retrouvées", 0) + 1
+        done.add(id(m))
+
     for f, bname, m, reason in to_fix:
         if out_of_time():
             break
@@ -300,11 +358,13 @@ def main():
         json.dump(doc, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     os.makedirs("tool/reports", exist_ok=True)
     json.dump(checked, open(CHECKED_PATH, "w"), ensure_ascii=False)
+    json.dump(retry, open(RETRY_PATH, "w"), ensure_ascii=False, indent=0)
     remaining = sum(1 for _, _, m in entries if m.get("imageUrl") and base_title(m["imageUrl"]) not in checked)
+    no_photo = sum(1 for _, _, m in entries if not m.get("imageUrl"))
     with open("tool/reports/image_quality.md", "w", encoding="utf-8") as fh:
-        fh.write(f"# Contrôle des photos\n\n{json.dumps(stats, ensure_ascii=False)} · appels IA: {_vision_calls} · restant à valider: {remaining}\n\n")
+        fh.write(f"# Contrôle des photos\n\n{json.dumps(stats, ensure_ascii=False)} · appels IA: {_vision_calls} · restant à valider: {remaining} · sans photo: {no_photo}\n\n")
         fh.write("\n".join(report[-1500:]))
-    log(f"FIN {stats} appels_ia={_vision_calls} restant={remaining}")
+    log(f"FIN {stats} appels_ia={_vision_calls} restant={remaining} sans_photo={no_photo}")
 
 
 if __name__ == "__main__":
