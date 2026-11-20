@@ -1,11 +1,12 @@
 name: Daily AI jobs
 
-# Chaque matin (quota Gemini gratuit remis à zéro vers 9 h, heure de Paris) :
-# traductions manquantes, puis vérification des photos du catalogue par petits lots.
+# Chaque nuit vers minuit (heure de Paris) : traductions manquantes, puis vérification des photos du catalogue.
+# Le quota Gemini gratuit est remis à zéro vers 9 h : la nuit, on utilise ce que les joueurs n'ont pas consommé
+# dans la journée, sans les gêner.
 # Chaque script s'arrête dès que le quota est atteint et reprend le lendemain là où il s'était arrêté.
 on:
   schedule:
-    - cron: '20 8 * * *'
+    - cron: '47 22 * * *'
   workflow_dispatch:
 
 permissions:
@@ -35,8 +36,9 @@ jobs:
       - name: Photos du catalogue
         continue-on-error: true
         env:
-          BUDGET_MIN: '180'
-          VISION_MAX: '150'
+          BUDGET_MIN: '240'
+          VISION_MAX: '1000'
+          MISSING_MAX: '80'
         run: python3 -u tool/fix_images.py
       - name: Commit et nouvelle version
         if: always()
