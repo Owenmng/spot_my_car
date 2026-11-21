@@ -149,7 +149,7 @@ SCHEMA = {"type": "OBJECT", "properties": {
 CHECK_V = "v3"
 # Chaque modèle Gemini a son propre quota gratuit par jour : quand l'un est épuisé, on passe au suivant.
 # Ceux qu'utilise l'appli (3.8-flash, 3.5-flash-lite) passent en dernier pour ne pas gêner les joueurs.
-_models = [m.strip() for m in os.environ.get("VISION_MODELS", "gemini-3.5-flash,gemini-3.8-flash-lite,gemini-3.5-pro,gemini-3.8-flash,gemini-3.5-flash-lite").split(",") if m.strip()]
+_models = [m.strip() for m in (os.environ.get("VISION_MODELS") or "gemini-3.5-flash,gemini-3.8-flash-lite,gemini-3.5-pro,gemini-3.8-flash,gemini-3.5-flash-lite").split(",") if m.strip()]
 MODEL_THINKING = {"gemini-3.8-flash": {"thinkingBudget": 0}, "gemini-3.5-flash-lite": {"thinkingLevel": "MINIMAL"}}
 GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 
