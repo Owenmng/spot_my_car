@@ -2297,7 +2297,7 @@
   {
    "id": "toyota_echo-hatchback",
    "name": "Echo Hatchback",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2003_Toyota_Echo_%28NCP13R_MY03%29_Sportivo_3-door_hatchback_%282009-10-23%29.jpg/1280px-2003_Toyota_Echo_%28NCP13R_MY03%29_Sportivo_3-door_hatchback_%282009-10-23%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2005",
    "puissance_ch": 108,
    "vitesse_max_kmh": 175,
@@ -2319,7 +2319,10 @@
     "economy car",
     "motor vehicle",
     "land vehicle"
-   ]
+   ],
+   "imageCredit": "OSX",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Toyota_Echo_(NCP13R_MY03)_Sportivo_3-door_hatchback_(2009-10-23).jpg"
   },
   {
    "id": "toyota_echo-sedan",
