@@ -316,7 +316,9 @@ def main():
                 break
         if not cands:
             return None
-        cands.sort(key=lambda t: -score_title(t, m["name"], bname))
+        # Les photos prises de l'arrière ou de l'intérieur passent en dernier : on veut l'avant ou le profil.
+        back = re.compile(r"\b(rear|back|heck|arriere|arrière|trasera|posteriore|interior|innen|cockpit|engine|motor|dashboard)\b", re.I)
+        cands.sort(key=lambda t: (1 if back.search(t) else 0, -score_title(t, m["name"], bname)))
         infos = commons_info(cands[:10])
         ccats = categories(cands[:10])
         for t in cands[:10]:
