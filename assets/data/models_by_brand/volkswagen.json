@@ -1279,7 +1279,7 @@
   {
    "id": "volkswagen_kaefer",
    "name": "Käfer (Coccinelle)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Volkswagen_K%C3%A4fer_front.jpg/1280px-Volkswagen_K%C3%A4fer_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1938 - 2003",
    "puissance_ch": 34,
    "vitesse_max_kmh": 115,
@@ -1303,10 +1303,7 @@
     "motor vehicle",
     "german car",
     "iconic car"
-   ],
-   "imageCredit": "Rutger van der Maar",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_K%C3%A4fer_front.jpg"
+   ]
   },
   {
    "id": "volkswagen_lamando",
@@ -2063,7 +2060,7 @@
   {
    "id": "volkswagen_tacqua",
    "name": "Tacqua",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2020_FAW-Volkswagen_Tacqua_%28front%29.jpg/1280px-2020_FAW-Volkswagen_Tacqua_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 150,
    "vitesse_max_kmh": 200,
@@ -2087,10 +2084,7 @@
     "electric car",
     "phev",
     "eco-friendly car"
-   ],
-   "imageCredit": "User3204",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_FAW-Volkswagen_Tacqua_(front).jpg"
+   ]
   },
   {
    "id": "volkswagen_taigo",
@@ -2599,7 +2593,7 @@
   {
    "id": "volkswagen_vento-sportline",
    "name": "Vento Sportline",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Expo_Warnes_2026._Volkswagen_Vento_2.0T_Sportline_2010.jpg/1280px-Expo_Warnes_2026._Volkswagen_Vento_2.0T_Sportline_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1995 - 1998",
    "puissance_ch": 130,
    "vitesse_max_kmh": 205,
@@ -2622,10 +2616,7 @@
     "turbocharged",
     "gasoline car",
     "internal combustion engine"
-   ],
-   "imageCredit": "Just a Man",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Expo_Warnes_2026._Volkswagen_Vento_2.0T_Sportline_2010.jpg"
+   ]
   },
   {
    "id": "volkswagen_viloran",

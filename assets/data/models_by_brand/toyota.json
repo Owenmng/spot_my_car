@@ -2297,7 +2297,7 @@
   {
    "id": "toyota_echo-hatchback",
    "name": "Echo Hatchback",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2003_Toyota_Echo_%28NCP13R_MY03%29_Sportivo_3-door_hatchback_%282009-10-23%29.jpg/1280px-2003_Toyota_Echo_%28NCP13R_MY03%29_Sportivo_3-door_hatchback_%282009-10-23%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1999 - 2005",
    "puissance_ch": 108,
    "vitesse_max_kmh": 175,
@@ -2319,15 +2319,12 @@
     "economy car",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Toyota_Echo_(NCP13R_MY03)_Sportivo_3-door_hatchback_(2009-10-23).jpg"
+   ]
   },
   {
    "id": "toyota_echo-sedan",
    "name": "Echo Sedan",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Toyota_Echo_Sedan_2000-02.JPG/1280px-Toyota_Echo_Sedan_2000-02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1999 - 2005",
    "puissance_ch": 108,
    "vitesse_max_kmh": 175,
@@ -2348,15 +2345,12 @@
     "city car",
     "economy car",
     "subcompact car"
-   ],
-   "imageCredit": "Bull-Doser",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Echo_Sedan_2000-02.JPG"
+   ]
   },
   {
    "id": "toyota_estima",
    "name": "Estima (Previa)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/2016_Toyota_Estima.jpg/1280px-2016_Toyota_Estima.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1990 - 2019",
    "puissance_ch": 280,
    "vitesse_max_kmh": 180,
@@ -2379,15 +2373,12 @@
     "japanese car",
     "7 seater",
     "people carrier"
-   ],
-   "imageCredit": "User3204",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Toyota_Estima.jpg"
+   ]
   },
   {
    "id": "toyota_estima-emina",
    "name": "Estima Emina",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Toyota_Estima_Emina_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "1992 - 1999",
    "puissance_ch": 180,
    "vitesse_max_kmh": 180,
@@ -2411,15 +2402,12 @@
     "passenger van",
     "7 seater",
     "8 seater"
-   ],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Estima_Emina_001.JPG"
+   ]
   },
   {
    "id": "toyota_estima-hybrid",
    "name": "Estima Hybrid",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/2006-2008_Toyota_Estima_Hybrid_rear.jpg/1280px-2006-2008_Toyota_Estima_Hybrid_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2001 - 2019",
    "puissance_ch": 190,
    "vitesse_max_kmh": 180,
@@ -2444,15 +2432,12 @@
     "hybrid",
     "automotive",
     "japan"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2006-2008_Toyota_Estima_Hybrid_rear.jpg"
+   ]
   },
   {
    "id": "toyota_etios",
    "name": "Etios",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/2013_Toyota_Etios_Valco_E_%28Indonesia%29_front_view.jpg/1280px-2013_Toyota_Etios_Valco_E_%28Indonesia%29_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2010 - 2023",
    "puissance_ch": 90,
    "vitesse_max_kmh": 165,
@@ -2476,15 +2461,12 @@
     "reliable car",
     "fuel-efficient car",
     "affordable car"
-   ],
-   "imageCredit": "Andra Febrian",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Toyota_Etios_Valco_E_(Indonesia)_front_view.jpg"
+   ]
   },
   {
    "id": "toyota_exiv",
    "name": "EXiV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/1996_Toyota_Corona_EXiV_200GT_silver_front.jpg/1280px-1996_Toyota_Corona_EXiV_200GT_silver_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1989 - 1998",
    "puissance_ch": 160,
    "vitesse_max_kmh": 200,
@@ -2507,15 +2489,12 @@
     "hybrid",
     "electric car",
     "phev"
-   ],
-   "imageCredit": "Throwawayacc222",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Toyota_Corona_EXiV_200GT_silver_front.jpg"
+   ]
   },
   {
    "id": "toyota_fine-comfort-ride",
    "name": "Fine-Comfort Ride (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Toyota_Fine-Comfort_Ride_concept_2017_Tokyo_Motor_Show.jpg/1280px-Toyota_Fine-Comfort_Ride_concept_2017_Tokyo_Motor_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2017",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -2539,15 +2518,12 @@
     "fine-comfort ride",
     "concept vehicle",
     "passenger vehicle"
-   ],
-   "imageCredit": "Cxpr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Fine-Comfort_Ride_concept_2017_Tokyo_Motor_Show.jpg"
+   ]
   },
   {
    "id": "toyota_fj-cruiser",
    "name": "FJ Cruiser",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/2011_Toyota_FJ_Cruiser_%28GSJ15R%29_wagon_%282011-11-08%29_01.jpg/1280px-2011_Toyota_FJ_Cruiser_%28GSJ15R%29_wagon_%282011-11-08%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2006 - 2022",
    "puissance_ch": 272,
    "vitesse_max_kmh": 180,
@@ -2571,15 +2547,12 @@
     "car",
     "vehicle",
     "gasoline"
-   ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Toyota_FJ_Cruiser_(GSJ15R)_wagon_(2011-11-08)_01.jpg"
+   ]
   },
   {
    "id": "toyota_fortuner",
    "name": "Fortuner",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2015_Toyota_Fortuner_%28New_Zealand%29.jpg/1280px-2015_Toyota_Fortuner_%28New_Zealand%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2004 - Aujourd'hui",
    "puissance_ch": 204,
    "vitesse_max_kmh": 175,
@@ -2602,15 +2575,12 @@
     "mid-size crossover",
     "utility vehicle",
     "japanese suv"
-   ],
-   "imageCredit": "NZ Car Freak",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Toyota_Fortuner_(New_Zealand).jpg"
+   ]
   },
   {
    "id": "toyota_frontlander",
    "name": "Frontlander",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/TOYOTA_FRONTLANDER_%28TOYOTA_COROLLA_CROSS%29_China_%2812%29.jpg/1280px-TOYOTA_FRONTLANDER_%28TOYOTA_COROLLA_CROSS%29_China_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 171,
    "vitesse_max_kmh": 180,
@@ -2633,15 +2603,12 @@
     "four-wheel drive",
     "off-road",
     "adventure vehicle"
-   ],
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TOYOTA_FRONTLANDER_(TOYOTA_COROLLA_CROSS)_China_(12).jpg"
+   ]
   },
   {
    "id": "toyota_funcargo",
    "name": "Funcargo (Yaris Verso)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Black_Toyota_FunCargo_XP20.jpg/1280px-Black_Toyota_FunCargo_XP20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1999 - 2005",
    "puissance_ch": 86,
    "vitesse_max_kmh": 165,
@@ -2664,15 +2631,12 @@
     "minivan",
     "small mpv",
     "family car"
-   ],
-   "imageCredit": "Ethan Llamas",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Black_Toyota_FunCargo_XP20.jpg"
+   ]
   },
   {
    "id": "toyota_gaia",
    "name": "Gaia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Toyota_Gaia_1998_%28cropped%29.jpg/1280px-Toyota_Gaia_1998_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1998 - 2004",
    "puissance_ch": 135,
    "vitesse_max_kmh": 180,
@@ -2697,10 +2661,7 @@
     "battery electric vehicle",
     "electric vehicle",
     "crossover"
-   ],
-   "imageCredit": "Kuha455405",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Gaia_1998_(cropped).jpg"
+   ]
   },
   {
    "id": "toyota_gaia-estima",
@@ -2768,7 +2729,7 @@
   {
    "id": "toyota_86",
    "name": "GR86",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/2022_Toyota_GR86_Premium_in_Halo%2C_Front_Right%2C_04-10-2022.jpg/1280px-2022_Toyota_GR86_Premium_in_Halo%2C_Front_Right%2C_04-10-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2012 - Aujourd'hui",
    "puissance_ch": 234,
    "vitesse_max_kmh": 226,
@@ -2792,15 +2753,12 @@
     "two-seater",
     "manual transmission",
     "naturally aspirated"
-   ],
-   "imageCredit": "Elise240SX",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Toyota_GR86_Premium_in_Halo,_Front_Right,_04-10-2022.jpg"
+   ]
   },
   {
    "id": "toyota_grand-hiace",
    "name": "Grand Hiace",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Toyota_Grand_Hiace_CH10_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "1999 - 2002",
    "puissance_ch": 180,
    "vitesse_max_kmh": 180,
@@ -2824,15 +2782,12 @@
     "people carrier",
     "spacious van",
     "versatile van"
-   ],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Grand_Hiace_CH10_001.JPG"
+   ]
   },
   {
    "id": "toyota_grand-highlander",
    "name": "Grand Highlander",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2026_Toyota_Grand_Highlander_Hybrid_XLE_in_Wind_Chill_Pearl%2C_front_left%2C_07-10-2026.jpg/1280px-2026_Toyota_Grand_Highlander_Hybrid_XLE_in_Wind_Chill_Pearl%2C_front_left%2C_07-10-2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 367,
    "vitesse_max_kmh": 180,
@@ -2856,15 +2811,12 @@
     "minivan alternative",
     "family car",
     "gas hybrid"
-   ],
-   "imageCredit": "Cutlass",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Toyota_Grand_Highlander_Hybrid_XLE_in_Wind_Chill_Pearl,_front_left,_07-10-2026.jpg"
+   ]
   },
   {
    "id": "toyota_granvia",
    "name": "Granvia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/1997_Toyota_Granvia_01.jpg/1280px-1997_Toyota_Granvia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1995 - 2002",
    "puissance_ch": 180,
    "vitesse_max_kmh": 180,
@@ -2888,15 +2840,12 @@
     "motor vehicle",
     "family vehicle",
     "seven seater"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Toyota_Granvia_01.jpg"
+   ]
   },
   {
    "id": "toyota_harrier",
    "name": "Harrier (Lexus RX)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/1999_Lexus_RX300_as_Toyota_Harrier.jpg/1280px-1999_Lexus_RX300_as_Toyota_Harrier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1997 - Aujourd'hui",
    "puissance_ch": 231,
    "vitesse_max_kmh": 180,
@@ -2920,10 +2869,7 @@
     "japanese car",
     "premium suv",
     "luxury crossover"
-   ],
-   "imageCredit": "DestinationFearFan",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Lexus_RX300_as_Toyota_Harrier.jpg"
+   ]
   },
   {
    "id": "toyota_hi-medic",
@@ -2957,7 +2903,7 @@
   {
    "id": "toyota_hiace",
    "name": "HiAce",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/2020_Toyota_HiAce_%28front%29.jpg/1280px-2020_Toyota_HiAce_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1967 - Aujourd'hui",
    "puissance_ch": 177,
    "vitesse_max_kmh": 160,
@@ -2981,15 +2927,12 @@
     "transportation",
     "commercial vehicle",
     "toyota"
-   ],
-   "imageCredit": "User3204",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Toyota_HiAce_(front).jpg"
+   ]
   },
   {
    "id": "toyota_hilux",
    "name": "Hilux",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2016_Toyota_HiLux_Invincible_D-4D_4WD_2.4_Front.jpg/1280px-2016_Toyota_HiLux_Invincible_D-4D_4WD_2.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1968 - Aujourd'hui",
    "puissance_ch": 204,
    "vitesse_max_kmh": 175,
@@ -3013,15 +2956,12 @@
     "toyota",
     "pickup",
     "automotive"
-   ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Toyota_HiLux_Invincible_D-4D_4WD_2.4_Front.jpg"
+   ]
   },
   {
    "id": "toyota_innova",
    "name": "Innova",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Toyota_Innova_Zenix_2.0_V_%28III%29_%E2%80%93_f_22032025.jpg/1280px-Toyota_Innova_Zenix_2.0_V_%28III%29_%E2%80%93_f_22032025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2004 - Aujourd'hui",
    "puissance_ch": 139,
    "vitesse_max_kmh": 175,
@@ -3045,15 +2985,12 @@
     "reliable car",
     "fuel-efficient car",
     "family van"
-   ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Innova_Zenix_2.0_V_(III)_%E2%80%93_f_22032025.jpg"
+   ]
   },
   {
    "id": "toyota_iq",
    "name": "iQ",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Toyota_iQ_01.JPG/1280px-Toyota_iQ_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2008 - 2015",
    "puissance_ch": 68,
    "vitesse_max_kmh": 150,
@@ -3078,15 +3015,12 @@
     "economical car",
     "car",
     "vehicle"
-   ],
-   "imageCredit": "Hatsukari715",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_iQ_01.JPG"
+   ]
   },
   {
    "id": "toyota_isis",
    "name": "Isis",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2004_Toyota_Isis.jpg/1280px-2004_Toyota_Isis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2004 - 2017",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -3109,15 +3043,12 @@
     "toyota",
     "small car",
     "economical car"
-   ],
-   "imageCredit": "User3204",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2004_Toyota_Isis.jpg"
+   ]
   },
   {
    "id": "toyota_ist",
    "name": "ist",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Toyota_ist_1.3F_%28UA-NCP60%29_front.JPG/1280px-Toyota_ist_1.3F_%28UA-NCP60%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2002 - 2016",
    "puissance_ch": 109,
    "vitesse_max_kmh": 180,
@@ -3140,10 +3071,7 @@
     "small car",
     "economical car",
     "fuel-efficient car"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_ist_1.3F_(UA-NCP60)_front.JPG"
+   ]
   },
   {
    "id": "toyota_ist-sport",
@@ -3177,7 +3105,7 @@
   {
    "id": "toyota_izoa",
    "name": "Izoa (C-HR)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/TOYOTA_IZOA_%28TOYOTA_C-HR%29_China.jpg/1280px-TOYOTA_IZOA_%28TOYOTA_C-HR%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 171,
    "vitesse_max_kmh": 185,
@@ -3202,15 +3130,12 @@
     "hybrid vehicle",
     "automotive",
     "gasoline-electric hybrid"
-   ],
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TOYOTA_IZOA_(TOYOTA_C-HR)_China.jpg"
+   ]
   },
   {
    "id": "toyota_kluger",
    "name": "Kluger (Highlander)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/TOYOTA_HIGHLANDER_HYBRID_%28XU70%29_%26_TOYOTA_CROWN_KLUGER_HYBRID.jpg/1280px-TOYOTA_HIGHLANDER_HYBRID_%28XU70%29_%26_TOYOTA_CROWN_KLUGER_HYBRID.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - Aujourd'hui",
    "puissance_ch": 299,
    "vitesse_max_kmh": 180,
@@ -3236,15 +3161,12 @@
     "reliable suv",
     "awd",
     "4wd"
-   ],
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TOYOTA_HIGHLANDER_HYBRID_(XU70)_%26_TOYOTA_CROWN_KLUGER_HYBRID.jpg"
+   ]
   },
   {
    "id": "toyota_land-cruiser",
    "name": "Land Cruiser",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/2021_Toyota_Land_Cruiser_300_3.4_ZX_%28Colombia%29_front_view_04.png/1280px-2021_Toyota_Land_Cruiser_300_3.4_ZX_%28Colombia%29_front_view_04.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1951 - Aujourd'hui",
    "puissance_ch": 204,
    "vitesse_max_kmh": 175,
@@ -3268,15 +3190,12 @@
     "off-roading",
     "adventure vehicle",
     "reliable car"
-   ],
-   "imageCredit": "Autosdeprimera",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Land_Cruiser_300_3.4_ZX_(Colombia)_front_view_04.png"
+   ]
   },
   {
    "id": "toyota_land-cruiser-prado",
    "name": "Land Cruiser Prado",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Toyota_Land_Cruiser_Prado%2C_Baku_%28P1090223%29.jpg/1280px-Toyota_Land_Cruiser_Prado%2C_Baku_%28P1090223%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1990 - Aujourd'hui",
    "puissance_ch": 204,
    "vitesse_max_kmh": 175,
@@ -3300,15 +3219,12 @@
     "mid-size car",
     "family suv",
     "toyota"
-   ],
-   "imageCredit": "Matti Blume",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Land_Cruiser_Prado,_Baku_(P1090223).jpg"
+   ]
   },
   {
    "id": "toyota_levin",
    "name": "Levin",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/TOYOTA_LEVIN_GT_China.jpg/1280px-TOYOTA_LEVIN_GT_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 121,
    "vitesse_max_kmh": 180,
@@ -3333,15 +3249,12 @@
     "performance car",
     "rally car",
     "motor vehicle"
-   ],
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TOYOTA_LEVIN_GT_China.jpg"
+   ]
   },
   {
    "id": "toyota_lite-ace",
    "name": "LiteAce",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Toyota_Liteace_Super_1996_%2815792191752%29.jpg/1280px-Toyota_Liteace_Super_1996_%2815792191752%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1970 - Aujourd'hui",
    "puissance_ch": 97,
    "vitesse_max_kmh": 160,
@@ -3366,15 +3279,12 @@
     "small van",
     "vehicle",
     "car"
-   ],
-   "imageCredit": "order_242 from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Liteace_Super_1996_(15792191752).jpg"
+   ]
   },
   {
    "id": "toyota_mark-ii",
    "name": "Mark II",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Toyota_MARK_II_BLIT_2.5iR-S_%28TA-JZX110W%29_front.jpg/1280px-Toyota_MARK_II_BLIT_2.5iR-S_%28TA-JZX110W%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1968 - 2004",
    "puissance_ch": 280,
    "vitesse_max_kmh": 180,
@@ -3400,15 +3310,12 @@
     "1960s car",
     "1970s car",
     "1980s car"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_MARK_II_BLIT_2.5iR-S_(TA-JZX110W)_front.jpg"
+   ]
   },
   {
    "id": "toyota_mark-ii-blit",
    "name": "Mark II Blit",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2006_Toyota_Mark_II_Blit_01.jpg/1280px-2006_Toyota_Mark_II_Blit_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2002 - 2007",
    "puissance_ch": 200,
    "vitesse_max_kmh": 210,
@@ -3431,15 +3338,12 @@
     "british car",
     "retro car",
     "collectible car"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_Toyota_Mark_II_Blit_01.jpg"
+   ]
   },
   {
    "id": "toyota_mark-x",
    "name": "Mark X",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Toyota_MARK_X_250S_%28DBA-GRX130-AETSH%29_%28cropped%29.jpg/1280px-Toyota_MARK_X_250S_%28DBA-GRX130-AETSH%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2004 - 2019",
    "puissance_ch": 318,
    "vitesse_max_kmh": 180,
@@ -3463,15 +3367,12 @@
     "motor vehicle",
     "executive car",
     "sedan car"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_MARK_X_250S_(DBA-GRX130-AETSH)_(cropped).jpg"
+   ]
   },
   {
    "id": "toyota_mark-x-gr",
    "name": "Mark X GR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Toyota_MARK_X_250S%22GR_SPORT%22_%28DBA-GRX130-VLJBTS%29.jpg/1280px-Toyota_MARK_X_250S%22GR_SPORT%22_%28DBA-GRX130-VLJBTS%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2009 - 2019",
    "puissance_ch": 318,
    "vitesse_max_kmh": 230,
@@ -3495,10 +3396,7 @@
     "vehicle",
     "motor vehicle",
     "gr series"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_MARK_X_250S%22GR_SPORT%22_(DBA-GRX130-VLJBTS).jpg"
+   ]
   },
   {
    "id": "toyota_mark-x-zio",
@@ -3535,7 +3433,7 @@
   {
    "id": "toyota_masterace-surf",
    "name": "MasterAce Surf",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Toyota_MasterAce_Surf_Grand_Saloon_YR21G.jpg/1280px-Toyota_MasterAce_Surf_Grand_Saloon_YR21G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1982 - 1985",
    "puissance_ch": 80,
    "vitesse_max_kmh": 145,
@@ -3558,15 +3456,12 @@
     "car",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "Ypy31",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_MasterAce_Surf_Grand_Saloon_YR21G.jpg"
+   ]
   },
   {
    "id": "toyota_matrix",
    "name": "Matrix",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/2009_Toyota_Matrix_%28E140%29.jpg/1280px-2009_Toyota_Matrix_%28E140%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2002 - 2014",
    "puissance_ch": 134,
    "vitesse_max_kmh": 180,
@@ -3588,15 +3483,12 @@
     "toyota matrix",
     "gasoline car",
     "internal combustion engine"
-   ],
-   "imageCredit": "Chris",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2009_Toyota_Matrix_(E140).jpg"
+   ]
   },
   {
    "id": "toyota_mega-cruiser",
    "name": "Mega Cruiser",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/JASDF_Toyota_Mega_Cruiser%2845-5910%29_left_front_view_at_Hamamatsu_Air_Base_October_20%2C_2019_01.jpg/1280px-JASDF_Toyota_Mega_Cruiser%2845-5910%29_left_front_view_at_Hamamatsu_Air_Base_October_20%2C_2019_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1995 - 2001",
    "puissance_ch": 155,
    "vitesse_max_kmh": 130,
@@ -3621,15 +3513,12 @@
     "all-terrain vehicle",
     "car",
     "vehicle"
-   ],
-   "imageCredit": "Hunini",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:JASDF_Toyota_Mega_Cruiser(45-5910)_left_front_view_at_Hamamatsu_Air_Base_October_20,_2019_01.jpg"
+   ]
   },
   {
    "id": "toyota_mirai",
    "name": "Mirai",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Toyota_Mirai_%28JPD20%29_IMG_5303.jpg/1280px-Toyota_Mirai_%28JPD20%29_IMG_5303.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 182,
    "vitesse_max_kmh": 175,
@@ -3653,10 +3542,7 @@
     "alternative fuel vehicle",
     "eco-friendly car",
     "sustainable car"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Mirai_(JPD20)_IMG_5303.jpg"
+   ]
   },
   {
    "id": "toyota_mr-s",
@@ -3692,7 +3578,7 @@
   {
    "id": "toyota_mr-2",
    "name": "MR2",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/1985_Toyota_MR2.jpg/1280px-1985_Toyota_MR2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1984 - 2007",
    "puissance_ch": 140,
    "vitesse_max_kmh": 210,
@@ -3717,15 +3603,12 @@
     "1980s car",
     "1990s car",
     "2000s car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1985_Toyota_MR2.jpg"
+   ]
   },
   {
    "id": "toyota_mr2-aw11",
    "name": "MR2 AW11",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Toyota_MR2_AW11_white.jpg/1280px-Toyota_MR2_AW11_white.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1984 - 1989",
    "puissance_ch": 120,
    "vitesse_max_kmh": 200,
@@ -3750,15 +3633,12 @@
     "car",
     "vehicle",
     "sports coupe"
-   ],
-   "imageCredit": "Jacob Frey 4A",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_MR2_AW11_white.jpg"
+   ]
   },
   {
    "id": "toyota_mr2-supercharged",
    "name": "MR2 Supercharged",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1987_Toyota_MR2_Supercharged_%2833518%29.jpg/1280px-1987_Toyota_MR2_Supercharged_%2833518%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1986 - 1989",
    "puissance_ch": 145,
    "vitesse_max_kmh": 210,
@@ -3783,15 +3663,12 @@
     "supercharged engine",
     "1990s car",
     "classic car"
-   ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Toyota_MR2_Supercharged_(33518).jpg"
+   ]
   },
   {
    "id": "toyota_mr2-sw20",
    "name": "MR2 SW20",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/2000_Toyota_MR2_SW20_EU_Rev5_orange_mica_rear_view.jpg/1280px-2000_Toyota_MR2_SW20_EU_Rev5_orange_mica_rear_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1989 - 1999",
    "puissance_ch": 165,
    "vitesse_max_kmh": 225,
@@ -3817,15 +3694,12 @@
     "car",
     "vehicle",
     "sports coupe"
-   ],
-   "imageCredit": "TeEmKah",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Toyota_MR2_SW20_EU_Rev5_orange_mica_rear_view.jpg"
+   ]
   },
   {
    "id": "toyota_nadia",
    "name": "Nadia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Toyota_Nadia_in_Laos%2C_cropped.jpg/1280px-Toyota_Nadia_in_Laos%2C_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1998 - 2003",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -3849,10 +3723,7 @@
     "auto",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "Ilya Plekhanov, extracted by EurovisionNim",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Nadia_in_Laos,_cropped.jpg"
+   ]
   },
   {
    "id": "toyota_nadia-estima",
@@ -3886,7 +3757,7 @@
   {
    "id": "toyota_noah",
    "name": "Noah",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2022_Toyota_Noah_Hybrid_S-G.jpg/1280px-2022_Toyota_Noah_Hybrid_S-G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2001 - Aujourd'hui",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -3909,15 +3780,12 @@
     "vehicle",
     "family vehicle",
     "passenger van"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Noah_Hybrid_S-G.jpg"
+   ]
   },
   {
    "id": "toyota_opa",
    "name": "Opa",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2000-2002_Toyota_Opa_i.jpg/1280px-2000-2002_Toyota_Opa_i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - 2005",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -3939,15 +3807,12 @@
     "motor vehicle",
     "european car",
     "german car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2000-2002_Toyota_Opa_i.jpg"
+   ]
   },
   {
    "id": "toyota_optimo",
    "name": "Optimo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Toyota_Optimo_V_at_METU_NCC.jpg/1280px-Toyota_Optimo_V_at_METU_NCC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - 2004",
    "puissance_ch": 109,
    "vitesse_max_kmh": 170,
@@ -3971,15 +3836,12 @@
     "fuel-efficient car",
     "reliable car",
     "affordable car"
-   ],
-   "imageCredit": "ToprakM",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Optimo_V_at_METU_NCC.jpg"
+   ]
   },
   {
    "id": "toyota_origin",
    "name": "Origin",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Toyota_Origin_1.jpg/1280px-Toyota_Origin_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - 2001",
    "puissance_ch": 200,
    "vitesse_max_kmh": 180,
@@ -4003,15 +3865,12 @@
     "urban car",
     "affordable car",
     "practical car"
-   ],
-   "imageCredit": "Kuha455405",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Origin_1.jpg"
+   ]
   },
   {
    "id": "toyota_paseo",
    "name": "Paseo",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Toyota_Paseo_--_09-07-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "1991 - 1999",
    "puissance_ch": 90,
    "vitesse_max_kmh": 180,
@@ -4035,15 +3894,12 @@
     "japanese car",
     "economy car",
     "small car"
-   ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Paseo_--_09-07-2009.jpg"
+   ]
   },
   {
    "id": "toyota_paseo-cabriolet",
    "name": "Paseo Cabriolet",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Toyota_Paseo_Cabriolet_%2846992643075%29.jpg/1280px-Toyota_Paseo_Cabriolet_%2846992643075%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1991 - 1999",
    "puissance_ch": 90,
    "vitesse_max_kmh": 175,
@@ -4066,15 +3922,12 @@
     "two-seater",
     "sports car",
     "classic car"
-   ],
-   "imageCredit": "Guillaume Vachey from Chalon sur Saone, France",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Paseo_Cabriolet_(46992643075).jpg"
+   ]
   },
   {
    "id": "toyota_passo",
    "name": "Passo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2018-2023_Toyota_Passo_Moda.jpg/1280px-2018-2023_Toyota_Passo_Moda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2004 - 2023",
    "puissance_ch": 69,
    "vitesse_max_kmh": 150,
@@ -4098,15 +3951,12 @@
     "vehicle",
     "compact car",
     "microcar"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018-2023_Toyota_Passo_Moda.jpg"
+   ]
   },
   {
    "id": "toyota_picnic",
    "name": "Picnic (Ipsum)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Toyota_Picnic_%26_Avensis_Verso_%28Ipsum_x2%29_%2851205663074%29.jpg/1280px-Toyota_Picnic_%26_Avensis_Verso_%28Ipsum_x2%29_%2851205663074%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1995 - 2001",
    "puissance_ch": 128,
    "vitesse_max_kmh": 175,
@@ -4130,10 +3980,7 @@
     "japanese car",
     "mid-size minivan",
     "family vehicle"
-   ],
-   "imageCredit": "Rutger van der Maar",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Picnic_%26_Avensis_Verso_(Ipsum_x2)_(51205663074).jpg"
+   ]
   },
   {
    "id": "toyota_pixis-epoch",
@@ -4169,7 +4016,7 @@
   {
    "id": "toyota_pixis-mega",
    "name": "Pixis Mega",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Toyota_Pixis_Mega%2C_Washinomiya%2C_Saitama%2C_Japan.jpg/1280px-Toyota_Pixis_Mega%2C_Washinomiya%2C_Saitama%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 52,
    "vitesse_max_kmh": 140,
@@ -4193,15 +4040,12 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "Vasconium",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Pixis_Mega,_Washinomiya,_Saitama,_Japan.jpg"
+   ]
   },
   {
    "id": "toyota_pixis-space",
    "name": "Pixis Space",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Daihatsu_MOVE_Conte_%28L575S%29_%26_Toyota_HIACE_%28H200%29_%26Toyota_PIXIS_SPACE_Custom_%28L575A%29_front.JPG/1280px-Daihatsu_MOVE_Conte_%28L575S%29_%26_Toyota_HIACE_%28H200%29_%26Toyota_PIXIS_SPACE_Custom_%28L575A%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2012 - Aujourd'hui",
    "puissance_ch": 52,
    "vitesse_max_kmh": 130,
@@ -4224,15 +4068,12 @@
     "car",
     "vehicle",
     "hatchback"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Daihatsu_MOVE_Conte_(L575S)_%26_Toyota_HIACE_(H200)_%26Toyota_PIXIS_SPACE_Custom_(L575A)_front.JPG"
+   ]
   },
   {
    "id": "toyota_pixis-van",
    "name": "Pixis Van",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Moscow%2C_Toyota_Pixis_Van_%28S320%29_July_2025_02.jpg/1280px-Moscow%2C_Toyota_Pixis_Van_%28S320%29_July_2025_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 52,
    "vitesse_max_kmh": 120,
@@ -4256,15 +4097,12 @@
     "car",
     "motor vehicle",
     "japanese car"
-   ],
-   "imageCredit": "Retired electrician",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow,_Toyota_Pixis_Van_(S320)_July_2025_02.jpg"
+   ]
   },
   {
    "id": "toyota_porte",
    "name": "Porte",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/2012_Toyota_Porte_01.jpg/1280px-2012_Toyota_Porte_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2004 - 2020",
    "puissance_ch": 109,
    "vitesse_max_kmh": 170,
@@ -4286,10 +4124,7 @@
     "fuel-efficient car",
     "city vehicle",
     "urban car"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Toyota_Porte_01.jpg"
+   ]
   },
   {
    "id": "toyota_porte-2nd",
@@ -4323,7 +4158,7 @@
   {
    "id": "toyota_premio",
    "name": "Premio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/2016-2021_Toyota_Premio.jpg/1280px-2016-2021_Toyota_Premio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2001 - 2021",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -4345,15 +4180,12 @@
     "family car",
     "reliable car",
     "economical car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016-2021_Toyota_Premio.jpg"
+   ]
   },
   {
    "id": "toyota_previa",
    "name": "Previa",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/1991_Toyota_Previa_2.4_V16_Red.jpg/1280px-1991_Toyota_Previa_2.4_V16_Red.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1990 - 2006",
    "puissance_ch": 156,
    "vitesse_max_kmh": 185,
@@ -4377,15 +4209,12 @@
     "van",
     "automobile",
     "motor vehicle"
-   ],
-   "imageCredit": "Pakawut kenta",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1991_Toyota_Previa_2.4_V16_Red.jpg"
+   ]
   },
   {
    "id": "toyota_prius",
    "name": "Prius",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Toyota_Prius_2.0_HEV_Limited_%28V%29_%E2%80%93_f_18112022.jpg/1280px-Toyota_Prius_2.0_HEV_Limited_%28V%29_%E2%80%93_f_18112022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1997 - Aujourd'hui",
    "puissance_ch": 223,
    "vitesse_max_kmh": 177,
@@ -4409,15 +4238,12 @@
     "car",
     "vehicle",
     "toyota"
-   ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_2.0_HEV_Limited_(V)_%E2%80%93_f_18112022.jpg"
+   ]
   },
   {
    "id": "toyota_prius-alpha",
    "name": "Prius Alpha",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Toyota_Prius_alpha_Komatsugawa_Taxi.jpg/1280px-Toyota_Prius_alpha_Komatsugawa_Taxi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2011 - 2017",
    "puissance_ch": 136,
    "vitesse_max_kmh": 170,
@@ -4441,15 +4267,12 @@
     "fuel efficient car",
     "eco-friendly car",
     "family car"
-   ],
-   "imageCredit": "User:VVVN",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_alpha_Komatsugawa_Taxi.jpg"
+   ]
   },
   {
    "id": "toyota_prius-c",
    "name": "Prius C",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2012_Toyota_Prius_c_%28NHP10R%29_hatchback_%282015-07-03%29_01.jpg/1280px-2012_Toyota_Prius_c_%28NHP10R%29_hatchback_%282015-07-03%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2011 - 2019",
    "puissance_ch": 99,
    "vitesse_max_kmh": 170,
@@ -4475,15 +4298,12 @@
     "car",
     "vehicle",
     "toyota"
-   ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Toyota_Prius_c_(NHP10R)_hatchback_(2015-07-03)_01.jpg"
+   ]
   },
   {
    "id": "toyota_prius-plug-in",
    "name": "Prius Plug-in",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Toyota_Prius_%28XW60%29_Plug-in_Hybrid_IMG_9905.jpg/1280px-Toyota_Prius_%28XW60%29_Plug-in_Hybrid_IMG_9905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2012 - 2016",
    "puissance_ch": 136,
    "vitesse_max_kmh": 170,
@@ -4508,15 +4328,12 @@
     "hybrid car",
     "fuel efficient car",
     "eco-friendly car"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_(XW60)_Plug-in_Hybrid_IMG_9905.jpg"
+   ]
   },
   {
    "id": "toyota_prius-prime",
    "name": "Prius Prime",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Toyota_Prius_Prime_%28PHV%29_2019_%28XW50%29_Quarter_Front.jpg/1280px-Toyota_Prius_Prime_%28PHV%29_2019_%28XW50%29_Quarter_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2016 - Aujourd'hui",
    "puissance_ch": 121,
    "vitesse_max_kmh": 170,
@@ -4540,15 +4357,12 @@
     "fuel efficient car",
     "eco-friendly car",
     "economical car"
-   ],
-   "imageCredit": "Alistair Fernandez",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_Prime_(PHV)_2019_(XW50)_Quarter_Front.jpg"
+   ]
   },
   {
    "id": "toyota_prius-v",
    "name": "Prius V",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/2012_Toyota_Prius_v_--_03-21-2012.JPG/1280px-2012_Toyota_Prius_v_--_03-21-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2011 - 2017",
    "puissance_ch": 136,
    "vitesse_max_kmh": 170,
@@ -4574,15 +4388,12 @@
     "hybrid vehicle",
     "toyota",
     "passenger car"
-   ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Toyota_Prius_v_--_03-21-2012.JPG"
+   ]
   },
   {
    "id": "toyota_proace",
    "name": "Proace",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Toyota_ProAce_City_IMG_2589.jpg/1280px-Toyota_ProAce_City_IMG_2589.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 144,
    "vitesse_max_kmh": 185,
@@ -4608,10 +4419,7 @@
     "vehicle",
     "car",
     "motor vehicle"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_ProAce_City_IMG_2589.jpg"
+   ]
   },
   {
    "id": "toyota_proace-city",
@@ -4648,7 +4456,7 @@
   {
    "id": "toyota_proace-verso",
    "name": "Proace Verso",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2024_Toyota_ProAce_Verso_DSC_7150.jpg/1280px-2024_Toyota_ProAce_Verso_DSC_7150.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 180,
    "vitesse_max_kmh": 180,
@@ -4672,15 +4480,12 @@
     "motor vehicle",
     "spacious van",
     "versatile van"
-   ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Toyota_ProAce_Verso_DSC_7150.jpg"
+   ]
   },
   {
    "id": "toyota_probox",
    "name": "Probox",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Toyota_Probox_Van_DX.jpg/1280px-Toyota_Probox_Van_DX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2002 - Aujourd'hui",
    "puissance_ch": 109,
    "vitesse_max_kmh": 165,
@@ -4703,15 +4508,12 @@
     "minivan",
     "small car",
     "family car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Probox_Van_DX.jpg"
+   ]
   },
   {
    "id": "toyota_progres",
    "name": "Progrès",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/1998_Toyota_Progres_01.jpg/1280px-1998_Toyota_Progres_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1998 - 2007",
    "puissance_ch": 200,
    "vitesse_max_kmh": 180,
@@ -4732,10 +4534,7 @@
     "subcompact car",
     "economy car",
     "fuel-efficient car"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1998_Toyota_Progres_01.jpg"
+   ]
   },
   {
    "id": "toyota_progres-gr",
@@ -4766,7 +4565,7 @@
   {
    "id": "toyota_pronard",
    "name": "Pronard (Avalon)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Moscow%2C_Toyota_Pronard_%28made_in_USA_for_JDM_sales_2000-2004%29_Aug_2026_08.jpg/1280px-Moscow%2C_Toyota_Pronard_%28made_in_USA_for_JDM_sales_2000-2004%29_Aug_2026_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - 2004",
    "puissance_ch": 215,
    "vitesse_max_kmh": 220,
@@ -4787,15 +4586,12 @@
     "family car",
     "executive car",
     "luxury car"
-   ],
-   "imageCredit": "Retired electrician",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow,_Toyota_Pronard_(made_in_USA_for_JDM_sales_2000-2004)_Aug_2026_08.jpg"
+   ]
   },
   {
    "id": "toyota_publica",
    "name": "Publica",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1961_Toyota_Publica_01.jpg/1280px-1961_Toyota_Publica_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1961 - 1978",
    "puissance_ch": 58,
    "vitesse_max_kmh": 135,
@@ -4816,15 +4612,12 @@
     "small car",
     "budget car",
     "affordable car"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1961_Toyota_Publica_01.jpg"
+   ]
   },
   {
    "id": "toyota_ractis",
    "name": "Ractis",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Toyota_Ractis_X_Package_1300_SCP100.JPG/1280px-Toyota_Ractis_X_Package_1300_SCP100.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2005 - 2016",
    "puissance_ch": 109,
    "vitesse_max_kmh": 170,
@@ -4848,10 +4641,7 @@
     "fuel-efficient car",
     "reliable car",
     "practical car"
-   ],
-   "imageCredit": "DY5W-sport",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Ractis_X_Package_1300_SCP100.JPG"
+   ]
   },
   {
    "id": "toyota_raize",
@@ -4887,7 +4677,7 @@
   {
    "id": "toyota_raum",
    "name": "Raum",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/2006-2011_Toyota_Raum.jpg/1280px-2006-2011_Toyota_Raum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1997 - 2011",
    "puissance_ch": 109,
    "vitesse_max_kmh": 170,
@@ -4911,15 +4701,12 @@
     "small car",
     "second hand",
     "used car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2006-2011_Toyota_Raum.jpg"
+   ]
   },
   {
    "id": "toyota_rav4",
    "name": "RAV4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof%2C_front_left.jpg/1280px-2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1994 - Aujourd'hui",
    "puissance_ch": 306,
    "vitesse_max_kmh": 180,
@@ -4943,15 +4730,12 @@
     "gasoline engine",
     "phev",
     "hybrid suv"
-   ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof,_front_left.jpg"
+   ]
   },
   {
    "id": "toyota_rav4-ev",
    "name": "RAV4 EV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Toyota_RAV4_EV_WAS_2012_0759.JPG/1280px-Toyota_RAV4_EV_WAS_2012_0759.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2012 - 2014",
    "puissance_ch": 154,
    "vitesse_max_kmh": 160,
@@ -4975,15 +4759,12 @@
     "compact car",
     "crossover",
     "battery electric vehicle"
-   ],
-   "imageCredit": "Mariordo - Mario Roberto Durán Ortiz",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_RAV4_EV_WAS_2012_0759.JPG"
+   ]
   },
   {
    "id": "toyota_rav4-plug-in",
    "name": "RAV4 Plug-in",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Toyota_RAV4_Plug-in_Hybrid_GR_Sport_IMG_9896.jpg/1280px-Toyota_RAV4_Plug-in_Hybrid_GR_Sport_IMG_9896.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 306,
    "vitesse_max_kmh": 180,
@@ -5008,15 +4789,12 @@
     "compact car",
     "toyota",
     "automotive"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_RAV4_Plug-in_Hybrid_GR_Sport_IMG_9896.jpg"
+   ]
   },
   {
    "id": "toyota_rav4-xle",
    "name": "RAV4 XLE",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/2016_Toyota_RAV4_XLE_AWD%2C_rear_left%2C_11-15-2022.jpg/1280px-2016_Toyota_RAV4_XLE_AWD%2C_rear_left%2C_11-15-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 203,
    "vitesse_max_kmh": 180,
@@ -5040,15 +4818,12 @@
     "gas hybrid",
     "japanese car",
     "reliable car"
-   ],
-   "imageCredit": "MercurySable99",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Toyota_RAV4_XLE_AWD,_rear_left,_11-15-2022.jpg"
+   ]
   },
   {
    "id": "toyota_regius",
    "name": "Regius",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Toyota_Hiace_Regius_Wind_Tourer_rear.jpg/1280px-Toyota_Hiace_Regius_Wind_Tourer_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1997 - 2002",
    "puissance_ch": 145,
    "vitesse_max_kmh": 170,
@@ -5072,15 +4847,12 @@
     "people carrier",
     "spacious van",
     "versatile van"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Hiace_Regius_Wind_Tourer_rear.jpg"
+   ]
   },
   {
    "id": "toyota_regius-ace",
    "name": "Regius Ace (Hiace)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Toyota_REGIUS_ACE_SUPER_GL_%28H200%29_front.JPG/1280px-Toyota_REGIUS_ACE_SUPER_GL_%28H200%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1999 - 2020",
    "puissance_ch": 136,
    "vitesse_max_kmh": 155,
@@ -5104,10 +4876,7 @@
     "car",
     "motor vehicle",
     "transportation"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_REGIUS_ACE_SUPER_GL_(H200)_front.JPG"
+   ]
   },
   {
    "id": "toyota_rush",
@@ -5142,7 +4911,7 @@
   {
    "id": "toyota_sai",
    "name": "Sai",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/2009_Toyota_SAI_01.jpg/1280px-2009_Toyota_SAI_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2009 - 2017",
    "puissance_ch": 150,
    "vitesse_max_kmh": 180,
@@ -5166,15 +4935,12 @@
     "chinese car",
     "new energy vehicle",
     "affordable car"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2009_Toyota_SAI_01.jpg"
+   ]
   },
   {
    "id": "toyota_scepter",
    "name": "Scepter (Camry)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/1994_Toyota_Scepter_Coupe_2.2_rear.jpg/1280px-1994_Toyota_Scepter_Coupe_2.2_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1992 - 1996",
    "puissance_ch": 200,
    "vitesse_max_kmh": 210,
@@ -5198,10 +4964,7 @@
     "reliable car",
     "comfortable car",
     "economical car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Toyota_Scepter_Coupe_2.2_rear.jpg"
+   ]
   },
   {
    "id": "toyota_scepter-wagon",
@@ -5232,7 +4995,7 @@
   {
    "id": "toyota_sequoia",
    "name": "Sequoia",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/2023_Toyota_Sequoia_Limited_in_Wind_Chill_Pearl%2C_Front_Right%2C_01-16-2023.jpg/1280px-2023_Toyota_Sequoia_Limited_in_Wind_Chill_Pearl%2C_Front_Right%2C_01-16-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - Aujourd'hui",
    "puissance_ch": 443,
    "vitesse_max_kmh": 180,
@@ -5256,15 +5019,12 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "Elise240SX",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Sequoia_Limited_in_Wind_Chill_Pearl,_Front_Right,_01-16-2023.jpg"
+   ]
   },
   {
    "id": "toyota_sera",
    "name": "Sera",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Toyota_SERA_%28EXY10%29_front.JPG/1280px-Toyota_SERA_%28EXY10%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1990 - 1996",
    "puissance_ch": 110,
    "vitesse_max_kmh": 180,
@@ -5288,15 +5048,12 @@
     "hybrid",
     "bev",
     "phev"
-   ],
-   "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_SERA_(EXY10)_front.JPG"
+   ]
   },
   {
    "id": "toyota_sienna",
    "name": "Sienna",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/2021_Toyota_Sienna_XLE_Hybrid%2C_front_12.21.21.jpg/1280px-2021_Toyota_Sienna_XLE_Hybrid%2C_front_12.21.21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1997 - Aujourd'hui",
    "puissance_ch": 248,
    "vitesse_max_kmh": 180,
@@ -5321,15 +5078,12 @@
     "mpv",
     "toyota",
     "automotive"
-   ],
-   "imageCredit": "Kevauto",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Sienna_XLE_Hybrid,_front_12.21.21.jpg"
+   ]
   },
   {
    "id": "toyota_sienna-le",
    "name": "Sienna LE",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/2021_Toyota_Sienna_LE.jpg/1280px-2021_Toyota_Sienna_LE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2010 - 2020",
    "puissance_ch": 266,
    "vitesse_max_kmh": 180,
@@ -5352,15 +5106,12 @@
     "passenger van",
     "transportation",
     "family vehicle"
-   ],
-   "imageCredit": "Aneekr",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Sienna_LE.jpg"
+   ]
   },
   {
    "id": "toyota_sienna-xle",
    "name": "Sienna XLE",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/15_Toyota_Sienna_XLE.jpg/1280px-15_Toyota_Sienna_XLE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2010 - 2020",
    "puissance_ch": 266,
    "vitesse_max_kmh": 180,
@@ -5384,15 +5135,12 @@
     "xle trim",
     "family vehicle",
     "transportation"
-   ],
-   "imageCredit": "HJUdall",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:15_Toyota_Sienna_XLE.jpg"
+   ]
   },
   {
    "id": "toyota_sienta",
    "name": "Sienta",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Toyota_Sienta_XP80_Light_Yellow_%281%29.jpg/1280px-Toyota_Sienta_XP80_Light_Yellow_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2003 - Aujourd'hui",
    "puissance_ch": 120,
    "vitesse_max_kmh": 165,
@@ -5416,15 +5164,12 @@
     "7 seater",
     "hybrid",
     "fuel efficient"
-   ],
-   "imageCredit": "Damian B Oh",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Sienta_XP80_Light_Yellow_(1).jpg"
+   ]
   },
   {
    "id": "toyota_soarer",
    "name": "Soarer (Lexus SC)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/1988_Toyota_Soarer_2.0GT_Twin_Turbo.jpg/1280px-1988_Toyota_Soarer_2.0GT_Twin_Turbo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1981 - 2005",
    "puissance_ch": 280,
    "vitesse_max_kmh": 250,
@@ -5448,10 +5193,7 @@
     "2 door",
     "performance car",
     "mid-size car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1988_Toyota_Soarer_2.0GT_Twin_Turbo.jpg"
+   ]
   },
   {
    "id": "toyota_soarer-gt",
@@ -5488,7 +5230,7 @@
   {
    "id": "toyota_solara",
    "name": "Solara",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/04-06_Toyota_Solara_SE_coupe.jpg/1280px-04-06_Toyota_Solara_SE_coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1998 - 2008",
    "puissance_ch": 210,
    "vitesse_max_kmh": 210,
@@ -5511,10 +5253,7 @@
     "1998-2008",
     "gasoline car",
     "internal combustion engine"
-   ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:04-06_Toyota_Solara_SE_coupe.jpg"
+   ]
   },
   {
    "id": "toyota_sparky",
@@ -5551,7 +5290,7 @@
   {
    "id": "toyota_sprinter",
    "name": "Sprinter",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/1993_Toyota_Sprinter_01.jpg/1280px-1993_Toyota_Sprinter_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1968 - 2000",
    "puissance_ch": 115,
    "vitesse_max_kmh": 180,
@@ -5575,15 +5314,12 @@
     "transportation",
     "commercial vehicle",
     "utility van"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1993_Toyota_Sprinter_01.jpg"
+   ]
   },
   {
    "id": "toyota_sprinter-carib",
    "name": "Sprinter Carib",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/1997_Toyota_Sprinter-Carib_01.jpg/1280px-1997_Toyota_Sprinter-Carib_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1982 - 2001",
    "puissance_ch": 140,
    "vitesse_max_kmh": 180,
@@ -5606,15 +5342,12 @@
     "car",
     "motor vehicle",
     "transportation"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Toyota_Sprinter-Carib_01.jpg"
+   ]
   },
   {
    "id": "toyota_sprinter-trueno",
    "name": "Sprinter Trueno",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/1986_Toyota_Sprinter_Trueno_3-door_GT_APEX.jpg/1280px-1986_Toyota_Sprinter_Trueno_3-door_GT_APEX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1972 - 2000",
    "puissance_ch": 115,
    "vitesse_max_kmh": 185,
@@ -5638,15 +5371,12 @@
     "legacy car",
     "classic car",
     "vintage car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1986_Toyota_Sprinter_Trueno_3-door_GT_APEX.jpg"
+   ]
   },
   {
    "id": "toyota_starlet",
    "name": "Starlet",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Toyota_Starlet_P90_front_20090209.jpg/1280px-Toyota_Starlet_P90_front_20090209.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1973 - 1999",
    "puissance_ch": 75,
    "vitesse_max_kmh": 170,
@@ -5670,15 +5400,12 @@
     "1990s car",
     "small car",
     "economy car"
-   ],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Starlet_P90_front_20090209.jpg"
+   ]
   },
   {
    "id": "toyota_starlet-glanza",
    "name": "Starlet Glanza",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/1997_Toyota_Starlet_Glanza_V.jpg/1280px-1997_Toyota_Starlet_Glanza_V.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1996 - 1999",
    "puissance_ch": 133,
    "vitesse_max_kmh": 195,
@@ -5702,15 +5429,12 @@
     "rally car",
     "modified car",
     "import car"
-   ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1997_Toyota_Starlet_Glanza_V.jpg"
+   ]
   },
   {
    "id": "toyota_succeed",
    "name": "Succeed",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Toyota_Succeed_Van_UL.jpg/1280px-Toyota_Succeed_Van_UL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2002 - 2020",
    "puissance_ch": 109,
    "vitesse_max_kmh": 165,
@@ -5734,15 +5458,12 @@
     "practical car",
     "affordable car",
     "small car"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Succeed_Van_UL.jpg"
+   ]
   },
   {
    "id": "toyota_supra",
    "name": "Supra",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2020_Toyota_GR_Supra_%28United_States%29.png/1280px-2020_Toyota_GR_Supra_%28United_States%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1978 - Aujourd'hui",
    "puissance_ch": 340,
    "vitesse_max_kmh": 250,
@@ -5766,15 +5487,12 @@
     "grand tourer",
     "turbocharged",
     "rear-wheel drive"
-   ],
-   "imageCredit": "Gold Pony",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Toyota_GR_Supra_(United_States).png"
+   ]
   },
   {
    "id": "toyota_tacoma",
    "name": "Tacoma",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Toyota_Tacoma_%28N300%29_TRD_1X7A2438.jpg/1280px-Toyota_Tacoma_%28N300%29_TRD_1X7A2438.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1995 - Aujourd'hui",
    "puissance_ch": 282,
    "vitesse_max_kmh": 180,
@@ -5797,15 +5515,12 @@
     "mid-size pickup",
     "compact pickup",
     "toyota"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Tacoma_(N300)_TRD_1X7A2438.jpg"
+   ]
   },
   {
    "id": "toyota_tercel",
    "name": "Tercel",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Toyota_Tercel_sedan_--_09-07-2009.jpg/1280px-Toyota_Tercel_sedan_--_09-07-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1978 - 1999",
    "puissance_ch": 94,
    "vitesse_max_kmh": 175,
@@ -5828,15 +5543,12 @@
     "1990s car",
     "economy car",
     "japanese car"
-   ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Tercel_sedan_--_09-07-2009.jpg"
+   ]
   },
   {
    "id": "toyota_touring-hiace",
    "name": "Touring HiAce",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Toyota_Touring_Hiace_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "1989 - 2004",
    "puissance_ch": 135,
    "vitesse_max_kmh": 165,
@@ -5860,15 +5572,12 @@
     "family van",
     "cargo van",
     "large van"
-   ],
-   "imageCredit": "Tennen-Gas",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Touring_Hiace_001.JPG"
+   ]
   },
   {
    "id": "toyota_town-ace",
    "name": "TownAce",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/1997-1999_Toyota_TownAce_%28KR42R%29_van_01.jpg/1280px-1997-1999_Toyota_TownAce_%28KR42R%29_van_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1976 - Aujourd'hui",
    "puissance_ch": 97,
    "vitesse_max_kmh": 160,
@@ -5893,15 +5602,12 @@
     "family van",
     "vehicle",
     "car"
-   ],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1997-1999_Toyota_TownAce_(KR42R)_van_01.jpg"
+   ]
   },
   {
    "id": "toyota_townace-noah",
    "name": "TownAce Noah",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Toyota_TownAce_Noah_%2834553791133%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "1996 - 2001",
    "puissance_ch": 105,
    "vitesse_max_kmh": 160,
@@ -5926,15 +5632,12 @@
     "seven seater",
     "spacious",
     "reliable"
-   ],
-   "imageCredit": "Rutger van der Maar",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_TownAce_Noah_(34553791133).jpg"
+   ]
   },
   {
    "id": "toyota_tundra",
    "name": "Tundra",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/2022_Toyota_Tundra_Limited_CrewMax_Short_Bed_4x4_with_TRD_Off-Road_Package%2C_front_left%2C_11-01-2022.jpg/1280px-2022_Toyota_Tundra_Limited_CrewMax_Short_Bed_4x4_with_TRD_Off-Road_Package%2C_front_left%2C_11-01-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1999 - Aujourd'hui",
    "puissance_ch": 394,
    "vitesse_max_kmh": 180,
@@ -5960,15 +5663,12 @@
     "towing capacity",
     "off-road",
     "work truck"
-   ],
-   "imageCredit": "MercurySable99",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Tundra_Limited_CrewMax_Short_Bed_4x4_with_TRD_Off-Road_Package,_front_left,_11-01-2022.jpg"
+   ]
   },
   {
    "id": "toyota_urban-cruiser",
    "name": "Urban Cruiser",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Toyota_Urban_Cruiser.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "2008 - 2014",
    "puissance_ch": 101,
    "vitesse_max_kmh": 175,
@@ -5993,15 +5693,12 @@
     "diesel",
     "automatic",
     "manual"
-   ],
-   "imageCredit": "Thomas doerfer",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Urban_Cruiser.jpg"
+   ]
   },
   {
    "id": "toyota_urban-cruiser-hyryder",
    "name": "Urban Cruiser Hyryder",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/2022_Toyota_Urban_Cruiser_Hyryder_V_Hybrid_%28India%29_front_view.jpg/1280px-2022_Toyota_Urban_Cruiser_Hyryder_V_Hybrid_%28India%29_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 103,
    "vitesse_max_kmh": 170,
@@ -6025,15 +5722,12 @@
     "vehicle",
     "crossover",
     "compact crossover"
-   ],
-   "imageCredit": "DriveSpark",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Urban_Cruiser_Hyryder_V_Hybrid_(India)_front_view.jpg"
+   ]
   },
   {
    "id": "toyota_vanguard",
    "name": "Vanguard",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2007_Toyota_Vanguard_03.jpg/1280px-2007_Toyota_Vanguard_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2007 - 2013",
    "puissance_ch": 280,
    "vitesse_max_kmh": 180,
@@ -6057,15 +5751,12 @@
     "4x4",
     "hybrid",
     "fuel efficient"
-   ],
-   "imageCredit": "Mytho88",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2007_Toyota_Vanguard_03.jpg"
+   ]
   },
   {
    "id": "toyota_veloz",
    "name": "Veloz",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Toyota_Avanza_1.5_Veloz_2020.jpg/1280px-Toyota_Avanza_1.5_Veloz_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 106,
    "vitesse_max_kmh": 170,
@@ -6088,15 +5779,12 @@
     "small car",
     "urban car",
     "eco-friendly car"
-   ],
-   "imageCredit": "Ethan Llamas",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Avanza_1.5_Veloz_2020.jpg"
+   ]
   },
   {
    "id": "toyota_venza",
    "name": "Venza",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2021_Toyota_Venza_LE%2C_Front_Left%2C_06-20-2021.jpg/1280px-2021_Toyota_Venza_LE%2C_Front_Left%2C_06-20-2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2008 - Aujourd'hui",
    "puissance_ch": 222,
    "vitesse_max_kmh": 180,
@@ -6121,15 +5809,12 @@
     "toyota",
     "2023 venza",
     "2024 venza"
-   ],
-   "imageCredit": "SsmIntrigue",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Venza_LE,_Front_Left,_06-20-2021.jpg"
+   ]
   },
   {
    "id": "toyota_verossa",
    "name": "Verossa",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Toyota_Verossa.jpg/1280px-Toyota_Verossa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2001 - 2004",
    "puissance_ch": 280,
    "vitesse_max_kmh": 180,
@@ -6153,15 +5838,12 @@
     "vehicle",
     "motor vehicle",
     "2000s car"
-   ],
-   "imageCredit": "Kuha455405",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Verossa.jpg"
+   ]
   },
   {
    "id": "toyota_verso",
    "name": "Verso",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Toyota_Verso_20090614_front.JPG/1280px-Toyota_Verso_20090614_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2009 - 2018",
    "puissance_ch": 132,
    "vitesse_max_kmh": 185,
@@ -6186,15 +5868,12 @@
     "fuel efficient",
     "hatchback",
     "people carrier"
-   ],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Verso_20090614_front.JPG"
+   ]
   },
   {
    "id": "toyota_verso-s",
    "name": "Verso-S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Toyota_Verso-S_1.33_VVT-i_Life_%E2%80%93_Frontansicht_%281%29%2C_31._M%C3%A4rz_2011%2C_Mettmann.jpg/1280px-Toyota_Verso-S_1.33_VVT-i_Life_%E2%80%93_Frontansicht_%281%29%2C_31._M%C3%A4rz_2011%2C_Mettmann.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2010 - 2015",
    "puissance_ch": 99,
    "vitesse_max_kmh": 170,
@@ -6217,15 +5896,12 @@
     "small car",
     "family car",
     "2010s car"
-   ],
-   "imageCredit": "M 93",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Verso-S_1.33_VVT-i_Life_%E2%80%93_Frontansicht_(1),_31._M%C3%A4rz_2011,_Mettmann.jpg"
+   ]
   },
   {
    "id": "toyota_vios",
    "name": "Vios",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Toyota_Vios_1.5_VVT-i_G_%28IV%29_%E2%80%93_f_13032025.jpg/1280px-Toyota_Vios_1.5_VVT-i_G_%28IV%29_%E2%80%93_f_13032025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2002 - Aujourd'hui",
    "puissance_ch": 109,
    "vitesse_max_kmh": 170,
@@ -6249,15 +5925,12 @@
     "fuel-efficient car",
     "asian car",
     "family car"
-   ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Vios_1.5_VVT-i_G_(IV)_%E2%80%93_f_13032025.jpg"
+   ]
   },
   {
    "id": "toyota_vista",
    "name": "Vista",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/1994_Toyota_Vista_VX_2.0_dark_green_rear.jpg/1280px-1994_Toyota_Vista_VX_2.0_dark_green_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1982 - 2003",
    "puissance_ch": 135,
    "vitesse_max_kmh": 180,
@@ -6280,15 +5953,12 @@
     "automobile",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "Throwawayacc222",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Toyota_Vista_VX_2.0_dark_green_rear.jpg"
+   ]
   },
   {
    "id": "toyota_vitz",
    "name": "Vitz (Yaris)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/TOYOTA_VITZ%2CTOYOTA_YARIS_%28XP10%29_5_DOOR_China_%283%29.jpg/1280px-TOYOTA_VITZ%2CTOYOTA_YARIS_%28XP10%29_5_DOOR_China_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "1999 - 2019",
    "puissance_ch": 109,
    "vitesse_max_kmh": 180,
@@ -6312,10 +5982,7 @@
     "hybrid",
     "petrol",
     "gasoline"
-   ],
-   "imageCredit": "Dinkun Chen",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TOYOTA_VITZ,TOYOTA_YARIS_(XP10)_5_DOOR_China_(3).jpg"
+   ]
   },
   {
    "id": "toyota_voltz",
@@ -6352,7 +6019,7 @@
   {
    "id": "toyota_voxy",
    "name": "Voxy",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Toyota_Voxy_R90_Hybrid_S-Z_rear.jpg/1280px-Toyota_Voxy_R90_Hybrid_S-Z_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2001 - Aujourd'hui",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -6376,15 +6043,12 @@
     "seven seater",
     "spacious car",
     "family vehicle"
-   ],
-   "imageCredit": "TTTNIS",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Voxy_R90_Hybrid_S-Z_rear.jpg"
+   ]
   },
   {
    "id": "toyota_wigo",
    "name": "Wigo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Toyota_Wigo_1.0_E_2023.jpg/1280px-Toyota_Wigo_1.0_E_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 67,
    "vitesse_max_kmh": 160,
@@ -6408,15 +6072,12 @@
     "city vehicle",
     "compact hatchback",
     "asian car"
-   ],
-   "imageCredit": "Ethan Llamas",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Wigo_1.0_E_2023.jpg"
+   ]
   },
   {
    "id": "toyota_wildlander",
    "name": "Wildlander",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/2021_GAC-Toyota_Wildlander_%28front%29.jpg/1280px-2021_GAC-Toyota_Wildlander_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 178,
    "vitesse_max_kmh": 180,
@@ -6438,15 +6099,12 @@
     "automobile",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "User3204",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_GAC-Toyota_Wildlander_(front).jpg"
+   ]
   },
   {
    "id": "toyota_will",
    "name": "WiLL Vi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/2000_Toyota_WiLL_Vi.jpg/1280px-2000_Toyota_WiLL_Vi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2000 - 2001",
    "puissance_ch": 88,
    "vitesse_max_kmh": 160,
@@ -6470,10 +6128,7 @@
     "vehicle",
     "microcar",
     "unusual car"
-   ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Toyota_WiLL_Vi.jpg"
+   ]
   },
   {
    "id": "toyota_windom",
@@ -6509,7 +6164,7 @@
   {
    "id": "toyota_wish",
    "name": "Wish",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Toyota_Wish_in_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": null,
    "production_years": "2003 - 2017",
    "puissance_ch": 152,
    "vitesse_max_kmh": 180,
@@ -6533,15 +6188,12 @@
     "7 seater",
     "second hand wish",
     "used wish"
-   ],
-   "imageCredit": "Rutger van der Maar",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Wish_in_Hong_Kong.jpg"
+   ]
   },
   {
    "id": "toyota_yaris-cross",
    "name": "Yaris Cross",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Toyota_Yaris_Cross_Hybrid_%28XP210%29_1X7A1846.jpg/1280px-Toyota_Yaris_Cross_Hybrid_%28XP210%29_1X7A1846.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": null,
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 116,
    "vitesse_max_kmh": 170,
@@ -6565,10 +6217,7 @@
     "city car",
     "hybrid suv",
     "toyota"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Cross_Hybrid_(XP210)_1X7A1846.jpg"
+   ]
   },
   {
    "id": "toyota_tf109",

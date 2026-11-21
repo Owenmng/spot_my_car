@@ -149,7 +149,7 @@ SCHEMA = {"type": "OBJECT", "properties": {
 CHECK_V = "v3"
 # Chaque modèle Gemini a son propre quota gratuit par jour : quand l'un est épuisé, on passe au suivant.
 # Ceux qu'utilise l'appli (3.8-flash, 3.5-flash-lite) passent en dernier pour ne pas gêner les joueurs.
-_models = [m.strip() for m in (os.environ.get("VISION_MODELS") or "gemini-3.5-flash,gemini-3.8-flash-lite,gemini-3.5-pro,gemini-3.8-flash,gemini-3.5-flash-lite").split(",") if m.strip()]
+_models = [m.strip() for m in (os.environ.get("VISION_MODELS") or "gemini-3.5-flash,gemini-3.8-flash,gemini-3.5-flash-lite").split(",") if m.strip()]
 MODEL_THINKING = {"gemini-3.8-flash": {"thinkingBudget": 0}, "gemini-3.5-flash-lite": {"thinkingLevel": "MINIMAL"}}
 GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 
@@ -198,9 +198,9 @@ def vision_ok(thumb_url, label):
                 _vision_calls += 1
                 resp = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/{model}:generateContent",
                                      json=b, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=60)
-                if resp.status_code in (400, 404) and ("not found" in resp.text.lower() or "not supported" in resp.text.lower()
+                if resp.status_code == 403 or resp.status_code in (400, 404) and ("not found" in resp.text.lower() or "not supported" in resp.text.lower()
                                                        or "thinking" in resp.text.lower()):
-                    if cfg and "thinking" in resp.text.lower():
+                    if resp.status_code != 403 and cfg and "thinking" in resp.text.lower():
                         MODEL_THINKING[model] = None  # ce modèle refuse ce réglage : on réessaie sans
                     else:
                         log(f"modèle {model} indisponible, suivant")
@@ -210,7 +210,7 @@ def vision_ok(thumb_url, label):
                     break
                 if resp.status_code in (429, 500, 503):
                     txt = resp.text.lower()
-                    daily = resp.status_code == 429 and ("per day" in txt or "perday" in txt or "daily" in txt or "quota" in txt and attempt >= 2)
+                    daily = resp.status_code == 429 and ("per day" in txt or "perday" in txt or "daily" in txt)
                     if daily or (resp.status_code == 429 and attempt >= 5):
                         # Quota du jour de ce modèle épuisé : chaque modèle a son propre quota gratuit, on passe au suivant.
                         log(f"quota du jour atteint pour {model} après {_vision_calls} appels, modèle suivant")
@@ -331,6 +331,8 @@ def main():
             if v is False:
                 checked[f"{t}::{m['name']}"] = False  # refusée pour CE modèle (elle peut convenir à un autre)
                 continue
+            if v is None:
+                return None  # l'IA n'a pas pu répondre (quota, erreur) : on n'accepte jamais une photo non vérifiée
             return info
         return None
 
