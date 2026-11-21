@@ -147,6 +147,10 @@ SCHEMA = {"type": "OBJECT", "properties": {
 # Version du contrôle : "v2" = critères stricts (vue avant/trois-quarts/profil, voiture dégagée, qualité >= 6).
 # Les photos validées avec l'ancien contrôle (True) sont revérifiées une fois les nouvelles terminées.
 CHECK_V = "v3"
+# Chaque modèle Gemini a son propre quota gratuit par jour : quand l'un est épuisé, on passe au suivant.
+# Ceux qu'utilise l'appli (3.8-flash, 3.5-flash-lite) passent en dernier pour ne pas gêner les joueurs.
+_models = [m.strip() for m in os.environ.get("VISION_MODELS", "gemini-3.5-flash,gemini-3.8-flash-lite,gemini-3.5-pro,gemini-3.8-flash,gemini-3.5-flash-lite").split(",") if m.strip()]
+MODEL_THINKING = {"gemini-3.8-flash": {"thinkingBudget": 0}, "gemini-3.5-flash-lite": {"thinkingLevel": "MINIMAL"}}
 GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 
 _vision_calls = 0
@@ -182,31 +186,54 @@ def vision_ok(thumb_url, label):
                                                       {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(img).decode()}}]}],
             "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "responseSchema": SCHEMA,
                                  "thinkingConfig": {"thinkingLevel": "MINIMAL"}}}
-    for attempt in range(6):
-        try:
-            _vision_calls += 1
-            resp = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/gemini-3.5-flash-lite:generateContent",
-                                 json=body, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=60)
-            if resp.status_code in (429, 500, 503):
-                txt = resp.text.lower()
-                daily = resp.status_code == 429 and ("per day" in txt or "perday" in txt or "daily" in txt)
-                if daily or (resp.status_code == 429 and attempt >= 5):
-                    _stop["quota"] = True  # quota du jour atteint : on reprendra demain
-                    log("quota Gemini du jour atteint, arrêt : " + resp.text[:160].replace("\n", " "))
+    while _models:
+        model = _models[0]
+        cfg = MODEL_THINKING.get(model)
+        b = dict(body, generationConfig={k: v for k, v in body["generationConfig"].items() if k != "thinkingConfig"})
+        if cfg:
+            b["generationConfig"]["thinkingConfig"] = cfg
+        switched = False
+        for attempt in range(6):
+            try:
+                _vision_calls += 1
+                resp = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/{model}:generateContent",
+                                     json=b, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=60)
+                if resp.status_code in (400, 404) and ("not found" in resp.text.lower() or "not supported" in resp.text.lower()
+                                                       or "thinking" in resp.text.lower()):
+                    if cfg and "thinking" in resp.text.lower():
+                        MODEL_THINKING[model] = None  # ce modèle refuse ce réglage : on réessaie sans
+                    else:
+                        log(f"modèle {model} indisponible, suivant")
+                        if _models and _models[0] == model:
+                            _models.pop(0)
+                    switched = True
+                    break
+                if resp.status_code in (429, 500, 503):
+                    txt = resp.text.lower()
+                    daily = resp.status_code == 429 and ("per day" in txt or "perday" in txt or "daily" in txt or "quota" in txt and attempt >= 2)
+                    if daily or (resp.status_code == 429 and attempt >= 5):
+                        # Quota du jour de ce modèle épuisé : chaque modèle a son propre quota gratuit, on passe au suivant.
+                        log(f"quota du jour atteint pour {model} après {_vision_calls} appels, modèle suivant")
+                        if _models and _models[0] == model:
+                            _models.pop(0)
+                        switched = True
+                        break
+                    time.sleep(65 if resp.status_code == 429 else 10 * (attempt + 1))
+                    continue
+                time.sleep(4)
+                if not resp.ok:
+                    log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
                     return None
-                # limite par minute : on attend que la minute passe
-                time.sleep(65 if resp.status_code == 429 else 10 * (attempt + 1))
-                continue
-            time.sleep(4)  # on laisse de la marge au quota pour les vrais joueurs
-            if not resp.ok:
-                log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
-                return None
-            j = json.loads(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
-            return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and not j.get("obstructed")
-                        and j.get("view") in GOOD_VIEWS and (j.get("quality") or 0) >= 6)
-        except Exception as e:
-            log(f"vision err {e}")
-            time.sleep(5)
+                j = json.loads(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
+                return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and not j.get("obstructed")
+                            and j.get("view") in GOOD_VIEWS and (j.get("quality") or 0) >= 6)
+            except Exception as e:
+                log(f"vision err {e}")
+                time.sleep(5)
+        if not switched:
+            return None
+    _stop["quota"] = True  # tous les modèles ont épuisé leur quota : on reprendra demain
+    log("quota du jour atteint sur tous les modèles, arrêt")
     return None
 
 
