@@ -156,40 +156,42 @@ GOOD_VIEWS = {"front", "frontThreeQuarter", "side", "rearThreeQuarter"}
 _vision_calls = 0
 
 
-def vision_ok(thumb_url, label):
-    """True / False, ou None si l'IA est indisponible (on ne tranche pas)."""
-    global _vision_calls
-    if out_of_time():
-        return None
+BATCH = int(os.environ.get("VISION_BATCH", "8"))  # photos jugées par appel : le quota compte les appels, pas les photos
+CRITERIA = ("Pour CHAQUE photo : "
+            "exterior : la photo montre la voiture vue de l'extérieur (pas l'habitacle, pas le moteur, pas un détail). "
+            "wholeCar : la voiture est entière ou presque dans le cadre et c'est le sujet principal. "
+            "sameModel : c'est EXACTEMENT le modèle attendu pour cette photo, et cette génération si elle est précisée. Un modèle voisin "
+            "de la même marque (autre numéro, autre génération, version de course ou concept au lieu de la série) = false. En cas de doute = false. "
+            "view : angle de vue principal de la voiture. "
+            "obstructed : la voiture est en partie cachée (autre véhicule, personnes, barrière, grosse bâche, texte incrusté). "
+            "quality : 1 à 10, netteté, lumière et lisibilité de la voiture (10 = photo de catalogue). "
+            "Juge chaque photo indépendamment des autres.")
+
+
+def _fetch_img(url):
     try:
-        r = S.get(thumb_url, timeout=30)
+        r = S.get(url, timeout=30)
         if not r.ok:
             return None
         img = r.content
         if Image:
             im = Image.open(io.BytesIO(img)).convert("RGB")
-            im.thumbnail((768, 768))
-            b = io.BytesIO()
-            im.save(b, "JPEG", quality=78)
-            img = b.getvalue()
+            im.thumbnail((640, 640))
+            buf = io.BytesIO()
+            im.save(buf, "JPEG", quality=78)
+            img = buf.getvalue()
+        return img
     except Exception:
         return None
-    prompt = (f"Cette photo doit illustrer la fiche catalogue de la voiture « {label} ». "
-              "exterior : la photo montre la voiture vue de l'extérieur (pas l'habitacle, pas le moteur, pas un détail). "
-              "wholeCar : la voiture est entière ou presque dans le cadre et c'est le sujet principal. "
-              "sameModel : c'est EXACTEMENT ce modèle, et cette génération si elle est précisée. Un modèle voisin de la même marque "
-              "(autre numéro, autre génération, version de course ou concept au lieu de la série) = false. En cas de doute = false. "
-              "view : angle de vue principal de la voiture. "
-              "obstructed : la voiture est en partie cachée (autre véhicule, personnes, barrière, grosse bâche, texte incrusté). "
-              "quality : 1 à 10, netteté, lumière et lisibilité de la voiture (10 = photo de catalogue).")
-    body = {"contents": [{"role": "user", "parts": [{"text": prompt},
-                                                      {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(img).decode()}}]}],
-            "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "responseSchema": SCHEMA,
-                                 "thinkingConfig": {"thinkingLevel": "MINIMAL"}}}
+
+
+def _gemini(body):
+    """Envoie la requête au premier modèle Gemini qui a encore du quota. Renvoie le JSON de réponse, ou None."""
+    global _vision_calls
     while _models:
         model = _models[0]
         cfg = MODEL_THINKING.get(model)
-        b = dict(body, generationConfig={k: v for k, v in body["generationConfig"].items() if k != "thinkingConfig"})
+        b = dict(body, generationConfig=dict(body["generationConfig"]))
         if cfg:
             b["generationConfig"]["thinkingConfig"] = cfg
         switched = False
@@ -197,10 +199,10 @@ def vision_ok(thumb_url, label):
             try:
                 _vision_calls += 1
                 resp = requests.post(f"https://firebasevertexai.googleapis.com/v1beta/projects/{PROJECT}/models/{model}:generateContent",
-                                     json=b, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=60)
-                if resp.status_code == 403 or resp.status_code in (400, 404) and ("not found" in resp.text.lower() or "not supported" in resp.text.lower()
-                                                       or "thinking" in resp.text.lower()):
-                    if resp.status_code != 403 and cfg and "thinking" in resp.text.lower():
+                                     json=b, headers={"x-goog-api-key": KEY, "X-Firebase-AppId": APPID}, timeout=120)
+                low = resp.text.lower()
+                if resp.status_code == 403 or resp.status_code in (400, 404) and ("not found" in low or "not supported" in low or "thinking" in low):
+                    if resp.status_code != 403 and cfg and "thinking" in low:
                         MODEL_THINKING[model] = None  # ce modèle refuse ce réglage : on réessaie sans
                     else:
                         log(f"modèle {model} indisponible, suivant")
@@ -209,8 +211,7 @@ def vision_ok(thumb_url, label):
                     switched = True
                     break
                 if resp.status_code in (429, 500, 503):
-                    txt = resp.text.lower()
-                    daily = resp.status_code == 429 and ("per day" in txt or "perday" in txt or "daily" in txt)
+                    daily = resp.status_code == 429 and ("per day" in low or "perday" in low or "daily" in low)
                     if daily or (resp.status_code == 429 and attempt >= 5):
                         # Quota du jour de ce modèle épuisé : chaque modèle a son propre quota gratuit, on passe au suivant.
                         log(f"quota du jour atteint pour {model} après {_vision_calls} appels, modèle suivant")
@@ -224,9 +225,7 @@ def vision_ok(thumb_url, label):
                 if not resp.ok:
                     log(f"vision HTTP {resp.status_code} {resp.text[:120]}")
                     return None
-                j = json.loads(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
-                return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and not j.get("obstructed")
-                            and j.get("view") in GOOD_VIEWS and (j.get("quality") or 0) >= 6)
+                return json.loads(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
             except Exception as e:
                 log(f"vision err {e}")
                 time.sleep(5)
@@ -235,6 +234,50 @@ def vision_ok(thumb_url, label):
     _stop["quota"] = True  # tous les modèles ont épuisé leur quota : on reprendra demain
     log("quota du jour atteint sur tous les modèles, arrêt")
     return None
+
+
+def _verdict(j):
+    return bool(j.get("exterior") and j.get("wholeCar") and j.get("sameModel") and not j.get("obstructed")
+                and j.get("view") in GOOD_VIEWS and (j.get("quality") or 0) >= 6)
+
+
+def vision_batch(items):
+    """items = [(url, modèle attendu)] -> [True / False / None] (None = l'IA n'a pas pu trancher)."""
+    out = [None] * len(items)
+    if out_of_time() or not items:
+        return out
+    imgs = [_fetch_img(u) for u, _ in items]
+    idx = [i for i, im in enumerate(imgs) if im]
+    if not idx:
+        return out
+    parts = [{"text": f"Voici {len(idx)} photos numérotées, chacune destinée à la fiche catalogue d'une voiture. " + CRITERIA +
+              f" Réponds avec la liste results de {len(idx)} objets, dans l'ordre des photos, avec n = numéro de la photo."}]
+    for n, i in enumerate(idx, 1):
+        parts.append({"text": f"Photo {n} — voiture attendue : « {items[i][1]} »"})
+        parts.append({"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(imgs[i]).decode()}})
+    item_schema = dict(SCHEMA, properties=dict(SCHEMA["properties"], n={"type": "INTEGER"}), required=SCHEMA["required"] + ["n"])
+    body = {"contents": [{"role": "user", "parts": parts}],
+            "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
+                                 "responseSchema": {"type": "OBJECT", "properties": {"results": {"type": "ARRAY", "items": item_schema}},
+                                                    "required": ["results"]}}}
+    j = _gemini(body)
+    if not j:
+        return out
+    res = j.get("results") or []
+    if len(res) != len(idx):
+        log(f"réponse incomplète ({len(res)}/{len(idx)}), lot ignoré")
+        return out
+    by_n = {r.get("n"): r for r in res}
+    for n, i in enumerate(idx, 1):
+        r = by_n.get(n)
+        if r is not None:
+            out[i] = _verdict(r)
+    return out
+
+
+def vision_ok(thumb_url, label):
+    """True / False, ou None si l'IA est indisponible (on ne tranche pas)."""
+    return vision_batch([(thumb_url, label)])[0]
 
 
 def score_title(title, model_name, brand_name):
@@ -321,20 +364,24 @@ def main():
         cands.sort(key=lambda t: (1 if back.search(t) else 0, -score_title(t, m["name"], bname)))
         infos = commons_info(cands[:10])
         ccats = categories(cands[:10])
+        ok = []
         for t in cands[:10]:
             info = infos.get(t)
             if checked.get(t) is False or checked.get(f"{t}::{m['name']}") is False or not photo_ok(info) or looks_interior(t, ccats.get(t)):
                 continue
             if checked.get(t) == CHECK_V:
                 return info  # déjà validée avec les critères stricts : pas besoin de redemander à l'IA
-            v = vision_ok(info["thumb"], f"{bname} {m['name']}")
+            ok.append((t, info))
+        # Un seul appel IA pour juger jusqu'à 6 candidates ; on garde la première validée (les mieux classées d'abord).
+        ok = ok[:6]
+        verdicts = vision_batch([(info["thumb"], f"{bname} {m['name']}") for _, info in ok])
+        for (t, info), v in zip(ok, verdicts):
             if v is False:
                 checked[f"{t}::{m['name']}"] = False  # refusée pour CE modèle (elle peut convenir à un autre)
-                continue
-            if v is None:
-                return None  # l'IA n'a pas pu répondre (quota, erreur) : on n'accepte jamais une photo non vérifiée
-            return info
-        return None
+        for (t, info), v in zip(ok, verdicts):
+            if v is True:
+                return info
+        return None  # aucune validée par l'IA (ou IA indisponible) : jamais de photo non vérifiée
 
     def apply(f, bname, m, info, reason):
         old = base_title(m.get("imageUrl"))
@@ -402,7 +449,8 @@ def main():
         if out_of_time():
             break
         batch = pending[i:i + 24]
-        verdicts = list(pool.map(lambda e: vision_ok(e[2]["imageUrl"], f"{e[1]} {e[2]['name']}"), batch))
+        chunks = [batch[k:k + BATCH] for k in range(0, len(batch), BATCH)]
+        verdicts = [v for vs in pool.map(lambda ch: vision_batch([(e[2]["imageUrl"], f"{e[1]} {e[2]['name']}") for e in ch]), chunks) for v in vs]
         for (f, bname, m), v in zip(batch, verdicts):
             t = base_title(m["imageUrl"])
             if v is None:
