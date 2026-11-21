@@ -1,67 +1,44 @@
 # Contrôle des photos
 
-{"remplacées": 10, "masquées": 1, "validées": 56, "rejetées_ia": 11, "retrouvées": 52} · appels IA: 150 · restant à valider: 6456 · sans photo: 330
+{"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0, "retrouvées": 40} · appels IA: 40 · restant à valider: 6457 · sans photo: 255
 
-- Alfa Romeo 6 (sans photo) → File:Alfa Romeo 6 first series.jpg
-- BMW 3 Series GT (sans photo) → File:Moscow, BMW F34 (3 series GT) black Oct 2026 01.jpg
-- Hyundai Centennial (Equus) (sans photo) → File:Hyundai Centennial front 20080302.jpg
-- Nissan 180 SX (sans photo) → File:Nissan 180 SX (1992) (53776754943).jpg
-- Nissan 400Z (sans photo) → File:Nissan 400Z 3.0 Premium V6 2025 (1).jpg
-- Nissan Expert (sans photo) → File:NISSAN EXPERT (cropped).jpg
-- Nissan March (Micra) (sans photo) → File:Nissan March GX 3171-FJ front 20200127.jpg
-- Nissan Primera (sans photo) → File:Nissan Primera front 20080102.jpg
-- SEAT 133 (sans photo) → File:Seat 133 Oviedo.jpg
-- SEAT 1500 (sans photo) → File:1970 Seat 1500 'bifaro' (6523147173).jpg
-- SEAT Alhambra (sans photo) → File:Seat Alhambra Style (II, Facelift) – f 20052021.jpg
-- SEAT Altea (sans photo) → File:2007 SEAT Altea Reference TDi 1.9 Front.jpg
-- SEAT Arona (sans photo) → File:2018 SEAT Arona SE Technology TSi 1.0 Front (1).jpg
-- SEAT Arosa (sans photo) → File:2002 SEAT Arosa 1.0 Front.jpg
-- SEAT Cordoba (sans photo) → File:2003 SEAT Cordoba S 1.4 Front (1).jpg
-- SEAT el-Born (Concept) (sans photo) → File:Seat el-Born Concept (48771252463).jpg
-- SEAT Exeo (sans photo) → File:2011 SEAT Exeo Sport Tech CR TDi 168 2.0 Front.jpg
-- SEAT Fura (sans photo) → File:Seat Fura CL five-door.jpg
-- SEAT Ibiza (sans photo) → File:2018 SEAT Ibiza SE Technology MPi 1.0 Front.jpg
-- SEAT Inca (sans photo) → File:2002 SEAT Inca SDi 1.9 Front.jpg
-- SEAT Leon (sans photo) → File:2020 SEAT Leon FR TSi Evo 1.5 Front.jpg
-- SEAT Marbella (sans photo) → File:Seat Marbella front 20071012.jpg
-- SEAT Málaga (sans photo) → File:SEAT Malaga GLX Must.jpg
-- SEAT Ronda (sans photo) → File:Seat Ronda Front.jpg
-- SEAT Tarraco (sans photo) → File:2019 SEAT Tarraco SE Tech TDi 4Drive SA 2.0 Front.jpg
-- SEAT Terra (sans photo) → File:Seat Terra Diesel closed 1983-1995 frontleft 2008-04-11 U.jpg
-- SEAT Toledo (sans photo) → File:2014 Seat Toledo 1.6 TDI front view.jpg
-- SEAT Trans (sans photo) → File:SEAT Trans quimica.jpg
-- Subaru Dias Wagon (sans photo) → File:Subaru DIAS WAGON LS (S321) front.JPG
-- Subaru Traviq (sans photo) → File:Subaru TRAVIQ S Package (XM220) front.JPG
-- Suzuki Reno (Rebadged Daewoo Lacetti) (sans photo) → File:Suzuki-Reno-front.jpg
-- Suzuki XL6 (sans photo) → File:Maruti Suzuki XL6 (front).jpg
-- Toyota 1000 (sans photo) → File:Toyota 1000 (Publica) NL.jpg
-- Toyota 2000GT (sans photo) → File:TOYOTA 2000GT.jpg
-- Toyota 4Runner (sans photo) → File:2025 Toyota 4Runner TRD Sport in Wind Chill Pearl, front right, 2025-05-18.jpg
-- Toyota Allex (sans photo) → File:2004-2006 Toyota Allex.jpg
-- Toyota Allion (sans photo) → File:2021 FAW-Toyota Allion (front).jpg
-- Toyota Alphard (sans photo) → File:2018-2023 Toyota Alphard X.jpg
-- Toyota Altezza (Lexus IS JDM) (sans photo) → File:Toyota Altezza 001.jpg
-- Toyota Aqua (Prius C) (sans photo) → File:2017-2021 Toyota Aqua.jpg
-- Toyota Aristo V (sans photo) → File:1991-1997 Toyota Aristo (JZS147) V sedan (24945209512).jpg
-- Toyota Aurion (sans photo) → File:2015 Toyota Aurion (GSV50R) AT-X sedan (2015-07-06) 01.jpg
-- Toyota Avalon (sans photo) → File:2019 Toyota Avalon XSE in Ruby Flare Pearl, Front Right, 09-05-2022.jpg
-- Toyota Avanza (sans photo) → File:2022 Toyota Avanza 1.5 G Toyota Safety Sense W101RE (20220403).jpg
-- Toyota Avensis (sans photo) → File:2011 Toyota Avensis in Aspen Grey, front left, 06-06-2025.jpg
-- Toyota Avensis Verso (Ipsum) (sans photo) → File:2003-2010 Toyota Avensis Verso (ACM21R) GLX wagon (2011-07-17).jpg
-- Toyota Aygo X (sans photo) → File:2022 Toyota Aygo X Edge 1.0 VVT-i (Front).jpg
-- Toyota bB (sans photo) → File:2008 Toyota bB 01.jpg
-- Toyota Belta (Yaris Sedan) (sans photo) → File:2005 Toyota Belta 01.jpg
-- Toyota Blade (sans photo) → File:Toyota-blade 20061221.jpg
-- Toyota Blizzard (sans photo) → File:1985 Toyota Blizzard soft-top (LD20).JPG
-- Toyota Brevis (sans photo) → File:Toyota Brevis 02.jpg
-- Dodge Viper SRT10 (2008–2010) (refusée par l'IA) → File:Dodge Viper SRT10 (2008–2010) Retro Classics 2024 IMG 9168.jpg
-- DS DS 4 (refusée par l'IA) → File:DS 4 E-Tense IMG 7454.jpg
-- DS DS 7 (refusée par l'IA) → File:DS 7 (2022) DSC 2683 (cropped).jpg
-- DS DS 8 (refusée par l'IA) → File:DS No 8 Classic-Gala 2025 DSC 0771 (retouched).jpg
-- DS DS E-TENSE (refusée par l'IA) → File:DS X E-Tense, Paris Motor Show 2018, Paris (1Y7A1456).jpg
-- DS 9 (refusée par l'IA) → File:DS 9 002.jpg
-- DS No. 8 (refusée par l'IA) → File:DS No 8 Classic-Gala 2025 DSC 0773.jpg
-- Ferrari 375 America (refusée par l'IA) → File:1954 Ferrari 375 America Vignale Cabriolet.jpg
-- Ferrari 400 GT (refusée par l'IA) → masqué, aucune photo fiable
-- Ferrari 412 (refusée par l'IA) → File:1995 Ferrari 412 T2 front.jpg
-- Ferrari Amalfi (Concept) (refusée par l'IA) → File:Ferrari Amalfi IMG 8179.jpg
+- Toyota Estima (Previa) (sans photo) → File:2016 Toyota Estima.jpg
+- Toyota Estima Emina (sans photo) → File:Toyota Estima Emina 001.JPG
+- Toyota Estima Hybrid (sans photo) → File:2008 Toyota Estima-hybrid 02.jpg
+- Toyota Etios (sans photo) → File:2013 Toyota Etios Valco E (Indonesia) front view.jpg
+- Toyota EXiV (sans photo) → File:1996 Toyota Corona EXiV 200GT silver front.jpg
+- Toyota Fine-Comfort Ride (Concept) (sans photo) → File:Toyota Fine-Comfort Ride Concept Genf 2018.jpg
+- Toyota FJ Cruiser (sans photo) → File:2011 Toyota FJ Cruiser (GSJ15R) wagon (2011-11-08) 01.jpg
+- Toyota Fortuner (sans photo) → File:2015 Toyota Fortuner (New Zealand).jpg
+- Toyota Frontlander (sans photo) → File:TOYOTA FRONTLANDER (TOYOTA COROLLA CROSS) China (12).jpg
+- Toyota Funcargo (Yaris Verso) (sans photo) → File:Black Toyota FunCargo XP20.jpg
+- Toyota Gaia (sans photo) → File:Toyota Gaia 1998 (cropped).jpg
+- Toyota GR86 (sans photo) → File:2022 Toyota GR86 Premium in Halo, Front Right, 04-10-2022.jpg
+- Toyota Grand Hiace (sans photo) → File:Toyota Grand Hiace CH10 001.JPG
+- Toyota Grand Highlander (sans photo) → File:2026 Toyota Grand Highlander Hybrid XLE in Wind Chill Pearl, front left, 07-10-2026.jpg
+- Toyota Granvia (sans photo) → File:Toyota Granvia 002.jpg
+- Toyota Harrier (Lexus RX) (sans photo) → File:1999 Lexus RX300 as Toyota Harrier.jpg
+- Toyota HiAce (sans photo) → File:2020 Toyota HiAce (front).jpg
+- Toyota Hilux (sans photo) → File:2016 Toyota HiLux Invincible D-4D 4WD 2.4 Front.jpg
+- Toyota Innova (sans photo) → File:Toyota Innova Zenix 2.0 V (III) – f 22032025.jpg
+- Toyota iQ (sans photo) → File:Toyota iQ 01.JPG
+- Toyota Isis (sans photo) → File:2004 Toyota Isis.jpg
+- Toyota ist (sans photo) → File:Toyota ist 1.3F (UA-NCP60) front.JPG
+- Toyota Izoa (C-HR) (sans photo) → File:TOYOTA IZOA (TOYOTA C-HR) China.jpg
+- Toyota Kluger (Highlander) (sans photo) → File:TOYOTA HIGHLANDER HYBRID (XU70) & TOYOTA CROWN KLUGER HYBRID.jpg
+- Toyota Land Cruiser (sans photo) → File:2021 Toyota Land Cruiser 300 3.4 ZX (Colombia) front view 04.png
+- Toyota Land Cruiser Prado (sans photo) → File:Toyota Land Cruiser Prado, Baku (P1090223).jpg
+- Toyota Levin (sans photo) → File:TOYOTA LEVIN GT China.jpg
+- Toyota LiteAce (sans photo) → File:Toyota Liteace Super 1996 (15792191752).jpg
+- Toyota Mark II (sans photo) → File:Toyota MARK II BLIT 2.5iR-S (TA-JZX110W) front.jpg
+- Toyota Mark II Blit (sans photo) → File:2006 Toyota Mark II Blit 01.jpg
+- Toyota Mark X (sans photo) → File:Toyota MARK X 250S (DBA-GRX130-AETSH) (cropped).jpg
+- Toyota Mark X GR (sans photo) → File:Toyota MARK X 250S"GR SPORT" (DBA-GRX130-VLJBTS).jpg
+- Toyota MasterAce Surf (sans photo) → File:Toyota MasterAce Surf Grand Saloon YR21G.jpg
+- Toyota Matrix (sans photo) → File:2009 Toyota Matrix (E140).jpg
+- Toyota Mega Cruiser (sans photo) → File:JASDF Toyota Mega Cruiser(45-5910) left front view at Hamamatsu Air Base October 20, 2019 01.jpg
+- Toyota Mirai (sans photo) → File:Toyota Mirai (JPD20) IMG 5303.jpg
+- Toyota MR2 (sans photo) → File:1985 Toyota MR2.jpg
+- Toyota MR2 AW11 (sans photo) → File:Toyota MR2 AW11 white.jpg
+- Toyota MR2 Supercharged (sans photo) → File:1987 Toyota MR2 Supercharged (33518).jpg
+- Toyota MR2 SW20 (sans photo) → File:2000 Toyota MR2 SW20 EU Rev5 orange mica top side view.jpg
