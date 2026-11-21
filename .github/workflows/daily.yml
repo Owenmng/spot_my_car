@@ -12,6 +12,9 @@ on:
       vision_max:
         description: "Nombre max de vérifications IA pour ce lancement"
         default: '1800'
+      vision_models:
+        description: "Modèles Gemini à utiliser (vide = tous, ceux de l'appli en dernier)"
+        default: ''
 
 permissions:
   contents: write
@@ -43,6 +46,7 @@ jobs:
           BUDGET_MIN: '190'
           VISION_MAX: ${{ inputs.vision_max || '1800' }}
           MISSING_MAX: '150'
+          VISION_MODELS: ${{ inputs.vision_models }}
         run: python3 -u tool/fix_images.py
       - name: Commit et nouvelle version
         if: always()
