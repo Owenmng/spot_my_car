@@ -22,7 +22,7 @@ START = time.time()
 CHECKED_PATH = "tool/reports/vision_checked.json"
 RETRY_PATH = "tool/reports/photo_retry.json"  # modèles sans photo : date du dernier essai
 MISSING_MAX = int(os.environ.get("MISSING_MAX", "80"))  # modèles sans photo retentés par exécution
-RETRY_DAYS = 7
+RETRY_DAYS = 2  # jusqu’à la fin du chantier photos (28/11), puis 7
 
 opts = open("lib/firebase_options.dart").read()
 android = opts[opts.index("android"):]
