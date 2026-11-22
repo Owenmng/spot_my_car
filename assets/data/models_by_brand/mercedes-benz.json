@@ -67,7 +67,7 @@
   {
    "id": "mercedes-benz_190",
    "name": "190 (W201)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/MB_190_SL_am_2006-07-16_%28ret_kl%29.JPG/1280px-MB_190_SL_am_2006-07-16_%28ret_kl%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Mercedes-Benz_W201_190_E_3.2_AMG_Classic-Gala_2021_1X7A0108.jpg/1280px-Mercedes-Benz_W201_190_E_3.2_AMG_Classic-Gala_2021_1X7A0108.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - 1993",
    "puissance_ch": 122,
    "vitesse_max_kmh": 195,
@@ -92,14 +92,14 @@
     "motor vehicle",
     "four-door"
    ],
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:MB_190_SL_am_2006-07-16_(ret_kl).JPG"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W201_190_E_3.2_AMG_Classic-Gala_2021_1X7A0108.jpg"
   },
   {
    "id": "mercedes-benz_190_sl",
    "name": "190 SL",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Mercedes-Benz_190_SL_%28W121_BII%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Mercedes-Benz_190_SL%2C_TC_24%2C_Essen_%28TCE43355%29.jpg/1280px-Mercedes-Benz_190_SL%2C_TC_24%2C_Essen_%28TCE43355%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1955 - 1963",
    "puissance_ch": 105,
    "vitesse_max_kmh": 170,
@@ -126,9 +126,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Garitzko",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_190_SL_(W121_BII).jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_190_SL,_TC_24,_Essen_(TCE43355).jpg"
   },
   {
    "id": "mercedes-benz_w187",
@@ -164,7 +164,7 @@
   {
    "id": "mercedes-benz_w180",
    "name": "220 S 'Ponton' (W180)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/2026_Mercedes-Benz_V223_IMG_7632.jpg/1280px-2026_Mercedes-Benz_V223_IMG_7632.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mercedes_220_S_%E2%80%9CPonton%E2%80%9D_%28W180%29._%2855070450021%29.jpg/1280px-Mercedes_220_S_%E2%80%9CPonton%E2%80%9D_%28W180%29._%2855070450021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1954 - 1959",
    "puissance_ch": 100,
    "vitesse_max_kmh": 160,
@@ -189,9 +189,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Txemari. (Navarra). from Navarra, España",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Mercedes-Benz_V223_IMG_7632.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_220_S_%E2%80%9CPonton%E2%80%9D_(W180)._(55070450021).jpg"
   },
   {
    "id": "mercedes-benz_220_se",
@@ -228,7 +228,7 @@
   {
    "id": "mercedes-benz_230_sl",
    "name": "230 SL (W113)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Mercedes-AMG_SL_43_IMG_8050.jpg/1280px-Mercedes-AMG_SL_43_IMG_8050.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Mercedes-Benz_W113_230_SL_0417RM0294.jpg/1280px-Mercedes-Benz_W113_230_SL_0417RM0294.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1963 - 1967",
    "puissance_ch": 150,
    "vitesse_max_kmh": 200,
@@ -255,9 +255,9 @@
     "car",
     "vehicle"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Ermell",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_SL_43_IMG_8050.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W113_230_SL_0417RM0294.jpg"
   },
   {
    "id": "mercedes-benz_250_ce",
@@ -389,7 +389,7 @@
   {
    "id": "mercedes-benz_w188",
    "name": "300 S (W188)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG/1280px-Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Mercedes-Benz_300_S_Cabriolet_A_%28W188%2C_1952%29_%2852868078107%29.jpg/1280px-Mercedes-Benz_300_S_Cabriolet_A_%28W188%2C_1952%29_%2852868078107%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1951 - 1958",
    "puissance_ch": 150,
    "vitesse_max_kmh": 175,
@@ -414,9 +414,9 @@
     "motor vehicle",
     "post-war car"
    ],
-   "imageCredit": "Bahnfrend",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fox_Classic_Car_Collection,_2008_(02).JPG"
+   "imageCredit": "Charles from Port Chester, New York",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_S_Cabriolet_A_(W188,_1952)_(52868078107).jpg"
   },
   {
    "id": "mercedes-benz_w191",
@@ -554,7 +554,6 @@
   {
    "id": "mercedes-benz_300-slr",
    "name": "300 SLR Uhlenhaut Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Mercedes-Benz_SLR_McLaren_%288615164079%29.jpg/1280px-Mercedes-Benz_SLR_McLaren_%288615164079%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1955",
    "puissance_ch": 302,
    "vitesse_max_kmh": 290,
@@ -579,10 +578,7 @@
     "vehicle",
     "land vehicle",
     "collectible car"
-   ],
-   "imageCredit": "Alexandre Prévot from Nancy, France",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLR_McLaren_(8615164079).jpg"
+   ]
   },
   {
    "id": "mercedes-benz_350_sl",
@@ -850,7 +846,7 @@
   {
    "id": "mercedes-benz_w150",
    "name": "770K (W150)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mercedes-Benz_770K_%28W150%29_of_Adolf_Hitler_-_Auto_%26_Technik_MUSEUM_SINSHEIM_%2890%29_%287090349879%29.jpg/1280px-Mercedes-Benz_770K_%28W150%29_of_Adolf_Hitler_-_Auto_%26_Technik_MUSEUM_SINSHEIM_%2890%29_%287090349879%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_W150-770K_1938_LFront_SATM_05June2013_%2814577676766%29.jpg/1280px-Mercedes_W150-770K_1938_LFront_SATM_05June2013_%2814577676766%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1938 - 1943",
    "puissance_ch": 230,
    "vitesse_max_kmh": 160,
@@ -877,9 +873,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Technik Museum Sinsheim und Speyer",
+   "imageCredit": "Valder137",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_770K_(W150)_of_Adolf_Hitler_-_Auto_%26_Technik_MUSEUM_SINSHEIM_(90)_(7090349879).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_W150-770K_1938_LFront_SATM_05June2013_(14577676766).jpg"
   },
   {
    "id": "mercedes-benz_a-class",
@@ -980,7 +976,7 @@
   {
    "id": "mercedes-benz_citan",
    "name": "Citan",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/2016_Mercedes-Benz_Citan_109_CDi_BlueEFFICIENCY_1.5.jpg/1280px-2016_Mercedes-Benz_Citan_109_CDi_BlueEFFICIENCY_1.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2023_Mercedes-Benz_Citan_Premium_111_CDi_-_1461cc_1.5_%2895PS%29_Diesel_-_Loparite_Black_-_02-2024%2C_Front.jpg/1280px-2023_Mercedes-Benz_Citan_Premium_111_CDi_-_1461cc_1.5_%2895PS%29_Diesel_-_Loparite_Black_-_02-2024%2C_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - Aujourd'hui",
    "puissance_ch": 131,
    "vitesse_max_kmh": 183,
@@ -1006,9 +1002,9 @@
     "mercedes citan",
     "renault citan"
    ],
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Mercedes-Benz_Citan_109_CDi_BlueEFFICIENCY_1.5.jpg"
+   "imageCredit": "Harvey Bold",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Mercedes-Benz_Citan_Premium_111_CDi_-_1461cc_1.5_(95PS)_Diesel_-_Loparite_Black_-_02-2024,_Front.jpg"
   },
   {
    "id": "mercedes-benz_cl",
@@ -1633,7 +1629,6 @@
   {
    "id": "mercedes-benz_fintail",
    "name": "Fintail (W110)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/300_SE_Heckansicht.jpg/1280px-300_SE_Heckansicht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1961 - 1968",
    "puissance_ch": 80,
    "vitesse_max_kmh": 150,
@@ -1657,15 +1652,12 @@
     "vehicle",
     "motor vehicle",
     "1960s car"
-   ],
-   "imageCredit": "nordhorst",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:300_SE_Heckansicht.jpg"
+   ]
   },
   {
    "id": "mercedes-benz_eqg",
    "name": "G 580 with EQ Technology",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Mercedes-Benz_W463_G_350_BlueTEC_01.jpg/1280px-Mercedes-Benz_W463_G_350_BlueTEC_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg/1280px-Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2024 - Aujourd'hui",
    "puissance_ch": 587,
    "vitesse_max_kmh": 180,
@@ -1691,9 +1683,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Julian Herzog (Website)",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W463_G_350_BlueTEC_01.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg"
   },
   {
    "id": "mercedes-benz_g-class",
@@ -1765,7 +1757,7 @@
   {
    "id": "mercedes-benz_gl",
    "name": "GL-Class",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Mercedes-Maybach_GLS600_%28Facelift%29_IMG_0302_%28cropped%29.jpg/1280px-Mercedes-Maybach_GLS600_%28Facelift%29_IMG_0302_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/MERCEDES-BENZ_GL-CLASS_%28X164%29_China.jpg/1280px-MERCEDES-BENZ_GL-CLASS_%28X164%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2015",
    "puissance_ch": 388,
    "vitesse_max_kmh": 240,
@@ -1792,9 +1784,9 @@
     "seven-seater",
     "three-row suv"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Maybach_GLS600_(Facelift)_IMG_0302_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MERCEDES-BENZ_GL-CLASS_(X164)_China.jpg"
   },
   {
    "id": "mercedes-benz_gla",
@@ -2506,7 +2498,7 @@
   {
    "id": "mercedes-benz_vision-6",
    "name": "Vision Mercedes-Maybach 6 (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Mercedes-Benz_Vans%2C_IAA_2026%2C_Hanover_%2820260914-P1086822%29.jpg/1280px-Mercedes-Benz_Vans%2C_IAA_2026%2C_Hanover_%2820260914-P1086822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mercedes-Benz_Vision_Maybach_6_Cabriolet_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2016",
    "puissance_ch": 750,
    "vitesse_max_kmh": 250,
@@ -2533,9 +2525,9 @@
     "ev",
     "concept vehicle"
    ],
-   "imageCredit": "Matti Blume",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Vans,_IAA_2026,_Hanover_(20260914-P1086822).jpg"
+   "imageCredit": "Rutger van der Maar",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Vision_Maybach_6_Cabriolet_Concept.jpg"
   },
   {
    "id": "mercedes-benz_vito",
@@ -3049,12 +3041,12 @@
   {
    "id": "mercedes-benz_w18",
    "name": "W18",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Wuestenrot-Finsterrot_Festzug_20110710_097.jpg/1280px-Wuestenrot-Finsterrot_Festzug_20110710_097.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Mercedes_W18_290_A_Cabriolet_1935.jpg/1280px-Mercedes_W18_290_A_Cabriolet_1935.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "User:Rosenzweig",
+   "imageCredit": "Lebubu93",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Wuestenrot-Finsterrot_Festzug_20110710_097.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_W18_290_A_Cabriolet_1935.jpg"
   },
   {
    "id": "mercedes-benz_w10",
@@ -3079,12 +3071,12 @@
   {
    "id": "mercedes-benz_sauber-c9",
    "name": "Sauber C9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Sauber_C9_1989.jpg/1280px-Sauber_C9_1989.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Paris_-_Retromobile_2012_-_Sauber_Mercedes_C9_-_1989_-_015.jpg/1280px-Paris_-_Retromobile_2012_-_Sauber_Mercedes_C9_-_1989_-_015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "UltimateEditor",
+   "imageCredit": "Thesupermat",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Sauber_C9_1989.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_Retromobile_2012_-_Sauber_Mercedes_C9_-_1989_-_015.jpg"
   },
   {
    "id": "mercedes-benz_glk-class",
@@ -3509,14 +3501,14 @@
   {
    "id": "mercedes-benz_clr",
    "name": "CLR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Mercedes-Benz_CLR_2009_Nurburgring.jpg/1280px-Mercedes-Benz_CLR_2009_Nurburgring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Mercedes-Benz_CLR_und_Sauber_Mercedes_C9_%2853238462734%29.jpg/1280px-Mercedes-Benz_CLR_und_Sauber_Mercedes_C9_%2853238462734%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4893 x 1999 x 1010",
    "poids_kg": 914,
-   "imageCredit": "Marc Oliver John from Wachtberg, Deutschland",
+   "imageCredit": "Thomas Vogt from Paderborn, Deutschland",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLR_2009_Nurburgring.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLR_und_Sauber_Mercedes_C9_(53238462734).jpg"
   },
   {
    "id": "mercedes-benz_c216",
@@ -3749,12 +3741,12 @@
   {
    "id": "mercedes-benz_w150-2",
    "name": "W150",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/1939_Mercedes_Benz_770K_%2831468249550%29.jpg/1280px-1939_Mercedes_Benz_770K_%2831468249550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Mercedes-Benz_W150_Cabriolet_F_%28The_Loh_Collection%29_2.jpg/1280px-Mercedes-Benz_W150_Cabriolet_F_%28The_Loh_Collection%29_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Tony Hisgett from Birmingham, UK",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1939_Mercedes_Benz_770K_(31468249550).jpg"
+   "imageCredit": "MarcelBuehner",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W150_Cabriolet_F_(The_Loh_Collection)_2.jpg"
   },
   {
    "id": "mercedes-benz_type-204",
@@ -4155,13 +4147,9 @@
   {
    "id": "mercedes-benz_benz-29-60-ps",
    "name": "Benz 29/60 PS",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Russia_Grand_Prix_1913_Suvorin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4700 x 1720 x 2200",
-   "imageCredit": "unknown",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Russia_Grand_Prix_1913_Suvorin.jpg"
+   "dimensions_lwh_mm": "4700 x 1720 x 2200"
   },
   {
    "id": "mercedes-benz_benz-8-20-ps",
@@ -4435,12 +4423,12 @@
   {
    "id": "mercedes-benz_c215-amg",
    "name": "C215 AMG",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Mercedes_Benz_AMG_CL_at_Legendy_2018_in_Prague.jpg/1280px-Mercedes_Benz_AMG_CL_at_Legendy_2018_in_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Mercedes-Benz_C215_CL_63_AMG_1X7A6698.jpg/1280px-Mercedes-Benz_C215_CL_63_AMG_1X7A6698.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Jiří Sedláček",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_AMG_CL_at_Legendy_2018_in_Prague.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C215_CL_63_AMG_1X7A6698.jpg"
   },
   {
    "id": "mercedes-benz_glc-43-x253",
@@ -4639,12 +4627,8 @@
   {
    "id": "mercedes-benz_w08",
    "name": "W08",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Mercedes_Benz_W_08_Sportroadster_front_20110611.jpg/1280px-Mercedes_Benz_W_08_Sportroadster_front_20110611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Rudolf Stricker",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_W_08_Sportroadster_front_20110611.jpg"
+   "tags": []
   },
   {
    "id": "mercedes-benz_w194",
@@ -4861,14 +4845,14 @@
   {
    "id": "mercedes-benz_w28",
    "name": "W28",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/MHV_MB_W28_170H_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Mercedes_Benz_170_H_Cabriolet_%28W28%29_%2826359435741%29.jpg/1280px-Mercedes_Benz_170_H_Cabriolet_%28W28%29_%2826359435741%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4200 x 1580 x 1600",
    "poids_kg": 1125,
-   "imageCredit": "MartinHansV",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:MHV_MB_W28_170H_01.jpg"
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_170_H_Cabriolet_(W28)_(26359435741).jpg"
   },
   {
    "id": "mercedes-benz_f1-w07-hybrid",

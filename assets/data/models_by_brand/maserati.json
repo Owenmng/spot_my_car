@@ -260,7 +260,7 @@
   {
    "id": "maserati_biturbo",
    "name": "Biturbo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Maserati_Biturbo_front_20080419.jpg/1280px-Maserati_Biturbo_front_20080419.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Maserati_Biturbo_titan_l.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1981 - 1994",
    "puissance_ch": 185,
    "vitesse_max_kmh": 215,
@@ -285,9 +285,9 @@
     "luxury car",
     "grand tourer"
    ],
-   "imageCredit": "Rudolf Stricker",
+   "imageCredit": "Wikimedia Commons",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Maserati_Biturbo_front_20080419.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Maserati_Biturbo_titan_l.jpg"
   },
   {
    "id": "maserati_bora",
@@ -894,7 +894,7 @@
   {
    "id": "maserati_mc12_corsa",
    "name": "MC12 Corsa",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/MC12._%285234528513%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Maserati_MC12_Corsa_%2815314416011%29.jpg/1280px-Maserati_MC12_Corsa_%2815314416011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006",
    "puissance_ch": 755,
    "vitesse_max_kmh": 326,
@@ -919,9 +919,9 @@
     "luxury car",
     "track car"
    ],
-   "imageCredit": "Damian Morys from New York City, United States",
+   "imageCredit": "Axion23",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:MC12._(5234528513).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Maserati_MC12_Corsa_(15314416011).jpg"
   },
   {
    "id": "maserati_mc20",

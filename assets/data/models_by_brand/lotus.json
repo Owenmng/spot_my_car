@@ -163,7 +163,7 @@
   {
    "id": "lotus_elan_s1",
    "name": "Elan S1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Four_Elans.jpg/1280px-Four_Elans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/1964_Lotus_Elan_S1.jpg/1280px-1964_Lotus_Elan_S1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1962 - 1965",
    "puissance_ch": 100,
    "vitesse_max_kmh": 180,
@@ -190,9 +190,9 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "SG2012 nakhon100 Brian Snelson Grenadille",
+   "imageCredit": "LotusElanS1",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Four_Elans.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Lotus_Elan_S1.jpg"
   },
   {
    "id": "lotus_elan_s2",
@@ -965,7 +965,6 @@
   {
    "id": "lotus_exige_s3",
    "name": "Exige S3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Lotus_Exige_S1%2C_Elise_S3%2C_Elise_S2%2C_Evora.jpg/1280px-Lotus_Exige_S1%2C_Elise_S3%2C_Elise_S2%2C_Evora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2015",
    "puissance_ch": 345,
    "vitesse_max_kmh": 274,
@@ -989,10 +988,7 @@
     "lotus",
     "exige",
     "s3"
-   ],
-   "imageCredit": "Handelsgeselschaft",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_Exige_S1,_Elise_S3,_Elise_S2,_Evora.jpg"
+   ]
   },
   {
    "id": "lotus_exige_sport_350",
@@ -1061,7 +1057,7 @@
   {
    "id": "lotus_theory-1",
    "name": "Theory 1 (Concept Render)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Lotus_Theory_1_001.jpg/1280px-Lotus_Theory_1_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Lotus_Theory_1%2C_IAA_2025%2C_Munich_%2820250909-P1050679%29.jpg/1280px-Lotus_Theory_1%2C_IAA_2025%2C_Munich_%2820250909-P1050679%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "Concept",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -1087,9 +1083,9 @@
     "sports car",
     "performance car"
    ],
-   "imageCredit": "JustAnotherCarDesigner",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_Theory_1_001.jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_Theory_1,_IAA_2025,_Munich_(20250909-P1050679).jpg"
   },
   {
    "id": "lotus_e20",
@@ -1134,12 +1130,12 @@
   {
    "id": "lotus_49",
    "name": "49",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Lotus_49-1.JPG/1280px-Lotus_49-1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Lotus_49-1_noBG.jpg/1280px-Lotus_49-1_noBG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Deep silence (Mikaël Restoux)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_49-1.JPG"
+   "imageCredit": "https://commons.wikimedia.org/wiki/User:Deep_silence",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_49-1_noBG.jpg"
   },
   {
    "id": "lotus_81",
@@ -1154,12 +1150,12 @@
   {
    "id": "lotus_76",
    "name": "76",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Lotus_76.jpg/1280px-Lotus_76.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Lotus_76_1974_003_noBG.jpg/1280px-Lotus_76_1974_003_noBG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Vakie81",
+   "imageCredit": "Charles from Port Chester, New York / Retusche & Freisteller von Auge=mit",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_76.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_76_1974_003_noBG.jpg"
   },
   {
    "id": "lotus_63",
@@ -1314,12 +1310,12 @@
   {
    "id": "lotus_24",
    "name": "24",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Lotus_24_2018_Silverstone_Classic_%2833154067588%29.jpg/1280px-Lotus_24_2018_Silverstone_Classic_%2833154067588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Lotus_24_at_Silverstone_Classic_2011.jpg/1280px-Lotus_24_at_Silverstone_Classic_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "https://www.flickr.com/photos/davehamster/",
+   "imageCredit": "David Merrett from Daventry, England",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_24_2018_Silverstone_Classic_(33154067588).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_24_at_Silverstone_Classic_2011.jpg"
   },
   {
    "id": "lotus_109",
@@ -1458,22 +1454,22 @@
   {
    "id": "lotus_94t",
    "name": "94T",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Lotus_94T_Mansell_Goodwood_2012.jpg/1280px-Lotus_94T_Mansell_Goodwood_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Lotus_94T_Mansell_Goodwood_2011.jpg/1280px-Lotus_94T_Mansell_Goodwood_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "jambox998",
+   "imageCredit": "Robert Knight",
    "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_94T_Mansell_Goodwood_2012.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_94T_Mansell_Goodwood_2011.jpg"
   },
   {
    "id": "lotus_107",
    "name": "107",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/H%C3%A4kkinen_British_GP_92.jpg/1280px-H%C3%A4kkinen_British_GP_92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Alessandro_Zanardi_-_Lotus_107_during_practice_for_the_1993_British_Grand_Prix_%2832873601273%29.jpg/1280px-Alessandro_Zanardi_-_Lotus_107_during_practice_for_the_1993_British_Grand_Prix_%2832873601273%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Martin Lee",
+   "imageCredit": "Martin Lee from London, UK",
    "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:H%C3%A4kkinen_British_GP_92.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alessandro_Zanardi_-_Lotus_107_during_practice_for_the_1993_British_Grand_Prix_(32873601273).jpg"
   },
   {
    "id": "lotus_88",
@@ -1488,12 +1484,12 @@
   {
    "id": "lotus_95t",
    "name": "95T",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mansell_Lotus_95T_Dallas_1984_F1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Lotus_95T_Classic-Days_2022_DSC_0141.jpg/1280px-Lotus_95T_Classic-Days_2022_DSC_0141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "twm1340",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mansell_Lotus_95T_Dallas_1984_F1.jpg"
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_95T_Classic-Days_2022_DSC_0141.jpg"
   },
   {
    "id": "lotus_91",
@@ -1640,12 +1636,12 @@
   {
    "id": "lotus_96t",
    "name": "96T",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Lotus_96T_front_2012_Goodwood_Festival_of_Speed.jpg/1280px-Lotus_96T_front_2012_Goodwood_Festival_of_Speed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lotus_96T_front_2012_Goodwood_Festival_of_Speed_retusche.jpg/1280px-Lotus_96T_front_2012_Goodwood_Festival_of_Speed_retusche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Edvvc",
+   "imageCredit": "Edvvc, derivative work Lämpel",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_96T_front_2012_Goodwood_Festival_of_Speed.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lotus_96T_front_2012_Goodwood_Festival_of_Speed_retusche.jpg"
   },
   {
    "id": "lotus_elise-gt1",
@@ -1752,12 +1748,8 @@
   {
    "id": "lotus_mark-iv",
    "name": "Mark IV",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/1959_Lotus_Seven_Series_1%2C_front_right.jpg/1280px-1959_Lotus_Seven_Series_1%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Mariegriffiths at English Wikipedia",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Lotus_Seven_Series_1,_front_right.jpg"
+   "tags": []
   },
   {
    "id": "lotus_esprit-s3-turbo",

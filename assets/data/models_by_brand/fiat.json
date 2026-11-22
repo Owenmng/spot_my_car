@@ -2631,7 +2631,7 @@
   {
    "id": "fiat_uno_turbo",
    "name": "Uno Turbo",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/2011_Fiat_Uno_1.4_Attractive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1987_Fiat_Uno_Turbo_i.e_%287581418152%29.jpg/1280px-1987_Fiat_Uno_Turbo_i.e_%287581418152%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1989",
    "puissance_ch": 118,
    "vitesse_max_kmh": 200,
@@ -2658,9 +2658,9 @@
     "group a",
     "sports car"
    ],
-   "imageCredit": "juan elo;Cropped and digitally altered by uploader Mr.choppers",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011_Fiat_Uno_1.4_Attractive.jpg"
+   "imageCredit": "Riley from Christchurch, New Zealand",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1987_Fiat_Uno_Turbo_i.e_(7581418152).jpg"
   },
   {
    "id": "fiat_viaggio",
@@ -2946,14 +2946,10 @@
   {
    "id": "fiat_8-hp",
    "name": "8 HP",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Fiat_8HP.jpg/1280px-Fiat_8HP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "2810 x 1450 x 1620",
-   "poids_kg": 1000,
-   "imageCredit": "tomislav medak",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_8HP.jpg"
+   "poids_kg": 1000
   },
   {
    "id": "fiat_brevetti",
@@ -3047,12 +3043,12 @@
   {
    "id": "fiat_nuova-campagnola",
    "name": "Nuova Campagnola",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/JPII_29_09_2004_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Benoit-XVI-Papamobile-Fiat-Nuova-Campagnola-Place-Saint-Pierre-Vatican.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Radomil",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:JPII_29_09_2004_1.JPG"
+   "imageCredit": "Nitro101",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Benoit-XVI-Papamobile-Fiat-Nuova-Campagnola-Place-Saint-Pierre-Vatican.jpg"
   },
   {
    "id": "fiat_punto-abarth",
@@ -3318,12 +3314,12 @@
   {
    "id": "fiat_titano",
    "name": "Titano",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Peugeot_Landtrek_1.9d_Turbo_Active_2023.jpg/1280px-Peugeot_Landtrek_1.9d_Turbo_Active_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2026_Fiat_Titano_Ranch_in_Argentina.jpg/1280px-2026_Fiat_Titano_Ranch_in_Argentina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "RL GNZLZ",
+   "imageCredit": "Elcondelvp",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Landtrek_1.9d_Turbo_Active_2023.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Fiat_Titano_Ranch_in_Argentina.jpg"
   },
   {
    "id": "fiat_bravo-brava",
@@ -3384,24 +3380,20 @@
   {
    "id": "fiat_1800-2100",
    "name": "1800/2100",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fiat_1800.JPG/1280px-Fiat_1800.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Fiat_1800-2100_Familiare_t%C3%ADpus%C3%BA_szem%C3%A9lyg%C3%A9pkocsi._Fortepan_18868.jpg/1280px-Fiat_1800-2100_Familiare_t%C3%ADpus%C3%BA_szem%C3%A9lyg%C3%A9pkocsi._Fortepan_18868.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1959",
    "tags": [],
-   "imageCredit": "Raf24",
+   "imageCredit": "FOTO:Fortepan — ID 18868: Adományozó/Donor: Drimbe József.",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_1800.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_1800-2100_Familiare_t%C3%ADpus%C3%BA_szem%C3%A9lyg%C3%A9pkocsi._Fortepan_18868.jpg"
   },
   {
    "id": "fiat_2800",
    "name": "2800",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/1406RomaFiat2800Quirinale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5300 x 1800 x 1768",
-   "poids_kg": 900,
-   "imageCredit": "Geobia",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1406RomaFiat2800Quirinale.jpg"
+   "poids_kg": 900
   },
   {
    "id": "fiat_tris",
@@ -3416,13 +3408,13 @@
   {
    "id": "fiat_500-hybrid",
    "name": "500 Hybrid",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Fiat-500-vorne2.jpg/1280px-Fiat-500-vorne2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Fiat_500_Hybrid_Torino_%28II%29_%E2%80%93_f_25042026.jpg/1280px-Fiat_500_Hybrid_Torino_%28II%29_%E2%80%93_f_25042026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3632 x 1683 x 1527",
-   "imageCredit": "Daniel Przygoda",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat-500-vorne2.jpg"
+   "imageCredit": "© M 93",
+   "imageLicense": "CC BY-SA 3.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_500_Hybrid_Torino_(II)_%E2%80%93_f_25042026.jpg"
   },
   {
    "id": "fiat_grizzly",
@@ -3773,12 +3765,8 @@
   {
    "id": "fiat_autobianchi-bianchina",
    "name": "Autobianchi Bianchina",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Autobianchi_Bianchina_Berlina_at_the_Old_Time_Show_in_Italy_%28edited%29.jpg/1280px-Autobianchi_Bianchina_Berlina_at_the_Old_Time_Show_in_Italy_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Original: Luc106 / Derivative work: Danyele",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Autobianchi_Bianchina_Berlina_at_the_Old_Time_Show_in_Italy_(edited).jpg"
+   "tags": []
   },
   {
    "id": "fiat_525",
@@ -3793,14 +3781,14 @@
   {
    "id": "fiat_autobianchi-a112",
    "name": "Autobianchi A112",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/1974_Autobianchi_A112_Elegant.jpg/1280px-1974_Autobianchi_A112_Elegant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Fiat120_TrojaPalace_N10._Autobianchi_A112%2C_1979.jpg/1280px-Fiat120_TrojaPalace_N10._Autobianchi_A112%2C_1979.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3230 x 1480 x 1360",
    "poids_kg": 670,
-   "imageCredit": "Corvettec6r",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1974_Autobianchi_A112_Elegant.jpg"
+   "imageCredit": "Stribrohorak",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat120_TrojaPalace_N10._Autobianchi_A112,_1979.jpg"
   },
   {
    "id": "fiat_519",
@@ -3857,13 +3845,13 @@
   {
    "id": "fiat_514",
    "name": "514",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Fiat_514_CA_Spider_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Fiat_514_L_2_Angoul%C3%AAme_2012.jpg/1280px-Fiat_514_L_2_Angoul%C3%AAme_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3920 x 1470 x 1660",
-   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageCredit": "JLPC",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_514_CA_Spider_1931.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_514_L_2_Angoul%C3%AAme_2012.jpg"
   },
   {
    "id": "fiat_ducato-first-generation",

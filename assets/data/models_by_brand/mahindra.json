@@ -127,12 +127,8 @@
   {
    "id": "mahindra_armada",
    "name": "Armada",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Mahindra_mini_truck_-_panoramio.jpg/1280px-Mahindra_mini_truck_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Suresh Babunair",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mahindra_mini_truck_-_panoramio.jpg"
+   "tags": []
   },
   {
    "id": "mahindra_quanto",

@@ -1748,7 +1748,7 @@
   {
    "id": "ferrari_f80",
    "name": "F80 (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/FerrariF80_%28resized%29_%282%29.jpg/1280px-FerrariF80_%28resized%29_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/2025_Ferrari_F80.jpg/1280px-2025_Ferrari_F80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "Concept",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -1773,9 +1773,9 @@
     "prototype",
     "grand tourer"
    ],
-   "imageCredit": "Pauls.127",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:FerrariF80_(resized)_(2).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Ferrari_F80.jpg"
   },
   {
    "id": "ferrari_ff",
@@ -3274,12 +3274,12 @@
   {
    "id": "ferrari_america",
    "name": "America",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/1951_Ferrari_340_America_%282%29.jpg/1280px-1951_Ferrari_340_America_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/1953_Ferrari_342_America_Coup%C3%A9_Pinin_Farina_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-1953_Ferrari_342_America_Coup%C3%A9_Pinin_Farina_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "JaseMan",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1951_Ferrari_340_America_(2).jpg"
+   "imageCredit": "Ank Kumar",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1953_Ferrari_342_America_Coup%C3%A9_Pinin_Farina_(Ank_Kumar,_Infosys_Limited)_02.jpg"
   },
   {
    "id": "ferrari_rossa-concept",
@@ -3481,12 +3481,8 @@
   {
    "id": "ferrari_f1-86",
    "name": "F1/86",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Alboreto_at_1986_Italian_Grand_Prix.jpg/1280px-Alboreto_at_1986_Italian_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Luigi Rosa from Pavia, Italy",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alboreto_at_1986_Italian_Grand_Prix.jpg"
+   "tags": []
   },
   {
    "id": "ferrari_375-mm",
@@ -3533,13 +3529,13 @@
   {
    "id": "ferrari_360-2",
    "name": "360",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Ferrari360.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ferrari_360%2C_BAS_24%2C_Brussels_%28P1170344-RR%29.jpg/1280px-Ferrari_360%2C_BAS_24%2C_Brussels_%28P1170344-RR%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "vitesse_max_kmh": 84,
-   "imageCredit": "Buttonfreak at Dutch Wikipedia",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari360.JPG"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_360,_BAS_24,_Brussels_(P1170344-RR).jpg"
   },
   {
    "id": "ferrari_f2012",
@@ -3584,12 +3580,12 @@
   {
    "id": "ferrari_246-f1",
    "name": "246 F1",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/FerrariPaddock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Ferrari_246_F1_front-left_Enzo_Ferrari_Museum.jpg/1280px-Ferrari_246_F1_front-left_Enzo_Ferrari_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Matthew Exley",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:FerrariPaddock.jpg"
+   "imageCredit": "Morio",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_246_F1_front-left_Enzo_Ferrari_Museum.jpg"
   },
   {
    "id": "ferrari_f10",
@@ -3668,12 +3664,12 @@
   {
    "id": "ferrari_sf90-2",
    "name": "SF90",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Formula_One_Test_Days_2019_-_Ferrari_SF90_-_Sebastian_Vettel.jpeg/1280px-Formula_One_Test_Days_2019_-_Ferrari_SF90_-_Sebastian_Vettel.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Ferrari_SF90_Spider_IMG_8856.jpg/1280px-Ferrari_SF90_Spider_IMG_8856.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Artes Max",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Formula_One_Test_Days_2019_-_Ferrari_SF90_-_Sebastian_Vettel.jpeg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_SF90_Spider_IMG_8856.jpg"
   },
   {
    "id": "ferrari_375-f1",
@@ -3874,12 +3870,12 @@
   {
    "id": "ferrari_410-superamerica",
    "name": "410 Superamerica",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/1959_Ferrari_410_Superamerica.jpg/1280px-1959_Ferrari_410_Superamerica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/1956_Ferrari_410_Superamerica_SuperFast_Prototype6.jpg/1280px-1956_Ferrari_410_Superamerica_SuperFast_Prototype6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Jagvar",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Ferrari_410_Superamerica.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1956_Ferrari_410_Superamerica_SuperFast_Prototype6.jpg"
   },
   {
    "id": "ferrari_f60",
@@ -3904,12 +3900,12 @@
   {
    "id": "ferrari_f2005",
    "name": "F2005",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Michael_Schumacher_2005_Britain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Ferrari_F2005_2018_Japanese_Grand_Prix_%2845632549731%29.jpg/1280px-Ferrari_F2005_2018_Japanese_Grand_Prix_%2845632549731%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Kevin Smith",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher_2005_Britain.jpg"
+   "imageCredit": "https://www.flickr.com/photos/78475089@N02/",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_F2005_2018_Japanese_Grand_Prix_(45632549731).jpg"
   },
   {
    "id": "ferrari_f93a",
@@ -3946,12 +3942,12 @@
   {
    "id": "ferrari_p",
    "name": "P",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Ferrari_330P4.JPG/1280px-Ferrari_330P4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/1963_Ferrari_275_P_HCC23.jpg/1280px-1963_Ferrari_275_P_HCC23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "LarryStevens",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_330P4.JPG"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Ferrari_275_P_HCC23.jpg"
   },
   {
    "id": "ferrari_sigma",

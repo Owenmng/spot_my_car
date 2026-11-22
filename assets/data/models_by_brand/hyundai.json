@@ -669,7 +669,7 @@
   {
    "id": "hyundai_h100",
    "name": "H100",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Abondoned_Hyundai_H100.jpg/1280px-Abondoned_Hyundai_H100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Hyundai_H100_FB_2018_%2820220430%29.jpg/1280px-Hyundai_H100_FB_2018_%2820220430%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 2004",
    "puissance_ch": 85,
    "vitesse_max_kmh": 140,
@@ -691,9 +691,9 @@
     "subcompact car",
     "economy car"
    ],
-   "imageCredit": "Goldenwabbit",
+   "imageCredit": "Ethan Llamas",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Abondoned_Hyundai_H100.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_H100_FB_2018_(20220430).jpg"
   },
   {
    "id": "hyundai_i10",
@@ -1557,7 +1557,7 @@
   {
    "id": "hyundai_scoupe",
    "name": "S-Coupe",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/2010_Hyundai_Genesis_Coupe_3_--_08-28-2009.jpg/1280px-2010_Hyundai_Genesis_Coupe_3_--_08-28-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_S_Coupe_hr_blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1990 - 1996",
    "puissance_ch": 88,
    "vitesse_max_kmh": 180,
@@ -1582,9 +1582,9 @@
     "automobile",
     "motor vehicle"
    ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Hyundai_Genesis_Coupe_3_--_08-28-2009.jpg"
+   "imageCredit": "Wikimedia Commons",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_S_Coupe_hr_blue.jpg"
   },
   {
    "id": "hyundai_santa-cruz",
@@ -1875,7 +1875,7 @@
   {
    "id": "hyundai_terracan",
    "name": "Terracan",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_Terracan_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Hyundai_Terracan_JX_250_2004_%281%29.jpg/1280px-Hyundai_Terracan_JX_250_2004_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001 - 2007",
    "puissance_ch": 163,
    "vitesse_max_kmh": 168,
@@ -1901,9 +1901,9 @@
     "used car",
     "terracan suv"
    ],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Terracan_front.jpg"
+   "imageCredit": "Ethan Llamas",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Terracan_JX_250_2004_(1).jpg"
   },
   {
    "id": "hyundai_trajet",
@@ -2360,12 +2360,12 @@
   {
    "id": "hyundai_blueon",
    "name": "BlueOn",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/20110402_hyundai_blueon_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/20110402_hyundai_blueon_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
    "imageCredit": "Chu",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:20110402_hyundai_blueon_1.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:20110402_hyundai_blueon_2.jpg"
   },
   {
    "id": "hyundai_i30-fd",
@@ -2401,12 +2401,12 @@
   {
    "id": "hyundai_solaris",
    "name": "Solaris",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Hyundai_Accent_GL_1.6_CRDi_2012_%2812295469326%29.jpg/1280px-Hyundai_Accent_GL_1.6_CRDi_2012_%2812295469326%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Hyundai_Solaris_-_Efremov%2C_Russia1.jpg/1280px-Hyundai_Solaris_-_Efremov%2C_Russia1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "order_242 from Chile",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Accent_GL_1.6_CRDi_2012_(12295469326).jpg"
+   "imageCredit": "Юрий Д.К.",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Solaris_-_Efremov,_Russia1.jpg"
   },
   {
    "id": "hyundai_nuvis",
@@ -2496,12 +2496,8 @@
   {
    "id": "hyundai_h300",
    "name": "H300",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hyundai_H300_%2849198473443%29.jpg/1280px-Hyundai_H300_%2849198473443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "crash71100",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_H300_(49198473443).jpg"
+   "tags": []
   },
   {
    "id": "hyundai_initium-2",
@@ -2516,12 +2512,12 @@
   {
    "id": "hyundai_elexio",
    "name": "Elexio",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hyundai_Elexio_001.jpg/1280px-Hyundai_Elexio_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Hyundai_Elexio_002.jpg/1280px-Hyundai_Elexio_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2025 - Aujourd'hui",
    "tags": [],
    "imageCredit": "JustAnotherCarDesigner",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Elexio_001.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Elexio_002.jpg"
   },
   {
    "id": "hyundai_ioniq-3",
