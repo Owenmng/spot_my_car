@@ -610,7 +610,7 @@
   {
    "id": "jeep_m715",
    "name": "M-715",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Kaiser-Jeep_M-715_%288650377962%29.jpg/1280px-Kaiser-Jeep_M-715_%288650377962%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Jeep_Kaiser_M-715_1964_%2814203155835%29.jpg/1280px-Jeep_Kaiser_M-715_1964_%2814203155835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1969",
    "puissance_ch": 145,
    "vitesse_max_kmh": 105,
@@ -637,9 +637,9 @@
     "land vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Spanish Coches",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Kaiser-Jeep_M-715_(8650377962).jpg"
+   "imageCredit": "order_242 from Chile",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Kaiser_M-715_1964_(14203155835).jpg"
   },
   {
    "id": "jeep_meridian",

@@ -615,7 +615,7 @@
   {
    "id": "ford_edsel",
    "name": "Edsel",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Edsel_Ford%27s_Model_40_Special_Speedster.jpg/1280px-Edsel_Ford%27s_Model_40_Special_Speedster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ford_Edsel_1959.jpg/1280px-Ford_Edsel_1959.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1958 - 1960",
    "puissance_ch": 303,
    "vitesse_max_kmh": 175,
@@ -640,9 +640,9 @@
     "classic car",
     "vintage car"
    ],
-   "imageCredit": "Jim Evans",
+   "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Edsel_Ford%27s_Model_40_Special_Speedster.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Edsel_1959.jpg"
   },
   {
    "id": "ford_elite",
@@ -774,7 +774,7 @@
   {
    "id": "ford_escort-rs-cosworth",
    "name": "Escort RS Cosworth",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Ford_Escort_RS2000_MkI.jpg/1280px-Ford_Escort_RS2000_MkI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Ford_Escort_RS_Cosworth%2C_40._ADAC_Stormarn_Rallye%2C_Luetjensee_%28TR256888%29.jpg/1280px-Ford_Escort_RS_Cosworth%2C_40._ADAC_Stormarn_Rallye%2C_Luetjensee_%28TR256888%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 1996",
    "puissance_ch": 227,
    "vitesse_max_kmh": 240,
@@ -800,9 +800,9 @@
     "car",
     "vehicle"
    ],
-   "imageCredit": "Brian Snelson from Hockley, Essex, England",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Escort_RS2000_MkI.jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Escort_RS_Cosworth,_40._ADAC_Stormarn_Rallye,_Luetjensee_(TR256888).jpg"
   },
   {
    "id": "ford_everest",
@@ -839,7 +839,7 @@
   {
    "id": "ford_evos",
    "name": "Evos",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Ford_Evos_IAA_2011.jpg/1280px-Ford_Evos_IAA_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Ford_Evos_009.jpg/1280px-Ford_Evos_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 238,
    "vitesse_max_kmh": 190,
@@ -863,9 +863,9 @@
     "plug-in hybrid",
     "sports utility vehicle"
    ],
-   "imageCredit": "Thomas Wolf, www.foto-tw.de",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Evos_IAA_2011.jpg"
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Evos_009.jpg"
   },
   {
    "id": "ford_excursion",
@@ -1028,7 +1028,7 @@
   {
    "id": "ford_f-150",
    "name": "F-150",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/2022_Ford_F-150_Lightning_Lariat_in_Atlas_Blue_Metallic%2C_Front_Right%2C_08-06-2022.jpg/1280px-2022_Ford_F-150_Lightning_Lariat_in_Atlas_Blue_Metallic%2C_Front_Right%2C_08-06-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ford_F-150_%28fourteenth_generation%29_Rutesheimer_Autoschau_2025_DSC_9231.jpg/1280px-Ford_F-150_%28fourteenth_generation%29_Rutesheimer_Autoschau_2025_DSC_9231.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1948 - Aujourd'hui",
    "puissance_ch": 405,
    "vitesse_max_kmh": 190,
@@ -1052,9 +1052,9 @@
     "work truck",
     "off-road truck"
    ],
-   "imageCredit": "Elise240SX",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Ford_F-150_Lightning_Lariat_in_Atlas_Blue_Metallic,_Front_Right,_08-06-2022.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_F-150_(fourteenth_generation)_Rutesheimer_Autoschau_2025_DSC_9231.jpg"
   },
   {
    "id": "ford_f-250-super-duty",
@@ -1188,7 +1188,6 @@
   {
    "id": "ford_f-series-f-250",
    "name": "F-Series F-250",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg/1280px-2018_Ford_F-150_XLT_Crew_Cab%2C_front_11.10.19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - 1999",
    "puissance_ch": 235,
    "vitesse_max_kmh": 160,
@@ -1212,10 +1211,7 @@
     "heavy duty",
     "work truck",
     "ford"
-   ],
-   "imageCredit": "Kevauto",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Ford_F-150_XLT_Crew_Cab,_front_11.10.19.jpg"
+   ]
   },
   {
    "id": "ford_fairlane",
@@ -1502,7 +1498,7 @@
   {
    "id": "ford_focus-rs",
    "name": "Focus RS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/2008_Ford_Focus_Zetec_TD_109_1.6_Front.jpg/1280px-2008_Ford_Focus_Zetec_TD_109_1.6_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ford_Focus_RS_Mk_II_IMG_2508.jpg/1280px-Ford_Focus_RS_Mk_II_IMG_2508.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2018",
    "puissance_ch": 350,
    "vitesse_max_kmh": 266,
@@ -1528,14 +1524,14 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2008_Ford_Focus_Zetec_TD_109_1.6_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Focus_RS_Mk_II_IMG_2508.jpg"
   },
   {
    "id": "ford_focus-st",
    "name": "Focus ST",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/2022_Ford_Focus_ST_Mk_IV_IMG_9438_%28cropped%29.jpg/1280px-2022_Ford_Focus_ST_Mk_IV_IMG_9438_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Ford_Focus_ST_Mk_III_DSC_7264.jpg/1280px-Ford_Focus_ST_Mk_III_DSC_7264.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2005 - Aujourd'hui",
    "puissance_ch": 280,
    "vitesse_max_kmh": 250,
@@ -1560,9 +1556,9 @@
     "2.0l ecoboost",
     "high-performance"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2022_Ford_Focus_ST_Mk_IV_IMG_9438_(cropped).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Focus_ST_Mk_III_DSC_7264.jpg"
   },
   {
    "id": "ford_freestar",
@@ -1629,7 +1625,7 @@
   {
    "id": "ford_fusion",
    "name": "Fusion (EU)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2019_Ford_Fusion_Titanium_Energi%2C_front_2.29.20.jpg/1280px-2019_Ford_Fusion_Titanium_Energi%2C_front_2.29.20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Ford_Fusion_SEMI-AUTOMATIC.jpg/1280px-Ford_Fusion_SEMI-AUTOMATIC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2002 - 2012",
    "puissance_ch": 100,
    "vitesse_max_kmh": 178,
@@ -1654,9 +1650,9 @@
     "diesel car",
     "hybrid car"
    ],
-   "imageCredit": "Kevauto",
+   "imageCredit": "Wheatley Hill",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Ford_Fusion_Titanium_Energi,_front_2.29.20.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Fusion_SEMI-AUTOMATIC.jpg"
   },
   {
    "id": "ford_galaxy",
@@ -2993,7 +2989,6 @@
   {
    "id": "ford_vega",
    "name": "Vega",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/1966_Ford_Thunderbird_in_Las_Vegas_Driveway.jpg/1280px-1966_Ford_Thunderbird_in_Las_Vegas_Driveway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1971 - 1977",
    "puissance_ch": 90,
    "vitesse_max_kmh": 155,
@@ -3016,10 +3011,7 @@
     "chevrolet vega",
     "american car",
     "economy car"
-   ],
-   "imageCredit": "Noah Wulf",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1966_Ford_Thunderbird_in_Las_Vegas_Driveway.jpg"
+   ]
   },
   {
    "id": "ford_windstar",
@@ -3169,12 +3161,8 @@
   {
    "id": "ford_cougar-406",
    "name": "Cougar 406",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Ford_Cougar_406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Unknown authorUnknown author",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Cougar_406.jpg"
+   "tags": []
   },
   {
    "id": "ford_de-luxe-ford",
@@ -3313,12 +3301,12 @@
   {
    "id": "ford_thunderbird-third-generation",
    "name": "Thunderbird (third generation)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%2761_Ford_Thunderbird_Convertible_%28Auto_classique_Laval_%2710%29.jpg/1280px-%2761_Ford_Thunderbird_Convertible_%28Auto_classique_Laval_%2710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Ford_Thunderbird_%28third_generation%29.jpg/1280px-Ford_Thunderbird_%28third_generation%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Bull-Doser",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%2761_Ford_Thunderbird_Convertible_(Auto_classique_Laval_%2710).jpg"
+   "imageCredit": "Geographer",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Thunderbird_(third_generation).jpg"
   },
   {
    "id": "ford_1937-ford",
@@ -3353,12 +3341,12 @@
   {
    "id": "ford_1955-ford",
    "name": "1955 Ford",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Ford_Fairlane_declared_manufactured_1955_registered_UK_July_1992_4500cc_per_dvla.jpg/1280px-Ford_Fairlane_declared_manufactured_1955_registered_UK_July_1992_4500cc_per_dvla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/1955_Ford_Thunderbird_front.jpg/1280px-1955_Ford_Thunderbird_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Charles01",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Fairlane_declared_manufactured_1955_registered_UK_July_1992_4500cc_per_dvla.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1955_Ford_Thunderbird_front.jpg"
   },
   {
    "id": "ford_1957-ford",
@@ -3403,12 +3391,12 @@
   {
    "id": "ford_skyliner",
    "name": "Skyliner",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/1958_Ford_Fairlane_500_Skyliner.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Ford_Skyliner_Retractable_%281959%29-20180909-RM-171557.jpg/1280px-Ford_Skyliner_Retractable_%281959%29-20180909-RM-171557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1958_Ford_Fairlane_500_Skyliner.JPG"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Skyliner_Retractable_(1959)-20180909-RM-171557.jpg"
   },
   {
    "id": "ford_focus-fcv-hybrid",
@@ -3528,12 +3516,8 @@
   {
    "id": "ford_f-250-super-chief",
    "name": "F-250 Super Chief",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ford_Super_Chief.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2005",
-   "tags": [],
-   "imageCredit": "Rusty Cooper",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Super_Chief.jpg"
+   "tags": []
   },
   {
    "id": "ford_f-series-first-generation",
@@ -3670,12 +3654,8 @@
   {
    "id": "ford_f-series-third-generation",
    "name": "F-Series third generation",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1959_Ford_F-100.jpg/1280px-1959_Ford_F-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "JOHN LLOYD",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Ford_F-100.jpg"
+   "tags": []
   },
   {
    "id": "ford_f-series-sixth-generation",
@@ -3954,25 +3934,17 @@
   {
    "id": "ford_continental-mark-iii-1958",
    "name": "Continental Mark III (1958)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Lao_royal_Continental.jpg/1280px-Lao_royal_Continental.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "poids_kg": 2370,
-   "imageCredit": "joaquin uy from Seattle;cropped by uploader Mr.choppers",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lao_royal_Continental.jpg"
+   "poids_kg": 2370
   },
   {
    "id": "ford_continental-mark-iv-1959",
    "name": "Continental Mark IV (1959)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/1959_Lincoln_Continental.JPG/1280px-1959_Lincoln_Continental.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5817 x 2035 x 1475",
-   "poids_kg": 2370,
-   "imageCredit": "Jagvar",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Lincoln_Continental.JPG"
+   "poids_kg": 2370
   },
   {
    "id": "ford_continental-mark-v-1960",
@@ -4073,13 +4045,13 @@
   {
    "id": "ford_s",
    "name": "S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ford_Model_S.jpg/1280px-Ford_Model_S.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/FORD_S-MAX_FIRST_GENERATION_China_%282%29.jpg/1280px-FORD_S-MAX_FIRST_GENERATION_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 634,
-   "imageCredit": "VollwertBIT",
-   "imageLicense": "CC BY-SA 2.5",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Model_S.jpg"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:FORD_S-MAX_FIRST_GENERATION_China_(2).jpg"
   },
   {
    "id": "ford_boss-302-mustang",
@@ -4100,12 +4072,8 @@
   {
    "id": "ford_cdw27-platform",
    "name": "CDW27 platform",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Ford_Mondeo_MK2_%281997-2000%29_front.jpg/1280px-Ford_Mondeo_MK2_%281997-2000%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Mondeo_MK2_(1997-2000)_front.jpg"
+   "tags": []
   },
   {
    "id": "ford_crestline-skyliner",
@@ -4130,12 +4098,8 @@
   {
    "id": "ford_f-4eat-transmission",
    "name": "F-4EAT transmission",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/4EAT_transmission.jpg/1280px-4EAT_transmission.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Leodude1987",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:4EAT_transmission.jpg"
+   "tags": []
   },
   {
    "id": "ford_f-550",
@@ -5021,22 +4985,22 @@
   {
    "id": "ford_gt-gt1",
    "name": "GT (GT1)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Ford_Chip_Ganassi_Team_USA%27s_Ford_GT_No._69.jpg/1280px-Ford_Chip_Ganassi_Team_USA%27s_Ford_GT_No._69.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2010_Ford_GT_GT1_R26.jpg/1280px-2010_Ford_GT_GT1_R26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "David Merrett",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Chip_Ganassi_Team_USA%27s_Ford_GT_No._69.jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Ford_GT_GT1_R26.jpg"
   },
   {
    "id": "ford_edsel-corsair",
    "name": "Edsel Corsair",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/1959_Edsel_Corsair_Convertible_-_49792836128.jpg/1280px-1959_Edsel_Corsair_Convertible_-_49792836128.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/1959_Ford_Edsel_Corsair_Convertible.JPG/1280px-1959_Ford_Edsel_Corsair_Convertible.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1958 - 1959",
    "tags": [],
-   "imageCredit": "Greg Gjerdingen",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Edsel_Corsair_Convertible_-_49792836128.jpg"
+   "imageCredit": "Malte Ahlert",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Ford_Edsel_Corsair_Convertible.JPG"
   },
   {
    "id": "ford_del-rey",
@@ -5128,12 +5092,12 @@
   {
    "id": "ford_taunus-p6",
    "name": "Taunus P6",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ford_Taunus_15M_P6_Neustadt_01.JPG/1280px-Ford_Taunus_15M_P6_Neustadt_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Ford_Taunus_P6_12m_BW_2016-09-03_13-41-57.jpg/1280px-Ford_Taunus_P6_12m_BW_2016-09-03_13-41-57.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Charles01",
+   "imageCredit": "Berthold Werner",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Taunus_15M_P6_Neustadt_01.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Taunus_P6_12m_BW_2016-09-03_13-41-57.jpg"
   },
   {
    "id": "ford_taunus-p5",
@@ -5282,12 +5246,8 @@
   {
    "id": "ford_zebra-three",
    "name": "Zebra Three",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/1974_Ford_Torino_from_Starsky_%26_Hutch.JPG/1280px-1974_Ford_Torino_from_Starsky_%26_Hutch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Stephen Foskett (Wikipedia User: sfoskett)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1974_Ford_Torino_from_Starsky_%26_Hutch.JPG"
+   "tags": []
   },
   {
    "id": "ford_merkur-xr4ti",

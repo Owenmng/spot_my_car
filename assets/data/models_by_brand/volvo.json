@@ -3,7 +3,7 @@
   {
    "id": "volvo_120",
    "name": "120 (Amazon)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Volvo_120_1986cc_first_reg_in_UK_24_apr_1970.JPG/1280px-Volvo_120_1986cc_first_reg_in_UK_24_apr_1970.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1956 - 1970",
    "puissance_ch": 85,
    "vitesse_max_kmh": 155,
@@ -27,7 +27,10 @@
     "land vehicle",
     "motor vehicle",
     "family car"
-   ]
+   ],
+   "imageCredit": "Charles01",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_120_1986cc_first_reg_in_UK_24_apr_1970.JPG"
   },
   {
    "id": "volvo_140",

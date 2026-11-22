@@ -803,7 +803,7 @@
   {
    "id": "lancia_prisma_integrale",
    "name": "Prisma Integrale",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Lancia_prisma_integrale_evo.jpg/1280px-Lancia_prisma_integrale_evo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Lancia_prisma_integrale_evo_%28cropped%29.jpg/1280px-Lancia_prisma_integrale_evo_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1986",
    "puissance_ch": 160,
    "vitesse_max_kmh": 200,
@@ -832,7 +832,7 @@
    ],
    "imageCredit": "Nerolancia2",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_prisma_integrale_evo.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_prisma_integrale_evo_(cropped).jpg"
   },
   {
    "id": "lancia_rally-037",
@@ -1301,13 +1301,9 @@
   {
    "id": "lancia_trikappa",
    "name": "Trikappa",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/ParvaIgniDAnnunzio.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "poids_kg": 1350,
-   "imageCredit": "Unknown photographer",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:ParvaIgniDAnnunzio.png"
+   "poids_kg": 1350
   },
   {
    "id": "lancia_2000",

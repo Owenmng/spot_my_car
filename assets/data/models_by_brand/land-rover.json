@@ -163,7 +163,7 @@
   {
    "id": "land-rover_discovery_3",
    "name": "Discovery 3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/GAZ-3102_and_Land_Rover_Discovery_2007.jpg/1280px-GAZ-3102_and_Land_Rover_Discovery_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/LAND_ROVER_DISCOVERY_3_%28L319%29_China.jpg/1280px-LAND_ROVER_DISCOVERY_3_%28L319%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2009",
    "puissance_ch": 272,
    "vitesse_max_kmh": 200,
@@ -189,9 +189,9 @@
     "diesel",
     "petrol"
    ],
-   "imageCredit": "Kirill Borisenko",
+   "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:GAZ-3102_and_Land_Rover_Discovery_2007.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:LAND_ROVER_DISCOVERY_3_(L319)_China.jpg"
   },
   {
    "id": "land-rover_discovery_4",
@@ -669,7 +669,6 @@
   {
    "id": "land-rover_series-ii-iii",
    "name": "Series II / III",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Land_Rover_Series_III_%2816344953923%29.jpg/1280px-Land_Rover_Series_III_%2816344953923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1958 - 1985",
    "puissance_ch": 70,
    "vitesse_max_kmh": 110,
@@ -694,10 +693,7 @@
     "vehicle",
     "car",
     "all-terrain vehicle"
-   ],
-   "imageCredit": "TuRbO_J from Adelaide, Australia",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Series_III_(16344953923).jpg"
+   ]
   },
   {
    "id": "land-rover_range-rover-p38a",
@@ -772,22 +768,14 @@
   {
    "id": "land-rover_ranger-special-operations-vehicle",
    "name": "Ranger Special Operations Vehicle",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/RSOV_at_National_War_College_April_19%2C_2001.JPEG/1280px-RSOV_at_National_War_College_April_19%2C_2001.JPEG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Michael Lemke (Department of Defense civilian)",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:RSOV_at_National_War_College_April_19,_2001.JPEG"
+   "tags": []
   },
   {
    "id": "land-rover_range-rover-sv-coupe",
    "name": "Range Rover SV Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Range_Rover_SV_Coupe_Genf_2018.jpg/1280px-Range_Rover_SV_Coupe_Genf_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Range_Rover_SV_Coupe_Genf_2018.jpg"
+   "tags": []
   },
   {
    "id": "land-rover_electric-defender",

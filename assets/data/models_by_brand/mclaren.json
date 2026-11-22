@@ -898,7 +898,7 @@
   {
    "id": "mclaren_senna_gtr",
    "name": "Senna GTR",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/McLaren_Senna_IMG_3279.jpg/1280px-McLaren_Senna_IMG_3279.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/McLaren_Senna_GTR%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A0442%29.jpg/1280px-McLaren_Senna_GTR%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A0442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - 2020",
    "puissance_ch": 825,
    "vitesse_max_kmh": 340,
@@ -924,9 +924,9 @@
     "high performance",
     "exotic car"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_Senna_IMG_3279.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_Senna_GTR,_GIMS_2018,_Le_Grand-Saconnex_(1X7A0442).jpg"
   },
   {
    "id": "mclaren_solus_gt",
@@ -1028,7 +1028,6 @@
   {
    "id": "mclaren_x-1",
    "name": "X-1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/McLaren_P11%2C_Hong_Kong_%28pixabay%29.jpg/1280px-McLaren_P11%2C_Hong_Kong_%28pixabay%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012",
    "puissance_ch": 625,
    "vitesse_max_kmh": 340,
@@ -1049,10 +1048,7 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ],
-   "imageCredit": "MK817",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_P11,_Hong_Kong_(pixabay).jpg"
+   ]
   },
   {
    "id": "mclaren_mp4-5b",

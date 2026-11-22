@@ -96,7 +96,7 @@
   {
    "id": "mazda_1300",
    "name": "1300",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/1992_Mazda_Familia_1300_Supercab.jpg/1280px-1992_Mazda_Familia_1300_Supercab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/1977_Mazda_Familia_1300_DL_BS_O24.jpg/1280px-1977_Mazda_Familia_1300_DL_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1977",
    "puissance_ch": 60,
    "vitesse_max_kmh": 140,
@@ -119,9 +119,9 @@
     "vintage car",
     "classic car"
    ],
-   "imageCredit": "Pakawut kenta",
+   "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1992_Mazda_Familia_1300_Supercab.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1977_Mazda_Familia_1300_DL_BS_O24.jpg"
   },
   {
    "id": "mazda_2",
@@ -1434,7 +1434,7 @@
   {
    "id": "mazda_etude",
    "name": "Etude",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Mazda_Etude_%2816219664054%29.jpg/1280px-Mazda_Etude_%2816219664054%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Mazda_etude_sunnydayinnz_numplate_etude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "1987 - 1990",
    "puissance_ch": 82,
    "vitesse_max_kmh": 170,
@@ -1459,9 +1459,9 @@
     "technology showcase",
     "engineering prototype"
    ],
-   "imageCredit": "Riley from Christchurch, New Zealand",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Etude_(16219664054).jpg"
+   "imageCredit": "hozpow",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_etude_sunnydayinnz_numplate_etude.jpg"
   },
   {
    "id": "mazda_eunos_100",
@@ -2520,12 +2520,8 @@
   {
    "id": "mazda_sao-penza",
    "name": "Sao Penza",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2003_Mazda_323_%28BJ_II%29_Proteg%C3%A9_Shades_sedan_%282015-08-07%29_01.jpg/1280px-2003_Mazda_323_%28BJ_II%29_Proteg%C3%A9_Shades_sedan_%282015-08-07%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "OSX",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2003_Mazda_323_(BJ_II)_Proteg%C3%A9_Shades_sedan_(2015-08-07)_01.jpg"
+   "tags": []
   },
   {
    "id": "mazda_efini-ms-8",
@@ -2564,12 +2560,12 @@
   {
    "id": "mazda_xedos",
    "name": "Xedos",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mazda_Xedos_6_in_Italy.JPG/1280px-Mazda_Xedos_6_in_Italy.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Mazda_Xedos_6_front.jpg/1280px-Mazda_Xedos_6_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 2000",
    "tags": [],
-   "imageCredit": "Corvettec6r",
+   "imageCredit": "M 93",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Xedos_6_in_Italy.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Xedos_6_front.jpg"
   },
   {
    "id": "mazda_roadpacer-ap",
@@ -2753,12 +2749,12 @@
   {
    "id": "mazda_mazda3-bn",
    "name": "Mazda3 (BN)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2018_Mazda3_Sport%2C_Rear_Left%2C_10-16-2020.jpg/1280px-2018_Mazda3_Sport%2C_Rear_Left%2C_10-16-2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Mazda3_%28BN%29_1X7A7262.jpg/1280px-Mazda3_%28BN%29_1X7A7262.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "SsmIntrigue",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Mazda3_Sport,_Rear_Left,_10-16-2020.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda3_(BN)_1X7A7262.jpg"
   },
   {
    "id": "mazda_mazda3-bp",
@@ -2863,12 +2859,12 @@
   {
    "id": "mazda_cx-5-ki",
    "name": "CX-5 (KI)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Mazda_CX-5_%28KI%29_IMG_5836.jpg/1280px-Mazda_CX-5_%28KI%29_IMG_5836.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Mazda_CX-5_%28KI%29_Auto_Zuerich_2025_DSC_3472.jpg/1280px-Mazda_CX-5_%28KI%29_Auto_Zuerich_2025_DSC_3472.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_CX-5_(KI)_IMG_5836.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_CX-5_(KI)_Auto_Zuerich_2025_DSC_3472.jpg"
   },
   {
    "id": "mazda_mazda6",
@@ -2906,22 +2902,18 @@
   {
    "id": "mazda_787",
    "name": "787",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mazda_787_LM_1991_8th.jpg/1280px-Mazda_787_LM_1991_8th.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Mazda_787_Fuji_1991.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "jason goulding",
+   "imageCredit": "Iwao",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_787_LM_1991_8th.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_787_Fuji_1991.jpg"
   },
   {
    "id": "mazda_ibuki",
    "name": "Ibuki",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Mazda_MX5_%2836208497590%29.jpg/1280px-Mazda_MX5_%2836208497590%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "FotoSleuth",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_MX5_(36208497590).jpg"
+   "tags": []
   },
   {
    "id": "mazda_mx-5",
@@ -3391,12 +3383,8 @@
   {
    "id": "mazda_767",
    "name": "767",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Mazda_767B_cc.JPG/1280px-Mazda_767B_cc.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "名古屋太郎",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_767B_cc.JPG"
+   "tags": []
   }
  ]
 }
