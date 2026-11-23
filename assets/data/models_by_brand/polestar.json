@@ -124,7 +124,6 @@
   {
    "id": "polestar_2_performance",
    "name": "2 Performance",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Polestar_Performance_AB_%2855008290371%29.jpg/1280px-Polestar_Performance_AB_%2855008290371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 408,
    "vitesse_max_kmh": 210,
@@ -150,10 +149,7 @@
     "powerful",
     "fast",
     "luxury"
-   ],
-   "imageCredit": "Alexandre Prevot from Nancy, France",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Polestar_Performance_AB_(55008290371).jpg"
+   ]
   },
   {
    "id": "polestar_2_standard_range",

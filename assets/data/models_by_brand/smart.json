@@ -254,7 +254,7 @@
   {
    "id": "smart_forfour",
    "name": "Forfour",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Berlin%2C_Flughafen_Tempelhof%2C_Smart_EQ_Forfour_--_2019_--_4342.jpg/1280px-Berlin%2C_Flughafen_Tempelhof%2C_Smart_EQ_Forfour_--_2019_--_4342.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Smart_EQ_forfour_at_IAA_2019_IMG_0799.jpg/1280px-Smart_EQ_forfour_at_IAA_2019_IMG_0799.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2004 - 2021",
    "puissance_ch": 90,
    "vitesse_max_kmh": 165,
@@ -277,9 +277,9 @@
     "2023 smart forfour",
     "2024 smart forfour"
    ],
-   "imageCredit": "Dietmar Rabich",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Berlin,_Flughafen_Tempelhof,_Smart_EQ_Forfour_--_2019_--_4342.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_EQ_forfour_at_IAA_2019_IMG_0799.jpg"
   },
   {
    "id": "smart_fortwo",
@@ -349,7 +349,6 @@
   {
    "id": "smart_k",
    "name": "K (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Smart_fortwo_Cabrio_electric%2C_IAA_2017%2C_Frankfurt_%281Y7A1891%29.jpg/1280px-Smart_fortwo_Cabrio_electric%2C_IAA_2017%2C_Frankfurt_%281Y7A1891%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -374,10 +373,7 @@
     "electric vehicle",
     "hybrid",
     "performance car"
-   ],
-   "imageCredit": "MB-one",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Smart_fortwo_Cabrio_electric,_IAA_2017,_Frankfurt_(1Y7A1891).jpg"
+   ]
   },
   {
    "id": "smart_roadster",

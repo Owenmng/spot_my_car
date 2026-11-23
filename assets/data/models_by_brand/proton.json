@@ -231,12 +231,12 @@
   {
    "id": "proton_saga-third-generation",
    "name": "Saga (third generation)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2016_Proton_Saga_%28BT%2C_Mk4%29_Premium_4-door_sedan_%2801%29_%2830333943901%29.jpg/1280px-2016_Proton_Saga_%28BT%2C_Mk4%29_Premium_4-door_sedan_%2801%29_%2830333943901%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2017_Proton_Saga_%28BT%29_1.3_Standard_4-door_sedan_%2801%29_%2834209794061%29.jpg/1280px-2017_Proton_Saga_%28BT%29_1.3_Standard_4-door_sedan_%2801%29_%2834209794061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Manoj Prasad from Kuala Lumpur, Malaysia",
    "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Proton_Saga_(BT,_Mk4)_Premium_4-door_sedan_(01)_(30333943901).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Proton_Saga_(BT)_1.3_Standard_4-door_sedan_(01)_(34209794061).jpg"
   },
   {
    "id": "proton_ertiga",
@@ -252,12 +252,8 @@
   {
    "id": "proton_jebat",
    "name": "Jebat",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2010_Proton_Jebat_concept_at_the_2011_Hari_Merdeka_%26_Malaysia_celebrations_in_Dataran_Merdeka%2C_Kuala_Lumpur.jpg/1280px-2010_Proton_Jebat_concept_at_the_2011_Hari_Merdeka_%26_Malaysia_celebrations_in_Dataran_Merdeka%2C_Kuala_Lumpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Phalinn Ooi",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Proton_Jebat_concept_at_the_2011_Hari_Merdeka_%26_Malaysia_celebrations_in_Dataran_Merdeka,_Kuala_Lumpur.jpg"
+   "tags": []
   },
   {
    "id": "proton_lekiu",

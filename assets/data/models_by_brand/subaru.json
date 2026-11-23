@@ -228,7 +228,7 @@
   {
    "id": "subaru_crosstrek",
    "name": "Crosstrek",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Subaru_Crosstrek_%28GU%29_Auto_Zuerich_2023_1X7A0895.jpg/1280px-Subaru_Crosstrek_%28GU%29_Auto_Zuerich_2023_1X7A0895.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Subaru_Crosstrek_Wilderness_IMG_3726_%28cropped%29.jpg/1280px-Subaru_Crosstrek_Wilderness_IMG_3726_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 136,
    "vitesse_max_kmh": 198,
@@ -253,9 +253,9 @@
     "awd",
     "gasoline car"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Crosstrek_(GU)_Auto_Zuerich_2023_1X7A0895.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Crosstrek_Wilderness_IMG_3726_(cropped).jpg"
   },
   {
    "id": "subaru_dias",
@@ -514,7 +514,7 @@
   {
    "id": "subaru_legacy_outback",
    "name": "Legacy Outback",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/2026_Subaru_Outback_Wilderness%2C_front_left%2C_05-24-2026.jpg/1280px-2026_Subaru_Outback_Wilderness%2C_front_left%2C_05-24-2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/SUBARU_LEGACY_OUTBACK%2CSUBARU_OUTBACK_%28BS%29_China.jpg/1280px-SUBARU_LEGACY_OUTBACK%2CSUBARU_OUTBACK_%28BS%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1994 - 2003",
    "puissance_ch": 165,
    "vitesse_max_kmh": 190,
@@ -538,9 +538,9 @@
     "family car",
     "all-terrain vehicle"
    ],
-   "imageCredit": "MercurySable99",
+   "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2026_Subaru_Outback_Wilderness,_front_left,_05-24-2026.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SUBARU_LEGACY_OUTBACK,SUBARU_OUTBACK_(BS)_China.jpg"
   },
   {
    "id": "subaru_leone",
@@ -1602,12 +1602,12 @@
   {
    "id": "subaru_impreza-wrx",
    "name": "Impreza WRX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/2000_Subaru_Impreza_WRC.jpg/1280px-2000_Subaru_Impreza_WRC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/1994_Subaru_Impreza_WRX_STi.jpg/1280px-1994_Subaru_Impreza_WRX_STi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Subaru_Impreza_WRC.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Subaru_Impreza_WRX_STi.jpg"
   },
   {
    "id": "subaru_trailseeker",

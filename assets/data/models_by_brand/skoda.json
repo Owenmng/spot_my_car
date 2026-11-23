@@ -1243,12 +1243,12 @@
   {
    "id": "skoda_trekka",
    "name": "Trekka",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/TrekkaNZ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%C5%A0koda_Trekka_%2840324570664%29.jpg/1280px-%C5%A0koda_Trekka_%2840324570664%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Raizer Images NZ from Flickr.com",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TrekkaNZ.jpg"
+   "imageCredit": "Thomas Vogt from Paderborn, Deutschland",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_Trekka_(40324570664).jpg"
   },
   {
    "id": "skoda_fabia-wrc",
@@ -1283,12 +1283,12 @@
   {
    "id": "skoda_760",
    "name": "760",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/SkodaPrototyp760_%281%29.JPG/1280px-SkodaPrototyp760_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%C5%A0koda_760_ID.jpg/1280px-%C5%A0koda_760_ID.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alofok",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:SkodaPrototyp760_(1).JPG"
+   "imageCredit": "Black nexus.cz Photography",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_760_ID.jpg"
   },
   {
    "id": "skoda_garde",
@@ -1305,12 +1305,12 @@
   {
    "id": "skoda_1100-ohc",
    "name": "1100 OHC",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/%C5%A0koda_1101_OHC.jpg/1280px-%C5%A0koda_1101_OHC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/2014_%C5%A0koda_Museum%2C_%C5%A0koda_1100_OHC_typ_968_1958_01.JPG/1280px-2014_%C5%A0koda_Museum%2C_%C5%A0koda_1100_OHC_typ_968_1958_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Nuclear-energy at de.wikipedia",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_1101_OHC.jpg"
+   "imageCredit": "Cherubino",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2014_%C5%A0koda_Museum,_%C5%A0koda_1100_OHC_typ_968_1958_01.JPG"
   },
   {
    "id": "skoda_110-r",
@@ -1584,12 +1584,8 @@
   {
    "id": "skoda_1000-mb-combi",
    "name": "1000 MB Combi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/SkodaPrototyp990%28Skoda_1000_MB_Combi%29_%282%29.JPG/1280px-SkodaPrototyp990%28Skoda_1000_MB_Combi%29_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alofok",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:SkodaPrototyp990(Skoda_1000_MB_Combi)_(2).JPG"
+   "tags": []
   },
   {
    "id": "skoda_forman-plus",
@@ -1624,12 +1620,8 @@
   {
    "id": "skoda_favorit-prototype",
    "name": "Favorit prototype",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/SkodaFavoritCoupe.JPG/1280px-SkodaFavoritCoupe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alofok",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:SkodaFavoritCoupe.JPG"
+   "tags": []
   },
   {
    "id": "skoda_favorit-sedan",
@@ -1664,12 +1656,12 @@
   {
    "id": "skoda_136",
    "name": "136",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%C5%A0koda_136L_%C5%A1ed%C3%A1_%28cropped%29.JPG/1280px-%C5%A0koda_136L_%C5%A1ed%C3%A1_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/%C5%A0koda_Rapid_136_at_Legendy_2018_in_Prague.jpg/1280px-%C5%A0koda_Rapid_136_at_Legendy_2018_in_Prague.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Jiří Erben",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_136L_%C5%A1ed%C3%A1_(cropped).JPG"
+   "imageCredit": "Jiří Sedláček",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_Rapid_136_at_Legendy_2018_in_Prague.jpg"
   },
   {
    "id": "skoda_felicia-fun",
@@ -1875,12 +1867,8 @@
   {
    "id": "skoda_104",
    "name": "104",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Brno%2C_%C5%98e%C4%8Dkovice%2C_depozit%C3%A1%C5%99_TMB%2C_DOD_2016%2C_Policie_%281%29_crop.jpg/1280px-Brno%2C_%C5%98e%C4%8Dkovice%2C_depozit%C3%A1%C5%99_TMB%2C_DOD_2016%2C_Policie_%281%29_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "MIGORMCZ",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Brno,_%C5%98e%C4%8Dkovice,_depozit%C3%A1%C5%99_TMB,_DOD_2016,_Policie_(1)_crop.jpg"
+   "tags": []
   },
   {
    "id": "skoda_super-sport",
@@ -1895,12 +1883,12 @@
   {
    "id": "skoda_200-rs",
    "name": "200 RS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Skoda-museum-mlada-boleslav-rr-088.jpg/1280px-Skoda-museum-mlada-boleslav-rr-088.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/%C5%A0koda_200_RS_-_J%C3%A1n_Ondrejka.JPG/1280px-%C5%A0koda_200_RS_-_J%C3%A1n_Ondrejka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Marcela (talk)",
-   "imageLicense": "GFDL 1.2",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda-museum-mlada-boleslav-rr-088.jpg"
+   "imageCredit": "Midnight Runner",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_200_RS_-_J%C3%A1n_Ondrejka.JPG"
   },
   {
    "id": "skoda_206",
@@ -1945,12 +1933,8 @@
   {
    "id": "skoda_504",
    "name": "504",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/N%C3%A1kladn%C3%AD_automobil_zn._%C5%A0koda_1930_%28Pivovar_Vy%C5%A1kov-_czech_republic%29.jpg/1280px-N%C3%A1kladn%C3%AD_automobil_zn._%C5%A0koda_1930_%28Pivovar_Vy%C5%A1kov-_czech_republic%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "cs:User:Pernak",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:N%C3%A1kladn%C3%AD_automobil_zn._%C5%A0koda_1930_(Pivovar_Vy%C5%A1kov-_czech_republic).jpg"
+   "tags": []
   },
   {
    "id": "skoda_506",
@@ -1965,12 +1949,8 @@
   {
    "id": "skoda_720",
    "name": "720",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/SkodaPrototyp720OP1_%281%29.JPG/1280px-SkodaPrototyp720OP1_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alofok",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:SkodaPrototyp720OP1_(1).JPG"
+   "tags": []
   },
   {
    "id": "skoda_740",

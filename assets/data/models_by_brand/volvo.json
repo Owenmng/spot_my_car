@@ -35,7 +35,7 @@
   {
    "id": "volvo_140",
    "name": "140",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Volvo_140_Series.jpg/1280px-Volvo_140_Series.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/1972_Volvo_140_Series_7PX941_%40_Trinity_Playing_Fields%2CWaterford.jpg/1280px-1972_Volvo_140_Series_7PX941_%40_Trinity_Playing_Fields%2CWaterford.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1966 - 1974",
    "puissance_ch": 82,
    "vitesse_max_kmh": 155,
@@ -60,9 +60,9 @@
     "classic car",
     "vintage car"
    ],
-   "imageCredit": "Calreyn88",
+   "imageCredit": "ZidaneHartono",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_140_Series.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Volvo_140_Series_7PX941_@_Trinity_Playing_Fields,Waterford.jpg"
   },
   {
    "id": "volvo_145",
@@ -1147,7 +1147,7 @@
   {
    "id": "volvo_v60",
    "name": "V60",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2023_Volvo_V60_Cross_Country_B5_Plus%2C_front_left%2C_02-06-2023.jpg/1280px-2023_Volvo_V60_Cross_Country_B5_Plus%2C_front_left%2C_02-06-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Volvo_V60_%28SPA%29_1X7A0386.jpg/1280px-Volvo_V60_%28SPA%29_1X7A0386.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2010 - Aujourd'hui",
    "puissance_ch": 197,
    "vitesse_max_kmh": 180,
@@ -1173,9 +1173,9 @@
     "hybrid",
     "plug-in hybrid"
    ],
-   "imageCredit": "MercurySable99",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Volvo_V60_Cross_Country_B5_Plus,_front_left,_02-06-2023.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_V60_(SPA)_1X7A0386.jpg"
   },
   {
    "id": "volvo_v70",
@@ -1211,7 +1211,7 @@
   {
    "id": "volvo_v90",
    "name": "V90",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Volvo_V90_Cross_Country_front.jpg/1280px-Volvo_V90_Cross_Country_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Volvo_V90_%28SPA%29_1X7A0384.jpg/1280px-Volvo_V90_%28SPA%29_1X7A0384.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1997 - Aujourd'hui",
    "puissance_ch": 455,
    "vitesse_max_kmh": 180,
@@ -1237,9 +1237,9 @@
     "automobile",
     "motor vehicle"
    ],
-   "imageCredit": "MichalPL",
+   "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_V90_Cross_Country_front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_V90_(SPA)_1X7A0384.jpg"
   },
   {
    "id": "volvo_xc40",
@@ -1406,12 +1406,8 @@
   {
    "id": "volvo_pv800-series",
    "name": "PV800 Series",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Volvo_TR_802_%281938%29.JPG/1280px-Volvo_TR_802_%281938%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Kotasik",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_TR_802_(1938).JPG"
+   "tags": []
   },
   {
    "id": "volvo_900-series",
@@ -1542,12 +1538,12 @@
   {
    "id": "volvo_v70r",
    "name": "V70R",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Washauto_volvo_v70r.jpg/1280px-Washauto_volvo_v70r.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Volvo_V70R_AWD_%286073666554%29.jpg/1280px-Volvo_V70R_AWD_%286073666554%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Aude",
-   "imageLicense": "CC BY-SA 2.5",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Washauto_volvo_v70r.jpg"
+   "imageCredit": "nakhon100",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_V70R_AWD_(6073666554).jpg"
   },
   {
    "id": "volvo_s40-v40",
@@ -1707,12 +1703,8 @@
   {
    "id": "volvo_260-2",
    "name": "260",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Goteborg_Volvo_Museum_48_240.jpg/1280px-Goteborg_Volvo_Museum_48_240.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Andrzej Otrębski",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Goteborg_Volvo_Museum_48_240.jpg"
+   "tags": []
   },
   {
    "id": "volvo_es90-2",
@@ -1727,12 +1719,12 @@
   {
    "id": "volvo_ex60",
    "name": "EX60",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Volvo_EX60_IMG_8339.jpg/1280px-Volvo_EX60_IMG_8339.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Volvo_EX60_ad_Gothenburg_airport_2026-02-14.jpg/1280px-Volvo_EX60_ad_Gothenburg_airport_2026-02-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2025 - Aujourd'hui",
    "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_EX60_IMG_8339.jpg"
+   "imageCredit": "Crannofonix News",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_EX60_ad_Gothenburg_airport_2026-02-14.jpg"
   },
   {
    "id": "volvo_200-series",
@@ -1759,12 +1751,12 @@
   {
    "id": "volvo_244-dls",
    "name": "244 DLS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Volvo_244_DLS%2C_Ribnitz-Damgarten_%28P1060563%29.jpg/1280px-Volvo_244_DLS%2C_Ribnitz-Damgarten_%28P1060563%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Volvo_244_DLS%2C_Ribnitz-Damgarten_%28_1060566%29.jpg/1280px-Volvo_244_DLS%2C_Ribnitz-Damgarten_%28_1060566%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970",
    "tags": [],
    "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_244_DLS,_Ribnitz-Damgarten_(P1060563).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_244_DLS,_Ribnitz-Damgarten_(_1060566).jpg"
   },
   {
    "id": "volvo_c40-2",

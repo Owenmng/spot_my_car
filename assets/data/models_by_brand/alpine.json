@@ -743,7 +743,7 @@
   {
    "id": "alpine_m64",
    "name": "M64",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/1964_Alpine_M64_at_PB_2022.jpg/1280px-1964_Alpine_M64_at_PB_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/1964_Renault_Alpine_M64_%2832128693256%29.jpg/1280px-1964_Renault_Alpine_M64_%2832128693256%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1964 - 1964",
    "puissance_ch": 105,
    "vitesse_max_kmh": 250,
@@ -768,9 +768,9 @@
     "vintage car",
     "muscle car"
    ],
-   "imageCredit": "Prova MO",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Alpine_M64_at_PB_2022.jpg"
+   "imageCredit": "David Merrett from Daventry, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Renault_Alpine_M64_(32128693256).jpg"
   },
   {
    "id": "alpine_m65",

@@ -256,12 +256,8 @@
   {
    "id": "plymouth_cricket",
    "name": "Cricket",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Rally_Plymouth_Cricket.jpg/1280px-Rally_Plymouth_Cricket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "JOHN LLOYD from Hanover, Pennsylvania, United States",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Rally_Plymouth_Cricket.jpg"
+   "tags": []
   },
   {
    "id": "plymouth_cambridge",
@@ -379,12 +375,12 @@
   {
    "id": "plymouth_colt-vista",
    "name": "Colt Vista",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Plymouth_Colt_Vista_2.0_1988_%2815168580470%29.jpg/1280px-Plymouth_Colt_Vista_2.0_1988_%2815168580470%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Plymouth_Colt_Vista_2.0_1988_%2813633016354%29.jpg/1280px-Plymouth_Colt_Vista_2.0_1988_%2813633016354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "order_242 from Chile",
    "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Colt_Vista_2.0_1988_(15168580470).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Plymouth_Colt_Vista_2.0_1988_(13633016354).jpg"
   }
  ]
 }

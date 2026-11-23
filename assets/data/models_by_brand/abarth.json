@@ -350,7 +350,7 @@
   {
    "id": "abarth_fastback",
    "name": "Fastback",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Abarth_Fastback_2026.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Fastback_Abarth_2024_in_Uruguay_%28front%29.jpg/1280px-Fastback_Abarth_2024_in_Uruguay_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023 - Aujourd'hui",
    "puissance_ch": 185,
    "vitesse_max_kmh": 220,
@@ -375,9 +375,9 @@
     "automobile",
     "motor vehicle"
    ],
-   "imageCredit": "Galleti14",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Fastback_2026.png"
+   "imageCredit": "NaBUru38",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Fastback_Abarth_2024_in_Uruguay_(front).jpg"
   },
   {
    "id": "abarth_grande_punto",
@@ -413,7 +413,7 @@
   {
    "id": "abarth_grande_punto_s2000",
    "name": "Grande Punto S2000",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/2008_Rally_Costa_Smeralda_-_Travaglia%2C_Granai_-_Abarth_Grande_Punto_S2000.jpg/1280px-2008_Rally_Costa_Smeralda_-_Travaglia%2C_Granai_-_Abarth_Grande_Punto_S2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/2008_Rally_Costa_Smeralda_-_Travaglia%2C_Granai_-_Abarth_Grande_Punto_S2000_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2007 - 2009",
    "puissance_ch": 280,
    "vitesse_max_kmh": 240,
@@ -438,9 +438,9 @@
     "group a rally",
     "italian car"
    ],
-   "imageCredit": "Bart84 at Italian Wikipedia",
+   "imageCredit": "Original: Bart84 at Italian Wikipedia / Derivative work: Danyele",
    "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2008_Rally_Costa_Smeralda_-_Travaglia,_Granai_-_Abarth_Grande_Punto_S2000.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2008_Rally_Costa_Smeralda_-_Travaglia,_Granai_-_Abarth_Grande_Punto_S2000_(cropped).jpg"
   },
   {
    "id": "abarth_pulse",
@@ -538,7 +538,7 @@
   {
    "id": "abarth_punto_supersport",
    "name": "Punto SuperSport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/2012_Abarth_Punto_Evo_Supersport.jpg/1280px-2012_Abarth_Punto_Evo_Supersport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Abarth_Punto_Supersport_%286144163390%29.jpg/1280px-Abarth_Punto_Supersport_%286144163390%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2012 - 2014",
    "puissance_ch": 180,
    "vitesse_max_kmh": 225,
@@ -562,9 +562,9 @@
     "italian car",
     "subcompact car"
    ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Abarth_Punto_Evo_Supersport.jpg"
+   "imageCredit": "Autoviva",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Punto_Supersport_(6144163390).jpg"
   },
   {
    "id": "abarth_punto_supersport_convertible",
@@ -611,14 +611,10 @@
   {
    "id": "abarth_1000-gt-coupe",
    "name": "1000 GT Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/1959_Abarth-Alfa_Romeo_1300_Berlinetta_%28Colani%29.jpg/1280px-1959_Abarth-Alfa_Romeo_1300_Berlinetta_%28Colani%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3690 x 1550 x 1200",
-   "poids_kg": 640,
-   "imageCredit": "jean-pierre 60;Cropped, plates blanked, and levels adjusted by uploader Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Abarth-Alfa_Romeo_1300_Berlinetta_(Colani).jpg"
+   "poids_kg": 640
   },
   {
    "id": "abarth_695-biposto",
@@ -645,12 +641,12 @@
   {
    "id": "abarth_1500-biposto",
    "name": "1500 Biposto",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/1952_Abarth_1500_Biposto_Bertone_Carlo_Abarth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/1952_Abarth_1500_Biposto_BAT_1.jpg/1280px-1952_Abarth_1500_Biposto_BAT_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1950",
    "tags": [],
-   "imageCredit": "Unknown photographer",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1952_Abarth_1500_Biposto_Bertone_Carlo_Abarth.jpg"
+   "imageCredit": "edvvc",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1952_Abarth_1500_Biposto_BAT_1.jpg"
   },
   {
    "id": "abarth_205",
