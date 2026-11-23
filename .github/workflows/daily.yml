@@ -45,7 +45,7 @@ jobs:
         env:
           BUDGET_MIN: '190'
           VISION_MAX: ${{ inputs.vision_max || '1800' }}
-          MISSING_MAX: '150'
+          MISSING_MAX: '400'
           VISION_MODELS: ${{ inputs.vision_models }}
         run: python3 -u tool/fix_images.py
       - name: Commit et nouvelle version
