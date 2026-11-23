@@ -741,13 +741,9 @@
   {
    "id": "seat_altea-xl-freetrack",
    "name": "Altea XL/Freetrack",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Freetrack_210_screenshot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4467 x 1768 x 1568",
-   "imageCredit": "kestrel7e7",
-   "imageLicense": "GPL",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Freetrack_210_screenshot.jpg"
+   "dimensions_lwh_mm": "4467 x 1768 x 1568"
   }
  ]
 }

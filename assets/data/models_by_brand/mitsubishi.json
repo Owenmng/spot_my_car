@@ -65,7 +65,6 @@
   {
    "id": "mitsubishi_a6m-zero",
    "name": "A6M Zero (réplique)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Mitsubishi_A6M_Zero_Replica.jpg/1280px-Mitsubishi_A6M_Zero_Replica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2005",
    "puissance_ch": 120,
    "vitesse_max_kmh": 180,
@@ -91,10 +90,7 @@
     "wwii aircraft",
     "replica plane",
     "model airplane"
-   ],
-   "imageCredit": "D. Miller",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_A6M_Zero_Replica.jpg"
+   ]
   },
   {
    "id": "mitsubishi_airtek",
@@ -353,7 +349,7 @@
   {
    "id": "mitsubishi_colt-lancer",
    "name": "Colt Lancer",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg/1280px-2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/1981_Mitsubishi_Colt_Lancer_Turbo_2000.jpg/1280px-1981_Mitsubishi_Colt_Lancer_Turbo_2000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1973 - 1979",
    "puissance_ch": 92,
    "vitesse_max_kmh": 165,
@@ -378,9 +374,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "IFCAR",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1981_Mitsubishi_Colt_Lancer_Turbo_2000.jpg"
   },
   {
    "id": "mitsubishi_cordia",
@@ -510,7 +506,7 @@
   {
    "id": "mitsubishi_e-evolution",
    "name": "e-Evolution (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg/1280px-2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Mitsubishi_e-Evolution_Concept%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1422%29.jpg/1280px-Mitsubishi_e-Evolution_Concept%2C_GIMS_2018%2C_Le_Grand-Saconnex_%281X7A1422%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -537,9 +533,9 @@
     "automobile",
     "motor vehicle"
    ],
-   "imageCredit": "Klaus Nahr",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_(2).jpg"
+   "imageCredit": "Matti Blume",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_e-Evolution_Concept,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1422).jpg"
   },
   {
    "id": "mitsubishi_eclipse",
@@ -607,7 +603,7 @@
   {
    "id": "mitsubishi_eclipse-spyder",
    "name": "Eclipse Spyder",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/2023_Mitsubishi_Eclipse_Cross_SEL_Touring%2C_front_left.jpg/1280px-2023_Mitsubishi_Eclipse_Cross_SEL_Touring%2C_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/%2702_Mitsubishi_Eclipse_Spyder_%28Orange_Julep%29.JPG/1280px-%2702_Mitsubishi_Eclipse_Spyder_%28Orange_Julep%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1996 - 2012",
    "puissance_ch": 210,
    "vitesse_max_kmh": 235,
@@ -632,9 +628,9 @@
     "open-top",
     "spyder"
    ],
-   "imageCredit": "MercurySable99",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_Mitsubishi_Eclipse_Cross_SEL_Touring,_front_left.jpg"
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%2702_Mitsubishi_Eclipse_Spyder_(Orange_Julep).JPG"
   },
   {
    "id": "mitsubishi_ek-active",
@@ -671,7 +667,7 @@
   {
    "id": "mitsubishi_ek-custom",
    "name": "eK Custom",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/2014-2015_Mitsubishi_eK_Custom_G.jpg/1280px-2014-2015_Mitsubishi_eK_Custom_G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Mitsubishi_eK_CUSTOM_G_e-ASSIST_%28B11W%29_front.JPG/1280px-Mitsubishi_eK_CUSTOM_G_e-ASSIST_%28B11W%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 64,
    "vitesse_max_kmh": 140,
@@ -696,9 +692,9 @@
     "small car",
     "subcompact car"
    ],
-   "imageCredit": "TTTNIS",
+   "imageCredit": "Tokumeigakarinoaoshima",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2014-2015_Mitsubishi_eK_Custom_G.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_eK_CUSTOM_G_e-ASSIST_(B11W)_front.JPG"
   },
   {
    "id": "mitsubishi_ek-space",
@@ -734,7 +730,7 @@
   {
    "id": "mitsubishi_ek-sport",
    "name": "eK Sport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/2012_Mitsubishi_Outlander_Sport_PX_2.0_GA2W_%2820220519%29.jpg/1280px-2012_Mitsubishi_Outlander_Sport_PX_2.0_GA2W_%2820220519%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Mitsubishi_eK-Sport_H82W_0028.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2015 - 2019",
    "puissance_ch": 64,
    "vitesse_max_kmh": 140,
@@ -759,9 +755,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "オーバードライブ83",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Mitsubishi_Outlander_Sport_PX_2.0_GA2W_(20220519).jpg"
+   "imageCredit": "DY5W-sport",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_eK-Sport_H82W_0028.JPG"
   },
   {
    "id": "mitsubishi_ek",
@@ -1585,7 +1581,7 @@
   {
    "id": "mitsubishi_minica",
    "name": "Minica",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Minica_a107v_h42v.jpg/1280px-Minica_a107v_h42v.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/1967_Mitsubishi_Minica_LT23.jpg/1280px-1967_Mitsubishi_Minica_LT23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1962 - 2011",
    "puissance_ch": 50,
    "vitesse_max_kmh": 130,
@@ -1610,9 +1606,9 @@
     "small car",
     "economy car"
    ],
-   "imageCredit": "Hd207",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Minica_a107v_h42v.jpg"
+   "imageCredit": "TTTNIS",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1967_Mitsubishi_Minica_LT23.jpg"
   },
   {
    "id": "mitsubishi_mirage-astie",
@@ -1644,7 +1640,7 @@
   {
    "id": "mitsubishi_mirage-cyborg",
    "name": "Mirage Cyborg",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2021_Mitsubishi_Mirage_Carbonite_Edition_in_White_Diamond%2C_front_right.jpg/1280px-2021_Mitsubishi_Mirage_Carbonite_Edition_in_White_Diamond%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/1992-1993_Mitsubishi_Mirage_Cyborg-R_Hatchback_05.jpg/1280px-1992-1993_Mitsubishi_Mirage_Cyborg-R_Hatchback_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1995",
    "puissance_ch": 140,
    "vitesse_max_kmh": 200,
@@ -1669,9 +1665,9 @@
     "electric car",
     "phev"
    ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Mitsubishi_Mirage_Carbonite_Edition_in_White_Diamond,_front_right.jpg"
+   "imageCredit": "M.rJirapat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1992-1993_Mitsubishi_Mirage_Cyborg-R_Hatchback_05.jpg"
   },
   {
    "id": "mitsubishi_dingo",
@@ -1866,7 +1862,7 @@
   {
    "id": "mitsubishi_pajero-pinin",
    "name": "Pajero Pinin",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Mitsubishi_V98_Pajero_Long_Body_Super_Exceed_3200_DI-D.JPG/1280px-Mitsubishi_V98_Pajero_Long_Body_Super_Exceed_3200_DI-D.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/MITSUBISHI_PAJERO_PININ_China.jpg/1280px-MITSUBISHI_PAJERO_PININ_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2005",
    "puissance_ch": 130,
    "vitesse_max_kmh": 170,
@@ -1890,9 +1886,9 @@
     "off-road",
     "softroader"
    ],
-   "imageCredit": "DY5W-sport",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_V98_Pajero_Long_Body_Super_Exceed_3200_DI-D.JPG"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MITSUBISHI_PAJERO_PININ_China.jpg"
   },
   {
    "id": "mitsubishi_pistachio",
@@ -1989,7 +1985,7 @@
   {
    "id": "mitsubishi_rosa",
    "name": "Rosa",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Mitsubishi_Fuso_Rosa_%28BE6_series%29_2015_King_George_Square_Brisbane_L1020576.jpg/1280px-Mitsubishi_Fuso_Rosa_%28BE6_series%29_2015_King_George_Square_Brisbane_L1020576.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Horizon_Christian_School_Mitsubishi_Fuso_Rosa_20260531-124140.jpg/1280px-Horizon_Christian_School_Mitsubishi_Fuso_Rosa_20260531-124140.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - Aujourd'hui",
    "puissance_ch": 130,
    "vitesse_max_kmh": 140,
@@ -2013,9 +2009,9 @@
     "fuel-efficient car",
     "affordable car"
    ],
-   "imageCredit": "John Robert McPherson",
+   "imageCredit": "RegionVisitor90",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Fuso_Rosa_(BE6_series)_2015_King_George_Square_Brisbane_L1020576.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Horizon_Christian_School_Mitsubishi_Fuso_Rosa_20260531-124140.jpg"
   },
   {
    "id": "mitsubishi_santamo",
@@ -2202,7 +2198,6 @@
   {
    "id": "mitsubishi_space-star",
    "name": "Space Star (1998)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg/1280px-Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - 2005",
    "puissance_ch": 122,
    "vitesse_max_kmh": 190,
@@ -2224,10 +2219,7 @@
     "space star 1998",
     "compact car",
     "small car"
-   ],
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Space_Star_-_Mondial_de_l%27Automobile_de_Paris_2016_-_001.jpg"
+   ]
   },
   {
    "id": "mitsubishi_space-star-2012",
@@ -3069,12 +3061,12 @@
   {
    "id": "mitsubishi_galant-vr-4",
    "name": "Galant VR-4",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/6thGalantVR-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Mitsubishi_Galant_VR-4_8th_gen.jpg/1280px-Mitsubishi_Galant_VR-4_8th_gen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Ypy31",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:6thGalantVR-4.jpg"
+   "imageCredit": "Andrew Smith",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Galant_VR-4_8th_gen.jpg"
   },
   {
    "id": "mitsubishi_savrin",
@@ -3182,12 +3174,12 @@
   {
    "id": "mitsubishi_miev-evolution",
    "name": "MiEV Evolution",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/CIAS_2013_-_Mitsubishi_I-MiEV_Evolution_%288489634429%29.jpg/1280px-CIAS_2013_-_Mitsubishi_I-MiEV_Evolution_%288489634429%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Mitsubishi_-_Miev_Evolution_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg/1280px-Mitsubishi_-_Miev_Evolution_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Michael Gil from Toronto, ON, Canada",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:CIAS_2013_-_Mitsubishi_I-MiEV_Evolution_(8489634429).jpg"
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mitsubishi_-_Miev_Evolution_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg"
   },
   {
    "id": "mitsubishi_v3000",

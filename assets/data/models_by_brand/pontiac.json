@@ -73,12 +73,8 @@
   {
    "id": "pontiac_standard",
    "name": "Standard",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/1936-pontiac-archives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "The original uploader was DougW at English Wikipedia.",
-   "imageLicense": "Attribution",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1936-pontiac-archives.jpg"
+   "tags": []
   },
   {
    "id": "pontiac_t1000-1000",

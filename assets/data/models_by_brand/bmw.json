@@ -693,7 +693,7 @@
   {
    "id": "bmw_2000tii",
    "name": "2000 TII",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/BMW_2000_tii_h.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/BMW_2000_tii_Touring_%2814614708416%29.jpg/1280px-BMW_2000_tii_Touring_%2814614708416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1969 - 1971",
    "puissance_ch": 130,
    "vitesse_max_kmh": 190,
@@ -718,14 +718,14 @@
     "classic car",
     "used car"
    ],
-   "imageCredit": "Norbert Schnitzler",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2000_tii_h.jpg"
+   "imageCredit": "ilikewaffles11",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2000_tii_Touring_(14614708416).jpg"
   },
   {
    "id": "bmw_2002",
    "name": "2002",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BMW_2002_Turbo_%282008-06-28%29_ret.jpg/1280px-BMW_2002_Turbo_%282008-06-28%29_ret.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/BMW_2002_Turbo_%282008-06-28_Sp%29.JPG/1280px-BMW_2002_Turbo_%282008-06-28_Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1975",
    "puissance_ch": 100,
    "vitesse_max_kmh": 180,
@@ -748,9 +748,9 @@
     "internal combustion engine",
     "automobile"
    ],
-   "imageCredit": "Spurzem - Lothar Spurzem",
+   "imageCredit": "Lothar Spurzem",
    "imageLicense": "CC BY-SA 2.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2002_Turbo_(2008-06-28)_ret.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2002_Turbo_(2008-06-28_Sp).JPG"
   },
   {
    "id": "bmw_2002-turbo",
@@ -846,7 +846,7 @@
   {
    "id": "bmw_2800",
    "name": "2800",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/BMW_2800_California_Classic-Gala_2021_1X7A0277.jpg/1280px-BMW_2800_California_Classic-Gala_2021_1X7A0277.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/BMW_2800_CS_%289279212250%29.jpg/1280px-BMW_2800_CS_%289279212250%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1968 - 1972",
    "puissance_ch": 170,
    "vitesse_max_kmh": 210,
@@ -871,9 +871,9 @@
     "performance car",
     "mid-size car"
    ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2800_California_Classic-Gala_2021_1X7A0277.jpg"
+   "imageCredit": "ilikewaffles11",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2800_CS_(9279212250).jpg"
   },
   {
    "id": "bmw_2800tilux",
@@ -1671,7 +1671,6 @@
   {
    "id": "alpina_b11",
    "name": "Alpina B11",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/1989_BMW_Alpina_B11_3.5.jpg/1280px-1989_BMW_Alpina_B11_3.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1987 - 1994",
    "puissance_ch": 250,
    "vitesse_max_kmh": 245,
@@ -1695,10 +1694,7 @@
     "vehicle",
     "motor vehicle",
     "executive car"
-   ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1989_BMW_Alpina_B11_3.5.jpg"
+   ]
   },
   {
    "id": "alpina_b12",
@@ -2834,7 +2830,7 @@
   {
    "id": "bmw_m2",
    "name": "M2",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/BMW_M2_CS_%28G87%29_DSC_9727.jpg/1280px-BMW_M2_CS_%28G87%29_DSC_9727.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/BMW_M2_at_the_2025_Adelaide_Grand_Final_Parade.jpg/1280px-BMW_M2_at_the_2025_Adelaide_Grand_Final_Parade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - Aujourd'hui",
    "puissance_ch": 460,
    "vitesse_max_kmh": 250,
@@ -2861,14 +2857,14 @@
     "sports coupe",
     "high-performance"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Yu Chu Chin",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M2_CS_(G87)_DSC_9727.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M2_at_the_2025_Adelaide_Grand_Final_Parade.jpg"
   },
   {
    "id": "bmw_m235i",
    "name": "M235i",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/BMW_M235i_Racing_Cup-Team_QSR_Racingschool.jpg/1280px-BMW_M235i_Racing_Cup-Team_QSR_Racingschool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/BMW_M235i_%28F22%29_front_view.jpg/1280px-BMW_M235i_%28F22%29_front_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - 2021",
    "puissance_ch": 326,
    "vitesse_max_kmh": 250,
@@ -2893,9 +2889,9 @@
     "bmw m235i",
     "german car"
    ],
-   "imageCredit": "Alberto-g-rovi",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M235i_Racing_Cup-Team_QSR_Racingschool.jpg"
+   "imageCredit": "Alessandro",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M235i_(F22)_front_view.jpg"
   },
   {
    "id": "bmw_m240i",
@@ -3572,7 +3568,7 @@
   {
    "id": "bmw_x4",
    "name": "X4",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/BMW_X4_M_%28G02%29_IMG_2031.jpg/1280px-BMW_X4_M_%28G02%29_IMG_2031.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/BMW_X4_M_Competition_%28G02%29_DSC_7412.jpg/1280px-BMW_X4_M_Competition_%28G02%29_DSC_7412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2014 - Aujourd'hui",
    "puissance_ch": 184,
    "vitesse_max_kmh": 215,
@@ -3599,12 +3595,12 @@
    ],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M_(G02)_IMG_2031.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M_Competition_(G02)_DSC_7412.jpg"
   },
   {
    "id": "bmw_x4-m",
    "name": "X4 M",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/BMW_X4_M_Competition_%28G02%29_FL_IMG_6824.jpg/1280px-BMW_X4_M_Competition_%28G02%29_FL_IMG_6824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/BMW_X4_M_Competition_%28G02%29_DSC_7412_%28cropped%29.jpg/1280px-BMW_X4_M_Competition_%28G02%29_DSC_7412_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2019 - Aujourd'hui",
    "puissance_ch": 510,
    "vitesse_max_kmh": 250,
@@ -3631,12 +3627,12 @@
    ],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M_Competition_(G02)_FL_IMG_6824.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M_Competition_(G02)_DSC_7412_(cropped).jpg"
   },
   {
    "id": "bmw_x4-m40i",
    "name": "X4 M40i",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/BMW_X4_M40i_%28G02%29_Washington_DC_Metro_Area%2C_USA.jpg/1280px-BMW_X4_M40i_%28G02%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/BMW_X4_M40i_%28G02%29_Washington_DC_Metro_Area%2C_USA_%281.1%29.jpg/1280px-BMW_X4_M40i_%28G02%29_Washington_DC_Metro_Area%2C_USA_%281.1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 360,
    "vitesse_max_kmh": 250,
@@ -3662,12 +3658,12 @@
    ],
    "imageCredit": "OWS Photography",
    "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M40i_(G02)_Washington_DC_Metro_Area,_USA.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X4_M40i_(G02)_Washington_DC_Metro_Area,_USA_(1.1).jpg"
   },
   {
    "id": "bmw_x5",
    "name": "X5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/BMW_X5_M_%28MSP15%29.JPG/1280px-BMW_X5_M_%28MSP15%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/BMW_E70_X5_3%2C0d_pre-facelift.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2000 - Aujourd'hui",
    "puissance_ch": 381,
    "vitesse_max_kmh": 250,
@@ -3692,9 +3688,9 @@
     "all-wheel drive",
     "4x4"
    ],
-   "imageCredit": "Jakub \"Flyz1\" Maciejewski",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_X5_M_(MSP15).JPG"
+   "imageCredit": "JaayJay",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_E70_X5_3,0d_pre-facelift.jpg"
   },
   {
    "id": "bmw_x5-m",
@@ -4054,7 +4050,7 @@
   {
    "id": "bmw_z4-m",
    "name": "Z4 M",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2006_BMW_Z4_M_1.jpg/1280px-2006_BMW_Z4_M_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/2007_BMW_Z4_M_BSO25.jpg/1280px-2007_BMW_Z4_M_BSO25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2006 - 2008",
    "puissance_ch": 343,
    "vitesse_max_kmh": 250,
@@ -4082,7 +4078,7 @@
    ],
    "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2006_BMW_Z4_M_1.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2007_BMW_Z4_M_BSO25.jpg"
   },
   {
    "id": "bmw_z8",
@@ -4139,12 +4135,12 @@
   {
    "id": "bmw_m-coupe",
    "name": "M Coupé",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/BMW_1M_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2813%29.jpg/1280px-BMW_1M_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2813%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/2002_BMW_Z3_M_Coupe.jpg/1280px-2002_BMW_Z3_M_Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexandre Prévot from Nancy, France",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_1M_-_Flickr_-_Alexandre_Pr%C3%A9vot_(13).jpg"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2002_BMW_Z3_M_Coupe.jpg"
   },
   {
    "id": "bmw_m-roadster",

@@ -95,12 +95,8 @@
   {
    "id": "tvr_m-series-3000m-taimar-and-3000s",
    "name": "M Series#3000M, Taimar, and 3000S",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/TVR_M_Series_at_British_Invasion_2009.jpg/1280px-TVR_M_Series_at_British_Invasion_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "ColinMB",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_M_Series_at_British_Invasion_2009.jpg"
+   "tags": []
   },
   {
    "id": "tvr_vixen",
@@ -214,25 +210,21 @@
   {
    "id": "tvr_griffith-400",
    "name": "Griffith 400",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/1966Griffith400.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/TVR_Griffith_400_%281966%29_001.jpg/1280px-TVR_Griffith_400_%281966%29_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "3600 x 1664 x 1194",
-   "imageCredit": "Profdeuce at English Wikipedia",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1966Griffith400.JPG"
+   "imageCredit": "SG2012",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Griffith_400_(1966)_001.jpg"
   },
   {
    "id": "tvr_450-seac",
    "name": "450 SEAC",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/TVR_450SEAC_fr.jpg/1280px-TVR_450SEAC_fr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4013 x 1782 x 1205",
-   "poids_kg": 1216,
-   "imageCredit": "Jon RB from UKCropped, plates blurred by uploader Mr.choppers",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_450SEAC_fr.jpg"
+   "poids_kg": 1216
   },
   {
    "id": "tvr_typhon",

@@ -365,7 +365,6 @@
   {
    "id": "amg_e53-238",
    "name": "AMG E 53 (238)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Mercedes-AMG_W214_53_Hybrid_IMG_1292.jpg/1280px-Mercedes-AMG_W214_53_Hybrid_IMG_1292.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 435,
    "vitesse_max_kmh": 250,
@@ -388,10 +387,7 @@
     "e-class",
     "twin-turbo",
     "mild hybrid"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_W214_53_Hybrid_IMG_1292.jpg"
+   ]
   },
   {
    "id": "amg_e53-238-estate",
@@ -684,7 +680,7 @@
   {
    "id": "amg_gt-r-pro-c190",
    "name": "AMG GT R Pro (C190)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg/1280px-Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Mercedes-AMG_GT_R_Pro_%28C190%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg/1280px-Mercedes-AMG_GT_R_Pro_%28C190%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - 2020",
    "puissance_ch": 585,
    "vitesse_max_kmh": 318,
@@ -709,9 +705,9 @@
     "high-performance car",
     "supercar"
    ],
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg"
+   "imageCredit": "OWS Photography",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT_R_Pro_(C190)_Washington_DC_Metro_Area,_USA_(1).jpg"
   },
   {
    "id": "amg_gt-roadster-r190",

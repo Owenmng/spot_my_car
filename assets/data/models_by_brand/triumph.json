@@ -33,23 +33,19 @@
   {
    "id": "triumph_dolomite-straight-eight",
    "name": "Dolomite Straight Eight",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Triumph_Dolomite_Straight_Eight2.jpg/1280px-Triumph_Dolomite_Straight_Eight2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "poids_kg": 965,
-   "imageCredit": "FDS2",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Dolomite_Straight_Eight2.jpg"
+   "poids_kg": 965
   },
   {
    "id": "triumph_vitesse",
    "name": "Vitesse",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Triumph_Vitesse_Six.jpg/1280px-Triumph_Vitesse_Six.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Triumph_Vitesse_Estate.jpg/1280px-Triumph_Vitesse_Estate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "FDS2",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Vitesse_Six.jpg"
+   "imageCredit": "Tim Green",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_Vitesse_Estate.jpg"
   },
   {
    "id": "triumph_super-9",
@@ -239,14 +235,14 @@
   {
    "id": "triumph_tr6",
    "name": "TR6",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/1975_Triumph_TR6_Injection_2.5_Front.jpg/1280px-1975_Triumph_TR6_Injection_2.5_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Triumph_TR6_in_Morges_2017.jpeg/1280px-Triumph_TR6_in_Morges_2017.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4037 x 1473 x 1270",
    "poids_kg": 1030,
-   "imageCredit": "Vauxford",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1975_Triumph_TR6_Injection_2.5_Front.jpg"
+   "imageCredit": "Akela NDE",
+   "imageLicense": "CC BY-SA 2.0 fr",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Triumph_TR6_in_Morges_2017.jpeg"
   },
   {
    "id": "triumph_tr5",

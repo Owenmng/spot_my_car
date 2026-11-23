@@ -2204,7 +2204,7 @@
   {
    "id": "alfa-romeo_gt",
    "name": "GT",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Alfa_Romeo_GT_black_vl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Alfa_Romeo_GT_1600_Junior_Kulmbach_2022-20220626-RM-115646.jpg/1280px-Alfa_Romeo_GT_1600_Junior_Kulmbach_2022-20220626-RM-115646.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2010",
    "puissance_ch": 165,
    "vitesse_max_kmh": 216,
@@ -2229,9 +2229,9 @@
     "powerful car",
     "two-seater"
    ],
-   "imageCredit": "Wikimedia Commons",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GT_black_vl.jpg"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GT_1600_Junior_Kulmbach_2022-20220626-RM-115646.jpg"
   },
   {
    "id": "alfa-romeo_gt-1.8-ts",
@@ -2511,7 +2511,6 @@
   {
    "id": "alfa-romeo_mito-1.6-jtdm",
    "name": "MiTo 1.6 JTDm",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/2012_Alfa_Romeo_MiTo_1.6_JTDm.jpg/1280px-2012_Alfa_Romeo_MiTo_1.6_JTDm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - 2018",
    "puissance_ch": 120,
    "vitesse_max_kmh": 190,
@@ -2535,10 +2534,7 @@
     "motor vehicle",
     "alfa romeo",
     "jtdm engine"
-   ],
-   "imageCredit": "Corvettec6r",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Alfa_Romeo_MiTo_1.6_JTDm.jpg"
+   ]
   },
   {
    "id": "alfa-romeo_mito-quadrifoglio-verde",
@@ -3075,7 +3071,7 @@
   {
    "id": "alfa-romeo_tonale-plug-in-hybrid",
    "name": "Tonale Plug-in Hybrid",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Alfa_Romeo_TONALE_PLUG-IN_HYBRID_Q4_VELOCE_%283LA-AV113_0001%29.jpg/1280px-Alfa_Romeo_TONALE_PLUG-IN_HYBRID_Q4_VELOCE_%283LA-AV113_0001%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Alfa_Romeo_Tonale_PLUG-IN_HYBRID_Q4_VELOCE_%283LA-AV113_0001%29_front.jpg/1280px-Alfa_Romeo_Tonale_PLUG-IN_HYBRID_Q4_VELOCE_%283LA-AV113_0001%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 275,
    "vitesse_max_kmh": 220,
@@ -3102,8 +3098,8 @@
     "phev suv"
    ],
    "imageCredit": "Tokumeigakarinoaoshima",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_TONALE_PLUG-IN_HYBRID_Q4_VELOCE_(3LA-AV113_0001).jpg"
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tonale_PLUG-IN_HYBRID_Q4_VELOCE_(3LA-AV113_0001)_front.jpg"
   },
   {
    "id": "alfa-romeo_16c-twin-engine",
@@ -3214,13 +3210,9 @@
   {
    "id": "alfa-romeo_430",
    "name": "430",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Alfa_Romeo_430.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "5955 x 2130 x 2580",
-   "imageCredit": "Arbalete",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_430.jpg"
+   "dimensions_lwh_mm": "5955 x 2130 x 2580"
   },
   {
    "id": "alfa-romeo_6c-2500-coloniale",
@@ -3289,23 +3281,15 @@
   {
    "id": "alfa-romeo_romeo",
    "name": "Romeo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Alfa_Romeo_F12_Classic-Gala_2025_DSC_1061.jpg/1280px-Alfa_Romeo_F12_Classic-Gala_2025_DSC_1061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_F12_Classic-Gala_2025_DSC_1061.jpg"
+   "tags": []
   },
   {
    "id": "alfa-romeo_alfa-6",
    "name": "Alfa 6",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Alfa_Six.JPG/1280px-Alfa_Six.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4760 x 1685 x 1395",
-   "imageCredit": "Charles01",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Six.JPG"
+   "dimensions_lwh_mm": "4760 x 1685 x 1395"
   },
   {
    "id": "alfa-romeo_visconti",
@@ -3677,12 +3661,12 @@
   {
    "id": "alfa-romeo_8c-2300",
    "name": "8C 2300",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Alfa_Romeo_8C_Monza_%2819708056306%29.jpg/1280px-Alfa_Romeo_8C_Monza_%2819708056306%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Alfa_Romeo_8C_2300%2C_Bj._1932_%281975%29.jpg/1280px-Alfa_Romeo_8C_2300%2C_Bj._1932_%281975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "ilikewaffles11",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Monza_(19708056306).jpg"
+   "imageCredit": "Spurzem - Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_2300,_Bj._1932_(1975).jpg"
   },
   {
    "id": "alfa-romeo_ar8",
@@ -3772,12 +3756,8 @@
   {
    "id": "alfa-romeo_diva",
    "name": "Diva",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Sbarro_Alfa_Romeo_Diva_%28143%29.jpg/1280px-Sbarro_Alfa_Romeo_Diva_%28143%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "El monty",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Sbarro_Alfa_Romeo_Diva_(143).jpg"
+   "tags": []
   },
   {
    "id": "alfa-romeo_spider-type-939",

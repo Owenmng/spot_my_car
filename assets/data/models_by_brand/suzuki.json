@@ -350,7 +350,7 @@
   {
    "id": "suzuki_dzire",
    "name": "Dzire",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Suzuki_Dzire_1.2_GL%2B_2024.jpg/1280px-Suzuki_Dzire_1.2_GL%2B_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/MIAS_2025_-_All-new_Suzuki_Dzire_Hybrid_03.jpg/1280px-MIAS_2025_-_All-new_Suzuki_Dzire_Hybrid_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2008 - Aujourd'hui",
    "puissance_ch": 90,
    "vitesse_max_kmh": 175,
@@ -377,7 +377,7 @@
    ],
    "imageCredit": "Ethan Llamas",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_Dzire_1.2_GL%2B_2024.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:MIAS_2025_-_All-new_Suzuki_Dzire_Hybrid_03.jpg"
   },
   {
    "id": "suzuki_equator",
@@ -696,7 +696,7 @@
   {
    "id": "suzuki_fx",
    "name": "FX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/2004_Suzuki_FX125.jpg/1280px-2004_Suzuki_FX125.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/The_frontview_of_Suzuki_WAGON_R_HYBRID_FX_%28DAA-MH55S%29.jpg/1280px-The_frontview_of_Suzuki_WAGON_R_HYBRID_FX_%28DAA-MH55S%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1983 - 1989",
    "puissance_ch": 54,
    "vitesse_max_kmh": 135,
@@ -721,9 +721,9 @@
     "land vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Spinnanz (talk) (Uploads)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2004_Suzuki_FX125.jpg"
+   "imageCredit": "Tokumeigakarinoaoshima",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:The_frontview_of_Suzuki_WAGON_R_HYBRID_FX_(DAA-MH55S).jpg"
   },
   {
    "id": "suzuki_grand-escudo",
@@ -981,7 +981,7 @@
   {
    "id": "suzuki_lj",
    "name": "LJ (Jimny SJ)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Suzuki_LJ_80_%2816761650323%29.jpg/1280px-Suzuki_LJ_80_%2816761650323%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Suzuki_LJ_80_%2817381950935%29.jpg/1280px-Suzuki_LJ_80_%2817381950935%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970 - 1981",
    "puissance_ch": 41,
    "vitesse_max_kmh": 100,
@@ -1008,7 +1008,7 @@
    ],
    "imageCredit": "Dennis Elzinga",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_LJ_80_(16761650323).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Suzuki_LJ_80_(17381950935).jpg"
   },
   {
    "id": "suzuki_mighty-boy",

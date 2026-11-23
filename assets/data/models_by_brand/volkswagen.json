@@ -635,7 +635,7 @@
   {
    "id": "volkswagen_id_2all",
    "name": "ID. 2all (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2025_Volkswagen_ID4_Pro_Redspot_front.jpg/1280px-2025_Volkswagen_ID4_Pro_Redspot_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Volkswagen_ID._2all_IAA_2023_1X7A0651.jpg/1280px-Volkswagen_ID._2all_IAA_2023_1X7A0651.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023",
    "puissance_ch": 226,
    "vitesse_max_kmh": 160,
@@ -661,9 +661,9 @@
     "vehicle",
     "all-electric"
    ],
-   "imageCredit": "LuvsMG481",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Volkswagen_ID4_Pro_Redspot_front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._2all_IAA_2023_1X7A0651.jpg"
   },
   {
    "id": "volkswagen_id.-buggy",
@@ -1530,7 +1530,7 @@
   {
    "id": "volkswagen_parati",
    "name": "Parati",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Volkswagen_Parati_Mk3_%28Pol%C3%ADcia_do_Distrito_Federal%29.jpg/1280px-Volkswagen_Parati_Mk3_%28Pol%C3%ADcia_do_Distrito_Federal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Volkswagen_Parati_Summer_16V_3d_front.jpg/1280px-Volkswagen_Parati_Summer_16V_3d_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1982 - 2013",
    "puissance_ch": 104,
    "vitesse_max_kmh": 173,
@@ -1555,9 +1555,9 @@
     "motor vehicle",
     "land vehicle"
    ],
-   "imageCredit": "Agência Brasil",
-   "imageLicense": "CC BY 3.0 br",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Parati_Mk3_(Pol%C3%ADcia_do_Distrito_Federal).jpg"
+   "imageCredit": "João Bruno;cropped and lightly adjusted by uploader Mr.choppers",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Parati_Summer_16V_3d_front.jpg"
   },
   {
    "id": "volkswagen_passat",
@@ -1777,7 +1777,6 @@
   {
    "id": "volkswagen_rabbit",
    "name": "Rabbit (Golf Mk1)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Volkswagen_Golf_VIII_Rabbit_45_1X7A6982.jpg/1280px-Volkswagen_Golf_VIII_Rabbit_45_1X7A6982.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1974 - 1983",
    "puissance_ch": 70,
    "vitesse_max_kmh": 157,
@@ -1801,10 +1800,7 @@
     "vintage car",
     "small car",
     "economy car"
-   ],
-   "imageCredit": "Alexander-93",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_Rabbit_45_1X7A6982.jpg"
+   ]
   },
   {
    "id": "volkswagen_routan",
@@ -2159,7 +2155,7 @@
   {
    "id": "volkswagen_talagon",
    "name": "Talagon",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2021_FAW-Volkswagen_Talagon_%28front%29.jpg/1280px-2021_FAW-Volkswagen_Talagon_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Volkswagen_Talagon_002.jpg/1280px-Volkswagen_Talagon_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2021 - Aujourd'hui",
    "puissance_ch": 220,
    "vitesse_max_kmh": 200,
@@ -2183,14 +2179,14 @@
     "vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "User3204",
+   "imageCredit": "JustAnotherCarDesigner",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_FAW-Volkswagen_Talagon_(front).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Talagon_002.jpg"
   },
   {
    "id": "volkswagen_taos",
    "name": "Taos",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2025_Volkswagen_Taos_IMG_3640.jpg/1280px-2025_Volkswagen_Taos_IMG_3640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Volkswagen_Taos_1X7A6748.jpg/1280px-Volkswagen_Taos_1X7A6748.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 158,
    "vitesse_max_kmh": 200,
@@ -2214,9 +2210,9 @@
     "gasoline car",
     "internal combustion engine"
    ],
-   "imageCredit": "Alexander Migl",
+   "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Volkswagen_Taos_IMG_3640.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Taos_1X7A6748.jpg"
   },
   {
    "id": "volkswagen_taro",
@@ -2315,7 +2311,7 @@
   {
    "id": "volkswagen_teramont",
    "name": "Teramont (Atlas)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2021_SAIC-Volkswagen_Teramont_%28facelift%2C_front%29.jpg/1280px-2021_SAIC-Volkswagen_Teramont_%28facelift%2C_front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/VOLKSWAGEN_ATLAS_TERAMONT_China_%2838%29.jpg/1280px-VOLKSWAGEN_ATLAS_TERAMONT_China_%2838%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2017 - Aujourd'hui",
    "puissance_ch": 220,
    "vitesse_max_kmh": 200,
@@ -2339,9 +2335,9 @@
     "motor vehicle",
     "7-seater suv"
    ],
-   "imageCredit": "User3204",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_SAIC-Volkswagen_Teramont_(facelift,_front).jpg"
+   "imageCredit": "Dinkun Chen",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:VOLKSWAGEN_ATLAS_TERAMONT_China_(38).jpg"
   },
   {
    "id": "volkswagen_teramont-x",
@@ -2770,12 +2766,12 @@
   {
    "id": "volkswagen_golf-r",
    "name": "Golf R",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Volkswagen_Golf_VIII_R_IMG_4081.jpg/1280px-Volkswagen_Golf_VIII_R_IMG_4081.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Volkswagen_Golf_VIII_R_Variant_1X7A0413.jpg/1280px-Volkswagen_Golf_VIII_R_Variant_1X7A0413.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_R_IMG_4081.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_R_Variant_1X7A0413.jpg"
   },
   {
    "id": "volkswagen_golf-r32",
@@ -3784,12 +3780,12 @@
   {
    "id": "volkswagen_id-era-9x",
    "name": "ID. ERA 9X",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Volkswagen_ID._Era_9X_006.jpg/1280px-Volkswagen_ID._Era_9X_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Volkswagen_ID._Era_9X_007.jpg/1280px-Volkswagen_ID._Era_9X_007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "JustAnotherCarDesigner",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Era_9X_006.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Era_9X_007.jpg"
   },
   {
    "id": "volkswagen_id-unyx-09",

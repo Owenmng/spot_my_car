@@ -538,7 +538,6 @@
   {
    "id": "renault_r4_gordini",
    "name": "4 Gordini",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/1984_Renault_4_GTL%2C_front_left_%28Germany%29.jpg/1280px-1984_Renault_4_GTL%2C_front_left_%28Germany%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1970",
    "puissance_ch": 55,
    "vitesse_max_kmh": 140,
@@ -563,10 +562,7 @@
     "small car",
     "sports car",
     "rally car"
-   ],
-   "imageCredit": "Mr.choppers",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1984_Renault_4_GTL,_front_left_(Germany).jpg"
+   ]
   },
   {
    "id": "renault_r4_plein_air",
@@ -1016,7 +1012,6 @@
   {
    "id": "renault_r9_gordini",
    "name": "9 Gordini",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/R9_phase_1_bis_Broadway.jpg/1280px-R9_phase_1_bis_Broadway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 1989",
    "puissance_ch": 110,
    "vitesse_max_kmh": 185,
@@ -1041,10 +1036,7 @@
     "car",
     "vehicle",
     "motor vehicle"
-   ],
-   "imageCredit": "DarkPrinz",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R9_phase_1_bis_Broadway.jpg"
+   ]
   },
   {
    "id": "renault_r9_tl",
@@ -1403,7 +1395,7 @@
   {
    "id": "renault_clio_rs",
    "name": "Clio RS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Renault_Clio_%28V%2C_Facelift%29_%E2%80%93_f_02092025.jpg/1280px-Renault_Clio_%28V%2C_Facelift%29_%E2%80%93_f_02092025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/2010_Renault_Clio_RS_Gordini_BS_O24.jpg/1280px-2010_Renault_Clio_RS_Gordini_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1998 - Aujourd'hui",
    "puissance_ch": 220,
    "vitesse_max_kmh": 235,
@@ -1428,9 +1420,9 @@
     "small car",
     "turbocharged"
    ],
-   "imageCredit": "© M 93",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Clio_(V,_Facelift)_%E2%80%93_f_02092025.jpg"
+   "imageCredit": "MrWalkr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2010_Renault_Clio_RS_Gordini_BS_O24.jpg"
   },
   {
    "id": "renault_clio_v6",
@@ -1564,7 +1556,7 @@
   {
    "id": "renault_espace_f1",
    "name": "Espace F1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2015-present_Renault_Espace_Front.jpg/1280px-2015-present_Renault_Espace_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Renault_Espace_F1%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0184%29.jpg/1280px-Renault_Espace_F1%2C_GIMS_2024%2C_Le_Grand-Saconnex_%28GIMS0184%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1995 (Concept)",
    "puissance_ch": 820,
    "vitesse_max_kmh": 312,
@@ -1589,9 +1581,9 @@
     "seven seater",
     "eight seater"
    ],
-   "imageCredit": "Vauxford",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015-present_Renault_Espace_Front.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_F1,_GIMS_2024,_Le_Grand-Saconnex_(GIMS0184).jpg"
   },
   {
    "id": "renault_estafette",
@@ -1628,7 +1620,7 @@
   {
    "id": "renault_express",
    "name": "Express",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Renault_Express_II_IMG_5622.jpg/1280px-Renault_Express_II_IMG_5622.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Renault_Express_%2846145569115%29.jpg/1280px-Renault_Express_%2846145569115%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1985 - 2000",
    "puissance_ch": 55,
    "vitesse_max_kmh": 130,
@@ -1653,9 +1645,9 @@
     "freight van",
     "delivery service"
    ],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Express_II_IMG_5622.jpg"
+   "imageCredit": "Guillaume Vachey from Chalon sur Saone, France",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Express_(46145569115).jpg"
   },
   {
    "id": "renault_ez",
@@ -1915,7 +1907,7 @@
   {
    "id": "renault_kangoo_ze",
    "name": "Kangoo Z.E.",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Renault_Zoe_SAO_2014_0342.JPG/1280px-Renault_Zoe_SAO_2014_0342.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Renault_Kangoo_Z.E._Concept_%2814655445582%29.jpg/1280px-Renault_Kangoo_Z.E._Concept_%2814655445582%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2011 - Aujourd'hui",
    "puissance_ch": 60,
    "vitesse_max_kmh": 130,
@@ -1940,9 +1932,9 @@
     "renault kangoo ze",
     "kangoo ze"
    ],
-   "imageCredit": "Mariordo (Mario Roberto Durán Ortiz)",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Zoe_SAO_2014_0342.JPG"
+   "imageCredit": "Rutger van der Maar from Leiden, The Netherlands",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Kangoo_Z.E._Concept_(14655445582).jpg"
   },
   {
    "id": "renault_kaptur",
@@ -3013,7 +3005,7 @@
   {
    "id": "renault_twingo",
    "name": "Twingo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Renault_Twingo_2014_v_2008_v_1993_%281%29.jpg/1280px-Renault_Twingo_2014_v_2008_v_1993_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Renault_Twingo_Liberty%2C_Generation_1_%282017-07-28_Sp%29.JPG/1280px-Renault_Twingo_Liberty%2C_Generation_1_%282017-07-28_Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1993 - Aujourd'hui",
    "puissance_ch": 82,
    "vitesse_max_kmh": 135,
@@ -3038,9 +3030,9 @@
     "second hand twingo",
     "used twingo"
    ],
-   "imageCredit": "Kārlis Dambrāns from Latvia",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Twingo_2014_v_2008_v_1993_(1).jpg"
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Twingo_Liberty,_Generation_1_(2017-07-28_Sp).JPG"
   },
   {
    "id": "renault_twizy",
@@ -3478,12 +3470,12 @@
   {
    "id": "renault_type-u-b",
    "name": "Type U (b)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Renault_Type_U_%28b%29_Doppelphaeton_1904_%282%29.jpg/1280px-Renault_Type_U_%28b%29_Doppelphaeton_1904_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1904_Renault_Freres_Tonneau_Type_U-D_4cyl_3770cc_20hp.jpg/1280px-1904_Renault_Freres_Tonneau_Type_U-D_4cyl_3770cc_20hp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Buch-t",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Type_U_(b)_Doppelphaeton_1904_(2).jpg"
+   "imageCredit": "Alf van Beem",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1904_Renault_Freres_Tonneau_Type_U-D_4cyl_3770cc_20hp.jpg"
   },
   {
    "id": "renault_type-v",
@@ -3510,13 +3502,9 @@
   {
    "id": "renault_type-hg",
    "name": "Type HG",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Renault_Type_HG_Torpedo_4_1920.JPG/1280px-Renault_Type_HG_Torpedo_4_1920.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "poids_kg": 2000,
-   "imageCredit": "Buch-t",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Type_HG_Torpedo_4_1920.JPG"
+   "poids_kg": 2000
   },
   {
    "id": "renault_type-fk",
@@ -3783,12 +3771,8 @@
   {
    "id": "renault_type-n-c",
    "name": "Type N (c)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Renault%2C_IK_597%2C_London_to_Brighton_Veteran_Car_Run_2011%2C_Type_N_%28c%29_Tonneau_1902_10_CV.jpg/1280px-Renault%2C_IK_597%2C_London_to_Brighton_Veteran_Car_Run_2011%2C_Type_N_%28c%29_Tonneau_1902_10_CV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Buch-t",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault,_IK_597,_London_to_Brighton_Veteran_Car_Run_2011,_Type_N_(c)_Tonneau_1902_10_CV.jpg"
+   "tags": []
   },
   {
    "id": "renault_type-o",
@@ -3967,12 +3951,12 @@
   {
    "id": "renault_express-ii",
    "name": "Express II",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Renault_Kangoo_III_Express_IMG_4220.jpg/1280px-Renault_Kangoo_III_Express_IMG_4220.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Renault_Express_II_IMG_5623.jpg/1280px-Renault_Express_II_IMG_5623.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Kangoo_III_Express_IMG_4220.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Express_II_IMG_5623.jpg"
   },
   {
    "id": "renault_r27",
@@ -4059,12 +4043,12 @@
   {
    "id": "renault_nervasport",
    "name": "Nervasport",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Renault_Nervasport_%28Type_ZC_2%29_Cabriolet_1934.jpg/1280px-Renault_Nervasport_%28Type_ZC_2%29_Cabriolet_1934.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Renault_Nervasport_-_Mondial_de_l%27Automobile_de_Paris_2018_-_001.jpg/1280px-Renault_Nervasport_-_Mondial_de_l%27Automobile_de_Paris_2018_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Buch-t",
-   "imageLicense": "CC BY-SA 3.0 de",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Nervasport_(Type_ZC_2)_Cabriolet_1934.jpg"
+   "imageCredit": "Thesupermat",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Nervasport_-_Mondial_de_l%27Automobile_de_Paris_2018_-_001.jpg"
   },
   {
    "id": "renault_scenic-ii",
@@ -4261,14 +4245,14 @@
   {
    "id": "renault_type-ax",
    "name": "Type AX",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/R%C3%A9tromobile_2018_-_Renault_-_Type_AX_-_1908_-_001.jpg/1280px-R%C3%A9tromobile_2018_-_Renault_-_Type_AX_-_1908_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Renault_Type_AX_002.jpg/1280px-Renault_Type_AX_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "2900 x 1350 x 1800",
    "poids_kg": 800,
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:R%C3%A9tromobile_2018_-_Renault_-_Type_AX_-_1908_-_001.jpg"
+   "imageCredit": "Arnaud 25",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Type_AX_002.jpg"
   },
   {
    "id": "renault_monasix",
@@ -4284,13 +4268,13 @@
   {
    "id": "renault_reinastella",
    "name": "Reinastella",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Renault_Reinastella.JPG/1280px-Renault_Reinastella.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/1931_Renault_Reinastella.jpg/1280px-1931_Renault_Reinastella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "poids_kg": 2550,
-   "imageCredit": "Ton1~commonswiki",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Reinastella.JPG"
+   "imageCredit": "Alden Jewell",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1931_Renault_Reinastella.jpg"
   },
   {
    "id": "renault_viva-grand-sport",
@@ -4708,12 +4692,8 @@
   {
    "id": "renault_clio-williams-maxi",
    "name": "Clio Williams Maxi",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Renault_Clio_Williams_Maxi_Kit_car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Ibor1000",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Clio_Williams_Maxi_Kit_car.jpg"
+   "tags": []
   },
   {
    "id": "renault_clio-renault-sport",
