@@ -422,6 +422,8 @@ def main():
             ok.append((t, info))
         # Un seul appel IA pour juger jusqu'à 6 candidates ; on garde la première validée (les mieux classées d'abord).
         ok = ok[:6]
+        if wide:
+            log(f"  {bname} {m['name']}: {len(cands)} trouvées, {len(ok)} à juger")
         verdicts = vision_batch([(info["thumb"], f"{bname} {m['name']}") for _, info in ok])
         for (t, info), v in zip(ok, verdicts):
             if v is False:
