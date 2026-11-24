@@ -58,6 +58,10 @@ def base_title(url):
     return "File:" + name.replace("_", " ")
 
 
+BACK_WORDS = re.compile(r"\b(rear|back|heck|arriere|arrière|trasera|posteriore|interior|innen|cockpit|engine|motor|dashboard)\b", re.I)
+OTHER_MODELS = {}  # marque normalisée -> noms normalisés de ses modèles (rempli au chargement du catalogue)
+
+
 def _word_in(w, words):
     """« 125 » trouve « 125 » ou « 125i » / « 125d » (suffixe de 1-2 lettres), jamais « 1250 » ni « 118i »."""
     for x in words:
@@ -70,15 +74,25 @@ def title_ok(title, bname, model_name):
     """Le nom du fichier doit citer le modèle : tous ses mots (chiffres compris, en mots entiers),
     et au moins un code de génération s'il y en a un (W108, E30, XU70…). Évite « BMW 125 » illustrée par une 118i."""
     words = norm(title.replace("File:", "")).split()
+    tn = " " + " ".join(words) + " "
+    if BACK_WORDS.search(title):
+        return False  # vue arrière, intérieur, moteur : jamais pour la photo principale
     base = re.sub(r"\(.*?\)", "", model_name).strip()
+    nb = norm(base)
+    # Le nom d'un AUTRE modèle de la marque dans le titre (« Wagon R » pour la Suzuki FX, « Type 57 » pour la Type 8) = mauvaise voiture.
+    for other in OTHER_MODELS.get(norm(bname), ()):
+        if other != nb and f" {other} " not in f" {nb} " and f" {other} " in tn:
+            return False
     brand_words = set(norm(bname).split())
-    want = [w for w in norm(base).split() if w not in brand_words or any(c.isdigit() for c in w)]
-    if not want or not all(_word_in(w, words) for w in want):
-        return False
+    want = [w for w in nb.split() if w not in brand_words or any(c.isdigit() for c in w)]
     gen = " ".join(re.findall(r"\((.*?)\)", model_name))
     # Vrais codes de génération : lettres + chiffres (W108, XU70) ou 3 chiffres et plus ; « Gen 1 », « 2nd » ne comptent pas.
     codes = [w for w in norm(gen).split() if any(c.isdigit() for c in w) and (any(c.isalpha() for c in w) or len(w) >= 3)
              and not re.fullmatch(r"\d+(st|nd|rd|th)", w)]
+    if codes and any(_word_in(w, words) for w in codes) and any(w in words for w in brand_words):
+        return True  # le code de génération (W108, E30…) suffit à identifier la voiture
+    if not want or not all(_word_in(w, words) for w in want):
+        return False
     return not codes or any(_word_in(w, words) for w in codes)
 
 
@@ -336,6 +350,9 @@ def main():
         bname = brands.get(bid, {"name": bid})["name"] if bid != "mustang" else "Ford"
         for m in doc["models"]:
             entries.append((f, bname, m))
+            n = norm(re.sub(r"\(.*?\)", "", m["name"]).strip())
+            if len(n) >= 3 and not n.isdigit():  # noms assez distinctifs pour repérer un autre modèle dans un titre
+                OTHER_MODELS.setdefault(norm(bname), set()).add(n)
 
     used = {}
     for f, bname, m in entries:
