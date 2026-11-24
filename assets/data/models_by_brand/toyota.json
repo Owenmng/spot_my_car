@@ -3947,7 +3947,6 @@
   {
    "id": "toyota_optimo",
    "name": "Optimo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Bra%C3%B1as%289452-CDL%29_-_Flickr_-_antoniovera1.jpg/1280px-Bra%C3%B1as%289452-CDL%29_-_Flickr_-_antoniovera1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2000 - 2004",
    "puissance_ch": 109,
    "vitesse_max_kmh": 170,
@@ -3971,10 +3970,7 @@
     "fuel-efficient car",
     "reliable car",
     "affordable car"
-   ],
-   "imageCredit": "Antonio Vera",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bra%C3%B1as(9452-CDL)_-_Flickr_-_antoniovera1.jpg"
+   ]
   },
   {
    "id": "toyota_origin",

@@ -58,7 +58,7 @@ def base_title(url):
     return "File:" + name.replace("_", " ")
 
 
-BACK_WORDS = re.compile(r"\b(rear|back|heck|arriere|arrière|trasera|posteriore|interior|innen|cockpit|engine|motor|dashboard)\b", re.I)
+BACK_WORDS = re.compile(r"\b(rear|back|heck|heckansicht|rückansicht|rueckansicht|arriere|arrière|trasera|posteriore|interior|innen|innenraum|cockpit|engine|motor|dashboard)\b", re.I)
 OTHER_MODELS = {}  # marque normalisée -> noms normalisés de ses modèles (rempli au chargement du catalogue)
 
 
@@ -428,7 +428,8 @@ def main():
                 # La catégorie doit porter le nom exact du modèle ; le titre du fichier ne doit citer ni autre modèle ni vue arrière.
                 if t in in_use or t in cands or t.lower().endswith((".svg", ".gif", ".pdf", ".webm", ".ogv")):
                     continue
-                if title_ok(cat.replace("Category:", "File:"), bname, m["name"]) and title_ok_loose(t, bname, m["name"]):
+                # Le rangement dans la catégorie ne suffit pas (photos de salons, de groupes…) : le titre doit aussi nommer le modèle.
+                if title_ok(cat.replace("Category:", "File:"), bname, m["name"]) and title_ok(t, bname, m["name"]):
                     cands.append(t)
         for q in [q for q in queries if q]:
             for t in commons_search(q):

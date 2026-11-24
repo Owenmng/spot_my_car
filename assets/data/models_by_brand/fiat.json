@@ -2949,11 +2949,7 @@
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "2810 x 1450 x 1620",
-   "poids_kg": 1000,
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Ford_8HP_1901_MAUTO.jpg/1280px-Ford_8HP_1901_MAUTO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Marie-Lan Taÿ Pamart",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_8HP_1901_MAUTO.jpg"
+   "poids_kg": 1000
   },
   {
    "id": "fiat_brevetti",
@@ -3004,11 +3000,7 @@
    "name": "A.L.F.A 24 HP",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4250 x 1550 x 1700",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Alfa_24hp_C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imageCredit": "Unknown photographer",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_24hp_C.jpg"
+   "dimensions_lwh_mm": "4250 x 1550 x 1700"
   },
   {
    "id": "fiat_elba",
@@ -3034,11 +3026,7 @@
    "id": "fiat_palio-ii",
    "name": "Palio II",
    "production_years": "2011 - 2017",
-   "tags": [],
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2013_2nd_gen._Fiat_Palio_1.4_Attractive%2C_spotted_in_Buenos_Aires%2C_Argentina_%28front_view%29.jpg/1280px-2013_2nd_gen._Fiat_Palio_1.4_Attractive%2C_spotted_in_Buenos_Aires%2C_Argentina_%28front_view%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "Maxi-Napo-99",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2013_2nd_gen._Fiat_Palio_1.4_Attractive,_spotted_in_Buenos_Aires,_Argentina_(front_view).jpg"
+   "tags": []
   },
   {
    "id": "fiat_1100-103",
@@ -3409,11 +3397,7 @@
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5300 x 1800 x 1768",
-   "poids_kg": 900,
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/S_m._vittorio_Emanuele_III_a_Librazo_-_panoramio_%28cropped%29.jpg/1280px-S_m._vittorio_Emanuele_III_a_Librazo_-_panoramio_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "imageCredit": "ildirettore",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:S_m._vittorio_Emanuele_III_a_Librazo_-_panoramio_(cropped).jpg"
+   "poids_kg": 900
   },
   {
    "id": "fiat_tris",
@@ -3953,11 +3937,7 @@
    "id": "fiat_doblo-mk2",
    "name": "Doblò Mk2",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/2012_Fiat_Doblo_Combi_Premio_1%2C6_16v_105_Hp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imageCredit": "Ozgurcakir81",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2012_Fiat_Doblo_Combi_Premio_1,6_16v_105_Hp.jpg"
+   "tags": []
   },
   {
    "id": "fiat_multipla-i",
