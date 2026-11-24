@@ -70,6 +70,24 @@ def _word_in(w, words):
     return False
 
 
+def _other_model_in(tn, nb, bname):
+    """Le titre cite-t-il un autre modèle de la marque ? (« Wagon R » ou « WagonR » pour la Suzuki FX)"""
+    squashed = tn.replace(" ", "")
+    for other in OTHER_MODELS.get(norm(bname), ()):
+        if other == nb or f" {other} " in f" {nb} ":
+            continue
+        if f" {other} " in tn or (len(other.replace(" ", "")) >= 5 and " " in other and other.replace(" ", "") in squashed):
+            return True
+    return False
+
+
+def title_ok_loose(title, bname, model_name):
+    """Pour un fichier déjà rangé dans la catégorie du modèle : seulement pas d'autre modèle cité ni de vue arrière/intérieur."""
+    tn = " " + " ".join(norm(title.replace("File:", "")).split()) + " "
+    nb = norm(re.sub(r"\(.*?\)", "", model_name).strip())
+    return not BACK_WORDS.search(title) and not _other_model_in(tn, nb, bname)
+
+
 def title_ok(title, bname, model_name):
     """Le nom du fichier doit citer le modèle : tous ses mots (chiffres compris, en mots entiers),
     et au moins un code de génération s'il y en a un (W108, E30, XU70…). Évite « BMW 125 » illustrée par une 118i."""
@@ -80,9 +98,8 @@ def title_ok(title, bname, model_name):
     base = re.sub(r"\(.*?\)", "", model_name).strip()
     nb = norm(base)
     # Le nom d'un AUTRE modèle de la marque dans le titre (« Wagon R » pour la Suzuki FX, « Type 57 » pour la Type 8) = mauvaise voiture.
-    for other in OTHER_MODELS.get(norm(bname), ()):
-        if other != nb and f" {other} " not in f" {nb} " and f" {other} " in tn:
-            return False
+    if _other_model_in(tn, nb, bname):
+        return False
     brand_words = set(norm(bname).split())
     want = [w for w in nb.split() if w not in brand_words or any(c.isdigit() for c in w)]
     gen = " ".join(re.findall(r"\((.*?)\)", model_name))
@@ -144,6 +161,19 @@ def commons_search(q, limit=12):
     d = http_json("https://commons.wikimedia.org/w/api.php", {
         "action": "query", "format": "json", "list": "search", "srnamespace": 6, "srsearch": q, "srlimit": limit})
     return [x["title"] for x in (d or {}).get("query", {}).get("search", [])]
+
+
+def category_files(q, limit=25):
+    """Photos rangées dans la catégorie Commons du modèle (« Category:Bugatti Type 47 ») : rangement fait à la main, fiable."""
+    out = []
+    d = http_json("https://commons.wikimedia.org/w/api.php", {
+        "action": "query", "format": "json", "list": "search", "srnamespace": 14, "srsearch": q, "srlimit": 3})
+    for c in [x["title"] for x in (d or {}).get("query", {}).get("search", [])]:
+        e = http_json("https://commons.wikimedia.org/w/api.php", {
+            "action": "query", "format": "json", "list": "categorymembers", "cmtitle": c, "cmtype": "file", "cmlimit": limit})
+        out += [(c, x["title"]) for x in (e or {}).get("query", {}).get("categorymembers", [])]
+        time.sleep(0.2)
+    return out
 
 
 def categories(titles):
@@ -394,6 +424,12 @@ def main():
                 if t not in in_use and t not in cands and title_ok(t, bname, m["name"]):
                     cands.append(t)
             queries += [f"{bname} {base} car", f"{base} {bname}"]
+            for cat, t in category_files(f"{bname} {base}"):
+                # La catégorie doit porter le nom exact du modèle ; le titre du fichier ne doit citer ni autre modèle ni vue arrière.
+                if t in in_use or t in cands or t.lower().endswith((".svg", ".gif", ".pdf", ".webm", ".ogv")):
+                    continue
+                if title_ok(cat.replace("Category:", "File:"), bname, m["name"]) and title_ok_loose(t, bname, m["name"]):
+                    cands.append(t)
         for q in [q for q in queries if q]:
             for t in commons_search(q):
                 tn = norm(t)
