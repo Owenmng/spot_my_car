@@ -1356,7 +1356,6 @@
   {
    "id": "honda_insight-1g",
    "name": "Insight (1G)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Honda_Insight_bsj25.jpg/1280px-Honda_Insight_bsj25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2006",
    "puissance_ch": 73,
    "vitesse_max_kmh": 180,
@@ -1380,10 +1379,7 @@
     "honda",
     "generation 1",
     "first generation"
-   ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Insight_bsj25.jpg"
+   ]
   },
   {
    "id": "honda_inspire",

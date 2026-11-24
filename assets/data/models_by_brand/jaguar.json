@@ -606,7 +606,7 @@
   {
    "id": "jaguar_xf",
    "name": "XF",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Jaguar_XF_Sportbrake%2C_IAA_2017%2C_Frankfurt_%281Y7A3098%29.jpg/1280px-Jaguar_XF_Sportbrake%2C_IAA_2017%2C_Frankfurt_%281Y7A3098%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/JAGUAR_XF_%28X250%29_China_%282%29.jpg/1280px-JAGUAR_XF_%28X250%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2007 - 2024",
    "puissance_ch": 250,
    "vitesse_max_kmh": 244,
@@ -631,9 +631,9 @@
     "jaguar",
     "british car"
    ],
-   "imageCredit": "Matti Blume",
+   "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XF_Sportbrake,_IAA_2017,_Frankfurt_(1Y7A3098).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:JAGUAR_XF_(X250)_China_(2).jpg"
   },
   {
    "id": "jaguar_xf_r",
@@ -1124,12 +1124,12 @@
   {
    "id": "jaguar_xk-2",
    "name": "XK",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Jaguar_XK_150_S_BW_2017-07-16_13-43-20.jpg/1280px-Jaguar_XK_150_S_BW_2017-07-16_13-43-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Jaguar_XK_150_Roadster_%282017-07-02_Sp_r%29.JPG/1280px-Jaguar_XK_150_Roadster_%282017-07-02_Sp_r%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Berthold Werner",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XK_150_S_BW_2017-07-16_13-43-20.jpg"
+   "imageCredit": "Lothar Spurzem",
+   "imageLicense": "CC BY-SA 2.0 de",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jaguar_XK_150_Roadster_(2017-07-02_Sp_r).JPG"
   },
   {
    "id": "jaguar_mark-viii",

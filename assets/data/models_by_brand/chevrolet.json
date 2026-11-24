@@ -1804,7 +1804,7 @@
   {
    "id": "chevrolet_equinox_premier",
    "name": "Equinox Premier",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2018_Chevrolet_Equinox_Premier_2_%2832696395495%29.jpg/1280px-2018_Chevrolet_Equinox_Premier_2_%2832696395495%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chevrolet_Equinox_Premier_D2XX_FL_Tuxedo_Black_%284%29.jpg/1280px-Chevrolet_Equinox_Premier_D2XX_FL_Tuxedo_Black_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2018 - Aujourd'hui",
    "puissance_ch": 252,
    "vitesse_max_kmh": 210,
@@ -1828,9 +1828,9 @@
     "internal combustion engine",
     "family suv"
    ],
-   "imageCredit": "Zytonits",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Chevrolet_Equinox_Premier_2_(32696395495).jpg"
+   "imageCredit": "Damian B Oh",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Equinox_Premier_D2XX_FL_Tuxedo_Black_(4).jpg"
   },
   {
    "id": "chevrolet_evanda",
@@ -3155,7 +3155,7 @@
   {
    "id": "chevrolet_silverado_3500_hd",
    "name": "Silverado 3500HD",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chevrolet_Silverado_3500HD_GMTT1XX_Garry%E2%80%99s.jpg/1280px-Chevrolet_Silverado_3500HD_GMTT1XX_Garry%E2%80%99s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2015%E2%80%932019_Chevrolet_Silverado_3500HD_Z71%2C_Golden_Super_Cruise_2026-10-03.jpg/1280px-2015%E2%80%932019_Chevrolet_Silverado_3500HD_Z71%2C_Golden_Super_Cruise_2026-10-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2020 - Aujourd'hui",
    "puissance_ch": 401,
    "vitesse_max_kmh": 160,
@@ -3181,9 +3181,9 @@
     "car",
     "truck"
    ],
-   "imageCredit": "Bull-Doser",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Silverado_3500HD_GMTT1XX_Garry%E2%80%99s.jpg"
+   "imageCredit": "Xnatedawgx",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2015%E2%80%932019_Chevrolet_Silverado_3500HD_Z71,_Golden_Super_Cruise_2026-10-03.jpg"
   },
   {
    "id": "chevrolet_silverado_ev",
@@ -3568,7 +3568,7 @@
   {
    "id": "chevrolet_suburban_rst",
    "name": "Suburban RST",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/2015_Chevrolet_Suburban_1500_LTZ%2C_front_4.18.19.jpg/1280px-2015_Chevrolet_Suburban_1500_LTZ%2C_front_4.18.19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/21_Chevrolet_Suburban_RST.jpg/1280px-21_Chevrolet_Suburban_RST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2022 - Aujourd'hui",
    "puissance_ch": 420,
    "vitesse_max_kmh": 185,
@@ -3593,9 +3593,9 @@
     "land vehicle",
     "american suv"
    ],
-   "imageCredit": "Kevauto",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2015_Chevrolet_Suburban_1500_LTZ,_front_4.18.19.jpg"
+   "imageCredit": "HJUdall",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:21_Chevrolet_Suburban_RST.jpg"
   },
   {
    "id": "chevrolet_tahoe",
@@ -3695,7 +3695,7 @@
   {
    "id": "chevrolet_tracker",
    "name": "Tracker",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Chevrolet_Tracker_003.jpg/1280px-Chevrolet_Tracker_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Chevrolet-Tracker-4door.jpg/1280px-Chevrolet-Tracker-4door.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - Aujourd'hui",
    "puissance_ch": 138,
    "vitesse_max_kmh": 180,
@@ -3719,9 +3719,9 @@
     "fuel efficient car",
     "affordable suv"
    ],
-   "imageCredit": "Quzhouliulian",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Tracker_003.jpg"
+   "imageCredit": "IFCAR",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet-Tracker-4door.jpg"
   },
   {
    "id": "chevrolet_vectra",
@@ -3840,12 +3840,12 @@
   {
    "id": "chevrolet_universal",
    "name": "Universal",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Chevrolet_Universal_IMG_5494.jpg/1280px-Chevrolet_Universal_IMG_5494.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/1930_Chevrolet_Universal_AD_Coupe_GTK595.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Alexander Migl",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Universal_IMG_5494.jpg"
+   "imageCredit": "Lars-Göran Lindgren Sweden",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1930_Chevrolet_Universal_AD_Coupe_GTK595.jpg"
   },
   {
    "id": "chevrolet_daewoo-chevrolet-1700",
@@ -3923,12 +3923,12 @@
   {
    "id": "chevrolet_powerglide",
    "name": "Powerglide",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Chevrolet_1951_Powerglide_Deluxe_IMG_2996.jpg/1280px-Chevrolet_1951_Powerglide_Deluxe_IMG_2996.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/1951_Chevrolet_Bel_Air_Powerglide_photo-2.jpg/1280px-1951_Chevrolet_Bel_Air_Powerglide_photo-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Bjoertvedt",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_1951_Powerglide_Deluxe_IMG_2996.jpg"
+   "imageCredit": "AlfvanBeem",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1951_Chevrolet_Bel_Air_Powerglide_photo-2.jpg"
   },
   {
    "id": "chevrolet_marajo",
@@ -3994,12 +3994,8 @@
   {
    "id": "chevrolet_brasil-3100",
    "name": "Brasil 3100",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/1963_Chevrolet_Amazona.jpg/1280px-1963_Chevrolet_Amazona.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Renzo Maia;cropped and adjusted by uploader Mr.choppers",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Chevrolet_Amazona.jpg"
+   "tags": []
   },
   {
    "id": "chevrolet_cruze-j300",
@@ -4453,12 +4449,12 @@
   {
    "id": "chevrolet_parkwood",
    "name": "Parkwood",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/1959_Chevrolet_Parkwood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Chevrolet_Parkwood_stationwagon_%2835249620725%29.jpg/1280px-Chevrolet_Parkwood_stationwagon_%2835249620725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1959",
    "tags": [],
-   "imageCredit": "Josephew",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1959_Chevrolet_Parkwood.jpg"
+   "imageCredit": "FotoSleuth",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Parkwood_stationwagon_(35249620725).jpg"
   },
   {
    "id": "chevrolet_lakewood",
@@ -4764,12 +4760,12 @@
   {
    "id": "chevrolet_k5-blazer",
    "name": "K5 Blazer",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Chevrolet_K5_Blazer%2C_San_Mateo.jpg/1280px-Chevrolet_K5_Blazer%2C_San_Mateo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Chevrolet_K5_Blazer%2C_San_Mateo_2.jpg/1280px-Chevrolet_K5_Blazer%2C_San_Mateo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Mliu92",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_K5_Blazer,_San_Mateo.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_K5_Blazer,_San_Mateo_2.jpg"
   },
   {
    "id": "chevrolet_prisma",

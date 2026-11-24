@@ -24,12 +24,12 @@
   {
    "id": "byd_s7",
    "name": "S7",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/BYD_S7_in_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/BYD_S7_China_2015-04-06.jpg/1280px-BYD_S7_China_2015-04-06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rutger van der Maar",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BYD_S7_in_China.jpg"
+   "imageCredit": "Navigator84",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BYD_S7_China_2015-04-06.jpg"
   },
   {
    "id": "byd_e2",
@@ -357,14 +357,14 @@
   {
    "id": "byd_sealion-07-dm-i",
    "name": "Sealion 07 DM-i",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2025_BYD_Sealion_07_DM-i_front_view.png/1280px-2025_BYD_Sealion_07_DM-i_front_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/BYD_Sealion_07_DM-i_002.jpg/1280px-BYD_Sealion_07_DM-i_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4880 x 1920 x 1750",
    "poids_kg": 2346,
-   "imageCredit": "iMoD Official",
-   "imageLicense": "CC BY 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2025_BYD_Sealion_07_DM-i_front_view.png"
+   "imageCredit": "JustAnotherCarDesigner",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BYD_Sealion_07_DM-i_002.jpg"
   },
   {
    "id": "byd_m3-dm",
@@ -419,12 +419,12 @@
   {
    "id": "byd_e3",
    "name": "e3",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/BYD_e3_003.jpg/1280px-BYD_e3_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/BYD_e3_006.jpg/1280px-BYD_e3_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Jengtingchen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BYD_e3_003.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BYD_e3_006.jpg"
   },
   {
    "id": "byd_atto-3",

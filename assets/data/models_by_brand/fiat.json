@@ -3932,12 +3932,8 @@
   {
    "id": "fiat_doblo-mk2",
    "name": "Doblò Mk2",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Fiat_Dobl%C3%B2_Mk2_x_2.JPG/1280px-Fiat_Dobl%C3%B2_Mk2_x_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Charles01",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Dobl%C3%B2_Mk2_x_2.JPG"
+   "tags": []
   },
   {
    "id": "fiat_multipla-i",

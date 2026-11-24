@@ -23,14 +23,10 @@
   {
    "id": "saab_gran-turismo",
    "name": "Gran Turismo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Saab_GranTurismo_850%2C_1963_-_YH29971_-_DSC_0023_Balancer_%2838060826936%29.jpg/1280px-Saab_GranTurismo_850%2C_1963_-_YH29971_-_DSC_0023_Balancer_%2838060826936%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4010 x 1570 x 1450",
-   "poids_kg": 810,
-   "imageCredit": "Lav Ulv from Viby J, Denmark",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Saab_GranTurismo_850,_1963_-_YH29971_-_DSC_0023_Balancer_(38060826936).jpg"
+   "poids_kg": 810
   },
   {
    "id": "saab_90",

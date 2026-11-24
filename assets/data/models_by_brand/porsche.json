@@ -1212,7 +1212,7 @@
   {
    "id": "porsche_mission-x",
    "name": "Mission X (Concept)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Porsche_Mission_X_IAA_2023_1X7A0014.jpg/1280px-Porsche_Mission_X_IAA_2023_1X7A0014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Porsche_Mission_X%2C_IAA_Mobility_2023%2C_Munich_%28P1110381%29.jpg/1280px-Porsche_Mission_X%2C_IAA_Mobility_2023%2C_Munich_%28P1110381%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2023",
    "puissance_ch": 1700,
    "vitesse_max_kmh": "non renseigné",
@@ -1237,9 +1237,9 @@
     "land vehicle",
     "motor vehicle"
    ],
-   "imageCredit": "Alexander-93",
+   "imageCredit": "Matti Blume",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Mission_X_IAA_2023_1X7A0014.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_Mission_X,_IAA_Mobility_2023,_Munich_(P1110381).jpg"
   },
   {
    "id": "porsche_panamera",
@@ -1553,7 +1553,11 @@
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4163 x 1610 x 1320",
-   "poids_kg": 1080
+   "poids_kg": 1080,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Porsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg/1280px-Porsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Prova MO",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg"
   },
   {
    "id": "porsche_1963-1989-porsche-911",
@@ -1633,12 +1637,12 @@
   {
    "id": "porsche_cayman-2",
    "name": "Cayman",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2018_Porsche_718_Cayman.jpg/1280px-2018_Porsche_718_Cayman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Porsche_718_Cayman_GTS_1X7A7165.jpg/1280px-Porsche_718_Cayman_GTS_1X7A7165.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "多多123",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Porsche_718_Cayman.jpg"
+   "imageCredit": "Alexander-93",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Porsche_718_Cayman_GTS_1X7A7165.jpg"
   },
   {
    "id": "porsche_961",
@@ -2049,7 +2053,11 @@
    "id": "porsche_911-rsr-19",
    "name": "911 RSR-19",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2023_6_Hours_of_Spa-Francorchamps_Proton_Competition_Porsche_911_RSR-19_No.88_%28DSC08010%29.jpg/1280px-2023_6_Hours_of_Spa-Francorchamps_Proton_Competition_Porsche_911_RSR-19_No.88_%28DSC08010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "MarcelX42",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2023_6_Hours_of_Spa-Francorchamps_Proton_Competition_Porsche_911_RSR-19_No.88_(DSC08010).jpg"
   },
   {
    "id": "porsche_944-s2",

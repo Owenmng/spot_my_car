@@ -2327,7 +2327,7 @@
   {
    "id": "toyota_echo-sedan",
    "name": "Echo Sedan",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Toyota_Echo_Sedan_2000-02.JPG/1280px-Toyota_Echo_Sedan_2000-02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1999 - 2005",
    "puissance_ch": 108,
    "vitesse_max_kmh": 175,
@@ -2348,7 +2348,10 @@
     "city car",
     "economy car",
     "subcompact car"
-   ]
+   ],
+   "imageCredit": "Bull-Doser",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Toyota_Echo_Sedan_2000-02.JPG"
   },
   {
    "id": "toyota_estima",

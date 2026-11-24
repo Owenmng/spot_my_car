@@ -129,7 +129,7 @@
   {
    "id": "jeep_cj",
    "name": "CJ-7",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2021_Arlington_Independence_Day_Parade_086_%28Jeep_CJ-7%29.jpg/1280px-2021_Arlington_Independence_Day_Parade_086_%28Jeep_CJ-7%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/2021_Arlington_Independence_Day_Parade_088_%28Jeep_CJ-7%29.jpg/1280px-2021_Arlington_Independence_Day_Parade_088_%28Jeep_CJ-7%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1976 - 1986",
    "puissance_ch": 115,
    "vitesse_max_kmh": 145,
@@ -158,7 +158,7 @@
    ],
    "imageCredit": "Michael Barera",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Arlington_Independence_Day_Parade_086_(Jeep_CJ-7).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:2021_Arlington_Independence_Day_Parade_088_(Jeep_CJ-7).jpg"
   },
   {
    "id": "jeep_commander",
@@ -260,7 +260,6 @@
   {
    "id": "jeep_dispatch",
    "name": "Dispatch",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/1976_Jeep_DJ_-_Dispatcher_-_AM_General_-_AMC_-_in_USPS_livery_-_at_Rambler_Ranch_2of3.jpg/1280px-1976_Jeep_DJ_-_Dispatcher_-_AM_General_-_AMC_-_in_USPS_livery_-_at_Rambler_Ranch_2of3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1946 - 1949",
    "puissance_ch": 60,
    "vitesse_max_kmh": 100,
@@ -283,10 +282,7 @@
     "transportation",
     "logistics",
     "fleet vehicle"
-   ],
-   "imageCredit": "CZmarlin — Christopher Ziemnowicz, a photo credit would be appreciated if this image is used anywhere other than Wikiped",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1976_Jeep_DJ_-_Dispatcher_-_AM_General_-_AMC_-_in_USPS_livery_-_at_Rambler_Ranch_2of3.jpg"
+   ]
   },
   {
    "id": "jeep_fc150",
@@ -417,7 +413,7 @@
   {
    "id": "jeep_grand_cherokee_trackhawk",
    "name": "Grand Cherokee Trackhawk",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jeep_Grand_Cherokee_Trackhawk_%28WK2%29_Washington_DC_Metro_Area%2C_USA.jpg/1280px-Jeep_Grand_Cherokee_Trackhawk_%28WK2%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Jeep_Grand_Cherokee_Trackhawk_%28WK2%29_Washington_DC_Metro_Area%2C_USA_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2017 - 2021",
    "puissance_ch": 717,
    "vitesse_max_kmh": 290,
@@ -444,7 +440,7 @@
    ],
    "imageCredit": "OWS Photography",
    "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Cherokee_Trackhawk_(WK2)_Washington_DC_Metro_Area,_USA.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Cherokee_Trackhawk_(WK2)_Washington_DC_Metro_Area,_USA_(2).jpg"
   },
   {
    "id": "jeep_grand-commander",

@@ -1107,7 +1107,7 @@
   {
    "id": "bugatti_type-73",
    "name": "Type 73",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Bugatti_Coach_Type_73A_pic3cr.jpg/1280px-Bugatti_Coach_Type_73A_pic3cr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Bugatti_Type_73_Prototype%2C_c.1947_%2816428235099%29.jpg/1280px-Bugatti_Type_73_Prototype%2C_c.1947_%2816428235099%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1947 - 1949",
    "puissance_ch": 60,
    "vitesse_max_kmh": 140,
@@ -1133,9 +1133,9 @@
     "rare car",
     "collectible car"
    ],
-   "imageCredit": "AlfvanBeem",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Coach_Type_73A_pic3cr.jpg"
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_73_Prototype,_c.1947_(16428235099).jpg"
   },
   {
    "id": "bugatti_type-73c",
@@ -1478,13 +1478,9 @@
   {
    "id": "bugatti_type-57-s-atalante",
    "name": "Type 57 S Atalante",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Cit%C3%A9Auto_-_Bugatti_Type_57_S_Atalante.jpg/1280px-Cit%C3%A9Auto_-_Bugatti_Type_57_S_Atalante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1936",
    "tags": [],
-   "dimensions_lwh_mm": "4500 x 1700 x 1390",
-   "imageCredit": "A1AA1A",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Cit%C3%A9Auto_-_Bugatti_Type_57_S_Atalante.jpg"
+   "dimensions_lwh_mm": "4500 x 1700 x 1390"
   },
   {
    "id": "bugatti_type-57-c-atalante",
@@ -1532,12 +1528,12 @@
   {
    "id": "bugatti_type-22",
    "name": "Type 22",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Bugatti_1913.JPG/1280px-Bugatti_1913.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Bugatti_Type_22_Eight_Valve_Prince_Henry_Three_seat_tourer.jpg/1280px-Bugatti_Type_22_Eight_Valve_Prince_Henry_Three_seat_tourer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "haitham alfalah",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_1913.JPG"
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_22_Eight_Valve_Prince_Henry_Three_seat_tourer.jpg"
   },
   {
    "id": "bugatti_type-23",
@@ -1632,22 +1628,18 @@
   {
    "id": "bugatti_type-1",
    "name": "Type 1",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Bugatti_Type_46_Gangloff_uncoverable_semi-profiled_coach_1931.jpg/1280px-Bugatti_Type_46_Gangloff_uncoverable_semi-profiled_coach_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Jim Evans",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_46_Gangloff_uncoverable_semi-profiled_coach_1931.jpg"
+   "tags": []
   },
   {
    "id": "bugatti_type-54",
    "name": "Type 54",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Bugatti_Typ_54_blue_vr_EMS.jpg/1280px-Bugatti_Typ_54_blue_vr_EMS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Paris_-_Bonhams_2013_-_Bugatti_type_54_grand_Prix_-_1931_-_010.jpg/1280px-Paris_-_Bonhams_2013_-_Bugatti_type_54_grand_Prix_-_1931_-_010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "No machine-readable author provided. Stahlkocher assumed (based on copyright claims).",
+   "imageCredit": "Thesupermat",
    "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Typ_54_blue_vr_EMS.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2013_-_Bugatti_type_54_grand_Prix_-_1931_-_010.jpg"
   },
   {
    "id": "bugatti_type-41",
@@ -1682,12 +1674,12 @@
   {
    "id": "bugatti_type-8",
    "name": "Type 8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/1968_1927_Bugatti_Type_35B_Replica_%288%29.jpg/1280px-1968_1927_Bugatti_Type_35B_Replica_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Millers_at_Milwaukee_2026_076_%281937_Bugatti_Type_57_No._8%29.jpg/1280px-Millers_at_Milwaukee_2026_076_%281937_Bugatti_Type_57_No._8%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Damian B Oh",
+   "imageCredit": "Michael Barera",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1968_1927_Bugatti_Type_35B_Replica_(8).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Millers_at_Milwaukee_2026_076_(1937_Bugatti_Type_57_No._8).jpg"
   },
   {
    "id": "bugatti_type-64",
@@ -1703,12 +1695,12 @@
   {
    "id": "bugatti_type-46",
    "name": "Type 46",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Bugatti_Type_46.jpg/1280px-Bugatti_Type_46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Bugatti_Type_46_Profilee_%28rebodied_%26_styled_by_Jean_Bugatti%29_%2816427023740%29.jpg/1280px-Bugatti_Type_46_Profilee_%28rebodied_%26_styled_by_Jean_Bugatti%29_%2816427023740%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "MPW57",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_46.jpg"
+   "imageCredit": "Andrew Bone from Weymouth, England",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_46_Profilee_(rebodied_%26_styled_by_Jean_Bugatti)_(16427023740).jpg"
   },
   {
    "id": "bugatti_8-cylinder-line",
@@ -1733,12 +1725,12 @@
   {
    "id": "bugatti_type-27",
    "name": "Type 27",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_-_Bonhams_2017_-_Bugatti_Type_27_Brescia_torp%C3%A9do_-_1923_-_012.jpg/1280px-Paris_-_Bonhams_2017_-_Bugatti_Type_27_Brescia_torp%C3%A9do_-_1923_-_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Bugatti_Type_40_1.6_%2727_%2810615826286%29.jpg/1280px-Bugatti_Type_40_1.6_%2727_%2810615826286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Thesupermat",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2017_-_Bugatti_Type_27_Brescia_torp%C3%A9do_-_1923_-_012.jpg"
+   "imageCredit": "Falcon® Photography from France",
+   "imageLicense": "CC BY-SA 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_40_1.6_%2727_(10615826286).jpg"
   },
   {
    "id": "bugatti_type-47",
