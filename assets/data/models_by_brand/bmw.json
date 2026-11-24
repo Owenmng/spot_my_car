@@ -1694,7 +1694,11 @@
     "vehicle",
     "motor vehicle",
     "executive car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Alpina_B11_Front.JPG/1280px-Alpina_B11_Front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "KarleHorn",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Alpina_B11_Front.JPG"
   },
   {
    "id": "alpina_b12",
@@ -4661,12 +4665,6 @@
    "imageCredit": "IFCAR",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2008_BMW_M3_DC.JPG"
-  },
-  {
-   "id": "bmw_z-models",
-   "name": "Z Models",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "bmw_3-series-f30",

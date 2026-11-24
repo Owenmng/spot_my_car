@@ -1,87 +1,46 @@
 # Contrôle des photos
 
-{"remplacées": 58, "masquées": 19, "validées": 1364, "rejetées_ia": 77, "retrouvées": 6} · appels IA: 274 · restant à valider: 0 · sans photo: 275
+{"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0, "retrouvées": 42} · appels IA: 53 · restant à valider: 0 · sans photo: 219
 
-- Mini Clubman Estate (Original) (sans photo) → File:Mini Clubman Estate 1979.jpg
-- Porsche 901 (sans photo) → File:Porsche 901 prototype at Pebble Beach Concours 2023.jpg
-- Porsche 911 RSR-19 (sans photo) → File:2023 6 Hours of Spa-Francorchamps Proton Competition Porsche 911 RSR-19 No.88 (DSC08010).jpg
-- Smart K (Concept) (sans photo) → File:Smart GH-450335 K (24033011462).jpg
-- Suzuki FX (sans photo) → File:Suzuki WAGON R FX (MH34S) front.JPG
-- Toyota Echo Sedan (sans photo) → File:Toyota Echo Sedan 2000-02.JPG
-- BMW 5 Series Gran Turismo (refusée par l'IA) → File:BMW 5 SERIES GRAN TURISMO (F07) China (2).jpg
-- BMW Sauber F1.06 (refusée par l'IA) → File:BMW Sauber F1.06-02.jpg
-- BMW New Six (refusée par l'IA) → masqué, aucune photo fiable
-- BMW 635 (refusée par l'IA) → File:Würgauer Bergrennen BMW 635 CSi-20220911-RM-114854.jpg
-- Bugatti Type 73 (refusée par l'IA) → File:Bugatti Type 73 Prototype, c.1947 (16428235099).jpg
-- Bugatti Type 57 S Atalante (refusée par l'IA) → masqué, aucune photo fiable
-- Bugatti Type 22 (refusée par l'IA) → File:Bugatti Type 22 Eight Valve Prince Henry Three seat tourer.jpg
-- Bugatti Type 1 (refusée par l'IA) → masqué, aucune photo fiable
-- Bugatti Type 54 (refusée par l'IA) → File:Paris - Bonhams 2013 - Bugatti type 54 grand Prix - 1931 - 010.jpg
-- Bugatti Type 8 (refusée par l'IA) → File:Millers at Milwaukee 2026 076 (1937 Bugatti Type 57 No. 8).jpg
-- Bugatti Type 46 (refusée par l'IA) → File:Bugatti Type 46 Profilee (rebodied & styled by Jean Bugatti) (16427023740).jpg
-- Bugatti Type 27 (refusée par l'IA) → File:Bugatti Type 40 1.6 '27 (10615826286).jpg
-- Buick Electra E5 (refusée par l'IA) → File:2023 SAIC-GM Buick Electra E5 (front).jpg
-- BYD S7 (refusée par l'IA) → File:BYD S7 China 2015-04-06.jpg
-- BYD Sealion 07 DM-i (refusée par l'IA) → File:BYD Sealion 07 DM-i 002.jpg
-- BYD e3 (refusée par l'IA) → File:BYD e3 006.jpg
-- Cadillac Eldorado (refusée par l'IA) → File:Cadillac Eldorado Kulmbach -20220626-RM-163705.jpg
-- Cadillac Fleetwood Limousine (refusée par l'IA) → File:Cadillac Fleetwood 75 Limousine 1962 Oldtimertreffen Ebern 2019 6200188.jpg
-- Cadillac Model M (refusée par l'IA) → File:1906 Cadillac Model M (1).jpg
-- Chevrolet Equinox Premier (refusée par l'IA) → File:Chevrolet Equinox Premier D2XX FL Tuxedo Black (4).jpg
-- Chevrolet Silverado 3500HD (refusée par l'IA) → File:2015–2019 Chevrolet Silverado 3500HD Z71, Golden Super Cruise 2026-10-03.jpg
-- Chevrolet Suburban RST (refusée par l'IA) → File:21 Chevrolet Suburban RST.jpg
-- Chevrolet Tracker (refusée par l'IA) → File:Chevrolet-Tracker-4door.jpg
-- Chevrolet Universal (refusée par l'IA) → File:1930 Chevrolet Universal AD Coupe GTK595.jpg
-- Chevrolet Powerglide (refusée par l'IA) → File:1951 Chevrolet Bel Air Powerglide photo-2.jpg
-- Chevrolet Brasil 3100 (refusée par l'IA) → masqué, aucune photo fiable
-- Chevrolet Parkwood (refusée par l'IA) → File:Chevrolet Parkwood stationwagon (35249620725).jpg
-- Chevrolet K5 Blazer (refusée par l'IA) → File:Chevrolet K5 Blazer, San Mateo 2.jpg
-- Chrysler Sunbeam (refusée par l'IA) → File:Chrysler Sunbeam in London.jpg
-- Citroën Basalt (refusée par l'IA) → File:Citroën Basalt 1.6 VTi Feel 2026.jpg
-- Citroën BX GTI (refusée par l'IA) → File:1989 Citroën BX GTi 16v 1.jpg
-- Citroën C5 X (refusée par l'IA) → File:Citroen C5 X PHEV Automesse Ludwigsburg 2022 1X7A5887.jpg
-- Citroën GS Birotor (refusée par l'IA) → File:Citroën GS Birotor (1974).jpg
-- Citroën Saxo VTS (refusée par l'IA) → File:2000 Citroen Saxo VTS Rally Car.jpg
-- Citroën Xsara (refusée par l'IA) → File:Paris - Bonhams 2013 - Citroën Xsara WRC - 2003 - 001.jpg
-- Citroën B10 (refusée par l'IA) → File:Citroën B10 Cabriolet Bruchhausen-Vilsen.jpg
-- Dacia 1325 Liberta (refusée par l'IA) → masqué, aucune photo fiable
-- Dacia 1320 (refusée par l'IA) → masqué, aucune photo fiable
-- Dacia Logan II (refusée par l'IA) → File:Romanian Police Dacia Logan II Facelift (2017) 1.jpg
-- Dodge New Value (refusée par l'IA) → masqué, aucune photo fiable
-- Dodge Victory (refusée par l'IA) → File:Салоники, Dodge Victory в Grand Hotel Palace (1).jpg
-- Dodge 1955 Dodge (refusée par l'IA) → File:1955 Dodge Hemi (15269548732).jpg
-- Fiat Doblò Mk2 (refusée par l'IA) → masqué, aucune photo fiable
-- Ford ZX2 (refusée par l'IA) → File:2003 Ford ZX2.jpg
-- Honda Insight (1G) (refusée par l'IA) → masqué, aucune photo fiable
-- Jaguar XF (refusée par l'IA) → File:JAGUAR XF (X250) China (2).jpg
-- Jaguar XK (refusée par l'IA) → File:Jaguar XK 150 Roadster (2017-07-02 Sp r).JPG
-- Jeep CJ-7 (refusée par l'IA) → File:2021 Arlington Independence Day Parade 088 (Jeep CJ-7).jpg
-- Jeep Dispatch (refusée par l'IA) → masqué, aucune photo fiable
-- Jeep Grand Cherokee Trackhawk (refusée par l'IA) → File:Jeep Grand Cherokee Trackhawk (WK2) Washington DC Metro Area, USA (2).jpg
-- Lamborghini Urus Performante (refusée par l'IA) → File:Lamborghini Urus Performante 1X7A6804.jpg
-- Land Rover Discovery (refusée par l'IA) → File:Land Rover Discovery, GIMS 2018, Le Grand-Saconnex (1X7A1200).jpg
-- Lotus Esprit S3 (refusée par l'IA) → File:1981 Lotus Esprit S3.jpg
-- Mazda Capella (refusée par l'IA) → File:Mazda-capella-4th-generation01.jpg
-- McLaren F1 GT (refusée par l'IA) → File:McLaren F1 GT, GIMS. 2015 (Ank Kumar, INFOSYS Limited) 12.jpg
-- Mercedes-Benz W112 (refusée par l'IA) → File:Mercedes Benz 300 SE W112 (1962) Solitude Revival 2019 IMG 1736.jpg
-- Ford Mustang Eleanor (réplique) (refusée par l'IA) → File:1967 Ford Mustang Eleanor (8600839966).jpg
-- Ford Mustang King Cobra (refusée par l'IA) → File:1978 Ford Mustang II King Cobra - 13675415704.jpg
-- Ford Mustang Twister (refusée par l'IA) → masqué, aucune photo fiable
-- Ford Mustang VI (S550) (refusée par l'IA) → masqué, aucune photo fiable
-- Nissan R90C (refusée par l'IA) → masqué, aucune photo fiable
-- Pagani Zonda Revolucion (refusée par l'IA) → File:Pagani Zonda Revolución, GIMS 2014 (Ank Kumar) 05.jpg
-- Peugeot 307 CC (refusée par l'IA) → File:Peugeot 307 CC (side).jpg
-- Peugeot 406 Coupé 2.2 HDi (refusée par l'IA) → File:Peugeot 406 Coupé 2.2 16V HDi (2004) (52923799879).jpg
-- Porsche Mission X (Concept) (refusée par l'IA) → File:Porsche Mission X, IAA Mobility 2023, Munich (P1110381).jpg
-- Porsche Cayman (refusée par l'IA) → File:Porsche 718 Cayman GTS 1X7A7165.jpg
-- Renault 9 TS (refusée par l'IA) → masqué, aucune photo fiable
-- Renault Super 5 (refusée par l'IA) → File:Renault Super 5 & Renault Latitude.jpg
-- Renault Mégane IV RS (refusée par l'IA) → File:Renault Mégane IV RS (41760815121).jpg
-- Renault 9 (refusée par l'IA) → File:1988 Renault 9 GTL.jpg
-- Renault 15/17 (refusée par l'IA) → File:1972 Renault 15-17 pic2.JPG
-- Renault 20/30 (refusée par l'IA) → masqué, aucune photo fiable
-- Renault Mégane IV RS Trophy (refusée par l'IA) → masqué, aucune photo fiable
-- Saab Gran Turismo (refusée par l'IA) → masqué, aucune photo fiable
-- Škoda 1000 MB (refusée par l'IA) → File:Škoda 1000 MB old photo.jpg
-- Tesla Roadster (2025) (refusée par l'IA) → masqué, aucune photo fiable
-- Volkswagen Passat CC (refusée par l'IA) → masqué, aucune photo fiable
+- Alpine A211 (sans photo) → File:Bruxelles Autoworld Racecars 04.jpg
+- Aston Martin Lagonda 16/80 (sans photo) → File:1933 Lagonda 16-80 (29072571540).jpg
+- Aston Martin Lagonda Rapier (sans photo) → File:1934 Lagonda Rapier 1.jpg
+- Audi Type R (sans photo) → File:Classic Days 2022 Audi R19 (Imperator) 1929.jpg
+- Audi Abt-Audi TT-R (sans photo) → File:DTM-Audi Red Bull.jpg
+- BMW Alpina B11 (sans photo) → File:Alpina B11 Front.JPG
+- BMW 331 (sans photo) → File:RCN 8. 2023 81.jpg
+- Bugatti Type 47 (sans photo) → File:Bugatti Type 45 01.jpg
+- Chevrolet Brasil 3100 (sans photo) → File:Desfile de carros antigos no Túnel Rei Pelé (52950918946).jpg
+- Ferrari 400 GT (sans photo) → File:Paris - Bonhams 2014 - Ferrari 400GT Automatic Sports Saloon - 1978 - 001.jpg
+- Fiat 8 HP (sans photo) → File:Ford 8HP 1901 MAUTO.jpg
+- Fiat A.L.F.A 24 HP (sans photo) → File:Alfa 24hp C.jpg
+- Fiat Palio II (sans photo) → File:2013 2nd gen. Fiat Palio 1.4 Attractive, spotted in Buenos Aires, Argentina (front view).jpg
+- Fiat Auto Avio Costruzioni 815 (sans photo) → File:Auto Avio Costruzioni 815 (5742979800).jpg
+- Fiat 2800 (sans photo) → File:S m. vittorio Emanuele III a Librazo - panoramio (cropped).jpg
+- Fiat Doblò Mk2 (sans photo) → File:2012 Fiat Doblo Combi Premio 1,6 16v 105 Hp.jpg
+- Honda e:NS1 (sans photo) → File:2023 Dongfeng-Honda eNS1 in blue, front 8.18.23.jpg
+- Kia Asia KM410-series (sans photo) → File:DN-ST-82-05311.jpg
+- Lamborghini Gallardo LP550-2 Spyder (sans photo) → File:Lamborghini - Gallardo LP 550-2 Spyder - Mondial de l'Automobile de Paris 2012 - 202.jpg
+- Land Rover Ranger Special Operations Vehicle (sans photo) → File:Land Rover, licence registration '-16.JPG
+- Land Rover Range Rover SV Coupé (sans photo) → File:Land Rover at the New York International Auto Show NYIAS (39516118620).jpg
+- Maserati Chubasco (Concept) (sans photo) → File:Collection Panini Maserati 0087.JPG
+- Mazda Eunos 300 (sans photo) → File:Eunos 300 20150114 (cropped).JPG
+- Mazda Eunos Presso (sans photo) → File:Eunos Presso 002.JPG
+- Mercedes-Benz Interim Fast Attack Vehicle (sans photo) → File:A US Marine Corps (USMC) Intermediate Fast Attack Vehicle (IFAV) with a mounted TOW (Tube-launched, Optically-tracked, Wire-guided) missile launcher. The IFAV is from the Mobile Ass - DPLA - 8e5ff5a59773659042bd46506995d2fe.jpeg
+- Mitsubishi Santamo (sans photo) → File:00 hyundai santamo 001.jpg
+- NIO Onvo L80 (sans photo) → File:Onvo L80 in Tianhe, Guangzhou 20260522.jpg
+- Opel 8/40 PS (sans photo) → File:40 PS Torpedo.jpg
+- Peugeot 406 Coupé (sans photo) → File:2000 Peugeot 406 Coupe.jpg
+- Peugeot DK5 (sans photo) → File:German Peugeot truck during the VII Aircraft Picnic in Kraków 3.jpg
+- Renault Lodgy (Rebadged Dacia) (sans photo) → File:Dacia Lodgy - Rückansicht mit dritter Sitzreihe.JPG
+- Renault Type HG (sans photo) → File:1902-Type H.jpg
+- Renault Type N (c) (sans photo) → File:1904 Renault Phaeton Type T, 7cv 864cc 40kmh (inv 2201) photo 1.JPG
+- Škoda 1000 MB Combi (sans photo) → File:Skoda 990 kombi 1.jpg
+- Škoda Favorit prototype (sans photo) → File:Skoda Favorit Prototyp 1987.jpg
+- Škoda 104 (sans photo) → File:Akce Cihelna 2014 D05. HlavniUkazkaPatek.jpg
+- Škoda 720 (sans photo) → File:Brno-Technické-muzeum-Škoda720-2025.jpg
+- Toyota Optimo (sans photo) → File:Brañas(9452-CDL) - Flickr - antoniovera1.jpg
+- Toyota Dario Terios (sans photo) → File:Dario Terios 1.3 16V.jpg
+- Triumph Dolomite Straight Eight (sans photo) → File:1932 Triumph Dolomite Grand Sport.jpg
+- Volkswagen ID. Space Vizzion (Concept) (sans photo) → File:P1046099 (53538021386).jpg
+- Xpeng IDENTY X (sans photo) → File:Xpeng G3 and Identity X in Yangpu Shanghai 2021020701.jpg

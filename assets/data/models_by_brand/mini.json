@@ -438,7 +438,11 @@
     "jcw",
     "german car",
     "british car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Mini_Hatch_%28J01%29_John_Cooper_Works_DSC_9705.jpg/1280px-Mini_Hatch_%28J01%29_John_Cooper_Works_DSC_9705.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Alexander Migl",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mini_Hatch_(J01)_John_Cooper_Works_DSC_9705.jpg"
   },
   {
    "id": "mini_moke",
@@ -632,14 +636,6 @@
    "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1963_Austin_Mini_850_AA_Van.jpg"
-  },
-  {
-   "id": "mini_coupe-and-roadster",
-   "name": "Coupé and Roadster",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "3734 x 1683 x 1390",
-   "poids_kg": 1260
   },
   {
    "id": "mini_hatch-2",

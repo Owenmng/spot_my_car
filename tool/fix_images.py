@@ -58,6 +58,10 @@ def base_title(url):
     return "File:" + name.replace("_", " ")
 
 
+BACK_WORDS = re.compile(r"\b(rear|back|heck|heckansicht|rückansicht|rueckansicht|arriere|arrière|trasera|posteriore|interior|innen|innenraum|cockpit|engine|motor|dashboard)\b", re.I)
+OTHER_MODELS = {}  # marque normalisée -> noms normalisés de ses modèles (rempli au chargement du catalogue)
+
+
 def _word_in(w, words):
     """« 125 » trouve « 125 » ou « 125i » / « 125d » (suffixe de 1-2 lettres), jamais « 1250 » ni « 118i »."""
     for x in words:
@@ -66,19 +70,46 @@ def _word_in(w, words):
     return False
 
 
+def _other_model_in(tn, nb, bname):
+    """Le titre cite-t-il un autre modèle de la marque ? (« Wagon R » ou « WagonR » pour la Suzuki FX)"""
+    squashed = tn.replace(" ", "")
+    for other in OTHER_MODELS.get(norm(bname), ()):
+        if other == nb or f" {other} " in f" {nb} ":
+            continue
+        if f" {other} " in tn or (len(other.replace(" ", "")) >= 5 and " " in other and other.replace(" ", "") in squashed):
+            return True
+    return False
+
+
+def title_ok_loose(title, bname, model_name):
+    """Pour un fichier déjà rangé dans la catégorie du modèle : seulement pas d'autre modèle cité ni de vue arrière/intérieur."""
+    tn = " " + " ".join(norm(title.replace("File:", "")).split()) + " "
+    nb = norm(re.sub(r"\(.*?\)", "", model_name).strip())
+    return not BACK_WORDS.search(title) and not _other_model_in(tn, nb, bname)
+
+
 def title_ok(title, bname, model_name):
     """Le nom du fichier doit citer le modèle : tous ses mots (chiffres compris, en mots entiers),
     et au moins un code de génération s'il y en a un (W108, E30, XU70…). Évite « BMW 125 » illustrée par une 118i."""
     words = norm(title.replace("File:", "")).split()
+    tn = " " + " ".join(words) + " "
+    if BACK_WORDS.search(title):
+        return False  # vue arrière, intérieur, moteur : jamais pour la photo principale
     base = re.sub(r"\(.*?\)", "", model_name).strip()
-    brand_words = set(norm(bname).split())
-    want = [w for w in norm(base).split() if w not in brand_words or any(c.isdigit() for c in w)]
-    if not want or not all(_word_in(w, words) for w in want):
+    nb = norm(base)
+    # Le nom d'un AUTRE modèle de la marque dans le titre (« Wagon R » pour la Suzuki FX, « Type 57 » pour la Type 8) = mauvaise voiture.
+    if _other_model_in(tn, nb, bname):
         return False
+    brand_words = set(norm(bname).split())
+    want = [w for w in nb.split() if w not in brand_words or any(c.isdigit() for c in w)]
     gen = " ".join(re.findall(r"\((.*?)\)", model_name))
     # Vrais codes de génération : lettres + chiffres (W108, XU70) ou 3 chiffres et plus ; « Gen 1 », « 2nd » ne comptent pas.
     codes = [w for w in norm(gen).split() if any(c.isdigit() for c in w) and (any(c.isalpha() for c in w) or len(w) >= 3)
              and not re.fullmatch(r"\d+(st|nd|rd|th)", w)]
+    if codes and any(_word_in(w, words) for w in codes) and any(w in words for w in brand_words):
+        return True  # le code de génération (W108, E30…) suffit à identifier la voiture
+    if not want or not all(_word_in(w, words) for w in want):
+        return False
     return not codes or any(_word_in(w, words) for w in codes)
 
 
@@ -130,6 +161,19 @@ def commons_search(q, limit=12):
     d = http_json("https://commons.wikimedia.org/w/api.php", {
         "action": "query", "format": "json", "list": "search", "srnamespace": 6, "srsearch": q, "srlimit": limit})
     return [x["title"] for x in (d or {}).get("query", {}).get("search", [])]
+
+
+def category_files(q, limit=25):
+    """Photos rangées dans la catégorie Commons du modèle (« Category:Bugatti Type 47 ») : rangement fait à la main, fiable."""
+    out = []
+    d = http_json("https://commons.wikimedia.org/w/api.php", {
+        "action": "query", "format": "json", "list": "search", "srnamespace": 14, "srsearch": q, "srlimit": 3})
+    for c in [x["title"] for x in (d or {}).get("query", {}).get("search", [])]:
+        e = http_json("https://commons.wikimedia.org/w/api.php", {
+            "action": "query", "format": "json", "list": "categorymembers", "cmtitle": c, "cmtype": "file", "cmlimit": limit})
+        out += [(c, x["title"]) for x in (e or {}).get("query", {}).get("categorymembers", [])]
+        time.sleep(0.2)
+    return out
 
 
 def categories(titles):
@@ -336,6 +380,9 @@ def main():
         bname = brands.get(bid, {"name": bid})["name"] if bid != "mustang" else "Ford"
         for m in doc["models"]:
             entries.append((f, bname, m))
+            n = norm(re.sub(r"\(.*?\)", "", m["name"]).strip())
+            if len(n) >= 3 and not n.isdigit():  # noms assez distinctifs pour repérer un autre modèle dans un titre
+                OTHER_MODELS.setdefault(norm(bname), set()).add(n)
 
     used = {}
     for f, bname, m in entries:
@@ -377,6 +424,13 @@ def main():
                 if t not in in_use and t not in cands and title_ok(t, bname, m["name"]):
                     cands.append(t)
             queries += [f"{bname} {base} car", f"{base} {bname}"]
+            for cat, t in category_files(f"{bname} {base}"):
+                # La catégorie doit porter le nom exact du modèle ; le titre du fichier ne doit citer ni autre modèle ni vue arrière.
+                if t in in_use or t in cands or t.lower().endswith((".svg", ".gif", ".pdf", ".webm", ".ogv")):
+                    continue
+                # Le rangement dans la catégorie ne suffit pas (photos de salons, de groupes…) : le titre doit aussi nommer le modèle.
+                if title_ok(cat.replace("Category:", "File:"), bname, m["name"]) and title_ok(t, bname, m["name"]):
+                    cands.append(t)
         for q in [q for q in queries if q]:
             for t in commons_search(q):
                 tn = norm(t)
@@ -405,6 +459,8 @@ def main():
             ok.append((t, info))
         # Un seul appel IA pour juger jusqu'à 6 candidates ; on garde la première validée (les mieux classées d'abord).
         ok = ok[:6]
+        if wide:
+            log(f"  {bname} {m['name']}: {len(cands)} trouvées, {len(ok)} à juger")
         verdicts = vision_batch([(info["thumb"], f"{bname} {m['name']}") for _, info in ok])
         for (t, info), v in zip(ok, verdicts):
             if v is False:

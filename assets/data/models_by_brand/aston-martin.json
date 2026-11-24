@@ -1055,7 +1055,11 @@
     "performance car",
     "british car",
     "muscle car"
-   ]
+   ],
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/SC06_Aston_Martin_Vanquish_green.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageCredit": "Brett Weinstein (Wikipedia User: Nrbelex)",
+   "imageLicense": "CC BY-SA 2.5",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:SC06_Aston_Martin_Vanquish_green.jpg"
   },
   {
    "id": "aston-martin_vanquish-gen2",
@@ -1207,13 +1211,21 @@
    "id": "aston-martin_lagonda-16-80",
    "name": "Lagonda 16/80",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/1933_Lagonda_16-80_%2829072571540%29.jpg/1280px-1933_Lagonda_16-80_%2829072571540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Tap Tapzz",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1933_Lagonda_16-80_(29072571540).jpg"
   },
   {
    "id": "aston-martin_lagonda-rapier",
    "name": "Lagonda Rapier",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/1934_Lagonda_Rapier_1.jpg/1280px-1934_Lagonda_Rapier_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Calreyn88",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1934_Lagonda_Rapier_1.jpg"
   },
   {
    "id": "aston-martin_nimrod-nra-c2",

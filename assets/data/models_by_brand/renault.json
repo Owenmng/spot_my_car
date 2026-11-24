@@ -2188,7 +2188,6 @@
   {
    "id": "renault_lodgy",
    "name": "Lodgy (Rebadged Dacia)",
-   "imageUrl": null,
    "production_years": "2013 - 2022",
    "puissance_ch": 110,
    "vitesse_max_kmh": 175,
@@ -3271,12 +3270,6 @@
    "imageCredit": "Blood Destructor (talk · contribs)",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_AHS_cropped.jpg"
-  },
-  {
-   "id": "renault_acx-and-adx",
-   "name": "ACx and ADx",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "renault_pn",
@@ -4642,12 +4635,6 @@
    "imageCredit": "order_242 from Chile",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Samsung_SM3_1.5_LE_2004_(10581314536).jpg"
-  },
-  {
-   "id": "renault_automobile-4-cv-m-106-801",
-   "name": "automobile 4 CV M-106.801",
-   "production_years": "1953",
-   "tags": []
   },
   {
    "id": "renault_boreal",
