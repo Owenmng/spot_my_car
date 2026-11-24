@@ -98,7 +98,6 @@
   {
    "id": "dacia_1325",
    "name": "1325 Liberta",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Dacia_1325_Liberta_%281991-1996%29.jpg/1280px-Dacia_1325_Liberta_%281991-1996%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1991 - 1996",
    "puissance_ch": 62,
    "vitesse_max_kmh": 140,
@@ -119,10 +118,7 @@
     "hatchback",
     "subcompact car",
     "economy car"
-   ],
-   "imageCredit": "ROCostiTheBunnyCZ",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_1325_Liberta_(1991-1996).jpg"
+   ]
   },
   {
    "id": "dacia_1410",
@@ -685,12 +681,8 @@
   {
    "id": "dacia_1320",
    "name": "1320",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Dacia_1320.jpg/1280px-Dacia_1320.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Strainu",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_1320.jpg"
+   "tags": []
   },
   {
    "id": "dacia_1325-2",
@@ -768,12 +760,12 @@
   {
    "id": "dacia_logan-ii",
    "name": "Logan II",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/2016-10-24_Lissabon_6258_%2830824048342%29_%28cropped%29.jpg/1280px-2016-10-24_Lissabon_6258_%2830824048342%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Romanian_Police_Dacia_Logan_II_Facelift_%282017%29_1.jpg/1280px-Romanian_Police_Dacia_Logan_II_Facelift_%282017%29_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "swissbert from Switzerland",
-   "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2016-10-24_Lissabon_6258_(30824048342)_(cropped).jpg"
+   "imageCredit": "Mihnea Lazăr",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Romanian_Police_Dacia_Logan_II_Facelift_(2017)_1.jpg"
   },
   {
    "id": "dacia_sandero-iii",

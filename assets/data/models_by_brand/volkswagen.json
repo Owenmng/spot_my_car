@@ -1593,7 +1593,6 @@
   {
    "id": "volkswagen_passat-cc",
    "name": "Passat CC",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Volkswagen_Passat_CC-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "production_years": "2008 - 2016",
    "puissance_ch": 160,
    "vitesse_max_kmh": 222,
@@ -1615,10 +1614,7 @@
     "used passat cc",
     "2008-2011 passat cc",
     "2012-2017 passat cc"
-   ],
-   "imageCredit": "M 93",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Volkswagen_Passat_CC-1.jpg"
+   ]
   },
   {
    "id": "volkswagen_phaeton",

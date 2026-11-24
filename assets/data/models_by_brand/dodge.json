@@ -1452,11 +1452,7 @@
    "id": "dodge_new-value",
    "name": "New Value",
    "production_years": null,
-   "tags": [],
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Dodge_New_Value_Series_DU_Six_Touring_Sedan_1935.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_New_Value_Series_DU_Six_Touring_Sedan_1935.jpg"
+   "tags": []
   },
   {
    "id": "dodge_ram-50",
@@ -1471,12 +1467,12 @@
   {
    "id": "dodge_victory",
    "name": "Victory",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Dodge_Victory_Six_Brougham_1928.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%D0%A1%D0%B0%D0%BB%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%2C_Dodge_Victory_%D0%B2_Grand_Hotel_Palace_%281%29.jpg/1280px-%D0%A1%D0%B0%D0%BB%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%2C_Dodge_Victory_%D0%B2_Grand_Hotel_Palace_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_Victory_Six_Brougham_1928.jpg"
+   "imageCredit": "Nikolai Bulykin",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%BB%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8,_Dodge_Victory_%D0%B2_Grand_Hotel_Palace_(1).jpg"
   },
   {
    "id": "dodge_wc-51",
@@ -1513,12 +1509,12 @@
   {
    "id": "dodge_1955-dodge",
    "name": "1955 Dodge",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/1955_Dodge_Hemi_%2815083210009%29.jpg/1280px-1955_Dodge_Hemi_%2815083210009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/1955_Dodge_Hemi_%2815269548732%29.jpg/1280px-1955_Dodge_Hemi_%2815269548732%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "JOHN LLOYD from Concrete, Washington, United States",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1955_Dodge_Hemi_(15083210009).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1955_Dodge_Hemi_(15269548732).jpg"
   },
   {
    "id": "dodge_wayfarer",

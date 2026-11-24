@@ -4710,12 +4710,8 @@
   {
    "id": "nissan_r90c",
    "name": "R90C",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/NISSAN_R90C_RETROMOBILE_2023_%2852678362442%29.jpg/1280px-NISSAN_R90C_RETROMOBILE_2023_%2852678362442%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "ERIC SALARD from Paris, FRANCE",
-   "imageLicense": "CC BY-SA 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:NISSAN_R90C_RETROMOBILE_2023_(52678362442).jpg"
+   "tags": []
   },
   {
    "id": "nissan_datsun-200b",

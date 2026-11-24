@@ -1071,7 +1071,6 @@
   {
    "id": "renault_r9_ts",
    "name": "9 TS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Camion_citerne_Renault_sur_ch%C3%A2ssis_TS_%281931%29.jpg/1280px-Camion_citerne_Renault_sur_ch%C3%A2ssis_TS_%281931%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1981 - 1989",
    "puissance_ch": 72,
    "vitesse_max_kmh": 160,
@@ -1095,10 +1094,7 @@
     "collectible car",
     "motor vehicle",
     "land vehicle"
-   ],
-   "imageCredit": "Unknown authorUnknown author",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Camion_citerne_Renault_sur_ch%C3%A2ssis_TS_(1931).jpg"
+   ]
   },
   {
    "id": "renault_r9_turbo",
@@ -2783,7 +2779,7 @@
   {
    "id": "renault_super-5",
    "name": "Super 5",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/1964_Renault_Super_5.jpg/1280px-1964_Renault_Super_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Renault_Super_5_%26_Renault_Latitude.jpg/1280px-Renault_Super_5_%26_Renault_Latitude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1984 - 1996",
    "puissance_ch": 120,
    "vitesse_max_kmh": 204,
@@ -2808,9 +2804,9 @@
     "motor vehicle",
     "classic car"
    ],
-   "imageCredit": "Calreyn88",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1964_Renault_Super_5.jpg"
+   "imageCredit": "crash71100",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Super_5_%26_Renault_Latitude.jpg"
   },
   {
    "id": "renault_symbioz",
@@ -3346,12 +3342,12 @@
   {
    "id": "renault_megane-iv-rs",
    "name": "Mégane IV RS",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Renault_M%C3%A9gane_IV_RS_%2841760824301%29.jpg/1280px-Renault_M%C3%A9gane_IV_RS_%2841760824301%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Renault_M%C3%A9gane_IV_RS_%2841760815121%29.jpg/1280px-Renault_M%C3%A9gane_IV_RS_%2841760815121%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "imageCredit": "Guillaume Vachey from Chalon sur Saone, France",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_IV_RS_(41760824301).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_IV_RS_(41760815121).jpg"
   },
   {
    "id": "renault_scala-2",
@@ -3541,12 +3537,12 @@
   {
    "id": "renault_9",
    "name": "9",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Renault_9_and_11%2C_France_%283976867472%29.jpg/1280px-Renault_9_and_11%2C_France_%283976867472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/1988_Renault_9_GTL.jpg/1280px-1988_Renault_9_GTL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Mic from Reading - Berkshire, United Kingdom",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_9_and_11,_France_(3976867472).jpg"
+   "imageCredit": "LikeDrinkingPoison",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1988_Renault_9_GTL.jpg"
   },
   {
    "id": "renault_type-k",
@@ -4222,13 +4218,13 @@
   {
    "id": "renault_15-17",
    "name": "15/17",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/1972_Renault_15-17_pic1.JPG/1280px-1972_Renault_15-17_pic1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/1972_Renault_15-17_pic2.JPG/1280px-1972_Renault_15-17_pic2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4260 x 1630 x 1310",
    "imageCredit": "Alf van Beem",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Renault_15-17_pic1.JPG"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Renault_15-17_pic2.JPG"
   },
   {
    "id": "renault_alpine-gta-a610",
@@ -4372,14 +4368,10 @@
   {
    "id": "renault_20-30",
    "name": "20/30",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2011-2013_Renault_Latitude_%28X43%29_dCi_sedan_%282015-07-30%29.jpg/1280px-2011-2013_Renault_Latitude_%28X43%29_dCi_sedan_%282015-07-30%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4520 x 1726 x 1350",
-   "poids_kg": 1250,
-   "imageCredit": "EurovisionNim",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2011-2013_Renault_Latitude_(X43)_dCi_sedan_(2015-07-30).jpg"
+   "poids_kg": 1250
   },
   {
    "id": "renault_4cv",
@@ -4817,12 +4809,8 @@
   {
    "id": "renault_megane-iv-rs-trophy",
    "name": "Mégane IV RS Trophy",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Renault_M%C3%A9gane_IV_RS_Trophy-R_-_R%C3%A9trosport_2025.jpg/1280px-Renault_M%C3%A9gane_IV_RS_Trophy-R_-_R%C3%A9trosport_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Kilyann Le Hen",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_IV_RS_Trophy-R_-_R%C3%A9trosport_2025.jpg"
+   "tags": []
   },
   {
    "id": "renault_clio-rs-iii",

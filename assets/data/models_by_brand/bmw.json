@@ -4238,13 +4238,13 @@
   {
    "id": "bmw_5-series-gran-turismo",
    "name": "5 Series Gran Turismo",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/BMW_5_SERIES_GRAN_TURISMO_%28F07%29_China.jpg/1280px-BMW_5_SERIES_GRAN_TURISMO_%28F07%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/BMW_5_SERIES_GRAN_TURISMO_%28F07%29_China_%282%29.jpg/1280px-BMW_5_SERIES_GRAN_TURISMO_%28F07%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4998 x 1901 x 1559",
    "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_5_SERIES_GRAN_TURISMO_(F07)_China.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_5_SERIES_GRAN_TURISMO_(F07)_China_(2).jpg"
   },
   {
    "id": "bmw_340",
@@ -4344,12 +4344,12 @@
   {
    "id": "bmw_sauber-f1-06",
    "name": "Sauber F1.06",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Villeneuve_cheste_2006-02.jpg/1280px-Villeneuve_cheste_2006-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/BMW_Sauber_F1.06-02.jpg/1280px-BMW_Sauber_F1.06-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "Rafa Castillo (rafolas)",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Villeneuve_cheste_2006-02.jpg"
+   "imageCredit": "Andrew-44-19",
+   "imageLicense": "CC BY 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Sauber_F1.06-02.jpg"
   },
   {
    "id": "bmw_sauber-f1-07",
@@ -5000,12 +5000,8 @@
   {
    "id": "bmw_new-six",
    "name": "New Six",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/BMW_New_Six_E3.jpg/1280px-BMW_New_Six_E3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Bene Riobó",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_New_Six_E3.jpg"
+   "tags": []
   },
   {
    "id": "bmw_concept-7-series-activehybrid",
@@ -5334,12 +5330,12 @@
   {
    "id": "bmw_635",
    "name": "635",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/2007_BMW_635d_Sport_-_Flickr_-_The_Car_Spy_%2823%29.jpg/1280px-2007_BMW_635d_Sport_-_Flickr_-_The_Car_Spy_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/W%C3%BCrgauer_Bergrennen_BMW_635_CSi-20220911-RM-114854.jpg/1280px-W%C3%BCrgauer_Bergrennen_BMW_635_CSi-20220911-RM-114854.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
    "tags": [],
-   "imageCredit": "The Car Spy",
-   "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:2007_BMW_635d_Sport_-_Flickr_-_The_Car_Spy_(23).jpg"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:W%C3%BCrgauer_Bergrennen_BMW_635_CSi-20220911-RM-114854.jpg"
   },
   {
    "id": "bmw_z4-gt3",

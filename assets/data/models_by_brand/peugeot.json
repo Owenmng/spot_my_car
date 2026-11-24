@@ -1084,7 +1084,7 @@
   {
    "id": "peugeot_307_cc",
    "name": "307 CC",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/UA_army_Peugeot_307_CC_fighting_vehicle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Peugeot_307_CC_%28side%29.jpg/1280px-Peugeot_307_CC_%28side%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2003 - 2008",
    "puissance_ch": 140,
    "vitesse_max_kmh": 205,
@@ -1108,9 +1108,9 @@
     "roadster",
     "2000s car"
    ],
-   "imageCredit": "Ministry of Defence of Ukraine",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:UA_army_Peugeot_307_CC_fighting_vehicle.jpg"
+   "imageCredit": "Jimis919",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_307_CC_(side).jpg"
   },
   {
    "id": "peugeot_307_sw",
@@ -2721,7 +2721,7 @@
   {
    "id": "peugeot_406-coupe-2-2-hdi",
    "name": "406 Coupé 2.2 HDi",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Peugeot_406_Coup%C3%A9_2.2_16V_HDi_%282004%29_%2852923061987%29.jpg/1280px-Peugeot_406_Coup%C3%A9_2.2_16V_HDi_%282004%29_%2852923061987%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Peugeot_406_Coup%C3%A9_2.2_16V_HDi_%282004%29_%2852923799879%29.jpg/1280px-Peugeot_406_Coup%C3%A9_2.2_16V_HDi_%282004%29_%2852923799879%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2001",
    "tags": [],
    "dimensions_lwh_mm": "4615 x 1780 x 1354",
@@ -2729,7 +2729,7 @@
    "vitesse_max_kmh": 57,
    "imageCredit": "Charles from Port Chester, New York",
    "imageLicense": "CC BY 2.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_406_Coup%C3%A9_2.2_16V_HDi_(2004)_(52923061987).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_406_Coup%C3%A9_2.2_16V_HDi_(2004)_(52923799879).jpg"
   },
   {
    "id": "peugeot_e-2008-ii",

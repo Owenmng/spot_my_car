@@ -58,18 +58,49 @@ def base_title(url):
     return "File:" + name.replace("_", " ")
 
 
+def _word_in(w, words):
+    """« 125 » trouve « 125 » ou « 125i » / « 125d » (suffixe de 1-2 lettres), jamais « 1250 » ni « 118i »."""
+    for x in words:
+        if x == w or (x.startswith(w) and len(x) - len(w) <= 2 and x[len(w):].isalpha() and any(c.isdigit() for c in w)):
+            return True
+    return False
+
+
 def title_ok(title, bname, model_name):
     """Le nom du fichier doit citer le modèle : tous ses mots (chiffres compris, en mots entiers),
-    et le code de génération s'il contient des chiffres. Évite « BMW 125 » illustrée par une 118i."""
-    tn = f" {norm(title.replace('File:', ''))} "
+    et au moins un code de génération s'il y en a un (W108, E30, XU70…). Évite « BMW 125 » illustrée par une 118i."""
+    words = norm(title.replace("File:", "")).split()
     base = re.sub(r"\(.*?\)", "", model_name).strip()
     brand_words = set(norm(bname).split())
     want = [w for w in norm(base).split() if w not in brand_words or any(c.isdigit() for c in w)]
-    if not want or not all(f" {w} " in tn for w in want):
+    if not want or not all(_word_in(w, words) for w in want):
         return False
     gen = " ".join(re.findall(r"\((.*?)\)", model_name))
-    gen_digits = [w for w in norm(gen).split() if any(c.isdigit() for c in w)]
-    return all(f" {w} " in tn for w in gen_digits)
+    # Vrais codes de génération : lettres + chiffres (W108, XU70) ou 3 chiffres et plus ; « Gen 1 », « 2nd » ne comptent pas.
+    codes = [w for w in norm(gen).split() if any(c.isdigit() for c in w) and (any(c.isalpha() for c in w) or len(w) >= 3)
+             and not re.fullmatch(r"\d+(st|nd|rd|th)", w)]
+    return not codes or any(_word_in(w, words) for w in codes)
+
+
+def wikidata_images(q):
+    """Photo (P18) des fiches Wikidata qui portent exactement ce nom de modèle : correspondance modèle ↔ photo fiable."""
+    out = []
+    try:
+        d = http_json("https://www.wikidata.org/w/api.php", {"action": "wbsearchentities", "search": q, "language": "en",
+                                                           "type": "item", "limit": 5, "format": "json"})
+        ids = [e["id"] for e in (d or {}).get("search", [])]
+        if not ids:
+            return out
+        e = http_json("https://www.wikidata.org/w/api.php", {"action": "wbgetentities", "ids": "|".join(ids), "props": "claims",
+                                                           "format": "json"})
+        for i in ids:
+            for c in ((e or {}).get("entities", {}).get(i, {}).get("claims", {}).get("P18") or [])[:1]:
+                name = c.get("mainsnak", {}).get("datavalue", {}).get("value")
+                if name:
+                    out.append("File:" + name.replace("_", " "))
+    except Exception:
+        pass
+    return out
 
 
 def wiki_lead_images(q):
@@ -342,7 +373,7 @@ def main():
         if wide:
             # Modèle sans photo : on regarde aussi l'image principale des articles Wikipédia
             # (souvent la seule bonne photo d'un modèle rare). L'IA vérifie ensuite que c'est le bon.
-            for t in wiki_lead_images(f"{bname} {base}"):
+            for t in wikidata_images(f"{bname} {base}") + wiki_lead_images(f"{bname} {base}"):
                 if t not in in_use and t not in cands and title_ok(t, bname, m["name"]):
                     cands.append(t)
             queries += [f"{bname} {base} car", f"{base} {bname}"]

@@ -836,7 +836,7 @@
   {
    "id": "cadillac_eldorado",
    "name": "Eldorado",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Caddy-Eldorado-B1959.jpg/1280px-Caddy-Eldorado-B1959.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Cadillac_Eldorado_Kulmbach_-20220626-RM-163705.jpg/1280px-Cadillac_Eldorado_Kulmbach_-20220626-RM-163705.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1992 - 2002",
    "puissance_ch": 305,
    "vitesse_max_kmh": 241,
@@ -861,9 +861,9 @@
     "cadillac eldorado",
     "muscle car"
    ],
-   "imageCredit": "No machine-readable author provided. Helicop~commonswiki assumed (based on copyright claims).",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Caddy-Eldorado-B1959.jpg"
+   "imageCredit": "Ermell",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Eldorado_Kulmbach_-20220626-RM-163705.jpg"
   },
   {
    "id": "cadillac_eldorado-biarritz",
@@ -1094,7 +1094,7 @@
   {
    "id": "cadillac_fleetwood-limousine",
    "name": "Fleetwood Limousine",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/1994_Cadillac_Fleetwood%2C_front_left%2C_11-04-2022.jpg/1280px-1994_Cadillac_Fleetwood%2C_front_left%2C_11-04-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Cadillac_Fleetwood_75_Limousine_1962_Oldtimertreffen_Ebern_2019_6200188.jpg/1280px-Cadillac_Fleetwood_75_Limousine_1962_Oldtimertreffen_Ebern_2019_6200188.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1930 - 1984",
    "puissance_ch": 180,
    "vitesse_max_kmh": 160,
@@ -1119,9 +1119,9 @@
     "american car",
     "stretch limousine"
    ],
-   "imageCredit": "MercurySable99",
+   "imageCredit": "Ermell",
    "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Cadillac_Fleetwood,_front_left,_11-04-2022.jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Fleetwood_75_Limousine_1962_Oldtimertreffen_Ebern_2019_6200188.jpg"
   },
   {
    "id": "cadillac_fleetwood-talisman",
@@ -1376,7 +1376,7 @@
   {
    "id": "cadillac_model-m",
    "name": "Model M",
-   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cadillac_Model_M_Touring_1906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/1906_Cadillac_Model_M_%281%29.jpg/1280px-1906_Cadillac_Model_M_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1906 - 1908",
    "puissance_ch": 30,
    "vitesse_max_kmh": 80,
@@ -1401,9 +1401,9 @@
     "eco-friendly car",
     "fuel-efficient car"
    ],
-   "imageCredit": "Lars-Göran Lindgren Sweden",
-   "imageLicense": "CC BY-SA 3.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Model_M_Touring_1906.jpg"
+   "imageCredit": "Craig Howell from San Carlos, CA, USA",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1906_Cadillac_Model_M_(1).jpg"
   },
   {
    "id": "cadillac_model-s",

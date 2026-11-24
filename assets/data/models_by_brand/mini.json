@@ -153,7 +153,11 @@
     "motor vehicle",
     "land vehicle",
     "retro car"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Mini_Clubman_Estate_1979.jpg/1280px-Mini_Clubman_Estate_1979.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "DeFacto",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Mini_Clubman_Estate_1979.jpg"
   },
   {
    "id": "mini_convertible",

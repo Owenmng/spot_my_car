@@ -232,7 +232,6 @@
   {
    "id": "tesla_roadster_2025",
    "name": "Roadster (2025)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/My_New_Tesla_Roadster_Just_Arrived_%2854767014487%29.jpg/1280px-My_New_Tesla_Roadster_Just_Arrived_%2854767014487%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2025 (Prévu)",
    "puissance_ch": "non renseigné",
    "vitesse_max_kmh": "non renseigné",
@@ -256,10 +255,7 @@
     "open-top",
     "ev",
     "battery electric vehicle"
-   ],
-   "imageCredit": "Steve Jurvetson",
-   "imageLicense": "CC BY 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:My_New_Tesla_Roadster_Just_Arrived_(54767014487).jpg"
+   ]
   },
   {
    "id": "tesla_semi",

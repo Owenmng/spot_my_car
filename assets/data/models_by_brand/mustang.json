@@ -553,7 +553,7 @@
   {
    "id": "mustang_ford-mustang-eleanor",
    "name": "Mustang Eleanor (réplique)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ford_S197_Mustang_GT_500E_ELEANOR_%2823052111281%29.jpg/1280px-Ford_S197_Mustang_GT_500E_ELEANOR_%2823052111281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/1967_Ford_Mustang_Eleanor_%288600839966%29.jpg/1280px-1967_Ford_Mustang_Eleanor_%288600839966%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1967 - 1968",
    "puissance_ch": 325,
    "vitesse_max_kmh": 220,
@@ -579,9 +579,9 @@
     "sports car",
     "vintage car"
    ],
-   "imageCredit": "先従隗始",
+   "imageCredit": "Mustang Joe",
    "imageLicense": "CC0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_S197_Mustang_GT_500E_ELEANOR_(23052111281).jpg"
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1967_Ford_Mustang_Eleanor_(8600839966).jpg"
   },
   {
    "id": "mustang_ford-mustang-gt350",
@@ -817,7 +817,7 @@
   {
    "id": "mustang_ford-mustang-king-cobra",
    "name": "Mustang King Cobra",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/1978_Ford_Mustang_II_King_Cobra_1.jpg/1280px-1978_Ford_Mustang_II_King_Cobra_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/1978_Ford_Mustang_II_King_Cobra_-_13675415704.jpg/1280px-1978_Ford_Mustang_II_King_Cobra_-_13675415704.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1978",
    "puissance_ch": 140,
    "vitesse_max_kmh": 180,
@@ -844,9 +844,9 @@
     "motor vehicle",
     "sports car"
    ],
-   "imageCredit": "Matthew P",
-   "imageLicense": "Public domain",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:1978_Ford_Mustang_II_King_Cobra_1.jpg"
+   "imageCredit": "Michel Curi",
+   "imageLicense": "CC BY 2.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1978_Ford_Mustang_II_King_Cobra_-_13675415704.jpg"
   },
   {
    "id": "mustang_ford-mustang-mach-1",
@@ -1046,7 +1046,6 @@
   {
    "id": "mustang_ford-mustang-twister",
    "name": "Mustang Twister",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Ford_Mustang_2.3L_EcoBoost_Premium_S550_FL_Twister_Orange_Metallic_Tri-coat_%282%29.jpg/1280px-Ford_Mustang_2.3L_EcoBoost_Premium_S550_FL_Twister_Orange_Metallic_Tri-coat_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "1970, 2013",
    "puissance_ch": 300,
    "vitesse_max_kmh": 210,
@@ -1071,10 +1070,7 @@
     "two-door",
     "gas powered",
     "v8"
-   ],
-   "imageCredit": "Damian B Oh",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_Mustang_2.3L_EcoBoost_Premium_S550_FL_Twister_Orange_Metallic_Tri-coat_(2).jpg"
+   ]
   },
   {
    "id": "mustang_ford-mustang-v",
@@ -1145,7 +1141,6 @@
   {
    "id": "mustang_ford-mustang-vi",
    "name": "Mustang VI (S550)",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Maisto_1_18_2015_Ford_Mustang_VI_GT_%28S550%29_black.jpg/1280px-Maisto_1_18_2015_Ford_Mustang_VI_GT_%28S550%29_black.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2015 - 2017",
    "puissance_ch": 421,
    "vitesse_max_kmh": 250,
@@ -1169,10 +1164,7 @@
     "ford mustang",
     "american muscle",
     "gasoline car"
-   ],
-   "imageCredit": "メイド理世",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Maisto_1_18_2015_Ford_Mustang_VI_GT_(S550)_black.jpg"
+   ]
   },
   {
    "id": "mustang_ford-mustang-vi-facelift",
