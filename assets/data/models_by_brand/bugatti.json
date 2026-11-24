@@ -1674,12 +1674,8 @@
   {
    "id": "bugatti_type-8",
    "name": "Type 8",
-   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Millers_at_Milwaukee_2026_076_%281937_Bugatti_Type_57_No._8%29.jpg/1280px-Millers_at_Milwaukee_2026_076_%281937_Bugatti_Type_57_No._8%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": null,
-   "tags": [],
-   "imageCredit": "Michael Barera",
-   "imageLicense": "CC BY-SA 4.0",
-   "imagePage": "https://commons.wikimedia.org/wiki/File:Millers_at_Milwaukee_2026_076_(1937_Bugatti_Type_57_No._8).jpg"
+   "tags": []
   },
   {
    "id": "bugatti_type-64",
