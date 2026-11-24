@@ -3273,12 +3273,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_AHS_cropped.jpg"
   },
   {
-   "id": "renault_acx-and-adx",
-   "name": "ACx and ADx",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "renault_pn",
    "name": "PN",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Chelles_-_AMTUIR-14.JPG/1280px-Chelles_-_AMTUIR-14.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4642,12 +4636,6 @@
    "imageCredit": "order_242 from Chile",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Samsung_SM3_1.5_LE_2004_(10581314536).jpg"
-  },
-  {
-   "id": "renault_automobile-4-cv-m-106-801",
-   "name": "automobile 4 CV M-106.801",
-   "production_years": "1953",
-   "tags": []
   },
   {
    "id": "renault_boreal",
