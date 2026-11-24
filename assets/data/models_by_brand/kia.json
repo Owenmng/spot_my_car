@@ -2556,7 +2556,11 @@
    "name": "Asia KM410-series",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "3350 x 1475 x 1705"
+   "dimensions_lwh_mm": "3350 x 1475 x 1705",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/DN-ST-82-05311.jpg/1280px-DN-ST-82-05311.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "PH1 Felimon Barbante",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DN-ST-82-05311.jpg"
   },
   {
    "id": "kia_k4-2",

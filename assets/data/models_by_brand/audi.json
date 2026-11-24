@@ -3148,7 +3148,11 @@
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "5200 x 1800 x 1900",
-   "poids_kg": 2300
+   "poids_kg": 2300,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Classic_Days_2022_Audi_R19_%28Imperator%29_1929.jpg/1280px-Classic_Days_2022_Audi_R19_%28Imperator%29_1929.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Fridolin freudenfett",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Classic_Days_2022_Audi_R19_(Imperator)_1929.jpg"
   },
   {
    "id": "audi_a3-8y",
@@ -3873,7 +3877,11 @@
    "production_years": null,
    "tags": [],
    "dimensions_lwh_mm": "4122 x 1850 x 1250",
-   "poids_kg": 1080
+   "poids_kg": 1080,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/DTM-Audi_Red_Bull.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageCredit": "Ger1axg at German Wikipedia",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:DTM-Audi_Red_Bull.jpg"
   },
   {
    "id": "audi_a5-f5",

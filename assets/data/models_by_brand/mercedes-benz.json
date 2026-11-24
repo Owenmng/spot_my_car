@@ -2684,7 +2684,11 @@
    "id": "mercedes-benz_interim-fast-attack-vehicle",
    "name": "Interim Fast Attack Vehicle",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/A_US_Marine_Corps_%28USMC%29_Intermediate_Fast_Attack_Vehicle_%28IFAV%29_with_a_mounted_TOW_%28Tube-launched%2C_Optically-tracked%2C_Wire-guided%29_missile_launcher._The_IFAV_is_from_the_Mobile_Ass_-_DPLA_-_8e5ff5a59773659042bd46506995d2fe.jpeg/1280px-thumbnail.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:A_US_Marine_Corps_(USMC)_Intermediate_Fast_Attack_Vehicle_(IFAV)_with_a_mounted_TOW_(Tube-launched,_Optically-tracked,_Wire-guided)_missile_launcher._The_IFAV_is_from_the_Mobile_Ass_-_DPLA_-_8e5ff5a59773659042bd46506995d2fe.jpeg"
   },
   {
    "id": "mercedes-benz_w114",

@@ -2188,7 +2188,7 @@
   {
    "id": "renault_lodgy",
    "name": "Lodgy (Rebadged Dacia)",
-   "imageUrl": null,
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Dacia_Lodgy_-_R%C3%BCckansicht_mit_dritter_Sitzreihe.JPG/1280px-Dacia_Lodgy_-_R%C3%BCckansicht_mit_dritter_Sitzreihe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "production_years": "2013 - 2022",
    "puissance_ch": 110,
    "vitesse_max_kmh": 175,
@@ -2212,7 +2212,10 @@
     "vehicle",
     "motor vehicle",
     "people carrier"
-   ]
+   ],
+   "imageCredit": "Fabian.rangol",
+   "imageLicense": "CC BY-SA 3.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_Lodgy_-_R%C3%BCckansicht_mit_dritter_Sitzreihe.JPG"
   },
   {
    "id": "renault_logan",
@@ -3494,7 +3497,11 @@
    "name": "Type HG",
    "production_years": null,
    "tags": [],
-   "poids_kg": 2000
+   "poids_kg": 2000,
+   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/1902-Type_H.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "imageCredit": "Raymond MARTIN-FABER",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1902-Type_H.jpg"
   },
   {
    "id": "renault_type-fk",
@@ -3762,7 +3769,11 @@
    "id": "renault_type-n-c",
    "name": "Type N (c)",
    "production_years": null,
-   "tags": []
+   "tags": [],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/1904_Renault_Phaeton_Type_T%2C_7cv_864cc_40kmh_%28inv_2201%29_photo_1.JPG/1280px-1904_Renault_Phaeton_Type_T%2C_7cv_864cc_40kmh_%28inv_2201%29_photo_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Alf van Beem",
+   "imageLicense": "Public domain",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:1904_Renault_Phaeton_Type_T,_7cv_864cc_40kmh_(inv_2201)_photo_1.JPG"
   },
   {
    "id": "renault_type-o",
