@@ -51,12 +51,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1976_Buick_Opel_-_90,000km_(16816206825).jpg"
   },
   {
-   "id": "buick_series-d-four",
-   "name": "Serie D-Four",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "buick_series-d-six",
    "name": "Serie D-Six",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Buick_E-Six_45_%281918%29_1Y7A6067.jpg/1280px-Buick_E-Six_45_%281918%29_1Y7A6067.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -97,14 +91,6 @@
    "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:BUICK_GL6_China_(5).jpg"
-  },
-  {
-   "id": "buick_enclave-c1yb",
-   "name": "Enclave C1YB",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "5189 x 2001 x 1775",
-   "poids_kg": 1977
   },
   {
    "id": "buick_enclave-gmt967",

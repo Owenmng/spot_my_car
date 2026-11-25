@@ -1449,12 +1449,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_JCUV_01_China_2012-04-29.JPG"
   },
   {
-   "id": "dodge_new-value",
-   "name": "New Value",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "dodge_ram-50",
    "name": "Ram 50",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/1983DodgeRam50.jpg/1280px-1983DodgeRam50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1565,12 +1559,6 @@
    "imageCredit": "Bull-Doser",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:%2759_Dodge_(Auto_classique_VACM_Montr%C3%A9al_%2713).JPG"
-  },
-  {
-   "id": "dodge_charger-1981",
-   "name": "Charger 1981",
-   "production_years": "1981 - 1987",
-   "tags": []
   },
   {
    "id": "dodge_regent",
@@ -1847,12 +1835,6 @@
    "imageCredit": "https://www.flickr.com/people/hugo90/",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Dodge_Polara_(Argentina).jpg"
-  },
-  {
-   "id": "dodge_m1918-light-repair-truck",
-   "name": "M1918 light repair truck",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "dodge_charger-srt-hellcat",

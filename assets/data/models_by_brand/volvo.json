@@ -1385,13 +1385,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:P130-P220_WIKI-NL.JPG"
   },
   {
-   "id": "volvo_440-460",
-   "name": "440/460",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4345 x 1686 x 1378"
-  },
-  {
    "id": "volvo_780",
    "name": "780",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Volvo_780_%287517490082%29.jpg/1280px-Volvo_780_%287517490082%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1402,12 +1395,6 @@
    "imageCredit": "nakhon100",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo_780_(7517490082).jpg"
-  },
-  {
-   "id": "volvo_pv800-series",
-   "name": "PV800 Series",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "volvo_900-series",
@@ -1699,12 +1686,6 @@
    "imageCredit": "Mfonteyn",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Volvo343DL1980.jpg"
-  },
-  {
-   "id": "volvo_260-2",
-   "name": "260",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "volvo_es90-2",

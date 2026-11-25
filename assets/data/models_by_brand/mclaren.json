@@ -159,34 +159,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:McLaren_620R_DSC_7021.jpg"
   },
   {
-   "id": "mclaren_625c",
-   "name": "625C",
-   "imageUrl": null,
-   "production_years": "2014 - 2016",
-   "puissance_ch": 625,
-   "vitesse_max_kmh": 333,
-   "zero_a_cent_s": 3.1,
-   "type_carburant": "Essence",
-   "consommation_mixte": "11.7 L/100km",
-   "dimensions_lwh_mm": "4509 x 1908 x 1203",
-   "poids_kg": 1468,
-   "prix_lancement_eur": 280000,
-   "tags": [
-    "coupe",
-    "sports car",
-    "performance car",
-    "luxury car",
-    "grand tourer",
-    "car",
-    "vehicle",
-    "625c",
-    "two-seater",
-    "mid-size car",
-    "british car",
-    "sports coupe"
-   ]
-  },
-  {
    "id": "mclaren_650s",
    "name": "650S",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/The_frontview_of_McLaren_650S_Coup%C3%A9_%28cropped%29.JPG/1280px-The_frontview_of_McLaren_650S_Coup%C3%A9_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1024,31 +996,6 @@
    "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2025_McLaren_W1_FOS25.jpg"
-  },
-  {
-   "id": "mclaren_x-1",
-   "name": "X-1",
-   "production_years": "2012",
-   "puissance_ch": 625,
-   "vitesse_max_kmh": 340,
-   "zero_a_cent_s": 3.1,
-   "type_carburant": "Essence",
-   "consommation_mixte": "12.0 L/100km",
-   "dimensions_lwh_mm": "4509 x 1908 x 1203",
-   "poids_kg": 1434,
-   "prix_lancement_eur": 1000000,
-   "tags": [
-    "x-1",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car",
-    "economy car"
-   ]
   },
   {
    "id": "mclaren_mp4-5b",

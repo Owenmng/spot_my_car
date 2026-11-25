@@ -576,34 +576,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2019_Jaguar_XE_S_Automatic_2.0.jpg"
   },
   {
-   "id": "jaguar_xe_svr",
-   "name": "XE SVR",
-   "production_years": "2017 - 2024",
-   "puissance_ch": 450,
-   "vitesse_max_kmh": 283,
-   "zero_a_cent_s": 4.1,
-   "type_carburant": "Essence",
-   "consommation_mixte": "10.2 L/100km",
-   "dimensions_lwh_mm": "4678 x 1850 x 1416",
-   "poids_kg": 1725,
-   "prix_lancement_eur": 75000,
-   "tags": [
-    "xe svr",
-    "jaguar xe svr",
-    "sedan",
-    "performance car",
-    "luxury car",
-    "sports car",
-    "high-performance sedan",
-    "compact executive car",
-    "car",
-    "vehicle",
-    "jaguar",
-    "british car",
-    "supercharged engine"
-   ]
-  },
-  {
    "id": "jaguar_xf",
    "name": "XF",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/JAGUAR_XF_%28X250%29_China_%282%29.jpg/1280px-JAGUAR_XF_%28X250%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",

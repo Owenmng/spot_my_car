@@ -1526,35 +1526,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2000_Peugeot_406_Coupe.jpg"
   },
   {
-   "id": "peugeot_406_sri",
-   "name": "406 SRI",
-   "imageUrl": null,
-   "production_years": "1995 - 2004",
-   "puissance_ch": 150,
-   "vitesse_max_kmh": 215,
-   "zero_a_cent_s": 9.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.5 L/100km",
-   "dimensions_lwh_mm": "4600 x 1765 x 1396",
-   "poids_kg": 1350,
-   "prix_lancement_eur": 24000,
-   "tags": [
-    "peugeot 406",
-    "sedan",
-    "mid-size car",
-    "family car",
-    "french car",
-    "petrol car",
-    "1990s car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "sri",
-    "performance sedan",
-    "peugeot"
-   ]
-  },
-  {
    "id": "peugeot_407",
    "name": "407",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/2007_Peugeot_407_SE.jpg/1280px-2007_Peugeot_407_SE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2031,35 +2002,6 @@
    "imageCredit": "Sabung.hamster aka Everyone Sinks Starco",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_806,_Denpasar_-_6_Maret_2018_-_depan.jpg"
-  },
-  {
-   "id": "peugeot_806_prestige",
-   "name": "806 Prestige",
-   "imageUrl": null,
-   "production_years": "1994 - 2002",
-   "puissance_ch": 135,
-   "vitesse_max_kmh": 185,
-   "zero_a_cent_s": 12.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "10.5 L/100km",
-   "dimensions_lwh_mm": "4454 x 1834 x 1714",
-   "poids_kg": 1500,
-   "prix_lancement_eur": 27000,
-   "tags": [
-    "minivan",
-    "family car",
-    "mpv",
-    "large mpv",
-    "spacious minivan",
-    "806 prestige",
-    "peugeot 806",
-    "french minivan",
-    "people carrier",
-    "car",
-    "vehicle",
-    "passenger van",
-    "mid-size minivan"
-   ]
   },
   {
    "id": "peugeot_807",
@@ -3499,18 +3441,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Type_16_01.jpg"
   },
   {
-   "id": "peugeot_507",
-   "name": "507",
-   "production_years": null,
-   "tags": []
-  },
-  {
-   "id": "peugeot_dk5",
-   "name": "DK5",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "peugeot_205-turbo-16",
    "name": "205 Turbo 16",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Peugeot_Talbot_Sport_205_T16_%2828504430670%29.jpg/1280px-Peugeot_Talbot_Sport_205_T16_%2828504430670%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3531,12 +3461,6 @@
    "imageCredit": "Buch-t",
    "imageLicense": "CC BY-SA 3.0 de",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Type_176_von_Felber_1925.JPG"
-  },
-  {
-   "id": "peugeot_type-54",
-   "name": "Type 54",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "peugeot_type-91",
@@ -3598,12 +3522,6 @@
    "imageCredit": "Buch-t",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Peugeot_Typ_24_1899.JPG"
-  },
-  {
-   "id": "peugeot_type-181",
-   "name": "Type 181",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "peugeot_206-wrc",

@@ -508,34 +508,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Eos_GL_2014_(11954748753).jpg"
   },
   {
-   "id": "hyundai_exter",
-   "name": "Exter",
-   "imageUrl": null,
-   "production_years": "2023 - Aujourd'hui",
-   "puissance_ch": 83,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 14,
-   "type_carburant": "Essence",
-   "consommation_mixte": "5.2 L/100km",
-   "dimensions_lwh_mm": "3815 x 1710 x 1631",
-   "poids_kg": 990,
-   "prix_lancement_eur": 7000,
-   "tags": [
-    "car",
-    "vehicle",
-    "exter",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car",
-    "small car",
-    "economical car",
-    "fuel-efficient car",
-    "city vehicle",
-    "urban car"
-   ]
-  },
-  {
    "id": "hyundai_galloper",
    "name": "Galloper",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Hyundai_Galloper_front_20070925.jpg/1280px-Hyundai_Galloper_front_20070925.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2492,12 +2464,6 @@
    "imageCredit": "Alexander-93",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_N_IMG_9406.jpg"
-  },
-  {
-   "id": "hyundai_h300",
-   "name": "H300",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "hyundai_initium-2",

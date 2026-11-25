@@ -193,63 +193,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_120_(F70)_IMG_1166.jpg"
   },
   {
-   "id": "bmw_125",
-   "name": "125",
-   "production_years": "2007 - Aujourd'hui",
-   "puissance_ch": 218,
-   "vitesse_max_kmh": 240,
-   "zero_a_cent_s": 6.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.8 L/100km",
-   "dimensions_lwh_mm": "4329 x 1765 x 1421",
-   "poids_kg": 1450,
-   "prix_lancement_eur": 38000,
-   "tags": [
-    "125cc scooter",
-    "motorcycle",
-    "scooter",
-    "two-wheeled vehicle",
-    "motorbike",
-    "moped",
-    "city vehicle",
-    "urban mobility",
-    "small engine",
-    "personal transport",
-    "lightweight vehicle",
-    "commuter vehicle"
-   ]
-  },
-  {
-   "id": "bmw_130",
-   "name": "130",
-   "imageUrl": null,
-   "production_years": "2005 - Aujourd'hui",
-   "puissance_ch": 265,
-   "vitesse_max_kmh": 250,
-   "zero_a_cent_s": 5.8,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.5 L/100km",
-   "dimensions_lwh_mm": "4329 x 1765 x 1421",
-   "poids_kg": 1500,
-   "prix_lancement_eur": 42000,
-   "tags": [
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "coupe",
-    "compact car",
-    "sports car",
-    "performance car",
-    "classic car",
-    "italian car",
-    "130 coupe",
-    "fiat 130",
-    "fiat",
-    "1970s car"
-   ]
-  },
-  {
    "id": "bmw_135",
    "name": "135",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Wdog_BMW_135_Convertible.jpg/1280px-Wdog_BMW_135_Convertible.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -664,33 +607,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2000_model_photographed_by_Julien_Chalendard_September_2013.jpg"
   },
   {
-   "id": "bmw_2000tilux",
-   "name": "2000 TI Lux",
-   "production_years": "1966 - 1968",
-   "puissance_ch": 120,
-   "vitesse_max_kmh": 185,
-   "zero_a_cent_s": 9.8,
-   "type_carburant": "Essence",
-   "consommation_mixte": "11.5 L/100km",
-   "dimensions_lwh_mm": "4500 x 1710 x 1450",
-   "poids_kg": 1100,
-   "prix_lancement_eur": 11000,
-   "tags": [
-    "2000",
-    "ti lux",
-    "sedan",
-    "luxury car",
-    "mid-size car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "german car",
-    "bmw",
-    "executive car"
-   ]
-  },
-  {
    "id": "bmw_2000tii",
    "name": "2000 TII",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/BMW_2000_tii_Touring_%2814614708416%29.jpg/1280px-BMW_2000_tii_Touring_%2814614708416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -786,32 +702,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1974_BMW_2002_turbo.jpg"
   },
   {
-   "id": "bmw_2200",
-   "name": "2200",
-   "production_years": "1968 - 1972",
-   "puissance_ch": 125,
-   "vitesse_max_kmh": 190,
-   "zero_a_cent_s": 9.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "11.0 L/100km",
-   "dimensions_lwh_mm": "4700 x 1750 x 1450",
-   "poids_kg": 1250,
-   "prix_lancement_eur": 11000,
-   "tags": [
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "2200",
-    "model 2200",
-    "compact car",
-    "subcompact car",
-    "city car",
-    "hatchback",
-    "economy car"
-   ]
-  },
-  {
    "id": "bmw_2500",
    "name": "2500",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bmw_2500_v_sst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -874,34 +764,6 @@
    "imageCredit": "ilikewaffles11",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_2800_CS_(9279212250).jpg"
-  },
-  {
-   "id": "bmw_2800tilux",
-   "name": "2800 TI Lux",
-   "imageUrl": null,
-   "production_years": "1968 - 1972",
-   "puissance_ch": 170,
-   "vitesse_max_kmh": 200,
-   "zero_a_cent_s": 8.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "13.0 L/100km",
-   "dimensions_lwh_mm": "4700 x 1750 x 1450",
-   "poids_kg": 1350,
-   "prix_lancement_eur": 15000,
-   "tags": [
-    "car",
-    "vehicle",
-    "luxury car",
-    "grand tourer",
-    "coupe",
-    "sports car",
-    "performance car",
-    "mid-size car",
-    "2800ti",
-    "ti lux",
-    "classic car",
-    "vintage car"
-   ]
   },
   {
    "id": "bmw_3-series",
@@ -2023,35 +1885,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1985_BMW_Alpina_C2_2.5.jpg"
   },
   {
-   "id": "alpina_d10",
-   "name": "Alpina D10",
-   "production_years": "1999 - 2003",
-   "puissance_ch": 245,
-   "vitesse_max_kmh": 254,
-   "zero_a_cent_s": 7.2,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "7.3 L/100km",
-   "dimensions_lwh_mm": "4775 x 1800 x 1417",
-   "poids_kg": 1690,
-   "prix_lancement_eur": 53000,
-   "tags": [
-    "alpina d10",
-    "sedan",
-    "luxury car",
-    "performance car",
-    "high-performance sedan",
-    "german car",
-    "bmw-based",
-    "tuned car",
-    "sports sedan",
-    "executive car",
-    "car",
-    "vehicle",
-    "diesel",
-    "powerful sedan"
-   ]
-  },
-  {
    "id": "alpina_d3",
    "name": "Alpina D3 S",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/2023_BMW_Alpina_D3_S_Auto.jpg/1280px-2023_BMW_Alpina_D3_S_Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2148,34 +1981,6 @@
    "imageCredit": "Calreyn88",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2012_BMW_Alpina_D5_BiTurbo.jpg"
-  },
-  {
-   "id": "alpina_rle-roadster",
-   "name": "Alpina RLE Roadster",
-   "production_years": "1990 - 1991",
-   "puissance_ch": 200,
-   "vitesse_max_kmh": 231,
-   "zero_a_cent_s": 7.1,
-   "type_carburant": "Essence",
-   "consommation_mixte": "9.9 L/100km",
-   "dimensions_lwh_mm": "4010 x 1675 x 1360",
-   "poids_kg": 1340,
-   "prix_lancement_eur": 50000,
-   "tags": [
-    "alpina rle roadster",
-    "convertible",
-    "luxury car",
-    "performance car",
-    "sports car",
-    "grand tourer",
-    "german car",
-    "bmw based",
-    "high performance",
-    "roadster",
-    "car",
-    "vehicle",
-    "motor vehicle"
-   ]
   },
   {
    "id": "alpina_roadster-s",
@@ -3218,35 +3023,6 @@
    "imageCredit": "OWS Photography",
    "imageLicense": "CC BY 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_M6_Gran_Coup%C3%A9_(F06)_Washington_DC_Metro_Area,_USA.jpg"
-  },
-  {
-   "id": "bmw_m760i",
-   "name": "M760i",
-   "production_years": "2016 - 2023",
-   "puissance_ch": 585,
-   "vitesse_max_kmh": 250,
-   "zero_a_cent_s": 3.7,
-   "type_carburant": "Essence",
-   "consommation_mixte": "12.5 L/100km",
-   "dimensions_lwh_mm": "5250 x 1902 x 1498",
-   "poids_kg": 2270,
-   "prix_lancement_eur": 185000,
-   "tags": [
-    "bmw",
-    "m760i",
-    "sedan",
-    "luxury car",
-    "full-size car",
-    "performance car",
-    "executive car",
-    "v12",
-    "bmw m",
-    "german car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "grand tourer"
-   ]
   },
   {
    "id": "bmw_m8",
@@ -4956,12 +4732,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_V12_LM_(24990483741)_(2).jpg"
   },
   {
-   "id": "bmw_331",
-   "name": "331",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "bmw_328",
    "name": "328",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bmw_328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -4994,12 +4764,6 @@
    "imageCredit": "Sachi Gahan from San Francisco, USA",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_Hydrogen_7_at_TED_2007.jpg"
-  },
-  {
-   "id": "bmw_new-six",
-   "name": "New Six",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "bmw_concept-7-series-activehybrid",
@@ -5182,12 +4946,6 @@
    "imageCredit": "Overlaet",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:BMW_6_1.jpg"
-  },
-  {
-   "id": "bmw_f-76",
-   "name": "F 76",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "bmw_600",

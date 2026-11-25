@@ -898,35 +898,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Flying_Spur_W12_Speed_(2019)_1X7A1636.jpg"
   },
   {
-   "id": "bentley_flying-star",
-   "name": "Flying Star",
-   "imageUrl": null,
-   "production_years": "2012 (Concept)",
-   "puissance_ch": 600,
-   "vitesse_max_kmh": 320,
-   "zero_a_cent_s": 4.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.0 L/100km",
-   "dimensions_lwh_mm": "5290 x 1916 x 1479",
-   "poids_kg": 2475,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "flying star",
-    "car",
-    "vehicle",
-    "sports car",
-    "coupe",
-    "performance car",
-    "compact car",
-    "two-seater",
-    "hybrid",
-    "electric car",
-    "fuel efficient",
-    "lightweight",
-    "aerodynamic"
-   ]
-  },
-  {
    "id": "bentley_mark-vi",
    "name": "Mark VI",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Bentley_%282542314380%29.jpg/1280px-Bentley_%282542314380%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1459,12 +1430,6 @@
    "imageCredit": "Y.Leclercq©",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bentley_Batur_(01).jpg"
-  },
-  {
-   "id": "bentley_blizzard",
-   "name": "Blizzard",
-   "production_years": null,
-   "tags": []
   }
  ]
 }

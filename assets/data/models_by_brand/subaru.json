@@ -899,32 +899,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1st_generation_Subaru_Stella_Custom.jpg"
   },
   {
-   "id": "subaru_succes",
-   "name": "Success",
-   "imageUrl": null,
-   "production_years": "2006 - 2008",
-   "puissance_ch": 150,
-   "vitesse_max_kmh": 180,
-   "zero_a_cent_s": 10.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.5 L/100km",
-   "dimensions_lwh_mm": "4660 x 1695 x 1530",
-   "poids_kg": 1400,
-   "prix_lancement_eur": 16000,
-   "tags": [
-    "success car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "subcompact car",
-    "hatchback",
-    "economy car",
-    "fuel-efficient car"
-   ]
-  },
-  {
    "id": "subaru_svx",
    "name": "SVX",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Subaru_SVX_1X7A1538.jpg/1280px-Subaru_SVX_1X7A1538.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1180,13 +1154,6 @@
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Subaru_Crosstrek_Wilderness_IMG_3719_(cropped).jpg"
-  },
-  {
-   "id": "subaru_sumo",
-   "name": "Sumo",
-   "production_years": null,
-   "tags": [],
-   "poids_kg": 1040
   },
   {
    "id": "subaru_legacy-third-generation",

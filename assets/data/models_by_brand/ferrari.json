@@ -557,34 +557,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1954_Ferrari_375_America_Vignale_Cabriolet.jpg"
   },
   {
-   "id": "ferrari_400-gt",
-   "name": "400 GT",
-   "production_years": "1976 - 1979",
-   "puissance_ch": 340,
-   "vitesse_max_kmh": 240,
-   "zero_a_cent_s": 7.1,
-   "type_carburant": "Essence",
-   "consommation_mixte": "22.0 L/100km",
-   "dimensions_lwh_mm": "4810 x 1798 x 1314",
-   "poids_kg": 1730,
-   "prix_lancement_eur": 45000,
-   "tags": [
-    "grand tourer",
-    "coupe",
-    "luxury car",
-    "sports car",
-    "performance car",
-    "classic car",
-    "400gt",
-    "car",
-    "vehicle",
-    "italian car",
-    "maserati",
-    "automobile",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "ferrari_400",
    "name": "400i",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ferrari_400.jpg/1280px-Ferrari_400.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1259,31 +1231,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_Amalfi_IMG_8179.jpg"
   },
   {
-   "id": "ferrari_br20",
-   "name": "BR20",
-   "imageUrl": null,
-   "production_years": "2021 (One-off)",
-   "puissance_ch": 690,
-   "vitesse_max_kmh": 335,
-   "zero_a_cent_s": 3.4,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.0 L/100km",
-   "dimensions_lwh_mm": "non renseigné",
-   "poids_kg": "non renseigné",
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "br20",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car"
-   ]
-  },
-  {
    "id": "ferrari_california",
    "name": "California",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Ferrari_California_T.jpg/1280px-Ferrari_California_T.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1808,34 +1755,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Ferrari_FF,_Blu_TdF,_front_left.jpg"
   },
   {
-   "id": "ferrari_ff-america",
-   "name": "FF America",
-   "production_years": "2011 - 2016",
-   "puissance_ch": 660,
-   "vitesse_max_kmh": 335,
-   "zero_a_cent_s": 3.7,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.4 L/100km",
-   "dimensions_lwh_mm": "4907 x 1953 x 1379",
-   "poids_kg": 1880,
-   "prix_lancement_eur": 260000,
-   "tags": [
-    "convertible",
-    "luxury car",
-    "sports car",
-    "grand tourer",
-    "car",
-    "vehicle",
-    "roadster",
-    "american car",
-    "classic car",
-    "limited edition",
-    "collectible car",
-    "high-performance car",
-    "automotive"
-   ]
-  },
-  {
    "id": "ferrari_fxx",
    "name": "FXX",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Ferrari_Enzo_FXX_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-Ferrari_Enzo_FXX_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2231,12 +2150,6 @@
    "imageCredit": "Morio",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_500_F2_front-left_Donington_Grand_Prix_Collection.jpg"
-  },
-  {
-   "id": "ferrari_553",
-   "name": "553",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "ferrari_212-export",
@@ -3477,12 +3390,6 @@
    "imageCredit": "Morio",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ferrari_641-2_front_Museo_Ferrari.jpg"
-  },
-  {
-   "id": "ferrari_f1-86",
-   "name": "F1/86",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "ferrari_375-mm",

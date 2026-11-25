@@ -1,0 +1,248 @@
+abarth: 500 Assaetto
+abarth: 595 Espresso
+abarth: Punto SuperSport Convertible
+abarth: 1000 GT Coupé
+acura: CL-X
+alfa-romeo: 1750-2000
+alfa-romeo: 75 1.8 Turbodiesel
+alfa-romeo: GT 3.2 V6
+alfa-romeo: GTA Coupe
+alfa-romeo: MiTo 1.6 JTDm
+alfa-romeo: Spider 2.0 TS
+alfa-romeo: Stelvio 2.0 TBI
+alfa-romeo: 16C twin-engine
+alfa-romeo: 450
+alfa-romeo: 430
+alfa-romeo: Dauphine
+alfa-romeo: Romeo
+alfa-romeo: Alfa 6
+alfa-romeo: Pandion
+alfa-romeo: 169
+alfa-romeo: SSZ Stradale
+alfa-romeo: Diva
+alpine: A106 Mille Miglia
+alpine: A211
+alpine: A310 4cyl
+amg: AMG A 45 Limousine (177)
+amg: AMG E 53 (238)
+amg: AMG E 53 Estate (238)
+amg: AMG E 63 (238)
+amg: AMG S 65 (223)
+aston-martin: Tickford Capri
+aston-martin: DBR3
+audi: Avantissimo
+audi: Skysphere
+audi: TT clubsport
+audi: Type D
+audi: Type R
+audi: MP01
+audi: Abt-Audi TT-R
+audi: R18 E-Tron quattro RP5
+bentley: Flying Star
+bentley: Blizzard
+bmw: 125
+bmw: 130
+bmw: 2000 TI Lux
+bmw: 2200
+bmw: 2800 TI Lux
+bmw: Alpina D10
+bmw: Alpina RLE Roadster
+bmw: M760i
+bmw: 331
+bmw: New Six
+bmw: F 76
+bugatti: EB 218
+bugatti: Type 57 S Atalante
+bugatti: Type 1
+bugatti: Type 8
+bugatti: Type 47
+buick: Serie D-Four
+buick: Enclave C1YB
+cadillac: Cimarron Diesel
+cadillac: LSE (Seville)
+chevrolet: Beretta Z26
+chevrolet: Cruze Eco
+chevrolet: Sail S-RV
+chevrolet: Silverado 1500 LD
+chevrolet: Brasil 3100
+chevrolet: Monza USA
+citroen: Hippy
+citroen: Jumpy I
+citroen: DS Inside
+citroen: Tulip
+dacia: 1325 Liberta
+dacia: 1320
+dodge: New Value
+dodge: Charger 1981
+dodge: M1918 light repair truck
+ds: DS World Premiere
+ds: N°7
+ferrari: 400 GT
+ferrari: BR20
+ferrari: FF America
+ferrari: 553
+ferrari: F1/86
+fiat: 6640A
+fiat: A.L.F.A 40/60 HP
+fiat: 8 HP
+fiat: Palio II
+fiat: 2800
+fiat: A.L.F.A. 40/60 GP
+fiat: Doblò Mk2
+ford: F-Series F-250
+ford: Prodigy
+ford: Vega
+ford: Cougar 406
+ford: F-250 Super Chief
+ford: F-Series third generation
+ford: Continental Mark III (1958)
+ford: Continental Mark IV (1959)
+ford: F-4EAT transmission
+ford: Mercury Montego 3rd generation
+ford: Zebra Three
+honda: e:NS1
+honda: Horizon
+honda: Insight (1G)
+honda: Logo
+hyundai: Exter
+hyundai: H300
+jaguar: XE SVR
+jeep: Dispatch
+jeep: Meridian
+kia: EV1 (Concept)
+kia: Fleetwood
+kia: Joy
+kia: Roadster (Elan)
+kia: Sportage (1re génération)
+kia: Wingbird
+kia: Asia KM410-series
+koenigsegg: Trevita
+lamborghini: 350 GT Zagato
+lamborghini: LM001 (Prototype)
+lamborghini: LMA002 (Prototype)
+lamborghini: SC20
+lamborghini: 400GT Monza
+lamborghini: Gallardo LP550-2 Spyder
+lancia: Stratos HF Gr.4
+lancia: Trevi Volumex
+lancia: Trikappa
+land-rover: Range Rover Evoque SVR
+land-rover: Range Rover Velar SVR
+land-rover: Series II / III
+land-rover: Ranger Special Operations Vehicle
+land-rover: Range Rover SV Coupé
+lexus: LF-Z Electrified
+lincoln: Y-block V8 engine
+lotus: Exige S3
+lotus: Mark IV
+mahindra: Armada
+maserati: Chubasco (Concept)
+maserati: MC20 Ciel
+mazda: 818 Kombi
+mazda: Eunos 100
+mazda: Rustler (Rebadged Bantam)
+mazda: Sao Penza
+mazda: Ibuki
+mazda: Chantez EV
+mazda: RX-9
+mazda: 767
+mclaren: 625C
+mclaren: X-1
+mercedes-benz: 280 SE Coupé/Cabriolet (W111)
+mercedes-benz: 300 SLR Uhlenhaut Coupé
+mercedes-benz: Fintail (W110)
+mercedes-benz: S-Class (W108/W109)
+mercedes-benz: Benz 29/60 PS
+mercedes-benz: W08
+mitsubishi: A6M Zero (réplique)
+mitsubishi: eK Wagon Custom
+mitsubishi: eK Wagon Sport
+mitsubishi: Galant Forte
+mitsubishi: GTO TwinTurbo
+mitsubishi: Mirage Astie
+mitsubishi: Proudia / Dignity
+mitsubishi: Space Star (1998)
+mitsubishi: Toppo Joy Pop
+mustang: Mustang Convertible III (Fox-body)
+mustang: Mustang Convertible IV (SN-95)
+mustang: Mustang Convertible V Facelift (S197)
+mustang: Mustang Twister
+mustang: Mustang VI (S550)
+nissan: 200 SX (S14)
+nissan: NP300 Pick-up
+nissan: Rafé
+nissan: March 86G
+nissan: Saurus
+nissan: Laurel C130-EV
+nissan: Yuanye Z9
+opel: Cascada OPC
+opel: KAD A
+opel: 8/40 PS
+opel: Corsa R5
+pagani: Huayra Tricolore
+peugeot: 406 SRI
+peugeot: 806 Prestige
+peugeot: 507
+peugeot: DK5
+peugeot: Type 54
+peugeot: Type 181
+plymouth: Cricket
+polestar: 2 Performance
+polestar: 2 Standard Range
+polestar: 3 Long Range
+pontiac: Standard
+proton: Jebat
+renault: 4 Gordini
+renault: 9 Gordini
+renault: 9 TS
+renault: Megane E-Tech Electric
+renault: RCZ
+renault: Type HG
+renault: Type N (c)
+renault: 20/30
+renault: Clio Williams Maxi
+renault: Pulse
+renault: Mégane IV RS Trophy
+rolls-royce: Silver Seraph Park Ward
+saab: Gran Turismo
+seat: Altra
+seat: Altea XL/Freetrack
+simca: Abarth 1150
+skoda: 1000 MB Combi
+skoda: Favorit prototype
+skoda: 104
+skoda: 504
+skoda: 720
+subaru: Success
+subaru: Sumo
+suzuki: EV Sport (Concept)
+suzuki: FX
+tesla: Roadster (2025)
+toyota: bZ Compact SUV (Concept)
+toyota: bZ SDN (Concept)
+toyota: bZ Sport Crossover (Concept)
+toyota: Cavalier Wagon
+toyota: Corona EXS
+toyota: Corona SF
+toyota: Cressida MX83
+toyota: Duet M100
+toyota: Gaia Estima
+toyota: Hi-Medic
+toyota: ist Sport
+toyota: MR-S (MR2 Spyder)
+toyota: Nadia Estima
+toyota: Optimo
+toyota: Progrès GR
+toyota: Scepter Wagon
+toyota: Scion bbX
+triumph: Dolomite Straight Eight
+tvr: 450 SEAC
+volkswagen: Bora Classic
+volkswagen: ID. Space Vizzion (Concept)
+volkswagen: ID. XTREME (Concept)
+volkswagen: Polo Vivo
+volkswagen: Rabbit (Golf Mk1)
+volvo: 440/460
+volvo: PV800 Series
+volvo: 260
+xpeng: IDENTY X

@@ -357,31 +357,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_EB_118_1.jpg"
   },
   {
-   "id": "bugatti_eb-218",
-   "name": "EB 218",
-   "production_years": "1999 (Concept)",
-   "puissance_ch": 420,
-   "vitesse_max_kmh": 290,
-   "zero_a_cent_s": 4.3,
-   "type_carburant": "Essence",
-   "consommation_mixte": "18.8 L/100km",
-   "dimensions_lwh_mm": "5370 x 1990 x 1450",
-   "poids_kg": 1900,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "eb 218",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car",
-    "economy car"
-   ]
-  },
-  {
    "id": "bugatti_la-voiture-noire",
    "name": "La Voiture Noire",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Bugatti_La_Voiture_Noire-CAERM2019.jpg/1280px-Bugatti_La_Voiture_Noire-CAERM2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1476,13 +1451,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Revival04_005a.jpg"
   },
   {
-   "id": "bugatti_type-57-s-atalante",
-   "name": "Type 57 S Atalante",
-   "production_years": "1936",
-   "tags": [],
-   "dimensions_lwh_mm": "4500 x 1700 x 1390"
-  },
-  {
    "id": "bugatti_type-57-c-atalante",
    "name": "Type 57 C Atalante",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Mus%C3%A9e_de_l%27automobile_-_Mulhouse_-_Bugatti_-_BH5A6034_%2816620568126%29.jpg/1280px-Mus%C3%A9e_de_l%27automobile_-_Mulhouse_-_Bugatti_-_BH5A6034_%2816620568126%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1626,12 +1594,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_30_02.jpg"
   },
   {
-   "id": "bugatti_type-1",
-   "name": "Type 1",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "bugatti_type-54",
    "name": "Type 54",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Paris_-_Bonhams_2013_-_Bugatti_type_54_grand_Prix_-_1931_-_010.jpg/1280px-Paris_-_Bonhams_2013_-_Bugatti_type_54_grand_Prix_-_1931_-_010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1670,12 +1632,6 @@
    "imageCredit": "Arnaud 25",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Molsheim_010.jpg"
-  },
-  {
-   "id": "bugatti_type-8",
-   "name": "Type 8",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "bugatti_type-64",
@@ -1727,12 +1683,6 @@
    "imageCredit": "Falcon® Photography from France",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_40_1.6_%2727_(10615826286).jpg"
-  },
-  {
-   "id": "bugatti_type-47",
-   "name": "Type 47",
-   "production_years": null,
-   "tags": []
   }
  ]
 }

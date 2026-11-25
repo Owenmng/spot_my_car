@@ -380,33 +380,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Chev_Beretta.jpg"
   },
   {
-   "id": "chevrolet_beretta_z26",
-   "name": "Beretta Z26",
-   "production_years": "1994 - 1996",
-   "puissance_ch": 150,
-   "vitesse_max_kmh": 210,
-   "zero_a_cent_s": 8.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "10.5 L/100km",
-   "dimensions_lwh_mm": "4765 x 1725 x 1349",
-   "poids_kg": 1300,
-   "prix_lancement_eur": 14000,
-   "tags": [
-    "beretta z26",
-    "car",
-    "vehicle",
-    "sports car",
-    "performance car",
-    "coupe",
-    "compact car",
-    "two-seater",
-    "italian car",
-    "classic car",
-    "vintage car",
-    "collectible car"
-   ]
-  },
-  {
    "id": "chevrolet_blazer",
    "name": "Blazer",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/1988_Chevrolet_Blazer_C10_Hardtop.jpg/1280px-1988_Chevrolet_Blazer_C10_Hardtop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1584,33 +1557,6 @@
    "imageCredit": "Elise240SX",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Chevrolet_Cruze_LT_in_Arctic_Blue_Metallic,_Front_Left.jpg"
-  },
-  {
-   "id": "chevrolet_cruze_eco",
-   "name": "Cruze Eco",
-   "production_years": "2011 - 2015",
-   "puissance_ch": 138,
-   "vitesse_max_kmh": 195,
-   "zero_a_cent_s": 9.8,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.0 L/100km",
-   "dimensions_lwh_mm": "4597 x 1797 x 1477",
-   "poids_kg": 1300,
-   "prix_lancement_eur": 18000,
-   "tags": [
-    "cruze eco",
-    "compact car",
-    "sedan",
-    "car",
-    "vehicle",
-    "chevrolet",
-    "eco-friendly",
-    "fuel-efficient",
-    "small car",
-    "economy car",
-    "hybrid",
-    "gasoline car"
-   ]
   },
   {
    "id": "chevrolet_cruze_hatch",
@@ -2974,32 +2920,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Sail_II_sedan_01_China_2012-07-15.JPG"
   },
   {
-   "id": "chevrolet_sail_s_rv",
-   "name": "Sail S-RV",
-   "production_years": "2001 - 2005",
-   "puissance_ch": 92,
-   "vitesse_max_kmh": 165,
-   "zero_a_cent_s": 13.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.5 L/100km",
-   "dimensions_lwh_mm": "4097 x 1608 x 1500",
-   "poids_kg": 1125,
-   "prix_lancement_eur": 10000,
-   "tags": [
-    "sail s-rv",
-    "suv",
-    "compact suv",
-    "city suv",
-    "small suv",
-    "car",
-    "vehicle",
-    "crossover",
-    "subcompact suv",
-    "motor vehicle",
-    "land vehicle"
-   ]
-  },
-  {
    "id": "chevrolet_seeker",
    "name": "Seeker",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/2023_SAIC-GM_Chevrolet_Seeker.jpg/1280px-2023_SAIC-GM_Chevrolet_Seeker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3060,33 +2980,6 @@
    "imageCredit": "Ermell",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Leimershof_US-Car-Treffen_2011_Chevrolet_Silverado_1500_Regular_Cab-20220911-RM-161738.jpg"
-  },
-  {
-   "id": "chevrolet_silverado_1500_ld",
-   "name": "Silverado 1500 LD",
-   "production_years": "2019 - 2021",
-   "puissance_ch": 355,
-   "vitesse_max_kmh": 175,
-   "zero_a_cent_s": 7.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "13.5 L/100km",
-   "dimensions_lwh_mm": "5885 x 2063 x 1921",
-   "poids_kg": 2250,
-   "prix_lancement_eur": 32000,
-   "tags": [
-    "pickup truck",
-    "silverado 1500 ld",
-    "full-size pickup",
-    "chevrolet",
-    "gmc",
-    "light-duty truck",
-    "half-ton truck",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "truck",
-    "work truck"
-   ]
   },
   {
    "id": "chevrolet_silverado_1500_ltz",
@@ -3992,12 +3885,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Chevrolet_Matiz_SE_Facelift_front.JPG"
   },
   {
-   "id": "chevrolet_brasil-3100",
-   "name": "Brasil 3100",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "chevrolet_cruze-j300",
    "name": "Cruze J300",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/ChevyCruzeKapelleklein.jpg/1280px-ChevyCruzeKapelleklein.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4118,12 +4005,6 @@
    "imageCredit": "JaseMan",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1968_Astrovette_White.jpg"
-  },
-  {
-   "id": "chevrolet_monza-usa",
-   "name": "Monza USA",
-   "production_years": "1975 - 1980",
-   "tags": []
   },
   {
    "id": "chevrolet_corvette-c7-r",

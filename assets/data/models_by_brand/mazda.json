@@ -403,33 +403,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda6e_IMG_6681.jpg"
   },
   {
-   "id": "mazda_818-kombi",
-   "name": "818 Kombi",
-   "imageUrl": null,
-   "production_years": "1971 - 1978",
-   "puissance_ch": 61,
-   "vitesse_max_kmh": 140,
-   "zero_a_cent_s": 17.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "9.5 L/100km",
-   "dimensions_lwh_mm": "4089 x 1595 x 1400",
-   "poids_kg": 905,
-   "prix_lancement_eur": 2800,
-   "tags": [
-    "kombi",
-    "wagon",
-    "station wagon",
-    "car",
-    "vehicle",
-    "compact car",
-    "mid-size car",
-    "family car",
-    "passenger car",
-    "motor vehicle",
-    "land vehicle"
-   ]
-  },
-  {
    "id": "mazda_929",
    "name": "929",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Mazda_929_1984.JPG/1280px-Mazda_929_1984.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1464,34 +1437,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_etude_sunnydayinnz_numplate_etude.jpg"
   },
   {
-   "id": "mazda_eunos_100",
-   "name": "Eunos 100",
-   "production_years": "1990 - 1994",
-   "puissance_ch": 140,
-   "vitesse_max_kmh": 200,
-   "zero_a_cent_s": 9.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.0 L/100km",
-   "dimensions_lwh_mm": "4435 x 1695 x 1365",
-   "poids_kg": 1180,
-   "prix_lancement_eur": 18000,
-   "tags": [
-    "eunos 100",
-    "mazda mx-5 miata",
-    "roadster",
-    "convertible",
-    "compact car",
-    "sports car",
-    "japanese car",
-    "1990s car",
-    "car",
-    "vehicle",
-    "two-seater",
-    "lightweight",
-    "rear-wheel drive"
-   ]
-  },
-  {
    "id": "mazda_eunos_300",
    "name": "Eunos 300",
    "production_years": "1991 - 1993",
@@ -2187,34 +2132,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Eunos_Roadster_Green.jpg"
   },
   {
-   "id": "mazda_rustler",
-   "name": "Rustler (Rebadged Bantam)",
-   "imageUrl": null,
-   "production_years": "1986 - 2002",
-   "puissance_ch": 68,
-   "vitesse_max_kmh": 150,
-   "zero_a_cent_s": 15.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.0 L/100km",
-   "dimensions_lwh_mm": "4265 x 1640 x 1410",
-   "poids_kg": 950,
-   "prix_lancement_eur": 7000,
-   "tags": [
-    "rebadged",
-    "bantam",
-    "rustler",
-    "car",
-    "vehicle",
-    "compact car",
-    "subcompact car",
-    "city car",
-    "economy car",
-    "small car",
-    "land vehicle",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "mazda_rx-3",
    "name": "RX-3",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Mazda-rx3-1st-generation01.jpg/1280px-Mazda-rx3-1st-generation01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2528,12 +2445,6 @@
    "imageCredit": "Mytho88",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2004_Mazda_Verisa_01.jpg"
-  },
-  {
-   "id": "mazda_sao-penza",
-   "name": "Sao Penza",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "mazda_efini-ms-8",
@@ -2922,12 +2833,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_787_Fuji_1991.jpg"
   },
   {
-   "id": "mazda_ibuki",
-   "name": "Ibuki",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "mazda_mx-5",
    "name": "MX-5",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Mazda_MX-5_RF_IMG_7340.jpg/1280px-Mazda_MX-5_RF_IMG_7340.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3179,12 +3084,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_B600_(30956923296).jpg"
   },
   {
-   "id": "mazda_chantez-ev",
-   "name": "Chantez EV",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "mazda_mx-5-nb",
    "name": "MX-5 (NB)",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/1999_Mazda_MX-5_Miata_Base_in_Highlight_Silver_Metallic%2C_Rear_Left%2C_08-06-2022.jpg/1280px-1999_Mazda_MX-5_Miata_Base_in_Highlight_Silver_Metallic%2C_Rear_Left%2C_08-06-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3366,12 +3265,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda_Koeru_IAA2015.jpg"
   },
   {
-   "id": "mazda_rx-9",
-   "name": "RX-9",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "mazda_110-s-cosmo-sport",
    "name": "110 S Cosmo Sport",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/1967_mazda_cosmo_sport_1.jpg/1280px-1967_mazda_cosmo_sport_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3391,12 +3284,6 @@
    "imageCredit": "Taisyo",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mazda-capella-4th-generation01.jpg"
-  },
-  {
-   "id": "mazda_767",
-   "name": "767",
-   "production_years": null,
-   "tags": []
   }
  ]
 }

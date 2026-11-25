@@ -61,34 +61,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alpine_A106.jpeg"
   },
   {
-   "id": "alpine_a106_mille_miglia",
-   "name": "A106 Mille Miglia",
-   "production_years": "1956 - 1957",
-   "puissance_ch": 50,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 12.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.8 L/100km",
-   "dimensions_lwh_mm": "3800 x 1450 x 1200",
-   "poids_kg": 530,
-   "prix_lancement_eur": 3000,
-   "tags": [
-    "grand tourer",
-    "coupe",
-    "classic car",
-    "italian car",
-    "vintage car",
-    "sports car",
-    "performance car",
-    "car",
-    "vehicle",
-    "mille miglia",
-    "a106",
-    "1950s car",
-    "two-seater"
-   ]
-  },
-  {
    "id": "alpine_a108",
    "name": "A108",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Alpine_108_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -372,32 +344,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alpinea210.jpg"
   },
   {
-   "id": "alpine_a211",
-   "name": "A211",
-   "production_years": "1967 - 1967",
-   "puissance_ch": 320,
-   "vitesse_max_kmh": 300,
-   "zero_a_cent_s": 4.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "18 L/100km",
-   "dimensions_lwh_mm": "4250 x 1700 x 1040",
-   "poids_kg": 720,
-   "prix_lancement_eur": 35000,
-   "tags": [
-    "a211",
-    "mercedes-benz",
-    "compact car",
-    "sedan",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "executive car",
-    "luxury car",
-    "mid-size car"
-   ]
-  },
-  {
    "id": "alpine_a220",
    "name": "A220",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Paris_-_Retromobile_2013_-_Alpine_Renault_A220_-_1968_-_103.jpg/1280px-Paris_-_Retromobile_2013_-_Alpine_Renault_A220_-_1968_-_103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -487,36 +433,6 @@
    "imageCredit": "Alex Collard, my brother. Uploaded with his permission under the GFDL.",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A310.jpg"
-  },
-  {
-   "id": "alpine_a310_4cyl",
-   "name": "A310 4cyl",
-   "imageUrl": null,
-   "production_years": "1971 - 1976",
-   "puissance_ch": 127,
-   "vitesse_max_kmh": 210,
-   "zero_a_cent_s": 8.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "12.0 L/100km",
-   "dimensions_lwh_mm": "4180 x 1640 x 1150",
-   "poids_kg": 950,
-   "prix_lancement_eur": 10000,
-   "tags": [
-    "coupe",
-    "sports car",
-    "compact car",
-    "4 cylinder",
-    "a310",
-    "renault a310",
-    "classic car",
-    "vintage car",
-    "french car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "performance car",
-    "grand tourer"
-   ]
   },
   {
    "id": "alpine_a310_v6",

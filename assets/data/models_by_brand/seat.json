@@ -130,32 +130,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2007_SEAT_Altea_Reference_TDi_1.9_Front.jpg"
   },
   {
-   "id": "seat_altra",
-   "name": "Altra",
-   "imageUrl": null,
-   "production_years": "1997 - 1998",
-   "puissance_ch": 54,
-   "vitesse_max_kmh": 140,
-   "zero_a_cent_s": 16.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.5 L/100km",
-   "dimensions_lwh_mm": "3560 x 1610 x 1430",
-   "poids_kg": 850,
-   "prix_lancement_eur": 8000,
-   "tags": [
-    "altra",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "city car",
-    "subcompact car",
-    "compact car",
-    "hatchback",
-    "microcar"
-   ]
-  },
-  {
    "id": "seat_arona",
    "name": "Arona",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/2018_SEAT_Arona_SE_Technology_TSi_1.0_Front_%281%29.jpg/1280px-2018_SEAT_Arona_SE_Technology_TSi_1.0_Front_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -737,13 +711,6 @@
    "imageCredit": "Carlosseat",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:SEAT_Ateca_FR_2017.jpg"
-  },
-  {
-   "id": "seat_altea-xl-freetrack",
-   "name": "Altea XL/Freetrack",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4467 x 1768 x 1568"
   }
  ]
 }

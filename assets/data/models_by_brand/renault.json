@@ -536,35 +536,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_150_Comfort_Range_Techno_%E2%80%93_f_22062025.jpg"
   },
   {
-   "id": "renault_r4_gordini",
-   "name": "4 Gordini",
-   "production_years": "1967 - 1970",
-   "puissance_ch": 55,
-   "vitesse_max_kmh": 140,
-   "zero_a_cent_s": 18.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.5 L/100km",
-   "dimensions_lwh_mm": "3668 x 1485 x 1463",
-   "poids_kg": 650,
-   "prix_lancement_eur": 1500,
-   "tags": [
-    "4 gordini",
-    "renault 4",
-    "renault",
-    "gordini",
-    "hatchback",
-    "city car",
-    "compact car",
-    "performance car",
-    "classic car",
-    "vintage car",
-    "french car",
-    "small car",
-    "sports car",
-    "rally car"
-   ]
-  },
-  {
    "id": "renault_r4_plein_air",
    "name": "4 Plein Air",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Renault_4_Plein-Air_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -1010,35 +981,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_8_(1971)_-_8904859857.jpg"
   },
   {
-   "id": "renault_r9_gordini",
-   "name": "9 Gordini",
-   "production_years": "1985 - 1989",
-   "puissance_ch": 110,
-   "vitesse_max_kmh": 185,
-   "zero_a_cent_s": 9.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.0 L/100km",
-   "dimensions_lwh_mm": "4060 x 1650 x 1405",
-   "poids_kg": 900,
-   "prix_lancement_eur": 10000,
-   "tags": [
-    "9 gordini",
-    "renault 8 gordini",
-    "hot hatch",
-    "compact car",
-    "performance car",
-    "sports car",
-    "classic car",
-    "vintage car",
-    "french car",
-    "rally car",
-    "small car",
-    "car",
-    "vehicle",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "renault_r9_tl",
    "name": "9 TL",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Renault_9_TL_1987_%2812782832023%29.jpg/1280px-Renault_9_TL_1987_%2812782832023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1067,34 +1009,6 @@
    "imageCredit": "order_242 from Chile",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_9_TL_1987_(12782832023).jpg"
-  },
-  {
-   "id": "renault_r9_ts",
-   "name": "9 TS",
-   "production_years": "1981 - 1989",
-   "puissance_ch": 72,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 12.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.0 L/100km",
-   "dimensions_lwh_mm": "4060 x 1650 x 1405",
-   "poids_kg": 850,
-   "prix_lancement_eur": 6000,
-   "tags": [
-    "9ts",
-    "car",
-    "vehicle",
-    "sports car",
-    "performance car",
-    "coupe",
-    "compact car",
-    "two-seater",
-    "classic car",
-    "vintage car",
-    "collectible car",
-    "motor vehicle",
-    "land vehicle"
-   ]
   },
   {
    "id": "renault_r9_turbo",
@@ -2211,7 +2125,11 @@
     "vehicle",
     "motor vehicle",
     "people carrier"
-   ]
+   ],
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Dacia_Lodgy_184549.jpg/1280px-Dacia_Lodgy_184549.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Trop86",
+   "imageLicense": "CC0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Dacia_Lodgy_184549.jpg"
   },
   {
    "id": "renault_logan",
@@ -2337,34 +2255,6 @@
    "imageCredit": "Vauxford",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2017_Renault_Megane_Dynamique_S_NAV_DC_1.5_Front.jpg"
-  },
-  {
-   "id": "renault_megane-e-tech-electric",
-   "name": "Megane E-Tech Electric",
-   "production_years": "2022 - Aujourd'hui",
-   "puissance_ch": 220,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 7.4,
-   "type_carburant": "Électrique",
-   "consommation_mixte": "15.5 kWh/100km",
-   "dimensions_lwh_mm": "4199 x 1768 x 1505",
-   "poids_kg": 1642,
-   "prix_lancement_eur": 42000,
-   "tags": [
-    "electric car",
-    "hatchback",
-    "compact car",
-    "electric vehicle",
-    "ev",
-    "renault megane e-tech",
-    "megane e-tech electric",
-    "battery electric vehicle",
-    "car",
-    "vehicle",
-    "automobile",
-    "zero emissions",
-    "electric hatchback"
-   ]
   },
   {
    "id": "renault_megane_rs",
@@ -2557,35 +2447,6 @@
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Rafale_DSC_7941.jpg"
-  },
-  {
-   "id": "renault_rcz",
-   "name": "RCZ",
-   "imageUrl": null,
-   "production_years": "2010 - 2015",
-   "puissance_ch": 200,
-   "vitesse_max_kmh": 237,
-   "zero_a_cent_s": 7.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.7 L/100km",
-   "dimensions_lwh_mm": "4287 x 1845 x 1359",
-   "poids_kg": 1370,
-   "prix_lancement_eur": 30000,
-   "tags": [
-    "peugeot rcz",
-    "coupe",
-    "sports car",
-    "performance car",
-    "compact car",
-    "car",
-    "vehicle",
-    "peugeot",
-    "french car",
-    "two-seater",
-    "2 seater",
-    "sports coupe",
-    "rear-wheel drive"
-   ]
   },
   {
    "id": "renault_rodeo",
@@ -3489,13 +3350,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Espace_front_20080108.jpg"
   },
   {
-   "id": "renault_type-hg",
-   "name": "Type HG",
-   "production_years": null,
-   "tags": [],
-   "poids_kg": 2000
-  },
-  {
    "id": "renault_type-fk",
    "name": "Type FK",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Renault_Type_FK_Torpedo_1917-1918.JPG/1280px-Renault_Type_FK_Torpedo_1917-1918.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3756,12 +3610,6 @@
    "imageCredit": "Jordi Payà",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1914_Renault_Type_EF_Landaulet.jpg"
-  },
-  {
-   "id": "renault_type-n-c",
-   "name": "Type N (c)",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "renault_type-o",
@@ -4359,14 +4207,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2020_Renault_Espace_V_DSC_7866.jpg"
   },
   {
-   "id": "renault_20-30",
-   "name": "20/30",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4520 x 1726 x 1350",
-   "poids_kg": 1250
-  },
-  {
    "id": "renault_4cv",
    "name": "4CV",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Renault-4CV-1.jpg/1280px-Renault-4CV-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4669,12 +4509,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Type_GS.jpg"
   },
   {
-   "id": "renault_clio-williams-maxi",
-   "name": "Clio Williams Maxi",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "renault_clio-renault-sport",
    "name": "Clio Renault Sport",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Renault_Clio%2C_2010_Brno_WSR_%281%29.jpg/1280px-Renault_Clio%2C_2010_Brno_WSR_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4683,12 +4517,6 @@
    "imageCredit": "I would appreciate being notified if you use my work outside Wikimedia. Do not copy this image illegally by ignoring the",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Renault_Clio,_2010_Brno_WSR_(1).jpg"
-  },
-  {
-   "id": "renault_pulse-2",
-   "name": "Pulse",
-   "production_years": "2017",
-   "tags": []
   },
   {
    "id": "renault_vivasport",
@@ -4792,12 +4620,6 @@
    "imageCredit": "Sicnag",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1969_Renault_16_TS_Hatchback_(46857379411).jpg"
-  },
-  {
-   "id": "renault_megane-iv-rs-trophy",
-   "name": "Mégane IV RS Trophy",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "renault_clio-rs-iii",

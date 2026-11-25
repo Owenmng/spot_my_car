@@ -1186,34 +1186,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:U-Haul_26%E2%80%9D_Supermover_-_Ford_F-650.jpg"
   },
   {
-   "id": "ford_f-series-f-250",
-   "name": "F-Series F-250",
-   "production_years": "1997 - 1999",
-   "puissance_ch": 235,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 9.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "19 L/100km",
-   "dimensions_lwh_mm": "5639 x 2022 x 1880",
-   "poids_kg": 2182,
-   "prix_lancement_eur": 22000,
-   "tags": [
-    "pickup truck",
-    "f-250",
-    "f-series",
-    "full-size truck",
-    "heavy-duty truck",
-    "ford f-250",
-    "truck",
-    "vehicle",
-    "motor vehicle",
-    "car",
-    "heavy duty",
-    "work truck",
-    "ford"
-   ]
-  },
-  {
    "id": "ford_fairlane",
    "name": "Fairlane (500 Hardtop)",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ford_Fairlane_sedan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -2255,35 +2227,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2nd_Ford_Probe_GT.jpg"
   },
   {
-   "id": "ford_prodigy",
-   "name": "Prodigy",
-   "imageUrl": null,
-   "production_years": "2000 - 2000",
-   "puissance_ch": 110,
-   "vitesse_max_kmh": 170,
-   "zero_a_cent_s": 12.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "5.9 L/100km",
-   "dimensions_lwh_mm": "4445 x 1783 x 1422",
-   "poids_kg": 1200,
-   "prix_lancement_eur": 15000,
-   "tags": [
-    "prodigy",
-    "car",
-    "vehicle",
-    "sports car",
-    "performance car",
-    "compact car",
-    "hatchback",
-    "hybrid",
-    "electric car",
-    "plug-in hybrid",
-    "hev",
-    "phev",
-    "eco-friendly car"
-   ]
-  },
-  {
    "id": "ford_puma",
    "name": "Puma",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/English_Ford_Puma.jpg/1280px-English_Ford_Puma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2987,33 +2930,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Ford_Transit_Connect_Limited_PHEV_-_1498cc_1.5_(150PS)_Plug-in_Hybrid_-_Frozen_White_-_03-2025,_Front.jpg"
   },
   {
-   "id": "ford_vega",
-   "name": "Vega",
-   "production_years": "1971 - 1977",
-   "puissance_ch": 90,
-   "vitesse_max_kmh": 155,
-   "zero_a_cent_s": 13.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "10.0 L/100km",
-   "dimensions_lwh_mm": "4369 x 1689 x 1321",
-   "poids_kg": 1100,
-   "prix_lancement_eur": 3000,
-   "tags": [
-    "compact car",
-    "subcompact car",
-    "coupe",
-    "hatchback",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "1970s car",
-    "chevrolet vega",
-    "american car",
-    "economy car"
-   ]
-  },
-  {
    "id": "ford_windstar",
    "name": "Windstar",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/1st_Ford_Windstar.jpg/1280px-1st_Ford_Windstar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3157,12 +3073,6 @@
    "imageCredit": "Greg Gjerdingen",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1982_Ford_EXP_front_(cropped).jpg"
-  },
-  {
-   "id": "ford_cougar-406",
-   "name": "Cougar 406",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "ford_de-luxe-ford",
@@ -3514,12 +3424,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_F-150_FX4_--_09-07-2009.jpg"
   },
   {
-   "id": "ford_f-250-super-chief",
-   "name": "F-250 Super Chief",
-   "production_years": "2005",
-   "tags": []
-  },
-  {
    "id": "ford_f-series-first-generation",
    "name": "F-Series first generation",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/%2C00_7938_Pickup_model_%22Ford_F-1%22.jpg/1280px-%2C00_7938_Pickup_model_%22Ford_F-1%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3650,12 +3554,6 @@
    "imageCredit": "IFCAR",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:92-96_Ford-F150.jpg"
-  },
-  {
-   "id": "ford_f-series-third-generation",
-   "name": "F-Series third generation",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "ford_f-series-sixth-generation",
@@ -3932,21 +3830,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_C_Max_Energi_plug-in_hybrid_WAS_2011_897.JPG"
   },
   {
-   "id": "ford_continental-mark-iii-1958",
-   "name": "Continental Mark III (1958)",
-   "production_years": null,
-   "tags": [],
-   "poids_kg": 2370
-  },
-  {
-   "id": "ford_continental-mark-iv-1959",
-   "name": "Continental Mark IV (1959)",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "5817 x 2035 x 1475",
-   "poids_kg": 2370
-  },
-  {
    "id": "ford_continental-mark-v-1960",
    "name": "Continental Mark V (1960)",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/1960_Lincoln_Continental_--_10-02-2009.jpg/1280px-1960_Lincoln_Continental_--_10-02-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4082,12 +3965,6 @@
    "imageCredit": "OSX",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1994_Ford_Falcon_(EF)_GLi_sedan_(2015-11-13)_01.jpg"
-  },
-  {
-   "id": "ford_f-4eat-transmission",
-   "name": "F-4EAT transmission",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "ford_f-550",
@@ -4792,12 +4669,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mercury_Marauder.jpg"
   },
   {
-   "id": "ford_mercury-montego-3rd-generation",
-   "name": "Mercury Montego 3rd generation",
-   "production_years": "2005 - 2007",
-   "tags": []
-  },
-  {
    "id": "ford_anglia-105e",
    "name": "Anglia 105E",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/1960_Ford_105E_Anglia%2C_licence_AL-17-79%2C_pic6.JPG/1280px-1960_Ford_105E_Anglia%2C_licence_AL-17-79%2C_pic6.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -5230,12 +5101,6 @@
    "imageCredit": "This photograph was taken with a Canon PowerShot A520 by User:Jed",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ford_A_Tudor_Sedan,_1930.jpg"
-  },
-  {
-   "id": "ford_zebra-three",
-   "name": "Zebra Three",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "ford_merkur-xr4ti",

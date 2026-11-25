@@ -1582,12 +1582,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Rapid_Sport.jpg"
   },
   {
-   "id": "skoda_1000-mb-combi",
-   "name": "1000 MB Combi",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "skoda_forman-plus",
    "name": "Forman Plus",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Brno%2C_Wurmova%2C_%C5%A0koda_Forman_Plus.jpg/1280px-Brno%2C_Wurmova%2C_%C5%A0koda_Forman_Plus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1616,12 +1610,6 @@
    "imageCredit": "RL GNZLZ from Chile",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Skoda_Favorit_LX_Pick_up_1995_(26525339629).jpg"
-  },
-  {
-   "id": "skoda_favorit-prototype",
-   "name": "Favorit prototype",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "skoda_favorit-sedan",
@@ -1865,12 +1853,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2016_Skoda_Octavia_Scout_TDi_4X4_2.0_Front.jpg"
   },
   {
-   "id": "skoda_104",
-   "name": "104",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "skoda_super-sport",
    "name": "Super Sport",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Skoda_110_Super_sport_%27Ferat%27_type_724_pic7.JPG/1280px-Skoda_110_Super_sport_%27Ferat%27_type_724_pic7.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1931,12 +1913,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_306_N_-_all-metal_body_(Auto_magazine,_1931).png"
   },
   {
-   "id": "skoda_504",
-   "name": "504",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "skoda_506",
    "name": "506",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/%C5%A0koda_506_6-cylinder_of_5-tonne_capacity_%28Auto_magazine%2C_1929%29.png/1280px-%C5%A0koda_506_6-cylinder_of_5-tonne_capacity_%28Auto_magazine%2C_1929%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1945,12 +1921,6 @@
    "imageCredit": "Unknown authorUnknown author",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0koda_506_6-cylinder_of_5-tonne_capacity_(Auto_magazine,_1929).png"
-  },
-  {
-   "id": "skoda_720",
-   "name": "720",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "skoda_740",

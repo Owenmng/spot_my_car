@@ -318,35 +318,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Cadillac_Cimarron_2_--_07-01-2009.jpg"
   },
   {
-   "id": "cadillac_cimarron-diesel",
-   "name": "Cimarron Diesel",
-   "imageUrl": null,
-   "production_years": "1982 - 1985",
-   "puissance_ch": 85,
-   "vitesse_max_kmh": 155,
-   "zero_a_cent_s": 14.0,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "8.5 L/100km",
-   "dimensions_lwh_mm": "4508 x 1717 x 1349",
-   "poids_kg": 1200,
-   "prix_lancement_eur": 16000,
-   "tags": [
-    "diesel car",
-    "car",
-    "vehicle",
-    "compact car",
-    "sedan",
-    "cimarron",
-    "diesel engine",
-    "economy car",
-    "vintage car",
-    "classic car",
-    "used car",
-    "motor vehicle",
-    "land vehicle"
-   ]
-  },
-  {
    "id": "cadillac_coupe-deville",
    "name": "Coupe DeVille",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/1975_Cadillac_Coupe_De_Ville.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -1185,35 +1156,6 @@
    "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:CADILLAC_GT4_China.jpg"
-  },
-  {
-   "id": "cadillac_lse",
-   "name": "LSE (Seville)",
-   "imageUrl": null,
-   "production_years": "1993 - 1996",
-   "puissance_ch": 274,
-   "vitesse_max_kmh": 225,
-   "zero_a_cent_s": 7.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "13.1 L/100km",
-   "dimensions_lwh_mm": "5180 x 1880 x 1370",
-   "poids_kg": 1800,
-   "prix_lancement_eur": 28000,
-   "tags": [
-    "lse",
-    "seville",
-    "luxury car",
-    "sedan",
-    "full-size car",
-    "car",
-    "vehicle",
-    "executive car",
-    "british car",
-    "classic car",
-    "vintage car",
-    "land vehicle",
-    "motor vehicle"
-   ]
   },
   {
    "id": "cadillac_lyriq",

@@ -787,34 +787,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_e.jpg"
   },
   {
-   "id": "honda_s7",
-   "name": "e:NS1",
-   "production_years": "2022 - Aujourd'hui",
-   "puissance_ch": 204,
-   "vitesse_max_kmh": 150,
-   "zero_a_cent_s": 7.8,
-   "type_carburant": "Électrique",
-   "consommation_mixte": "13.6 kWh/100km",
-   "dimensions_lwh_mm": "4390 x 1790 x 1560",
-   "poids_kg": 1683,
-   "prix_lancement_eur": 26000,
-   "tags": [
-    "electric car",
-    "hatchback",
-    "compact car",
-    "city car",
-    "ev",
-    "honda ens1",
-    "e:ns1",
-    "honda",
-    "hybrid",
-    "vehicle",
-    "car",
-    "motor vehicle",
-    "subcompact car"
-   ]
-  },
-  {
    "id": "honda_p7",
    "name": "e:Ny1",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Honda_e-Ny1_IAA_2023_1X7A0562.jpg/1280px-Honda_e-Ny1_IAA_2023_1X7A0562.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1263,32 +1235,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2010-2011_Honda_Freed_Spike_G.jpg"
   },
   {
-   "id": "honda_horizon",
-   "name": "Horizon",
-   "imageUrl": null,
-   "production_years": "1977 - 1981",
-   "puissance_ch": 70,
-   "vitesse_max_kmh": 150,
-   "zero_a_cent_s": 14.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.5 L/100km",
-   "dimensions_lwh_mm": "4120 x 1620 x 1340",
-   "poids_kg": 900,
-   "prix_lancement_eur": 7000,
-   "tags": [
-    "horizon",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "hatchback",
-    "city car",
-    "subcompact car",
-    "economy car"
-   ]
-  },
-  {
    "id": "honda_hr-v",
    "name": "HR-V",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2023_Honda_HR-V_Advance_i-MMD_CVT_1.5.jpg/1280px-2023_Honda_HR-V_Advance_i-MMD_CVT_1.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1352,34 +1298,6 @@
    "imageCredit": "オーバードライブ83",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2019-2020_Honda_Insight_EX_1.5_6AA-ZE4_(20220910).jpg"
-  },
-  {
-   "id": "honda_insight-1g",
-   "name": "Insight (1G)",
-   "production_years": "1999 - 2006",
-   "puissance_ch": 73,
-   "vitesse_max_kmh": 180,
-   "zero_a_cent_s": 12.0,
-   "type_carburant": "Hybride",
-   "consommation_mixte": "3.6 L/100km",
-   "dimensions_lwh_mm": "3945 x 1695 x 1355",
-   "poids_kg": 850,
-   "prix_lancement_eur": 18000,
-   "tags": [
-    "hybrid",
-    "hatchback",
-    "compact car",
-    "honda insight",
-    "1g",
-    "insight 1g",
-    "car",
-    "vehicle",
-    "hybrid car",
-    "gasoline-electric hybrid",
-    "honda",
-    "generation 1",
-    "first generation"
-   ]
   },
   {
    "id": "honda_inspire",
@@ -1701,33 +1619,6 @@
    "imageCredit": "Tennen-Gas",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Honda_Life_Dunk_001.JPG"
-  },
-  {
-   "id": "honda_logo",
-   "name": "Logo",
-   "imageUrl": null,
-   "production_years": "1996 - 2001",
-   "puissance_ch": 65,
-   "vitesse_max_kmh": 152,
-   "zero_a_cent_s": 14.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.3 L/100km",
-   "dimensions_lwh_mm": "3785 x 1645 x 1525",
-   "poids_kg": 880,
-   "prix_lancement_eur": 12000,
-   "tags": [
-    "logo",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car",
-    "economy car",
-    "fuel efficient car"
-   ]
   },
   {
    "id": "honda_mdx",

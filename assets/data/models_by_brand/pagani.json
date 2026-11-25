@@ -161,35 +161,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Pagani_Huayra_BC_Roadster,_BAS_24,_Brussels_(P1170493-RR).jpg"
   },
   {
-   "id": "pagani_huayra_tricolore",
-   "name": "Huayra Tricolore",
-   "production_years": "2021",
-   "puissance_ch": 840,
-   "vitesse_max_kmh": 380,
-   "zero_a_cent_s": 2.8,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.5 L/100km",
-   "dimensions_lwh_mm": "4655 x 2055 x 1143",
-   "poids_kg": 1246,
-   "prix_lancement_eur": 5500000,
-   "tags": [
-    "hypercar",
-    "sports car",
-    "coupe",
-    "performance car",
-    "pagani huayra",
-    "tricolore",
-    "italian car",
-    "luxury car",
-    "car",
-    "vehicle",
-    "limited edition",
-    "supercar",
-    "high-performance",
-    "bespoke"
-   ]
-  },
-  {
    "id": "pagani_utopia",
    "name": "Utopia",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Pagani_Utopia_%2853048624118%29_%28cropped%29.jpg/1280px-Pagani_Utopia_%2853048624118%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",

@@ -1,46 +1,6 @@
 # Contrôle des photos
 
-{"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0, "retrouvées": 42} · appels IA: 53 · restant à valider: 0 · sans photo: 219
+{"remplacées": 0, "masquées": 0, "validées": 0, "rejetées_ia": 0, "retrouvées": 2} · appels IA: 2 · restant à valider: 0 · sans photo: 248
 
-- Alpine A211 (sans photo) → File:Bruxelles Autoworld Racecars 04.jpg
-- Aston Martin Lagonda 16/80 (sans photo) → File:1933 Lagonda 16-80 (29072571540).jpg
-- Aston Martin Lagonda Rapier (sans photo) → File:1934 Lagonda Rapier 1.jpg
-- Audi Type R (sans photo) → File:Classic Days 2022 Audi R19 (Imperator) 1929.jpg
-- Audi Abt-Audi TT-R (sans photo) → File:DTM-Audi Red Bull.jpg
-- BMW Alpina B11 (sans photo) → File:Alpina B11 Front.JPG
-- BMW 331 (sans photo) → File:RCN 8. 2023 81.jpg
-- Bugatti Type 47 (sans photo) → File:Bugatti Type 45 01.jpg
-- Chevrolet Brasil 3100 (sans photo) → File:Desfile de carros antigos no Túnel Rei Pelé (52950918946).jpg
-- Ferrari 400 GT (sans photo) → File:Paris - Bonhams 2014 - Ferrari 400GT Automatic Sports Saloon - 1978 - 001.jpg
-- Fiat 8 HP (sans photo) → File:Ford 8HP 1901 MAUTO.jpg
-- Fiat A.L.F.A 24 HP (sans photo) → File:Alfa 24hp C.jpg
-- Fiat Palio II (sans photo) → File:2013 2nd gen. Fiat Palio 1.4 Attractive, spotted in Buenos Aires, Argentina (front view).jpg
-- Fiat Auto Avio Costruzioni 815 (sans photo) → File:Auto Avio Costruzioni 815 (5742979800).jpg
-- Fiat 2800 (sans photo) → File:S m. vittorio Emanuele III a Librazo - panoramio (cropped).jpg
-- Fiat Doblò Mk2 (sans photo) → File:2012 Fiat Doblo Combi Premio 1,6 16v 105 Hp.jpg
-- Honda e:NS1 (sans photo) → File:2023 Dongfeng-Honda eNS1 in blue, front 8.18.23.jpg
-- Kia Asia KM410-series (sans photo) → File:DN-ST-82-05311.jpg
-- Lamborghini Gallardo LP550-2 Spyder (sans photo) → File:Lamborghini - Gallardo LP 550-2 Spyder - Mondial de l'Automobile de Paris 2012 - 202.jpg
-- Land Rover Ranger Special Operations Vehicle (sans photo) → File:Land Rover, licence registration '-16.JPG
-- Land Rover Range Rover SV Coupé (sans photo) → File:Land Rover at the New York International Auto Show NYIAS (39516118620).jpg
-- Maserati Chubasco (Concept) (sans photo) → File:Collection Panini Maserati 0087.JPG
-- Mazda Eunos 300 (sans photo) → File:Eunos 300 20150114 (cropped).JPG
-- Mazda Eunos Presso (sans photo) → File:Eunos Presso 002.JPG
-- Mercedes-Benz Interim Fast Attack Vehicle (sans photo) → File:A US Marine Corps (USMC) Intermediate Fast Attack Vehicle (IFAV) with a mounted TOW (Tube-launched, Optically-tracked, Wire-guided) missile launcher. The IFAV is from the Mobile Ass - DPLA - 8e5ff5a59773659042bd46506995d2fe.jpeg
-- Mitsubishi Santamo (sans photo) → File:00 hyundai santamo 001.jpg
-- NIO Onvo L80 (sans photo) → File:Onvo L80 in Tianhe, Guangzhou 20260522.jpg
-- Opel 8/40 PS (sans photo) → File:40 PS Torpedo.jpg
-- Peugeot 406 Coupé (sans photo) → File:2000 Peugeot 406 Coupe.jpg
-- Peugeot DK5 (sans photo) → File:German Peugeot truck during the VII Aircraft Picnic in Kraków 3.jpg
-- Renault Lodgy (Rebadged Dacia) (sans photo) → File:Dacia Lodgy - Rückansicht mit dritter Sitzreihe.JPG
-- Renault Type HG (sans photo) → File:1902-Type H.jpg
-- Renault Type N (c) (sans photo) → File:1904 Renault Phaeton Type T, 7cv 864cc 40kmh (inv 2201) photo 1.JPG
-- Škoda 1000 MB Combi (sans photo) → File:Skoda 990 kombi 1.jpg
-- Škoda Favorit prototype (sans photo) → File:Skoda Favorit Prototyp 1987.jpg
-- Škoda 104 (sans photo) → File:Akce Cihelna 2014 D05. HlavniUkazkaPatek.jpg
-- Škoda 720 (sans photo) → File:Brno-Technické-muzeum-Škoda720-2025.jpg
-- Toyota Optimo (sans photo) → File:Brañas(9452-CDL) - Flickr - antoniovera1.jpg
-- Toyota Dario Terios (sans photo) → File:Dario Terios 1.3 16V.jpg
-- Triumph Dolomite Straight Eight (sans photo) → File:1932 Triumph Dolomite Grand Sport.jpg
-- Volkswagen ID. Space Vizzion (Concept) (sans photo) → File:P1046099 (53538021386).jpg
-- Xpeng IDENTY X (sans photo) → File:Xpeng G3 and Identity X in Yangpu Shanghai 2021020701.jpg
+- Fiat A.L.F.A 24 HP (sans photo) → File:Arese Museo Storico Alfa Romeo 1910 A.L.F.A. 24 HP 1.jpg
+- Renault Lodgy (Rebadged Dacia) (sans photo) → File:Dacia Lodgy 184549.jpg

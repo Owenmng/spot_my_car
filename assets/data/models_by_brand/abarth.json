@@ -66,35 +66,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_500,_Motortreff_Bella_Italia_2024,_Munich_(P1190451).jpg"
   },
   {
-   "id": "abarth_500_assaetto",
-   "name": "500 Assaetto",
-   "imageUrl": null,
-   "production_years": "2016 - 2018",
-   "puissance_ch": 140,
-   "vitesse_max_kmh": 211,
-   "zero_a_cent_s": 7.8,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.5 L/100km",
-   "dimensions_lwh_mm": "3657 x 1627 x 1485",
-   "poids_kg": 1040,
-   "prix_lancement_eur": 22000,
-   "tags": [
-    "fiat 500",
-    "assaetto",
-    "hatchback",
-    "city car",
-    "subcompact car",
-    "italian car",
-    "performance car",
-    "sports car",
-    "fiat",
-    "car",
-    "vehicle",
-    "small car",
-    "turbocharged"
-   ]
-  },
-  {
    "id": "abarth_500c",
    "name": "500C",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Fiat_500C_Abarth_esseesse_%E2%80%93_Frontansicht%2C_1._April_2012%2C_Essen.jpg/1280px-Fiat_500C_Abarth_esseesse_%E2%80%93_Frontansicht%2C_1._April_2012%2C_Essen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -221,35 +192,6 @@
    "imageCredit": "Unklemerk",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_595_Competizione_2020.jpg"
-  },
-  {
-   "id": "abarth_595_espresso",
-   "name": "595 Espresso",
-   "imageUrl": null,
-   "production_years": "2017 - 2019",
-   "puissance_ch": 145,
-   "vitesse_max_kmh": 211,
-   "zero_a_cent_s": 7.9,
-   "type_carburant": "Essence",
-   "consommation_mixte": "6.6 L/100km",
-   "dimensions_lwh_mm": "3660 x 1627 x 1485",
-   "poids_kg": 1040,
-   "prix_lancement_eur": 23500,
-   "tags": [
-    "595",
-    "abarth",
-    "fiat",
-    "hatchback",
-    "city car",
-    "subcompact car",
-    "sports car",
-    "performance car",
-    "italian car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "turbo"
-   ]
   },
   {
    "id": "abarth_595_esseesse",
@@ -567,35 +509,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Punto_Supersport_(6144163390).jpg"
   },
   {
-   "id": "abarth_punto_supersport_convertible",
-   "name": "Punto SuperSport Convertible",
-   "imageUrl": null,
-   "production_years": "2013 - 2014",
-   "puissance_ch": 180,
-   "vitesse_max_kmh": 223,
-   "zero_a_cent_s": 7.6,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.1 L/100km",
-   "dimensions_lwh_mm": "4075 x 1721 x 1485",
-   "poids_kg": 1210,
-   "prix_lancement_eur": 23000,
-   "tags": [
-    "convertible",
-    "compact car",
-    "sports car",
-    "performance car",
-    "fiat punto",
-    "punto supersport",
-    "car",
-    "vehicle",
-    "italian car",
-    "fiat",
-    "roadster",
-    "small car",
-    "open-top"
-   ]
-  },
-  {
    "id": "abarth_simca-2000",
    "name": "Simca 2000",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Abarth_Simca_2000_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -607,14 +520,6 @@
    "imageCredit": "Redsimon",
    "imageLicense": "CC BY 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Abarth_Simca_2000_front.jpg"
-  },
-  {
-   "id": "abarth_1000-gt-coupe",
-   "name": "1000 GT Coupé",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "3690 x 1550 x 1200",
-   "poids_kg": 640
   },
   {
    "id": "abarth_695-biposto",
