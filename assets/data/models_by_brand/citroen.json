@@ -1595,35 +1595,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1982_Citro%C3%ABn_GSA_Club.jpg"
   },
   {
-   "id": "citroen_hippy",
-   "name": "Hippy",
-   "imageUrl": null,
-   "production_years": "2024 - Aujourd'hui",
-   "puissance_ch": 180,
-   "vitesse_max_kmh": 185,
-   "zero_a_cent_s": 9.0,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "6.1 L/100km",
-   "dimensions_lwh_mm": "4959 x 1920 x 1990",
-   "poids_kg": 2000,
-   "prix_lancement_eur": 50000,
-   "tags": [
-    "hippy van",
-    "microvan",
-    "compact van",
-    "city car",
-    "retro van",
-    "vintage van",
-    "classic van",
-    "camper van",
-    "recreational vehicle",
-    "vehicle",
-    "car",
-    "land vehicle",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "citroen_hy",
    "name": "HY",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Citro%C3%ABn_HY_food_van.jpg/1280px-Citro%C3%ABn_HY_food_van.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2642,12 +2613,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_Jumper_sk%C3%A5p.jpg"
   },
   {
-   "id": "citroen_jumpy-i",
-   "name": "Jumpy I",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "citroen_jumpy-ii",
    "name": "Jumpy II",
    "production_years": null,
@@ -2862,12 +2827,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2nd_generation_Citro%C3%ABn_C3.jpg"
   },
   {
-   "id": "citroen_ds-inside",
-   "name": "DS Inside",
-   "production_years": "2005",
-   "tags": []
-  },
-  {
    "id": "citroen_kegresse",
    "name": "Kégresse",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Paris_-_Bonhams_2013_-_Citro%C3%ABn_P19B_chenillette_K%C3%A9gresse_-_1931_-_003.jpg/1280px-Paris_-_Bonhams_2013_-_Citro%C3%ABn_P19B_chenillette_K%C3%A9gresse_-_1931_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3021,12 +2980,6 @@
    "imageCredit": "Slaunger",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_DS_21_27_Quai_Anatole_France_license_plate_blanked_2012-06-02_cropped.jpg"
-  },
-  {
-   "id": "citroen_tulip",
-   "name": "Tulip",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "citroen_c3-wrc",

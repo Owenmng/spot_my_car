@@ -570,35 +570,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Cascada_Front.JPG"
   },
   {
-   "id": "opel_cascada_opc",
-   "name": "Cascada OPC",
-   "imageUrl": null,
-   "production_years": "2013 - 2019",
-   "puissance_ch": 280,
-   "vitesse_max_kmh": 250,
-   "zero_a_cent_s": 6.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.5 L/100km",
-   "dimensions_lwh_mm": "4696 x 1839 x 1443",
-   "poids_kg": 1800,
-   "prix_lancement_eur": 40000,
-   "tags": [
-    "convertible",
-    "sports car",
-    "performance car",
-    "luxury car",
-    "opel cascada opc",
-    "car",
-    "vehicle",
-    "german car",
-    "opel",
-    "vauxhall",
-    "high-performance",
-    "roadster",
-    "two-seater"
-   ]
-  },
-  {
    "id": "opel_combo",
    "name": "Combo",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Opel_Combo_Tour_4x4_Dangel.jpg/1280px-Opel_Combo_Tour_4x4_Dangel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2267,12 +2238,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Manuel_Reuter_DTM(ThKraft).jpg"
   },
   {
-   "id": "opel_kad-a",
-   "name": "KAD A",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "opel_meriva-a",
    "name": "Meriva A",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Opel_Meriva_front_20071126.jpg/1280px-Opel_Meriva_front_20071126.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2797,12 +2762,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Opel10-12PS.jpg"
   },
   {
-   "id": "opel_8-40-ps",
-   "name": "8/40 PS",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "opel_astra-opc",
    "name": "Astra OPC",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2012_Opel_Astra_%28AS%29_OPC_3-door_hatchback_%2815924017627%29.jpg/1280px-2012_Opel_Astra_%28AS%29_OPC_3-door_hatchback_%2815924017627%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2934,12 +2893,6 @@
    "imageCredit": "Jiří Sedláček",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Opel_Adam_Cup_racing_at_Legendy_2018_in_Prague.jpg"
-  },
-  {
-   "id": "opel_corsa-r5",
-   "name": "Corsa R5",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "opel_laubfrosch",

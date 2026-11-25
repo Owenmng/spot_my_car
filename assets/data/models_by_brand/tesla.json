@@ -230,34 +230,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2011_in_Hobart,_Tasmania.jpg"
   },
   {
-   "id": "tesla_roadster_2025",
-   "name": "Roadster (2025)",
-   "production_years": "2025 (Prévu)",
-   "puissance_ch": "non renseigné",
-   "vitesse_max_kmh": "non renseigné",
-   "zero_a_cent_s": "non renseigné",
-   "type_carburant": "Électrique",
-   "consommation_mixte": "non renseigné",
-   "dimensions_lwh_mm": "non renseigné",
-   "poids_kg": "non renseigné",
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "roadster",
-    "convertible",
-    "sports car",
-    "performance car",
-    "electric car",
-    "2025",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "two-seater",
-    "open-top",
-    "ev",
-    "battery electric vehicle"
-   ]
-  },
-  {
    "id": "tesla_semi",
    "name": "Semi",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Tesla_Semi_3.jpg/1280px-Tesla_Semi_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",

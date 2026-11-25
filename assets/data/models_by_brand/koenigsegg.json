@@ -415,33 +415,6 @@
    "imageCredit": "MrWalkr",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2025_Koenigsegg_Sadair%27s_Spear_FOS25.jpg"
-  },
-  {
-   "id": "koenigsegg_trevita",
-   "name": "Trevita",
-   "production_years": "2010",
-   "puissance_ch": 1018,
-   "vitesse_max_kmh": 410,
-   "zero_a_cent_s": 2.9,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.0 L/100km",
-   "dimensions_lwh_mm": "4293 x 1996 x 1120",
-   "poids_kg": 1420,
-   "prix_lancement_eur": 4800000,
-   "tags": [
-    "trevita",
-    "supercar",
-    "sports car",
-    "performance car",
-    "luxury car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "limited edition",
-    "bespoke",
-    "handcrafted"
-   ]
   }
  ]
 }

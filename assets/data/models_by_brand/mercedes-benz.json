@@ -325,37 +325,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1972_Mercedes-Benz_280_SE_(W108)_3.5_sedan_(21620517723).jpg"
   },
   {
-   "id": "mercedes-benz_w111",
-   "name": "280 SE Coupé/Cabriolet (W111)",
-   "imageUrl": null,
-   "production_years": "1961 - 1971",
-   "puissance_ch": 160,
-   "vitesse_max_kmh": 190,
-   "zero_a_cent_s": 10.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "14 L/100km",
-   "dimensions_lwh_mm": "4880 x 1845 x 1400",
-   "poids_kg": 1580,
-   "prix_lancement_eur": 8000,
-   "tags": [
-    "coupe",
-    "convertible",
-    "w111",
-    "mercedes-benz",
-    "280se",
-    "classic car",
-    "luxury car",
-    "vintage car",
-    "german car",
-    "collectible car",
-    "grand tourer",
-    "mid-size car",
-    "car",
-    "vehicle",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "mercedes-benz_w186",
    "name": "300 (W186)",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Mercedes-Benz_W186_300_C_%2823110313322%29.jpg/1280px-Mercedes-Benz_W186_300_C_%2823110313322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -550,35 +519,6 @@
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W198_300_SL_Gullwing_Genf_2019_1Y7A4987.jpg"
-  },
-  {
-   "id": "mercedes-benz_300-slr",
-   "name": "300 SLR Uhlenhaut Coupé",
-   "production_years": "1955",
-   "puissance_ch": 302,
-   "vitesse_max_kmh": 290,
-   "zero_a_cent_s": 6.9,
-   "type_carburant": "Essence",
-   "consommation_mixte": "non renseigné",
-   "dimensions_lwh_mm": "4325 x 1760 x 1110",
-   "poids_kg": 1117,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "coupe",
-    "sports car",
-    "supercar",
-    "performance car",
-    "classic car",
-    "mercedes-benz",
-    "300slr",
-    "uhlenhaut coupe",
-    "race car",
-    "motor vehicle",
-    "car",
-    "vehicle",
-    "land vehicle",
-    "collectible car"
-   ]
   },
   {
    "id": "mercedes-benz_350_sl",
@@ -1627,34 +1567,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1996_Mercedes-Benz_F200_Imagination.jpg"
   },
   {
-   "id": "mercedes-benz_fintail",
-   "name": "Fintail (W110)",
-   "production_years": "1961 - 1968",
-   "puissance_ch": 80,
-   "vitesse_max_kmh": 150,
-   "zero_a_cent_s": 18.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "10.0 L/100km",
-   "dimensions_lwh_mm": "4730 x 1795 x 1495",
-   "poids_kg": 1300,
-   "prix_lancement_eur": 3500,
-   "tags": [
-    "sedan",
-    "w110",
-    "fintail",
-    "mercedes-benz",
-    "classic car",
-    "vintage car",
-    "mid-size car",
-    "executive car",
-    "german car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "1960s car"
-   ]
-  },
-  {
    "id": "mercedes-benz_eqg",
    "name": "G 580 with EQ Technology",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg/1280px-Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2106,35 +2018,6 @@
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Maybach_Z223_680_1X7A5831.jpg"
-  },
-  {
-   "id": "mercedes-benz_w108",
-   "name": "S-Class (W108/W109)",
-   "production_years": "1965 - 1972",
-   "puissance_ch": 170,
-   "vitesse_max_kmh": 195,
-   "zero_a_cent_s": 10.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15 L/100km",
-   "dimensions_lwh_mm": "4900 x 1810 x 1440",
-   "poids_kg": 1560,
-   "prix_lancement_eur": 6000,
-   "tags": [
-    "sedan",
-    "full-size car",
-    "luxury car",
-    "executive car",
-    "w108",
-    "w109",
-    "mercedes-benz",
-    "s-class",
-    "classic car",
-    "vintage car",
-    "german car",
-    "car",
-    "vehicle",
-    "motor vehicle"
-   ]
   },
   {
    "id": "mercedes-benz_slc",
@@ -4149,13 +4032,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Benz_33_75_PS_Sport-Doppelphaeton_1912.jpg"
   },
   {
-   "id": "mercedes-benz_benz-29-60-ps",
-   "name": "Benz 29/60 PS",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4700 x 1720 x 2200"
-  },
-  {
    "id": "mercedes-benz_benz-8-20-ps",
    "name": "Benz 8/20 PS",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Benz_8-20_PS_1914.JPG/1280px-Benz_8-20_PS_1914.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4627,12 +4503,6 @@
    "imageCredit": "Thomas doerfer",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W111_Ilmenau.jpg"
-  },
-  {
-   "id": "mercedes-benz_w08",
-   "name": "W08",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "mercedes-benz_w194",

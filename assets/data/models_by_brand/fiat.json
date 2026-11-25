@@ -2781,12 +2781,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:File-Fiat500CoupeMoretti1960WP.jpg"
   },
   {
-   "id": "fiat_6640a",
-   "name": "6640A",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "fiat_850-spider",
    "name": "850 Spider",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Fiat_850_Spider_%2816.06.2007%29.jpg/1280px-Fiat_850_Spider_%2816.06.2007%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2805,12 +2799,6 @@
    "imageCredit": "Jokejoe75",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:ECOBASIC.jpg"
-  },
-  {
-   "id": "fiat_a-l-f-a-40-60-hp",
-   "name": "A.L.F.A 40/60 HP",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "fiat_124-coupe",
@@ -2944,14 +2932,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_Tipo_2_1909.jpg"
   },
   {
-   "id": "fiat_8-hp",
-   "name": "8 HP",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "2810 x 1450 x 1620",
-   "poids_kg": 1000
-  },
-  {
    "id": "fiat_brevetti",
    "name": "Brevetti",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Fiat_Brevetti_Cabriolet-Royal_1906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -3025,12 +3005,6 @@
    "imageCredit": "CORLIN",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_Nemo_mod%C3%A8le_2015.JPG"
-  },
-  {
-   "id": "fiat_palio-ii",
-   "name": "Palio II",
-   "production_years": "2011 - 2017",
-   "tags": []
   },
   {
    "id": "fiat_1100-103",
@@ -3396,14 +3370,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_1800-2100_Familiare_t%C3%ADpus%C3%BA_szem%C3%A9lyg%C3%A9pkocsi._Fortepan_18868.jpg"
   },
   {
-   "id": "fiat_2800",
-   "name": "2800",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "5300 x 1800 x 1768",
-   "poids_kg": 900
-  },
-  {
    "id": "fiat_tris",
    "name": "Tris",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Fiat_Tris_Cargo_Box_IAA_Transportation_2026_%28DSC8032%29.jpg/1280px-Fiat_Tris_Cargo_Box_IAA_Transportation_2026_%28DSC8032%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3695,12 +3661,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Fiat_512_Landaulet_1926.jpg"
   },
   {
-   "id": "fiat_a-l-f-a-40-60-gp",
-   "name": "A.L.F.A. 40/60 GP",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "fiat_127-sport",
    "name": "127 Sport",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/1980_Fiat_127_Sport_%288191894003%29.jpg/1280px-1980_Fiat_127_Sport_%288191894003%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3936,12 +3896,6 @@
    "imageCredit": "Christophe.Finot",
    "imageLicense": "CC BY-SA 2.5",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau-Savigny-l%C3%A8s-Beaune_04.jpg"
-  },
-  {
-   "id": "fiat_doblo-mk2",
-   "name": "Doblò Mk2",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "fiat_multipla-i",

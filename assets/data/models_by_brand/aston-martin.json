@@ -708,36 +708,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Rapide_--_Auto_Chongqing_--_2012-06-07.jpg"
   },
   {
-   "id": "aston-martin_tickford-capri",
-   "name": "Tickford Capri",
-   "imageUrl": null,
-   "production_years": "1982 - 1984",
-   "puissance_ch": 205,
-   "vitesse_max_kmh": 225,
-   "zero_a_cent_s": 6.4,
-   "type_carburant": "Essence",
-   "consommation_mixte": "14.0 L/100km",
-   "dimensions_lwh_mm": "4430 x 1760 x 1330",
-   "poids_kg": 1255,
-   "prix_lancement_eur": 17000,
-   "tags": [
-    "tickford capri",
-    "coupe",
-    "classic car",
-    "british car",
-    "muscle car",
-    "performance car",
-    "ford capri",
-    "sports car",
-    "vintage car",
-    "collectible car",
-    "car",
-    "vehicle",
-    "1970s car",
-    "modified car"
-   ]
-  },
-  {
    "id": "aston-martin_v12-speedster",
    "name": "V12 Speedster",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Aston_Martin_V12_Speedster.jpg/1280px-Aston_Martin_V12_Speedster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1297,12 +1267,6 @@
    "imageCredit": "Andrew Bone from Weymouth, England",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Bertone_Jet_2%2B2_Shooting_Brake_(2014)_(19650800359).jpg"
-  },
-  {
-   "id": "aston-martin_dbr3",
-   "name": "DBR3",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "aston-martin_rapide-s",

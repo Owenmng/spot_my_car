@@ -734,34 +734,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A6_Allroad_Quattro_C8_IMG_0088.jpg"
   },
   {
-   "id": "audi_avantissimo",
-   "name": "Avantissimo",
-   "imageUrl": null,
-   "production_years": "2001 (Concept)",
-   "puissance_ch": 420,
-   "vitesse_max_kmh": 250,
-   "zero_a_cent_s": 5.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "12.5 L/100km",
-   "dimensions_lwh_mm": "5190 x 1900 x 1430",
-   "poids_kg": 1850,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "avantissimo",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "sedan",
-    "mid-size car",
-    "luxury car",
-    "executive car",
-    "grand tourer",
-    "hybrid",
-    "phev"
-   ]
-  },
-  {
    "id": "audi_cabriolet",
    "name": "Cabriolet",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Audi_Cabriolet_B3_1X7A2534.jpg/1280px-Audi_Cabriolet_B3_1X7A2534.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2607,36 +2579,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_S8_plus_(D4)_front.jpg"
   },
   {
-   "id": "audi_skysphere",
-   "name": "Skysphere",
-   "imageUrl": null,
-   "production_years": "2021 (Concept)",
-   "puissance_ch": 632,
-   "vitesse_max_kmh": 200,
-   "zero_a_cent_s": 4.0,
-   "type_carburant": "Électrique",
-   "consommation_mixte": "non renseigné",
-   "dimensions_lwh_mm": "4940 x 2000 x 1230",
-   "poids_kg": 1800,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "concept car",
-    "electric vehicle",
-    "grand tourer",
-    "luxury car",
-    "roadster",
-    "convertible",
-    "sports car",
-    "electric roadster",
-    "battery electric vehicle",
-    "car",
-    "vehicle",
-    "automotive",
-    "two-seater",
-    "ev"
-   ]
-  },
-  {
    "id": "audi_sq2",
    "name": "SQ2",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_SQ2_IAA_2019_JM_0584.jpg/1280px-Audi_SQ2_IAA_2019_JM_0584.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2866,35 +2808,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2007_Audi_TT_Coupe.JPG"
   },
   {
-   "id": "audi_tt-clubssport",
-   "name": "TT clubsport",
-   "imageUrl": null,
-   "production_years": "2015 (Concept)",
-   "puissance_ch": 600,
-   "vitesse_max_kmh": 310,
-   "zero_a_cent_s": 3.6,
-   "type_carburant": "Essence",
-   "consommation_mixte": "non renseigné",
-   "dimensions_lwh_mm": "4191 x 1832 x 1353",
-   "poids_kg": 1395,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "coupe",
-    "sports car",
-    "performance car",
-    "tt clubsport",
-    "audi tt",
-    "audi",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "two-seater",
-    "compact car",
-    "german car",
-    "high-performance"
-   ]
-  },
-  {
    "id": "audi_tt-offroad",
    "name": "TT offroad",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Audi_TT_Offroad_Concept_%2822%29.JPG/1280px-Audi_TT_Offroad_Concept_%2822%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3102,12 +3015,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Coupe_B3_IMG_5480.jpg"
   },
   {
-   "id": "audi_type-d",
-   "name": "Type D",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "audi_type-e",
    "name": "Type E",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Audi_Typ_E_%281923%29.jpg/1280px-Audi_Typ_E_%281923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3141,14 +3048,6 @@
    "imageCredit": "Bildergalerie",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_Typ_M_(1924_-_1928).JPG"
-  },
-  {
-   "id": "audi_type-r",
-   "name": "Type R",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "5200 x 1800 x 1900",
-   "poids_kg": 2300
   },
   {
    "id": "audi_a3-8y",
@@ -3533,12 +3432,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Audi_A6_Avant_e-tron_DSC_7425.jpg"
   },
   {
-   "id": "audi_mp01",
-   "name": "MP01",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "audi_type-p",
    "name": "Type P",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Audi_Typ_P.jpg/1280px-Audi_Typ_P.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3868,14 +3761,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1999AudiR8R.jpg"
   },
   {
-   "id": "audi_abt-audi-tt-r",
-   "name": "Abt-Audi TT-R",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4122 x 1850 x 1250",
-   "poids_kg": 1080
-  },
-  {
    "id": "audi_a5-f5",
    "name": "A5 F5",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Audi_A5_Coupe_F5_Facelift_1X7A1780.jpg/1280px-Audi_A5_Coupe_F5_Facelift_1X7A1780.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4041,14 +3926,6 @@
    "imageCredit": "Clément Bucco-Lechat",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Audi_R8_LMS_ultra_front_left.jpg"
-  },
-  {
-   "id": "audi_r18-e-tron-quattro-rp5",
-   "name": "R18 E-Tron quattro RP5",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4650 x 1900 x 1050",
-   "poids_kg": 870
   },
   {
    "id": "audi_a4-b9",

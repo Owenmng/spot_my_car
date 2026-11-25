@@ -380,36 +380,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Seraph_1999.jpg"
   },
   {
-   "id": "rolls-royce_park-ward",
-   "name": "Silver Seraph Park Ward",
-   "production_years": "2000 - 2002",
-   "puissance_ch": 326,
-   "vitesse_max_kmh": 225,
-   "zero_a_cent_s": 7.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "17.6 L/100km",
-   "dimensions_lwh_mm": "5640 x 1930 x 1515",
-   "poids_kg": 2380,
-   "prix_lancement_eur": 400000,
-   "tags": [
-    "luxury car",
-    "sedan",
-    "full-size car",
-    "executive car",
-    "british car",
-    "rolls-royce",
-    "park ward",
-    "silver seraph",
-    "classic car",
-    "vintage car",
-    "collectible car",
-    "motor vehicle",
-    "car",
-    "vehicle",
-    "land vehicle"
-   ]
-  },
-  {
    "id": "rolls-royce_silver_shadow",
    "name": "Silver Shadow",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Shadow1threequarters.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",

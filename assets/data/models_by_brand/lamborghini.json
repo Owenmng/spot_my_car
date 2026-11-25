@@ -32,35 +32,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_350_GT_1964.jpg"
   },
   {
-   "id": "lamborghini_350-gt-zagato",
-   "name": "350 GT Zagato",
-   "production_years": "1965 - 1966",
-   "puissance_ch": 320,
-   "vitesse_max_kmh": 254,
-   "zero_a_cent_s": 6.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "16.0 L/100km",
-   "dimensions_lwh_mm": "4500 x 1730 x 1220",
-   "poids_kg": 1400,
-   "prix_lancement_eur": 16000,
-   "tags": [
-    "coupe",
-    "sports car",
-    "grand tourer",
-    "luxury car",
-    "italian car",
-    "zagato",
-    "350 gt",
-    "classic car",
-    "vintage car",
-    "collectible car",
-    "performance car",
-    "car",
-    "vehicle",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "lamborghini_400-gt",
    "name": "400 GT",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/400GT.JPG/1280px-400GT.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -876,34 +847,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Lambo_V12_Vision_Gran_Turismo_GIMS_2024_1X7A2041.jpg"
   },
   {
-   "id": "lamborghini_lm001",
-   "name": "LM001 (Prototype)",
-   "production_years": "1981",
-   "puissance_ch": 180,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 12.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "25.0 L/100km",
-   "dimensions_lwh_mm": "4790 x 2000 x 1830",
-   "poids_kg": 2100,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "prototype",
-    "lm001",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "concept car",
-    "sports car",
-    "performance car",
-    "supercar",
-    "high-performance",
-    "technology",
-    "automotive"
-   ]
-  },
-  {
    "id": "lamborghini_lm002",
    "name": "LM002",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U.JPG/1280px-Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -934,29 +877,6 @@
    "imageCredit": "Detectandpreserve",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U.JPG"
-  },
-  {
-   "id": "lamborghini_lma002",
-   "name": "LMA002 (Prototype)",
-   "imageUrl": null,
-   "production_years": "1982",
-   "puissance_ch": 335,
-   "vitesse_max_kmh": 200,
-   "zero_a_cent_s": 8.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "30.0 L/100km",
-   "dimensions_lwh_mm": "4900 x 2000 x 1850",
-   "poids_kg": 2600,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "prototype",
-    "lma002",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "concept car"
-   ]
   },
   {
    "id": "lamborghini_marzal",
@@ -1187,35 +1107,6 @@
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Revuelto_DSC_6985_(cropped).jpg"
-  },
-  {
-   "id": "lamborghini_sc20",
-   "name": "SC20",
-   "imageUrl": null,
-   "production_years": "2020 (Pièce unique)",
-   "puissance_ch": 770,
-   "vitesse_max_kmh": 350,
-   "zero_a_cent_s": 2.8,
-   "type_carburant": "Essence",
-   "consommation_mixte": "19.5 L/100km",
-   "dimensions_lwh_mm": "4900 x 2050 x 1100",
-   "poids_kg": 1500,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "sc20",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "coupe",
-    "sports car",
-    "performance car",
-    "compact car",
-    "subcompact car",
-    "two-seater",
-    "high-performance",
-    "lightweight"
-   ]
   },
   {
    "id": "lamborghini_sesto_elemento",
@@ -1505,12 +1396,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Murcielago_40th_anniversary_edition.jpg"
   },
   {
-   "id": "lamborghini_400gt-monza",
-   "name": "400GT Monza",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "lamborghini_gallardo-lp550-2",
    "name": "Gallardo LP550-2",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Lamborghini_Gallardo_LP550-2_Right.jpg/1280px-Lamborghini_Gallardo_LP550-2_Right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1539,12 +1424,6 @@
    "imageCredit": "kevinmcgill from Den Bosch, Netherlands",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamborghini_Gallardo_Spyder_(5941555028).jpg"
-  },
-  {
-   "id": "lamborghini_gallardo-lp550-2-spyder",
-   "name": "Gallardo LP550-2 Spyder",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "lamborghini_gallardo-lp560-4-spyder",

@@ -66,35 +66,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_180_SX_(1992)_(53776754943).jpg"
   },
   {
-   "id": "nissan_200-sx",
-   "name": "200 SX (S14)",
-   "production_years": "1993 - 2002",
-   "puissance_ch": 200,
-   "vitesse_max_kmh": 235,
-   "zero_a_cent_s": 7.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "8.8 L/100km",
-   "dimensions_lwh_mm": "4520 x 1730 x 1295",
-   "poids_kg": 1260,
-   "prix_lancement_eur": 25000,
-   "tags": [
-    "coupe",
-    "sports car",
-    "performance car",
-    "japanese car",
-    "nissan",
-    "s14",
-    "200sx",
-    "compact car",
-    "car",
-    "vehicle",
-    "drift car",
-    "rear-wheel drive",
-    "1990s car",
-    "nissan 200sx s14"
-   ]
-  },
-  {
    "id": "nissan_200sx_s13",
    "name": "200SX (S13)",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Nissan_200SX_%28S13%29_in_Brunei_1.jpg/1280px-Nissan_200SX_%28S13%29_in_Brunei_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2025,33 +1996,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2024_Nissan_Note_X_in_Pure_White_Pearl,_front_right.jpg"
   },
   {
-   "id": "nissan_np-300-pick-up",
-   "name": "NP300 Pick-up",
-   "imageUrl": null,
-   "production_years": "2008 - 2021",
-   "puissance_ch": 133,
-   "vitesse_max_kmh": 160,
-   "zero_a_cent_s": 13.5,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "9.1 L/100km",
-   "dimensions_lwh_mm": "5165 x 1825 x 1715",
-   "poids_kg": 1780,
-   "prix_lancement_eur": 18000,
-   "tags": [
-    "pickup truck",
-    "np300",
-    "nissan np300",
-    "truck",
-    "pickup",
-    "vehicle",
-    "car",
-    "motor vehicle",
-    "light truck",
-    "work truck",
-    "commercial vehicle"
-   ]
-  },
-  {
    "id": "nissan_nv200",
    "name": "NV200",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2021_Nissan_NV200_Vanette.jpg/1280px-2021_Nissan_NV200_Vanette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2589,35 +2533,6 @@
    "imageCredit": "Throwawayacc222",
    "imageLicense": "CC0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1999_Nissan_R%27Nessa_black_rear.jpg"
-  },
-  {
-   "id": "nissan_rafe",
-   "name": "Rafé",
-   "imageUrl": null,
-   "production_years": "1997-2001",
-   "puissance_ch": 125,
-   "vitesse_max_kmh": 180,
-   "zero_a_cent_s": 11.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.5 L/100km",
-   "dimensions_lwh_mm": "4350 x 1695 x 1515",
-   "poids_kg": 1330,
-   "prix_lancement_eur": 15000,
-   "tags": [
-    "rafé",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car",
-    "economical car",
-    "fuel-efficient car",
-    "city vehicle",
-    "urban car"
-   ]
   },
   {
    "id": "nissan_rasheen",
@@ -3875,14 +3790,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_200SX,_personaje_Asuka_Langley.jpg"
   },
   {
-   "id": "nissan_march-86g",
-   "name": "March 86G",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4794 x 1985 x 1094",
-   "poids_kg": 850
-  },
-  {
    "id": "nissan_nx",
    "name": "NX",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Nissan_100NX_front_20070914.jpg/1280px-Nissan_100NX_front_20070914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4297,12 +4204,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_NV200_Evalia_%E2%80%93_Frontansicht,_16._M%C3%A4rz_2014,_D%C3%BCsseldorf.jpg"
   },
   {
-   "id": "nissan_saurus",
-   "name": "Saurus",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "nissan_e-nv200",
    "name": "e-NV200",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Nissan_e-NV200_Evalia_electric_car_%2816641419041%29_%28cropped%29.jpg/1280px-Nissan_e-NV200_Evalia_electric_car_%2816641419041%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -4344,12 +4245,6 @@
    "imageCredit": "Dinkun Chen",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:NISSAN_LANNIA_China_(2).jpg"
-  },
-  {
-   "id": "nissan_laurel-c130-ev",
-   "name": "Laurel C130-EV",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "nissan_skyline-c10-gt-r",
@@ -4456,12 +4351,6 @@
    "imageCredit": "Tokumeigakarinoaoshima",
    "imageLicense": "CC0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Nissan_MURANO_SV_(NZ53)_(2).jpg"
-  },
-  {
-   "id": "nissan_yuanye-z9",
-   "name": "Yuanye Z9",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "nissan_n6",

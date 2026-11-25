@@ -213,14 +213,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:TVR_Griffith_400_(1966)_001.jpg"
   },
   {
-   "id": "tvr_450-seac",
-   "name": "450 SEAC",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4013 x 1782 x 1205",
-   "poids_kg": 1216
-  },
-  {
    "id": "tvr_typhon",
    "name": "Typhon",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/The_3_Typhons_Together.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",

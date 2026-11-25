@@ -258,33 +258,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Compass_(J4U)_IMG_5727.jpg"
   },
   {
-   "id": "jeep_dispatch",
-   "name": "Dispatch",
-   "production_years": "1946 - 1949",
-   "puissance_ch": 60,
-   "vitesse_max_kmh": 100,
-   "zero_a_cent_s": "non renseigné",
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.0 L/100km",
-   "dimensions_lwh_mm": "3300 x 1570 x 1770",
-   "poids_kg": 1080,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "dispatch",
-    "car",
-    "vehicle",
-    "van",
-    "commercial vehicle",
-    "delivery van",
-    "cargo van",
-    "work van",
-    "utility van",
-    "transportation",
-    "logistics",
-    "fleet vehicle"
-   ]
-  },
-  {
    "id": "jeep_fc150",
    "name": "FC-150",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/1958_Jeep_FC-150%2C_front_right%2C_09-09-2023.jpg/1280px-1958_Jeep_FC-150%2C_front_right%2C_09-09-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -636,34 +609,6 @@
    "imageCredit": "order_242 from Chile",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Jeep_Kaiser_M-715_1964_(14203155835).jpg"
-  },
-  {
-   "id": "jeep_meridian",
-   "name": "Meridian",
-   "production_years": "2022 - Aujourd'hui",
-   "puissance_ch": 170,
-   "vitesse_max_kmh": 198,
-   "zero_a_cent_s": 10.8,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "6.5 L/100km",
-   "dimensions_lwh_mm": "4769 x 1859 x 1698",
-   "poids_kg": 1890,
-   "prix_lancement_eur": 38000,
-   "tags": [
-    "meridian",
-    "car",
-    "vehicle",
-    "suv",
-    "mid-size suv",
-    "luxury suv",
-    "crossover",
-    "all-wheel drive",
-    "hybrid",
-    "phev",
-    "electric suv",
-    "performance suv",
-    "technology"
-   ]
   },
   {
    "id": "jeep_patriot",

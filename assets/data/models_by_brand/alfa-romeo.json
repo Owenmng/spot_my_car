@@ -575,35 +575,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_1750_GT_Veloce,_Bj._1968_(2016-05-01_Sp_b).JPG"
   },
   {
-   "id": "alfa-romeo_1750-2000",
-   "name": "1750-2000",
-   "production_years": "1968 - 1977",
-   "puissance_ch": 132,
-   "vitesse_max_kmh": 190,
-   "zero_a_cent_s": 9.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "12.0 L/100km",
-   "dimensions_lwh_mm": "4390 x 1630 x 1430",
-   "poids_kg": 1100,
-   "prix_lancement_eur": 4500,
-   "tags": [
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "classic car",
-    "vintage car",
-    "1970s car",
-    "1980s car",
-    "compact car",
-    "mid-size car",
-    "sedan",
-    "coupe",
-    "hatchback",
-    "wagon"
-   ]
-  },
-  {
    "id": "alfa-romeo_1900",
    "name": "1900",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg/1280px-Alfa_Romeo_museum_-_Alfa_Romeo_1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1176,36 +1147,6 @@
    "imageCredit": "Mr.choppers",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Milano_in_red,_front_left.jpg"
-  },
-  {
-   "id": "alfa-romeo_75-1.8-turbodiesel",
-   "name": "75 1.8 Turbodiesel",
-   "production_years": "1985 - 1992",
-   "puissance_ch": 92,
-   "vitesse_max_kmh": 175,
-   "zero_a_cent_s": 12.5,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "6.5 L/100km",
-   "dimensions_lwh_mm": "4330 x 1630 x 1350",
-   "poids_kg": 1150,
-   "prix_lancement_eur": 18000,
-   "tags": [
-    "75",
-    "1.8",
-    "turbodiesel",
-    "sedan",
-    "compact car",
-    "car",
-    "vehicle",
-    "diesel car",
-    "turbocharged",
-    "italian car",
-    "fiat",
-    "fiat 75",
-    "classic car",
-    "vintage car",
-    "european car"
-   ]
   },
   {
    "id": "alfa-romeo_75-2.0-twin-spark",
@@ -2266,59 +2207,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_GT_20090801_front.JPG"
   },
   {
-   "id": "alfa-romeo_gt-3.2-v6",
-   "name": "GT 3.2 V6",
-   "production_years": "2003 - 2010",
-   "puissance_ch": 240,
-   "vitesse_max_kmh": 243,
-   "zero_a_cent_s": 6.7,
-   "type_carburant": "Essence",
-   "consommation_mixte": "11.5 L/100km",
-   "dimensions_lwh_mm": "4489 x 1763 x 1355",
-   "poids_kg": 1420,
-   "prix_lancement_eur": 35000,
-   "tags": [
-    "gt",
-    "3.2 v6",
-    "coupe",
-    "sports car",
-    "performance car",
-    "grand tourer",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "v6 engine",
-    "gasoline engine",
-    "internal combustion engine"
-   ]
-  },
-  {
-   "id": "alfa-romeo_gta-coupe",
-   "name": "GTA Coupe",
-   "production_years": "1965 - 1975",
-   "puissance_ch": 115,
-   "vitesse_max_kmh": 185,
-   "zero_a_cent_s": 9.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "11.0 L/100km",
-   "dimensions_lwh_mm": "4080 x 1580 x 1310",
-   "poids_kg": 920,
-   "prix_lancement_eur": 5000,
-   "tags": [
-    "coupe",
-    "sports car",
-    "performance car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "grand tourer",
-    "gta coupe",
-    "two-door",
-    "mid-size car",
-    "luxury car"
-   ]
-  },
-  {
    "id": "alfa-romeo_gtv",
    "name": "GTV",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Alfa_Romeo_GTV_Kulmbach_2018_6170083.jpg/1280px-Alfa_Romeo_GTV_Kulmbach_2018_6170083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2509,34 +2397,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_MiTO_(Schaffhausen,_2021)_(cropped).jpg"
   },
   {
-   "id": "alfa-romeo_mito-1.6-jtdm",
-   "name": "MiTo 1.6 JTDm",
-   "production_years": "2008 - 2018",
-   "puissance_ch": 120,
-   "vitesse_max_kmh": 190,
-   "zero_a_cent_s": 9.5,
-   "type_carburant": "Diesel",
-   "consommation_mixte": "4.5 L/100km",
-   "dimensions_lwh_mm": "4063 x 1720 x 1446",
-   "poids_kg": 1150,
-   "prix_lancement_eur": 20000,
-   "tags": [
-    "alfa romeo mito",
-    "1.6 jtdm",
-    "hatchback",
-    "subcompact car",
-    "diesel car",
-    "italian car",
-    "compact car",
-    "city car",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "alfa romeo",
-    "jtdm engine"
-   ]
-  },
-  {
    "id": "alfa-romeo_mito-quadrifoglio-verde",
    "name": "MiTo Quadrifoglio Verde",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Alfa_Romeo_MiTo_Quadrifoglio_Verde_2011.jpg/1280px-Alfa_Romeo_MiTo_Quadrifoglio_Verde_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -2662,34 +2522,6 @@
    "imageCredit": "Wikimedia Commons",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:1967-Alfa-Romeo-Duetto-Red-Front-Angle-st.jpg"
-  },
-  {
-   "id": "alfa-romeo_spider-2.0-ts",
-   "name": "Spider 2.0 TS",
-   "production_years": "1995 - 2006",
-   "puissance_ch": 150,
-   "vitesse_max_kmh": 210,
-   "zero_a_cent_s": 9.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "9.0 L/100km",
-   "dimensions_lwh_mm": "4299 x 1780 x 1315",
-   "poids_kg": 1420,
-   "prix_lancement_eur": 35000,
-   "tags": [
-    "spider",
-    "convertible",
-    "sports car",
-    "performance car",
-    "2.0 engine",
-    "ts",
-    "car",
-    "vehicle",
-    "roadster",
-    "italian car",
-    "compact car",
-    "two-seater",
-    "open-top"
-   ]
   },
   {
    "id": "alfa-romeo_spider-duetto",
@@ -2879,34 +2711,6 @@
    "imageCredit": "© M 93",
    "imageLicense": "CC BY-SA 3.0 de",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Stelvio_Q4_Veloce_%E2%80%93_f_18052025.jpg"
-  },
-  {
-   "id": "alfa-romeo_stelvio-2.0-tbi",
-   "name": "Stelvio 2.0 TBI",
-   "production_years": "2017 - Aujourd'hui",
-   "puissance_ch": 200,
-   "vitesse_max_kmh": 230,
-   "zero_a_cent_s": 6.6,
-   "type_carburant": "Essence",
-   "consommation_mixte": "7.0 L/100km",
-   "dimensions_lwh_mm": "4702 x 1955 x 1681",
-   "poids_kg": 1660,
-   "prix_lancement_eur": 45000,
-   "tags": [
-    "suv",
-    "mid-size suv",
-    "luxury suv",
-    "alfa romeo stelvio",
-    "2.0l engine",
-    "turbocharged",
-    "gasoline engine",
-    "performance suv",
-    "car",
-    "vehicle",
-    "italian car",
-    "alfa romeo",
-    "stelvio 2.0 tbi"
-   ]
   },
   {
    "id": "alfa-romeo_stelvio-2.2-d",
@@ -3102,12 +2906,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tonale_PLUG-IN_HYBRID_Q4_VELOCE_(3LA-AV113_0001)_front.jpg"
   },
   {
-   "id": "alfa-romeo_16c-twin-engine",
-   "name": "16C twin-engine",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "alfa-romeo_ar6",
    "name": "AR6",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/AR6.14_front.jpg/1280px-AR6.14_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3149,13 +2947,6 @@
    "imageCredit": "Buch-t",
    "imageLicense": "CC BY-SA 3.0 de",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_103_1954.JPG"
-  },
-  {
-   "id": "alfa-romeo_450",
-   "name": "450",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "5955 x 2130 x 2580"
   },
   {
    "id": "alfa-romeo_158",
@@ -3208,13 +2999,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_179A_Bruno_Giacomelli.jpg"
   },
   {
-   "id": "alfa-romeo_430",
-   "name": "430",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "5955 x 2130 x 2580"
-  },
-  {
    "id": "alfa-romeo_6c-2500-coloniale",
    "name": "6C 2500 Coloniale",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Alfa_Romeo_6C_2500_Coloniale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -3245,14 +3029,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2021_Nr._7_R%C3%A4ikk%C3%B6nen.jpg"
   },
   {
-   "id": "alfa-romeo_dauphine",
-   "name": "Dauphine",
-   "production_years": "1959",
-   "tags": [],
-   "dimensions_lwh_mm": "3945 x 1520 x 1400",
-   "poids_kg": 630
-  },
-  {
    "id": "alfa-romeo_159-f1",
    "name": "159 (F1)",
    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Alfa_Romeo_159_Goodwood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -3273,19 +3049,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1938_Alfa_Romeo_8C_2900_B_Lungo.jpg"
   },
   {
-   "id": "alfa-romeo_romeo",
-   "name": "Romeo",
-   "production_years": null,
-   "tags": []
-  },
-  {
-   "id": "alfa-romeo_alfa-6",
-   "name": "Alfa 6",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4760 x 1685 x 1395"
-  },
-  {
    "id": "alfa-romeo_visconti",
    "name": "Visconti",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/2004_12_03_Essen_Motorshow_163.jpg/1280px-2004_12_03_Essen_Motorshow_163.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3295,13 +3058,6 @@
    "imageCredit": "Norbert Schnitzler",
    "imageLicense": "CC BY-SA 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:2004_12_03_Essen_Motorshow_163.jpg"
-  },
-  {
-   "id": "alfa-romeo_pandion",
-   "name": "Pandion",
-   "production_years": null,
-   "tags": [],
-   "dimensions_lwh_mm": "4620 x 1942 x 1284"
   },
   {
    "id": "alfa-romeo_a-l-f-a-40-60-gp",
@@ -3452,12 +3208,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1600JZ-1.jpg"
   },
   {
-   "id": "alfa-romeo_169",
-   "name": "169",
-   "production_years": null,
-   "tags": []
-  },
-  {
    "id": "alfa-romeo_sportut",
    "name": "Sportut",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/DTW_LITC_058_gen97.jpg/1280px-DTW_LITC_058_gen97.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -3486,12 +3236,6 @@
    "imageCredit": "Corvettec6r",
    "imageLicense": "Public domain",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_Crosswagon.JPG"
-  },
-  {
-   "id": "alfa-romeo_ssz-stradale",
-   "name": "SSZ Stradale",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "alfa-romeo_spider-mk2",
@@ -3746,12 +3490,6 @@
    "imageCredit": "Zairon",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1911_A.L.F.A._15_HP_Corsa_2.jpg"
-  },
-  {
-   "id": "alfa-romeo_diva",
-   "name": "Diva",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "alfa-romeo_spider-type-939",

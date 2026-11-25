@@ -902,36 +902,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:1974_Lancia_Stratos_Stradale_at_Greenwich_2021,_front_left.jpg"
   },
   {
-   "id": "lancia_stratos_hf_gr4",
-   "name": "Stratos HF Gr.4",
-   "production_years": "1974 - 1978",
-   "puissance_ch": 280,
-   "vitesse_max_kmh": 240,
-   "zero_a_cent_s": 5.5,
-   "type_carburant": "Essence",
-   "consommation_mixte": "15.0 L/100km",
-   "dimensions_lwh_mm": "3710 x 1750 x 1114",
-   "poids_kg": 900,
-   "prix_lancement_eur": 30000,
-   "tags": [
-    "rally car",
-    "group 4 rally car",
-    "lancia stratos hf",
-    "coupe",
-    "sports car",
-    "performance car",
-    "classic car",
-    "italian car",
-    "1970s car",
-    "homologation special",
-    "hf",
-    "gr.4",
-    "rally legend",
-    "lancia",
-    "car"
-   ]
-  },
-  {
    "id": "lancia_thema",
    "name": "Thema",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Lancia_Thema_hcc25.jpg/1280px-Lancia_Thema_hcc25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -1024,30 +994,6 @@
    "imageCredit": "Rudolf Stricker",
    "imageLicense": "CC BY-SA 3.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_Thesis_front_20071211.jpg"
-  },
-  {
-   "id": "lancia_trevi",
-   "name": "Trevi Volumex",
-   "production_years": "1980 - 1984",
-   "puissance_ch": 135,
-   "vitesse_max_kmh": 190,
-   "zero_a_cent_s": 9.6,
-   "type_carburant": "Essence",
-   "consommation_mixte": "9.5 L/100km",
-   "dimensions_lwh_mm": "4270 x 1650 x 1400",
-   "poids_kg": 1180,
-   "prix_lancement_eur": 10000,
-   "tags": [
-    "trevi volumex",
-    "car",
-    "vehicle",
-    "motor vehicle",
-    "land vehicle",
-    "compact car",
-    "city car",
-    "hatchback",
-    "subcompact car"
-   ]
   },
   {
    "id": "lancia_voyager",
@@ -1297,13 +1243,6 @@
    "imageCredit": "Tony Harrison from Farnborough, UK",
    "imageLicense": "CC BY 2.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lancia_Artena_Berlina_1930.jpg"
-  },
-  {
-   "id": "lancia_trikappa",
-   "name": "Trikappa",
-   "production_years": null,
-   "tags": [],
-   "poids_kg": 1350
   },
   {
    "id": "lancia_2000",

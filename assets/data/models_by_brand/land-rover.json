@@ -419,33 +419,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Range_Rover_Evoque_Convertible_2016_-_side.jpg"
   },
   {
-   "id": "land-rover_range-rover_evoque_svr",
-   "name": "Range Rover Evoque SVR",
-   "production_years": "2019 - Aujourd'hui",
-   "puissance_ch": 300,
-   "vitesse_max_kmh": 250,
-   "zero_a_cent_s": 5.9,
-   "type_carburant": "Essence",
-   "consommation_mixte": "9.5 L/100km",
-   "dimensions_lwh_mm": "4371 x 1996 x 1649",
-   "poids_kg": 1945,
-   "prix_lancement_eur": 75000,
-   "tags": [
-    "suv",
-    "luxury car",
-    "performance car",
-    "compact suv",
-    "range rover evoque svr",
-    "land rover",
-    "sports suv",
-    "high-performance suv",
-    "premium suv",
-    "car",
-    "vehicle",
-    "motor vehicle"
-   ]
-  },
-  {
    "id": "land-rover_range-rover_l322",
    "name": "Range Rover L322",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/LAND_ROVER_RANGE_ROVER_%28L322%29_HONG_KONG.jpg/1280px-LAND_ROVER_RANGE_ROVER_%28L322%29_HONG_KONG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -609,33 +582,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:2018_Land_Rover_Range_Rover_Velar_front_3.17.18.jpg"
   },
   {
-   "id": "land-rover_range-rover_velar_svr",
-   "name": "Range Rover Velar SVR",
-   "production_years": "2020 - Aujourd'hui",
-   "puissance_ch": 550,
-   "vitesse_max_kmh": 283,
-   "zero_a_cent_s": 4.3,
-   "type_carburant": "Essence",
-   "consommation_mixte": "11.5 L/100km",
-   "dimensions_lwh_mm": "4797 x 1940 x 1683",
-   "poids_kg": 1975,
-   "prix_lancement_eur": 95000,
-   "tags": [
-    "suv",
-    "luxury car",
-    "performance car",
-    "range rover velar svr",
-    "land rover",
-    "sports suv",
-    "high-performance suv",
-    "luxury suv",
-    "vehicle",
-    "car",
-    "motor vehicle",
-    "full-size suv"
-   ]
-  },
-  {
    "id": "land-rover_series-i",
    "name": "Series I",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Land_Rover_Series_I_1948_%28HUE_166%29.jpg/1280px-Land_Rover_Series_I_1948_%28HUE_166%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -665,35 +611,6 @@
    "imageCredit": "DeFacto",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Land_Rover_Series_I_1948_(HUE_166).jpg"
-  },
-  {
-   "id": "land-rover_series-ii-iii",
-   "name": "Series II / III",
-   "production_years": "1958 - 1985",
-   "puissance_ch": 70,
-   "vitesse_max_kmh": 110,
-   "zero_a_cent_s": 25.0,
-   "type_carburant": "Essence",
-   "consommation_mixte": "13.0 L/100km",
-   "dimensions_lwh_mm": "3617 x 1676 x 1969",
-   "poids_kg": 1400,
-   "prix_lancement_eur": 1500,
-   "tags": [
-    "series ii",
-    "series iii",
-    "land rover",
-    "off-road vehicle",
-    "suv",
-    "4x4",
-    "station wagon",
-    "classic car",
-    "vintage car",
-    "british car",
-    "motor vehicle",
-    "vehicle",
-    "car",
-    "all-terrain vehicle"
-   ]
   },
   {
    "id": "land-rover_range-rover-p38a",
@@ -764,18 +681,6 @@
    "imageCredit": "Alexander Migl",
    "imageLicense": "CC BY-SA 4.0",
    "imagePage": "https://commons.wikimedia.org/wiki/File:Range_Rover_Classic_(1970)_Classic-Gala_2022_1X7A0287.jpg"
-  },
-  {
-   "id": "land-rover_ranger-special-operations-vehicle",
-   "name": "Ranger Special Operations Vehicle",
-   "production_years": null,
-   "tags": []
-  },
-  {
-   "id": "land-rover_range-rover-sv-coupe",
-   "name": "Range Rover SV Coupé",
-   "production_years": null,
-   "tags": []
   },
   {
    "id": "land-rover_electric-defender",

@@ -390,35 +390,6 @@
    "imagePage": "https://commons.wikimedia.org/wiki/File:Lexus_LF-1_Limitless;_GIMS_2018,_Le_Grand-Saconnex_(1X7A0399).jpg"
   },
   {
-   "id": "lexus_lf-z",
-   "name": "LF-Z Electrified",
-   "production_years": "2021 (Concept)",
-   "puissance_ch": 544,
-   "vitesse_max_kmh": 200,
-   "zero_a_cent_s": 3.0,
-   "type_carburant": "Électrique",
-   "consommation_mixte": "non renseigné",
-   "dimensions_lwh_mm": "4880 x 1960 x 1600",
-   "poids_kg": 2100,
-   "prix_lancement_eur": "non renseigné",
-   "tags": [
-    "electric car",
-    "suv",
-    "crossover",
-    "compact suv",
-    "electric suv",
-    "battery electric vehicle",
-    "ev",
-    "lf-z electrified",
-    "lexus",
-    "toyota",
-    "concept car",
-    "future car",
-    "automobile",
-    "vehicle"
-   ]
-  },
-  {
    "id": "lexus_lfa",
    "name": "LFA",
    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2011_Lexus_LFA_White.jpg/1280px-2011_Lexus_LFA_White.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
