@@ -3000,7 +3000,11 @@
    "name": "A.L.F.A 24 HP",
    "production_years": null,
    "tags": [],
-   "dimensions_lwh_mm": "4250 x 1550 x 1700"
+   "dimensions_lwh_mm": "4250 x 1550 x 1700",
+   "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Arese_Museo_Storico_Alfa_Romeo_1910_A.L.F.A._24_HP_1.jpg/1280px-Arese_Museo_Storico_Alfa_Romeo_1910_A.L.F.A._24_HP_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "imageCredit": "Zairon",
+   "imageLicense": "CC BY-SA 4.0",
+   "imagePage": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1910_A.L.F.A._24_HP_1.jpg"
   },
   {
    "id": "fiat_elba",
